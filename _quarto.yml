@@ -1,0 +1,25 @@
+project:
+  type: book
+
+book:
+  title: "Framing AI"
+  author: "Han-Teng Liao"
+  date: "18/08/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+
+
