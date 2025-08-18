@@ -7,8 +7,8 @@ book:
   date: "18/08/2025"
   chapters:
     - index.zh-hant.qmd
-    - 1----problematics_zh-hant.qmd
-    - summary.zh-hant.qmd
+    - 01----problematics.zh-hant.qmd
+    - 10----ai_engineering.zh-hant.qmd
     - references.zh-hant.qmd
   page-footer:
     left: |
@@ -22,6 +22,7 @@ bibliography: references.bib
 
 format:
   html:
+    number-sections: true
     theme:
       - cosmo
       - brand
