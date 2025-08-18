@@ -10,6 +10,13 @@ book:
     - intro.qmd
     - summary.qmd
     - references.qmd
+  page-footer:
+    left: |
+      ___ (2e) was written by ___.
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+  cover-image: cover.png
+  favicon: cover.png
 
 bibliography: references.bib
 
@@ -18,8 +25,11 @@ format:
     theme:
       - cosmo
       - brand
+    cover-image: cover.png
+    favicon: cover.jpg
   pdf:
     documentclass: scrreprt
-
-
+    cover-image: cover.svg
+  epub:
+    cover-image: cover.svg
 
