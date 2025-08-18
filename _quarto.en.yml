@@ -2,14 +2,14 @@ project:
   type: book
 
 book:
-  title: "道／盜智框"
-  author: "廖漢騰"
+  title: "Framing AI"
+  author: "Han-Teng Liao"
   date: "18/08/2025"
   chapters:
-    - index.zh-hant.qmd
-    - intro.zh-hant.qmd
-    - summary.zh-hant.qmd
-    - references.zh-hant.qmd
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
   page-footer:
     left: |
       ___ (2e) was written by ___.
