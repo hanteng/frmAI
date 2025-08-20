@@ -1,5 +1,8 @@
 project:
   type: book
+number-sections: true
+number-depth: 3
+toc-depth: 3
 
 book:
   title: "道／盜智框"
@@ -7,9 +10,21 @@ book:
   date: "18/08/2025"
   chapters:
     - index.zh-hant.qmd
-    - 01----problematics.zh-hant.qmd
-    - 10----ai_engineering.zh-hant.qmd
+    - part: 01----problematics.zh-hant.qmd
+      chapters:
+        - 01-01-Turing_Test.zh-hant.qmd
+        - 01-02-Chinese_Room.zh-hant.qmd
+        - 01-03-Symbol_Grounding_Problem.zh-hant.qmd
+        - 01-04-Frame_Problem.zh-hant.qmd
+        - 01-05-Gestalt_Psychology.zh-hant.qmd
+        - 01-06-AI_Alignment_Control_Problem.zh-hant.qmd
+        - 01-07-Language_Games.zh-hant.qmd
     - references.zh-hant.qmd
+  sidebar:
+    style: "docked"
+    #style: "floating"
+    collapse-level: 3
+    section-numbers: true
   page-footer:
     left: |
       ___ (2e) was written by ___.
@@ -17,20 +32,27 @@ book:
       This book was built with <a href="https://quarto.org/">Quarto</a>.
   cover-image: cover.png
   favicon: cover.png
+  search: true
+  repo-url: https://github.com/hanteng/frmAI/
+  repo-actions: [edit]
+  downloads: [pdf, epub]
+  sharing: [twitter, facebook]
 
 bibliography: references.bib
 
 format:
   html:
     number-sections: true
+    number-depth: 3
+    toc-depth: 3
     theme:
       - cosmo
       - brand
     cover-image: cover.png
     favicon: cover.jpg
-  pdf:
-    documentclass: scrreprt
-    cover-image: cover.svg
-  epub:
-    cover-image: cover.svg
+#  pdf:
+#    documentclass: scrreprt
+#    cover-image: cover.svg
+#  epub:
+#    cover-image: cover.svg
 
