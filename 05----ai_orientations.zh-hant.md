@@ -88,11 +88,11 @@ AI 導向的核心在於其 **「知識姿態」** （Epistemic Posture），這
 
 ### 🌰核心條目內容
 
-* **5.1** ☸🏛️ [知識導向](05-01-oriented_knowledge.zh-hant.qmd)（Knowledge-oriented）
-* **5.2** ☸🌀 [數據導向](05-02-oriented_data.zh-hant.qmd)（Data-oriented）
-* **5.3** ☸🤖 [智能體／代理人導向](05-03-oriented_agent.zh-hant.qmd)（Agent-oriented）
-* **5.4** ☸🛠 [任務導向型](05-04-oriented_task.zh-hant.qmd)（Task-oriented AI）
-* **5.5** ☸⚖️ [倫理／互動導向型](05-05-oriented_ethics.zh-hant.qmd)（Ethics-oriented）
+* **5.1** ☸🏛️ [知識導向](05-01-oriented_knowledge.zh-hant.md)（Knowledge-oriented）
+* **5.2** ☸🌀 [數據導向](05-02-oriented_data.zh-hant.md)（Data-oriented）
+* **5.3** ☸🤖 [智能體／代理人導向](05-03-oriented_agent.zh-hant.md)（Agent-oriented）
+* **5.4** ☸🛠 [任務導向型](05-04-oriented_task.zh-hant.md)（Task-oriented AI）
+* **5.5** ☸⚖️ [倫理／互動導向型](05-05-oriented_ethics.zh-hant.md)（Ethics-oriented）
 
 ### 🎋 延伸內容
 *  ☸️⚖️🏛️📡 **倫理-知識導向追蹤系統 (Ethic-Knowledge oriented Tracking)**
