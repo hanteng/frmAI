@@ -34,6 +34,7 @@ book:
         - 05-04-oriented_task.zh-hant.md
         - 05-05-oriented_ethics.zh-hant.md
     - part: 06----ai_analytic_form.md
+    - part: 07----game_ai.zh-hant.md
     - references.zh-hant.qmd
   sidebar:
     style: "docked"
