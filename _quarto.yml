@@ -37,6 +37,8 @@ book:
     - part: 06----ai_analytic_form.md
     - part: 07----game_ai.zh-hant.md
     - part: 08----embodied_ai.zh-hant.md
+    - part: 09----ai_math.zh-hant.md
+    - part: 10----ai_engineering.zh-hant.md
     - references.zh-hant.qmd
   sidebar:
     style: "docked"
