@@ -1,6 +1,8 @@
 ---
-title: 🎯🛡️ AI 對齊與控制問題
+title: AI對齊問題🎯🛡️
 tags:
+  - AI對齊
+  - AI控制
   - AI安全
   - AI倫理
   - 大語言模型
