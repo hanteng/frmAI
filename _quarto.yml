@@ -33,6 +33,7 @@ book:
         - 05-03-oriented_agent.zh-hant.md
         - 05-04-oriented_task.zh-hant.md
         - 05-05-oriented_ethics.zh-hant.md
+    - part: 06----ai_analytic_form.md
     - references.zh-hant.qmd
   sidebar:
     style: "docked"
