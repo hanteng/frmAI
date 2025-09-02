@@ -56,7 +56,7 @@ title: 第參 🏛️「符號流」AI
 * **3.3** 🏛️🎁🧠 [專家系統](03-03-expert_systems.zh-hant)（Expert Systems）
 * **3.4** 🏛️🛠️🏗️ [知識表徵工程](03-04-knowledge_representation.zh-hant)（Knowledge Representation）
 * **3.5** 🏛️🕸💡 [知識圖譜](03-04-knowledge_representation.zh-hant)（Knowledge Graphs）
-* **3.6** 🏛️🌐🔗 [語意網](03-06-knowledge_representation.zh-hant)（Semantic Web）
+* **3.6** 🏛️🌐🔗 [語意網](03-06-semantic_web.zh-hant)（Semantic Web）
 * **3.7** 🏛️🗺️🌌 [本體論空間](03-07-ontology.zh-hant)（Ontology）
 
 ### 延伸內容
