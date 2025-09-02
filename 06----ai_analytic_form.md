@@ -1,9 +1,6 @@
 ---
 title: 第陸  🔷四加二型式
 ---
-📊 **生成式資料增強**（generative data augmentation） 使用生成模型產生多樣化的訓練樣本，提升模型在稀疏或不平衡資料下的泛化能力。 **減碳案例**：生成不同氣候情境下的能源需求模擬數據，提升低碳技術投資回報率預測的穩健性。 **金融案例**：模擬不同利率與通膨情境下的債券收益率曲線，提升投資組合風險預測的準確度。
-`診斷型分析`（Diagnostic Analysis）著重於回答**「為什麼會發生？」**，透過深入比對與剖析資料，揭示事件背後的根本原因、影響關鍵及變數間的關聯性。它常作為連結**描述型分析**（What happened?）與**預測／指導型分析**（What will/should happen?）的橋樑，確保後續決策建立在對成因的充分理解之上。
-
 # 什麼是分析型式？{.unnumbered}
 
 由於 AI 品質通常受到 `資料分析`（Data Analytics，在商業領域稱為「商業分析」Business Analytics）好壞影響，因此有必要按照 資料分析的四種分析型式來檢視改良 AI 分析的質量。
@@ -25,28 +22,15 @@ title: 第陸  🔷四加二型式
 
 上表總結 AI 品質四大傳統分析類型加兩種新強化型式：在描述型分析中自動生成視覺化報告，在診斷型分析中提出假設與解釋，在預測型分析中協助建模與生成訓練資料，在指導型分析中模擬決策情境與策略選擇；生成式 AI 還能主動創造新資料、視覺化洞察與語言敘事，成為分析流程中的創造性節點；基於人類回饋的強化學習（ RLHF ）更提供交叉驗證的實驗微調策略，透過人類評估者的回饋訊號，訓練獎勵模型。
 
-## 內容大綱
+## 🪴內容大綱
 
-### 核心條目內容
-* 🟡😷🩺 [診斷型分析](06-01-analysis_diagnostic.zh-hant.qmd)（Diagnostic Analysis）
-* 🟠🤠🔮 [預測型分析](06-02-analysis_predictive.zh-hant.qmd)（Predictive Analysis）
-* 🔴🧐🧭 [指導型分析](06-03-analysis_prescriptive.zh-hant.qmd)（Prescriptive Analysis）
-* 🔵🤓📘 [描述型分析](06-04-analysis_descriptive.zh-hant.qmd)（Descriptive Analysis）
-* 🟣🙀🎨 [生成式](06-05-analysis_generative.zh-hant.qmd)（Generative Mode）
-* 🔁😽🪄 [基於人類回饋的強化學習](06-06-rlhf.zh-hant.qmd)（Reinforcement Learning from Human Feedback）* 
+### 🌰核心條目內容
 
-明白，你想要讓每一條核心項目都像前兩條一樣帶有超連結（並注意編號順序對應現有檔案命名規則）。我幫你補齊如下：
-
----
-
-### 核心條目內容
-
-### 核心條目內容
-* 🟡😷🩺 [診斷型分析](06-01-analysis_diagnostic.zh-hant.qmd)（Diagnostic Analysis） — 透過檢測與比對資料，找出問題成因與關鍵影響因素。  
-* 🟠🤠🔮 [預測型分析](06-02-analysis_predictive.zh-hant.qmd)（Predictive Analysis） — 利用歷史資料與模型推算未來可能的事件或趨勢。  
-* 🔴🧐🧭 [指導型分析](06-03-analysis_prescriptive.zh-hant.qmd)（Prescriptive Analysis） — 在考慮限制與資源條件下，提供最佳決策與行動建議。  
-* 🔵🤓📘 [描述型分析](06-04-analysis_descriptive.zh-hant.qmd)（Descriptive Analysis） — 彙整並呈現既有資料的現況與歷史模式。  
-* 🟣🙀🎨 [生成式](06-05-analysis_generative.zh-hant.qmd)（Generative Mode） — 藉由 AI 建立新的內容、設計方案或資料模擬結果。  
-* 🔁😽🪄 [基於人類回饋的強化學習](06-06-analysis_rlhf.zh-hant.qmd)（Reinforcement Learning from Human Feedback）* — 結合人類評估信號持續調整模型行為，以達到更符合需求的輸出。  
+* 🟡😷🩺 [診斷型分析](06-01-analysis_diagnostic.zh-hant)（Diagnostic Analysis） — 透過檢測與比對資料，找出問題成因與關鍵影響因素。  
+* 🟠🤠🔮 [預測型分析](06-02-analysis_predictive.zh-hant)（Predictive Analysis） — 利用歷史資料與模型推算未來可能的事件或趨勢。  
+* 🔴🧐🧭 [指導型分析](06-03-analysis_prescriptive.zh-hant)（Prescriptive Analysis） — 在考慮限制與資源條件下，提供最佳決策與行動建議。  
+* 🔵🤓📘 [描述型分析](06-04-analysis_descriptive.zh-hant)（Descriptive Analysis） — 彙整並呈現既有資料的現況與歷史模式。  
+* 🟣🙀🎨 [生成式 AI](06-05-analysis_generative.zh-hant)（Generative AI） — 藉由 AI 建立新的內容、設計方案或資料模擬結果。  
+* 🔁😽🪄 [基於人類回饋的強化學習](06-06-analysis_rlhf.zh-hant)（Reinforcement Learning from Human Feedback）* — 結合人類評估信號持續調整模型行為，以達到更符合需求的輸出。  
 
 
