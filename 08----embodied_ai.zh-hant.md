@@ -26,11 +26,12 @@ title: 第捌 🦾「具身派」AI
 * **8.3** 🦾🔄🖼️ [自適應機器人學](08-03-adaptive_robotics.zh-hant)（Adaptive Robotics）
 * **8.4** 🦾🤝💪 [人機互動](08-04-human_robot_interaction.zh-hant)（Human-Robot Interaction, HRI）
 * **8.5** 🦾🛡️🚨 [機器人安全與穩健性](08-05-robot_safety_and_robustness.zh-hant)（Robot Safety & Robustness）
+* **8.6** 🦾🧭🎯 [任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant)（Task & Goal Planning）
 
 ***
 
 ### 延伸內容
 
-* 🦾🚶‍♀️🤖 [具身智能與自駕車](08-06-embodied_ai_and_self_driving_cars.zh-hant)
+* 🦾🚶‍♀️🤖 [具身智能與自駕車](08-06-embodied_ai_and_self_driving_cars.zh-hant)（Embodied Intelligence & Self-driving Cars）
 * 🤖🧠🕸️ [具身神經網路](08-07-embodied_neural_networks.zh-hant)（Embodied Neural Networks）
 * 🌐🔗🤖 [具身網路](08-08-embodied_internet.zh-hant)（Embodied Internet）
