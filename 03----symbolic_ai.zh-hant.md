@@ -43,13 +43,13 @@ title: 第參 🏛️「符號流」AI
 
 - 🏛️🌐🔗  **語意網**（Semantic Web）：由 Tim Berners-Lee 提出，目標是讓網頁資料具備語意結構，便於機器理解與推理。相關技術如 RDF/OWL/SPARQL 使網頁資料具備語意與可推理性。例如 DBpedia 將 Wikipedia 資料轉化為 RDF 格式，供語意查詢使用。
     
-- 🏛️🗺️🌌  **本體論空間**（Ontology）：建立概念之間的語意關係網絡，以可共享的概念階層與關係公設定義領域語彙，在語意層次支持跨系統協同運作與推理。例如 OWL（Web Ontology Language）用於定義醫療、法律等領域的本體結構，使 AI 能在語意層次上進行推理。
+- 🏛️🌌🗺️  **本體論空間**（Ontology）：建立概念之間的語意關係網絡，以可共享的概念階層與關係公設定義領域語彙，在語意層次支持跨系統協同運作與推理。例如 OWL（Web Ontology Language）用於定義醫療、法律等領域的本體結構，使 AI 能在語意層次上進行推理。
 
 當下與可預見的未來，符號流可以統計流及聯結主義互補形成「神經符號流 AI」（Neuro-Symbolic AI ），融合可解釋推理與大規模感知的優勢。。
 
-## 內容大綱
+## 🪴內容大綱
 
-### 核心條目內容
+### 🌰核心條目內容
 
 * **3.1** 🏛️⊨∴ [形式邏輯](03-01-formal_logic.zh-hant)（Formal Logic）
 * **3.2** 🏛️🤖💬 [自動對話系統](03-02-automatic_dialogue_systems.zh-hant)（Automatic Dialogue Systems）
@@ -57,7 +57,7 @@ title: 第參 🏛️「符號流」AI
 * **3.4** 🏛️🛠️🏗️ [知識表徵工程](03-04-knowledge_representation.zh-hant)（Knowledge Representation）
 * **3.5** 🏛️🕸💡 [知識圖譜](03-04-knowledge_representation.zh-hant)（Knowledge Graphs）
 * **3.6** 🏛️🌐🔗 [語意網](03-06-semantic_web.zh-hant)（Semantic Web）
-* **3.7** 🏛️🗺️🌌 [本體論空間](03-07-ontology.zh-hant)（Ontology）
+* **3.7** 🏛️🌌🗺️ [本體論空間](03-07-ontology.zh-hant)（Ontology）
 
 ### 延伸內容
 - 🏛️🤝🧠 神經符號流 AI（Neuro‑Symbolic AI）：將符號推理的可解釋性與神經網路的大規模感知能力結合，實現從非結構化資料中抽取知識並進行邏輯推論的混合架構。
