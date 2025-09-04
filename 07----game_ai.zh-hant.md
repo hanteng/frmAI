@@ -9,15 +9,17 @@ Rewrite: 人工智慧（AI）是人類最新的「腦補」或「心智能力擴
 ## 內容大綱
 
 ### 核心條目內容
+博弈心理 AI（Poker & Jinrō Game）**
+## 🏆 第柒章：AI 系統挑戰人類紀錄（AI vs Human Benchmarks）
 
-* 7. 初探「博弈派AI」（Exploring Game-based AI）
-* **7.1** 🏆⚫⚪ AlphaGo 圍棋（AlphaGo Go）
-* **7.2** 🏆🕹️👾 Atari DQN（Atari DQN）
-* **7.3** 🏆🧠⚔️ OpenAI Five（Dota 2）
-* **7.4** 🏆🃏💰 撲克 AI（Libratus / Pluribus）
-* **7.5** 🏆🐭🗺️ IEEE電子老鼠走迷宮（IEEE Electronic Mouse Maze Navigation）
-* **7.6** 🏆🪖⚔️ 戰場模擬（含 VBS4、Command PE、DCS World）（Battlefield Simulation (incl. VBS4, Command PE, DCS World)）
-* **7.7** 🏆🐺🧠 狼人殺 AI （_Jinrō Game_）（Werewolf AI (_Jinrō Game_)）
+* **7.1** 🏆🐭🗺️ [IEEE電子老鼠走迷宮](07-01-ieee_micromouse.zh-hant.md)（IEEE Micromouse）  
+* **7.2** 🏆🕹️👾 [Atari DQN](07-02-atari_dqn.zh-hant.md)（Atari DQN）  
+* **7.3** 🏆⚫⚪ [AlphaGo 圍棋](07-03-alphago.zh-hant.md)（AlphaGo）  
+* **7.4** 🏆🃏💰 [撲克 AI](07-04-poker_ai.zh-hant.md)（Libratus / Pluribus）  
+* **7.5** 🏆🧠⚔️ [OpenAI Five](07-05-openai_five.zh-hant.md)（Dota 2）  
+* **7.6** 🏆🐺🧠 [狼人殺 AI](07-06-werewolf_ai.zh-hant.md)（Werewolf AI）  
+* **7.7** 🏆🪖⚔️ [戰場模擬](07-07-battlefield_simulation.zh-hant.md)（Battlefield Simulation）
+
 
 ### 延伸內容
 * 
