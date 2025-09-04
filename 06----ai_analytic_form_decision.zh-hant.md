@@ -20,7 +20,7 @@ AI 品質好壞，取決於**資料分析**（Data Analytics）與**決策演算
 | 🟠 **預測型分析**  | 未來會發生什麼？利用統計模型預測結果。      | 協助建模、生成合成訓練資料、解釋預測結果。                                                 |
 | 🔴 **指導型分析**  | 我們該怎麼做？根據預測結果提出最佳行動建議。   | 產出決策情境、優化策略、模擬不同方案的影響。                                                |
 | 🟣 **生成式 AI** | 我們可以創造什麼？根據學習模式創造新內容或資料。 | 生成合成資料（腦力激盪為主），自動化 ETL、創建視覺化與洞察。                                      |
-| 🔁 **決策演算法**   | 我們如何模擬人類決策行為？            | 優化各種決策特性（規則、狀態、行為、目標、效用、任務、情境脈絡、過去案例等等）和分析形式（描述、診斷、預測、指導等等）生成可操作的各式腳本 |
+| 🔁 **決策演算法**  | 我們如何模擬人類決策行為？            | 優化各種決策特性（規則、狀態、行為、目標、效用、任務、情境脈絡、過去案例等等）和分析形式（描述、診斷、預測、指導等等）生成可操作的各式腳本 |
 
 上表總結四大傳統分析類型加兩種新強化**工具**：
 
@@ -38,10 +38,10 @@ AI 系統正從單純的「分析」走向「決策」，這是一個需要同�
 
 ### 🌰核心條目內容
 
-* 🟡😷🩺 [診斷型分析](06-01-analysis_diagnostic.zh-hant)（Diagnostic Analysis） — 透過檢測與比對資料，找出問題成因與關鍵影響因素。  
-* 🟠🤠🔮 [預測型分析](06-02-analysis_predictive.zh-hant)（Predictive Analysis） — 利用歷史資料與模型推算未來可能的事件或趨勢。  
-* 🔴🧐🧭 [指導型分析](06-03-analysis_prescriptive.zh-hant)（Prescriptive Analysis） — 在考慮限制與資源條件下，提供最佳決策與行動建議。  
-* 🔵🤓📘 [描述型分析](06-04-analysis_descriptive.zh-hant)（Descriptive Analysis） — 彙整並呈現既有資料的現況與歷史模式。  
-* 🟣🙀🎨 [生成式 AI](06-05-analysis_generative.zh-hant)（Generative AI） — 藉由 AI 建立新的內容、設計方案或資料模擬結果。  
-* 🔁😽🪄 [決策演算法](06-06-decision_making_algorithm.zh-hant)（Decision-making Algorithm）— 模擬人類決策行為的各種類型的演算法。
+* **6.1** 🟡😷🩺 [診斷型分析](06-01-analysis_diagnostic.zh-hant)（Diagnostic Analysis）
+* **6.2** 🟠🤠🔮 [預測型分析](06-02-analysis_predictive.zh-hant)（Predictive Analysis）
+* **6.3** 🔴🧐🧭 [指導型分析](06-03-analysis_prescriptive.zh-hant)（Prescriptive Analysis）
+* **6.4** 🔵🤓📘 [描述型分析](06-04-analysis_descriptive.zh-hant)（Descriptive Analysis）
+* **6.5** 🟣🙀🎨 [生成式 AI](06-05-analysis_generative.zh-hant)（Generative AI）
+* **6.6** 🔁😽🪄  [決策演算法](06-06-decision_making_algorithm.zh-hant)（Decision-making Algorithm）
 
