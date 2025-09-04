@@ -26,13 +26,13 @@ AI 的技術思路可分為兩大起點：邏輯推理的「符號流」與資�
 
 ### 🌰核心條目內容
 
-* 🏛️🎏🏮 [符號流／主義](02-01-symbolic_ai.zh-hant)（Symbolic AI / Symbolism）
-* 🌀🎏 [統計流](02-02-statistical_ai.zh-hant)（Statistical AI）
-* 🧠🎏 [神經－符號合流](02-03-neurosymbolic_ai.zh-hant)（Neuro-Symbolic AI）
-* 🪙🫣 [AGI 人工通用智慧](02-04-agi.zh-hant)（Artificial General Intelligence）
-* 🧬🏮 [連結主義](02-05-connectionism.zh-hant)（Connectionism）
-* 💪🏮 [行為主義](02-06-behaviorism.zh-hant)（Behaviorism）
-* 😵‍💫🧞‍♀️ [大語言模型](02-07-large_language_models.zh-hant)（Large Language Models） 
+* **2.1** 🎏🏮🏛️ [符號流／主義](02-01-symbolic_ai.zh-hant)（Symbolic AI / Symbolism）
+* **2.2** 🎏🌀 [統計流](02-02-statistical_ai.zh-hant)（Statistical AI）
+* **2.3** 🎏🧠🏛️ [神經－符號合流](02-03-neurosymbolic_ai.zh-hant)（Neuro-Symbolic AI）
+* **2.4** 🪙🫣 [AGI 人工通用智慧](02-04-agi.zh-hant)（AGI）
+* **2.5** 🏮🧬 [連結主義](02-05-connectionism.zh-hant)（Connectionism）
+* **2.6** 🏮💪 [行為主義](02-06-behaviorism.zh-hant)（Behaviorism）
+* **2.7** 😵‍💫🧞‍♀️ [大語言模型](02-07-large_language_models.zh-hant)（Large Language Models (LLMs)）
 
 ### 🎋 延伸內容
 
@@ -53,4 +53,4 @@ AI 的技術思路可分為兩大起點：邏輯推理的「符號流」與資�
   - 「統計流」AI（見[第肆章 🌀](04----statistical_ai.zh-hant) ）
 * 區別： 
   - 5 種智能行為體系 「導向」（見[第伍章 ☸](05----ai_orientations.zh-hant) ）
-  - 6 種分析與內容生成 「型式」（見[第陸章 🔷](06----ai_analytic_form) ）
+  - 6 種分析與內容生成 「型式」（見[第陸章 🔷](06----ai_analytic_form_decision.zh-hant.md) ）
