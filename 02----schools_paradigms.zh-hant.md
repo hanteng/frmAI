@@ -52,7 +52,7 @@ AI **流派** 與 **主義** 的關係參照整理如下：
 * **2.4** 🪙🫣 [AGI 人工通用智慧](02-04-agi.zh-hant)（AGI）
 * **2.5** 🏮🧬 [連結主義](02-05-connectionism.zh-hant)（Connectionism）
 * **2.6** 🏮💪 [行為主義](02-06-behaviorism.zh-hant)（Behaviorism）
-* **2.7** 😵‍💫🧞‍♀️ [大語言模型](02-07-large_language_models.zh-hant)（Large Language Models (LLMs)）
+* **2.7** 😵‍💫🧞‍♀️ [大語言模型](02-07-large_language_models.zh-hant)（Large Language Models）
 
 ### 🎋 延伸內容
 
