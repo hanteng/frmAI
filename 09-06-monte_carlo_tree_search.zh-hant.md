@@ -21,15 +21,15 @@ MCTS 可被視為一種通用的**決策演算法**，其核心思想是：
 
 > 先透過**模擬**探索可能的未來路徑，然後再**規劃**出最優的策略。
 
-## 🚀 MCTS 的應用場景
+## 🚀 應用場景
 
 MCTS 在多種需要高效搜尋與精準決策的情境中表現出色：
 
-- ♟️ **博弈 AI**：是諸如 圍棋（AlphaGo）、頂尖西洋棋及撲克 AI 的核心演算法。
+- ♟️ **博弈 AI**：是諸如 圍棋（AlphaGo）、頂尖西洋棋及撲克 AI 的核心演算法。（參見[第柒章 🏆「博弈派」AI](07----game_ai.zh-hant) ）
     
 - 🚗 **自動駕駛**：在規劃車輛行駛路徑及進行即時決策時，MCTS 能提供強大的支援。
     
-- 🤖 **機器人規劃**：可用於設計複雜的動作序列與任務執行。
+- 🤖 **機器人規劃**：可用於設計複雜的動作序列與任務執行。（參見[任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant) ）
     
 - 📦 **資源分配**：在資源有限的條件下，MCTS 能夠優化資源分配策略。
     
@@ -94,4 +94,6 @@ MCTS 是種能透過「**大格局觀**」與「**機會成本**」思維來**�
 
 ## 🏁 小結（含其他相關條目）
 
-是種驅動決策的**框架思維**，`蒙地卡羅樹搜尋`（MCTS）方法，能整合賽局中的「**大格局觀**」與「**機會成本**」概念，廣泛應用於博弈與自動化系統中。 在 AI 領域內，MCTS 可以是[決策演算法](06-06-decision_making_algorithm.zh-hant)、[指導型分析](06-03-analysis_prescriptive.zh-hant)、等的可選工具，值得在[智能體／代理人導向](05-03-oriented_agent.zh-hant) 、[任務導向](05-04-oriented_task.zh-hant) 應用考量適用與否。同時，因為其決策的賽局機率特質，在設計或執行 [行為主義](02-06-behaviorism.zh-hant) 的 **強化學習**及 [連結主義](02-05-connectionism.zh-hant) 的 **深度學習** 時，需要思量 [倫理／互動導向](05-05-oriented_ethics.zh-hant) 及 [知識導向](05-01-oriented_knowledge.zh-hant)，以確保決策**品質及後果**，以確保 [AI 對齊與控制問題](01-06-AI_Alignment_Control_Problem.zh-hant) 的有效及合理應對。
+是種驅動決策的**框架思維**，`蒙地卡羅樹搜尋`（MCTS）方法，能整合賽局中的「**大格局觀**」與「**機會成本**」概念，廣泛應用於 [博弈](07----game_ai.zh-hant) 與自動化 AI 系統中，特別是[任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant)。其「大格局觀」由**啟發式評估函數**體現，而「機會成本」則常由**UCT**公式體現，在「已知的好處」與「未知的可能性」之間取得平衡。
+
+在 AI 領域內，MCTS 可以是[決策演算法](06-06-decision_making_algorithm.zh-hant)、[指導型分析](06-03-analysis_prescriptive.zh-hant)、等的可選工具，值得在[智能體／代理人導向](05-03-oriented_agent.zh-hant) 、[任務導向](05-04-oriented_task.zh-hant) 應用考量適用與否。同時，因為其決策的賽局機率特質，在設計或執行 [行為主義](02-06-behaviorism.zh-hant) 的 **強化學習**及 [連結主義](02-05-connectionism.zh-hant) 的 **深度學習** 時，需要思量 [倫理／互動導向](05-05-oriented_ethics.zh-hant) 及 [知識導向](05-01-oriented_knowledge.zh-hant)，以確保決策**品質及後果**，以確保 [AI 對齊與控制問題](01-06-AI_Alignment_Control_Problem.zh-hant) 的有效及合理應對。
