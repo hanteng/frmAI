@@ -30,7 +30,7 @@ tags:
 
 `多智能體報酬矩陣`的結構取決於智能體的數量和它們各自可選取的行動。
 
-矩陣描述多個參與者在不同策略組合下，各自所能獲得的**報酬**（payoff）的一種結構化表示。
+矩陣描述多個參與者在不同策略組合下，各自所能獲得的**報酬**（payoff）的一種結構化表示
 
 ### 💰▦ 結構與定義
 
@@ -108,4 +108,4 @@ tags:
 
 是種賽局理論的 **[框架思維](01-04-Frame_Problem.zh-hant)**，`多智能體報酬矩陣`能整合賽局中的「**格局多方策略**」與「**機會成本**」的多方策略互動（含競爭與合作）的分析工具。在 AI 領域，此矩陣能將多智能體系統中的複雜互動，透過**視覺化**和**結構化**的方式進行分析，進而呈現不同策略組合下的報酬收益分佈，支持均衡分析與策略優化。它涵蓋了**帕累托最優**、**占優策略**、**納許均衡**等核心概念，為理解**合作**與**衝突**提供了堅實的基礎。
 
-在 AI 領域，它幫助我們設計出能有效應對**他者行為**的[智能體／代理人導向](05-03-oriented_agent.zh-hant)系統，並在[任務導向](05-04-oriented_task.zh-hant) 應用中實現更佳的**協調**與**最佳化**。它也能成為[指導型分析](06-03-analysis_prescriptive.zh-hant)、[博弈論](07----game_ai.zh-hant)、[決策演算法](06-06-decision_making_algorithm.zh-hant)等的重要數學工具。同時，因為其決策的賽局機率特質，在設計或執行報酬收益計算時，需考慮[倫理／互動導向](05-05-oriented_ethics.zh-hant)與[知識導向](05-01-oriented_knowledge.zh-hant)，以確保策略的公平性、透明性與可持續性，以確保 [AI 對齊與控制問題](01-06-AI_Alignment_Control_Problem.zh-hant) 的有效及合理應對。此外，在應用[大語言模型](02-07-large_language_models.zh-hant)進行 AI 系統的運用或訓練時，需特別注意[語言賽局](01-07-Language_Games.zh-hant)的多方博弈特性，而`多智能體報酬矩陣`更能主動捕捉並評價此賽局。
+在 AI 領域，它幫助我們設計出能有效應對**他者行為**的 [智能體／代理人導向](05-03-oriented_agent.zh-hant) 系統，並在 [任務導向](05-04-oriented_task.zh-hant) 應用中實現更佳的**協調**與**最佳化**。它也能成為[指導型分析](06-03-analysis_prescriptive.zh-hant)、[博弈論](07----game_ai.zh-hant)、[決策演算法](06-06-decision_making_algorithm.zh-hant)等的重要數學工具。同時，因為其決策的賽局機率特質，在設計或執行報酬收益計算時，需考慮[倫理／互動導向](05-05-oriented_ethics.zh-hant)與[知識導向](05-01-oriented_knowledge.zh-hant)，以確保策略的公平性、透明性與可持續性，以確保 [AI 對齊與控制問題](01-06-AI_Alignment_Control_Problem.zh-hant) 的有效及合理應對。此外，在應用[大語言模型](02-07-large_language_models.zh-hant)進行 AI 系統的運用或訓練時，需特別注意[語言賽局](01-07-Language_Games.zh-hant)的多方博弈特性，而`多智能體報酬矩陣`更能主動捕捉並評價此賽局。
