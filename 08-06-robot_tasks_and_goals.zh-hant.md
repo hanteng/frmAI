@@ -107,7 +107,7 @@ tags:
 
 ***
 
-## ✨ 小結及相關條目 🏁
+## ✨小結及連結🏁
 
 `任務與目標規劃` 是具身派 AI 與實體 AI 從「感知」走向「行動」的關鍵橋樑，將抽象目標轉化為具體可執行的行動序列，並在多變環境中保持靈活與穩健，因此需要同時掌握 [機器人學與實體驅動](08-01-robotics_and_physical_actuation.zh-hant)、[感知與環境](08-02-perception_and_environment.zh-hant)、[自適應機器人學](08-03-adaptive_robotics.zh-hant)、[機器人安全與穩健性](08-05-robot_safety_and_robustness.zh-hant) 等相關知識。
 
