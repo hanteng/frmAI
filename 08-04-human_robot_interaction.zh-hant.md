@@ -188,7 +188,7 @@ HRI 研究發現，人機互動在設計、實驗與長期部署中存在以下�
 
 在人機互動設計中，需考慮 **[符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant)**（確保人機各認知互動語義一致）、**[框架問題](01-04-Frame_Problem.zh-hant)**（聚焦人機各自關鍵互動訊號）、以及 **[對齊與控制問題](01-06-AI_Alignment_Control_Problem.zh-hant)**（確保**人機互動**行為符合人類**期望與安全**）。這些挑戰可透過結合 [符號流 AI](02-01-symbolic_ai.zh-hant)、強化學習、深度學習與 **[神經－符號合流](02-03-neurosymbolic_ai.zh-hant)** 來優化。
 
-隨著機器人進入公共空間與日常生活，人機互動將成為推動社會接受度與長期協作的關鍵因素。它不僅影響 [可適應機器人學](08-03-adaptive_robotics.zh-hant) 在多變環境中的表現，也反過來依賴 [感知與環境](08-02-perception_and_environment.zh-hant) 提供精準的情境資訊，並與 [任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant) 協同，確保互動過程安全、有效且值得信賴。
+隨著機器人進入公共空間與日常生活，人機互動將成為推動社會接受度與長期協作的關鍵因素。它不僅影響 [可適應機器人學](08-03-adaptive_robotics.zh-hant) 在多變環境中的表現，也反過來依賴 [感知與環境](08-02-perception_and_environment.zh-hant) 提供精準的情境資訊，並與[機器人安全與穩健性](08-05-robot_safety_and_robustness.zh-hant)、[任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant) 協同，確保互動過程安全、有效且值得信賴。
 
 ## 參考書目
 
