@@ -1,8 +1,9 @@
 # 目錄 {.unnumbered}
 * 序言 —  🙩 [《框智格局：人工智慧知識鷹架手冊》](index.zh-hant)
 * 筆記 — 🪜 [知識鷹架－從連結到領導的層次](notes-action.zh-hant)
-	* 🪜 [家長篇－－傳承](notes-action_for_parents.zh-hant)
-	* 🪜 [自學／教學者篇－－紥根與提升](notes-action_for_parents.zh-hant)
+	* 🪜👨‍👩‍👧‍👦 [家長篇－－傳承](notes-action_for_parents.zh-hant)
+	* 🪜🧘 [自學／教學者篇－－紥根與提升](notes-action_for_parents.zh-hant)
+	* 🪜🧠 心智模型說明與比較
 * [第壹章 ㉄](01----problematics.zh-hant)　AI 問題意識（AI Problematics）
 	* **1.1** 🎭🗪 [圖靈測試](01-01-Turing_Test.zh-hant)（Turing Test）
 	* **1.2** 🧱🗣️ [中文房間](01-02-Chinese_Room.zh-hant)（Chinese Room）
@@ -12,13 +13,13 @@
 	* **1.6** 🎯🛡️ [對齊與控制問題](01-06-AI_Alignment_Control_Problem.zh-hant)（AI Alignment & Control Problem）
 	* **1.7** 🗫🎲 [語言賽局](01-07-Language_Games.zh-hant)（Language Games）
 * [第貳章 🎏🏮](02----schools_paradigms.zh-hant)　流派與主義（Schools & Paradigms）
-	* **2.1** 🎏🏮🏛️ [符號流／主義](02-01-symbolic_ai.zh-hant)（Symbolic AI / Symbolism）
+	* **2.1** 🎏🏛️ [符號流／主義](02-01-symbolic_ai.zh-hant)（Symbolic AI / Symbolism）
 	* **2.2** 🎏🌀 [統計流](02-02-statistical_ai.zh-hant)（Statistical AI）
-	* **2.3** 🎏🧠🏛️ [神經－符號合流](02-03-neurosymbolic_ai.zh-hant)（Neuro-Symbolic AI）
+	* **2.3** 🎏🧠 [神經－符號合流](02-03-neurosymbolic_ai.zh-hant)（Neuro-Symbolic AI）
 	* **2.4** 🪙🫣 [AGI 人工通用智慧](02-04-agi.zh-hant)（AGI）
 	* **2.5** 🏮🧬 [連結主義](02-05-connectionism.zh-hant)（Connectionism）
 	* **2.6** 🏮💪 [行為主義](02-06-behaviorism.zh-hant)（Behaviorism）
-	* **2.7** 😵‍💫🧞‍♀️ [大語言模型](02-07-large_language_models.zh-hant)（Large Language Models (LLMs)）
+	* **2.7** 😵‍💫🧞‍♀️ [大語言模型](02-07-large_language_models.zh-hant)（Large Language Models）
 * [第參章 🏛️](03----symbolic_ai.zh-hant)　「符號流」AI（Symbolic AI）
 	* **3.1** 🏛️⊨∴ [形式邏輯](03-01-formal_logic.zh-hant)（Formal Logic）
 	* **3.2** 🏛️🤖💬 [自動對話系統](03-02-automatic_dialogue_systems.zh-hant)（Automatic Dialogue Systems）
@@ -33,14 +34,14 @@
 	* **4.3** 🌀🪢🧠 [神經網路](04-03-neural_networks.zh-hant)（Neural Networks）
 	* **4.4** 🌀🛠️🤏 [特徵工程](04-04-feature_engineering.zh-hant)（Feature Engineering）
 	* **4.5** 🌀🤖📦 [機器學習模型](04-05-machine_learning_models.zh-hant)（Machine Learning Models）
-	* **4.6** 🌀🌐🔗 [大語言模型網組合](04-06-llm_webassembly.zh-hant.md)（Large Language Models）
+	* **4.6** 🌀🌐🔗 [大語言模型網組合](04-06-llm_webassembly.zh-hant.md)（LLM WebAssembly）
 	* **4.7** 🌀🌌▦ [向量空間](04-07-vector_space.zh-hant)（Vector Space）
 * [第伍章 ☸](05----ai_orientations.zh-hant)　區分 AI 5 大導向（AI Orientations）
 	* **5.1** ☸🏛️ [知識導向](05-01-oriented_knowledge.zh-hant)（Knowledge-oriented）
 	* **5.2** ☸🌀 [數據導向](05-02-oriented_data.zh-hant)（Data-oriented）
 	* **5.3** ☸🤖 [智能體／代理人導向](05-03-oriented_agent.zh-hant)（Agent-oriented）
-	* **5.4** ☸🛠 [任務導向型](05-04-oriented_task.zh-hant)（Task-oriented AI）
-	* **5.5** ☸⚖️ [倫理／互動導向型](05-05-oriented_ethics.zh-hant)（Ethics-oriented）
+	* **5.4** ☸🛠 [任務導向](05-04-oriented_task.zh-hant)（Task-oriented AI）
+	* **5.5** ☸⚖️ [倫理／互動導向](05-05-oriented_ethics.zh-hant)（Ethics-oriented）
 * [第陸章 🔷](06----ai_analytic_form_decision.zh-hant)　分析與決策 6 點（Analytics & Decisions）
 	* **6.1** 🟡😷🩺 [診斷型分析](06-01-analysis_diagnostic.zh-hant)（Diagnostic Analysis）
 	* **6.2** 🟠🤠🔮 [預測型分析](06-02-analysis_predictive.zh-hant)（Predictive Analysis）
@@ -64,19 +65,19 @@
 	* **8.5** 🦾🛡️🚨 [機器人安全與穩健性](08-05-robot_safety_and_robustness.zh-hant)（Robot Safety & Robustness）
 	* **8.6** 🦾🧭🎯 [任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant)（Task & Goal Planning）
 * [第玖章 📐](09----ai_math.zh-hant)　AI用到的數學（Maths for AI）
-	* **9.1** 🤝🚿 [協同過濾](09-01-collaborative_filtering.zh-hant)（Collaborative Filtering）【線性代數📐支撐的推薦系統】
-	* **9.2** 📉⛰️ [最陡下降法](09-02-steepest_descent_method.zh-hant)（Steepest Descent Method）【微積分♾️支撐的最佳化演算法】 
-	* **9.3** 🔮🕸️ [貝氏網路](09-03-bayesian_network.zh-hant)（Bayesian Network）【機率式模型🎲支撐的不確定性推論】 
-	* **9.4** 🧹🧩 [稀疏建模](09-04-sparse_modeling.zh-hant)（Sparse Modeling）【線性代數📐支撐的特徵學習】 
-	* **9.5** ⛓️🔄 [馬可夫模型](09-05-markov_modeling.zh-hant)（Markov Modeling）【機率式模型🎲支撐的序列模型】 
-	* **9.6** 🌲🧭 [蒙地卡羅樹搜尋](09-06-monte_carlo_tree_search.zh-hant)（Monte Carlo Tree Search, MCTS）【由圖論🕸️、機率式模型🎲、微積分♾️支撐的搜尋與規劃演算法】
-	* **9.7** 🧠⚡ [赫布學習論](09-07-hebb_rule.zh-hant)（Hebb’s Rule）【線性代數📐＋圖論🕸️】  
-	* **9.8** 🧮💰 [多智能體報酬矩陣](09-08-multi_agent_payoff_matrix.zh-hant)（Multi-Agent Payoff Matrix）【賽局理論🎮＋線性代數📐＋機率🎲】
+	* **9.1** 🤝🚿 [協同過濾](09-01-collaborative_filtering.zh-hant)（Collaborative Filtering）
+	* **9.2** 📉⛰️ [最陡下降法](09-02-steepest_descent_method.zh-hant)（Steepest Descent Method）
+	* **9.3** 🔮🕸️ [貝氏網路](09-03-bayesian_network.zh-hant)（Bayesian Network）
+	* **9.4** 🧹🧩 [稀疏建模](09-04-sparse_modeling.zh-hant)（Sparse Modeling）
+	* **9.5** ⛓️🔄 [馬可夫模型](09-05-markov_modeling.zh-hant)（Markov Modeling）
+	* **9.6** 🌲🧭 [蒙地卡羅樹搜尋](09-06-monte_carlo_tree_search.zh-hant)（Monte Carlo Tree Search, MCTS）
+	* **9.7** 🧠⚡ [赫布學習論](09-07-hebb_rule.zh-hant)（Hebb’s Rule）
+	* **9.8** 🧮💰 [多智能體報酬矩陣](09-08-multi_agent_payoff_matrix.zh-hant)（Multi-Agent Payoff Matrix）
 * [第拾章 🌉](10----ai_engineering.zh-hant)　AI工程（AI Engineering）
 	* **10.1** 🌉🔗🔐 [API界面與MCP模組協定](10-01-API_MCP.zh-hant)（API/MCP）
 	* **10.2** 🌉🤖🚨 [智能體可靠性與評估](10-02-agent_reliability_evaluation.zh-hant)（Agent Reliability & Evaluation
 	* **10.3** 🌉🛠️💡 [提示工程](10-03-prompt_engineering.zh-hant)（Prompt Engineering）
 	* **10.4** 🌉🔗📝 [知識驅動生成（RAG）](10-04-retrieval_augmented_generation.zh-hant)（Retrieval-Augmented Generation）
 	* **10.5** 🌉🛣🌐 [脈絡工程](10-05-context_engineering.zh-hant)（Context Engineering） 
-	* **10.6** 🎁🚀🌱 [AI產品管理](10-06-AI_PM.zh-hant)（AI Product Management）
+	* **10.6** 🎁🚀🌱 [AI 產品經理](10-06-AI_PM.zh-hant)（AI Product Management）
 * 附錄 — 📚 [參考書目](references.zh-hant.qmd)
