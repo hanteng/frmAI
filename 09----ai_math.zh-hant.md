@@ -14,20 +14,20 @@ title: 第玖 📐 AI 數學
 
 這些數學不僅是工具，更是**理解AI如何「思考」和「決策」的關鍵語言**。每個進階的AI概念，從推薦系統到特徵學習，背後都有堅實的數學理論支撐。
 
-本書將從七個核心主題切入，精選與本書其他內容高度相關的數學模型、原理與演算法。讀者可以依據自身需求，自行延伸、向上擴展或向下深入所需的知識。
+本書將從數個核心主題切入，精選與本書其他內容高度相關的數學模型、原理與演算法。讀者可以依據自身需求，自行延伸、向上擴展或向下深入所需的知識。
 
 ## 🪴內容大綱
 
-### 🌰核心條目內容
+### 🌰 核心條目內容
 
-* **9.1** 🤝🚿 [協同過濾](09-01-collaborative_filtering.zh-hant)（Collaborative Filtering）【線性代數📐支撐的推薦系統】
-* **9.2** 📉⛰️ [最陡下降法](09-02-steepest_descent_method.zh-hant)（Steepest Descent Method）【微積分♾️支撐的最佳化演算法】 
+* **9.1** 🤝🚿 [協同過濾](09-01-collaborative_filtering.zh-hant)（Collaborative Filtering）【線性代數📐＋統計學📊支撐的推薦系統】
+* **9.2** 📉⛰️ [最陡下降法](09-02-steepest_descent_method.zh-hant)（Steepest Descent Method）【微積分♾️＋線性代數📐支撐的最佳化演算法】 
 * **9.3** 🔮🕸️ [貝氏網路](09-03-bayesian_network.zh-hant)（Bayesian Network）【機率式模型🎲支撐的不確定性推論】 
-* **9.4** 🧹🧩 [稀疏建模](09-04-sparse_modeling.zh-hant)（Sparse Modeling）【線性代數📐支撐的特徵學習】 
+* **9.4** 🧹🧩 [稀疏建模](09-04-sparse_modeling.zh-hant)（Sparse Modeling）【線性代數📐＋最佳化理論⚙️支撐的特徵學習】 
 * **9.5** ⛓️🔄 [馬可夫模型](09-05-markov_modeling.zh-hant)（Markov Modeling）【機率式模型🎲支撐的序列模型】 
-* **9.6** 🌲🧭 [蒙地卡羅樹搜尋](09-06-monte_carlo_tree_search.zh-hant)（Monte Carlo Tree Search, MCTS）【由圖論🕸️、機率式模型🎲、微積分♾️支撐的搜尋與規劃演算法】
-* **9.7** 🧠⚡ [赫布學習論](09-07-hebb_rule.zh-hant.md)（Hebb’s Rule）【線性代數📐＋圖論🕸️】  
-* **9.8** 🧮💰 [多智能體報酬矩陣](09-08-multi_agent_payoff_matrix.zh-hant.md)（Multi-Agent Payoff Matrix）【賽局理論🎮＋線性代數📐＋機率🎲】
+* **9.6** 🌲🧭 [蒙地卡羅樹搜尋](09-06-monte_carlo_tree_search.zh-hant)（Monte Carlo Tree Search, MCTS）【由圖論🕸️＋機率論🎲＋微積分♾️支撐的搜尋與規劃演算法】
+* **9.7** 🧠⚡ [赫布學習論](09-07-hebb_rule.zh-hant.md)（Hebb’s Rule）【線性代數📐＋統計學📊＋圖論🕸️支撐的神經學習規則】  
+* **9.8** 🧮💰 [多智能體報酬矩陣](09-08-multi_agent_payoff_matrix.zh-hant.md)（Multi-Agent Payoff Matrix）【賽局理論🎮＋線性代數📐＋機率式模型🎲支撐的策略分析】
 ### 延伸內容
 * 🎭⛓️🔄 隱藏式馬可夫模型（英語：Hidden Markov Model；縮寫：HMM）
 * 🧠🔮🕸️貝氏網路、神經網路、與深度學習的關係
