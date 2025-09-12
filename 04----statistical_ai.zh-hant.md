@@ -1,15 +1,18 @@
 ---
 title: 第肆 🌀「統計流」AI
 ---
-# 細說「統計流 AI」（Statistical AI Breakdown）{.unnumbered}
+> 細究🎏🌀 `統計流`（Statistical AI）：靠🎲[機率性關聯](04-01-probabilistic_association.zh-hant)推論，實現如🧞‍♀️ [LLM聊天機器人](04-02-llm_chatbots.zh-hant)的對話聊天系統，以 🪢[神經網路](04-03-neural_networks.zh-hant)為代表性里程碑。主要工程實踐包括運用🛠️[特徵工程](04-04-feature_engineering.zh-hant)，產出各類📦[機器學習模型](04-05-machine_learning_models.zh-hant)，及網頁資訊科技如🌐[大語言模型網組合](04-06-llm_webassembly.zh-hant.md)。🌌▦ [向量空間](04-07-vector_space.zh-hant)為其計算知識表徵疆域。
+
+## 🪴內容大綱
+
+在瞭解 [統計流](02-02-statistical_ai.zh-hant)人工智慧的意義及脈絡後，此章**細究**其核心概念、方法與代表應用。
 
 `統計流AI` 以 **數值建模**、**機率推斷**、與 **資料驅動的模式學習** 為基礎，透過分析樣本數據的分佈與特徵，建立可**預測**、**分類**或**生成**的數學模型；相對於以符號與規則為主的 **符號流 AI**，統計流強調 **從資料中學習** 與參數調整的能力。
 
 自 1980 年代機器學習（Machine Learning）興起開始，統計流從早期的邏輯迴歸、貝氏分類器，發展至今日能處理龐大非結構化數據的深度學習與大型語言模型（LLM），在語音、圖像、自然語言處理與生成式應用中展現了顯著成就。
 
-### 🎲🔷 統計流 核心 概念
+### 🌰核心條目內容
 
-`統計流`（Statistical AI）：靠🎲`機率性關聯`建構如🧞‍♀️ `LLM聊天機器人`的 🪢`類神經網路` 來回應 🔐圖靈測試。主要作法為運用🛠️`特徵工程`打造出🌌 `向量空間`學習內涵語意。在當今Web發展上，以 各類📦`機器學習模型` 與 🌀`大語言模型`（LLM）的API為主要成果形式。
 
 - **🌀🎲🌿 機率性關聯（Probabilistic Association）**： 運用機率分佈與統計推斷建立特徵與結果間的相關性模型，如貝葉斯推斷、馬可夫鏈、條件機率圖。
     
@@ -33,17 +36,53 @@ title: 第肆 🌀「統計流」AI
 
 ## 🪴內容大綱
 
+在瞭解 [統計流](02-02-statistical_ai.zh-hant)人工智慧的意義及脈絡後，此章**細究**其核心概念、方法與代表應用。
+
 ### 🌰核心條目內容
 
-* **4.1** 🌀🎲🌿 [機率性關聯](04-01-probabilistic_association.zh-hant)（Probabilistic Association）
-* **4.2** 🌀🧞‍♀️🗪 [LLM聊天機器人](04-02-llm_chatbots.zh-hant)（LLM-based Chatbots）
-* **4.3** 🌀🪢🧠 [神經網路](04-03-neural_networks.zh-hant)（Neural Networks）
-* **4.4** 🌀🛠️🤏 [特徵工程](04-04-feature_engineering.zh-hant)（Feature Engineering）
-* **4.5** 🌀🤖📦 [機器學習模型](04-05-machine_learning_models.zh-hant)（Machine Learning Models）
-* **4.6** 🌀🌐🔗 [大語言模型網組合](04-06-llm_webassembly.zh-hant.md)（Large Language Models）
-* **4.7** 🌀🌌▦ [向量空間](04-07-vector_space.zh-hant)（Vector Space）
+- **4.1** **機率性關聯**：🌀🎲🌿 [機率性關聯](04-01-probabilistic_association.zh-hant)（Probabilistic Association）
+	* **統計流**：基於**歸納**推理，透過計算「機率性關聯」，不保證絕對因果。
+- **4.2** **LLM 聊天機器人**：🌀🧞‍♀️🗪 [LLM聊天機器人](04-02-llm_chatbots.zh-hant)（LLM-based Chatbots）
+	- **統計流**：透過海量數據訓練的**大型語言模型**生成流暢**聊天機器人**。
+- **4.3** **神經網路**：🌀🪢🧠 [神經網路](04-03-neural_networks.zh-hant)（Neural Networks）
+	- **統計流**：代表模型為**神經網路**，從數據中自動學習並形成**高維關聯結構**。
+- **4.4** **特徵工程**：🌀🛠️🤏 [特徵工程](04-04-feature_engineering.zh-hant)（Feature Engineering）
+	- **統計流**：先有數據➡由數據科學家或機器學習工程師分析與建模➡運用演算法與率數學模型，從（訓練、驗證、測試）數據**萃取與構造**可有用的**特徵集合**，以建立、調整與評估**模型**。
+- **4.5** **機器學習模型**：🌀🤖📦 [機器學習模型](04-05-machine_learning_models.zh-hant)（Machine Learning Models）
+	- **統計流**：從數據中**歸納模式**，學習**隱含規則**，產出**可預測與分類**的「**機器學習模型**」。
+- **4.6** **大語言模型網組合**：🌀🌐🔗 [大語言模型網組合](04-06-llm_webassembly.zh-hant.md)（Large Language Models）
+	- **統計流**：在瀏覽器中實現**本地推理**，並**即時生成**語言內容。
+- **4.7** **向量空間**：🌀🌌▦ [向量空間](04-07-vector_space.zh-hant)（Vector Space）
+	- **統計流**：利用「**向量空間**」(Vector Space) 捕捉**語義關聯**，學習**隱含**知識地圖。
 
-### 延伸內容
-- 🌀🏛️📚 多模態數據融合（Multimodal Data Fusion）將語音、文字、影像等異質數據對齊整合，提升跨模態檢索與生成能力。
-    
-- 🏛️🔍🌀 模型可解釋性（Model Interpretability in Statistical AI）應用 SHAP、LIME 等方法分析統計模型內部運算邏輯，增強透明度與信任度。
+## 👉 承先啟後
+
+讀者可以繼續：
+
+- 🚦探索 AI 5 大導向中的🌀「統計流」AI 影響：
+    - ☸🌀 [數據導向](05-02-oriented_data.zh-hant)
+    - ☸🤖 [智能體／代理人導向](05-03-oriented_agent.zh-hant)
+    - ☸🛠 [任務導向型](05-04-oriented_task.zh-hant)        
+    - ☸⚖️ [倫理／互動導向型](05-05-oriented_ethics.zh-hant)
+- 🚥對比 🏛🎏 [符號流](02-01-symbolic_ai.zh-hant)人工智慧（Symbolic AI）以下核心差異：
+    1. **因果推論**：🏛️⊨∴ [形式邏輯](03-01-formal_logic.zh-hant) 🆚  [機率性關聯](04-01-probabilistic_association.zh-hant) 🌀🎲🌿
+        - **符號流**：基於**演繹**推理，透過明確的規則追求絕對的「因果關係」。
+        - **統計流**：基於**歸納**推理，透過計算「機率性關聯」，不保證絕對因果。
+    2. **對話聊天實現**：🏛️🤖💬 [自動對話系統](03-02-automatic_dialogue_systems.zh-hant) 🆚  [LLM聊天機器人](04-02-llm_chatbots.zh-hant)🌀🧞‍♀️🗪
+        - **符號流**：透過預設的腳本、邏輯規則與語法解析，構建**自動對話系統**。
+        - **統計流**：透過海量數據訓練的**大型語言模型**生成流暢**聊天機器人**。
+    3. **代表性里程碑**：🏛️🎁🧠 [專家系統](03-03-expert_systems.zh-hant) 🆚 [神經網路](04-03-neural_networks.zh-hant)🌀🪢🧠
+        - **符號流**：代表應用為**專家系統**，以專家經驗與邏輯規則構築**可推理的知識庫**。
+        - **統計流**：代表模型為**神經網路**，從數據中自動學習並形成**高維關聯結構**。
+    4. **過程工程實踐**：🏛️🛠️🏗️ [知識表徵](03-04-knowledge_representation.zh-hant) 🆚 [特徵工程](04-04-feature_engineering.zh-hant) 🌀🛠️🤏
+        - **符號流**：先有知識➡由專家整理與建構➡運用符號與規則，將知識**顯式編碼**成機器可推理、可檢索的**知識表徵**。
+        - **統計流**：先有數據➡由數據科學家或機器學習工程師分析與建模➡運用演算法與率數學模型，從（訓練、驗證、測試）數據**萃取與構造**可有用的**特徵集合**，以建立、調整與評估**模型**。
+    5. **經典模組半成品**：🏛️🕸💡[知識圖譜](03-04-knowledge_representation.zh-hant) 🆚  [機器學習模型](04-05-machine_learning_models.zh-hant) 🌀🤖📦
+        - **符號流**：從專家知識**萃取概念與關係**，並以**顯式編碼**成**可推理、可檢索**的結構化「**知識圖譜**」。
+        - **統計流**：從數據中**歸納模式**，學習**隱含規則**，產出**可預測與分類**的「**機器學習模型**」。
+    6. **網頁資訊科技**： 🏛️🌐🔗 [語意網](03-06-semantic_web.zh-hant) 🆚 [大語言模型網組合](04-06-llm_webassembly.zh-hant.md)🌀🌐🔗
+        - **符號流**：三元組與本體（RDF/OWL）構築可推理、可檢索的**顯式語義網路**。
+        - **統計流**：在瀏覽器中實現**本地推理**，並**即時生成**語言內容。
+    7. **計算知識表徵疆域**：🏛️🌌🗺️ [本體論](03-07-ontology.zh-hant) 🆚 [向量空間](04-07-vector_space.zh-hant)🌀🌌▦
+        - **符號流**：透過「**本體論**」(Ontology) 構築**離散且可解釋的**知識版圖。
+        - **統計流**：利用「**向量空間**」(Vector Space) 捕捉**語義關聯**，學習**隱含**知識地圖。
