@@ -55,39 +55,43 @@ AI 工程的目標是確保 AI 系統在現實世界中能夠穩定、高效地�
   - 🎁 AI PM：「我們為什麼要做這個產品？客戶需要的產品功能是什麼？」
   - 🏗️ AI 工程師：「如何將數據、模型、及其它資源整合，轉化成可用產品？」  
 
----
+***
+
 ## 🪴 內容大綱
 
-本章依AI 工程的核心範疇，精挑環環相扣，足以構成「端到端」的描述，並聚焦於 [大語言模型](02-07-large_language_models.zh-hant)、[LLM聊天機器人](04-02-llm_chatbots.zh-hant)、[大語言模型網組合](04-06-llm_webassembly.zh-hant.md)等當代應用，深入淺出串連從[㉄　AI 問題意識](01----problematics.zh-hant) 到 [☸AI導向](05----ai_orientations.zh-hant)、從[🔷分析與決策](06----ai_analytic_form_decision.zh-hant) 到 [脈絡工程](10-05-context_engineering.zh-hant) 以及 [AI 產品經理](10-06-AI_PM.zh-hant) 交織的容，協助讀者建構自己可以融會貫通的[知識鷹架](notes-action.zh-hant)，構建自己的框智格局。
+本章聚焦在 [LLM](02-07-large_language_models.zh-hant) 為基底（包括其[聊天機器人](04-02-llm_chatbots.zh-hant)、[網組合](04-06-llm_webassembly.zh-hant.md)）的 AI 工程，精挑環環相扣的知識模塊，構成「端到端」的**全鏈路描述**，能幫助讀者意識到「需求➾設計➾實作➾驗證➾優化」的綜合工程及產品管理能力，要如何在模型作為生產要素的視野下，具體理解 LLM 開發、部署到運維的完整**生命週期**。
 
-1. **🔗🔐 模組化與互操作性**：運用 [API與MCP](10-01-API_MCP.zh-hant) 建立可組合、可互操作的系統。  
-2. **🤖🚨 智能體設計**：執行 [智能體可靠性與評估](10-02-agent_reliability_evaluation.zh-hant.md) 進行風險控制管理。  
-3. **🛠️💡提問系統化** ：運用 [提示工程](10-03-prompt_engineering.zh-hant.md)（Prompt Engineering）引導生成流程。
-4.  **🔗📝 檢索與生成**：以 [知識驅動生成（RAG）](10-04-retrieval_augmented_generation.zh-hant.md) 系統掌握**檢索**與**生成**流程。  
-5.  **🛣🌐 脈絡感知**：透過 [脈絡工程](10-05-context_engineering.zh-hant.md) 讓 AI 理解意圖與背景。  
-6.  **🎁 產品價值化**：將技術成果轉化為具社會與使用者價值的產品。
+結合**智能系統**全鏈路及**模型**生命週期，不管是 AI 技術工程師或是 [AI 產品經理](10-06-AI_PM.zh-hant) 都能在跨領域與跨專業協作時，形成協同增效的「團隊」力量依不同應用場景構建高效且自適應的 AI 解決方案，既加速從概念驗證到規模化落地，又確保**系統創新**依實際需求持續創出價值。
+
+本章內容深入淺出地從 AI [㉄問題意識](01----problematics.zh-hant) 到 [☸導向](05----ai_orientations.zh-hant)、從 [🔷分析與決策](06----ai_analytic_form_decision.zh-hant) 到 [脈絡工程](10-05-context_engineering.zh-hant) 以及的多條主題線路，讀者可以在此基礎發展出自己所需的「AI 工程全鏈路能力」框架，融會貫通的[知識鷹架](notes-action.zh-hant)，形成自己的框智格局。
 
 ***
 ### 🌰 核心條目內容
 
-* **10.1** 🌉🔗🔐 [API與MCP](10-01-API_MCP.zh-hant.md)（API/MCP）【模組化🧩與互操作性🚀 的核心實踐】  
-  - 提供 AI 系統間的標準化溝通與協作框架，確保不同模組能安全高效地互通。  
-  - 是構建可擴展、多工具協作 AI 生態的基礎設施。
-* **10.2** 🌉🤖🚨 [智能體可靠性與評估](10-02-agent_reliability_evaluation.zh-hant.md)（Agent Reliability & Evaluation）【智能體設計🤖 的評估框架】  
-  - 建立衡量 AI 智能體穩定性、安全性與對齊性的多維指標。  
-  - 提供從測試到部署全流程的可靠性保障方法。
-* **10.3** 🌉🛠️💡 [提示工程](10-03-prompt_engineering.zh-hant.md)（Prompt Engineering）【LLM 😵‍💫的延伸工程】  
-  - 透過精心設計的提示，引導模型生成符合需求的高品質輸出。  
-  - 是連結使用者意圖與模型能力的關鍵橋樑。
-* **10.4** 🌉🔗📝 [知識驅動生成（RAG）](10-04-retrieval_augmented_generation.zh-hant.md)（Retrieval-Augmented Generation）【檢索與生成🔍 的整合應用】  
-  - 將外部知識檢索與生成模型結合，提升輸出的準確性與可追溯性。  
-  - 適用於需要即時性與專業知識的複雜任務。
-* **10.5** 🌉🛣🌐 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering）【脈絡感知🛣️ 的設計原則】  
-  - 系統化管理與優化 AI 使用的上下文資訊，提升情境理解能力。  
-  - 支援多模態、多來源資料的融合與安全控制。
-* **10.6** 🎁🚀🌱 [AI產品管理](10-06-AI_PM.zh-hant.md)（AI Product Management）【產品價值化🎁 的實踐路徑】  
-  - 將 AI 技術成果轉化為符合市場與使用者需求的產品。  
-  - 平衡技術創新、商業價值與倫理合規。
+* **10.1** 🌉🔗🔐 [API與MCP](10-01-API_MCP.zh-hant.md)（API / MCP）
+	* 模組化🧩與可互操作性🚀 的核心實踐  
+	- 提供 AI 系統間的標準化溝通與協作框架，確保不同模組能安全高效地互通 
+	- 是構建可擴展、可組合、可互操作、多工具協作 AI 生態的基礎設施
+* **10.2** 🌉🤖🚨 [智能體可靠性與評估](10-02-agent_reliability_evaluation.zh-hant.md)（Agent Reliability & Evaluation）
+	* 智能體設計🤖 的評估框架  
+	* 建立衡量 AI 智能體穩定性、安全性與對齊性的多維指標
+    - 為達成風險控制管理，從測試到部署全流程的可靠性保障方法
+* **10.3** 🌉🛠️💡 [提示工程](10-03-prompt_engineering.zh-hant.md)（Prompt Engineering）
+	* 引導 [LLM](02-07-large_language_models.zh-hant) 模型生成符合需求的高品質輸出，透過精心設計的提示
+	* 連結「使用者意圖與模型能力」的關鍵橋樑
+	* 將引導流程工程化、系統化
+* **10.4** 🌉🔗📝 [知識驅動生成（RAG）](10-04-retrieval_augmented_generation.zh-hant.md)（Retrieval-Augmented Generation）
+	* 檢索🔍與生成🧞‍♀️ 的整合應用  
+	* 將外部知識檢索與生成模型結合，提升輸出的準確性與可追溯性  
+	* 將**檢索**與**生成**工程化、系統化以即時性完成專業知識的複雜任務
+* **10.5** 🌉🛣🌐 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering）
+	* 脈絡感知🛣️ 的設計原則及工程化運用  
+	* 讓 AI 體係化的管理與優化使用者意圖與上下文脈絡情境資訊。  
+	- 支援多模態、多來源資料的融合理解能力與安全控制。
+* **10.6** 🎁🚀🌱 [AI產品管理](10-06-AI_PM.zh-hant.md)（AI Product Management）
+	* 產品價值化🎁 的實踐路徑
+	- 將 AI 技術成果轉化為符合市場與使用者需求的產品。  
+	- 平衡技術創新、商業價值與倫理合規。
 
 ### 📦 延伸內容
 
