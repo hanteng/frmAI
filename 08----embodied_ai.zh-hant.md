@@ -3,19 +3,77 @@ title: 第捌 🦾「具身派」AI
 ---
 >  🦾 什麼是「具身派」AI？什麼是「實體」AI？
 
-現代人工智慧的應用不只停留在0與1的數字符碼，而是以其運算能力協助人類重塑自身、及所在的符號、社會及物理世界。
+現代人工智慧，不只在數字符碼世界，更因🦾機器手臂、🚗自駕車、工廠的🏭協作型機器人（Cobots），與人類並肩或替代人類完成工作任務，催生出如黑燈生產（lights-out manufacturing），實現完全自動化、無需或幾乎無需任何工人在場的「黑暗工廠」（dark factory）。這些實踐基處是「具身派」AI 或「實體」AI。
 
-`具身派 AI`（Embodied AI），又稱為「具身智慧」，指的是一種將人工智慧與 **物理身體** 或 虛擬身體 結合的技術。與傳統 AI 主要在數位空間處理數據不同，具身派 AI 強調讓 AI 系統能透過身體與現實世界互動、感知並學習。
+可以說，現代人工智慧協助人類重塑自身、及所在的符號、社會及物理世界，「具身派」AI 則是其中從物理世界具體改造，進而影響相關的符號、社會社會。
+
+## 🦾🏗️ 具身派 AI 概論
+
+`具身派 AI`（Embodied AI）的核心在於整合「**具身認知**」（Embodied Cognition）與「**實體驅動**」（Physical Actuation），使 AI 系統能透過**物理身體** 或 **虛擬身體** 與現實世界互動，又稱為「具身智慧」。
 
 相關術語 `實體 AI`（Physical AI）更著重於強調 AI 系統的**實體存在**，也就是那些擁有物理機體、能夠在現實世界中移動、操作物體和與環境直接互動的機器人。
 
-具身派 AI 的核心在於整合「**具身認知**」（Embodied Cognition）與「**實體驅動**」（Physical Actuation），使 AI 系統能透過物理或虛擬身體與現實世界互動。要達到這個目標，必須仰賴多種關鍵技術的結合。
+要達到 `具身派 AI` 或 `實體 AI`目標，必須仰賴多種關鍵技術的結合，具體設計並實踐以下兩方面：
 
+* 🦾🎬🔋 **[實體驅動](08-01-robotics_and_physical_actuation.zh-hant)** （Physical Actuation）╌ 運用**致動器**（actuators）仿擬或創造運動或行動能力，使 AI 能「行動」
+* 🦾📡🌡️ **[具身認知](08-02-perception_and_environment.zh-hant)** （Embodied Cognition）╌ 運用**傳感器**（sensors）仿擬或創造認知能力，使 AI 能「感知」
+
+AI 用**傳感器**感知世界，特別是所處的脈絡情境（context）及世界（world），再用**致動器**在世界運動或行動。
+
+「具身派」AI 擴大了代理人／智能體（Agents）的研究及應用領域，與傳統代理人／智能體在**數位情境及世界**感知和行動類似，具身派 AI 強調透過身體與現實世界感知、互動、並學習。
+
+## 🪴內容大綱
+
+本書精選核心條目，可以串起的**大局全貌**（Big Picture）如下述。
+
+* 首先，**[機器人學與「實體驅動」](08-01-robotics_and_physical_actuation.zh-hant)** 是實現具身化的基礎，讓 AI 能夠控制機體並與周圍環境互動。接著，透過 **[感知與環境](08-02-perception_and_environment.zh-hant)** 技術，AI 得以運用感應器、攝影機等工具構建「**具身認知**」，像人類感官一樣理解物理世界。
+* 此外，**[自適應機器人學](08-03-adaptive_robotics.zh-hant)** 讓機器人能根據環境變化調整行為；而 **[人機互動](08-04-human_robot_interaction.zh-hant)** 則專注於提升 AI 與人類協作的自然性與安全性。最終，**[機器人安全與穩健性](08-05-robot_safety_and_robustness.zh-hant)** 確保這些系統在現實世界中能可靠且穩定地運作。
+* 最後，[任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant) 是將具身派 AI 的感知、行動與互動能力，整合到長期策略與符號化決策之中。
+
+這些技術相互配合，共同建構出具身派 AI 的完整體系。讀者可以依據自身需求，自行延伸、向上擴展或向下深入所需的知識。
+
+### 🌰 核心條目內容
+
+* **8.1** 🦾🤖🔋 [機器人學與實體驅動](08-01-robotics_and_physical_actuation.zh-hant)（Robotics & Physical Actuation）  
+  - 探討機器人機構設計、致動器技術與運動控制方法。  
+  - 著重於將 AI 決策轉化為精確、可控的物理行動。
+* **8.2** 🦾📡🌡️ [感知與環境](08-02-perception_and_environment.zh-hant)（Perception & Environment）  
+  - 涵蓋多模態感知技術與環境建模方法。  
+  - 著重於讓 AI 能理解並適應動態環境。
+* **8.3** 🦾🔄🖼️ [自適應機器人學](08-03-adaptive_robotics.zh-hant)（Adaptive Robotics）  
+  - 研究機器人如何根據環境變化與任務需求動態調整行為。  
+  - 涉及強化學習、自適應控制與在線規劃等技術。
+* **8.4** 🦾🤝💪 [人機互動](08-04-human_robot_interaction.zh-hant)（Human-Robot Interaction, HRI）  
+  - 探討人類與機器人之間的交流、協作與信任建立。  
+  - 涵蓋語音、手勢、視覺等多種交互方式。
+* **8.5** 🦾🛡️🚨 [機器人安全與穩健性](08-05-robot_safety_and_robustness.zh-hant)（Robot Safety & Robustness）  
+  - 闡述機器人在物理世界中運作的安全標準與防護機制。  
+  - 著重於故障檢測、容錯設計與風險管理。
+* **8.6** 🦾🧭🎯 [任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant)（Task & Goal Planning）  
+  - 涵蓋任務分解、行動序列規劃與資源分配策略。  
+  - 著重於在多約束條件下達成最優目標。
+ 
 ***
-## 🖼️⏱️ 框架脈絡
+
+### 📦 延伸內容
+
+按自己的興趣和需求，進一步搭建自己的[知識鷹架](notes-action.zh-hant)，認識所處世界[框智格局](index.zh-hant)：
+
+- 🦾🚶‍♀️🤖 **具身智能與自駕車**（Embodied Intelligence & Self-driving Cars）  
+  - 探討自駕車作為具身派 AI 的典型應用，如何融合感知、決策與控制。  
+  - 涵蓋感測器融合、路徑規劃與安全冗餘設計。
+- 🤖🧠🕸️ **具身神經網路**（Embodied Neural Networks）  
+  - 研究神經網路如何直接驅動具身系統的感知與行動。  
+  - 涉及端到端學習與神經控制架構。
+- 🌐🔗🤖 **具身網路**（Embodied Internet）  
+  - 探討具身 AI 與物聯網、邊緣計算的融合應用。  
+  - 著重於分散式協作與跨設備智能行動。
+
+## 🖼️⏱️ 延伸框架脈絡
 
 本書在介紹「具身派」與「實體」AI 時，為了有系統地**簡化**、**啟發**、及**整合**相關知識及實踐：
-* **採用**原創的 🧠 [心智能力分類](notes-mind.zh-hant) 🐸🐘🧘，以應對 [㉄ AI 問題意識](01----problematics.zh-hant)　；
+
+* **採用**原創的 🧠 [心智能力分類](notes-mind.zh-hant) 🐸🐘🧘，以應對 [㉄ AI 問題意識](01----problematics.zh-hant)；
 * 鼓勵**共創**🪜 [知識鷹架](notes-action.zh-hant) 的分層行動；
 * 進而**創新** [🌉 AI工程](10----ai_engineering.zh-hant) 的實踐及理論。
 
@@ -24,6 +82,7 @@ title: 第捌 🦾「具身派」AI
 ### 🤖  範例：三層心智能力看具身派 AI 
 
 應對 **AI [框架問題](01-04-Frame_Problem.zh-hant)** 的方式之一是設計 **感知—決策—行動** 的模式，具身派 AI 與實體 AI 的設計與運作，可以對應到不同層次的 [心智能力分類](notes-mind.zh-hant) ，整理如下表：
+
 #### 🔍 分層對應
 
 | 心智層次🐸🐘🧘                                    | ⚓在具身派 / 實體 AI 中                   | 🦾核心能力                               | 🌉技術與設計重點                                                        |
@@ -52,32 +111,3 @@ title: 第捌 🦾「具身派」AI
     - 🧘⚕**反思－符號型**：支撐長期規劃與高階推理
 
 這種分層設計不僅有助於**模組化開發**，也能在 AI 對齊與控制問題中，針對不同層次設計對應的**倫理與行為約束**。
-
-## 🪴內容大綱
-
-本書精選核心條目，可以串起的**大局全貌**（Big Picture）如下述。
-
-* 首先，**[機器人學與「實體驅動」](08-01-robotics_and_physical_actuation.zh-hant)** 是實現具身化的基礎，讓 AI 能夠控制機體並與周圍環境互動。接著，透過 **[感知與環境](08-02-perception_and_environment.zh-hant)** 技術，AI 得以運用感應器、攝影機等工具構建「**具身認知**」，像人類感官一樣理解物理世界。
-* 此外，**[自適應機器人學](08-03-adaptive_robotics.zh-hant)** 讓機器人能根據環境變化調整行為；而 **[人機互動](08-04-human_robot_interaction.zh-hant)** 則專注於提升 AI 與人類協作的自然性與安全性。最終，**[機器人安全與穩健性](08-05-robot_safety_and_robustness.zh-hant)** 確保這些系統在現實世界中能可靠且穩定地運作。
-* 最後，[任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant) 是將具身派 AI 的感知、行動與互動能力，整合到長期策略與符號化決策之中。
-
-這些技術相互配合，共同建構出具身派 AI 的完整體系。
-
-讀者可以依據自身需求，自行延伸、向上擴展或向下深入所需的知識。
-
-### 🌰 核心條目內容
-
-* **8.1** 🦾🤖🔋 [機器人學與實體驅動](08-01-robotics_and_physical_actuation.zh-hant)（Robotics & Physical Actuation）
-* **8.2** 🦾📡🌡️ [感知與環境](08-02-perception_and_environment.zh-hant)（Perception & Environment）
-* **8.3** 🦾🔄🖼️ [自適應機器人學](08-03-adaptive_robotics.zh-hant)（Adaptive Robotics）
-* **8.4** 🦾🤝💪 [人機互動](08-04-human_robot_interaction.zh-hant)（Human-Robot Interaction, HRI）
-* **8.5** 🦾🛡️🚨 [機器人安全與穩健性](08-05-robot_safety_and_robustness.zh-hant)（Robot Safety & Robustness）
-* **8.6** 🦾🧭🎯 [任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant)（Task & Goal Planning）
-
-***
-
-### 延伸內容
-
-* 🦾🚶‍♀️🤖 [具身智能與自駕車](08-06-embodied_ai_and_self_driving_cars.zh-hant)（Embodied Intelligence & Self-driving Cars）
-* 🤖🧠🕸️ [具身神經網路](08-07-embodied_neural_networks.zh-hant)（Embodied Neural Networks）
-* 🌐🔗🤖 [具身網路](08-08-embodied_internet.zh-hant)（Embodied Internet）
