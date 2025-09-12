@@ -65,13 +65,14 @@ title: 第參 🏛️「符號流」AI
 ## 👉 承先啟後
 
 讀者可以繼續：
-- 🚦探索 AI 5 大導向中的🏛️「符號流」AI 影響：
+- ⮤🚥回顧 [問題意識](01----problematics.zh-hant)，本章聚焦「符號流」AI 如何以顯式表示回應「理解」「框定」「對齊」等關鍵挑戰。 
+- ⮦🚦探索 [AI 5 大導向](05----ai_orientations.zh-hant) 中的🏛️「符號流」AI 影響：
 	- ☸🏛️ [知識導向](05-01-oriented_knowledge.zh-hant)
 		- 對比 ☸🌀 [數據導向](05-02-oriented_data.zh-hant)
 	- ☸🤖 [智能體／代理人導向](05-03-oriented_agent.zh-hant)
 	- ☸🛠 [任務導向型](05-04-oriented_task.zh-hant)
 	- ☸⚖️ [倫理／互動導向型](05-05-oriented_ethics.zh-hant)
-- 🚥對比 🎏🌀 [統計流](02-02-statistical_ai.zh-hant)人工智慧（Statistical AI）以下核心差異：
+- ⮦🚥對比 🎏🌀 [統計流](02-02-statistical_ai.zh-hant)人工智慧（Statistical AI）以下核心差異：
 	1. **因果推論**：🏛️⊨∴ [形式邏輯](03-01-formal_logic.zh-hant) 🆚  [機率性關聯](04-01-probabilistic_association.zh-hant) 🌀🎲🌿
 		*  **符號流**：基於**演繹**推理，透過明確的規則追求絕對的「因果關係」。
 		*  **統計流**：基於**歸納**推理，透過計算「機率性關聯」，不保證絕對因果。
