@@ -15,7 +15,7 @@ AI 系統的品質好壞，取決於**資料分析**（Data Analytics）與**決
 
 **資料分析**是透過檢視資料回答問題、辨識趨勢並萃取洞察的實踐，傳統上分為四大類型：**描述型、診斷型、預測型、指導型**。
 
-本章新增 **生成式 AI** 與 **決策演算法** 兩項條目，它們不只是獨立的分析類型，更是能強化四大傳統分析的「加速器」與「組合拳」。
+本章新增 **生成式 AI** 與 **決策演算法** 兩項條目，它們不只是獨立的分析類型，更是能強化四大傳統分析的「組合拳」（combo skills），構成分析決策創新的「加速器」。
 
 | 分析類型          | 功能與目的                    | 生成式 AI 的強化作用                                                          |
 | ------------- | ------------------------ | --------------------------------------------------------------------- |
@@ -44,26 +44,28 @@ AI 系統的品質好壞，取決於**資料分析**（Data Analytics）與**決
 
 ## 🪴 內容大綱
 
+本章自創的「四大分析類型加二」的分類，不但整合傳統「資料科學」與「商業分析」的從「描述、診斷、預測到指導型」分析的全鏈路能力，還把新興的「生成式 AI」與「決策演算法」進行有效整合，形成「組合拳」（combo skills）。這套「數據—可行動情報—決策」綜合能力，幫助讀者依不同情境設計高效的「數據驅動決策」流程，助力從資料洞察到行動落地的創新「加速器」，並維持決策分析能持續價值對齊。
+
 ### 🌰 核心條目內容
 
-* **6.1** 🟡😷🩺 [診斷型分析](06-01-analysis_diagnostic.zh-hant)（Diagnostic Analysis）  
-  - 探索事件發生的原因與資料間的關聯性，支撐異常檢測與因果推斷。  
-  - 廣泛應用於醫療診斷、製程優化與風險分析等領域。
-* **6.2** 🟠🤠🔮 [預測型分析](06-02-analysis_predictive.zh-hant)（Predictive Analysis）  
-  - 利用統計與機器學習模型預測未來結果。  
-  - 應用於需求預測、金融風險管理與氣候變遷模擬等場景。
-* **6.3** 🔴🧐🧭 [指導型分析](06-03-analysis_prescriptive.zh-hant)（Prescriptive Analysis）  
-  - 根據預測結果提出最佳行動建議與策略優化方案。  
-  - 支援供應鏈調度、能源分配與政策制定等決策場景。
-* **6.4** 🔵🤓📘 [描述型分析](06-04-analysis_descriptive.zh-hant)（Descriptive Analysis）  
-  - 分析歷史資料以找出趨勢與模式，回答「發生了什麼」。  
-  - 常用於商業報告、營運監控與績效評估。
-* **6.5** 🟣🙀🎨 [生成式 AI](06-05-analysis_generative.zh-hant)（Generative AI）  
-  - 根據學習模式創造新內容或資料，強化分析與決策流程。  
-  - 應用於合成資料生成、情境模擬與自動化報告撰寫。
-* **6.6** 🔁😽🪄 [決策演算法](06-06-decision_making_algorithm.zh-hant)（Decision-making Algorithm）  
-  - 模擬人類決策行為，將分析洞察轉化為可執行行動。  
-  - 涉及規則引擎、強化學習與多目標優化等技術。
+- **6.1** 🟡😷🩺 [診斷型分析](https://copilot.microsoft.com/chats/06-01-analysis_diagnostic.zh-hant)（Diagnostic Analysis）
+    - 回答「為什麼會發生」，透過探索事件成因與資料間的關聯性，支撐異常檢測與因果推斷。
+    - 廣泛應用於醫療診斷、製程優化與風險分析等領域。
+- **6.2** 🟠🤠🔮 [預測型分析](https://copilot.microsoft.com/chats/06-02-analysis_predictive.zh-hant)（Predictive Analysis）
+    - 回答「未來會發生什麼」，利用統計與機器學習模型推測可能結果與趨勢。
+    - 應用於需求預測、金融風險管理與氣候變遷模擬等場景。
+- **6.3** 🔴🧐🧭 [指導型分析](https://copilot.microsoft.com/chats/06-03-analysis_prescriptive.zh-hant)（Prescriptive Analysis）
+    - 回答「我們該怎麼做」，根據預測結果提出最佳行動建議與策略優化方案。
+    - 支援供應鏈調度、能源分配與政策制定等決策場景。
+- **6.4** 🔵🤓📘 [描述型分析](https://copilot.microsoft.com/chats/06-04-analysis_descriptive.zh-hant)（Descriptive Analysis）
+    - 回答「發生了什麼」「是什麼」，基於歷史或現況資料分析找出趨勢與模式。
+    - 常用於商業報告、營運監控與績效評估。
+- **6.5** 🟣🙀🎨 [生成式 AI](https://copilot.microsoft.com/chats/06-05-analysis_generative.zh-hant)（Generative AI）
+    - 回答「我們可以創造什麼」，根據學習模式生成新內容或資料以強化分析與決策流程。
+    - 應用於合成資料生成、情境模擬與自動化報告撰寫。
+- **6.6** 🔁😽🪄 [決策演算法](https://copilot.microsoft.com/chats/06-06-decision_making_algorithm.zh-hant)（Decision-making Algorithm）
+    - 回答「我們如何決策」，模擬人類決策行為並將分析洞察轉化為可執行行動。
+    - 涉及規則引擎、強化學習與多目標優化等技術。
 
 ***
 
