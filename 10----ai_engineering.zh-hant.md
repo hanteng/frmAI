@@ -59,42 +59,42 @@ AI 工程的目標是確保 AI 系統在現實世界中能夠穩定、高效地�
 
 ## 🪴 內容大綱
 
-本章聚焦以 [LLM](02-07-large_language_models.zh-hant) 為基底（包括其[聊天機器人](04-02-llm_chatbots.zh-hant)、[網組合](04-06-llm_webassembly.zh-hant.md)）的 AI 工程，精選環環相扣的知識模塊，構成「端到端」的**全鏈路描述**。旨在幫助讀者理解「需求 ➾ 設計 ➾ 實作 ➾ 驗證 ➾ 優化」的綜合工程與產品管理能力，並在「模型作為生產要素」的視野下，掌握 LLM 從開發、部署到運維的完整**生命週期**。
+本章聚焦以 [LLM](02-07-large_language_models.zh-hant) 為基底（包括其[聊天機器人](04-02-llm_chatbots.zh-hant)、[網組合](04-06-llm_webassembly.zh-hant)）的 AI 工程，精選環環相扣的知識模塊，構成「端到端」的**全鏈路描述**。旨在幫助讀者理解「需求 ➾ 設計 ➾ 實作 ➾ 驗證 ➾ 優化」的綜合工程與產品管理能力，並在「模型作為生產要素」的視野下，掌握 LLM 從開發、部署到運維的完整**生命週期**。
 
 結合**智能系統**全鏈路與**模型**生命週期，無論是 AI 技術工程師還是 [AI 產品經理](10-06-AI_PM.zh-hant)，都能在跨領域與跨專業協作中形成協同增效的團隊力量，依不同應用場景構建高效且自適應的 AI 解決方案，既加速從概念驗證到規模化落地，又確保**系統創新**依實際需求持續創造價值。
 
-本章內容深入淺出地串連 AI [㉄ 問題意識](01----problematics.zh-hant) → [☸ 導向](05----ai_orientations.zh-hant) → [🔷 分析與決策](06----ai_analytic_form_decision.zh-hant) → [脈絡工程](10-05-context_engineering.zh-hant) 等多條主題線路，協助讀者在此基礎上發展出適合自身的「AI 工程全鏈路能力」框架，並構建可融會貫通的[知識鷹架](notes-action.zh-hant)，形成個人的框智格局。
+本章內容深入淺出地串連 AI [㉄ 問題意識](01----problematics.zh-hant) → [☸ 導向](05----ai_orientations.zh-hant) → [🔷 分析與決策](06----analytics_decisions.zh-hant) → [脈絡工程](10-05-context_engineering.zh-hant) 等多條主題線路，協助讀者在此基礎上發展出適合自身的「AI 工程全鏈路能力」框架，並構建可融會貫通的[知識鷹架](notes-action.zh-hant)，形成個人的框智格局。
 
 ***
 
 ### 🌰 核心條目內容
 
-* **10.1** 🌉🔗🔐 [API 與 MCP](10-01-API_MCP.zh-hant.md)（API / MCP）  
+* **10.1** 🌉🔗🔐 [API 與 MCP](@sec-api-mcp)（API / MCP）  
   - 模組化 🧩 與可互操作性 🚀 的核心實踐。  
   - 提供 AI 系統間的標準化溝通與協作框架，確保不同模組能安全高效地互通。  
   - 是構建可擴展、可組合、可互操作、多工具協作 AI 生態的基礎設施。
 
-* **10.2** 🌉🤖🚨 [智能體可靠性與評估](10-02-agent_reliability_evaluation.zh-hant.md)（Agent Reliability & Evaluation）  
+* **10.2** 🌉🤖🚨 [智能體可靠性與評估](10-02-agent_reliability_evaluation.zh-hant)（Agent Reliability & Evaluation）  
   - 智能體設計 🤖 的評估框架。  
   - 建立衡量 AI 智能體穩定性、安全性與對齊性的多維指標。  
   - 從測試到部署全流程提供可靠性保障，支撐風險控制管理。
 
-* **10.3** 🌉🛠️💡 [提示工程](10-03-prompt_engineering.zh-hant.md)（Prompt Engineering）  
+* **10.3** 🌉🛠️💡 [提示工程](10-03-prompt_engineering.zh-hant)（Prompt Engineering）  
   - 引導 [LLM](02-07-large_language_models.zh-hant) 生成符合需求的高品質輸出，透過精心設計的提示。  
   - 連結「使用者意圖」與「模型能力」的關鍵橋樑。  
   - 將引導流程工程化、系統化，提升可重複性與可控性。
 
-* **10.4** 🌉🔗📝 [知識驅動生成（RAG）](10-04-retrieval_augmented_generation.zh-hant.md)（Retrieval-Augmented Generation）  
+* **10.4** 🌉🔗📝 [知識驅動生成（RAG）](10-04-retrieval_augmented_generation.zh-hant)（Retrieval-Augmented Generation）  
   - 檢索 🔍 與生成 🧞‍♀️ 的整合應用。  
   - 將外部知識檢索與生成模型結合，提升輸出的準確性與可追溯性。  
   - 將**檢索**與**生成**工程化、系統化，支援即時完成專業知識的複雜任務。
 
-* **10.5** 🌉🛣🌐 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering）  
+* **10.5** 🌉🛣🌐 [脈絡工程](10-05-context_engineering.zh-hant)（Context Engineering）  
   - 脈絡感知 🛣️ 的設計原則與工程化運用。  
   - 系統化管理與優化使用者意圖與上下文脈絡資訊。  
   - 支援多模態、多來源資料的融合理解與安全控制。
 
-* **10.6** 🎁🚀🌱 [AI 產品管理](10-06-AI_PM.zh-hant.md)（AI Product Management）  
+* **10.6** 🎁🚀🌱 [AI 產品管理](10-06-AI_PM.zh-hant)（AI Product Management）  
   - 產品價值化 🎁 的實踐路徑。  
   - 將 AI 技術成果轉化為符合市場與使用者需求的產品。
   - 平衡技術創新、商業價值與倫理合規。
@@ -143,10 +143,10 @@ AI 工程涵蓋從系統設計、模型開發、部署到運維的全生命週�
   - 在全球化市場中，設計能適應不同語言、文化與法規的 AI 系統，確保產品在多元環境下的可用性與合規性。  
   - 例如跨國客服平台結合多語言 NLP、情感分析與在地化知識庫，提升用戶體驗並促進市場滲透。
 - 🌏♟🎮 **全球與中等強權的智能國師**  
-  - 如何運用[脈絡工程](10-05-context_engineering.zh-hant.md) 打造「上知天文，下知地理，且能洞齊時勢，經世濟民」的綜合專家智能體（Mixture of Experts）的智能國師？  
+  - 如何運用[脈絡工程](10-05-context_engineering.zh-hant) 打造「上知天文，下知地理，且能洞齊時勢，經世濟民」的綜合專家智能體（Mixture of Experts）的智能國師？  
     - 為中美全球強權，要如何挑選能夠橫跨海權、陸權、地緣戰略、國際政治經濟與現代戰略思維的關鍵人物？亨利·季辛吉（Henry Kissinger）、李光耀（Lee Kuan Yew）、喬治·凱南（George F. Kennan）、阿爾弗雷德·馬漢（Alfred Thayer Mahan）、哈爾福德·麥金德（Halford Mackinder）、卡爾·馮·克勞塞維茨（Carl von Clausewitz）、秋山真之（Akiyama Saneyuki）、尼古洛·馬基維利（Niccolò Machiavelli）等等？  
     - 為中等強權（如日本、德國、土耳其、印度、澳洲等），要如何構建有效的貿易網絡、關鍵供應鏈韌性、及軍民兩用科技樹發展策略？
 - ⚡🌱🧮 **能源組合與氣候變遷博弈軍師**  
-  - 如何運用[脈絡工程](10-05-context_engineering.zh-hant.md) 打造「上知天文，下知地理，且能洞齊時勢，經世濟民」的綜合專家智能體（Mixture of Experts）的智能博弈軍師，在企業或政府面對的能源組合與氣候變遷賽局中持續勝出？  
+  - 如何運用[脈絡工程](10-05-context_engineering.zh-hant) 打造「上知天文，下知地理，且能洞齊時勢，經世濟民」的綜合專家智能體（Mixture of Experts）的智能博弈軍師，在企業或政府面對的能源組合與氣候變遷賽局中持續勝出？  
     - 為**特定國家**的產業結構、能源組合、與地緣政治格局進行把脈會診後，要如何能產出具體可行、掌握不確定性的發展路徑分析、預測、及建議？  
     - 為**特定產業**的財務結構、能源組合定位、與地緣政治脈絡進行把脈會診後，要如何能產出具體可行、掌握不確定性的發展路徑分析、預測、及建議？
