@@ -9,6 +9,7 @@ tags:
 - 強化學習
 - 預測分析
 - 自然語言處理
+- 馬可夫決策過程
 ---
 `馬可夫模型`（Markov Modeling）是種「**機率式的**」 （probabilistic）「**無記憶性**」（memoryless）的**序列建模** （Sequence Modeling），以便高效處理序列數據。馬可夫模型適用於諸多領域的建模，如**核能**、**通訊編碼**、**自然語言**、**情感分析**、以及許多領域中的**時間序列預測**（Time Series Forecasting）。為了應對有效理解和預測一系列數據點之間的依賴關係，馬可夫模型捕捉此序列性的是**馬可夫假設** (Markov Assumption)，假定在一個序列中，當前的狀態僅僅取決於前一個（或前幾個）狀態，而與更早的狀態無關。這無記憶性假設使得馬可夫模型在數學建模與計算上具有高度簡潔性與可解析性。
 
@@ -122,4 +123,4 @@ $$
 
 作為一種驅動序列推斷與決策的 **[框架思維](01-04-Frame_Problem.zh-hant)**，`馬可夫模型` 能將系統的動態行為抽象為狀態與轉移機率，廣泛應用於[任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant)等領域。其「可解釋性」由狀態轉移矩陣與平穩分佈體現，而「預測能力」則源於對未來狀態分佈的估計及模擬。
 
-在 AI 領域內，馬可夫模型既可作為[指導型分析](06-03-analysis_prescriptive.zh-hant)的基礎工具，也可與[智能體／代理人導向](05-03-oriented_agent.zh-hant) 、[任務導向](05-04-oriented_task.zh-hant) 方法結合，構建高效的決策系統。同時，因其依賴數據驅動的轉移估計與假設，在設計或應用時需思量，需要思量 [倫理／互動導向](05-05-oriented_ethics.zh-hant) 及 [知識導向](05-01-oriented_knowledge.zh-hant)，以確保模型假設合理、數據來源合規，並支援 [AI 對齊與控制問題](01-06-AI_Alignment_Control_Problem.zh-hant) 的有效及合理應對。
+在 AI 領域內，馬可夫模型既可作為[指導型分析](06-03-analysis_prescriptive.zh-hant)的基礎工具，也可與[智能體／代理人導向](05-03-oriented_agent.zh-hant) 、[任務導向](05-04-oriented_task.zh-hant) 方法結合，構建高效的決策系統。同時，因其依賴數據驅動的轉移估計與假設，在設計或應用時需思量，需要思量 [倫理／互動導向](05-05-oriented_ethics.zh-hant) 及 [知識導向](05-01-oriented_knowledge.zh-hant)，以確保模型假設合理、數據來源合規，並支援 [AI 對齊與控制問題](01-06-Alignment_Control_Problem.zh-hant.md) 的有效及合理應對。
