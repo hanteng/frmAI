@@ -2,6 +2,7 @@
 title: "🔮🕸️ 貝氏網路"
 tags:
   - 貝氏統計
+  - 貝氏推斷
   - 有向無環圖
   - 機率圖形模型
   - 因果推論
@@ -123,9 +124,9 @@ $$
 
 這種分解大大簡化了大規模聯合機率分佈的表示和計算。
 
-#### 🧐 推論：
+#### 🧐 貝氏推斷
 
-貝氏網路的強大之處在於能進行有效的推論（Inference），即根據觀察到的證據（Evidence）來計算其他未觀察變數的機率分佈的後驗機率（Posterior Probability）。常見的推論演算法包括：
+貝氏網路的強大之處在於能進行有效的推論（Inference）稱`貝氏推斷`，即根據觀察到的證據（Evidence）來計算其他未觀察變數的機率分佈的後驗機率（Posterior Probability）。常見的推論演算法包括：
 
 -   **精確推論**：如祖先取樣（Junction Tree algorithm）。
 -   **近似推論**：如馬可夫鏈蒙地卡羅（MCMC）方法（例如 Metropolis-Hastings, Gibbs sampling）和變分推論（Variational Inference）。
