@@ -13,7 +13,7 @@ tags:
 ---
 `IEEE電子老鼠走迷宮`（IEEE Micromouse）是一項國際性的機器人競賽，參賽者需設計一隻「電子老鼠」小型機器人，使其能在一個複雜且未知的迷宮中，從起點出發，自主探索並找到中心點，最終再以最快的速度循著最短路徑回到終點。
 
-電子老鼠競賽是 **[具身派 AI](08***-embodied_ai.zh-hant.md)**（Embodied AI）與 **物理 AI**（Physical AI）的經典範例，它在**未知的物理環境**中，執行「感知、決策、行動」的完整循環，考驗機器人硬體與其核心**演算法**和**自動導航**的智慧，考量[機器人安全與穩健性](08-05-robot_safety_and_robustness.zh-hant) 與 [任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant)。
+電子老鼠競賽是 **[具身派 AI](08----embodied_ai.zh-hant)**（Embodied AI）與 **物理 AI**（Physical AI）的經典範例，它在**未知的物理環境**中，執行「感知、決策、行動」的完整循環，考驗機器人硬體與其核心**演算法**和**自動導航**的智慧，考量[機器人安全與穩健性](08-05-robot_safety_and_robustness.zh-hant) 與 [任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant)。
 
 ## 🐭🗺️ 競賽挑戰與歷史
 
@@ -95,4 +95,4 @@ IEEE 電子老鼠競賽展示了 AI 在物理世界中的應用潛力，也體�
 
 ### 👉 下一部分
 
-在理解**電子老鼠**如何在物理迷宮中自主感知探索導航，而且理解為何該競賽更像是體現 **[具身派 AI](08***-embodied_ai.zh-hant.md)**（Embodied AI）或 **物理 AI**（Physical AI），也算是「博弈派」AI 中的**非對抗型博弈**，接下來我們將認識 [Atari DQN](07-02-atari_dqn.zh-hant.md)（Atari DQN），看 AI 如何從抽象的像素中學習，完成包括非對抗型博弈與**對抗型博弈**的數位遊戲。
+在理解**電子老鼠**如何在物理迷宮中自主感知探索導航，而且理解為何該競賽更像是體現 **[具身派 AI](08----embodied_ai.zh-hant)**（Embodied AI）或 **物理 AI**（Physical AI），也算是「博弈派」AI 中的**非對抗型博弈**，接下來我們將認識 [Atari DQN](07-02-atari_dqn.zh-hant.md)（Atari DQN），看 AI 如何從抽象的像素中學習，完成包括非對抗型博弈與**對抗型博弈**的數位遊戲。
