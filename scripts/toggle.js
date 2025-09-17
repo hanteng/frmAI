@@ -1,6 +1,6 @@
 (function () {
   const bankers = ["", "壹","貳","參","肆","伍","陸","柒","捌","玖","拾"];
-  //,"拾壹","拾貳","拾參","拾肆","拾伍","拾陸","拾柒","拾捌","拾玖","貳拾"
+  //
   function toBankers(n) {
     return bankers[n] || String(n);
   }
@@ -16,6 +16,10 @@
     }
   }
 
+  // NEW: allow only files starting with 01- … 10-
+  const allowRe = /^(?:0[1-9]|10)-/;
+  const fileFromHref = (href) => (href || "").split("#")[0].split("?")[0].split("/").pop() || "";
+
   // Update LEFT TOC and return current part/chapter numbers
   function updateLeftSidebar(mode) {
     const partSections = Array.from(document.querySelectorAll(".sidebar .sidebar-item-section"));
@@ -27,7 +31,21 @@
     const activeLink = document.querySelector(".sidebar .sidebar-link.active");
 
     for (const partEl of partSections) {
+      // Gate the entire section: it counts as a "Part" only if its header link
+      // OR any child chapter link starts with 01–10.
+      const headerLink = partEl.querySelector(".sidebar-item-text .sidebar-link");
+      const headerFile = fileFromHref(headerLink?.getAttribute("href") || "");
+      let sectionAllowed = allowRe.test(headerFile);
+
+      if (!sectionAllowed) {
+        sectionAllowed = Array.from(partEl.querySelectorAll(".sidebar-section .sidebar-link"))
+          .some(a => allowRe.test(fileFromHref(a.getAttribute("href") || "")));
+      }
+      if (!sectionAllowed) continue; // skip this section entirely
+
+      // This section is a numbered Part
       partIndex += 1;
+
       const partText = partEl.querySelector(".sidebar-item-text .menu-text");
       if (partText) {
         cacheOriginal(partText);
@@ -41,9 +59,14 @@
       const chapterItems = partEl.querySelectorAll(".sidebar-section .sidebar-item");
       for (const li of chapterItems) {
         if (li.classList.contains("unlisted") || li.classList.contains("unnumbered")) continue;
+
         const link = li.querySelector(".sidebar-link");
         const textSpan = li.querySelector(".menu-text") || link;
-        if (!textSpan) continue;
+        if (!link || !textSpan) continue;
+
+        const chapFile = fileFromHref(link.getAttribute("href") || "");
+        if (!allowRe.test(chapFile)) continue; // only number allowed chapters
+
         cacheOriginal(textSpan);
         const base = stripLeadingNumber(textSpan.dataset.originalLabel);
 
@@ -69,7 +92,7 @@
     const partHeading = document.querySelector("h1.part");
     const chapterHeading = document.querySelector("h1.title");
 
-    if (partHeading) {
+    if (partHeading && partNum != null) {
       cacheOriginal(partHeading);
       const base = stripLeadingNumber(partHeading.dataset.originalLabel);
       partHeading.textContent = mode === "legal"
@@ -77,7 +100,7 @@
         : `${partNum} ${base}`;
     }
 
-    if (chapterHeading) {
+    if (chapterHeading && partNum != null && chapterNum != null) {
       const numSpan = chapterHeading.querySelector(".chapter-number");
       const titleSpan = chapterHeading.querySelector(".chapter-title");
       if (numSpan && titleSpan) {
