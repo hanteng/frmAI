@@ -8,29 +8,22 @@ label: app-mindmap
 
 ```{mermaid}
 graph LR
-  Situatedism[🏮情境+脈絡主義]
+
   ROOT[📚 AI 知識地圖]
-
-  C7g --> C10
-  C8f --> C10
-  C4f --> C10
-
-  %% 筆記
-  NOTES[📑 筆記]
-  ROOT --> NOTES
-  NOTES1[🪜 知識鷹架]
-  NOTES2[🪜👨‍👩‍👧‍👦 〜家長篇~傳承]
-  NOTES3[🪜🧘 〜自學篇~紥根]
-  NOTES --> NOTES1
-  NOTES --> NOTES2
-  NOTES --> NOTES3
-  click NOTES1 "notes-action.zh-hant.html"
-  click NOTES2 "notes-action_for_parents.zh-hant.html"
-  click NOTES3 "notes-action_for_learners.zh-hant.html"
-
+  ROOT --> INTRO
+  ROOT --> C1
+   
+  
+%% 前後 C2 C5 .. C9 Math
+  %% 導論
+  INTRO[💬 導論]
+  INTRO1[🧠 心智能力 🐸🐘🧘]
+  INTRO2[🧠🧞‍♀️ 〜語言賽局腦補機]
+  INTRO --> INTRO1 & INTRO2 --> SysThk
+  click INTRO1 "notes-mind.zh-hant.html"
+  click INTRO2 "hypothesis-mental_fill-in.zh-hant.html"
   %% 第壹章
   C1[第壹章 ㉄ AI 問題意識]
-  ROOT --> C1
   C1a[1.1 🎭🗪 圖靈測試]
   C1b[1.2 🧱🗣️ 中文房間]
   C1c[1.3 🔤㊙️ 符碼紮根問題]
@@ -47,12 +40,26 @@ graph LR
   click C1e "01-05-Gestalt_Psychology.zh-hant.html"
   click C1f "01-06-Alignment_Control_Problem.zh-hant.html"
   click C1g "01-07-Language_Games.zh-hant.html"
+  %% 筆記
+  NOTES[📑 筆記]
+  ROOT --> NOTES
+  NOTES1[🪜 知識鷹架]
+  NOTES2[🪜👨‍👩‍👧‍👦 〜家長篇~傳承]
+  NOTES3[🪜🧘 〜自學篇~紥根]
+  NOTES --> NOTES1
+  NOTES --> NOTES2
+  NOTES --> NOTES3
+  click NOTES1 "notes-action.zh-hant.html"
+  click NOTES2 "notes-action_for_parents.zh-hant.html"
+  click NOTES3 "notes-action_for_learners.zh-hant.html"
 
+  %% Extra Anchor 前中 系統創新
+  C1a & C1b & C1c & C1d & C1e & C1f & C1g -->   SysThk[應對系統思維]
+  SysThk[應對<br/>系統<br/>思維]
 
-
+%% ---------------
   %% 第貳章
   C2[第貳章 🎏🏮 流派與主義]
-SysThk --> C2
   C2a[2.1 🎏🏛️ 符號流／邏輯主義]
   C2b[2.2 🎏🌀 統計流]
   C2c[2.3 🎏🧠 神經－符號合流]
@@ -69,11 +76,97 @@ SysThk --> C2
   click C2f "02-06-behaviorism.zh-hant.html"
   click C2g "02-07-large_language_models.zh-hant.html"
 
-  C5 -.-> C5a -.-> C3
+  %% 第伍章
+  C5[/第伍章 ☸ 區分 AI 5 大導向/]
+  C5a[/5.1 ☸🏛️ 知識導向/]
+  C5b[/5.2 ☸🌀 數據導向/]
+  C5c[/5.3 ☸🤖 智能體／代理人導向/]
+  C5d[/5.4 ☸🛠 任務導向/]
+  C5e[/5.5 ☸⚖️ 倫理／互動導向/]
+  click C5 "05----ai_orientations.zh-hant.html"
+  click C5a "05-01-oriented_knowledge.zh-hant.html"
+  click C5b "05-02-oriented_data.zh-hant.html"
+  click C5c "05-03-oriented_agent.zh-hant.html"
+  click C5d "05-04-oriented_task.zh-hant.html"
+  click C5e "05-05-oriented_ethics.zh-hant.html"
+
+
+  %% 上至中至下
+  %% ------>C2 C5 transitions--------
+  SysThk --> C2
+  SysThk --> C5
+  NOTES1 --> SysThk
+
+  %% -------C2 C5 transitions-->-----
+  %% 上上
+  %% C3「符號流」
+  %% 知識導向 --「符號流」
+  C2 --> C2a --> C3
+  C5 --> C5a -.-> C3
+    %% Math[數學]=C9 上
+    C3a -.-> C9
+
+  %% AGI 
+  C2 ---> C2d 
+  %%C2g --> C4b
+
+  %% C5 ~~~ C2a
+
+    %% C8 具身派
+  %% 🏮情境+脈絡主義 
+  %% 第貳章 中 連結主義 🏮💪 行為主義
+  C2 --> C2e & C2f 
+  Situatedism([🏮情境+脈絡主義])
+  C2 --> Situatedism
+  %% Extra 第貳章 中 8..6..7
+  %% 5.3 ☸🤖 智能體／代理人導向
+
+  C5 --> C5c -.-> C8 
+  Situatedism ==> C8
+  C5 -.-> C5d & C5e 
+
+  %% 大語言模型
+  C2b & C2e & C2f -.-> C2g
+
+
+
+  %% 神經－符號合流
+  C2f & C2e ---> C2c -.-> C3e & C4e
+  %%C2f & C2b -.-> C2c
+  %% 神經－符號合流 Math Anchors
+  %%C2c --> C3a & C4a 
+
+      %% C6
+      Situatedism -.-> C6
+      C5d & C5e-.-> C6
+      %% C6 ❖ 分析與決策
+      C6 ===> C6e ===> C6f
+      C6 ==> C6d ==> C6a ==> C6b ==> C6c ==> C6f
+
+    %% C7 博弈派 
+  %% C5c -.-> C7
+  Situatedism ==> C7
+  
+  %% C4「統計流」
+
+  %% 下下
+  C2 --> C2b --> C4
+  C5 --> C5b -.-> C4
+
+
+
+
+
+
+
+  %% 大語言模型
+  C2g-.-> C6e
+
+
+
+  %% [[上]]
   %% 第參章
-  C2 --> C2a 
-  C3[第參章 🏛️ 「符號流」AI]
-  C2a --> C3
+  C3{{第參章 🏛️ 「符號流」AI}}
   C3a[3.1 🏛️⊨∴ 形式邏輯]
   C3b[3.2 🏛️🤖💬 自動對話系統]
   C3c[3.3 🏛️🎁🧠 專家系統]
@@ -81,55 +174,135 @@ SysThk --> C2
   C3e[3.5 🏛️🕸💡 知識圖譜]
   C3f[3.6 🏛️🌐🔗 語意網]
   C3g[3.7 🏛️🌌🗺️ 本體論]
-  C3 --> C3d --> C3e --> C3g --> C3f --> C10
-  C3 --> C3a --> C3b --> C3c --> C10
+  C3 --> C3a --> C3b ---> C3c 
+  C3a --> C3d --> C3e --> C3g --> C3f 
   click C3 "03----symbolic_ai.zh-hant.html"
   click C3a "03-01-formal_logic.zh-hant.html"
   click C3b "03-02-automatic_dialogue_systems.zh-hant.html"
   click C3c "03-03-expert_systems.zh-hant.html"
   click C3d "03-04-knowledge_representation.zh-hant.html"
-  click C3e "03-04-knowledge_representation.zh-hant.html"
+  click C3e "03-05-knowledge_graph.zh-hant.html"
   click C3f "03-06-semantic_web.zh-hant.html"
   click C3g "03-07-ontology.zh-hant.html"
 
-  %% 第貳章 中 
+%% 第捌章
+  C8{{第捌章 🦾 「具身派」AI}}
+  C8a>8.1 🦾🎬🔋 機器人學與實體驅動]
+  C8b>8.2 🦾📡🌡️ 感知與環境]
+  C8c>8.3 🦾🔄🖼️ 自適應機器人]
+  C8d>8.4 🦾🤝💪 人機互動]
+  C8e>8.5 🦾🛡️🚨 機器人安全與穩健性]
+  C8f>8.6 🦾🧭🎯 任務與目標規劃]
+  C8 -.-> C8a & C8b -.-> C8c 
+  C8c -.-> C8d -.-> C8e -.-> C8f
+  click C8 "08----embodied_ai.zh-hant.html"
+  click C8a "08-01-robotics_and_physical_actuation.zh-hant.html"
+  click C8b "08-02-perception_and_environment.zh-hant.html"
+  click C8c "08-03-adaptive_robotics.zh-hant.html"
+  click C8d "08-04-human_robot_interaction.zh-hant.html"
+  click C8e "08-05-robot_safety_and_robustness.zh-hant.html"
+  click C8f "08-06-robot_tasks_and_goals.zh-hant.html"
 
-  C2c --> SysInn
-  C2 --> C2e & C2f
+  %% 横中 第陸章 ❖ 分析與決策
+  %% 第陸章
+  C6@{ shape: notch-rect, label: "第陸章 ❖ 分析與決策 6 點" }
+  %% SysThk --> C6
+  C6a[[6.1 🟡😷🩺 診斷型分析]]
+  C6b[[6.2 🟠🤠🔮 預測型分析]]
+  C6c[[6.3 🔴🧐🧭 指導型分析]]
+  C6d[[6.4 🔵🤓📘 描述型分析]]
+  C6e[[6.5 🟣🙀🎨 生成式 AI]]
+  C6f[[6.6 🔁😽🪄 決策演算法]]
+  click C6 "06----analytics_decisions.zh-hant.html"
+  click C6a "06-01-analysis_diagnostic.zh-hant.html"
+  click C6b "06-02-analysis_predictive.zh-hant.html"
+  click C6c "06-03-analysis_prescriptive.zh-hant.html"
+  click C6d "06-04-analysis_descriptive.zh-hant.html"
+  click C6e "06-05-analysis_generative.zh-hant.html"
+  click C6f "06-06-decision_making_algorithm.zh-hant.html"
 
-  %% 第貳章 中
-  C2 --> Situatedism
-  C5 -.-> C5c 
+  %% 第玖章
+  C9(第玖章 📐 AI用到的數學)
+  C9a(9.1 🤝🚿 協同過濾)
+  C9b(9.2 📉⛰️ 最陡下降法)
+  C9c(9.3 🔮🕸️ 貝氏網路)
+  C9d(9.4 🧹🧩 稀疏建模)
+  C9e(9.5 ⛓️🔄 馬可夫模型)
+  C9f(9.6 🌲🧭 蒙地卡羅樹搜尋)
+  C9g(9.7 🧠⚡ 赫布學習論)
+  C9h(9.8 🧮💰 多智能體報酬矩陣)
+  C9 --> C9a --> C9d --> C9f
+  C9 --> C9b --> C9g
+  C9 --> C9e --> C9c --> C9h
+  click C9 "09----ai_math.zh-hant.html"
+  click C9a "09-01-collaborative_filtering.zh-hant.html"
+  click C9b "09-02-steepest_descent_method.zh-hant.html"
+  click C9c "09-03-bayesian_network.zh-hant.html"
+  click C9d "09-04-sparse_modeling.zh-hant.html"
+  click C9e "09-05-markov_modeling.zh-hant.html"
+  click C9f "09-06-monte_carlo_tree_search.zh-hant.html"
+  click C9g "09-07-hebb_rule.zh-hant.html"
+  click C9h "09-08-multi_agent_payoff_matrix.zh-hant.html"
 
-
-
-  Math[數學]
-  C3a -.-> Math
-  C4a -.-> Math
-
-  %% 導論
-  INTRO[💬 導論]
-  ROOT --> INTRO
-  INTRO1[🧠 心智能力 🐸🐘🧘]
-  INTRO2[🧠🧞‍♀️ 〜語言賽局腦補機]
-  INTRO --> INTRO1 & INTRO2 --> SysThk
-  click INTRO1 "notes-mind.zh-hant.html"
-  click INTRO2 "hypothesis-mental_fill-in.zh-hant.html"
  
-C1a & C1b & C1c & C1d & C1e & C1f & C1g -->   SysThk[應對系統思維]
-SysThk[應對<br/>系統<br/>思維]
+  %% 第柒章
+  C7{{第柒章 🏆 「博弈派」AI}}
+  C7a>7.1 🏆🐭🗺️ IEEE電子老鼠走迷宮]
+  C7b>7.2 🏆🕹️👾 Atari DQN]
+  C7c>7.3 🏆⚪⚫ AlphaGo 圍棋]
+  C7d>7.4 🏆🃏💰 撲克 AI]
+  C7e>7.5 🏆🧙‍♂🥷 OpenAI Five]
+  C7f>7.6 🏆🐺🧑‍🌾 狼人殺 AI]
+  C7g>7.7 🏆🪖⚔️ 戰場模擬]
+  C7 ---> C7a -.-> C7b -.-> C7c -.-> C7d 
+  C7a -.-> C7e -.-> C7f -.-> C7g 
+  click C7 "07----game_ai.zh-hant.html"
+  click C7a "07-01-ieee_micromouse.zh-hant.html"
+  click C7b "07-02-atari_dqn.zh-hant.html"
+  click C7c "07-03-alphago.zh-hant.html"
+  click C7d "07-04-poker_ai.zh-hant.html"
+  click C7e "07-05-openai_five.zh-hant.html"
+  click C7f "07-06-werewolf_ai.zh-hant.html"
+  click C7g "07-07-battlefield_simulation.zh-hant.html"
 
-C2a & C2e & C2f --> C2c
+
+  %% Math[數學]=C9 下
+  C4a -.-> C9
+
+  %% 第肆章
+  C4{{第肆章 🌀 「統計流」AI}}
+  C4a[4.1 🌀🎲🌿 機率性關聯]
+  C4b[4.2 🌀🧞‍♀️🗪 LLM聊天機器人]
+  C4c[4.3 🌀🪢🧠 神經網路]
+  C4d[4.4 🌀🛠️🤏 特徵工程]
+  C4e[4.5 🌀🤖📦 機器學習模型]
+  C4f[4.6 🌀🌐🔗 大語言模型網組合]
+  C4g[4.7 🌀🌌▦ 向量空間]
+  C4 --> C4a --> C4b --> C4c 
+  C4 --> C4d --> C4e --> C4g --> C4f 
+  click C4 "04----statistical_ai.zh-hant.html"
+  click C4a "04-01-probabilistic_association.zh-hant.html"
+  click C4b "04-02-llm_chatbots.zh-hant.html"
+  click C4c "04-03-neural_networks.zh-hant.html"
+  click C4d "04-04-feature_engineering.zh-hant.html"
+  click C4e "04-05-machine_learning_models.zh-hant.html"
+  click C4f "04-06-llm_webassembly.zh-hant.html"
+  click C4g "04-07-vector_space.zh-hant.html"
 
 
-  SysInn[系統創新]
-
-  C7 --> SysInn
-  C8 --> SysInn
-  C6f --> C10
+  %% 第拾章 收尾
+  C3c & C3f --> C10
+  C8f --> C10
+    %% 横中尾 第陸章 ❖ 分析與決策    
+    C9f & C9g & C9h --> C10
+    C6f --> C10
+  C7d & C7g --> C10
+  C4c --> C10
+  C4f --> C10
+  %% ---------------
+  
   %% 第拾章
   C10[第拾章 🌉 AI工程]
-SysInn --> C10
 
   C10a[10.1 🌉🔗🔐 API與MCP]
   C10b[10.2 🌉🤖🚨 智能體可靠性與評估]
@@ -145,149 +318,5 @@ SysInn --> C10
   click C10d "10-04-retrieval_augmented_generation.zh-hant.html"
   click C10e "10-05-context_engineering.zh-hant.html"
   click C10f "10-06-AI_PM.zh-hant.html"
-
-  C5 -.-> C5d & C5e --> C6
-  C5 -.-> C5b --> C4
-
-
-  %% AGI 
-  C2 --> C2d 
-  %% 大語言模型
-  C2 --> C2g
-  C2g --> C4b
-
-
-  C9a & C9b & C9c & C9g & C9h--> C10
-  %% 第玖章
-  C9[第玖章 📐 AI用到的數學]
-  Math --> C9
-  C9a[9.1 🤝🚿 協同過濾]
-  C9b[9.2 📉⛰️ 最陡下降法]
-  C9c[9.3 🔮🕸️ 貝氏網路]
-  C9d[9.4 🧹🧩 稀疏建模]
-  C9e[9.5 ⛓️🔄 馬可夫模型]
-  C9f[9.6 🌲🧭 蒙地卡羅樹搜尋]
-  C9g[9.7 🧠⚡ 赫布學習論]
-  C9h[9.8 🧮💰 多智能體報酬矩陣]
-  C9 --> C9d --> C9a & C9f
-  C9 --> C9e --> C9c 
-  C9 --> C9b --> C9g
-  C9 --> C9h
-  click C9 "09----ai_math.zh-hant.html"
-  click C9a "09-01-collaborative_filtering.zh-hant.html"
-  click C9b "09-02-steepest_descent_method.zh-hant.html"
-  click C9c "09-03-bayesian_network.zh-hant.html"
-  click C9d "09-04-sparse_modeling.zh-hant.html"
-  click C9e "09-05-markov_modeling.zh-hant.html"
-  click C9f "09-06-monte_carlo_tree_search.zh-hant.html"
-  click C9g "09-07-hebb_rule.zh-hant.html"
-  click C9h "09-08-multi_agent_payoff_matrix.zh-hant.html"
-
-
-  %% 第伍章
-  C5[第伍章 ☸ 區分 AI 5 大導向]
-  SysThk --> C5
-  C5a[5.1 ☸🏛️ 知識導向]
-  C5b[5.2 ☸🌀 數據導向]
-  C5c[5.3 ☸🤖 智能體／代理人導向]
-  C5d[5.4 ☸🛠 任務導向]
-  C5e[5.5 ☸⚖️ 倫理／互動導向]
-  click C5 "05----ai_orientations.zh-hant.html"
-  click C5a "05-01-oriented_knowledge.zh-hant.html"
-  click C5b "05-02-oriented_data.zh-hant.html"
-  click C5c "05-03-oriented_agent.zh-hant.html"
-  click C5d "05-04-oriented_task.zh-hant.html"
-  click C5e "05-05-oriented_ethics.zh-hant.html"
-Situatedism --> C5c 
-
-
-
-  %% 第捌章
-  C8[第捌章 🦾 「具身派」AI]
-Situatedism --> C8
-  C8a[8.1 🦾🎬🔋 機器人學與實體驅動]
-  C8b[8.2 🦾📡🌡️ 感知與環境]
-  C8c[8.3 🦾🔄🖼️ 自適應機器人]
-  C8d[8.4 🦾🤝💪 人機互動]
-  C8e[8.5 🦾🛡️🚨 機器人安全與穩健性]
-  C8f[8.6 🦾🧭🎯 任務與目標規劃]
-  C8 --> C8a --> C8b 
-  C8b --> C8c 
-  C8c --> C8f
-  C8b --> C8d --> C8e --> C8f
-  click C8 "08----embodied_ai.zh-hant.html"
-  click C8a "08-01-robotics_and_physical_actuation.zh-hant.html"
-  click C8b "08-02-perception_and_environment.zh-hant.html"
-  click C8c "08-03-adaptive_robotics.zh-hant.html"
-  click C8d "08-04-human_robot_interaction.zh-hant.html"
-  click C8e "08-05-robot_safety_and_robustness.zh-hant.html"
-  click C8f "08-06-robot_tasks_and_goals.zh-hant.html"
-
-
-
-  C2g ==> C6e
-  %% 第陸章
-  C6[第陸章 ❖ 分析與決策 6 點]
-  SysThk --> C6
-  C6a[6.1 🟡😷🩺 診斷型分析]
-  C6b[6.2 🟠🤠🔮 預測型分析]
-  C6c[6.3 🔴🧐🧭 指導型分析]
-  C6d[6.4 🔵🤓📘 描述型分析]
-  C6e[6.5 🟣🙀🎨 生成式 AI]
-  C6f[6.6 🔁😽🪄 決策演算法]
-  C6 ===> C6e ===> C6f
-  C6 ==> C6d ==> C6a ==> C6b ==> C6c ==> C6f
-  click C6 "06----analytics_decisions.zh-hant.html"
-  click C6a "06-01-analysis_diagnostic.zh-hant.html"
-  click C6b "06-02-analysis_predictive.zh-hant.html"
-  click C6c "06-03-analysis_prescriptive.zh-hant.html"
-  click C6d "06-04-analysis_descriptive.zh-hant.html"
-  click C6e "06-05-analysis_generative.zh-hant.html"
-  click C6f "06-06-decision_making_algorithm.zh-hant.html"
-
-
-
-  %% 第肆章
-  C2 --> C2b
-  C4[第肆章 🌀 「統計流」AI]
-  C2b --> C4
-  C4a[4.1 🌀🎲🌿 機率性關聯]
-  C4b[4.2 🌀🧞‍♀️🗪 LLM聊天機器人]
-  C4c[4.3 🌀🪢🧠 神經網路]
-  C4d[4.4 🌀🛠️🤏 特徵工程]
-  C4e[4.5 🌀🤖📦 機器學習模型]
-  C4f[4.6 🌀🌐🔗 大語言模型網組合]
-  C4g[4.7 🌀🌌▦ 向量空間]
-  C4 --> C4a --> C4b --> C4c --> C10
-  C4 --> C4d --> C4e --> C4g --> C4f 
-  click C4 "04----statistical_ai.zh-hant.html"
-  click C4a "04-01-probabilistic_association.zh-hant.html"
-  click C4b "04-02-llm_chatbots.zh-hant.html"
-  click C4c "04-03-neural_networks.zh-hant.html"
-  click C4d "04-04-feature_engineering.zh-hant.html"
-  click C4e "04-05-machine_learning_models.zh-hant.html"
-  click C4f "04-06-llm_webassembly.zh-hant.html"
-  click C4g "04-07-vector_space.zh-hant.html"
-
-
-  %% 第柒章
-  C7[第柒章 🏆 「博弈派」AI]
-Situatedism --> C7
-  C7a[7.1 🏆🐭🗺️ IEEE電子老鼠走迷宮]
-  C7b[7.2 🏆🕹️👾 Atari DQN]
-  C7c[7.3 🏆⚪⚫ AlphaGo 圍棋]
-  C7d[7.4 🏆🃏💰 撲克 AI]
-  C7e[7.5 🏆🧙‍♂🥷 OpenAI Five]
-  C7f[7.6 🏆🐺🧑‍🌾 狼人殺 AI]
-  C7g[7.7 🏆🪖⚔️ 戰場模擬]
-  C7 --> C7a --> C7b --> C7c & C7d --> C7e & C7f --> C7g 
-  click C7 "07----game_ai.zh-hant.html"
-  click C7a "07-01-ieee_micromouse.zh-hant.html"
-  click C7b "07-02-atari_dqn.zh-hant.html"
-  click C7c "07-03-alphago.zh-hant.html"
-  click C7d "07-04-poker_ai.zh-hant.html"
-  click C7e "07-05-openai_five.zh-hant.html"
-  click C7f "07-06-werewolf_ai.zh-hant.html"
-  click C7g "07-07-battlefield_simulation.zh-hant.html"
 ```
 
