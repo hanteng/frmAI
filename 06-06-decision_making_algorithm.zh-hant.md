@@ -1,8 +1,11 @@
 ---
 tags:
 - 決策演算法
+- 元決策
+- 決策鷹架
 - 多目標決策
 - 自動化決策
+- 行動脈絡引擎
 - 以規則為基礎
 - 以狀態為基礎
 - 以行為為基礎
@@ -12,6 +15,13 @@ tags:
 - 以案例為基礎
 - 以模擬為基礎
 - AI對齊
+- 框架問題
+- 符碼紮根問題
+- 完形心理
+- 語言賽局
+- 對齊與控制問題
+- 資料分析過程
+- 生成式AI
 ---
 # 🔁😽🪄 決策演算法 {#sec-decision-making-algorithm}
 
@@ -151,7 +161,7 @@ tags:
 ***
 ## ✨🪄 小結：求生存到奉獻的決策
 
-本篇先概述了**基礎決策單元**各異的`決策演算法`（如**以規則為基礎**、**以狀態為基礎**等），再說明其在「**邏輯或數據** ➾ 演算法 ➾ **決策或規則**」的**內部運作**過程，並總結了按需行動的「**決策鷹架**」與「**資料分析過程表**」的加值方向。其中特色在於，將「**[㉄AI 問題意識](01----problematics.zh-hant.md)**」引入作為對映依據，透過**紮根**、**框架**與**賽局**三重鏡頭，挖掘決策背後的**世界觀**、**脈絡**與**互動規則**。
+本篇先概述了**基礎決策單元**各異的`決策演算法`（如**以規則為基礎**、**以狀態為基礎**等），再說明其在「**邏輯或數據** ➾ 演算法 ➾ **決策或規則**」的**內部運作**過程，並總結了按需行動的「**決策鷹架**」與「**資料分析過程表**」的加值方向。其中特色在於，將「**[㉄AI 問題意識](01----problematics.zh-hant.md)**」引入作為對映依據，透過 **[紮根](01-03-Symbol_Grounding_Problem.zh-hant.md)**、**[框架](01-04-Frame_Problem.zh-hant.md)** 、[完形](01-05-Gestalt_Psychology.zh-hant.md)、[對齊與控制](01-06-Alignment_Control_Problem.zh-hant.md) 與 **[賽局](01-07-Language_Games.zh-hant.md)** 多重鏡頭，挖掘決策背後的**世界觀**、**脈絡**與**互動規則**。
 
 在 AI 與自動化工具的加持下，`決策演算法`不再只是靜態的規則執行器，而是能跨越不同層次的心智能力，從即時反應到長期價值塑造，構成持續運作的「**行動／價值脈絡引擎**」，為個人與組織提供最適切、最具前瞻性的行動依據：
 
@@ -160,7 +170,7 @@ tags:
 - ⚖️ **多方對齊與協調共生**：在多目標、多利害關係人之間，平衡衝突、整合資源，形成可持續的合作與共識，並在必要時重新定義遊戲規則。    
 - 🚀 **長期奉獻與價值引領**：以長遠視野與核心價值為導向，形塑外部規則與世界觀，推動系統性變革，並確保價值傳承與持續影響力。    
 
-`決策演算法`的核心價值在於其**適應力**與**引導性**。將其原則融入 AI 解決方案時，應考慮以下設計問題（順序經調整以呼應從價值到行動的邏輯）：
+`決策演算法`的核心價值在於其**適應力**與**引導性**。將其原則融入 AI 解決方案時，應考慮以下設計問題：
 
 - 🎯 **目標意識**：我們究竟在優化什麼？短期「活下去」績效還是「活得有意義」長期價值？    
 - 🗺️ **脈絡建構**：是否掌握**紮根世界現實**且多元**可靠**的情境資訊，以支持各資料分析階段、跨層次的決策？    
@@ -171,5 +181,47 @@ tags:
 
 結合新興 AI 技術後，`決策演算法`將從單一層次的行動選擇，進化為能即時掌握**行動脈絡**並支撐價值實踐的**智慧化決策中樞**。從底層的**掌控**，到中層的**脈絡化**，再到中高層的**對齊／整合／協調**，直至高層的**奉獻／領導／神聖化**，`決策演算法`的設計與應用展現了決策心智能力的全譜系——既能在當下求生存，也能在長遠中奉獻與形塑世界。
 
+本篇亦突顯了「元決策」（關於決策的決策）與分層「心智能力」的關低，這也預示了「元決策」及「元認知」（關於認知的認知）的智能體系的**系統思維**，這正是本書作者期待讀者能持續搭建的[知識鷹架](notes-action.zh-hant.md)，這裡是從較簡要的 4 層次的「決策鷹架」開始。
+
 總之，`決策演算法`是從「活下去」到「活得有意義」的關鍵樞紐。這不僅是技術的演進，更是價值觀與世界觀的選擇。
 
+***
+## 👉 接下來
+
+- 決策鏈回顧（ **[描述型](06-04-analysis_descriptive.zh-hant.md) ⮫ [診斷型](06-01-analysis_diagnostic.zh-hant.md) ⮫ [預測型](06-02-analysis_predictive.zh-hant.md) ⮫ [指導型](06-03-analysis_prescriptive.zh-hant.md)** ）  
+- 深究：  
+  - 🟣🙀🎨 [生成式 AI](06-05-analysis_generative.zh-hant.md)  
+
+***
+## 🪸 請參閱
+
+參照 **[🔖附錄🌌 心智圖](appendix_mindmap.zh-hant.qmd)**，將`指導型分析`與下述概念對比，檢視其是否可歸類到「決策認知」或「認知決策」的範疇：
+
+* 💬導論 〜 
+	* 🧠 [心智能力](notes-mind.zh-hant.md) 🐸🐘🧘
+	* 🧠🧞‍♀️ [〜語言賽局腦補機](hypothesis-mental_fill-in.zh-hant.html)
+* 📑筆記 〜
+	* 🪜 [知識鷹架](notes-action.zh-hant.md)
+- **🔖附錄💪**：[學習行動](appendix_action.zh-hant.md)
+* [第壹章 ㉄](01----problematics.zh-hant.md)　AI 問題意識（AI Problematics）
+	* **1.3** 🔤㊙️ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md)（Symbol Grounding Problem）
+	* **1.4** 🖼️⏱️ [框架問題](01-04-Frame_Problem.zh-hant.md)（Frame Problem）
+	* **1.5** 👁️⯊ [完形心理](01-05-Gestalt_Psychology.zh-hant.md)（Gestalt Psychology）
+	* **1.6** 🎯🛡️ [對齊與控制問題](01-06-Alignment_Control_Problem.zh-hant.md)（AI Alignment & Control Problem）
+	* **1.7** 🗫🎲 [語言賽局](01-07-Language_Games.zh-hant.md)（Language Games）
+* [第伍章 ☸](05----ai_orientations.zh-hant.md)　區分 AI 5 大導向（AI Orientations）
+	* **5.3** ☸🤖 [智能體／代理人導向](05-03-oriented_agent.zh-hant.md)（Agent-oriented）
+	* **5.4** ☸🛠 [任務導向](05-04-oriented_task.zh-hant.md)（Task-oriented AI）
+	* **5.5** ☸⚖️ [倫理／互動導向](05-05-oriented_ethics.zh-hant.md)（Ethics-oriented）
+* [第柒章 🏆](07----game_ai.zh-hant.md)　「博弈派」AI（Game AI）
+	* **7.7** 🏆🪖⚔️ [戰場模擬](07-07-battlefield_simulation.zh-hant.md)（Battlefield Simulation）
+* [第捌章 🦾](08----embodied_ai.zh-hant.md)　「具身派」AI（Embodied AI）
+	* **8.2** 🦾📡🌡️ [感知與環境](08-02-perception_and_environment.zh-hant.md)（Perception & Environment）
+	* **8.5** 🦾🛡️🚨 [機器人安全與穩健性](08-05-robot_safety_and_robustness.zh-hant.md)（Robot Safety & Robustness）
+	* **8.6** 🦾🧭🎯 [任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant.md)（Task & Goal Planning）
+* [第玖章 📐](09----ai_math.zh-hant.md)　AI用到的數學（Maths for AI）
+	* **9.6** 🌲🧭 [蒙地卡羅樹搜尋](09-06-monte_carlo_tree_search.zh-hant.md)（Monte Carlo Tree Search, MCTS）
+	* **9.8** 🧮💰 [多智能體報酬矩陣](09-08-multi_agent_payoff_matrix.zh-hant.md)（Multi-Agent Payoff Matrix）
+* [第拾章 🌉](10----ai_engineering.zh-hant.md)　AI工程（AI Engineering）
+	* **10.2** 🌉🤖🚨 [智能體可靠性與評估](10-02-agent_reliability_evaluation.zh-hant.md)（Agent Reliability & Evaluation
+	* **10.5** 🌉🛣🌐 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering） 
