@@ -1,0 +1,87 @@
+<script src="scripts/svg-pan-zoom.min.js"></script>
+<style>
+/* Targets the SVG itself to ensure it fills the parent container's height */
+figure.figure svg {
+  height: 82vh !important;
+  width: 100% !important;
+}
+</style>
+<script src="scripts/svg-pan-zoom.min.js"></script>
+<script>
+window.addEventListener('load', (event) => {
+  const diagrams = document.querySelectorAll('svg.mermaid-js');
+  let panZoomInstance;
+
+  const diagram = diagrams[0]; 
+  if (diagram && typeof svgPanZoom !== 'undefined') {
+    panZoomInstance = svgPanZoom(diagram, {
+      zoomEnabled: true,
+      controlIconsEnabled: true,
+      fit: true,
+      center: true,
+      onPan: function(newPan) {
+        const panXElement = document.getElementById('pan-x-value');
+        const panYElement = document.getElementById('pan-y-value');
+        const panXPercentElement = document.getElementById('pan-x-percent-value');
+        
+        if (panXElement && panYElement && panXPercentElement) {
+          panXElement.textContent = newPan.x.toFixed(2);
+          panYElement.textContent = newPan.y.toFixed(2);
+
+          const sizes = panZoomInstance.getSizes();
+          const diagramWidth = sizes.viewBox.width;
+          const viewportWidth = sizes.width;
+          const currentX = ((-newPan.x + (viewportWidth / 2) * sizes.realZoom) / sizes.realZoom);
+          const panXPercent = (currentX / diagramWidth) * 100;
+          panXPercentElement.textContent = panXPercent.toFixed(2) + "%";
+        }
+      },
+      onZoom: function(newZoom) {
+        const zoomElement = document.getElementById('zoom-value');
+        if (zoomElement) {
+          zoomElement.textContent = newZoom.toFixed(2);
+        }
+      }
+    });
+  }
+
+  const zoomButtons = document.querySelectorAll('.zoom-to-button');
+  
+  zoomButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      const panXPercent = parseFloat(e.target.dataset.panXPercent) / 100;
+      const zoomValue = parseFloat(e.target.dataset.zoom);
+      
+      if (panZoomInstance) {
+        // Apply the zoom
+        panZoomInstance.zoom(zoomValue);
+
+        // Get sizes after zoom for correct calculation
+        const sizes = panZoomInstance.getSizes();
+        const diagramWidth = sizes.viewBox.width;
+        const viewportWidth = sizes.width;
+        
+        const targetX = diagramWidth * panXPercent;
+        const panX = -(targetX * sizes.realZoom) + (viewportWidth / 2) * sizes.realZoom;
+        
+        panZoomInstance.pan({ x: panX, y: panZoomInstance.getPan().y });
+
+        // Manually update the monitoring display
+        const panXElement = document.getElementById('pan-x-value');
+        const panYElement = document.getElementById('pan-y-value');
+        const panXPercentElement = document.getElementById('pan-x-percent-value');
+        const zoomElement = document.getElementById('zoom-value');
+
+        if (panXElement && panYElement && panXPercentElement && zoomElement) {
+          panXElement.textContent = panX.toFixed(2);
+          panYElement.textContent = panZoomInstance.getPan().y.toFixed(2);
+          zoomElement.textContent = zoomValue.toFixed(2);
+          panXPercentElement.textContent = (panXPercent * 100).toFixed(2) + "%";
+        }
+      }
+    });
+  });
+});
+</script>
