@@ -65,6 +65,15 @@ AI 在遊戲領域的突破，往往預示在其他複雜任務上的潛力。�
 	* [完形心理](01-05-Gestalt_Psychology.zh-hant) 是人類「生存賽局」中含對賭的認知捷徑經驗法測，是基於視覺的認知賭局
 	* [語言賽局](01-07-Language_Games.zh-hant.md) 因 [大語言模型](02-07-large_language_models.zh-hant.md) 的討好用戶，成為現象級當代事實，而 [狼人殺 AI](07-06-werewolf_ai.zh-hant) 更凸顯語言類別的認知賭局
 
+可以說，凡存在「認知賽局」——即任何涉及認知能力進行競爭與合作的賽局場景——都能運用 `博弈派 AI` 的經驗與教訓。這種跨域適用性在本書其他篇章亦有呼應，例如：
+
+* [第玖篇 📐](09----ai_math.zh-hant.md)　AI 用到的數學  
+    * 以賽局理論發展的 **9.8** 🧮💰[多智能體報酬矩陣](09-08-multi_agent_payoff_matrix.zh-hant)，為多代理系統設計與分析提供數學基礎。
+* [第拾篇 🌉](10----ai_engineering.zh-hant.md)　AI 工程  
+    * [AI 產品經理](#sec-ai-pm) 在開發如 [知識驅動生成（RAG）](10-04-retrieval_augmented_generation.zh-hant) 或 [脈絡工程](10-05-context_engineering.zh-hant) 的應用時，常能從客戶或使用者所處脈絡中觀察到顯性或隱性的賽局；其「價值」即在於具備能「取勝」的博弈派 AI 思維。
+
+這些跨篇案例顯示，`博弈派 AI` 發展啟發的方法論不僅適用於遊戲與模擬，更能滲透至數學建模、產品設計與脈絡分析等多元領域。
+
 :: {.callout-tip #tip-situatedism-this-book title="🏮🛣🤖 情境主義"}
 
 因篇幅限制，本書未系統介紹 `情境主義`，以下簡要說明：
