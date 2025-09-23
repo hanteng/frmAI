@@ -3,7 +3,7 @@ title: 🏆「博弈派」AI
 tags:
 - 情境主義
 - 博弈論
-- 
+- 策略性人工智慧
 ---
 > 🏆 **什麼是「博弈派」AI？**  
 > 參照 **[🔖附錄🌌 心智圖](appendix_mindmap.zh-hant.qmd)**
@@ -13,37 +13,41 @@ tags:
 - 🎭🗪 首先，[圖靈測試](01-01-Turing_Test.zh-hant) 是種「模仿遊戲」。
 - 👁️⯊ 其次，[完形心理](01-05-Gestalt_Psychology.zh-hant) 是在「生存賽局」中含對賭元素的判斷。
 - 🎲🌿 再來，🌀「統計流 AI」的 [機率性關聯](04-01-probabilistic_association.zh-hant) 帶來可用以判斷的數學統計模型基礎。
--  🗫🎲 再來，[語言賽局](01-07-Language_Games.zh-hant.md) 因 [大語言模型](02-07-large_language_models.zh-hant.md) 的討好用戶，成為現象級當代事實。
+- 🗫🎲 再來，[語言賽局](01-07-Language_Games.zh-hant.md) 因 [大語言模型](02-07-large_language_models.zh-hant.md) 的討好用戶，成為現象級當代事實。
 - 🎲🏆 最後，就是本章要依序介紹的「博弈派」AI 實例。
+
+***
 
 ## 🏆🎲 博弈派 AI 概論
 
-`「博弈派」AI`（Game AI）通常狹義的指專注於在各類競技、遊戲與模擬環境中，透過策略規劃、對手建模與決策優化，達到或超越人類水準的表現。
+`「博弈派」AI`（Game AI）狹義上指專注於各類競技、遊戲與模擬環境中，透過策略規劃、對手建模與決策優化，達到或超越人類水準的智能系統。
 
-`「博弈派」AI`  不僅是娛樂或比賽的工具，更是人工智慧研究的重要試驗場；遊戲環境通常具備「明確規則」「可重複實驗」「可量化評估」等特性，適合驗證演算法與系統設計。
+它不僅是娛樂或比賽的工具，更是人工智慧研究的重要試驗場；遊戲環境通常具備「明確規則」、「可重複實驗」、「可量化評估」特性，使其成為驗證演算法與系統設計的理想平台。
 
-AI 在遊戲領域的突破，往往預示在其他複雜任務上的潛力。這些系統的核心能力包括：
+AI 在遊戲領域的突破，往往預示在其他複雜任務上的潛力。核心能力包括：
 
-- ⤣⤤🗺️ 規劃**策略**：在有限時間與資源下選擇最優行動序列，完成 [任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant)，並運用 [蒙地卡羅樹搜尋](09-06-monte_carlo_tree_search.zh-hant) 等演算法。
-- 🎲🛞 處理**不確定性**：在隱藏資訊或隨機事件下做出合理決策。
-- 🗺️⛶✜ 建模**世界、情境、對手與隊友**：對「個體—脈絡—世界」進行建模與框定，識別不確定性並生成 [❖分析與決策](06----analytics_decisions.zh-hant.md) 以調整策略。這包括在賽局下基於已知對手或隊友情報，制定相映的對抗及合作策略。
+- ⤣⤤🗺️ **策略規劃**：在有限時間與資源下選擇最優行動序列，完成 [任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant)，並運用 [蒙地卡羅樹搜尋](09-06-monte_carlo_tree_search.zh-hant) 等演算法。
+- 🎲🛞 **不確定性處理**：在隱藏資訊或隨機事件下做出合理決策。
+- 🗺️⛶✜ **世界、情境、對手與隊友建模**：對「個體—脈絡—世界」進行建模與框定，識別不確定性並生成 [❖分析與決策](06----analytics_decisions.zh-hant.md) 以調整策略。
 - 🧮⚔️🤝 **多智能體協作與競爭**：在團隊或對抗環境中協調行動，包括運用 [多智能體報酬矩陣](09-08-multi_agent_payoff_matrix.zh-hant) 等數學工具。
 
-可以說，`「博弈派」AI`  不僅是人工智慧的「試煉場」，更是推動演算法、硬體與系統協同進化的重要驅動力。從迷宮到棋盤，從虛擬戰場到現實應用，這些系統展現了 AI 在策略性思考、協作與創新上的巨大潛能。
+可以說，`「博弈派」AI` 是人工智慧的「試煉場」，推動演算法、硬體與系統協同進化；從迷宮到棋盤，從虛擬戰場到現實應用，展現了 AI 在策略性思考、協作與創新上的巨大潛能。
 
-## 📜 博弈派 AI簡史
+***
 
-以下簡要按本篇各條目內容，簡要描述 `「博弈派」AI`  的發展進程：
+## 📜 博弈派 AI 簡史
 
-*  🏆🐭🗺️ [IEEE電子老鼠走迷宮](07-01-ieee_micromouse.zh-hant.md)（IEEE Micromouse）：從..年開始....
-*  🏆🕹️👾 [Atari DQN](07-02-atari_dqn.zh-hant.md)（Atari DQN）：在..年，...突破...
-* 🏆⚪⚫ [AlphaGo 圍棋](07-03-alphago.zh-hant.md)（AlphaGo）：在..年，...打敗...
-* 🏆🃏💰 [撲克 AI](07-04-poker_ai.zh-hant.md)（Libratus / Pluribus）：在..年，...打敗..
-* 🏆🧙‍♂🥷 [OpenAI Five](07-05-openai_five.zh-hant.md)（Dota 2）：在..年，...打敗..  
-* 🏆🐺🧑‍🌾 [狼人殺 AI](07-06-werewolf_ai.zh-hant.md)（Werewolf AI）：在..年，...打敗..
-* 🏆🪖⚔️ [戰場模擬](07-07-battlefield_simulation.zh-hant.md)（Battlefield Simulation）：從..年開始....
+以下按本篇各條目，簡述 `「博弈派」AI` 的發展進程：
 
-one summative and transition sentence 
+* 🏆🐭🗺️ [IEEE電子老鼠走迷宮](07-01-ieee_micromouse.zh-hant.md)（IEEE Micromouse）：自 **1977 年**起，作為微型機器人比賽，驗證路徑規劃與感測器融合技術。
+* 🏆🕹️👾 [Atari DQN](07-02-atari_dqn.zh-hant.md)（Atari DQN）：**2013 年**，DeepMind 以深度 Q 網路在多款 Atari 遊戲中達到人類水準，開啟深度強化學習新篇章。
+* 🏆⚪⚫ [AlphaGo 圍棋](07-03-alphago.zh-hant.md)（AlphaGo）：**2016 年**，以深度神經網路與蒙地卡羅樹搜尋結合，擊敗世界冠軍李世乭。
+* 🏆🃏💰 [撲克 AI](07-04-poker_ai.zh-hant.md)（Libratus / Pluribus）：**2017–2019 年**，在無限注德州撲克中擊敗頂尖職業選手，處理不完全資訊賽局的里程碑。
+* 🏆🧙‍♂🥷 [OpenAI Five](07-05-openai_five.zh-hant.md)（Dota 2）：**2018–2019 年**，在多人即時戰略遊戲中擊敗世界冠軍隊伍，展現多智能體協作能力。
+* 🏆🐺🧑‍🌾 [狼人殺 AI](07-06-werewolf_ai.zh-hant.md)（Werewolf AI）：**2020 年**，在語言推理與社交博弈中達到高勝率，凸顯語言賽局的挑戰。
+* 🏆🪖⚔️ [戰場模擬](07-07-battlefield_simulation.zh-hant.md)（Battlefield Simulation）：自 **2020 年代**起，產業級應用於軍事與災害應變模擬，驗證策略與資源分配演算法。
+
+從早期的迷宮探索到今日的多智能體戰場模擬，`「博弈派」AI` 的演進不僅映照了人工智慧技術的躍升，也為跨領域應用鋪設了策略性思考的基礎，為後續「新論」的探討奠定背景。
 
 ***
 
@@ -73,45 +77,30 @@ one summative and transition sentence
 
 ## 🏆🔑 關鍵技術構成
 
-博弈派 AI 的實現，通常結合以下技術：
+`「博弈派」AI` 的實現，通常結合以下核心技術模組，每一項都對策略性智能的形成至關重要：
 
-- 🗺️⛶ **世界與情境建模**
-    - 建立遊戲環境、規則、地圖與動態元素的數位化表示，讓 AI 能理解並預測環境變化。
-    - 涉及地圖構建、狀態空間定義、對手與隊友行為建模等方法。
-    - 代表案例包括[IEEE 電子老鼠走迷宮](07-01-ieee_micromouse.zh-hant)、機器人足球等需要即時空間推理與策略規劃的任務。
-- 🎲 **機率與統計建模**
-    - 用於處理不確定性與隱藏資訊，例如[撲克 AI](07-04-poker_ai.zh-hant)或[狼人殺 AI](07-06-werewolf_ai.zh-hant)中的推理。
-    - 通常涉及[貝氏推斷](09-03-bayesian_network.zh-hant)、[馬可夫決策過程（MDP）](09-05-markov_modeling.zh-hant)等方法。
-- ♾️ **最佳化與搜尋演算法**
-    - 包括[蒙地卡羅樹搜尋](09-06-monte_carlo_tree_search.zh-hant)（MCTS）、啟發式搜尋與梯度最佳化。
-    - 在棋類與策略遊戲中尋找最優解，如[撲克 AI](07-04-poker_ai.zh-hant)。
-- 🧠 **深度強化學習**
-    - 結合[深度神經網路](04-03-neural_networks.zh-hant)與[強化學習](02-06-behaviorism.zh-hant)，從高維感知輸入（如遊戲畫面）學習策略。
-    - 代表案例包括[Atari DQN](07-02-atari_dqn.zh-hant)與[AlphaGo 圍棋](07-03-alphago.zh-hant)。
-- 🤖 **[多智能體系統](09-08-multi_agent_payoff_matrix.zh-hant)**
-    - 在團隊遊戲或戰場模擬中協調行動與策略，涉及通信、角色分工與資源分配。
-    - 代表案例包括[OpenAI Five 的 Dota 遊戲](07-05-openai_five.zh-hant)與處理複雜戰場感知的[戰場模擬](07-07-battlefield_simulation.zh-hant)。
+- 🗺️⛶ **世界與情境建模**  
+    - 建立遊戲環境、規則、地圖與動態元素的數位化表示，使 AI 能理解並預測環境變化。  
+    - 涉及地圖構建、狀態空間定義、對手與隊友行為建模等方法。  
+    - 代表案例： [IEEE 電子老鼠走迷宮](07-01-ieee_micromouse.zh-hant)、機器人足球等需要即時空間推理與策略規劃的任務。
 
-總之，博弈派 AI 的核心貢獻是：對「個體—脈絡—世界」進行建模與框定有效「賽局」的「框智格局」綜合能力。
+- 🎲 **機率與統計建模**  
+    - 處理不確定性與隱藏資訊，例如 [撲克 AI](07-04-poker_ai.zh-hant) 或 [狼人殺 AI](07-06-werewolf_ai.zh-hant) 中的推理。  
+    - 常用方法包括 [貝氏推斷](09-03-bayesian_network.zh-hant)、[馬可夫決策過程（MDP）](09-05-markov_modeling.zh-hant)。
 
+- ♾️ **最佳化與搜尋演算法**  
+    - 包括 [蒙地卡羅樹搜尋](09-06-monte_carlo_tree_search.zh-hant)（MCTS）、啟發式搜尋與梯度最佳化。  
+    - 在棋類與策略遊戲中尋找最優解，如 [撲克 AI](07-04-poker_ai.zh-hant)。
 
-而，如何利用人類與機器完成對話的本能。
+- 🧠 **深度強化學習**  
+    - 結合 [深度神經網路](04-03-neural_networks.zh-hant) 與 [強化學習](02-06-behaviorism.zh-hant)，從高維感知輸入（如遊戲畫面）中學習策略。  
+    - 代表案例： [Atari DQN](07-02-atari_dqn.zh-hant)、[AlphaGo 圍棋](07-03-alphago.zh-hant)。
 
-可以說，有「認知賽局」（任何涉及認知能力進行賽局競爭與合作）的地方，就能用得上`博弈派 AI` 的經驗與教訓。例如，
-* [第玖篇 📐](09----ai_math.zh-hant.md)  AI用到的數學
-	* 以賽局理論發展的 **9.8** 🧮💰[多智能體報酬矩陣](09-08-multi_agent_payoff_matrix.zh-hant)
-* [第拾篇 🌉](10----ai_engineering.zh-hant.md)　AI工程
-	* [AI 產品經理](#sec-ai-pm) 在開發如[知識驅動生成（RAG）](10-04-retrieval_augmented_generation.zh-hant)或[脈絡工程](10-05-context_engineering.zh-hant)的應用時，常可從客戶或使用者所處脈絡中觀察到顯性或隱性的賽局；其「價值」即在於具備能「取勝」的博弈派 AI 思維。
+- 🤖 **[多智能體系統](09-08-multi_agent_payoff_matrix.zh-hant)**  
+    - 在團隊遊戲或戰場模擬中協調行動與策略，涉及通信、角色分工與資源分配。  
+    - 代表案例： [OpenAI Five 的 Dota 遊戲](07-05-openai_five.zh-hant)、處理複雜戰場感知的 [戰場模擬](07-07-battlefield_simulation.zh-hant)。
 
-
-### 🏆🎲 賽局理論相關性
-
-語言賽局 🗫
-
-### 🏆🛣 情境主義相關性
-
-
-- 🏮🛣🤖 `情境主義`（Situated-ism）：智能體導向，強調智能體的智慧與其所處的環境密不可分。其核心主張是，智能是透過「**感知、行動與環境**」之間的即時互動而產生的，以 `具身智能` 與 `情境感知` 為其智能基礎。代表技術如 `具身機器人`、`人機協作平台`。
+`「博弈派」AI` 的核心貢獻在於，能對「個體—脈絡—世界」進行精確建模，並在具體賽局中框定可持續優化的策略格局，形成跨環境的「框智」能力。
 
 ## 🪴 內容大綱
 
