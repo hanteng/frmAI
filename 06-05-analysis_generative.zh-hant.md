@@ -47,6 +47,8 @@ tags:
 - 🔄 **可控性及整合性**：透過如 [提示工程](10-03-prompt_engineering.zh-hant.md)、條件生成、[脈絡工程](10-05-context_engineering.zh-hant.md)等系統創新，支援跨領域、跨場景的應用整合。
 - 🤝 **人機協同可能性**：透過 Human‑in‑the‑loop 的互動生成與微調，結合 RLHF（Reinforcement Learning from Human Feedback）等方法，將人類判斷與偏好融入生成過程，提升輸出的相關性、可用性與倫理一致性。
 
+可以說，`生成式 AI`對映到 **[布魯姆分類學](appendix_action.zh-hant.md)** 中的**創造**（Create）認知能力。差別在於前者是支持**組織**決策，後者是增強**個人**學習。
+
 這些`生成式AI`特性不僅能豐富資料與互動，也能利用規模化、可控性、整合性及人機協同，來提升整體智慧系統的價值。
 
 ### 🪄 決策及決策演算法⚖️
@@ -302,29 +304,29 @@ tags:
 - 📑筆記 〜
     - 🪜 [知識鷹架](notes-action.zh-hant.md)
     - **🔖附錄💪**：[學習行動](appendix_action.zh-hant.md)
-- [第壹章 ㉄](01----problematics.zh-hant.md)　AI 問題意識（AI Problematics）
+- [第壹篇 ㉄](01----problematics.zh-hant.md)　AI 問題意識（AI Problematics）
     - **1.3** 🔤㊙️ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md)（Symbol Grounding Problem）
     - **1.4** 🖼️⏱️ [框架問題](01-04-Frame_Problem.zh-hant.md)（Frame Problem）
     - **1.5** 👁️⯊ [完形心理](01-05-Gestalt_Psychology.zh-hant.md)（Gestalt Psychology）
     - **1.6** 🎯🛡️ [對齊與控制問題](01-06-Alignment_Control_Problem.zh-hant.md)（AI Alignment & Control Problem）
     - **1.7** 🗫🎲 [語言賽局](01-07-Language_Games.zh-hant.md)（Language Games）
-- [第貳章 📚](02----ai_models.zh-hant.md)　AI 模型與架構
+- [第貳篇 📚](02----ai_models.zh-hant.md)　AI 模型與架構
     - **2.7** 🧞‍♀️ [大語言模型](02-07-large_language_models.zh-hant.md)（Large Language Models, LLMs）
-- [第伍章 ☸](05----ai_orientations.zh-hant.md)　區分 AI 5 大導向（AI Orientations）
+- [第伍篇 ☸](05----ai_orientations.zh-hant.md)　區分 AI 5 大導向（AI Orientations）
     - **5.3** ☸🤖 [智能體／代理人導向](05-03-oriented_agent.zh-hant.md)（Agent-oriented）
     - **5.4** ☸🛠 [任務導向](05-04-oriented_task.zh-hant.md)（Task-oriented AI）
     - **5.5** ☸⚖️ [倫理／互動導向](05-05-oriented_ethics.zh-hant.md)（Ethics-oriented）
-- [第柒章 🏆](07----game_ai.zh-hant.md)　「博弈派」AI（Game AI）
+- [第柒篇 🏆](07----game_ai.zh-hant.md)　「博弈派」AI（Game AI）
     - **7.7** 🏆🪖⚔️ [戰場模擬](07-07-battlefield_simulation.zh-hant.md)（Battlefield Simulation）
-- [第捌章 🦾](08----embodied_ai.zh-hant.md)　「具身派」AI（Embodied AI）
+- [第捌篇 🦾](08----embodied_ai.zh-hant.md)　「具身派」AI（Embodied AI）
     - **8.2** 🦾📡🌡️ [感知與環境](08-02-perception_and_environment.zh-hant.md)（Perception & Environment）
     - **8.5** 🦾🛡️🚨 [機器人安全與穩健性](08-05-robot_safety_and_robustness.zh-hant.md)（Robot Safety & Robustness）
     - **8.6** 🦾🧭🎯 [任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant.md)（Task & Goal Planning）
-- [第玖章 📐](09----ai_math.zh-hant.md)　AI用到的數學（Maths for AI）
+- [第玖篇 📐](09----ai_math.zh-hant.md)　AI用到的數學（Maths for AI）
     - **9.4** 🧮 [稀疏建模](09-04-sparse_modeling.zh-hant.md)（Sparse Modeling）
     - **9.5** 🔢 [馬可夫建模](09-05-markov_modeling.zh-hant.md)（Markov Modeling）
     - **9.6** 🌲🧭 [蒙地卡羅樹搜尋](09-06-monte_carlo_tree_search.zh-hant.md)（Monte Carlo Tree Search, MCTS）
     - **9.8** 🧮💰 [多智能體報酬矩陣](09-08-multi_agent_payoff_matrix.zh-hant.md)（Multi-Agent Payoff Matrix）
-- [第拾章 🌉](10----ai_engineering.zh-hant.md)　AI工程（AI Engineering）
+- [第拾篇 🌉](10----ai_engineering.zh-hant.md)　AI工程（AI Engineering）
     - **10.2** 🌉🤖🚨 [智能體可靠性與評估](10-02-agent_reliability_evaluation.zh-hant.md)（Agent Reliability & Evaluation）
     - **10.5** 🌉🛣🌐 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering）
