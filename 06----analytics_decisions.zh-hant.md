@@ -17,7 +17,7 @@ AI 系統的品質，取決於 `資料分析` 與 [決策演算法](06-06-decisi
 
 本篇以「分析+決策6點」框架串連六個核心條目，分別回答從「發生了什麼」到「我們如何決策」的關鍵問題，涵蓋 `資料分析` 分析鏈上的 [描述型分析](06-04-analysis_descriptive.zh-hant.md)、[診斷型分析](06-01-analysis_diagnostic.zh-hant.md)、[預測型分析](06-02-analysis_predictive.zh-hant.md)、[指導型分析](06-03-analysis_prescriptive.zh-hant.md) 四種分析型態，以及新興的 [生成式 AI](06-05-analysis_generative.zh-hant.md) 與 [決策演算法](06-06-decision_making_algorithm.zh-hant.md)。每個條目介紹其核心任務、分析鏈定位角色，並聚焦「數據 ⇨ 可行動情報 ⇨ 決策」，與本書梳理的 [AI 問題意識](01----problematics.zh-hant.md) 及 [認知能力](appendix_action.zh-hant.md) 串接，確保即時反應與長期價值對齊。
 
-本篇亦強調融會貫通，特別突出新興的 [生成式 AI](06-05-analysis_generative.zh-hant.md) 與 [決策演算法](06-06-decision_making_algorithm.zh-hant.md)，討論如何將 `資料分析` 洞察轉化為行動的自動化決策（決策演算法）及智能化生成（生成式 AI），並具體串接相關的 [AI 問題意識](01----problematics.zh-hant.md) 及 [認知能力](appendix_action.zh-hant.md)，方便讀者將本篇內容與前後章節串聯，成為智能治理與智能分析的重要工具箱，為分析與決策注入創造性，引出「**元決策**」體系的討論。
+本篇亦強調融會貫通，特別突出新興的 [生成式 AI](06-05-analysis_generative.zh-hant.md) 與 [決策演算法](06-06-decision_making_algorithm.zh-hant.md)，討論如何將 `資料分析` 洞察轉化為行動的自動化決策（決策演算法）及智能化生成（生成式 AI），並具體串接相關的 [AI 問題意識](01----problematics.zh-hant.md) 及 [認知能力](appendix_action.zh-hant.md)，方便讀者將本篇內容與前後章節串聯，成為包括**RLHF（人類回饋強化學習）** 及 **HITL（人類在迴圈中）** 的重要智能治理與智能分析工具箱，為分析與決策注入創造性，引出「**元決策**」體系的討論。
 
 ***
 ## ❖🏗️ 分析與決策概論
