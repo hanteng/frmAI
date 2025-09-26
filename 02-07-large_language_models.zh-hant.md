@@ -3,9 +3,8 @@ tags:
   - 基礎模型
   - 生成模型
   - RLHF
-label: sec-large-language-models
 ---
-# 😵‍💫🧞‍♀️大語言模型
+# 😵‍💫🧞‍♀️大語言模型 {#sec-large-language-models}
 
 `大語言模型`（Large Language Models, LLMs）因為 2022 年底代表性案例[LLM聊天機器人](04-02-llm_chatbots.zh-hant)**ChatGPT**的迅速普及，不僅重燃了人們對人工智慧（AI）的熱情，甚至引發了對通用人工智慧（[AGI](02-04-agi.zh-hant)）的遐想。
 
