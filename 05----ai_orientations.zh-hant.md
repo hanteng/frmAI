@@ -11,40 +11,39 @@ tags:
 - 治理導向
 ---
 > 「**若世事多變且生也有涯，何因勢利導？以向風慕義求匡道濟世**」〜 ☸ `AI 導向`
-> ☸ 要如何選擇適切的 AI 導向，航向解方，？  
+> ☸ 要如何選擇適切的 AI 導向，航向解方？
 
-# ☸AI「5導向」
+# ☸ AI「5 導向」
 
- `AI 導向`（AI Orientation）指 AI 系统**設計**、**佈署**、與**建構**的『**啟發式框架**』（Heuristic Framework）。這些不同導向有其相異的設計**優先級**、佈署**情境**、與治理**風險**及**倫理**考量，所以適合用來識別適用的框架來套用。儘管實踐時，不同導向常是結合或整合時用的，但是這不妨礙理解 `AI 導向` 區分框架的實用性。
+`AI 導向`（AI Orientation）指 AI 系統在**設計**、**佈署**與**建構**上的『**啟發式框架**』（Heuristic Framework）。這些導向各自具有不同的設計**優先級**、佈署**情境**，以及治理**風險**與**倫理**考量，因此適合作為識別與選取框架的依據。雖然在實踐中，不同導向往往會被結合或整合，但這並不妨礙我們透過區分來理解其實用性。
 
-如同人類認知能力也有不同導向，也能融合不同導向，一實際 AI系統 可以整合不同導向。
+如同人類認知能力可具多種導向並能融合，實際 AI 系統亦可整合不同導向。
 
-::: {.callout-tip #tip-ai-orientations title="☸AI「5導向」"}
-☸ `AI 導向`是AI 系统的『**啟發式框架**』，學會區分有利選取及整合，本書分5類：
+::: {.callout-tip #tip-ai-orientations title="☸ AI「5 導向」"}
+☸ `AI 導向`是 AI 系統的『**啟發式框架**』。學會區分有助於選取與整合，本書分為五類：
 
-* **5.1** ☸🎯 [任務導向](05-01-oriented_task.zh-hant.md)（Task-oriented AI）  
+* **5.1** ☸🎯 [任務導向](05-01-oriented_task.zh-hant.md)（Task-oriented AI）
 * **5.2** ☸🛠 [工具導向](05-02-oriented_tool.zh-hant.md)（Tool-oriented AI）
-* **5.3** ☸🤖 [智能體／代理人導向](05-03-oriented_agent.zh-hant.md)（Agent-oriented）  
-* **5.4** v☸🤝 [協作導向／以人為本導向](05-04-oriented_collaborative.zh-hant.md)（Collaborative AI / Human-Centered AI）
+* **5.3** ☸🤖 [智能體／代理人導向](05-03-oriented_agent.zh-hant.md)（Agent-oriented AI）
+* **5.4** ☸🤝 [協作導向／以人為本導向](05-04-oriented_collaborative.zh-hant.md)（Collaborative AI / Human-Centered AI）
 * **5.5** ☸⚖️ [治理導向](05-05-oriented_governance.zh-hant.md)（Governance-oriented AI）
 
-讀者可以就其『**啟發式框架**』（由「意圖」與「預設行動」構成）的不同來區分。
+讀者可依其『**啟發式框架**』（由「意圖」與「預設行動」構成）的差異來區分。
 
-可以視作『**套路招術**』，參照本書另外整理的💪**認知行動**[@tip-compare-actions] 進一步獲取靈感。
+這些導向可視作『**套路招術**』，並可參照本書整理的💪**認知行動**[@tip-compare-actions] 進一步獲取靈感。\
 
 ☸
 :::
 
-🪁🪞簡言之，`AI 導向` 是種『**啟發式框架**』，內涵成套的「意圖」與「預設行動」的「經驗法則」腳本，可以視作『**套路招術**』的行動準備。
+🪁🪞 簡言之，`AI 導向`是一種『**啟發式框架**』，內涵成套的「意圖」與「預設行動」的「經驗法則」腳本，可視作『**套路招術**』的行動準備。
 
 這種分類方式不僅在學術界逐漸成形，也在產業實踐中被廣泛採用：
 
-- ☸🎯**任務導向**：對應狹窄任務型 AI，如客服機器人、推薦系統，強調精準性與可重複性。    
-- ☸🛠**工具導向**：反映多工具編排趨勢，如 Copilot Studio、LangChain 等框架。    
-- ☸🤖**智能體導向**：聚焦自主性與長期目標，如 AutoGPT、Meta’s CICERO、DeepMind’s Astra。    
-- ☸🤝**協作導向**：強調人機互動與價值對齊，符合 「以人為中心 AI」（Human-Centered AI） 的設計原則。    
-- ☸⚖️**治理導向**：呼應「責任式 AI」（Responsible AI）、GRC（Governance, Risk, Compliance）模型。包括利用「模型卡」（Model Cards）等透明化工具，以及ISO/IEC 42001 等標準確保「問責機制」。
-
+- ☸🎯 **任務導向**：對應狹窄任務型 AI，如客服機器人、推薦系統，強調精準性與可重複性。
+- ☸🛠 **工具導向**：反映多工具編排趨勢，如 Copilot Studio、LangChain 等框架。
+- ☸🤖 **智能體導向**：聚焦自主性與長期目標，如 AutoGPT、Meta’s CICERO、DeepMind’s Astra。
+- ☸🤝 **協作導向**：強調人機互動與價值對齊，符合「以人為中心 AI」（Human-Centered AI）的設計原則。
+- ☸⚖️ **治理導向**：呼應「責任式 AI」（Responsible AI）、GRC（Governance, Risk, Compliance）模型，包括「模型卡」（Model Cards）、ISO/IEC 42001 等透明化與合規標準。
 
 ::: {.callout-note #note-ai-orientations title="☸什麼是 `AI 導向`？"}
 
