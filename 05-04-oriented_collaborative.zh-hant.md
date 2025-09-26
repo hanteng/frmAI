@@ -1,0 +1,1 @@
+# ☸🤝 協作導向／以人為本導向 {#sec-oriented-collaborative}

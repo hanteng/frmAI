@@ -1,6 +1,9 @@
 ---
-title: "☸🛠 任務導向"
+tags:
+- 可靠性
+- 重複性
 ---
+# ☸🎯 任務導向型 {#sec-oriented-task}
 
 `任務導向 AI`（Task-oriented AI）專注於明確定義的工作流程或程序執行，通常在事先規劃好的範疇內高效率地完成具體任務，例如**機器流程自動化**（Robotic Process Automation, RPA）或**特定領域的機器人系統**。
 
