@@ -1,3 +1,4 @@
+<!-- v0.0.3 This HTML snippet is designed to be included in a Quarto document to enable zooming and panning functionality for SVG diagrams, including those embedded via <embed> tags. It uses the svg-pan-zoom library to provide interactive controls. -->
 <script src="scripts/svg-pan-zoom.min.js"></script>
 <style>
 /* Targets the SVG itself to ensure it fills the parent container's height */
@@ -5,29 +6,40 @@ figure.figure svg {
   height: 82vh !important;
   width: 100% !important;
 }
+figure.part svg {
+  height: 160px !important;
+  width: 100% !important;
+}
 </style>
-<script src="scripts/svg-pan-zoom.min.js"></script>
 <script>
 window.addEventListener('load', (event) => {
-  const diagrams = document.querySelectorAll('svg.mermaid-js');
-  let panZoomInstance;
+  // A single, reusable function to initialize a diagram and its controls
+  const initializeDiagram = (diagramElement) => {
+    if (!diagramElement || typeof svgPanZoom === 'undefined') {
+      console.error("SVG element or svg-pan-zoom library not found.");
+      return;
+    }
 
-  const diagram = diagrams[0]; 
-  if (diagram && typeof svgPanZoom !== 'undefined') {
-    panZoomInstance = svgPanZoom(diagram, {
+    // Correctly get the transform from the element's inner viewport
+    const viewport = diagramElement.querySelector('.svg-pan-zoom_viewport');
+    let initialTransform = null;
+    if (viewport) {
+      initialTransform = viewport.getAttribute('transform');
+    }
+
+
+    const panZoomInstance = svgPanZoom(diagramElement, {
       zoomEnabled: true,
       controlIconsEnabled: true,
-      fit: true,
-      center: true,
+      fit: false,
+      center: false,
       onPan: function(newPan) {
         const panXElement = document.getElementById('pan-x-value');
         const panYElement = document.getElementById('pan-y-value');
         const panXPercentElement = document.getElementById('pan-x-percent-value');
-        
         if (panXElement && panYElement && panXPercentElement) {
           panXElement.textContent = newPan.x.toFixed(2);
           panYElement.textContent = newPan.y.toFixed(2);
-
           const sizes = panZoomInstance.getSizes();
           const diagramWidth = sizes.viewBox.width;
           const viewportWidth = sizes.width;
@@ -43,45 +55,76 @@ window.addEventListener('load', (event) => {
         }
       }
     });
-  }
 
-  const zoomButtons = document.querySelectorAll('.zoom-to-button');
-  
-  zoomButtons.forEach(button => {
-    button.addEventListener('click', (e) => {
-      e.preventDefault();
+    // Apply the initial pan and zoom values from the transform
+    if (initialTransform) {
+      // Parse the matrix string into a usable object
+      const matrix = initialTransform.match(/matrix\(([^)]+)\)/)[1].split(',').map(Number);
+      const zoom = matrix[0];
+      const panX = matrix[4];
+      const panY = matrix[5];
       
-      const panXPercent = parseFloat(e.target.dataset.panXPercent) / 100;
-      const zoomValue = parseFloat(e.target.dataset.zoom);
-      
-      if (panZoomInstance) {
-        // Apply the zoom
-        panZoomInstance.zoom(zoomValue);
-
-        // Get sizes after zoom for correct calculation
-        const sizes = panZoomInstance.getSizes();
-        const diagramWidth = sizes.viewBox.width;
-        const viewportWidth = sizes.width;
+      setTimeout(() => {
+        panZoomInstance.zoom(zoom);
+        panZoomInstance.pan({ x: panX, y: panY });
+      }, 50); // Small delay to avoid race conditions
+    }
+    const zoomButtons = document.querySelectorAll('.zoom-to-button');
+    zoomButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const panXPercent = parseFloat(e.target.dataset.panXPercent) / 100;
+        const zoomValue = parseFloat(e.target.dataset.zoom);
         
-        const targetX = diagramWidth * panXPercent;
-        const panX = -(targetX * sizes.realZoom) + (viewportWidth / 2) * sizes.realZoom;
-        
-        panZoomInstance.pan({ x: panX, y: panZoomInstance.getPan().y });
-
-        // Manually update the monitoring display
-        const panXElement = document.getElementById('pan-x-value');
-        const panYElement = document.getElementById('pan-y-value');
-        const panXPercentElement = document.getElementById('pan-x-percent-value');
-        const zoomElement = document.getElementById('zoom-value');
-
-        if (panXElement && panYElement && panXPercentElement && zoomElement) {
-          panXElement.textContent = panX.toFixed(2);
-          panYElement.textContent = panZoomInstance.getPan().y.toFixed(2);
-          zoomElement.textContent = zoomValue.toFixed(2);
-          panXPercentElement.textContent = (panXPercent * 100).toFixed(2) + "%";
+        if (panZoomInstance) {
+          panZoomInstance.zoom(zoomValue);
+          const sizes = panZoomInstance.getSizes();
+          const diagramWidth = sizes.viewBox.width;
+          const viewportWidth = sizes.width;
+          const targetX = diagramWidth * panXPercent;
+          const panX = -(targetX * sizes.realZoom) + (viewportWidth / 2) * sizes.realZoom;
+          panZoomInstance.pan({ x: panX, y: panZoomInstance.getPan().y });
+          
+          const panXElement = document.getElementById('pan-x-value');
+          const panYElement = document.getElementById('pan-y-value');
+          const panXPercentElement = document.getElementById('pan-x-percent-value');
+          const zoomElement = document.getElementById('zoom-value');
+          if (panXElement && panYElement && panXPercentElement && zoomElement) {
+            panXElement.textContent = panX.toFixed(2);
+            panYElement.textContent = panZoomInstance.getPan().y.toFixed(2);
+            zoomElement.textContent = zoomValue.toFixed(2);
+            panXPercentElement.textContent = (panXPercent * 100).toFixed(2) + "%";
+          }
         }
-      }
+      });
     });
-  });
+  };
+
+  // Find the first SVG or EMBED element on the page
+  const mainDiagramContainer = document.querySelector('svg.mermaid-js, embed[type="image/svg+xml"]');
+
+  if (mainDiagramContainer) {
+    if (mainDiagramContainer.tagName.toLowerCase() === 'svg') {
+      // It's a native SVG, so initialize it directly
+      initializeDiagram(mainDiagramContainer);
+    } else if (mainDiagramContainer.tagName.toLowerCase() === 'embed') {
+      // It's an <embed> tag, so wait for its content to load
+      mainDiagramContainer.addEventListener('load', () => {
+        try {
+          // Get the SVG element from inside the loaded document
+          const embeddedSvg = mainDiagramContainer.contentDocument.querySelector('svg');
+          if (embeddedSvg) {
+            initializeDiagram(embeddedSvg);
+          } else {
+            console.error("Could not find SVG inside the embed tag.");
+          }
+        } catch (e) {
+          console.error("Could not access contentDocument of embed:", e);
+        }
+      });
+    }
+  } else {
+    console.error("No valid SVG or embed element found for initialization.");
+  }
 });
 </script>
