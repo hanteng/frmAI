@@ -1,8 +1,13 @@
----
-title: 第壹 ㉄ AI 問題意識
----
+# ㉄ AI⟪問題意識⟫ {#sec-problematics}
 
-> ㉄🤷🏻‍♀️ **什麼是「AI 問題意識」？**
+::: {.callout-tip #tip-problematics title="應對 AI ㉄的🎏「流派」🏮「主義」"}
+🤷🏻‍♀️ 知識的「問題意識」，是人類某些共識或共通問題，比如「如何做決定」。要克服或應對這些問題，人們會有不同解法，從算命到占卜、從史書記錄與解譯到兵棋軍推、從計劃經濟到平台經濟，都可以是「如何做決定」這共識問題開始的不同解法。
+㉄
+:::
+
+> ㉄🤷🏻‍♀️ **什麼是AI ⟪問題意識⟫ ？**
+
+
 
 從甲骨到大語言模型，人類不斷尋求「腦補」[^腦補]來擴展心智、解決問題。  
 人工智慧（AI）是人類最新的「腦補」或「心智能力擴張」科技，不僅能填補認知上的空缺，更能擴展我們的心智能力。
@@ -31,13 +36,13 @@ AI 核心問題意識（AI problematics）涉及一套 **框架尋找**（frame-
 
 這些概念塑造了 **思想實驗** 成為定義「智慧」的討論基礎，以下將依序介紹 AI 發展過程中所面臨的共享問題。
 
-* **1.1** 🎭🗪 [圖靈測試](#sec-turing-test)：_「它模仿/擬的像嗎？」_
-* **1.2** 🧱🗣️ [中文房間](#sec-chinese-room)：_「它真理解嗎？」_
-* **1.3** 🔤㊙️ [符碼紮根問題](#sec-symbol-grounding-problem)：_「符碼代表啥意思？」_
-* **1.4** 🖼️⏱️ [框架問題](#sec-frame-problem)：_「當下，啥才重要？」_
-* **1.5** 👁️⯊ [完形心理](#sec-gestalt-psychology)：_「人類如何快速感知？」_
-* **1.6** 🎯🛡️ [對齊與控制問題](#sec-alignment-control-problem)：_「它能持續對齊且受控嗎？」_
-* **1.7** 🗫🎲 [語言賽局](#sec-language-games)：_「人類語言意義如何產生？」_
+* **[@sec-turing-test]**：_「它模仿/擬的像嗎？」_
+* **[@sec-chinese-room]**：_「它真理解嗎？」_
+* **[@sec-symbol-grounding-problem]**：_「符碼代表啥意思？」_
+* **[@sec-frame-problem]**：_「當下，啥才重要？」_
+* **[@sec-gestalt-psychology]**：_「人類如何快速感知？」_
+* **[@sec-alignment-control-problem]**：_「它能持續對齊且受控嗎？」_
+* **[@sec-language-games]**：_「人類語言意義如何產生？」_
 
 ### 😚 核心問題速記表
 
@@ -54,9 +59,23 @@ AI 核心問題意識（AI problematics）涉及一套 **框架尋找**（frame-
 | 6   | 🎯🛡️  | **對齊與控制問題**<br>AI Alignment & Control Problem | _「它能持續對齊且受控嗎？」_<br>確保 AI 行為符合人類價值是防止意外或危害的關鍵。                                        |
 | 7   | 🗫🎲  | **語言賽局**<br>Language Games                    | _「人類語言意義如何產生？」_<br>意義源自脈絡使用，而非符號固定 **意義**。<br>🤔**同理類推**，機器若欲有效溝通，需能處理語言的社交語境脈絡及流動性。 |
 
-> 除了 **完形心理** 與 **語言賽局** 外，其餘五項為 AI 學科高度共識的核心問題。本書納入兩者，是因應當代 AI 在**感知**與**語言互動**上的快速發展。
+除了 **完形心理** 與 **語言賽局** 外，其餘五項為 AI 學科高度共識的核心問題。本書納入兩項，是因應當代 AI 在**感知**與**語言互動**上的快速發展。
 
-### 🎏 貫穿思維
+<!-- https://quarto.org/docs/authoring/callouts.html -->
+::: {#tip-problematics .callout-warning title="本書擴框提醒❣️"} 
+㉄ AI「問題意識」，本書融入新兩項：
+* **[@sec-gestalt-psychology]**：_「人類如何快速感知？」_
+* **[@sec-language-games]**：_「人類語言意義如何產生？」_
+其餘 AI 學科高度共識的核心問題，本書納入五項，依當代重要性排序：
+* **[@sec-alignment-control-problem]**：_「它能持續對齊且受控嗎？」_
+* **[@sec-frame-problem]**：_「當下，啥才重要？」_
+* **[@sec-symbol-grounding-problem]**：_「符碼代表啥意思？」_
+* **[@sec-turing-test]**：_「它模仿/擬的像嗎？」_
+* **[@sec-chinese-room]**：_「它真理解嗎？」_
+🐦‍🔥
+:::
+
+## 🎏 貫穿思維
 
 在進入個別條目內容前，以下摘要貫穿的 **框架尋找** 與 **解方測試** 主題，方便讀者有效及系統地吸收：
 
@@ -71,7 +90,7 @@ AI 核心問題意識（AI problematics）涉及一套 **框架尋找**（frame-
     - 🧠 **多層次推理**：從感知到符號推理，跨層次分析問題。  
     - 🤝 **價值對齊**：確保 AI 的行為與人類價值、倫理原則一致。
 
-如此，雖每個問題意識有其特定時空及知識脈絡，但都能給我們評估 AI 系統充份的 **科技設計** 與 **哲學辯論** 的靈活思緒空間。這些思緒連結將在第[貳🎏🏮](#sec-symbolic-ai)、[參🏛️](#sec-symbolic-ai)、[肆🌀](#sec-statistical-ai)章逐步展開為技術與設計取徑。
+如此，雖每個問題意識有其特定時空及知識脈絡，但都能給我們評估 AI 系統充份的 **科技設計** 與 **哲學辯論** 的靈活思緒空間。這些思緒連結將在第[貳🎏🏮](@sec-symbolic-ai)、[參🏛️](@sec-symbolic-ai)、[肆🌀](@sec-statistical-ai)章逐步展開為技術與設計取徑。
 
 ## 🪴 內容大綱
 
@@ -79,23 +98,23 @@ AI 核心問題意識（AI problematics）涉及一套 **框架尋找**（frame-
 
 簡言之，這仍是「**框定**」問題，進而「**填補**」空缺的「腦補」智慧，只是推論及論理更具複雜度。
 
-本書主張有七大 AI 核心問題意識，能幫助讀者掌握基礎，進而建立 🪜 **[知識鷹架](#sec-notes-action)**。
+本書主張有七大 AI 核心問題意識，能幫助讀者掌握基礎，進而建立 🪜 **[知識鷹架](@sec-notes-action)**。
 
 ### 🌰 核心條目內容
 
-* **1.1** 🎭🗪 [圖靈測試](#sec-turing-test)（Turing Test）  
+* **1.1** 🎭🗪 [圖靈測試](@sec-turing-test)（Turing Test）  
     * _「它模仿/擬的像嗎？」_ 可操作可驗證的 **模仿遊戲**
-* **1.2** 🧱🗣️ [中文房間](#sec-chinese-room)（Chinese Room）  
+* **1.2** 🧱🗣️ [中文房間](@sec-chinese-room)（Chinese Room）  
     * _「它真理解嗎？」_ 引戰的 **質疑思想實驗**
-* **1.3** 🔤㊙️ [符碼紮根問題](#sec-symbol-grounding-problem)（Symbol Grounding Problem）  
+* **1.3** 🔤㊙️ [符碼紮根問題](@sec-symbol-grounding-problem)（Symbol Grounding Problem）  
     * _「符碼代表啥意思？」_ 衍生 **完全圖靈測試** 與 「具身派」AI 等 **紮根解方**
-* **1.4** 🖼️⏱️ [框架問題](#sec-frame-problem)（Frame Problem）  
+* **1.4** 🖼️⏱️ [框架問題](@sec-frame-problem)（Frame Problem）  
     * _「當下，啥才重要？」_ 巧用 經典 與 現代 觀點的「相關性」應對取徑
-* **1.5** 👁️⯊ [完形心理](#sec-gestalt-psychology)（Gestalt Psychology）  
+* **1.5** 👁️⯊ [完形心理](@sec-gestalt-psychology)（Gestalt Psychology）  
     * _「人類如何快速感知？」_ 直指 **生存賭局** 演化出的 **認知捷徑**或**經驗法則** 「腦補」
-* **1.6** 🎯🛡️ [對齊與控制問題](#sec-alignment-control-problem)（AI Alignment & Control Problem）  
+* **1.6** 🎯🛡️ [對齊與控制問題](@sec-alignment-control-problem)（AI Alignment & Control Problem）  
     * _「它能持續對齊且受控嗎？」_ 直指 **意圖與價值** 之間的鴻溝
-* **1.7** 🗫🎲 [語言賽局](#sec-language-games)（Language Games）  
+* **1.7** 🗫🎲 [語言賽局](@sec-language-games)（Language Games）  
     * _「人類語言意義如何產生？」_ 回歸 動態的**生命形式**與**生活賽局** 「腦補」
 
 ### 🎋 延伸內容
@@ -109,4 +128,4 @@ AI 核心問題意識（AI problematics）涉及一套 **框架尋找**（frame-
 
 瞭解 `AI 問題意識`，不僅有助於掌握 AI 問題意識的主要切入觀點，更能系統性理解技術實踐背後的認知假設。
 
-* [第貳章 🎏🏮](#sec-schools-paradigms) `AI 「流派」與「主義」` 進一步系統地釐清不同技術的思路來源，更能理解個別隱含預設，是如何**框定**問題，進而**填補**空缺，同時擴展我們更底層的**定義問題**➕**尋得解方**的成套心智能力，這將成為理解後續各流派與導向的基礎。
+* [第貳篇 🎏🏮](@sec-schools-paradigms) `AI 「流派」與「主義」` 進一步系統地釐清不同技術的思路來源，更能理解個別隱含預設，是如何**框定**問題，進而**填補**空缺，同時擴展我們更底層的**定義問題**➕**尋得解方**的成套心智能力，這將成為理解後續各流派與導向的基礎。
