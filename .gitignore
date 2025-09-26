@@ -212,3 +212,6 @@ __marimo__/
 /docs
 /en
 /zh
+**/*.quarto_ipynb
+
+/.luarc.json
