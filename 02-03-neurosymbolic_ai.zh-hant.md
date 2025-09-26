@@ -79,7 +79,7 @@ tags:
 - 🚦深入探索以下領域的應用：
 	- 🌉🔗📝 [知識驅動生成（RAG）](10-04-retrieval_augmented_generation.zh-hant)
 	- 🌉🛣🌐 [脈絡工程](10-05-context_engineering.zh-hant)
-	- 🎁🚀🌱 [AI 產品經理](10-06-AI_PM.zh-hant)
+	- 🎁🚀🌱 [AI 產品經理](#sec-ai-pm)
 	- ☸🤖 [智能體／代理人導向](05-03-oriented_agent.zh-hant)
 	- ☸🛠 [任務導向型](05-04-oriented_task.zh-hant)
 	- ☸⚖️ [倫理／互動導向型](05-05-oriented_ethics.zh-hant)
