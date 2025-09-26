@@ -10,6 +10,7 @@ tags:
 - LLM
 - 參數微縮工程
 ---
+# 🌀🌐🔗 大語言模型網組合 {#sec-llm-webassembly}
 `大語言模型網組合`（LLM WebAssembly）是「統計流」AI 的 **網路化部署實踐** 之一，旨在將強大的 **大語言模型**（Large Language Models, LLMs）直接運行於瀏覽器或邊緣端環境，實現即時、互動、可擴展的 [生成式 AI](06-05-analysis_generative.zh-hant) 能力。過去，LLM 的強大能力主要依賴雲端伺服器，但隨著 **Llama** 家族等 **開源** 模型的出現與普及，結合 **WebAssembly（Wasm）** 與 **WebGPU** 等網頁高效能技術，讓 LLM 的推論與生成得以直接在瀏覽器中運行。以 `llama-cpp-wasm` 等專案為代表，這一技術開創了 LLM 在裝置端運行的可行性。
 
 作為「統計流」AI 的 **新興網頁資訊科技**，`大語言模型網組合` 代表了從集中式雲端推理向 **分散式、即時化、可組合** AI 應用的轉變。它將「文件網」（Web of Documents）與「**應用網**」（**Web of Applications**）進一步融合，讓使用者在瀏覽器中即可獲得接近雲端部署的大語言模型的語言理解與生成能力。
@@ -127,10 +128,10 @@ tags:
 
 ## 👉接下來🪸
 
-- ⮦🚥 思考 [第伍章 ☸](05----ai_orientations.zh-hant) AI 5 大導向（AI Orientations）的各種系統／設計思維視角，是如何運用 `大語言模型網組合`，去構成有用的 **應用架構** 與 **問題解決策略**。
+- ⮦🚥 思考 [第伍篇 ☸](05----ai_orientations.zh-hant) AI 5 大導向（AI Orientations）的各種系統／設計思維視角，是如何運用 `大語言模型網組合`，去構成有用的 **應用架構** 與 **問題解決策略**。
     - 接續 ☸🌀 [數據導向](05-02-oriented_data.zh-hant)
     - 對比 ☸🏛️ [知識導向](05-01-oriented_knowledge.zh-hant)
-- ⮦🚦 探究 [第肆章 🌀](04----statistical_ai.zh-hant) **「統計流」AI**（Statistical AI）的其它條目，試試自己能不能說明 `大語言模型網組合` 和它們的關係：
+- ⮦🚦 探究 [第肆篇 🌀](04----statistical_ai.zh-hant) **「統計流」AI**（Statistical AI）的其它條目，試試自己能不能說明 `大語言模型網組合` 和它們的關係：
 	- **🌀🎲🌿 [機率性關聯](04-01-probabilistic_association.zh-hant)**：`大語言模型網組合` 的核心 LLM 是基於機率性關聯原理運作，透過大量語料學習詞與詞、句與句之間的統計關係，並在瀏覽器端即時生成最可能的回應或內容。  
 	- **🌀🧞‍♀️🗪 [LLM聊天機器人](04-02-llm_chatbots.zh-hant)**：在 WebAssembly 環境中部署 LLM，可直接在網頁中構建可離線運行的**LLM聊天機器人**，提供即時互動、隱私保護與跨平台體驗，無需依賴雲端 API。
 	- **🌀🪢🧠 [神經網路](04-03-neural_networks.zh-hant)**：`大語言模型網組合`所運行的 LLM 本質上是**深度神經網路**，透過多層 Transformer 架構進行語言建模，並經由 WebAssembly/WebGPU 在用戶端高效推理。     
