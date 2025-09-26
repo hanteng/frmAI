@@ -82,9 +82,9 @@ MCTS 是種能透過「**大格局觀**」與「**機會成本**」思維來**�
 若以[☸ AI 導向](05----ai_orientations.zh-hant)定位，MCTS的應用明顯落在：
 
 * ☸🤖 [智能體／代理人導向](05-03-oriented_agent.zh-hant)：MCTS 賦予智能體在複雜環境中，能像人類般地進行深思熟慮與規劃的能力，使其能自主地做出最佳決策。
-* ☸🛠 [任務導向型](05-04-oriented_task.zh-hant)：MCTS 專注於解決特定任務，例如規劃出圍棋對弈中的最佳棋步或機器人導航的最短路徑，以達成任務的最終目標。
+* ☸🛠 [任務導向型](05-01-oriented_task.zh-hant)：MCTS 專注於解決特定任務，例如規劃出圍棋對弈中的最佳棋步或機器人導航的最短路徑，以達成任務的最終目標。
 
-然而，由於涉及**決策**，情境性脈絡應用會需要思量☸⚖️ [倫理／互動導向型](05-05-oriented_ethics.zh-hant) 及 ☸🏛️ [知識導向](05-01-oriented_knowledge.zh-hant)，以確保決策**品質及後果**。
+然而，由於涉及**決策**，情境性脈絡應用會需要思量☸⚖️ [治理導向](05-05-oriented_governance.zh-hant) 及 ☸🏛️ [知識導向](05-01-oriented_knowledge.zh-hant)，以確保決策**品質及後果**。
 
 ### 📐🌉 應用考量
 
@@ -105,4 +105,4 @@ MCTS 是種能透過「**大格局觀**」與「**機會成本**」思維來**�
 
 是種驅動決策的 **[框架思維](01-04-Frame_Problem.zh-hant)**，`蒙地卡羅樹搜尋`（MCTS）方法，能整合賽局中的「**大格局觀**」與「**機會成本**」概念，廣泛應用於 [博弈](07----game_ai.zh-hant) 與自動化 AI 系統中，特別是[任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant)。其「大格局觀」由**啟發式評估函數**體現，而「機會成本」則常由**UCT**公式體現，在「已知的好處」與「未知的可能性」之間取得平衡。
 
-在 AI 領域內，MCTS 可以是[決策演算法](06-06-decision_making_algorithm.zh-hant)、[指導型分析](06-03-analysis_prescriptive.zh-hant)、等的可選工具，值得在[智能體／代理人導向](05-03-oriented_agent.zh-hant) 、[任務導向](05-04-oriented_task.zh-hant) 應用考量適用與否。同時，因為其決策的賽局機率特質，在設計或執行 [行為主義](02-06-behaviorism.zh-hant) 的 **強化學習**及 [連結主義](02-05-connectionism.zh-hant) 的 **深度學習** 時，需要思量 [倫理／互動導向](05-05-oriented_ethics.zh-hant) 及 [知識導向](05-01-oriented_knowledge.zh-hant)，以確保決策**品質及後果**，以確保 [AI 對齊與控制問題](01-06-Alignment_Control_Problem.zh-hant.md) 的有效及合理應對。
+在 AI 領域內，MCTS 可以是[決策演算法](06-06-decision_making_algorithm.zh-hant)、[指導型分析](06-03-analysis_prescriptive.zh-hant)、等的可選工具，值得在[智能體／代理人導向](05-03-oriented_agent.zh-hant) 、[任務導向](05-01-oriented_task.zh-hant) 應用考量適用與否。同時，因為其決策的賽局機率特質，在設計或執行 [行為主義](02-06-behaviorism.zh-hant) 的 **強化學習**及 [連結主義](02-05-connectionism.zh-hant) 的 **深度學習** 時，需要思量 [治理導向](05-05-oriented_governance.zh-hant) 及 [知識導向](05-01-oriented_knowledge.zh-hant)，以確保決策**品質及後果**，以確保 [AI 對齊與控制問題](01-06-Alignment_Control_Problem.zh-hant.md) 的有效及合理應對。

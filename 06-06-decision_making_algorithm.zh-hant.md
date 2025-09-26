@@ -219,8 +219,8 @@ tags:
 	* **1.7** 🗫🎲 [語言賽局](01-07-Language_Games.zh-hant.md)（Language Games）
 * [第伍篇 ☸](05----ai_orientations.zh-hant.md)　區分 AI 5 大導向（AI Orientations）
 	* **5.3** ☸🤖 [智能體／代理人導向](05-03-oriented_agent.zh-hant.md)（Agent-oriented）
-	* **5.4** ☸🛠 [任務導向](05-04-oriented_task.zh-hant.md)（Task-oriented AI）
-	* **5.5** ☸⚖️ [倫理／互動導向](05-05-oriented_ethics.zh-hant.md)（Ethics-oriented）
+	* **5.4** ☸🛠 [任務導向](05-01-oriented_task.zh-hant.md)（Task-oriented AI）
+	* **5.5** ☸⚖️ [治理導向](05-05-oriented_governance.zh-hant.md)（Ethics-oriented）
 * [第柒篇 🏆](07----game_ai.zh-hant.md)　「博弈派」AI（Game AI）
 	* **7.7** 🏆🪖⚔️ [戰場模擬](07-07-battlefield_simulation.zh-hant.md)（Battlefield Simulation）
 * [第捌篇 🦾](08----embodied_ai.zh-hant.md)　「具身派」AI（Embodied AI）
