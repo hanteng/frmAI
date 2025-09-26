@@ -1,5 +1,4 @@
 ---
-title: "🌉🔗📝 知識驅動生成（RAG）"  
 tags:  
 - 大語言模型  
 - 檢索增強生成  
@@ -10,6 +9,8 @@ tags:
 - 生成式AI  
 - 知識融合  
 ---
+# 🌉🔗📝 知識驅動生成（RAG） {#sec-retrieval-augmented-generation}
+
 `知識驅動生成`（Retrieval-Augmented Generation, RAG）是一種結合**外部知識檢索** 與[生成模型](02-07-large_language_models.zh-hant)（Large Language Models, LLMs） 的技術框架，旨在讓 在生成內容時，能即時訪問外部知識庫或資料源，以提升輸出的**準確性**、**時效性**與**可解釋性**。它突破了純生成模型僅依賴訓練參數記憶的限制，將檢索與生成緊密結合，形成一個動態的[知識導向](05-01-oriented_knowledge.zh-hant) 問答有效閉環。
 
 特別是在 **大型語言模型** 與 **[生成式 AI](06-05-analysis_generative.zh-hant)** 快速發展背景下，RAG 標誌著從「封閉式生成」（受限於基礎模型）走向「開放式知識融合」（可指定額外外部資料源）的新階段。這種方法不僅能減少幻覺（hallucination）問題，還能讓 AI 在面對專業領域或快速變化的資訊時，保持高準確度與可追溯性。

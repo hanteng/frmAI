@@ -1,5 +1,4 @@
 ---
-title: "🌉🔗🔐 API與MCP"  
 tags:  
 - 模組化  
 - 互操作性  
@@ -11,6 +10,8 @@ tags:
 - 智慧代理 
 - 多源數據  
 ---
+# 🌉🔗🔐 API與MCP {#sec-api-mcp}
+
 `API`（Application Programming Interface / 應用程式介面）與 `MCP`（Model Context Protocol / 模型脈絡協定）是現代 AI 工程與軟體系統實現**模組化**與**互操作性**的基石。API 提供了不同系統、服務或模組之間的標準化溝通方式；MCP 則在此基礎上，為多模組、多工具、多數據源的協作提供結構化、可編排的整合框架。
 
 因此，`API與MCP`可視為圍繞多種數據與計算資源的「工具箱」，在成熟的商業與開放 API 生態系上，在網際網路上，讓**大語言模型**人工智慧（LLM AI） ：
@@ -149,5 +150,16 @@ RESTful API 是基於通用的 Web 標準（主要是 HTTP）、推動萬維網�
   - 🛠️ [Temporal.io](https://temporal.io/) — 工作流與編排平台，可作為 MCP 類型協調層的參考  
   - 📦 [AsyncAPI](https://www.asyncapi.com/) — 事件驅動 API 的規範與工具集  
 
-**小結**：在追求功能豐富與多源整合的同時，應平衡系統的簡潔性、可維護性與合規性，並建立可觀測、可追溯的協作框架。在產品規劃與跨團隊協作中，API/MCP 的設計原則亦是 [AI 產品經理](10-06-AI_PM.zh-hant) 的核心考量之一。
+**小結**：在追求功能豐富與多源整合的同時，應平衡系統的簡潔性、可維護性與合規性，並建立可觀測、可追溯的協作框架。在產品規劃與跨團隊協作中，API/MCP 的設計原則亦是 [AI 產品經理](#sec-ai-pm) 的核心考量之一。
 
+## 👉接下來🪸
+
+- ⮤🚦 探究
+	- **5.2** ☸🛠 **[工具導向](05-02-oriented_tool.zh-hant.md)**（Tool-oriented AI）
+		- **知識姿態**：偏向**編排性**、**模組化**與**外部資源調**用的「多工具使用」模型。
+		- **預設行動**：「編排」 API 調用、插件系統與工具鏈設計。
+- ⮦🚦 探究
+	- **10.3** 🌉🛠️💡 [提示工程](10-03-prompt_engineering.zh-hant.md)（Prompt Engineering）
+	* **10.4** 🌉🔗📝 [知識驅動生成（RAG）](10-04-retrieval_augmented_generation.zh-hant.md)（Retrieval-Augmented Generation）
+	* **10.5** 🌉🛣🌐 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering） 
+	* **10.6** 🎁🚀🌱 [AI 產品經理](10-06-AI_PM.zh-hant.md)（AI Product Management）
