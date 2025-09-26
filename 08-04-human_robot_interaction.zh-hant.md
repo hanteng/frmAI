@@ -1,5 +1,4 @@
 ---
-title: "🦾🤝💪 人機互動" 
 tags:
 - 人機互動
 - HRI
@@ -11,6 +10,7 @@ tags:
 - 人因工程
 - 認知交互
 ---
+# 🦾🤝💪 人機互動 {#sec-human-robot-interaction}
 
 `人機互動`（Human-Robot Interaction, HRI）是一個跨學科領域，專門研究如何設計機器人系統，使其能夠**安全、有效、自然**地與人類進行溝通、協作與共存。  
 
@@ -26,7 +26,7 @@ HRI 的核心目標是創造一個**流暢、直覺且可信賴**的協作關係
 
 ## 🚀 應用場景
 
-HRI 的應用涵蓋服務、醫療、教育、輔助科技、搜救等多種場域，並且在不同文化與社會背景下呈現不同的互動模式與接受度[@dautenhahn2013human]。
+HRI 的應用涵蓋服務、醫療、教育、輔助科技、搜救等多種場域，並且在不同文化與社會背景下呈現不同的互動模式與接受度[@Dautenhahn2013-human-robot-interaction]。
 
 - 🏭 **智慧製造協作**：協作型機器人與人類工人並肩作業，需兼顧效率與安全。  
 - 🏥 **醫療與照護**：手術機器人、復健機器人、陪伴型機器人。  
@@ -34,7 +34,7 @@ HRI 的應用涵蓋服務、醫療、教育、輔助科技、搜救等多種場�
 - 🚨 **搜救與災害應對**：在高風險環境中與人員協作。  
 - 🎓 **教育與訓練**：社會型機器人作為教學助理。  
 
-具體的闡明範例參見**陪伴型機器人**與**智慧照護**，此案例展示陪伴型機器人透過自然語音、非語言互動、協作任務與隱私保護，支持高齡者與病患的生活品質，並在長期互動中建立信任關係[@dautenhahn2013human]。
+具體的闡明範例參見**陪伴型機器人**與**智慧照護**，此案例展示陪伴型機器人透過自然語音、非語言互動、協作任務與隱私保護，支持高齡者與病患的生活品質，並在長期互動中建立信任關係[@Dautenhahn2013-human-robot-interaction]。
 
 ***
 
@@ -190,9 +190,3 @@ HRI 研究發現，人機互動在設計、實驗與長期部署中存在以下�
 
 隨著機器人進入公共空間與日常生活，人機互動將成為推動社會接受度與長期協作的關鍵因素。它不僅影響 [可適應機器人學](08-03-adaptive_robotics.zh-hant) 在多變環境中的表現，也反過來依賴 [感知與環境](08-02-perception_and_environment.zh-hant) 提供精準的情境資訊，並與[機器人安全與穩健性](08-05-robot_safety_and_robustness.zh-hant)、[任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant) 協同，確保互動過程安全、有效且值得信賴。
 
-## 參考書目
-
-::: {#refs}
-@dautenhahn2013human  
-Dautenhahn, K. (2013). *Human-Robot Interaction*. In M. Soegaard & R. Dam (Eds.), *The Encyclopedia of Human-Computer Interaction, 2nd Ed.* Aarhus, Denmark: The Interaction Design Foundation. Retrieved from https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed/human-robot-interaction
-:::
