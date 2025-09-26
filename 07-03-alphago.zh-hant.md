@@ -1,11 +1,12 @@
 ---
-title: 🏆⚫⚪  AlphaGo
 tags:
   - 完全資訊博弈
   - 神經網路
   - 蒙地卡羅樹搜尋
   - Google
+  - DeepMind
 ---
+# 🏆⚫⚪  AlphaGo {#sec-alphago}
 
 `AlphaGo 圍棋`或譯 `阿爾法圍棋`（AlphaGo）標誌著人工智慧（AI）在博弈挑戰上的重要里程碑。由 **DeepMind** 公司採用其 **[深度學習](04-03-neural_networks)** 為核心技術，於2016年擊敗韓國職業棋手 **李世乭**，成為勝過人類精英棋手的博弈派 AI 經典案例。
 

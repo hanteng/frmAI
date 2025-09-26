@@ -1,16 +1,18 @@
 ---
-title: 🏆🕹️👾 Atari DQN
 tags:
-  - 深度強化學習
-  - Q-Learning
-  - Atari
-  - 遊戲AI
-  - 深度學習
-  - 神經網路
-  - 強化學習
-  - 非對抗型博弈
-  - 對抗型博弈
+- DeepMind
+- 深度強化學習
+- Q-Learning
+- Atari
+- 遊戲AI
+- 深度學習
+- 神經網路
+- 強化學習
+- 非對抗型博弈
+- 對抗型博弈
 ---
+# 🏆🕹️👾 Atari DQN {#sec-atari-dqn}
+
 `Atari DQN`（Atari Deep Q-Network）是由 Google DeepMind 於 2013 年開發的一種人工智慧模型 Deep Q-Network（DQN），能在數十款經典 Atari 2600 遊戲中，僅以螢幕像素作為輸入，就能達到甚至超越人類玩家的表現。
 
 DQN 的成功，標誌著**深度學習**與**強化學習**的首次完美融合，開創了「**深度強化學習**」（Deep Reinforcement Learning）這個重要的研究領域。

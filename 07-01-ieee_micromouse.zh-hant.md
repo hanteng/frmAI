@@ -1,5 +1,4 @@
 ---
-title: 🏆🐭🗺️ IEEE電子老鼠走迷宮
 tags:
   - 機器人學
   - 強化學習
@@ -11,6 +10,8 @@ tags:
   - 具身派AI
   - 物理AI
 ---
+# 🏆🐭🗺️ IEEE電子老鼠走迷宮 {#sec-ieee-micromouse}
+
 `IEEE電子老鼠走迷宮`（IEEE Micromouse）是一項國際性的機器人競賽，參賽者需設計一隻「電子老鼠」小型機器人，使其能在一個複雜且未知的迷宮中，從起點出發，自主探索並找到中心點，最終再以最快的速度循著最短路徑回到終點。
 
 電子老鼠競賽是 **[具身派 AI](08----embodied_ai.zh-hant)**（Embodied AI）與 **物理 AI**（Physical AI）的經典範例，它在**未知的物理環境**中，執行「感知、決策、行動」的完整循環，考驗機器人硬體與其核心**演算法**和**自動導航**的智慧，考量[機器人安全與穩健性](08-05-robot_safety_and_robustness.zh-hant) 與 [任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant)。

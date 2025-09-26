@@ -1,5 +1,4 @@
 ---
-title: 🏆🧙‍♂🥷 OpenAI Five 
 tags: 
 - 非完全資訊博弈 
 - 多智能體博弈 
@@ -9,6 +8,8 @@ tags:
 - 深度學習 
 - OpenAI
 ---
+# 🏆🧙‍♂🥷 OpenAI Five {#sec-openai-five}
+
 `OpenAI Five` 是由非營利人工智慧研究機構 **OpenAI** 所開發，這個 AI 團隊在多人線上競技遊戲 **《Dota 2》** 中，展現出超越人類頂尖職業選手的團隊協作與戰術實力。OpenAI Five 的成就，標誌著 AI 在處理**多智能體博弈**（multi-agent game）和複雜即時策略（real-time strategy）環境中的重要里程碑。
 
 ## 🖼️ 背景資訊
