@@ -169,10 +169,10 @@ tags:
 
 參照 **[🔖附錄🌌 心智圖](appendix_mindmap.zh-hant.qmd)**，將`診斷型分析`與下述概念對比，檢視其是否可歸類到「因子分析」範疇：
 
-- [第參章 🏛️](03----symbolic_ai.zh-hant.md)　「符號流」AI（Symbolic AI）
+- [第參篇 🏛️](03----symbolic_ai.zh-hant.md)　「符號流」AI（Symbolic AI）
     - **3.1** 🏛️⊨∴ [形式邏輯](03-01-formal_logic.zh-hant.md)（Formal Logic）
     * **3.5** 🏛️🕸💡 [知識圖譜](03-04-knowledge_representation.zh-hant.md)（Knowledge Graphs）
-- [第肆章 🌀](04----statistical_ai.zh-hant.md)　「統計流」AI（Statistical AI）
+- [第肆篇 🌀](04----statistical_ai.zh-hant.md)　「統計流」AI（Statistical AI）
     - **4.1** 🌀🎲🌿 [機率性關聯](04-01-probabilistic_association.zh-hant.md)（Probabilistic Association）
     * **4.5** 🌀🤖📦 [機器學習模型](04-05-machine_learning_models.zh-hant.md)（Machine Learning Models）
 
