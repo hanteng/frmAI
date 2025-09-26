@@ -48,7 +48,7 @@ tags:
 :::
 
 <figure class="part"><svg aria-roledescription="flowchart-v2" role="graphics-document document" class="flowchart mermaid-js" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1" xmlns:ev="http://www.w3.org/2001/xml-events">
-<g id="viewport-20250923180406308" class="svg-pan-zoom_viewport" transform="matrix(5,0,0,5,-470,-100)" style="transform: matrix(5, 0, 0, 5, -470, -100);">
+<g id="viewport-20250923180406308" class="svg-pan-zoom_viewport" transform="matrix(5.4 ,0,0,5.4,-480,-100)" style="transform: matrix(5.4, 0, 0, 5.4, -480, -100);">
 <image href="images/mind_map.svg"></image></g></svg>
 </figure>
 ***
