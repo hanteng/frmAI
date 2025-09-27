@@ -10,7 +10,7 @@ tags:
 - 智慧代理 
 - 多源數據  
 ---
-# 🌉🔗🔐 API與MCP {#sec-api-mcp}
+# 🌉🔗🌐 API與MCP {#sec-api-mcp}
 
 `API`（Application Programming Interface / 應用程式介面）與 `MCP`（Model Context Protocol / 模型脈絡協定）是現代 AI 工程與軟體系統實現**模組化**與**互操作性**的基石。API 提供了不同系統、服務或模組之間的標準化溝通方式；MCP 則在此基礎上，為多模組、多工具、多數據源的協作提供結構化、可編排的整合框架。
 
@@ -22,7 +22,7 @@ tags:
 
 這數據與計算的「工具箱」讓 LLM AI 從封閉式生成走向創意融合。
 
-廣義層面的`API與MCP`融合不侷限於用於 LLM AI 系統，還適用於任何需要跨模組協作的軟體架構（參見[附錄：API分類](appendix_API.zh-hant)）。本條目將專注在說明API與MCP的核心概念，特別是在支持 LLM AI 系統的開發與創新，是如何構成並引領現代 [AI工程](10----ai_engineering.zh-hant) 的發展，催生出一套強調結構化的可編排、可監控、可持續交付（CI/CD）的工程流程。
+廣義層面的`API與MCP`融合不侷限於用於 LLM AI 系統，還適用於任何需要跨模組協作的軟體架構（參見[附錄：API分類](appendix-MCP_API.zh-hant)）。本條目將專注在說明API與MCP的核心概念，特別是在支持 LLM AI 系統的開發與創新，是如何構成並引領現代 [AI工程](10----ai_engineering.zh-hant) 的發展，催生出一套強調結構化的可編排、可監控、可持續交付（CI/CD）的工程流程。
 
 ***
 
@@ -159,7 +159,7 @@ RESTful API 是基於通用的 Web 標準（主要是 HTTP）、推動萬維網�
 		- **知識姿態**：偏向**編排性**、**模組化**與**外部資源調**用的「多工具使用」模型。
 		- **預設行動**：「編排」 API 調用、插件系統與工具鏈設計。
 - ⮦🚦 探究
-	- **10.3** 🌉🛠️💡 [提示工程](10-03-prompt_engineering.zh-hant.md)（Prompt Engineering）
+	- **10.3** 🌉❔📌 [提示工程](10-03-prompt_engineering.zh-hant.md)（Prompt Engineering）
 	* **10.4** 🌉🔗📝 [知識驅動生成（RAG）](10-04-retrieval_augmented_generation.zh-hant.md)（Retrieval-Augmented Generation）
-	* **10.5** 🌉🛣🌐 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering） 
-	* **10.6** 🎁🚀🌱 [AI 產品經理](10-06-AI_PM.zh-hant.md)（AI Product Management）
+	* **10.5** 🌉🪟🧭 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering） 
+	* **10.6** 🎁🌱🚀 [AI 產品經理](10-06-AI_PM.zh-hant.md)（AI Product Management）
