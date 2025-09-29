@@ -47,7 +47,7 @@ tags:
 此外，讀者亦可以從`圖靈測試`視角，擴展理解：
   - [第貳篇：AI 流派與主義](02----schools_paradigms.zh-hant) 如何以不同技術路線回應「可模仿即智能」的主張；
 	  - 可以說，圖靈測試奠定的可觀察可測試的「**[行為主義](02-06-behaviorism.zh-hant)**」取徑
-	  - **[大語言模型](02-07-large_language_models.zh-hant)** 的 **語言賽局腦補機**（Language Game Brain-Doodler）假說主張高度「流暢性」「腦補」能力已通過`圖靈測試`的說法成不成立？
+	  - **[大語言模型](02-07-large_language_models.zh-hant)** 的 **語言賽局腦補機**（Language Game Brain-Doodler）假說主張高度「流暢性」❝腦補❞能力已通過`圖靈測試`的說法成不成立？
   - 並在 [第參篇：符號流 AI](03----symbolic_ai.zh-hant) 觀察「可解釋規則」在模擬對話中的角色與侷限。
 
 
