@@ -1,4 +1,23 @@
-# 參考書目 {.unnumbered}
+---
+label: sec-book-references
+citeproc: true
+bibliography: references.bib
+bibliographystyle: apa
+number-sections: false 
+---
+簡易分類樹，分类引用來源：
+
+* **按 ㉄問題意識**
+* [@Huyen2025-ai-engineering]
+	* **1.6** 🎯🛡️ [對齊與控制問題](01-06-Alignment_Control_Problem.zh-hant.md)
+		* [@Neff2025-response-EU-democracy-shield]
+		* [@Yu2023-AI-psychology-OxfordBiblio]
+		* 8.4** 🦾🤝💪 [人機互動](08-04-human_robot_interaction.zh-hant)：
+			* [@Dautenhahn2013-human-robot-interaction]
+
+***
+
+# 📚參考書目 {.unnumbered}
 
 ::: {#refs}
 :::
