@@ -1,3 +1,9 @@
-# Glossary
+---
+title: "詞彙表"
+---
 
+# 詞彙表
+
+::: {#glossary-table}
 {{< glossary table=true >}}
+:::
