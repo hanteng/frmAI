@@ -1,16 +1,16 @@
 # ⸻📖目錄📑⸻ {.unnumbered #sec-toc}
 * 🤗序言 〜  🙩 [《框智格局：人工智慧知識鷹架手冊》](index.zh-hant.md)
 * 💬導論 〜 
-	* 🧠 [心智能力](notes-mind.zh-hant.md) 🐸🐘🧘
-	* 🧠🧞‍♀️ [〜語言賽局腦補機](hypothesis-mental_fill-in.zh-hant.html)
+	* 🧠 [心智能力](notes-constructive_fill-in.zh-hant.md) 🐸🐘🧘
+	* 🧠🧞‍♀️ [〜語言賽局腦補機](notes-mental_fill-in.zh-hant.html)
 * 📑筆記 〜
-	* 🪜 [知識鷹架](notes-action.zh-hant.md)
-	* 🪜👨‍👩‍👧‍👦 [〜家長篇~傳承](notes-action_for_parents.zh-hant.md)
-	* 🪜🧘 [〜自學篇~紥根](notes-action_for_learners.zh-hant.md)
+	* 🪜 [知識鷹架](notes-constructive_fill-in.zh-hant.md)
+	* 🪜👨‍👩‍👧‍👦 [〜家長篇~傳承](appendix-cognitive_parents.zh-hant.md)
+	* 🪜🧘 [〜自學篇~紥根](appendix-cognitive.zh-hant.md)
 * [第壹篇 ㉄](01----problematics.zh-hant.md)　AI 問題意識（AI Problematics）
 	* **1.1** 🎭🗪 [圖靈測試](01-01-Turing_Test.zh-hant.md)（Turing Test）
 	* **1.2** 🧱🗣️ [中文房間](01-02-Chinese_Room.zh-hant.md)（Chinese Room）
-	* **1.3** 🔤㊙️ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md)（Symbol Grounding Problem）
+	* **1.3** 🔤⚓ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md)（Symbol Grounding Problem）
 	* **1.4** 🖼️⏱️ [框架問題](01-04-Frame_Problem.zh-hant.md)（Frame Problem）
 	* **1.5** 👁️⯊ [完形心理](01-05-Gestalt_Psychology.zh-hant.md)（Gestalt Psychology）
 	* **1.6** 🎯🛡️ [對齊與控制問題](01-06-Alignment_Control_Problem.zh-hant.md)（AI Alignment & Control Problem）
@@ -77,16 +77,20 @@
 	* **9.7** 🧠⚡ [赫布學習論](09-07-hebb_rule.zh-hant.md)（Hebb’s Rule）
 	* **9.8** 🧮💰 [多智能體報酬矩陣](09-08-multi_agent_payoff_matrix.zh-hant.md)（Multi-Agent Payoff Matrix）
 * [第拾篇 🌉](10----ai_engineering.zh-hant.md)　AI工程（AI Engineering）
-	* **10.1** 🌉🔗🔐 [API與MCP](10-01-API_MCP.zh-hant.md)（API/MCP）
+	* **10.1** 🌉🔗🌐 [API與MCP](10-01-API_MCP.zh-hant.md)（API/MCP）
 	* **10.2** 🌉🤖🚨 [智能體可靠性與評估](10-02-agent_reliability_evaluation.zh-hant.md)（Agent Reliability & Evaluation）
-	* **10.3** 🌉🛠️💡 [提示工程](10-03-prompt_engineering.zh-hant.md)（Prompt Engineering）
-	* **10.4** 🌉🔗📝 [知識驅動生成（RAG）](10-04-retrieval_augmented_generation.zh-hant.md)（Retrieval-Augmented Generation）
-	* **10.5** 🌉🛣🌐 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering） 
-	* **10.6** 🎁🚀🌱 [AI 產品經理](10-06-AI_PM.zh-hant.md)（AI Product Management）
+	* **10.3** 🌉❔📌 [提示工程](10-03-prompt_engineering.zh-hant.md)（Prompt Engineering）
+	* **10.4** 🌉🔗📒 [知識驅動生成（RAG）](10-04-retrieval_augmented_generation.zh-hant.md)（Retrieval-Augmented Generation）
+	* **10.5** 🌉🪟🧭 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering） 
+	* **10.6** 🎁🌱🚀 [AI 產品經理](10-06-AI_PM.zh-hant.md)（AI Product Management）
 * 📚 [參考書目](references.zh-hant.qmd)
-- **🔖附錄💪**：[學習行動](appendix_action.zh-hant.md)
-* **🔖附錄⚙**：[API分類](appendix_API.zh-hant.md)
-- **🔖附錄🌌**：[本書心智圖](appendix_mindmap.zh-hant.qmd)
+- **🔖附錄💪**：[學習行動](appendix-action.zh-hant.md)
+* **🔖附錄⚙**：[API分類](appendix-MCP_API.zh-hant.md)
+- **🔖附錄🌌**：[本書心智圖](appendix-mindmap.zh-hant.qmd)
 * 📔 [封面封底書脊](cover_back.zh-hant.md)
+
+  classDef C6animate_class stroke-dasharray: 0, 6, stroke-dashoffset: 900, stroke-width:5px, animation: dash 25s linear infinite, stroke:#000099;
+  classDef classSchoolClassic fill:#ffd, stroke-width:3px;
+  classDef C9animate_class stroke-dasharray: 4, 6, stroke-dashoffset: 900, stroke-width:1px, animation: dash 25s linear infinite, stroke:#990000;
 
 ![](images/mind_map.svg)

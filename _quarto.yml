@@ -43,7 +43,7 @@ book:
     - file: index.zh-hant.md
     - file: notes-mental_fill-in.zh-hant.md
     - file: notes-constructive_fill-in.zh-hant.md
-    - file: toc.zh-hant.qmd         # This page will display the full TOC/Listings
+    - file: toc.zh-hant.md         # This page will display the full TOC/Listings
     - part: 01----problematics.zh-hant.md
       chapters:
         - file: 01-01-Turing_Test.zh-hant.md
