@@ -16,7 +16,7 @@ tags:
 
 這些實踐正是`「具身派」AI`（embodied AI） 或「實體」AI （physical AI） 的典型應用，也展示 **具身** 對 **人工智慧** 的重要性：
 
-- 首先，🔤㊙️ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md) 啟示：若無與世界互動的「身體」，符號無法真正落地。  
+- 首先，🔤⚓ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md) 啟示：若無與世界互動的「身體」，符號無法真正落地。  
 - 其次，🖼️⏱️ [框架問題](01-04-Frame_Problem.zh-hant.md) 揭示：若缺乏「具身感知」，難以在複雜及動態環境中區分何者相關、何者無關。  
 - 再來，👁️⯊ [完形心理](01-05-Gestalt_Psychology.zh-hant.md) 說明感知依賴「身體—環境」的整體性，正是「具身認知」的基礎。  
 - 還有，☸🤖 [智能體導向](05-03-oriented_agent.zh-hant.md) 與 ☸🛠 [任務導向](05-01-oriented_task.zh-hant.md) 的實踐，將 AI 從純符號推理推向「感知—行動」閉環。
@@ -212,7 +212,7 @@ tags:
 
 ### 📦 延伸：智能具體
 
-按自己的興趣和需求，進一步搭建自己的 [知識鷹架](notes-action.zh-hant)，認識所處世界 [框智格局](index.zh-hant)：
+按自己的興趣和需求，進一步搭建自己的 [知識鷹架](notes-constructive_fill-in.zh-hant)，認識所處世界 [框智格局](index.zh-hant)：
 
 - 🦾🚶‍♀️🤖 **具身智能與自駕車**（Embodied Intelligence & Self-driving Cars）  
     - 探討自駕車作為具身派 AI 的典型應用，如何融合感知、決策與控制。  
