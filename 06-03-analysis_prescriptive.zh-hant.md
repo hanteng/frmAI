@@ -22,7 +22,7 @@ tags:
 
 - 🟣🙀🎨 **生成式 AI** 能將複雜的決策空間轉譯為易讀的策略地圖，自動產生多組可行方案與差異化敘事，如「行動藍圖」、「跨部門協作計畫」與「情境化 SOP」，以自然語言解讀權衡與風險，支援跨部門溝通與共識形成，並在執行過程中持續優化。    
 - 🔁😽🪄 **決策演算法** 能將策略編譯為可執行的工作流程與資源分配方案，並引入反思型機制，實現「監測 ⮫ 觸發 ⮫ 執行 ⮫ 回饋」動態閉環，並在數據變化根據回饋調整策略與行動。
-- 
+
 ::: {.callout-tip #tip-analysis-prescriptive title="🔴🧐🧭 指導型分析"}
 🧭 **策略落地器（行動羅盤）**：`指導型分析`將預測與目標轉化為可執行的行動方案，並在執行中持續優化。
 
@@ -52,7 +52,7 @@ tags:
 
 例如，一家零售商在得知某產品需求將增加（預測型分析）後，指導型分析會建議**最優的進貨量、庫存配置與定價策略**，以最大化利潤並同時避免缺貨。
 
-與 **[布魯姆分類學](appendix_action.zh-hant.md)** 的**創造**（Create）與**評估**（Evaluate）認知能力對應，`指導型分析`將解釋與預測整合為新的解決方案與可操作設計，驅動行動落地。
+與 **[布魯姆分類學](appendix-action.zh-hant.md)** 的**創造**（Create）與**評估**（Evaluate）認知能力對應，`指導型分析`將解釋與預測整合為新的解決方案與可操作設計，驅動行動落地。
 
 ### 🧐🧭 功能與目的
 
@@ -171,7 +171,7 @@ tags:
 
 ## 🪸 請參閱
 
-參照 **[🔖附錄🌌 心智圖](appendix_mindmap.zh-hant.qmd)**，將`指導型分析`與下述概念對比，檢視其是否可歸類到「指導行動」的範疇：
+參照 **[🔖附錄🌌 心智圖](appendix-mindmap.zh-hant.qmd)**，將`指導型分析`與下述概念對比，檢視其是否可歸類到「指導行動」的範疇：
 
 - [第參篇 🏛️](03----symbolic_ai.zh-hant.md)　「符號流」AI（Symbolic AI）  
 	- **3.3** 🏛️🎁🧠 [專家系統](03-03-expert_systems.zh-hant.md)（Expert Systems）
@@ -185,6 +185,6 @@ tags:
 	* **8.6** 🦾🧭🎯 [任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant.md)（Task & Goal Planning）
 * [第拾篇 🌉](10----ai_engineering.zh-hant.md)　AI工程（AI Engineering）
 	* **10.2** 🌉🤖🚨 [智能體可靠性與評估](10-02-agent_reliability_evaluation.zh-hant.md)（Agent Reliability & Evaluation）
-	* **10.5** 🌉🛣🌐 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering） 
-	* **10.6** 🎁🚀🌱 [AI 產品經理](10-06-AI_PM.zh-hant.md)（AI Product Management）
+	* **10.5** 🌉🪟🧭 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering） 
+	* **10.6** 🎁🌱🚀 [AI 產品經理](10-06-AI_PM.zh-hant.md)（AI Product Management）
 
