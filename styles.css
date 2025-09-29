@@ -6,6 +6,17 @@ h2 {
   /* We'll overwrite text via JS, so no ::before counters here */
 }
 
+.de-emphasize {
+  color: hsl(210, 10%, 33%);
+  opacity: 0.5; /* Makes it slightly transparent */
+}
+
+.blockquote {
+    font-size: inherit;
+    color: hsl(210, 10%, 33%);
+}
+
+
 /* This rule specifically targets all 'td' and 'th' elements
    inside the 'small-table-text' class. */
 .table-small-print td,
