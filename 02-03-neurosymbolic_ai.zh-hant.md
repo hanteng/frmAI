@@ -34,7 +34,7 @@ tags:
 
 `神經符號整合 AI`  的核心在於整合兩種截然不同的 AI 思維模式，以應對單一方法論難以解決的 AI 問題意識：
 
-- **🔤㊙️ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant)**
+- **🔤⚓ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant)**
     - ⚖️ **符號流**：雖然能進行邏輯推理，但符號的「語意」常依賴外部解釋，難以「自足」。**統計流**（特別是深度學習）透過感官數據（如圖像、聲音）與符號（如詞彙）的關聯，嘗試為符號「接地」，但其學習到的語意可能不夠清晰或可解釋。**神經符號 AI** 試圖透過結合符號知識圖譜與神經網路的表徵學習，提供更穩健的符號接地。
     - 🧠 **哲學層面**：神經符號 AI 試圖藉由將符號邏輯與感官數據的關聯性緊密結合，來模擬人類心智中符號的意義產生機制。
     - 🚧 **技術層面**：透過將知識圖譜（Knowledge Graphs）的結構化知識，與神經網路的嵌入（Embeddings）學習能力相結合，神經符號系統能夠同時理解數據中的模式和概念之間的邏輯關係。
@@ -80,8 +80,8 @@ tags:
 
 - 🚦深入探索以下領域的應用：
 	- 🌉🔗📝 [知識驅動生成（RAG）](10-04-retrieval_augmented_generation.zh-hant)
-	- 🌉🛣🌐 [脈絡工程](10-05-context_engineering.zh-hant)
-	- 🎁🚀🌱 [AI 產品經理](#sec-ai-pm)
+	- 🌉🪟🧭 [脈絡工程](10-05-context_engineering.zh-hant)
+	- 🎁🌱🚀 [AI 產品經理](#sec-ai-pm)
 	- ☸🤖 [智能體／代理人導向](05-03-oriented_agent.zh-hant)
 	- ☸🛠 [任務導向型](05-01-oriented_task.zh-hant)
 	- ☸⚖️ [治理導向](05-05-oriented_governance.zh-hant)

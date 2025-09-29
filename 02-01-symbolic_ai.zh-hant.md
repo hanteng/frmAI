@@ -24,7 +24,7 @@ tags:
 
 符號流 AI 能自信掌握**邏輯**與**推理**，但在應對**語意**及**情境**的挑戰時保持謙遜，特別是處理兩大核心 AI 問題意識時：
 
-* 🔤㊙️ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant)（Symbol Grounding Problem）：
+* 🔤⚓ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant)（Symbol Grounding Problem）：
 	* ⚖️ 符號流 AI 的「**語意**」是「可操作」但非「自足」，這反映出符號流 AI 的**邏輯自信**與**語意謙遜**：它能建構推理系統，但無法保證這些符號具備真正的「語意內涵」。
 	* 🧠 哲學層面上難以保證解決（Not assuredly solvable）：純符號系統的語意是「寄生」於人類心智的，無法自我紮根。這牽涉到意向性（intentionality）與意識的問題。
 	* 🚧 技術層面上設法應對（Tackable）：符號流 AI 透過形式邏輯與語意網等架構，嘗試讓符號具備語意，但這些語意往往仍依賴人類的詮釋，無法完全「內生」於系統中。

@@ -60,7 +60,7 @@ tags:
 這些「基礎」單元既可以作為**非反思型**（一次性輸出決策、不在執行中調整），也可以設計為**反思型**（在執行過程中持續監控與調整）。同一種方法能否跨兩類，取決於是否在運行中引入自我檢查、績效評估與動態重規劃等機制。
 ### ❖ 認知能力對映
 
-可以說，`決策演算法`對映的是超越 **[布魯姆分類學](appendix_action.zh-hant.md)** 中認知能力，而是與本書總結的 **八大類認知技能** 中的 💪**掌控**（Control）、⚖️ **對齊／整合／協調**、🚀 **奉獻／領導／神聖化** 層對應，`決策演算法`將關於「**決策何所依？**」的「**選項**」與「**選擇**」認知，實踐成能代理或代表個人與組織的「元決策」體系。這套「元決策的選項與選擇」可為**組織**成長，也能為**個人**學習，打造出合宜的代理或代表「智能體」（Agent）。
+可以說，`決策演算法`對映的是超越 **[布魯姆分類學](appendix-action.zh-hant.md)** 中認知能力，而是與本書總結的 **八大類認知技能** 中的 💪**掌控**（Control）、⚖️ **對齊／整合／協調**、🚀 **奉獻／領導／神聖化** 層對應，`決策演算法`將關於「**決策何所依？**」的「**選項**」與「**選擇**」認知，實踐成能代理或代表個人與組織的「元決策」體系。這套「元決策的選項與選擇」可為**組織**成長，也能為**個人**學習，打造出合宜的代理或代表「智能體」（Agent）。
 
 - **組織成長**：透過`決策演算法`，組織可以建立自動化的決策系統，提升效率、優化資源，實現規模化成長。    
 - **個人學習**：個人可以將`決策演算法`應用於自身目標（例如，個人理財、學習計畫），打造一個代表自己的「智能體」，幫助自己做出更理性的選擇並持續優化。
@@ -97,7 +97,7 @@ tags:
 
 ### 🪄 決策認知 4 層次
 
-對映到本書主張的「按需行動」的[知識鷹架](notes-action.zh-hant.md)中的八類行動其中 4 項，以下可以深究`決策演算法`對映到的「認知能力」：
+對映到本書主張的「按需行動」的[知識鷹架](notes-constructive_fill-in.zh-hant.md)中的八類行動其中 4 項，以下可以深究`決策演算法`對映到的「認知能力」：
 
 - 💪 **掌控**：對映「自我決策與控制」**底層**刺激與反應，目的在於能**掌握**自身現實及最簡單情境，核心是先對自身能**掌控**的「行動能力」及「情境數據」進行有效管理與運用。
 - 🧭 **脈絡化**：對映「決策與脈絡互動」**中層**認知能力，目的在於能**掌握脈絡**中較**複雜**且**動態**的規則或規律，核心是能將行動與自身相關的系統、環境等條件建立關聯，並據此調整決策。
@@ -116,7 +116,7 @@ tags:
     - ↳ 🎯🛡️ [AI 控制問題](01-06-Alignment_Control_Problem.zh-hant.md)：_「它受控嗎？」_ — 系統是否能被人類有效監督與干預。
     - ↳ 🖼️⏱️ [框架問題](01-04-Frame_Problem.zh-hant.md)：_「當下，啥才重要？」_ — 在龐大資訊中選擇與任務相關的部分。
 - 🧭 **脈絡化**
-    - ↳ 🔤㊙️ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md)：
+    - ↳ 🔤⚓ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md)：
         - **具身派 AI**：能建構起**感知與環境**並與之互動嗎？
         - **脈絡工程**：能理解使用者的意圖與任務背景，並建構起更具情境相關性、紮根世界穩定的互動嗎？
     - ↳ 👁️⯊ [完形心理](01-05-Gestalt_Psychology.zh-hant.md)：
@@ -139,7 +139,7 @@ tags:
 |---|---|---|---|
 | 💪 3 | 掌控 | 「_當下，啥才重要？_」並能**有效執行** | 🖼️⏱️ [框架問題](01-04-Frame_Problem.zh-hant.md) |
 | 💪 3 | 掌控 | 「_它受控嗎？_」確保**系統可監督可控** | 🎯🛡️ [AI 控制問題](01-06-Alignment_Control_Problem.zh-hant.md) |
-| 🧭 6 | 脈絡化 | **感知與環境**互動、任務**脈絡理解** | 🔤㊙️ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md) |
+| 🧭 6 | 脈絡化 | **感知與環境**互動、任務**脈絡理解** | 🔤⚓ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md) |
 | 🧭 6 | 脈絡化 | 在**不確定性**下**補全**脈絡與規則 | 👁️⯊ [完形心理](01-05-Gestalt_Psychology.zh-hant.md) |
 | ⚖️ 7 | 對齊／整合／協調 | **多目標**決策**對齊**人類價值 | 🎯🛡️ [AI 對齊問題](01-06-Alignment_Control_Problem.zh-hant.md) |
 | ⚖️ 7 | 對齊／整合／協調 | 在**賽局**中協調與共識 | 🗫🎲 [語言賽局](01-07-Language_Games.zh-hant.md) |
@@ -187,7 +187,7 @@ tags:
 
 結合新興 AI 技術後，`決策演算法` 將從單一層次的行動選擇，進化為能即時掌握 **行動脈絡** 並支撐價值實踐的 **智慧化決策中樞**。從底層的 **掌控**，到中層的 **脈絡化**，再到中高層的 **對齊／整合／協調**，直至高層的 **奉獻／領導／神聖化**，`決策演算法` 的設計與應用展現了決策心智能力的全譜系——既能在當下求生存，也能在長遠中奉獻與形塑世界。
 
-本篇亦突顯了「**元決策**」（關於決策的決策）與分層「心智能力」的關係，這也預示了「**元認知**」（關於認知的認知）的智能體系之 **系統思維**。這正是本書作者期待讀者能持續搭建的 [知識鷹架](notes-action.zh-hant.md)，此處以較簡要的四層次「決策鷹架」為起點。
+本篇亦突顯了「**元決策**」（關於決策的決策）與分層「心智能力」的關係，這也預示了「**元認知**」（關於認知的認知）的智能體系之 **系統思維**。這正是本書作者期待讀者能持續搭建的 [知識鷹架](notes-constructive_fill-in.zh-hant.md)，此處以較簡要的四層次「決策鷹架」為起點。
 
 **總之，**`決策演算法` 是從「活下去」到「活得有意義」的關鍵樞紐。這不僅是技術的演進，更是價值觀與世界觀的選擇。
 
@@ -203,16 +203,16 @@ tags:
 
 ## 🪸 請參閱
 
-參照 **[🔖附錄🌌 心智圖](appendix_mindmap.zh-hant.qmd)**，將 `指導型分析` 與下述概念對比，檢視其是否可歸類到「決策認知」或「認知決策」的範疇：
+參照 **[🔖附錄🌌 心智圖](appendix-mindmap.zh-hant.qmd)**，將 `指導型分析` 與下述概念對比，檢視其是否可歸類到「決策認知」或「認知決策」的範疇：
 
 * 💬導論 〜 
-	* 🧠 [心智能力](notes-mind.zh-hant.md) 🐸🐘🧘
-	* 🧠🧞‍♀️ [〜語言賽局腦補機](hypothesis-mental_fill-in.zh-hant.html)
+	* 🧠 [心智能力](notes-constructive_fill-in.zh-hant.md) 🐸🐘🧘
+	* 🧠🧞‍♀️ [〜語言賽局腦補機](notes-mental_fill-in.zh-hant.html)
 * 📑筆記 〜
-	* 🪜 [知識鷹架](notes-action.zh-hant.md)
-- **🔖附錄💪**：[學習行動](appendix_action.zh-hant.md)
+	* 🪜 [知識鷹架](notes-constructive_fill-in.zh-hant.md)
+- **🔖附錄💪**：[學習行動](appendix-action.zh-hant.md)
 * [第壹篇 ㉄](01----problematics.zh-hant.md)　AI 問題意識（AI Problematics）
-	* **1.3** 🔤㊙️ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md)（Symbol Grounding Problem）
+	* **1.3** 🔤⚓ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md)（Symbol Grounding Problem）
 	* **1.4** 🖼️⏱️ [框架問題](01-04-Frame_Problem.zh-hant.md)（Frame Problem）
 	* **1.5** 👁️⯊ [完形心理](01-05-Gestalt_Psychology.zh-hant.md)（Gestalt Psychology）
 	* **1.6** 🎯🛡️ [對齊與控制問題](01-06-Alignment_Control_Problem.zh-hant.md)（AI Alignment & Control Problem）
@@ -232,5 +232,5 @@ tags:
 	* **9.8** 🧮💰 [多智能體報酬矩陣](09-08-multi_agent_payoff_matrix.zh-hant.md)（Multi-Agent Payoff Matrix）
 * [第拾篇 🌉](10----ai_engineering.zh-hant.md)　AI工程（AI Engineering）
 	* **10.2** 🌉🤖🚨 [智能體可靠性與評估](10-02-agent_reliability_evaluation.zh-hant.md)（Agent Reliability & Evaluation
-	* **10.5** 🌉🛣🌐 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering） 
+	* **10.5** 🌉🪟🧭 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering） 
 	

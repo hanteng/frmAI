@@ -32,7 +32,8 @@ tags:
 
 ::: {.callout-tip  #tip-analysis-generative title="🟣🙀🎨 生成式AI"} 
 **創造性決策催化器**：`生成式AI`催生出`生成式分析`，可將資料與脈絡轉化為多樣化的候選內容、方案與策略，透過生成式 AI 擴展思路、補全資訊缺口，並在決策鏈的不同階段提供創造性與可執行的反饋或反饋機制。  
-❖🟣 :::
+❖🟣 
+:::
 
 ***
 
@@ -47,7 +48,7 @@ tags:
 - 🔄 **可控性及整合性**：透過如 [提示工程](10-03-prompt_engineering.zh-hant.md)、條件生成、[脈絡工程](10-05-context_engineering.zh-hant.md)等系統創新，支援跨領域、跨場景的應用整合。
 - 🤝 **人機協同可能性**：透過 Human‑in‑the‑loop 的互動生成與微調，結合 RLHF（Reinforcement Learning from Human Feedback）等方法，將人類判斷與偏好融入生成過程，提升輸出的相關性、可用性與倫理一致性。
 
-可以說，`生成式 AI`對映到 **[布魯姆分類學](appendix_action.zh-hant.md)** 中的**創造**（Create）認知能力。差別在於前者是支持**組織**決策，後者是增強**個人**學習。
+可以說，`生成式 AI`對映到 **[布魯姆分類學](appendix-action.zh-hant.md)** 中的**創造**（Create）認知能力。差別在於前者是支持**組織**決策，後者是增強**個人**學習。
 
 這些`生成式AI`特性不僅能豐富資料與互動，也能利用規模化、可控性、整合性及人機協同，來提升整體智慧系統的價值。
 
@@ -185,7 +186,7 @@ tags:
     - **`生成式分析`應用**：在策略生成、情境模擬、假設擴展時，確保內容與受眾的語境、價值觀、行為模式相符。
     - **挑戰**：避免文化偏見、語境錯置與符號誤讀。
     - **對應問題意識**：
-        - ↳ 🔤㊙️ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md)：
+        - ↳ 🔤⚓ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md)：
             - **具身派 AI**：能建構起**感知與環境**並與之互動嗎？
             - **脈絡工程**：能理解使用者的意圖與任務背景，並建構起更具情境相關性、紮根世界穩定的互動嗎？
         - ↳ 👁️⯊ [完形心理](01-05-Gestalt_Psychology.zh-hant.md)：
@@ -216,7 +217,7 @@ tags:
     - ↳ 🎯🛡️ [AI 控制問題](01-06-Alignment_Control_Problem.zh-hant.md)：_「它受控嗎？」_ — 系統是否能被人類有效監督與干預。
     - ↳ 🖼️⏱️ [框架問題](01-04-Frame_Problem.zh-hant.md)：_「當下，啥才重要？」_ — 在龐大資訊中選擇與任務相關的部分。
 - 🧭 **脈絡化**    
-    - ↳ 🔤㊙️ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md)：
+    - ↳ 🔤⚓ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md)：
         - **具身派 AI**：能建構起**感知與環境**並與之互動嗎？
         - **脈絡工程**：能理解使用者的意圖與任務背景，並建構起更具情境相關性、紮根世界穩定的互動嗎？
     - ↳ 👁️⯊ [完形心理](01-05-Gestalt_Psychology.zh-hant.md)：
@@ -296,16 +297,16 @@ tags:
 
 ## 🪸 請參閱
 
-參照 **[🔖附錄🌌 心智圖](appendix_mindmap.zh-hant.qmd)**，將`生成式分析`與下述概念對比，檢視其是否可歸類到「決策認知」或「認知決策」的範疇，並思考其在決策鏈前後兩端的加值角色：
+參照 **[🔖附錄🌌 心智圖](appendix-mindmap.zh-hant.qmd)**，將`生成式分析`與下述概念對比，檢視其是否可歸類到「決策認知」或「認知決策」的範疇，並思考其在決策鏈前後兩端的加值角色：
 
 - 💬導論 〜
-    - 🧠 [心智能力](notes-mind.zh-hant.md) 🐸🐘🧘
-    - 🧠🧞‍♀️ [〜語言賽局腦補機](hypothesis-mental_fill-in.zh-hant.html)
+    - 🧠 [心智能力](notes-constructive_fill-in.zh-hant.md) 🐸🐘🧘
+    - 🧠🧞‍♀️ [〜語言賽局腦補機](notes-mental_fill-in.zh-hant.html)
 - 📑筆記 〜
-    - 🪜 [知識鷹架](notes-action.zh-hant.md)
-    - **🔖附錄💪**：[學習行動](appendix_action.zh-hant.md)
+    - 🪜 [知識鷹架](notes-constructive_fill-in.zh-hant.md)
+    - **🔖附錄💪**：[學習行動](appendix-action.zh-hant.md)
 - [第壹篇 ㉄](01----problematics.zh-hant.md)　AI 問題意識（AI Problematics）
-    - **1.3** 🔤㊙️ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md)（Symbol Grounding Problem）
+    - **1.3** 🔤⚓ [符碼紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md)（Symbol Grounding Problem）
     - **1.4** 🖼️⏱️ [框架問題](01-04-Frame_Problem.zh-hant.md)（Frame Problem）
     - **1.5** 👁️⯊ [完形心理](01-05-Gestalt_Psychology.zh-hant.md)（Gestalt Psychology）
     - **1.6** 🎯🛡️ [對齊與控制問題](01-06-Alignment_Control_Problem.zh-hant.md)（AI Alignment & Control Problem）
@@ -329,4 +330,4 @@ tags:
     - **9.8** 🧮💰 [多智能體報酬矩陣](09-08-multi_agent_payoff_matrix.zh-hant.md)（Multi-Agent Payoff Matrix）
 - [第拾篇 🌉](10----ai_engineering.zh-hant.md)　AI工程（AI Engineering）
     - **10.2** 🌉🤖🚨 [智能體可靠性與評估](10-02-agent_reliability_evaluation.zh-hant.md)（Agent Reliability & Evaluation）
-    - **10.5** 🌉🛣🌐 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering）
+    - **10.5** 🌉🪟🧭 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering）
