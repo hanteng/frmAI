@@ -141,7 +141,18 @@ tags:
 
 由此可見，`大語言模型` 的歷史演進是 **深度學習** 技術、**計算規模** 和 **數據可用性** 共同作用的結果，其核心突破是 **轉換器架構** 和 **自我監督學習**，為當代 AI 系統提供了語言理解與推理基礎，並產出**多模態 LLM** 及 具身智慧 等相關創新。
 
+## 📦 延伸：AI 發展假說
+
+以下有五個 AI 發展假說，請參照上述`大語言模型`的 ❝腦補❞ 心智模型假說，說明哪一種 AI 發展假說最具說服力，申論之。
+
+- 💥**[AI 對齊崩潰假說](glossary.zh-hant.md#ai-alignment-collapse)**：隨著 AI 能力提升，若無法持續確保其行為與人類價值對齊，將導致追求衝突目標、產生有害行為，最終引發社會決策、經濟與安全體系的**系統性失序與混亂**。
+- 🌐 **[AI 公共財假說](glossary.zh-hant.md#ai-commons-hypothesis)**（AI Commons Hypothesis）：主張 AI 應被視為**共享資源**，透過**開源模型、開放資料**與**社群治理**，推動技術的去中心化發展與民主化，以避免少數權力壟斷。
+- 👑 **[AI 帝國假說](glossary.zh-hant.md#ai-empire-hypothesis)**（AI Empire Hypothesis）：預測**算力、資料與演算法**將集中於少數國家或超級平台，形成類似「帝國」的支配格局，導致全球創新單一化與**治理不對稱**的風險。
+- ⚔️ **[AI 部落化／碎片化假說](glossary.zh-hant.md#ai-tribalization-fragmentation)**（AI Tribalization / Fragmentation Hypothesis）：認為 AI 發展將呈現**多極化、碎片化**格局，不同意識形態群體建立各自的 AI 生態與標準，導致**全球治理失序與標準分裂**。
+- 🚰 **[AI 公用事業假說](glossary.zh-hant.md#ai-utilities-hypothesis)**（AI Utilities Hypothesis）：主張 AI 將如同電力或網路一樣，成為**普及、隱形、無所不在的社會基礎設施**，並由政府、企業與社群共同監管，以確保公平取用與安全性。
+
 ***
+
 ## 👉接下來🪸
 
 - ⮦🚦 探究 [第陸篇 ❖](06----analytics_decisions.zh-hant.md)　**分析與決策 6 點**，探索 `LLM` [生成式 AI](06-05-analysis_generative.zh-hant.md) 對分析與決策的影響。
