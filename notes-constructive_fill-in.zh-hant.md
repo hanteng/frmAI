@@ -2,6 +2,7 @@
 tags:
 - 心智能力
 - 階段動詞
+- 知行鷹架
 - 介紹
 number-sections: false 
 ---
@@ -213,7 +214,7 @@ This framework suggests that successful AI system design is determined by aligni
 
 這一假說啟示我們，人類的高階心智能力交織著社交及語言，而其中是含個人和群體的成長與消亡、競爭與合作。因此，人工智慧若要在多代理人（multi-agent）或人機協作環境中有效運作，必須具備處理情感訊號、社會規範與群體動態的能力。
 
-### 🐸🐘🧘 三重腦假說
+### 🐸🐘🧘 腦假說
 
 三重腦假說（Triune Brain Hypothesis）由神經科學家 Paul D. MacLean 提出，用以描述脊椎動物大腦在演化過程中形成的三個主要層級，分別對應不同的功能與行為模式：
 
