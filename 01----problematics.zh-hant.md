@@ -15,12 +15,9 @@ tags:
 > ㉄🤷🏻‍♀️ **什麼是AI ⟪問題意識⟫ ？**
 
 
+從甲骨到大語言模型，人類不斷尋求 [❝腦補❞](glossary.zh-hant.md#def-mental-fill-in) 來擴展心智、解決問題。  
 
-從甲骨到大語言模型，人類不斷尋求❝腦補❞[^腦補]來擴展心智、解決問題。  
 人工智慧（AI）是人類最新的❝腦補❞或「心智能力擴張」科技，不僅能填補認知上的空缺，更能擴展我們的心智能力。
-
-***
-[^腦補]: ❝腦補❞中文網絡語，當今語用意義指人們資訊不足或意義模糊時推測、想像並填補「資訊落差」以完成自己的理解，暗指是「個人解讀與猜測」，帶有幽默、質疑或諷刺的意味。該詞原意有一說是源自日語的「脳内補正」（nōnai hosei）或「脳内補完」（nōnai hokan），因此突顯的是主觀判斷的填補。總之，❝腦補❞從最初特指日本動漫領域的幻想行為，逐漸演變成更廣泛的、描述人們如何透過想像來理解、詮釋甚至建構資訊的現象。
 
 ❝腦補❞一詞現指遇到資訊不足或意義模糊時，進行透過想像力來填補以求自己的理解。
 
@@ -129,7 +126,7 @@ AI 核心問題意識（AI problematics）涉及一套 **框架尋找**（frame-
 
 簡言之，這仍是「**框定**」問題，進而「**填補**」空缺的❝腦補❞智慧，只是推論及論理更具複雜度。
 
-本書主張有七大 AI 核心問題意識，能幫助讀者掌握基礎，進而建立 🪜 **[知識鷹架](@sec-notes-constructive_fill-in)**。
+本書主張有七大 AI 核心問題意識，能幫助讀者掌握基礎，進而建立 🪜 **[知行鷹架](@sec-notes-constructive_fill-in)**。
 
 ### 🌰 核心條目內容
 
@@ -152,6 +149,16 @@ AI 核心問題意識（AI problematics）涉及一套 **框架尋找**（frame-
 
 * ﹝未完稿﹞🎭🎲 [模仿遊戲 🆚 語言賽局](01v07-Imitation_Game_vs_Language_Games.zh-hant) 
 * ﹝未完稿﹞🔤🖼️ [框架問題 🆚 符碼紮根問題](01v03-Frame_Problem_vs_Symbol_Grounding_Problem.zh-hant)
+
+## 📦 延伸：AI 發展假說
+
+以下有五個 AI 發展假說，請參照上述 AI 問題意識，結合你對世界的理解，說明哪一種 AI 發展假說最具說服力，申論之。
+
+- 💥**[AI 對齊崩潰假說](glossary.zh-hant.md#ai-alignment-collapse)**：隨著 AI 能力提升，若無法持續確保其行為與人類價值對齊，將導致追求衝突目標、產生有害行為，最終引發社會決策、經濟與安全體系的**系統性失序與混亂**。
+- 🌐 **[AI 公共財假說](glossary.zh-hant.md#ai-commons-hypothesis)**（AI Commons Hypothesis）：主張 AI 應被視為**共享資源**，透過**開源模型、開放資料**與**社群治理**，推動技術的去中心化發展與民主化，以避免少數權力壟斷。
+- 👑 **[AI 帝國假說](glossary.zh-hant.md#ai-empire-hypothesis)**（AI Empire Hypothesis）：預測**算力、資料與演算法**將集中於少數國家或超級平台，形成類似「帝國」的支配格局，導致全球創新單一化與**治理不對稱**的風險。
+- ⚔️ **[AI 部落化／碎片化假說](glossary.zh-hant.md#ai-tribalization-fragmentation)**（AI Tribalization / Fragmentation Hypothesis）：認為 AI 發展將呈現**多極化、碎片化**格局，不同意識形態群體建立各自的 AI 生態與標準，導致**全球治理失序與標準分裂**。
+- 🚰 **[AI 公用事業假說](glossary.zh-hant.md#ai-utilities-hypothesis)**（AI Utilities Hypothesis）：主張 AI 將如同電力或網路一樣，成為**普及、隱形、無所不在的社會基礎設施**，並由政府、企業與社群共同監管，以確保公平取用與安全性。
 
 ***
 
