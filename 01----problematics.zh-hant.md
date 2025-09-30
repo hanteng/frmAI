@@ -154,7 +154,7 @@ AI 核心問題意識（AI problematics）涉及一套 **框架尋找**（frame-
 
 以下有五個 AI 發展假說，請參照上述 AI 問題意識，結合你對世界的理解，說明哪一種 AI 發展假說最具說服力，申論之。
 
-- 💥**[AI 對齊崩潰假說](glossary.zh-hant.md#ai-alignment-collapse)**：隨著 AI 能力提升，若無法持續確保其行為與人類價值對齊，將導致追求衝突目標、產生有害行為，最終引發社會決策、經濟與安全體系的**系統性失序與混亂**。
+- 💥 **[AI 對齊崩潰假說](glossary.zh-hant.md#ai-alignment-collapse)** （AI Alignment Collapse Hypothesis）：隨著 AI 能力提升，若無法持續確保其行為與人類價值對齊，將導致追求衝突目標、產生有害行為，最終引發社會決策、經濟與安全體系的**系統性失序與混亂**。
 - 🌐 **[AI 公共財假說](glossary.zh-hant.md#ai-commons-hypothesis)**（AI Commons Hypothesis）：主張 AI 應被視為**共享資源**，透過**開源模型、開放資料**與**社群治理**，推動技術的去中心化發展與民主化，以避免少數權力壟斷。
 - 👑 **[AI 帝國假說](glossary.zh-hant.md#ai-empire-hypothesis)**（AI Empire Hypothesis）：預測**算力、資料與演算法**將集中於少數國家或超級平台，形成類似「帝國」的支配格局，導致全球創新單一化與**治理不對稱**的風險。
 - ⚔️ **[AI 部落化／碎片化假說](glossary.zh-hant.md#ai-tribalization-fragmentation)**（AI Tribalization / Fragmentation Hypothesis）：認為 AI 發展將呈現**多極化、碎片化**格局，不同意識形態群體建立各自的 AI 生態與標準，導致**全球治理失序與標準分裂**。
