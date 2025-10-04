@@ -1,13 +1,8 @@
----
-tags: 
-- #fig-mindmap
----
-# 🔖附錄🌌：心智圖  {.appendix #fig-mindmap}
+# 🌌心智圖：經緯  {.appendix}
 
 ## Mermaid 版
-:::{#fig-mindmap} 
 
-
+::: {#fig-mindmap  caption="🌌心智圖"} 
 ```{mermaid}
 
 %%{ init: { 'flowchart': { 'curve': 'bumpX' }, 'theme': 'redux', 'themeVariables': { 'lineColor': '#000', 'nodeBorder': '#000' } } }%%
@@ -66,15 +61,15 @@ graph LR
   %% 筆記
   NOTES[📑 筆記]
   NOTES@{ shape: procs}
-  NOTES1[🪜 <br/>知識鷹架]
+  NOTES1[🪜 <br/>知行鷹架]
   NOTES2[🪜👨‍👩‍👧‍👦 <br/>〜家長篇<br/>~傳承]
   NOTES3[🪜🧘 <br/>〜自學篇<br/>~紥根]
   NOTES1@{ shape: trap-b }
   NOTES2@{ shape: trap-b }
   NOTES3@{ shape: trap-b }
   click NOTES1 "notes-constructive_fill-in.zh-hant.html"
-  click NOTES2 "appendix-cognitive_parents.zh-hant.html"
-  click NOTES3 "appendix-cognitive.zh-hant.html"
+  click NOTES2 "appendix-cognitive_capacity_parents.zh-hant.html"
+  click NOTES3 "appendix-cognitive_capacity.zh-hant.html"
 
   %% Extra Anchor 前中 系統創新
   C1a & C1b & C1c & C1d & C1e & C1f & C1g -->   SysThk
