@@ -492,7 +492,7 @@ SD 源自心理學家 **Clare W. Graves** 的「價值系統理論」，後由 *
 
 此附錄較完整說明⟨**AQAL9類**⟩提供的**動詞**«選項»內容，又稱**全象限 9 層動詞**，以個體在世界中從**生存**、**連結**、**掌控**、**歸屬**、**應用/達成**、**脈絡化/系統化**、**對齊/策劃/整合**、**創構/理論化/引領**、**慈悲/超越** 等等具有宇宙時空尺度的行動層次。
 
-需注意的是，原理論並沒有明確動詞，僅有「層次/階段」的發展描述，本書 ⟨**AQAL9類**⟩ 是參考，將[網民 hoe_math AQAL理論延伸九層次**動詞**](https://x.com/ItIsHoeMath/status/1818342463599153419)層級轉化為動詞，以便應用於 AI 教育與工程：
+需注意的是，原理論並沒有明確動詞，僅有「層次/階段」的發展描述，本書 ⟨**AQAL9類**⟩ 是參考，將[網民 PsychoMath AQAL理論延伸九層次**動詞**](https://x.com/ItIsHoeMath/status/1818342463599153419)層級轉化為動詞，以便應用於 AI 教育與工程：
 
 依據本書應用在人工智慧教育及工程的需要，將其中高階的動詞進行了變動：
 
@@ -520,6 +520,24 @@ SD 源自心理學家 **Clare W. Graves** 的「價值系統理論」，後由 *
 : 🚰AQAL 九層動詞🪷：本書採用的延伸詮釋 {#tbl-actions-9}
 
 此表幫助理解人類生命歷程中如何逐級展現能力，並帶有主客的世界觀。
+:::
+
+::: {.callout-note #nte-actions-9-PsychoMath title="🚰AQAL 九層動詞🪷：PsychoMath 思維層次表 原文中文對照" collapse=false open=true .note}
+
+| 階層 (LEVEL) | 🚀 驅動力 (URGE)       | 💡 目標 (GOAL)      | ⚖️ 道德 (MORALS)               | 🤔 關注點 (FOCUS)                                                                                                          |
+| ---------- | ------------------- | ----------------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| 1          | 慾望 (Desire)         | 滿足 (Satisfy)      | 自私的 (Selfish)                | 我如何才能滿足這個需求？ (How Can I Satisfy This Need?)                                                                             |
+| 2          | 安撫 (Appease)        | 連結 (Connect)      | 施捨以求得 (Give In Order To Get) | 我的慾望和別人的慾望如何連結？ (How Can My Desires And Others Be Connected?)                                                           |
+| 3          | 控制 (Control)        | 力量 (Power)        | 我優先 (Me First)               | 我如何從連結中獲得權力？ (How Can I Gain Power From Connections?)                                                                   |
+| 4          | 服從 (Conform)        | 歸屬 (Belong)       | 唯一真理 (The One True Way)      | 我們可以同意遵循哪些規則來避免權力鬥爭？ (What Rules Can We Agree To Follow To Prevent Power Struggles?)                                    |
+| 5          | 成就 (Achieve)        | 成功 (Success)      | 全由你決定 (It's All Up To You)   | 我如何建立一種生活方式來實現成就感？ (How Do I Build A Lifestyle To Achieve Fulfillment?)                                                 |
+| 6          | **理解 (Understand)** | **包容 (Include)**  | 相互聯繫 (Interconnected)        | 我們如何納入、擁抱並肯定我們共同珍視的價值以達成相互理解？ (How Do We Include Embrace And Affirm What We All Value To Achieve Mutual Understanding?) |
+| 7          | 對齊 (Align)          | 整合 (Integrate)    | 自我覺察 (Self-Aware)            | 我們如何協調利益相關者的需求以達致和諧？ (How Can We Coordinate Stakeholders' Needs For Harmony?)                                           |
+| 8          | **綜效**(Synergize)   | **最大化**(Maximize) | 相互覺察 (Inter-Aware)           | 我如何最大化整體整合的系統？ (How Do I Maximize The Overall Integrated Systems?)                                                      |
+| 9          | 接受 (Accept)         | 完成 (Complete)     | 透明的 (Transparent)            | 接受每個人都在最大化自己的存在，我們如何共存？ (Accepting That Everyone Is Maximizing Their Own Existence, How Do We Co-Exist?)                |
+: 🚰AQAL 九層動詞🪷：PsychoMath 思維層次表 原文中文對照 {#tbl-actions-9-PsychoMath}
+
+本書大致採用其動詞選項，最主要不同在於第6層的 **理解 (Understand)** 改成 **脈絡化/系統化 (Contextualize)** ，第8層的 **綜效 (Synergize)** 改成 **創構/理論化/引領 (theorize/construct/lead)** 
 :::
 
 ### –🪟原AQAL框架🌌
