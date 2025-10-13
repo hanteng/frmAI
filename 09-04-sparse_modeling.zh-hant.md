@@ -9,7 +9,7 @@ tags:
 - GPU
 - Hyperscale
 ---
-# 🧹🧩 稀疏建模 {#sec-sparse-modeling}
+# 🧹稀疏建模🧩 {#sec-sparse-modeling}
 
 `稀疏建模`（Sparse Modeling）是一種利用 **稀疏性假設**（sparsity assumption）來表示數據或模型參數的技術框架。核心思想是：在高維[向量空間](04-07-vector_space.zh-hant)中，許多特徵或參數實際上對目標任務的貢獻極小，因此可以將它們置零或忽略，從而達到**壓縮表示**與**高效計算**的目的，算是 [特徵工程](04-04-feature_engineering.zh-hant)的其中一項任務類型。
 

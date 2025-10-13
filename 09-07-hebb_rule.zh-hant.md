@@ -11,7 +11,7 @@ tags:
 - 權重更新
 - 生物啟發
 ---
-# 🧠⚡ 赫布學習論 {#sec-hebb-rule}
+# 🧠赫布學習論⚡ {#sec-hebb-rule}
 
 `赫布學習論`（Hebb’s Rule），是一種 **[機器學習模型](04-05-machine_learning_models.zh-hant)** 與 **[神經網路](04-03-neural_networks.zh-hant)學習** 的基礎假設，主要應用於**權重更新**與**特徵聯結**，基於「同步激發的神經元，其連接將得到強化」（"Neurons that fire together, wire together."）的原則。它依據 **輸入與輸出神經元的共同活化程度**，調整連結權重，進行**模式學習**、**特徵關聯**、**記憶形成**等任務。由於赫布學習論源於神經科學觀察，因此是**生物啟發**的 **[特徵工程](04-04-feature_engineering.zh-hant)** 方法。
 

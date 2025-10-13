@@ -9,7 +9,7 @@ tags:
 - 數值分析
 - 深度學習
 ---
-# 📉⛰️ 最陡下降法 {#sec-steepest-descent-method}
+# 📉最陡下降法⛰️ {#sec-steepest-descent-method}
 
 `最陡下降法`（Steepest Descent Method, SDM），又稱**梯度下降法**，是一種基礎且強大的**最佳化演算法**。它廣泛應用於[機器學習模型](04-05-machine_learning_models.zh-hant)的**訓練**與**調參**，核心原則是「沿著函數下降最快的方向前進」。作為一種**迭代尋優框架**，SDM 依據目標函數（通常是**損失函數**或**成本函數**）的**梯度**資訊，逐步逼近函數的**局部最小值**或「附近最低點」。[生成式 AI](06-05-analysis_generative.zh-hant) ，特別是 **[大語言模型](02-07-large_language_models.zh-hant)**，大量應用其中的`隨機梯度下降法`（Stochastic Gradient Descent, SGD）。
 

@@ -1,4 +1,8 @@
 ---
+crossref:
+  labels: alpha A
+  subref-labels: roman I
+  chapters: true
 tags:
 - 形式邏輯
 - 機率性關聯
@@ -40,7 +44,7 @@ tags:
 
 ## 🚰AI 與數學比喻💦
 
-::: {.callout-note #note-ai-math title="📐 AI 「數學」知足與專注的選擇"}
+::: {.callout-note #nte-ai-math title="📐 AI 「數學」知足與專注的選擇"}
 
  「**弱水有三千**，只取一瓢飲」說法融合了佛家「三千大千世界」及《論語·雍也》「一簞食，一瓢飲」的知足與專注。
 
@@ -69,10 +73,12 @@ tags:
 📐
 :::
 
-<figure class="part"><svg aria-roledescription="flowchart-v2" role="graphics-document document" class="flowchart mermaid-js" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1" xmlns:ev="http://www.w3.org/2001/xml-events">
+::: {#fig-mindmap-09 caption="聚焦 📐 AI用到的數學 心智圖" .part }
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" class="flowchart mermaid-js" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1" xmlns:ev="http://www.w3.org/2001/xml-events">
 <g id="viewport-20250923180406308" class="svg-pan-zoom_viewport" transform="matrix(5,0,0,5,-600,-228)" style="transform: matrix(5, 0, 0, 5, -600,-228);">
 <image href="images/mind_map.svg"></image></g></svg>
-</figure>
+:::
+
 ***
 
 ## 📐AI 與數學概論♾️
@@ -120,7 +126,7 @@ tags:
 	- **動態系統**：建模與分析連續或離散時間的系統行為，支撐機器人運動學與強化學習中的環境建模。  
 	- **最佳化理論**：在路徑規劃、資源分配與強化學習策略改進中發揮關鍵作用。
 
-根據上述，亦求 [知識鷹架](notes-constructive_fill-in.zh-hant) 的融會貫通，本書精選 8 項「AI 用到的數學」，涵蓋上述數學領域的重點模型、原理與演算法。
+根據上述，亦求 [知行鷹架](notes-constructive_fill-in.zh-hant) 的融會貫通，本書精選 8 項「AI 用到的數學」，涵蓋上述數學領域的重點模型、原理與演算法。
 
 ***
 

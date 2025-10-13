@@ -10,7 +10,7 @@ tags:
 - AI對齊
 - AI控制
 ---
-# 🧮💰 多智能體報酬矩陣 {#sec-multi-agent-payoff-matrix}
+# 💰報酬矩陣🧮 {#sec-multi-agent-payoff-matrix}
 
 `多智能體報酬矩陣`（Multi-Agent Payoff Matrix, MAPM）是一種用於描述**多個決策主體**（智能體）在互動過程中，因不同**策略組合**而獲得的 **報酬**（payoff）的數學工具。它是**博弈論**的核心表徵方法之一，廣泛應用於經濟學、政治學、人工智慧與自動化系統中，用以分析**合作**與**競爭**情境下的策略選擇與結果。
 
