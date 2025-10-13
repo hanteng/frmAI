@@ -14,10 +14,11 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render Quarto Project
+      - name: Render Quarto Project (Traditional Chinese)
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html
+          profile: zh-hant
 
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
