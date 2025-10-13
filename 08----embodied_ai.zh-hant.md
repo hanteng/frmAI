@@ -1,4 +1,8 @@
 ---
+crossref:
+  labels: alpha A
+  subref-labels: roman I
+  chapters: true
 tags:
 - 情境主義
 ---
@@ -28,7 +32,7 @@ tags:
 
 由此可見，`「具身派」AI` 不僅是技術分支，更是人工智慧發展中回應「如何讓智能**紥根具身**於世界」的核心答案。
 
-::: {.callout-note #note-embodied-ai title="🦾什麼是「具身派」AI？"}
+::: {.callout-note #nte-embodied-ai title="🦾什麼是「具身派」AI？"}
 
 `「具身派」AI` 指任何涉及到 `具身認知`（Embodied Cognition）與 `實體驅動`（Physical Actuation）的智能系統，包括能透過**物理身體**或**虛擬身體**與現實世界互動的 AI，又稱「具身智慧」。
 
@@ -47,10 +51,12 @@ tags:
 參照 🔖附錄🌌 心智圖 🛣🤖 
 :::
 
-<figure class="part"><svg aria-roledescription="flowchart-v2" role="graphics-document document" class="flowchart mermaid-js" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1" xmlns:ev="http://www.w3.org/2001/xml-events">
+::: {#fig-mindmap-08 caption="聚焦 🦾「具身派」AI  心智圖" .part }
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" class="flowchart mermaid-js" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1" xmlns:ev="http://www.w3.org/2001/xml-events">
 <g id="viewport-20250923180406308" class="svg-pan-zoom_viewport" transform="matrix(5.4 ,0,0,5.4,-480,-100)" style="transform: matrix(5.4, 0, 0, 5.4, -480, -100);">
 <image href="images/mind_map.svg"></image></g></svg>
-</figure>
+:::
+
 ***
 
 ## 🦾具身派 AI 概論🌏
@@ -212,7 +218,7 @@ tags:
 
 ### 📦 延伸：智能具體
 
-按自己的興趣和需求，進一步搭建自己的 [知識鷹架](notes-constructive_fill-in.zh-hant)，認識所處世界 [框智格局](index.zh-hant)：
+按自己的興趣和需求，進一步搭建自己的 [知行鷹架](notes-constructive_fill-in.zh-hant)，認識所處世界 [框智格局](index.zh-hant)：
 
 - 🦾🚶‍♀️🤖 **具身智能與自駕車**（Embodied Intelligence & Self-driving Cars）  
     - 探討自駕車作為具身派 AI 的典型應用，如何融合感知、決策與控制。  

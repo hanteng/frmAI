@@ -10,7 +10,7 @@ tags:
 - AI安全
 - AI控制
 ---
-# 🦾🛡️🚨 機器人安全與穩健性 {#sec-robot-safety-and-robustness}
+# 🛡️安全與穩健性🚨 {#sec-robot-safety-and-robustness}
 
 `機器人安全與穩健性`（Robot Safety & Robustness）是確保機器人在**各種環境與情境下**，能**安全、可靠、可預測**地運作的核心領域。  
 
