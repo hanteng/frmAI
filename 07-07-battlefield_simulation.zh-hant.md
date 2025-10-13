@@ -8,7 +8,7 @@ tags:
 - 強化學習
 - 模擬與訓練
 ---
-# 🏆🪖⚔️ 戰場模擬 {#sec-battlefield-simulation}
+# 🪖⚔️ 戰場模擬🏆 {#sec-battlefield-simulation}
 
   - 在虛擬戰場中進行戰術規劃、資源管理與多單位協同，支援從單兵到聯合作戰層級的決策與演練。  
   - 除了遊戲產業的娛樂化戰爭模擬外，專業級戰場模擬已成為國防與安全產業的核心能力，應用在軍事「兵棋推演」（wargaming）與 ISR（Intelligence, Surveillance, Reconnaissance，情報、監視與偵察）系統的重要組成可用於測試戰術構想、驗證作戰計畫、優化後勤與資源分配。

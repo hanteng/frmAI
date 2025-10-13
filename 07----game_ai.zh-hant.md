@@ -1,4 +1,8 @@
 ---
+crossref:
+  labels: alpha A
+  subref-labels: roman I
+  chapters: true
 tags:
 - 情境主義
 - 博弈論
@@ -12,7 +16,7 @@ tags:
 
 隨著各類電子遊戲與數位模擬的發展，現代人工智慧的`博弈`應用已不僅限於數字符碼世界。
 
-::: {.callout-tip #note-game-ai-eg title="🏆 AI 的`博弈`例子 （點開⏵可揭露細節）" collapse="true"}
+::: {.callout-tip #nte-game-ai-eg title="🏆 AI 的`博弈`例子 （點開⏵可揭露細節）" collapse="true"}
 
 `博弈`也闡釋 **遊戲** 與 **人工智慧發展史** 之間的交織：
 
@@ -27,18 +31,18 @@ tags:
 
 由此可見，`「博弈派」AI` 不僅是技術分支，更是人工智慧發展中回應「如何讓智能**參與**世界**賽局**」的核心答案。
 
-::: {.callout-note #note-game-ai title="🏆什麼是「博弈派」AI？"}
+::: {.callout-note #nte-game-ai title="🏆什麼是「博弈派」AI？"}
 
 `「博弈派」AI` 指任何涉及到 `博弈論`（Game Theory）或 `賽局` 觀點的自動決策或智能系統，包括但不限於數字遊戲或模擬。
 
 **🏆「博弈派」AI 三句箴言**：（點開⏵可揭露細節）
 
 <details> <summary>⚔️ 「**知彼知己，百局不殆**」 〜 對手建模，自我調整，與自身互博。</summary> 
-這對應到現代 AI 的 **對手建模**，**自身互博** 與 **多智能體強化學習**，例如 AlphaGo 的策略設計 [@malinovskiy2025]。</details>
+這對應到現代 AI 的 **對手建模**，**自身互博** 與 **多智能體強化學習**，例如 AlphaGo 的策略設計 [@Malinovskiy2025-advanced-game-theoretic-frameworks]。</details>
 <details> <summary>🤝 「**世事如局，博弈生智**」 〜 世界即賽局，智慧由此生。</summary> 
 這呼應了 **語言遊戲** 與 **社會互動框架**，LLM 的行為深受語境**框架**影響 [@lore2024]。  </details>
 <details> <summary>🌀 「**局中有道，道生智能**」 〜 從賽局中提煉 AI 的核心智慧。</summary> 
-這正是 **博弈派 AI** 的核心之一：從 報酬結構 中抽取規則，並推動 **LLM‑智能體** 的**湧現**行為 [@mao2025]。  </details>
+這正是 **博弈派 AI** 的核心之一：從 報酬結構 中抽取規則，並利用 **LLM‑智能體** 的 **湧現** 等行為參與賽局 [@Mensfelt2024-autoformalizing-game-theoretic-scenarios;@Mao2025-llm-meet-game-theory]。  </details>
 
 收斂三句箴言「**妙問**」成長偈：  
 
@@ -48,10 +52,12 @@ tags:
 🎲🏆
 :::
 
-<figure class="part"><svg aria-roledescription="flowchart-v2" role="graphics-document document" class="flowchart mermaid-js" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1" xmlns:ev="http://www.w3.org/2001/xml-events">
+::: {#fig-mindmap-07 caption="聚焦 🏆「博弈派」AI  心智圖" .part }
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" class="flowchart mermaid-js" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1" xmlns:ev="http://www.w3.org/2001/xml-events">
 <g id="viewport-20250923180406308" class="svg-pan-zoom_viewport" transform="matrix(5,0,0,5,-500,-480)" style="transform: matrix(5,0,0,5,-500,-480);">
 <image href="images/mind_map.svg"></image></g></svg>
-</figure>
+::: 
+
 ***
 
 ## 🏆博弈派 AI 概論🎲
@@ -203,7 +209,7 @@ i為了更好的應用及創新，本書進一步主張，這種因 AI **情境�
 
 `博弈派 AI` 聚焦多方互動與不確定性下的**智能決策**，可應用在商業、金融、公共政策與國際關係等等。其核心是對「個體—脈絡—世界」建模並框定有效賽局的綜合能力。
 
-可依自身興趣與需求，**學習**與**操練**搭建[知識鷹架](notes-constructive_fill-in.zh-hant)，理解所處世界的「[框智格局](index.zh-hant)」。以下為代表性案例：
+可依自身興趣與需求，**學習**與**操練**搭建[知行鷹架](notes-constructive_fill-in.zh-hant)，理解所處世界的「[框智格局](index.zh-hant)」。以下為代表性案例：
 
 - ⚡🌱🧮 **能源組合與氣候變遷博弈**  
   - 以碳權交易與能源投資為核心的「能源組合遊戲」（Energy Mix Game），在減碳與經濟成長間權衡，成為各國與企業的戰略工具。  

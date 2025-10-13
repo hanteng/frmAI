@@ -7,7 +7,7 @@ tags:
 - 強化學習 
 - 卡內基美隆大學
 ---
-# 🏆🃏💰 撲克 AI {#sec-poker-ai}
+# 🃏💰 撲克 AI🏆 {#sec-poker-ai}
 
 `Libratus` 和 `Pluribus` 是由 **卡內基美隆大學**（Carnegie Mellon University）開發的撲克 AI，它們在撲克這類**非完全資訊博弈**（imperfect-information game）中，展現了超越人類頂尖玩家的實力。這些 AI 標誌著博弈 AI 在處理資訊不對稱與詐賭等複雜動態方面的重要進展。
 

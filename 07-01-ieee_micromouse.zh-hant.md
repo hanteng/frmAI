@@ -10,7 +10,7 @@ tags:
   - 具身派AI
   - 物理AI
 ---
-# 🏆🐭🗺️ IEEE電子老鼠走迷宮 {#sec-ieee-micromouse}
+# 🐭🗺️ IEEE電子鼠🏆 {#sec-ieee-micromouse}
 
 `IEEE電子老鼠走迷宮`（IEEE Micromouse）是一項國際性的機器人競賽，參賽者需設計一隻「電子老鼠」小型機器人，使其能在一個複雜且未知的迷宮中，從起點出發，自主探索並找到中心點，最終再以最快的速度循著最短路徑回到終點。
 

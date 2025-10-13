@@ -11,7 +11,7 @@ tags:
 - 非對抗型博弈
 - 對抗型博弈
 ---
-# 🏆🕹️👾 Atari DQN {#sec-atari-dqn}
+# 🕹️👾 Atari DQN🏆 {#sec-atari-dqn}
 
 `Atari DQN`（Atari Deep Q-Network）是由 Google DeepMind 於 2013 年開發的一種人工智慧模型 Deep Q-Network（DQN），能在數十款經典 Atari 2600 遊戲中，僅以螢幕像素作為輸入，就能達到甚至超越人類玩家的表現。
 
