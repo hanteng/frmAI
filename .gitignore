@@ -208,8 +208,12 @@ __marimo__/
 
 /.quarto/
 /.obsidian
+
+# Quarto build output
+/_site
 /_book
 /docs
+
 /en
 /zh
 **/*.quarto_ipynb
