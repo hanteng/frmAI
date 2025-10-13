@@ -10,7 +10,7 @@ tags:
 - 強化學習
 - RLHF
 ---
-# 🏮🧬聯結主義 {#sec-connectionism}
+# 🧬聯結主義🏮 {#sec-connectionism}
 
 「聯結主義」（Connectionism）是一種並行分散式處理（Parallel Distributed Processing，PDP）的認知科學方法，它將心智或行為現象，建模為大量簡單、類神經元單元互相連接後**湧現**（emergent）出的過程。這些網路，或稱人工神經網路（ANN），透過調整節點之間的連接強度（權重），來學習和處理資訊。
 
