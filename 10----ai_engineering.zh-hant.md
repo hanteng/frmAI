@@ -1,5 +1,8 @@
 ---
-css: styles.css
+crossref:
+  labels: alpha A
+  subref-labels: roman I
+  chapters: true
 tags:
 - 系統創新
 ---
@@ -39,10 +42,11 @@ tags:
 🌉🔥
 :::
 
-<figure class="figure"><svg aria-roledescription="flowchart-v2" role="graphics-document document" class="flowchart mermaid-js" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1" xmlns:ev="http://www.w3.org/2001/xml-events">
+::: {#fig-mindmap-10 caption="聚焦  🌉`AI 工程` 心智圖"  }
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" class="flowchart mermaid-js" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1" xmlns:ev="http://www.w3.org/2001/xml-events">
 <g id="viewport-20250923180406308" class="svg-pan-zoom_viewport" transform="matrix(6.5, 0, 0, 6.5, -1200, -230)" style="transform: matrix(6.5, 0, 0, 6.5, -1200, -230);">
 <image href="images/mind_map.svg"></image></g></svg>
-</figure>
+:::
 
 ***
 
@@ -125,7 +129,7 @@ tags:
 * **狹義 `AI 工程`**：聚焦「以 **LLM** 為基底」的**創新應用**，選取相關知識點。這類實踐將「**模型**視為**生產要素**」，專注於 LLM 的開發、部署與維護。
 * **廣義 `AI 工程`**：以「**端到端**」的**全鏈路**描述，展示 **AI 系統**的完整生命週期。這幫助讀者理解「需求 ➾ 設計 ➾ 實作 ➾ 驗證 ➾ 優化」的綜合工程與產品管理能力。
 
-::: {.callout-note #note-ai-engineering title="🌉 `AI 工程`的狹義與廣義"}
+::: {.callout-note #nte-ai-engineering title="🌉 `AI 工程`的狹義與廣義"}
 根據《人工智慧工程》 [@Huyen2025-ai-engineering]一書，`AI 工程` 專注於將強大的預訓練模型應用到特定任務，無需從零開始建立模型。據此，可區分出兩種定義：
 
 * 🧞‍♀️🔗🎁 **狹義版本**
@@ -181,7 +185,7 @@ tags:
 廣義的**AI 工程師**是一個複合型**全能整合**角色，在團隊需要的地方，為**AI 專案**的各個環節提供支援，確保整個開發流程順利運行。
 
 
-::: {.callout-warning #note-ai-position-skills title="🌉AI 專業角色 × 技能矩陣表💪" }
+::: {.callout-warning #nte-ai-position-skills title="🌉AI 專業角色 × 技能矩陣表💪" }
 
 ::: {.table-small-print }
 | 角色 /<br/> 技能領域| 🟠數學基礎  | 🟡程式開發  | 🟢系統工程  | 🟣商業策略  | 🟤倫理合規 |

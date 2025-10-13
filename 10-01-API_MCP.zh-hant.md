@@ -10,7 +10,7 @@ tags:
 - 智慧代理 
 - 多源數據  
 ---
-# 🌉🔗🌐 API與MCP {#sec-api-mcp}
+# 🔗API與MCP🌐 {#sec-api-mcp}
 
 `API`（Application Programming Interface / 應用程式介面）與 `MCP`（Model Context Protocol / 模型脈絡協定）是現代 AI 工程與軟體系統實現**模組化**與**互操作性**的基石。API 提供了不同系統、服務或模組之間的標準化溝通方式；MCP 則在此基礎上，為多模組、多工具、多數據源的協作提供結構化、可編排的整合框架。
 

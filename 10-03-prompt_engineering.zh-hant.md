@@ -10,7 +10,7 @@ tags:
 - 最佳實務
 - 語言模型控制
 ---
-# 🌉❔📌 提示工程 {#sec-prompt-engineering}
+# ❔提示工程📌 {#sec-prompt-engineering}
 
 `提示工程`（Prompt Engineering）是**人工智慧工程**（AI Engineering）中的一項關鍵技能，用於設計、優化與管理**提示**詞句，進而輸入給 [大語言模型](02-07-large_language_models.zh-hant)（Large Language Models, LLMs）來獲得符合期望的、高品質的 [生成式 AI](06-05-analysis_generative.zh-hant) 輸出。提示工程標誌著與 AI 互動的方式，正從傳統的編碼指令，轉變為更具創造性和語義化的**對話**。
 
