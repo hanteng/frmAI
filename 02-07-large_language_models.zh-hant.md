@@ -5,7 +5,7 @@ tags:
   - 湧現能力
   - RLHF
 ---
-# 😵‍💫🧞‍♀️大語言模型 {#sec-large-language-models}
+# 😵‍💫大語言模型🧞‍♀️ {#sec-large-language-models}
 
 `大語言模型`（Large Language Models, LLMs）因為 2022 年底代表性案例 [LLM聊天機器人](04-02-llm_chatbots.zh-hant) **ChatGPT**的迅速普及，不僅重燃了人們對人工智慧（AI）的熱情，甚至引發了對通用人工智慧（[AGI](02-04-agi.zh-hant)）的遐想。
 
@@ -64,7 +64,15 @@ tags:
 
 ## 🎭人機腦補語言賽局🧞‍♀️
 
-🏷️ **解釋**：LLM 也可以被理解為一種「人機腦補語言賽局」（Mutual Mental Fill-in Language Game）。它是否真正「理解」語言並非重點，而是能夠流暢地參與人類的語言賽局。在對話中，LLM 透過生成流暢、具說服力的語言，誘發使用者的❝腦補❞，讓人誤以為機器「懂」自己。這種互動甚至能在文字層面上通過圖靈測試，也呼應了 Bender 等人提出的「**隨機鸚鵡**」（stochastic parrots）隱喻：模型雖然能複製與重組語言，但未必真正理解語言或世界 [@Bender2021-stochastic-parrots; @Weidinger2022-ethical-risks]。
+::: {.callout-important #imp-llm-as-language-games title="🎭「人機腦補語言賽局」🧞‍♀️"}
+
+🏷️ **解釋**：LLM 也可以被理解為一種「人機腦補語言賽局」（Mutual Mental Fill-in Language Games）。它是否真正「理解」語言並非重點，而是能夠流暢地參與人類的語言賽局。
+
+* 在對話中，LLM 透過生成流暢、具說服力的語言，誘發使用者的❝腦補❞，讓人誤以為機器「懂」自己。
+* 這種互動甚至能在文字層面上通過圖靈測試，也呼應了 Bender 等人提出的「**隨機鸚鵡**」（stochastic parrots）隱喻：模型雖然能複製與重組語言，但未必真正理解語言或世界 [@Bender2021-stochastic-parrots; @Weidinger2022-ethical-risks]。
+
+🎭🧞‍♀️
+:::
 
 - 🎯 **解釋較準部分**：
 	- 🗫🎲 **互動本質**：突顯 LLM 在**對話流暢性與互動策略**上的優勢，並揭示人類在語言賽局中也會進行❝腦補❞。    
@@ -141,11 +149,12 @@ tags:
 
 由此可見，`大語言模型` 的歷史演進是 **深度學習** 技術、**計算規模** 和 **數據可用性** 共同作用的結果，其核心突破是 **轉換器架構** 和 **自我監督學習**，為當代 AI 系統提供了語言理解與推理基礎，並產出**多模態 LLM** 及 具身智慧 等相關創新。
 
+***
 ## 📦 延伸：AI 發展假說
 
-以下有五個 AI 發展假說，請參照上述`大語言模型`的 ❝腦補❞ 心智模型假說，說明哪一種 AI 發展假說最具說服力，申論之。
+以下有五個 AI 發展假說，請參照上述`大語言模型`的 ❝腦補❞ 心智模型假說，說明哪一種 AI 發展假說最具說服力，申論之。若有思考難度，可以先利用🤝🙈`社會腦假說`（參見[@sec-social-brain-hypothesis]），具體討論 `大語言模型` 的 **規模化** 或 **尺度放大能力**（scaling）如何**受限於**或**超越**人類群體、網絡和組織的**穩定規模**和**互動限制**？
 
-- 💥**[AI 對齊崩潰假說](glossary.zh-hant.md#ai-alignment-collapse)**：隨著 AI 能力提升，若無法持續確保其行為與人類價值對齊，將導致追求衝突目標、產生有害行為，最終引發社會決策、經濟與安全體系的**系統性失序與混亂**。
+- 💥 **[AI 對齊崩潰假說](glossary.zh-hant.md#ai-alignment-collapse)**（AI Alignment Collapse Hypothesis）：隨著 AI 能力提升，若無法持續確保其行為與人類價值對齊，將導致追求衝突目標、產生有害行為，最終引發社會決策、經濟與安全體系的**系統性失序與混亂**。
 - 🌐 **[AI 公共財假說](glossary.zh-hant.md#ai-commons-hypothesis)**（AI Commons Hypothesis）：主張 AI 應被視為**共享資源**，透過**開源模型、開放資料**與**社群治理**，推動技術的去中心化發展與民主化，以避免少數權力壟斷。
 - 👑 **[AI 帝國假說](glossary.zh-hant.md#ai-empire-hypothesis)**（AI Empire Hypothesis）：預測**算力、資料與演算法**將集中於少數國家或超級平台，形成類似「帝國」的支配格局，導致全球創新單一化與**治理不對稱**的風險。
 - ⚔️ **[AI 部落化／碎片化假說](glossary.zh-hant.md#ai-tribalization-fragmentation)**（AI Tribalization / Fragmentation Hypothesis）：認為 AI 發展將呈現**多極化、碎片化**格局，不同意識形態群體建立各自的 AI 生態與標準，導致**全球治理失序與標準分裂**。
