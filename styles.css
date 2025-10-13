@@ -16,6 +16,13 @@ h2 {
     color: hsl(210, 10%, 33%);
 }
 
+.quarto-float-caption {
+    font-size: 1.2rem;
+}
+
+.footnotes {
+    font-size: 0.7rem;
+}
 
 /* This rule specifically targets all 'td' and 'th' elements
    inside the 'small-table-text' class. */
@@ -24,6 +31,10 @@ h2 {
   font-size: 0.7em; /* Or whatever size you prefer */
 }
 
+.table-vcenter th {
+  /* Set the vertical alignment property to middle */
+  vertical-align: middle !important;
+}
 
 /* Optional: style for Legal vs Arabic mode (for debugging) */
 html.legal body {
