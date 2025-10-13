@@ -1,4 +1,4 @@
-toc-title-document: "目錄"
+toc-title-document: "toct目錄"
 toc-title-website: "本頁目錄"
 
 related-formats-title: "其他格式"
@@ -16,7 +16,7 @@ notebook-preview-back: "返回文章"
 manuscript-meca-bundle: "MECA 打包"
 
 section-title-abstract: "摘要"
-section-title-appendices: "附錄"
+section-title-appendices: "🔖附錄"
 section-title-footnotes: "腳註"
 section-title-references: "參考文獻"
 section-title-reuse: "二次使用"
@@ -36,10 +36,16 @@ title-block-modified: "修改於"
 title-block-keywords: "關鍵字"
 
 callout-tip-title: "提示"
-callout-note-title: "註釋"
+callout-note-title: "註記"
 callout-warning-title: "警告"
 callout-important-title: "重要"
 callout-caution-title: "注意"
+# ✅ 正確的鍵名:
+callout-tip-prefix: "箴"
+callout-note-prefix: "註"
+callout-warning-prefix: "誡"
+callout-important-prefix: "要點"
+callout-caution-prefix: "慎"
 
 code-summary: "程式碼"
 
@@ -97,6 +103,10 @@ crossref-eq-prefix: "方程式"
 crossref-lof-title: "圖目錄"
 crossref-lot-title: "表目錄"
 crossref-lol-title: "列表目錄"
+crossref-nte-title: "註釋"
+crossref-imp-title: "要"
+crossref-imp-prefix: "要點"
+
 
 environment-proof-title: "證明"
 environment-remark-title: "小結"
