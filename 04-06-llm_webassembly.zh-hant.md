@@ -1,5 +1,4 @@
 ---
-title: "🌀🌐🔗 大語言模型網組合（LLM WebAssembly）"
 tags:
 - WebAssembly
 - 統計流AI
@@ -10,7 +9,7 @@ tags:
 - LLM
 - 參數微縮工程
 ---
-# 🌀🌐🔗 大語言模型網組合 {#sec-llm-webassembly}
+# 🌐🔗 LLM網組合🌀 {#sec-llm-webassembly}
 `大語言模型網組合`（LLM WebAssembly）是「統計流」AI 的 **網路化部署實踐** 之一，旨在將強大的 **大語言模型**（Large Language Models, LLMs）直接運行於瀏覽器或邊緣端環境，實現即時、互動、可擴展的 [生成式 AI](06-05-analysis_generative.zh-hant) 能力。過去，LLM 的強大能力主要依賴雲端伺服器，但隨著 **Llama** 家族等 **開源** 模型的出現與普及，結合 **WebAssembly（Wasm）** 與 **WebGPU** 等網頁高效能技術，讓 LLM 的推論與生成得以直接在瀏覽器中運行。以 `llama-cpp-wasm` 等專案為代表，這一技術開創了 LLM 在裝置端運行的可行性。
 
 作為「統計流」AI 的 **新興網頁資訊科技**，`大語言模型網組合` 代表了從集中式雲端推理向 **分散式、即時化、可組合** AI 應用的轉變。它將「文件網」（Web of Documents）與「**應用網**」（**Web of Applications**）進一步融合，讓使用者在瀏覽器中即可獲得接近雲端部署的大語言模型的語言理解與生成能力。

@@ -1,5 +1,4 @@
 ---
-title: ""
 tags:
 - 大語言模型
 - ChatGPT
@@ -7,13 +6,14 @@ tags:
 - 向量空間
 - 脈絡工程
 ---
-# 🌀🧞‍♀️🗪 LLM 聊天機器人 {#sec-llm-chatbots}
-
-* [@sec-notes-mind: d工程 ]
-* [🌉s工程: -@sec-notes-mind]
-* [🌉t工程](@sec-notes-mind)
-* 章[@sec-notes-mind]
-* [章: @sec-notes-mind]
+# 🧞‍♀️🗪 LLM 聊天機器人🌀 {#sec-llm-chatbots}
+* @sec-turing-test
+* app-api 
+* app-action
+* @fig-mindmap
+* imp-tri-aspect-cognitive
+* sec-hypothesis-mental-fill-in
+* sec-notes-constructive_fill-in
 
 `LLM 聊天機器人`（LLM‑based Chatbots）是一類基於**大型語言模型**（Large Language Models, LLMs）的對話系統，透過在海量數據上進行**機率性關聯**（probabilistic association）學習，將語言符號轉換為**向量空間**（vector space）中的數值向量，並根據機率預測生成上下文連貫的回應。
 

@@ -1,7 +1,17 @@
 ---
+crossref:
+  labels: alpha A
+  subref-labels: roman I
+  chapters: true
 tags:
 - 統計流
 ---
+::: {#fig-mindmap-04 caption="聚焦 🌀「統計流」AI 心智圖" }
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" class="flowchart mermaid-js" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1" xmlns:ev="http://www.w3.org/2001/xml-events">
+<g id="viewport-20250923180406308" class="svg-pan-zoom_viewport" transform="matrix(3.6 , 0, 0, 3.6 , -27, -50)" style="transform: matrix( 3.6, 0, 0, 3.6 , -27, -50);">
+<image href="images/mind_map.svg"></image></g></svg>
+:::
+
 # 🌀「統計流」AI
 
 
