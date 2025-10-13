@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>27&nbsp; 🌐🔗 LLM網組合🌀 – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./04-07-vector_space.zh-hant.html" rel="next">
+<link href="./04-05-machine_learning_models.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04----statistical_ai.zh-hant.html">🌀「統計流」AI</a></li><li class="breadcrumb-item"><a href="./04-06-llm_webassembly.zh-hant.html"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">🌐🔗 LLM網組合🌀</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +151,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -356,11 +336,11 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="./04----statistical_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🌀「統計流」AI</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-01-probabilistic_association.zh-hant.html" class="sidebar-item-text sidebar-link">
@@ -393,7 +373,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-06-llm_webassembly.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./04-06-llm_webassembly.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">🌐🔗 LLM網組合🌀</span></span></a>
   </div>
 </li>
@@ -768,41 +748,31 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
+  <li><a href="#分散佈部署生產力" id="toc-分散佈部署生產力" class="nav-link active" data-scroll-target="#分散佈部署生產力"><span class="header-section-number">27.1</span> 🔂分散佈部署生產力🌐</a>
   <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
+  <li><a href="#限制與挑戰" id="toc-限制與挑戰" class="nav-link" data-scroll-target="#限制與挑戰"><span class="header-section-number">27.1.1</span> 🌌限制與挑戰🚧</a></li>
   </ul></li>
+  <li><a href="#核心組成" id="toc-核心組成" class="nav-link" data-scroll-target="#核心組成"><span class="header-section-number">27.2</span> 🔳核心組成🏛</a></li>
+  <li><a href="#常見應用場景" id="toc-常見應用場景" class="nav-link" data-scroll-target="#常見應用場景"><span class="header-section-number">27.3</span> ▶️常見應用場景🎯</a></li>
+  <li><a href="#歷史演進" id="toc-歷史演進" class="nav-link" data-scroll-target="#歷史演進"><span class="header-section-number">27.4</span> 🔄歷史演進🗿</a></li>
+  <li><a href="#小結與展望" id="toc-小結與展望" class="nav-link" data-scroll-target="#小結與展望"><span class="header-section-number">27.5</span> 🌴小結與展望🧪</a></li>
+  <li><a href="#接下來" id="toc-接下來" class="nav-link" data-scroll-target="#接下來"><span class="header-section-number">27.6</span> 👉接下來🪸</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/04-06-llm_webassembly.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04----statistical_ai.zh-hant.html">🌀「統計流」AI</a></li><li class="breadcrumb-item"><a href="./04-06-llm_webassembly.zh-hant.html"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">🌐🔗 LLM網組合🌀</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title"><span id="sec-llm-webassembly" class="quarto-section-identifier"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">🌐🔗 LLM網組合🌀</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +782,195 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
-<blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p><code>大語言模型網組合</code>（LLM WebAssembly）是「統計流」AI 的 <strong>網路化部署實踐</strong> 之一，旨在將強大的 <strong>大語言模型</strong>（Large Language Models, LLMs）直接運行於瀏覽器或邊緣端環境，實現即時、互動、可擴展的 <a href="06-05-analysis_generative.zh-hant">生成式 AI</a> 能力。過去，LLM 的強大能力主要依賴雲端伺服器，但隨著 <strong>Llama</strong> 家族等 <strong>開源</strong> 模型的出現與普及，結合 <strong>WebAssembly（Wasm）</strong> 與 <strong>WebGPU</strong> 等網頁高效能技術，讓 LLM 的推論與生成得以直接在瀏覽器中運行。以 <code>llama-cpp-wasm</code> 等專案為代表，這一技術開創了 LLM 在裝置端運行的可行性。</p>
+<p>作為「統計流」AI 的 <strong>新興網頁資訊科技</strong>，<code>大語言模型網組合</code> 代表了從集中式雲端推理向 <strong>分散式、即時化、可組合</strong> AI 應用的轉變。它將「文件網」（Web of Documents）與「<strong>應用網</strong>」（<strong>Web of Applications</strong>）進一步融合，讓使用者在瀏覽器中即可獲得接近雲端部署的大語言模型的語言理解與生成能力。</p>
+<p>概念上，它與「符號流」AI 的 <strong><a href="./03-06-semantic_web.zh-hant.html">語意網</a></strong> 遙相呼應：</p>
 <ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
-</li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
+<li>🏛️🌐🔗 <code>語意網</code>屬於相對穩定且成熟的「符號流」AI 技術標準與實踐，依託 W3C 制定的 RDF、OWL、SPARQL 等開放標準，展現了<strong>知識導向</strong>的體系化計算知識表徵。它將資料以結構化、可推理的形式發佈到全球網路，支撐跨系統、跨領域的知識互操作。其生態與工具鏈已經歷二十餘年的發展，廣泛應用於知識圖譜、開放資料與企業級知識管理。</li>
+<li>🌀🌐🔗 <code>大語言模型網組合</code> 屬於新興但快速成長的「統計流」AI 網路化實踐，利用 WebAssembly 將強大的 <strong>大語言模型</strong> (LLM) 部署到網頁端，讓瀏覽器具備生成式 AI 的能力，體現了<strong>數據導向</strong>的體系化計算知識表徵。它可透過 API、插件與多模態接口在網路環境中動態協作，其標準化程度尚在形成中，生態仍處於快速演化階段</li>
 </ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
+<section id="分散佈部署生產力" class="level2" data-number="27.1">
+<h2 data-number="27.1" class="anchored" data-anchor-id="分散佈部署生產力"><span class="header-section-number">27.1</span> 🔂分散佈部署生產力🌐</h2>
+<p>作為 <strong>網頁資訊科技</strong> 的新興實踐，<code>大語言模型網組合</code> 在分散佈部署應用生產力上的體現包括：</p>
+<ul>
+<li>🌍 <strong>普及的 AI 能力</strong>
+<ul>
+<li>透過 WebAssembly，能夠在幾乎任何支援現代瀏覽器的裝置上運行LLM ，極大地降低了使用 AI 技術的門檻，讓使用者無需安裝額外軟體即可體驗先進的 AI 功能。</li>
+</ul></li>
+<li>⚡ <strong>即時推理與生成</strong>
+<ul>
+<li>在瀏覽器端直接運行，實現低延遲的自然語言理解與生成，減少對雲端的依賴。</li>
+</ul></li>
+<li>🔗 <strong>本地運行優點與體驗</strong>
+<ul>
+<li>在本地運行，有支援<strong>離線使用</strong>，提供<strong>即時回應</strong>，保障使用者<strong>數據隱私與安全</strong>，無需傳輸到外部或雲端伺服器的特性，有潛力能提供使用者體驗及全球能源消費的改善路徑。</li>
+</ul></li>
+<li>🚀 <strong>創新的互動體驗</strong>
+<ul>
+<li>將 LLM 整合到網頁應用中，可以創造出更多樣化的互動形式，例如智能客服、內容生成輔助、個性化推薦等，豐富了網頁的應用場景。</li>
+</ul></li>
+<li>🔌 <strong>可組合開發的彈性</strong>
+<ul>
+<li>WebAssembly 為開發者提供在網頁環境中運行複雜模型的新途徑，允許靈活地將 AI 功能整合到現有 Web 應用中，並可與 API、插件、多模態接口（文字、語音、圖像、影片）無縫協作，構建複合型 AI 應用。</li>
+</ul></li>
+<li>🌐 <strong>跨平台部署</strong>
+<ul>
+<li>借助 WebAssembly 與 WebGPU 的跨平台特性，LLM 可在不同作業系統與瀏覽器中一致運行。</li>
+</ul></li>
+<li>🛠 <strong>開發者生態</strong>
+<ul>
+<li>提供開放的 SDK、模型格式（如 <code>.gguf</code>）、工具鏈與範例，促進社群與企業快速構建 LLM 驅動的 Web 應用。</li>
+</ul></li>
+</ul>
+<p>標準化與開源的推進，使 <code>大語言模型網組合</code> 有潛力成為全球範圍內即時 AI 應用的基礎設施，尤其在低延遲互動、隱私保護與跨平台協作方面展現優勢。</p>
+<section id="限制與挑戰" class="level3" data-number="27.1.1">
+<h3 data-number="27.1.1" class="anchored" data-anchor-id="限制與挑戰"><span class="header-section-number">27.1.1</span> 🌌限制與挑戰🚧</h3>
+<p>儘管 <code>大語言模型網組合</code> 為統計流 AI 帶來了<strong>分散式</strong>、<strong>可離線</strong>、與<strong>可組合</strong>的全新應用模式，但在實務推廣與落地中仍面臨多重挑戰：</p>
+<ul>
+<li>🧩🚂 <strong>模型大小與效能</strong>
+<ul>
+<li>LLM 模型通常非常龐大，即使經過壓縮、量化與優化，在瀏覽器端運行仍可能佔用大量記憶體與計算資源，影響載入速度與運行效能。</li>
+</ul></li>
+<li>💻📳 <strong>硬體與瀏覽器兼容性</strong>
+<ul>
+<li>並非所有裝置都能提供足夠的計算資源來順暢運行 LLM，且不同瀏覽器對 WebAssembly 與 WebGPU 的支援程度可能存在差異。</li>
+</ul></li>
+<li>🛃📦 <strong>模型更新、維護與安全性</strong>
+<ul>
+<li>頻繁將大型 LLM 模型更新至客戶端可能導致頻寬壓力，版本管理與維護流程也更為複雜。此外，瀏覽器端運行模型需防範惡意代碼注入與資源濫用，同時確保模型與插件的來源可信及安全。</li>
+</ul></li>
+<li>😵‍💫🤯 <strong>開發複雜度</strong>
+<ul>
+<li>將 LLM 模型轉換為 WebAssembly 並進行優化，以及處理其在瀏覽器端的生命週期管理，對開發者而言仍存在一定技術門檻。</li>
+</ul></li>
+<li>💰🏭 <strong>資源消耗與成本</strong>
+<ul>
+<li>雖然減少了伺服器端的運算成本，但 LLM 在客戶端的運行仍會消耗裝置的本地資源，可能影響使用者的整體體驗與能源效率。</li>
+</ul></li>
+<li>💵🧞‍♀️ <strong>公共財商業化回饋問題</strong>
+<ul>
+<li>許多 LLM 技術建立在開放研究與公共數據集之上，但商業化落地後對原始社群與資源的回饋機制仍不完善。</li>
+</ul></li>
+</ul>
 </section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
+</section>
+<section id="核心組成" class="level2" data-number="27.2">
+<h2 data-number="27.2" class="anchored" data-anchor-id="核心組成"><span class="header-section-number">27.2</span> 🔳核心組成🏛</h2>
+<p><code>大語言模型網組合</code>（LLM WebAssembly）的實作，主要依賴以下核心技術的整合與協同運作：</p>
 <ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
+<li>🧩 <strong>WebAssembly（Wasm）</strong>
 <ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
+<li>一種低階、可移植的二進位指令格式，允許開發者將以 C/C++/Rust 等語言編寫的程式碼編譯後，在瀏覽器中以接近原生速度運行。對於 LLM 而言，Wasm 是在網頁端高效執行推理的關鍵基礎。</li>
 </ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
+<li>📚 <strong>開源大語言模型（LLM）</strong>
 <ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
+<li>包括 <strong>Llama</strong> 家族、GPT 類模型等，經過大規模語料訓練以理解與生成自然語言。為適應瀏覽器端運行，這些模型通常需經過 <strong>壓縮</strong>、<strong>量化</strong>（如 4-bit、8-bit）、或 <strong>蒸餾</strong> 處理。</li>
+<li><strong>llama.cpp</strong> 是將 Llama 系列模型高效運行於 CPU 的核心專案，其 WebAssembly 綁定版本（如 <strong>wllama</strong>、<code>llama-cpp-wasm</code>）可直接在瀏覽器中進行推理。</li>
 </ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
+<li>📦 <strong>模型格式與轉換工具</strong>
+<ul>
+<li><strong><code>.gguf</code> 模型格式</strong>（GPT‑Generated Unified Format）：支援多種量化精度與跨平台部署，是 <strong>llama.cpp</strong> 及其 WebAssembly 版本的主要模型封裝格式。</li>
+<li><strong>模型轉換與優化工具</strong>：如 <strong>ONNX Runtime Web</strong>、<strong>TensorFlow.js</strong>，可將訓練好的 LLM 模型轉換為 WebAssembly 兼容格式，並進行裁剪、量化等優化，以減少模型大小與運行資源需求。</li>
 </ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
-</ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
+<li>🖥 <strong>運行平台與執行環境</strong>
 <ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
-</ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
+<li><strong>一體化運行平台</strong>：如 <strong>Ollama</strong>，簡化模型下載、管理與本地推理流程，並可與瀏覽器端推理結合，實現混合式部署。</li>
+<li><strong>WebAssembly / WebGPU 執行環境</strong>：提供跨平台、高效能的推理基礎。WebGPU 可進一步利用 GPU 加速矩陣運算，提升瀏覽器端 LLM 的推理速度。</li>
+</ul></li>
+<li>🌐🔌 <strong>API 與插件系統</strong>
 <ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
+<li>作為應用層與推理引擎的橋樑，讓網頁應用能調用 WebAssembly 模組中的 LLM 功能，並處理輸入輸出。</li>
+<li>支援與外部資料源、服務的連接，並可擴展至多模態輸入輸出（文字、語音、圖像、影片），構建複合型 AI 應用。</li>
+</ul></li>
 </ul>
-<p>🎲🏁</p>
-</div>
-</div>
+<p>✨ <strong>總結</strong> <code>大語言模型網組合</code> 透過 WebAssembly 與相關技術，將強大的 LLM 模型帶入瀏覽器端，實現跨平台、低延遲、可離線的生成式 AI 能力，為 Web 應用注入了更高的互動性與智能化，並開啟了更多創新應用場景。</p>
 <hr>
 </section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
-<ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
-</ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+<section id="常見應用場景" class="level2" data-number="27.3">
+<h2 data-number="27.3" class="anchored" data-anchor-id="常見應用場景"><span class="header-section-number">27.3</span> ▶️常見應用場景🎯</h2>
+<p><code>大語言模型網組合</code> 的應用涵蓋多個領域，充分發揮其 <strong>即時性</strong>、<strong>可離線性</strong> 與 <strong>可組合性</strong> 的優勢：</p>
+<ul>
+<li>🖥 <strong>瀏覽器內智慧助理</strong>
+<ul>
+<li>在使用者端直接提供自然語言問答、任務自動化與內容生成，無需依賴雲端 API。</li>
+</ul></li>
+<li>📝 <strong>內容生成與編輯輔助</strong>
+<ul>
+<li>為線上文書、部落格平台或協作工具提供即時的文本生成、改寫與摘要功能。</li>
+</ul></li>
+<li>🎓 <strong>互動式教育與培訓</strong>
+<ul>
+<li>在教學網站中嵌入 LLM，支援多語言解說、即時答疑與個性化學習路徑規劃。</li>
+</ul></li>
+<li>🛒 <strong>智慧電商與客服</strong>
+<ul>
+<li>為電商網站提供本地化的智能客服、產品推薦與搜尋優化，提升用戶體驗。</li>
+</ul></li>
+<li>🎨 <strong>多模態創作工具</strong>
+<ul>
+<li>與圖像、語音、影片生成模型結合，直接在瀏覽器中完成跨媒介創作。</li>
+</ul></li>
+<li>🛠 <strong>專業領域應用</strong>
+<ul>
+<li>在醫療、法律、工程等領域的專業系統中，提供可離線運行的知識檢索與輔助決策功能，確保資料隱私與合規性。</li>
+</ul></li>
 </ul>
-</div>
-</div>
-</div>
+<p>✨ 總之，<code>大語言模型網組合</code> 讓生成式 AI 從雲端走向瀏覽器與邊緣端，為即時、隱私、安全的 AI 應用開啟了更多場景與可能性。</p>
 </section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
+<section id="歷史演進" class="level2" data-number="27.4">
+<h2 data-number="27.4" class="anchored" data-anchor-id="歷史演進"><span class="header-section-number">27.4</span> 🔄歷史演進🗿</h2>
+<p><code>大語言模型網組合</code> 的發展歷程，反映了生成式 AI 技術從集中式雲端推理走向分散式、即時化與可組合應用的演進過程：</p>
+<ul>
+<li>☁️ <strong>雲端集中式推理時代（2017‑2022）</strong>
+<ul>
+<li>大型語言模型（如 <strong>GPT-3</strong>）主要透過雲端 API 提供服務，依賴資料中心的高性能 <strong>GPU/TPU</strong> 進行推理。此模式雖能提供強大算力，但存在延遲、隱私與成本等限制。</li>
+</ul></li>
+<li>🦙 <strong>開源模型與本地部署興起（2023 年初）</strong>
+<ul>
+<li>Meta 在 2023 年 2 月發布了 <strong>LLaMA</strong> 系列模型，帶動了開源 LLM 生態的快速發展。社群專案如 <strong>llama.cpp</strong> 隨即出現，證明了 LLM 可以在個人電腦的 <strong>CPU</strong> 上高效運行，這極大地推動了本地與邊緣端推理的可行性。</li>
+</ul></li>
+<li>💻 <strong>裝置端推理普及（2023 年中 - 2024 年初）</strong>
+<ul>
+<li>隨著 <strong><code>.gguf</code></strong> 模型格式的普及，模型壓縮與量化技術日益成熟，使得多種 LLM 能夠在不同裝置上部署。<strong>Ollama</strong> 等一體化平台在 2023 年底興起，簡化了模型下載、管理與本地推理流程，讓一般用戶也能在個人電腦上輕鬆運行 LLM。</li>
+</ul></li>
+<li>🌐 <strong>瀏覽器端推理實現（2024 年初 - 至今）</strong>
+<ul>
+<li>從 2024 年初開始，技術取得了突破性進展，專案如 <strong>llama-cpp-wasm</strong> 和 <strong>WebLLM</strong> 將 LLM 編譯為 <strong>WebAssembly</strong>，結合 <strong>WebGPU</strong> 技術，首次實現了在瀏覽器中直接進行即時推理。這開啟了「大語言模型網組合」的新階段，讓生成式 AI 應用能夠<strong>即時</strong>、<strong>可離線</strong>且<strong>跨平台</strong>地運行。</li>
+</ul></li>
+<li>🤗 <strong>Hugging Face 平台整合與推廣（2024 年初 - 至今）</strong>
+<ul>
+<li><strong>Hugging Face</strong> 作為全球最大的開源模型與資料集社群平台，迅速將 LLM WebAssembly 技術整合進其生態系。透過 <strong>Spaces</strong>、<strong>模型倉庫</strong>與 <strong>WebLLM Playground</strong> 等服務，Hugging Face 大幅降低了瀏覽器端 LLM 的試用與分發門檻，促進了社群協作與創新，加速了 LLM 在教育、研究、商業應用等領域的普及。</li>
+</ul></li>
+</ul>
+<p><code>大語言模型網組合</code>歷經從<strong>開源模型推廣</strong>、<strong>本地部署普及</strong>到<strong>瀏覽器端推理實現</strong>的階段，已從雲端集中式服務轉變為可組合、即時化且分散式的 AI 應用新模式。</p>
+</section>
+<section id="小結與展望" class="level2" data-number="27.5">
+<h2 data-number="27.5" class="anchored" data-anchor-id="小結與展望"><span class="header-section-number">27.5</span> 🌴小結與展望🧪</h2>
+<p>👧👦🏻 <strong>對人類學習者而言</strong>，<code>大語言模型網組合</code> 是一種將雲端生成式 AI 能力帶入瀏覽器與邊緣端的技術實踐，代表「統計流」AI在<strong>網頁資訊科技</strong>重要躍遷，實現了 <strong>即時性</strong>、<strong>可離線性</strong>、<strong>跨平台性</strong> 與 <strong>可組合性</strong> 的融合。觀察它的發展，有助於理解知識如何在全球網路中提升知識生產力，培養<strong>資訊科技</strong>的 <strong>應用開發</strong> 與 <strong>系統整合</strong> 能力。</p>
+<p>🤖🦾 <strong>對 AI 而言</strong>，<code>大語言模型網組合</code>提供了將 LLM 模型部署至Web 應用的基礎，使生成式 AI 能在不依賴雲端的情況下進行推理與生成。它將已開源的模型、格式、執行環境與 API/插件系統整合成一個可組合的運行框架，支撐「統計流」AI 在 Web 環境中的即時協作與多模態擴展。雖然目前在模型大小、效能、標準化與安全性上仍有挑戰，但其開放與分散的特性，以及<strong>Ollama</strong> 和 <strong>Hugging Face</strong>推出的開源生態，為 AI 應用的隱私保護、能源效率與創新模式提供了新契機。</p>
+<p>展望未來，隨著 <strong>開源模型生態</strong>、<strong>多模態生成</strong> 與 <strong><a href="02-03-neurosymbolic_ai.zh-hant">神經－符號合流</a></strong> 技術的發展，<code>大語言模型網組合</code> 將在 <strong>智慧助理</strong>、<strong>互動教育</strong>、<strong>專業領域決策支援</strong> 與 <strong>創意內容生成</strong> 等場景發揮更大作用。特別是結合<strong><a href="10-04-retrieval_augmented_generation.zh-hant">知識驅動生成（RAG）</a></strong> 與 <strong><a href="03-06-semantic_web.zh-hant">語意網</a></strong> 等，有望打造 <strong>可追溯</strong>、<strong>可解釋</strong>、<strong>可擴展</strong> 且高效的混合式智慧系統，推動下一代 Web AI 應用的落地。相關實踐將拓展<strong>跨模態與多場景應用</strong>應用邊界，也探找<strong>隱私與能源優化</strong>，在保護使用者數據的同時，也減少本地資源消耗與全球能源足跡，發展出更高效的模型壓縮與推理技術。</p>
+</section>
+<section id="接下來" class="level2" data-number="27.6">
+<h2 data-number="27.6" class="anchored" data-anchor-id="接下來"><span class="header-section-number">27.6</span> 👉接下來🪸</h2>
+<ul>
+<li>⮦🚥 思考 <a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> AI 5 大導向（AI Orientations）的各種系統／設計思維視角，是如何運用 <code>大語言模型網組合</code>，去構成有用的 <strong>應用架構</strong> 與 <strong>問題解決策略</strong>。
+<ul>
+<li>接續 ☸🌀 <a href="05-02-oriented_data.zh-hant">數據導向</a></li>
+<li>對比 ☸🏛️ <a href="05-01-oriented_knowledge.zh-hant">知識導向</a></li>
+</ul></li>
+<li>⮦🚦 探究 <a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> <strong>「統計流」AI</strong>（Statistical AI）的其它條目，試試自己能不能說明 <code>大語言模型網組合</code> 和它們的關係：
+<ul>
+<li><strong>🌀🎲🌿 <a href="04-01-probabilistic_association.zh-hant">機率性關聯</a></strong>：<code>大語言模型網組合</code> 的核心 LLM 是基於機率性關聯原理運作，透過大量語料學習詞與詞、句與句之間的統計關係，並在瀏覽器端即時生成最可能的回應或內容。 &nbsp;</li>
+<li><strong>🌀🧞‍♀️🗪 <a href="04-02-llm_chatbots.zh-hant">LLM聊天機器人</a></strong>：在 WebAssembly 環境中部署 LLM，可直接在網頁中構建可離線運行的<strong>LLM聊天機器人</strong>，提供即時互動、隱私保護與跨平台體驗，無需依賴雲端 API。</li>
+<li><strong>🌀🪢🧠 <a href="04-03-neural_networks.zh-hant">神經網路</a></strong>：<code>大語言模型網組合</code>所運行的 LLM 本質上是<strong>深度神經網路</strong>，透過多層 Transformer 架構進行語言建模，並經由 WebAssembly/WebGPU 在用戶端高效推理。 &nbsp; &nbsp;</li>
+<li><strong>🌀🛠️🤏 <a href="04-04-feature_engineering.zh-hant">特徵工程</a></strong>：雖然現代 LLM 多為端到端訓練，但在瀏覽器端部署時，仍需對輸入進行適當的<strong>特徵處理</strong>（如分詞、編碼、向量化），以適配<code>大語言模型網組合</code> WebAssembly 的運行環境與資源限制。<br>
+</li>
+<li><strong>🌀🤖📦 <a href="04-05-machine_learning_models.zh-hant">機器學習模型</a></strong>：<code>大語言模型網組合</code> 是機器學習模型在 Web 環境的延伸應用，將原本需在伺服器端運行的模型封裝、量化並轉換為可在瀏覽器端直接推理的形式。 &nbsp;</li>
+<li><strong>🌀🌌▦ <a href="04-07-vector_space.zh-hant">向量空間</a></strong>：LLM 的語言理解與生成依賴<strong>向量空間</strong>表示，<code>大語言模型網組合</code> 在瀏覽器端同樣需進行詞嵌入與上下文<strong>向量計算</strong>，並可與外部向量資料庫結合，實現檢索增強生成（RAG）又稱<a href="10-04-retrieval_augmented_generation.zh-hant">知識驅動生成</a>等應用。</li>
+</ul></li>
+</ul>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
-</div>
-</div>
-</section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1376,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./04-05-machine_learning_models.zh-hant.html" class="pagination-link" aria-label="🤖📦 機器學習模型🌀">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">🤖📦 機器學習模型🌀</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./04-07-vector_space.zh-hant.html" class="pagination-link" aria-label="🌌▦ 向量空間🌀">
+        <span class="nav-page-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">🌌▦ 向量空間🌀</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1394,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/04-06-llm_webassembly.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>9&nbsp; 🌀統計流人工智慧🎏 – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./02-03-neurosymbolic_ai.zh-hant.html" rel="next">
+<link href="./02-01-symbolic_ai.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02----schools_paradigms.zh-hant.html">🎏流派~🏮主義</a></li><li class="breadcrumb-item"><a href="./02-02-statistical_ai.zh-hant.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">🌀統計流人工智慧🎏</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +151,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -250,11 +230,11 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="./02----schools_paradigms.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🎏流派~🏮主義</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02-01-symbolic_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
@@ -263,7 +243,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-02-statistical_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./02-02-statistical_ai.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">🌀統計流人工智慧🎏</span></span></a>
   </div>
 </li>
@@ -768,41 +748,31 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
+  <li><a href="#流派脈絡及問題意識" id="toc-流派脈絡及問題意識" class="nav-link active" data-scroll-target="#流派脈絡及問題意識"><span class="header-section-number">9.1</span> 🎏 流派脈絡及問題意識</a></li>
+  <li><a href="#歷史發展節點" id="toc-歷史發展節點" class="nav-link" data-scroll-target="#歷史發展節點"><span class="header-section-number">9.2</span> 📜 歷史發展節點</a></li>
+  <li><a href="#融合深度學習與強化學習" id="toc-融合深度學習與強化學習" class="nav-link" data-scroll-target="#融合深度學習與強化學習"><span class="header-section-number">9.3</span> 🪢融合深度學習與強化學習</a>
   <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
+  <li><a href="#連結主義啟發深度學習" id="toc-連結主義啟發深度學習" class="nav-link" data-scroll-target="#連結主義啟發深度學習"><span class="header-section-number">9.3.1</span> 🏮🧬 連結主義啟發深度學習</a></li>
+  <li><a href="#行為主義啟發強化學習" id="toc-行為主義啟發強化學習" class="nav-link" data-scroll-target="#行為主義啟發強化學習"><span class="header-section-number">9.3.2</span> 🏮💪 行為主義啟發強化學習</a></li>
   </ul></li>
+  <li><a href="#小結與展望統計流" id="toc-小結與展望統計流" class="nav-link" data-scroll-target="#小結與展望統計流"><span class="header-section-number">9.4</span> 🏁 小結與展望：統計流</a></li>
+  <li><a href="#接下來" id="toc-接下來" class="nav-link" data-scroll-target="#接下來"><span class="header-section-number">9.5</span> 🔱 接下來</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/02-02-statistical_ai.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02----schools_paradigms.zh-hant.html">🎏流派~🏮主義</a></li><li class="breadcrumb-item"><a href="./02-02-statistical_ai.zh-hant.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">🌀統計流人工智慧🎏</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title"><span id="sec-statistical-ai" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">🌀統計流人工智慧🎏</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +782,135 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
 <blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
+<p>🎏🌀 <code>統計流 AI</code> 相信，<strong>智慧源於從海量資訊中識別統計規律和相關性</strong>。基於<strong>數據</strong>、<strong>歸納</strong>、和<strong>模型</strong>，<code>統計流 AI</code> 主張先有<strong><em>數據</em></strong>，經數據科學家分析並<strong>訓練</strong>、<strong>驗證</strong>、<strong>測試</strong>成機器可學習的<strong>數學模型</strong>。此類基於機器學習還可以分為受連結主義啟發的<strong>深度學習</strong>，以及受行為主義啟發的<strong>強化學習</strong>。</p>
 </blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p><code>統計流人工智慧</code>（Statistical AI）代表著 AI 研究中的一個主要範式轉變，它不再依賴人類專家制定的符號或邏輯規則，而是<strong>專注於從數據中學習模式並進行預測</strong>。</p>
+<p><code>統計流</code>的優勢在於其<strong>強大的泛化能力</strong>、<strong>處理模糊性</strong>，以及從雜亂數據中發現人類可能遺漏的<strong>複雜關係</strong>。然而，<code>統計流</code>存有「<strong>黑箱</strong>」（black box）性質使得難以解釋其決策背後的原因，而且如果訓練數據有缺陷或不具代表性，它有時會產生帶有偏見或荒謬的輸出。與之相對照的是基於符號，並運用知識顯式編碼的 <code>符號流</code>。</p>
+<section id="流派脈絡及問題意識" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="流派脈絡及問題意識"><span class="header-section-number">9.1</span> 🎏 流派脈絡及問題意識</h2>
+<p>統計流 AI 的心智模型與符號流 AI 形成鮮明對比，特別是處理以下核心 AI 問題意識時：</p>
 <ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
-</li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
+<li>🔤⚓ <a href="01-03-Symbol_Grounding_Problem.zh-hant">符碼紮根問題</a>（Symbol Grounding Problem）：
+<ul>
+<li>⚖️ 統計流 AI 的「<strong>語意</strong>」是從數據中的<strong>統計關聯</strong>中<strong>學習</strong>而來，而不依賴人類專家。產出的模型因此能處理模糊性並發現複雜關係，但其學習到的語意可能缺乏符號流 AI 所強調的「內在意義」，因而難以解釋其決策過程。</li>
+<li>🧠 哲學層面上，統計流 AI 的「語意」是<strong>數據依賴</strong>的，而非源於人類知識，這應付策略引發「黑箱」挑戰。</li>
+<li>🚧 技術層面上，統計模型透過<strong>神經網路</strong>等結構，能從大量數據中學習到高維度語義表徵，儘管這些表徵的可解釋性未明。</li>
+</ul></li>
+<li>🖼️⏱️ <a href="01-04-Frame_Problem.zh-hant">框架問題</a>（Frame Problem）
+<ul>
+<li>⚖️ 統計流 AI 透過「<strong>隱含學習</strong>」來應對框架問題。不窮舉可能變化，統計流 AI 透過數據驅動的特徵選擇與權重更新去計算特徵與情境的<strong>相關性</strong>，隱性處理了相關性判斷。例如，模型學習到「下雨」與「地面濕滑」的統計關聯，據此進行機率推斷，而無需對所有天氣與地面互動邏輯明確編碼。</li>
+<li>🧠 哲學層面上，這種處理方式更為<strong>實用</strong>，能應對現實世界的動態與不確定性，但其隱含的知識更新過程因此不明。</li>
+<li>🚧 技術層面上，透過<strong>數據驅動的模式識別</strong>，統計模型能有效地更新其對世界的理解，以適應新的資訊，這使得它們比符號流 AI 更具彈性處理複雜或動態環境。這種仿擬能力依賴訓練資料分佈。</li>
+</ul></li>
+<li>👁️⯊ <a href="01-05-Gestalt_Psychology.zh-hant">完形心理</a>（Gestalt Psychology）：
+<ul>
+<li>⚖️ 現代 AI，特別是深度學習模型，特別是用於電腦視覺的卷積神經網路（CNN）與多層特徵提取架構，展現了類似完形心理的整體感知能力。能夠在雜訊或訊息不完整的情況下，依據已學得的經驗法則形成判斷。</li>
+<li>🧠 哲學層面上，這種「由局部推整體」的功能仿擬能力，呼應了完形心理學，並使 AI 的感知過程更貼近人類的<strong>直覺</strong>與<strong>經驗法則</strong>。</li>
+<li>🚧 技術層面上，技術層面上，AI 模型透過<strong>層次化的特徵提取</strong>與<strong>局部—全局特徵整合</strong>，克服了單層感知器的局限性，進而利用神經元數學模型，仿擬像是人眼的閉合效應。</li>
+</ul></li>
+<li>🗫🎲 <a href="01-07-Language_Games.zh-hant">語言賽局</a>（Language Games）：
+<ul>
+<li>⚖️ 大型語言模型（LLMs）是統計流 AI 在處理語言情境性與交互性方面的成功典範。它們從海量文本語料庫中學習，捕捉詞彙在各種社會語境中的使用方式與問答模版，並生成符合語境、語義連貫的回應，展現了在「語言賽局」中與人類互動的能力。</li>
+<li>🧠 哲學層面上，這表明 AI 能夠處理語言的動態性與依賴於使用脈絡與互動的本質，從而實現擬人化對話溝通，雖不保證真正理解語意。</li>
+<li>🚧 技術層面上，模型透過學習巨量的語言數據，掌握了上下文脈絡理解、意圖推斷和生成合適回應的能力，催生<a href="10-03-prompt_engineering.zh-hant">提示工程</a>、<a href="10-05-context_engineering.zh-hant">脈絡工程</a>等的<a href="10----ai_engineering.zh-hant">AI工程</a>實踐。</li>
+</ul></li>
 </ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
+<p>簡言之： * 若觀察到的數據能揭示「是什麼」與「有多大可能性」，則預測與泛化能力即「有效」； * 若産出的數學模型能「有效」預測與泛化，就算已學成經驗法則； 儘管其透過機率推斷與模式識別的決策過程缺乏可解釋性，且易受數據偏差影響，統計流 AI 促成的大語言模型已取得廣泛運用。</p>
 </section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
+<section id="歷史發展節點" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="歷史發展節點"><span class="header-section-number">9.2</span> 📜 歷史發展節點</h2>
+<p>統計流 AI 的發展與現代機器學習緊密相連，是 AI 技術演進的重要里程碑：</p>
 <ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
-</ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
+<li>⏳ <strong>1950年代-1980年代—機器學習的萌芽</strong>：從感知機（Perceptron）到早期的決策樹和支持向量機（SVM），研究者開始探索如何讓機器從數據中學習。</li>
+<li>🧠 <strong>1980s-1990s—神經網路的復興</strong>：反向傳播算法的發展，使得多層神經網路（Multilayer Neural Networks）的訓練成為可能，為後來的深度學習奠定了基礎。</li>
+<li>🏛️ <strong>2000年代—統計學習理論的成熟</strong>：機器學習理論得到進一步發展，統計方法在各個領域得到廣泛應用，推動了推薦系統、統計語言模型等技術的進步。在此時期Vladimir Vapnik的<strong>支持向量機</strong>（SVM）及 <strong>PAC</strong>（Probably Approximately Correct）學習理論成熟並傳播廣泛。</li>
+<li>🌐 <strong>2010年代至今—深度學習的崛起</strong>：藉由大數據和強大計算能力（GPU）的加持，深度學習（Deep Learning）在圖像識別、語音辨識、自然語言處理等領域取得了突破性進展，<strong>神經網路</strong>（Neural Networks 🌀🪢🧠）成為核心模型。</li>
+<li>🚀 <strong>2020年代至今—大型語言模型的時代</strong>：<strong>大型語言模型</strong>（LLMs）的出現，如 ChatGPT，標誌著統計流 AI 在自然語言理解與生成方面達到了前所未有的高度，<strong>LLM聊天機器人</strong>（LLM-based Chatbots 🌀🧞‍♀️🗪）成為了統計流 AI 的典型代表。</li>
 </ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
-<ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
-</ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
-<ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
-</ul>
-<p>🎲🏁</p>
-</div>
-</div>
-<hr>
 </section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
+<section id="融合深度學習與強化學習" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="融合深度學習與強化學習"><span class="header-section-number">9.3</span> 🪢融合深度學習與強化學習</h2>
+<p>當今<code>統計流 AI</code>在機器學習方面發展出<strong>深度學習</strong>與<strong>強化學習</strong>，吸納了<strong><a href="02-05-connectionism.zh-hant">連結主義</a></strong> 與 <strong><a href="02-06-behaviorism.zh-hant">行為主義</a></strong> 的多學科養分。</p>
+<section id="連結主義啟發深度學習" class="level3" data-number="9.3.1">
+<h3 data-number="9.3.1" class="anchored" data-anchor-id="連結主義啟發深度學習"><span class="header-section-number">9.3.1</span> 🏮🧬 連結主義啟發深度學習</h3>
+<p><a id="深度學習"></a></p>
+<p>🧠 <strong>深度學習</strong> （Deep Learning, DL）實踐連結主義「智慧源於神經元連結與權重調整」的核心理念，透過多層人工<a href="04-03-neural_networks.zh-hant">神經網路</a>進行<strong>分佈式表示</strong>與<strong>層次化特徵抽取</strong>，模擬生物神經系統的訊號傳遞，並利用誤差反向傳播等演算法自動調整權重，從大量數據中學習複雜模式與高階語義結構。</p>
+<p>🏮🧬 <strong><a href="02-05-connectionism.zh-hant">連結主義</a></strong> （Connectionism）為深度學習提供了<strong>高維模式識別與特徵自動提取</strong>的能力，使 AI 能處理語音、圖像、自然語言等難以用符號規則描述的資料類型，並推動了影像辨識、語音識別、自然語言處理等領域的突破。大型語言模型（LLM）正是建立在深度神經網路之上，能從龐大語料中捕捉語言結構與語境關聯。然而，這種數據驅動的學習方式雖帶來接近人類的多模態表現，也伴隨<strong>黑盒性</strong>與對資料品質高度依賴的挑戰。</p>
+</section>
+<section id="行為主義啟發強化學習" class="level3" data-number="9.3.2">
+<h3 data-number="9.3.2" class="anchored" data-anchor-id="行為主義啟發強化學習"><span class="header-section-number">9.3.2</span> 🏮💪 行為主義啟發強化學習</h3>
+<p><a id="強化學習"></a></p>
+<p>🎯 <strong>強化學習</strong>（Reinforcement Learning, RL）體現行為主義 🙶刺激⇥反應🔄獎懲🙷 的學習迴路核心原理，透過與環境互動、試錯探索與回饋信號來優化行為策略。其數學化實現包括 Q-learning、深度 Q 網路（DQN）、策略梯度（Policy Gradient）等演算法，將心理學中的<strong>獎懲學習</strong>轉化為可計算的<strong>策略更新機制</strong>數學框架，使智慧體能在不確定環境中逐步提升決策品質。</p>
+<p>🏮💪 <strong><a href="02-06-behaviorism.zh-hant">行為主義</a></strong>（Behaviorism）為統計流 AI 注入了<strong>目標導向與長期規劃</strong>的能力，推動了遊戲 AI（如 AlphaGo）、機器人控制、自動駕駛等領域的突破。當代<a href="04-03-neural_networks.zh-hant">神經網路</a>的發展與<a href="02-07-large_language_models.zh-hant">大語言模型</a>運用常見的 <strong>人類回饋強化學習</strong>（Reinforcement Learning from Human Feedback，RLHF）便是行為主義的重大貢獻，同時也見證了 <strong>深度學習</strong> 與 <strong>強化學習</strong> 的融合。行為主義的獎懲學習機制，正是透過人類評估者的反饋信號來微調模型行為，使其在對話生成、任務完成與價值對齊方面更貼近人類期望。</p>
+</section>
+</section>
+<section id="小結與展望統計流" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="小結與展望統計流"><span class="header-section-number">9.4</span> 🏁 小結與展望：統計流</h2>
+<p><code>統計流人工智慧</code>有以下啟發：</p>
+<ul>
+<li>🤔 對<strong>人類學習者</strong>而言：
+<ul>
+<li>學習人類社會中的資料收集、統計、再應用的<strong>社會與技術過程</strong>，以應對現實世界複雜性與不確定性。</li>
+<li>掌握如何透過<strong>數據</strong>、<strong>歸納</strong>、和<strong>模型</strong>來構建推理，並理解<strong>機器學習</strong>的資料科學過程與應用。<br>
+</li>
+</ul></li>
+<li>🤖 在 <strong>AI 的世界</strong>裡：
+<ul>
+<li>提供 <strong>可訓練</strong> 且 <strong>可泛化</strong> 的 <strong>特徵組合</strong> 與 <strong>數據歸納機制</strong>，讓機器依「<strong>模型</strong>」處理 。</li>
+</ul></li>
+<li>🏙 在 <strong>人類日常生活</strong>裡：
+<ul>
+<li>形成「<strong>透過觀察數據，推斷現象並進行預測</strong>」 的<strong>實證假設</strong>與<strong>歸納信念</strong>。</li>
+</ul></li>
+</ul>
+<p>理解<code>統計流人工智慧</code>對 AI 的影響，就可以系統地掌握人類處理<a href="01----problematics.zh-hant">AI 問題意識</a>的基本且經典範式，更是對區分<a href="05----ai_orientations.zh-hant">AI導向</a>、盤點<a href="./06----analytics_decisions.zh-hant.html">資料分析與決策</a>、設計可行的<a href="10----ai_engineering.zh-hant">AI工程</a>項目或產品所必需的基礎知識。　</p>
+</section>
+<section id="接下來" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="接下來"><span class="header-section-number">9.5</span> 🔱 接下來</h2>
+<p>瞭解基於<strong>數據</strong>、<strong>歸納</strong>、和<strong>模型</strong>的&nbsp;<code>統計流人工智慧</code>&nbsp;後，讀者可以繼續：</p>
+<ul>
+<li>🚥對比 🎏🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）有以下核心差異：
 <ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
-</ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+<li><strong>因果推論</strong>：🏛️⊨∴ <a href="03-01-formal_logic.zh-hant">形式邏輯</a> 🆚 <a href="04-01-probabilistic_association.zh-hant">機率性關聯</a> 🌀🎲🌿
+<ul>
+<li><strong>符號流</strong>：基於<strong>演繹</strong>推理，透過明確的規則追求絕對的「因果關係」。</li>
+<li><strong>統計流</strong>：基於<strong>歸納</strong>推理，透過計算「機率性關聯」，不保證絕對因果。</li>
+</ul></li>
+<li><strong>對話聊天實現</strong>：🏛️🤖💬 <a href="03-02-automatic_dialogue_systems.zh-hant">自動對話系統</a> 🆚 <a href="04-02-llm_chatbots.zh-hant">LLM聊天機器人</a>🌀🧞‍♀️🗪
+<ul>
+<li><strong>符號流</strong>：透過預設的腳本、邏輯規則與語法解析，構建<strong>自動對話系統</strong>。</li>
+<li><strong>統計流</strong>：透過海量數據訓練的<strong>大型語言模型</strong>生成流暢<strong>聊天機器人</strong>。</li>
+</ul></li>
+<li><strong>代表性里程碑</strong>：🏛️🎁🧠 <a href="03-03-expert_systems.zh-hant">專家系統</a> 🆚 <a href="04-03-neural_networks.zh-hant">神經網路</a>🌀🪢🧠
+<ul>
+<li><strong>符號流</strong>：代表應用為<strong>專家系統</strong>，以專家經驗與邏輯規則構築<strong>可推理的知識庫</strong>。</li>
+<li><strong>統計流</strong>：代表模型為<strong>神經網路</strong>，從數據中自動學習並形成<strong>高維關聯結構</strong>。</li>
+</ul></li>
+<li><strong>過程工程實踐</strong>：🏛️🛠️🏗️ <a href="03-04-knowledge_representation.zh-hant">知識表徵</a> 🆚 <a href="04-04-feature_engineering.zh-hant">特徵工程</a> 🌀🛠️🤏
+<ul>
+<li><strong>符號流</strong>：先有知識➡由專家整理與建模➡運用符號與規則，將其<strong>顯式編碼</strong>成機器可推理、可檢索的<strong>知識表徵</strong>。</li>
+<li><strong>統計流</strong>：先有數據➡由演算法分析與轉換➡從原始數據中，自動<strong>萃取與構造</strong>有意義特徵，形成可供模型訓練的<strong>特徵集合</strong>。</li>
+</ul></li>
+<li><strong>經典模組半成品</strong>：🏛️🕸💡<a href="03-04-knowledge_representation.zh-hant">知識圖譜</a> 🆚 <a href="04-05-machine_learning_models.zh-hant">機器學習模型</a> 🌀🤖📦
+<ul>
+<li><strong>符號流</strong>：從專家知識<strong>萃取概念與關係</strong>，並以<strong>顯式編碼</strong>成<strong>可推理、可檢索</strong>的結構化「<strong>知識圖譜</strong>」。</li>
+<li><strong>統計流</strong>：從數據中<strong>歸納模式</strong>，學習<strong>隱含規則</strong>，產出<strong>可預測與分類</strong>的「<strong>模型</strong>」。</li>
+</ul></li>
+<li><strong>網頁資訊科技</strong>： 🏛️🌐🔗 <a href="03-06-semantic_web.zh-hant">語意網</a> 🆚 <a href="./04-06-llm_webassembly.zh-hant.html">大語言模型網組合</a>🌀🌐🔗
+<ul>
+<li><strong>符號流</strong>：三元組與本體（RDF/OWL）構築可推理、可檢索的<strong>顯式語義網路</strong>。</li>
+<li><strong>統計流</strong>：在瀏覽器中實現<strong>本地推理</strong>，並<strong>即時生成</strong>語言內容。</li>
+</ul></li>
+<li><strong>計算知識表徵疆域</strong>：🏛️🌌🗺️ <a href="03-07-ontology.zh-hant">本體論</a> 🆚 <a href="04-07-vector_space.zh-hant">向量空間</a>🌀🌌▦
+<ul>
+<li><strong>符號流</strong>：透過「<strong>本體論</strong>」(Ontology) 構築<strong>離散且可解釋的</strong>知識版圖。</li>
+<li><strong>統計流</strong>：利用「<strong>向量空間</strong>」(Vector Space) 捕捉<strong>語義關聯</strong>，學習<strong>隱含</strong>知識地圖。</li>
+</ul></li>
+</ol></li>
 </ul>
-</div>
-</div>
-</div>
-</section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
-</div>
-</div>
-</section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1316,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./02-01-symbolic_ai.zh-hant.html" class="pagination-link" aria-label="🏛️符號流人工智慧🎏">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">🏛️符號流人工智慧🎏</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./02-03-neurosymbolic_ai.zh-hant.html" class="pagination-link" aria-label="🧠神經－符號合流🎏">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">🧠神經－符號合流🎏</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1334,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/02-02-statistical_ai.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

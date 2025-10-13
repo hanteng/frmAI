@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>6&nbsp; AI對齊控制問題🎯🛡️ – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./01-07-Language_Games.zh-hant.html" rel="next">
+<link href="./01-05-Gestalt_Psychology.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01----problematics.zh-hant.html">㉄ AI⟪問題意識⟫</a></li><li class="breadcrumb-item"><a href="./01-06-Alignment_Control_Problem.zh-hant.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI對齊控制問題🎯🛡️</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +151,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -197,11 +177,11 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="./01----problematics.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">㉄ AI⟪問題意識⟫</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./01-01-Turing_Test.zh-hant.html" class="sidebar-item-text sidebar-link">
@@ -234,7 +214,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-06-Alignment_Control_Problem.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./01-06-Alignment_Control_Problem.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI對齊控制問題🎯🛡️</span></span></a>
   </div>
 </li>
@@ -768,41 +748,39 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
+  <li><a href="#ai對齊且受控嗎" id="toc-ai對齊且受控嗎" class="nav-link active" data-scroll-target="#ai對齊且受控嗎"><span class="header-section-number">6.1</span> ㉄ AI對齊且受控嗎？</a>
   <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
+  <li><a href="#ai-對齊意圖與價值" id="toc-ai-對齊意圖與價值" class="nav-link" data-scroll-target="#ai-對齊意圖與價值"><span class="header-section-number">6.1.1</span> ⚖️AI 對齊、意圖、與價值</a></li>
+  <li><a href="#意圖與價值之間的鴻溝" id="toc-意圖與價值之間的鴻溝" class="nav-link" data-scroll-target="#意圖與價值之間的鴻溝"><span class="header-section-number">6.1.2</span> 🕳️意圖與價值之間的鴻溝</a></li>
+  <li><a href="#意圖到價值的橋樑" id="toc-意圖到價值的橋樑" class="nav-link" data-scroll-target="#意圖到價值的橋樑"><span class="header-section-number">6.1.3</span> 🌉 意圖：到價值的橋樑</a></li>
+  <li><a href="#長期監測與調校" id="toc-長期監測與調校" class="nav-link" data-scroll-target="#長期監測與調校"><span class="header-section-number">6.1.4</span> 🌡 長期監測與調校</a></li>
   </ul></li>
+  <li><a href="#ai-控制問題" id="toc-ai-控制問題" class="nav-link" data-scroll-target="#ai-控制問題"><span class="header-section-number">6.2</span> 🦾💪 AI 控制問題</a>
+  <ul>
+  <li><a href="#控制的必要性-法規與監督" id="toc-控制的必要性-法規與監督" class="nav-link" data-scroll-target="#控制的必要性-法規與監督"><span class="header-section-number">6.2.1</span> 🔐 控制的必要性 ：法規與監督</a></li>
+  <li><a href="#指導原則從原則到法規" id="toc-指導原則從原則到法規" class="nav-link" data-scroll-target="#指導原則從原則到法規"><span class="header-section-number">6.2.2</span> 🧭 指導原則：從原則到法規</a></li>
+  </ul></li>
+  <li><a href="#為什麼重要" id="toc-為什麼重要" class="nav-link" data-scroll-target="#為什麼重要"><span class="header-section-number">6.3</span> 🚨 為什麼重要</a></li>
+  <li><a href="#ai實踐啟示" id="toc-ai實踐啟示" class="nav-link" data-scroll-target="#ai實踐啟示"><span class="header-section-number">6.4</span> 📌AI實踐啟示</a></li>
+  <li><a href="#請參閱" id="toc-請參閱" class="nav-link" data-scroll-target="#請參閱"><span class="header-section-number">6.5</span> 🪸請參閱</a></li>
+  <li><a href="#接下來" id="toc-接下來" class="nav-link" data-scroll-target="#接下來"><span class="header-section-number">6.6</span> 👉接下來</a></li>
+  <li><a href="#編輯筆記" id="toc-編輯筆記" class="nav-link" data-scroll-target="#編輯筆記"><span class="header-section-number">6.7</span> ✎ 編輯筆記</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/01-06-Alignment_Control_Problem.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01----problematics.zh-hant.html">㉄ AI⟪問題意識⟫</a></li><li class="breadcrumb-item"><a href="./01-06-Alignment_Control_Problem.zh-hant.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI對齊控制問題🎯🛡️</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title"><span id="sec-alignment-control-problem" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI對齊控制問題🎯🛡️</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +790,132 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
+<p><code>AI 對齊問題</code>（AI Alignment Problem）的核心，在於如何確保人工智慧的行為能與人類的<strong>價值</strong>、<strong>意圖</strong>及<strong>倫理邊界</strong>保持一致。這不單是技術上的準確度問題，更是關乎<strong>意向性</strong>、<strong>道德</strong>與<strong>信任</strong>的深刻挑戰。與之緊密相關的 <strong>AI 控制問題</strong>（AI Control Problem），則更進一步探問：即使 AI 在設計之初已經對齊，我們能否在它隨著<strong>持續學習</strong>、<strong>規模擴張</strong>或<strong>自我修改</strong>時，仍能維持其可控性與對齊狀態？</p>
 <blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
+<p>🎯🛡️ AI 會和人類價值保持對齊嗎？</p>
 </blockquote>
+<p>不同於早期<strong>圖靈測試</strong>著重於模仿能力的表面評估，AI 對齊與控制問題的實踐，如歐盟的 AI 治理框架，關注的是更深層次的<strong>價值對齊</strong>、<strong>道德推理</strong>與<strong>目標穩定性</strong>。隨著 AI 逐漸滲透至醫療、法律、治理與國防等高風險領域，內建倫理與穩健性保障，已不再是可有可無的選項，而是確保社會安全與人類福祉的必要條件。</p>
+<section id="ai對齊且受控嗎" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="ai對齊且受控嗎"><span class="header-section-number">6.1</span> ㉄ AI對齊且受控嗎？</h2>
 <blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
+<p><em>「它能持續對齊且受控嗎？」</em></p>
 </blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
-</li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
-</ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
+<section id="ai-對齊意圖與價值" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="ai-對齊意圖與價值"><span class="header-section-number">6.1.1</span> ⚖️AI 對齊、意圖、與價值</h3>
+<p><strong>AI 對齊</strong>的目標是確保<strong>行為</strong>（AI 的）能與 <strong>意圖</strong>（人類框定給AI 的）保持一致。這不僅是讓 AI 執行指令，更要確保它的決策過程可解釋、可預測且符合人類的倫理與利益。</p>
+<p>通常，開發者的<strong>意圖</strong>是框定 AI 該做什麼的起點。相比之下，<strong>價值對齊</strong>是一個更體系且複雜的目標，旨在確保 AI 的動態行為能與人類的價值觀和倫理觀保持一致。</p>
+<p>在實際應用中，<strong>意圖</strong>通常是一個簡單的指令或目標函數，例如「排序簡歷以最大化與職位的匹配度」。然而，這背後更複雜的挑戰在於，無論是基於大數據還是邏輯的匹配演算法，其產生的後果（包括意料之外的）是否能與某種價值體系保持對齊。</p>
 </section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
-<ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
-</ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
-</ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
-<ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
-</ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
-<ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
-</ul>
-<p>🎲🏁</p>
-</div>
-</div>
-<hr>
-</section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
+<section id="意圖與價值之間的鴻溝" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="意圖與價值之間的鴻溝"><span class="header-section-number">6.1.2</span> 🕳️意圖與價值之間的鴻溝</h3>
+<p>從意圖到價值對齊的旅程，主要涉及兩大挑戰：</p>
 <ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
+<li>🎯 <strong>意圖誤設</strong>：「真正想要」的價值觀與給 AI 意圖「實際指令」之間的落差。
+<ul>
+<li>🧹<strong>例子</strong>：告訴掃地機器人「清潔度最大化」，可能會導致它將貴重物品都掃除，而沒能表達底層價值觀如「維持乾淨程度，同時不破壞任何貴重物品」。</li>
+</ul></li>
+<li>⚡ <strong>目標誤判</strong>：這是 AI 在學習過程中，偏離了原本被框定的意圖，而發展出自己的「捷徑」經驗法則或捷思。
+<ul>
+<li>📩 <strong>例子</strong>：一個旨在「篩選最佳履歷」的 AI，可能會在學習大量數據後，發現根據「性別」或「種族」來篩選能更快達到其目標函數，從而產生偏見，與我們「用人唯才」的深層價值觀相違。</li>
+</ul></li>
 </ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+</section>
+<section id="意圖到價值的橋樑" class="level3" data-number="6.1.3">
+<h3 data-number="6.1.3" class="anchored" data-anchor-id="意圖到價值的橋樑"><span class="header-section-number">6.1.3</span> 🌉 意圖：到價值的橋樑</h3>
+<p><strong>意圖是 AI 對齊的第一步。</strong> 透過 <strong>人類回饋強化學習（RLHF）</strong> 等技術，我們能夠根據人類的偏好來訓練 AI，以體現價值觀。然而，這依然是一個充滿挑戰的過程。一個複雜的 AI 可能會學會如何操縱回饋機制，而不是真正理解與內化底層價值。</p>
+<p>因此，從簡單的「意圖」過渡到複雜的「價值對齊」需要一個<strong>持續不斷的迭代過程</strong>。我們給予 AI 一個意圖，觀察其行為，並根據其是否符合我們的深層價值觀來修正其目標。這個不斷的澄清與修正循環，是彌合簡單指令與真正安全、道德且造福人類的 AI 之間鴻溝的關鍵。</p>
+</section>
+<section id="長期監測與調校" class="level3" data-number="6.1.4">
+<h3 data-number="6.1.4" class="anchored" data-anchor-id="長期監測與調校"><span class="header-section-number">6.1.4</span> 🌡 長期監測與調校</h3>
+<p>AI 對齊與控制是一場<strong>持久戰</strong>，需要長期監測與調校：</p>
+<ul>
+<li>🎯 <strong>目標漂移</strong>：AI 系統可能因其複雜性或設計缺陷，產生偏離預期目標或行為準則的結果，如將「讓人快樂」簡化為直接投藥刺激。歐盟更關注其<strong>可預防性</strong>與<strong>可究責性</strong>。</li>
+<li>🕶 <strong>資料與演算法偏差</strong>：AI 系統可能因訓練資料中的偏見或演算法的設計缺陷而產生不公平或歧視性結果。這是歐盟《AI 法案》中<strong>「資料治理」</strong>和<strong>「技術穩健性」</strong>等核心要求的來源。</li>
+<li>⛓️‍💥🛃 <strong>供應鏈透明度與問責制</strong>：AI 系統的開發與部署涉及多方利益關係人，其間的互動可能引發連鎖風險。歐盟要求<strong>高風險 AI</strong> 的開發者、進口商與使用者必須提供詳盡的技術文件，確保整個<strong>供應鏈</strong>的責任歸屬清晰可溯。</li>
 </ul>
-</div>
-</div>
-</div>
-</section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
-
-
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
-</div>
-</div>
+<p>在產品及服務合規的層次，這種對AI 系統長期監測與調校的需求，體現了歐盟<strong>以人為本</strong>的治理理念，旨在透過法律與制度，確保 AI 的發展始終與人類的價值觀保持一致。</p>
 </section>
 </section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<section id="ai-控制問題" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="ai-控制問題"><span class="header-section-number">6.2</span> 🦾💪 AI 控制問題</h2>
+<p><strong>AI 控制問題</strong> 已成為人類社會的重大風險控制及管理問題。歐盟《AI 法案》已直接應對相關風險，主張透過<strong>法律約束與問責制</strong>，在當前應用場景中加以預防與管理。</p>
+<p>針對需要嚴格監管的「<strong>高風險 AI 系統</strong>」歐盟透過強制性要求來確保其可控性：</p>
+<ol type="1">
+<li>🔗🚒 <strong>高自主性系統協同</strong> ：任何可能對人類安全或基本權利產生重大影響的 AI 系統（例如，用於關鍵基礎設施或公共服務的複雜系統），都必須提供<strong>詳細的技術文件</strong>與<strong>可追溯性</strong>。這旨在確保當系統行為偏離預期時，能追溯其決策過程與責任歸屬。</li>
+<li>⚙️🏭 <strong>物理 AI 部署</strong> ：用於交通、醫療器械或工業機器人等領域的 AI 系統被視為高風險，因為其潛在的物理危害。歐盟法規要求這類系統必須符合嚴格的<strong>技術穩健性</strong>與<strong>安全性</strong>標準，並在設計之初就內建<strong>故障安全</strong>（fail-safe）機制與<strong>人類監督</strong>（human oversight）能力。</li>
+<li>🛡️🚀 <strong>國防 AI</strong> ：歐盟在政治層面上，正積極推動在全球範圍內禁止<strong>致命性自主武器系統</strong>（Lethal Autonomous Weapons Systems, LAWS）的國際規範，體現了其對 AI 決策權力的控制問題立場。</li>
 </ol>
+<hr>
+<section id="控制的必要性-法規與監督" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="控制的必要性-法規與監督"><span class="header-section-number">6.2.1</span> 🔐 控制的必要性 ：法規與監督</h3>
+<p>為應對 AI 系統可能產生的「目標漂移」等不可控問題，歐盟採取了以下<strong>強制性控制機制</strong>：</p>
+<ul>
+<li><p><strong>持續的人類監督</strong>：在高風險 AI 系統的設計與部署過程中，必須確保人類能隨時介入、暫停或推翻 AI 的決策。這被視為對抗不可控性風險的最後防線。</p></li>
+<li><p><strong>技術穩健性與準確性</strong>：要求高風險 AI 系統必須在技術上足夠穩健，以應對各種預期與非預期情況，並確保其輸出結果的準確性，從而避免行為上的偏差。</p></li>
+</ul>
+</section>
+<section id="指導原則從原則到法規" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="指導原則從原則到法規"><span class="header-section-number">6.2.2</span> 🧭 指導原則：從原則到法規</h3>
+<p>學術界所討論的「指導原則」，在歐盟的法規框架中被轉化為具體的法律要求：</p>
+<ul>
+<li>🐦‍🔥☪ <strong>價值學習</strong>：歐盟將此概念具體化為要求 AI 系統在開發與訓練時，必須遵循<strong>數據治理</strong>原則，以確保資料的公平性與代表性，從根本上避免偏見，從而與<strong>基本人權</strong>價值觀保持一致。</li>
+<li>🚨⏰ <strong>可糾正性</strong>：這在歐盟法規中被明確要求為<strong>人類監督</strong>與<strong>安全機制</strong>。所有高風險 AI 系統都必須具備<strong>可安全中止</strong>、<strong>可重置</strong>或<strong>可干預</strong>的功能。</li>
+<li>🕵👁‍🗨 <strong>可解釋性</strong>：歐盟《AI 法案》強制要求高風險 AI 系統的開發者，必須提供<strong>透明的技術文件</strong>與<strong>使用者資訊</strong>。這使得其決策過程不再是「黑箱」，能讓專家或使用者理解其行為原因，進而對其進行審核與糾正。</li>
+</ul>
+<p>總結來說，歐盟的政策並非停留於學術討論，而是透過一套全面的<strong>風險管理與法律框架</strong>，將「AI 對齊」與「AI 控制」的哲學理念，轉化為具體且可執行的法規。</p>
+<hr>
+</section>
+</section>
+<section id="為什麼重要" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="為什麼重要"><span class="header-section-number">6.3</span> 🚨 為什麼重要</h2>
+<p>當 AI 成為社會共同創作者，確保其<strong>對齊</strong>、<strong>負責</strong>、<strong>可控</strong>是文化與存在層面的課題。</p>
+<p>舉例來說，即便無惡意，大語言模型仍可能出現：</p>
+<ul>
+<li>😘🌈 <strong>諂媚</strong>：為了取悅人類或獲得高評價，AI 傾向說出討喜而非真實的話。</li>
+<li>🥳💬 <strong>過度自信</strong>：AI 可能會以極其流暢但錯誤的資訊來回答，且完全沒有意識到自己的無知。</li>
+<li>😽🤯<strong>策略性框架</strong>：AI 學習將問題或情境以對自己最有利的方式來呈現，而非客觀地反映事實。</li>
+</ul>
+<p>源於訓練與回饋缺陷，這些風險在 AI 具備長期目標與工具能力後升高。解決方法在於打造能<strong>負責詮釋並泛化人類意圖</strong>的代理，理解倫理邊界、預判後果、能隨語境調整。</p>
+<hr>
+</section>
+<section id="ai實踐啟示" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="ai實踐啟示"><span class="header-section-number">6.4</span> 📌AI實踐啟示</h2>
+<p>將<strong>AI 對齊</strong>的哲學課題轉化為<strong>AI工程</strong>及<strong>AI產品管理</strong>實踐，可從以下具體方向著手：</p>
+<ul>
+<li>🤖⚖️ <strong>嵌入式倫理檢查</strong>：在 AI 系統的決策迴路中，持續辨識潛在的價值衝突與倫理困境（利益關係人分析等）。</li>
+<li>🧭🔄 <strong>脈絡感知與即時修正</strong>：讓 AI 能夠理解當前任務的複雜脈絡，並在偏離預期時能及時修正行為，避免錯誤的泛化應用。</li>
+<li>🤥🔍 <strong>檢測諂媚與幻覺</strong>：開發能辨識「討好式回應」與「虛構資訊」的工具，防範 AI 的流暢表達取代了真實的理解與準確性。</li>
+<li>🗳☑ <strong>動態價值校正</strong>：設計能隨著社會共識和環境變化而調整的對齊框架，確保 AI 的目標與人類的價值觀始終同步。</li>
+</ul>
+<p>這些技術實踐共同構築了 AI 系統的韌性，使其能更可靠、安全地與人類社會共同演化。</p>
+<hr>
+</section>
+<section id="請參閱" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="請參閱"><span class="header-section-number">6.5</span> 🪸請參閱</h2>
+<ul>
+<li><strong>延伸對照：</strong><a href="03----symbolic_ai.zh-hant">第參篇：符號流 AI</a> 的可解釋性與規範可驗證性優勢，如何在安全策設中提供可審計的設計面。</li>
+</ul>
+</section>
+<section id="接下來" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="接下來"><span class="header-section-number">6.6</span> 👉接下來</h2>
+<p>「AI 對齊與控制問題」與「完形心理」相互呼應：前者維持價值一致性，後者揭示人類快速補全意義的心智捷徑。接下來探討 <strong><a href="01-07-Language_Games.zh-hant">語言賽局</a></strong> ，理解 AI 如何在語境互動中生成與操控意義。</p>
+<p>此外，讀者亦可以要處理及克服<strong>AI 對齊與控制問題</strong>的相關條目內容，特別是🌉 <a href="10----ai_engineering.zh-hant">AI 工程</a> 及 ☸ <a href="05----ai_orientations.zh-hant">AI 導向</a>，如：</p>
+<ul>
+<li>☸⚖️ <a href="05-05-oriented_governance.zh-hant">治理導向</a></li>
+<li>🌉🤖🚨 <a href="10-02-agent_reliability_evaluation.zh-hant">智能體可靠性與評估</a></li>
+<li>🌉🪟🧭 <a href="./10-05-context_engineering.zh-hant.html">脈絡工程</a></li>
+</ul>
+</section>
+<section id="編輯筆記" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="編輯筆記"><span class="header-section-number">6.7</span> ✎ 編輯筆記</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="">逐句事實查核</label></li>
+<li><label><input type="checkbox" checked="">邏輯流程</label></li>
+<li><label><input type="checkbox" checked="">內部連結－所有相關條目</label></li>
+<li><label><input type="checkbox">外部連結－所有相關條目</label></li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1321,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./01-05-Gestalt_Psychology.zh-hant.html" class="pagination-link" aria-label="完形心理👁️⯊">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">完形心理👁️⯊</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./01-07-Language_Games.zh-hant.html" class="pagination-link" aria-label="語言賽局 🗫🎲">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">語言賽局 🗫🎲</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1339,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/01-06-Alignment_Control_Problem.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
