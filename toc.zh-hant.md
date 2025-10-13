@@ -1,12 +1,7 @@
-# ⸻📖目錄📑⸻ {.unnumbered #sec-toc}
-* 🤗序言 〜  🙩 [《框智格局：人工智慧知識鷹架手冊》](index.zh-hant.md)
-* 💬導論 〜 
-	* 🧠 [心智能力](notes-constructive_fill-in.zh-hant.md) 🐸🐘🧘
-	* 🧠🧞‍♀️ [〜語言賽局腦補機](notes-mental_fill-in.zh-hant.html)
-* 📑筆記 〜
-	* 🪜 [知識鷹架](notes-constructive_fill-in.zh-hant.md)
-	* 🪜👨‍👩‍👧‍👦 [〜家長篇~傳承](appendix-cognitive_parents.zh-hant.md)
-	* 🪜🧘 [〜自學篇~紥根](appendix-cognitive.zh-hant.md)
+# ⸻📖目錄📑⸻ {.unnumbered}
+* 🤗序言 〜  🙩 [《框智格局：人工智慧知行鷹架手冊》](index.zh-hant.md)
+* 💬導論 ~  [❝腦補❞ 知行捷徑](notes-mental_fill-in.zh-hant.md)
+* 📑筆記 ~  [🙶補全🙷 知行合一](notes-constructive_fill-in.zh-hant)
 * [第壹篇 ㉄](01----problematics.zh-hant.md)　AI 問題意識（AI Problematics）
 	* **1.1** 🎭🗪 [圖靈測試](01-01-Turing_Test.zh-hant.md)（Turing Test）
 	* **1.2** 🧱🗣️ [中文房間](01-02-Chinese_Room.zh-hant.md)（Chinese Room）
@@ -28,7 +23,7 @@
 	* **3.2** 🏛️🤖💬 [自動對話系統](03-02-automatic_dialogue_systems.zh-hant.md)（Automatic Dialogue Systems）
 	* **3.3** 🏛️🎁🧠 [專家系統](03-03-expert_systems.zh-hant.md)（Expert Systems）
 	* **3.4** 🏛️🛠️🏗️ [知識表徵](03-04-knowledge_representation.zh-hant.md)（Knowledge Representation）
-	* **3.5** 🏛️🕸💡 [知識圖譜](03-04-knowledge_representation.zh-hant.md)（Knowledge Graphs）
+	* **3.5** 🏛️🕸💡 [知識圖譜](03-05-knowledge_graph.zh-hant.md)（Knowledge Graphs）
 	* **3.6** 🏛️🌐🔗 [語意網](03-06-semantic_web.zh-hant.md)（Semantic Web）
 	* **3.7** 🏛️🌌🗺️ [本體論](03-07-ontology.zh-hant.md)（Ontology）
 * [第肆篇 🌀](04----statistical_ai.zh-hant.md)　「統計流」AI（Statistical AI）
@@ -84,13 +79,19 @@
 	* **10.5** 🌉🪟🧭 [脈絡工程](10-05-context_engineering.zh-hant.md)（Context Engineering） 
 	* **10.6** 🎁🌱🚀 [AI 產品經理](10-06-AI_PM.zh-hant.md)（AI Product Management）
 * 📚 [參考書目](references.zh-hant.qmd)
-- **🔖附錄💪**：[學習行動](appendix-action.zh-hant.md)
-* **🔖附錄⚙**：[API分類](appendix-MCP_API.zh-hant.md)
-- **🔖附錄🌌**：[本書心智圖](appendix-mindmap.zh-hant.qmd)
-* 📔 [封面封底書脊](cover_back.zh-hant.md)
+- **🔖附錄與筆記**：
+	- A. 💪[行動](appendix-action.zh-hant.qmd)：「行動協奏」〜 聚焦 **動詞** 
+	- B. 🧠[心智](appendix-brain.zh-hant.md)：「道智修行」〜 聚焦 **名詞** 
+	* C. 🪜[能力](appendix-cognitive_capacity.zh-hant.md)：「建補鷹架」〜 聚焦 **名詞➕動詞** 
+	* D. ⚙[API分類](appendix-MCP_API.zh-hant.md)
+	* E. 本書🌌[心智圖](appendix-mindmap.zh-hant.qmd)
+	* F. 📔 [封面封底書脊](cover_back.zh-hant.md)
+	* G. 🔖[詞彙表](glossary.zh-hant.md)
+		* 🧠 [心智能力](notes-constructive_fill-in.zh-hant.md) 🐸🐘🧘
+		* 🧠🧞‍♀️ [〜語言賽局腦補機](notes-mental_fill-in.zh-hant.html)
+		* 🪜👨‍👩‍👧‍👦 〜家長篇~傳承 appendix-cognitive_capacity.zh-hant.md#parents
+		* 🪜🧘 〜自學篇~紥根 appendix-cognitive_capacity.zh-hant.md#learners
 
-  classDef C6animate_class stroke-dasharray: 0, 6, stroke-dashoffset: 900, stroke-width:5px, animation: dash 25s linear infinite, stroke:#000099;
-  classDef classSchoolClassic fill:#ffd, stroke-width:3px;
-  classDef C9animate_class stroke-dasharray: 4, 6, stroke-dashoffset: 900, stroke-width:1px, animation: dash 25s linear infinite, stroke:#990000;
+
 
 ![](images/mind_map.svg)
