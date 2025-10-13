@@ -1,9 +1,19 @@
 ---
+crossref:
+  labels: alpha A
+  subref-labels: roman I
+  chapters: true
+number-sections: true
 tags:
   - #important-problematics
   - #tip-problematics
   - #warning-problematics 
 ---
+::: {#fig-mindmap-01 caption="聚焦 ㉄ AI⟪問題意識⟫  心智圖" }
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" class="flowchart mermaid-js" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1" xmlns:ev="http://www.w3.org/2001/xml-events">
+<g id="viewport-20250923180406308" class="svg-pan-zoom_viewport" transform="matrix(3.6 , 0, 0, 3.6 , -27, -50)" style="transform: matrix( 3.6, 0, 0, 3.6 , -27, -50);">
+<image href="images/mind_map.svg"></image></g></svg>
+:::
 
 # ㉄ AI⟪問題意識⟫ 
 
@@ -54,7 +64,7 @@ AI 核心問題意識（AI problematics）涉及一套 **框架尋找**（frame-
 下表「一對一記憶法」整理 AI 核心問題，包含簡明定義與「**是啥又如何**」的說明。 
 每個條目搭配提示語與表情符碼，提升記憶與參與感，並依 **概念進程與易讀性** 由淺入深排序。
 
-::: {.callout-important #important-problematics title="🪁「啟發式框架」🪞"}
+::: {.callout-important #imp-problematics title="🪁「啟發式框架」🪞"}
 
 「導向」之義，可拆解「啟發式框架」（Heuristic Framework）一詞來理解：
 
@@ -80,8 +90,9 @@ AI 核心問題意識（AI problematics）涉及一套 **框架尋找**（frame-
   
 
 <!-- https://quarto.org/docs/authoring/callouts.html -->
-::: {.callout-warning #warning-problematics title="本書擴框提醒❣️"} 
+::: {.callout-caution #cau-problematics title="本書擴框提醒❣️"} 
 ㉄ AI「問題意識」，本書融入新兩項：
+
 * **[@sec-gestalt-psychology]**：_「人類如何快速感知？」_
 * **[@sec-language-games]**：_「人類語言意義如何產生？」_
 其餘 AI 學科高度共識的核心問題，本書納入五項，依當代重要性排序：
@@ -90,6 +101,7 @@ AI 核心問題意識（AI problematics）涉及一套 **框架尋找**（frame-
 * **[@sec-symbol-grounding-problem]**：_「符碼代表啥意思？」_
 * **[@sec-turing-test]**：_「它模仿/擬的像嗎？」_
 * **[@sec-chinese-room]**：_「它真理解嗎？」_
+
 🐦‍🔥
 :::
 
@@ -109,16 +121,6 @@ AI 核心問題意識（AI problematics）涉及一套 **框架尋找**（frame-
     - 🤝 **價值對齊**：確保 AI 的行為與人類價值、倫理原則一致。
 
 如此，雖每個問題意識有其特定時空及知識脈絡，但都能給我們評估 AI 系統充份的 **科技設計** 與 **哲學辯論** 的靈活思緒空間。這些思緒連結將在第[貳🎏🏮](@sec-symbolic-ai)、[參🏛️](@sec-symbolic-ai)、[肆🌀](@sec-statistical-ai)章逐步展開為技術與設計取徑。
-
-
-::: {.callout-note .exercise-question #note-problematics title="筆記"}
-🤷🏻‍♀️ ...
-
-
-㉄
-:::
-
-
 
 ## 🪴 內容大綱
 
@@ -152,13 +154,18 @@ AI 核心問題意識（AI problematics）涉及一套 **框架尋找**（frame-
 
 ## 📦 延伸：AI 發展假說
 
-以下有五個 AI 發展假說，請參照上述 AI 問題意識，結合你對世界的理解，說明哪一種 AI 發展假說最具說服力，申論之。
+::: {.callout-note .exercise-question #nte-problematics title="AI 問題意識 🞪 AI 發展假說"}
+
+🤷🏻‍♀️以下有五個 AI 發展假說，請參照上述 AI 問題意識，結合你對世界的理解，說明哪一種 AI 發展假說最具說服力，申論之。
 
 - 💥 **[AI 對齊崩潰假說](glossary.zh-hant.md#ai-alignment-collapse)** （AI Alignment Collapse Hypothesis）：隨著 AI 能力提升，若無法持續確保其行為與人類價值對齊，將導致追求衝突目標、產生有害行為，最終引發社會決策、經濟與安全體系的**系統性失序與混亂**。
 - 🌐 **[AI 公共財假說](glossary.zh-hant.md#ai-commons-hypothesis)**（AI Commons Hypothesis）：主張 AI 應被視為**共享資源**，透過**開源模型、開放資料**與**社群治理**，推動技術的去中心化發展與民主化，以避免少數權力壟斷。
 - 👑 **[AI 帝國假說](glossary.zh-hant.md#ai-empire-hypothesis)**（AI Empire Hypothesis）：預測**算力、資料與演算法**將集中於少數國家或超級平台，形成類似「帝國」的支配格局，導致全球創新單一化與**治理不對稱**的風險。
 - ⚔️ **[AI 部落化／碎片化假說](glossary.zh-hant.md#ai-tribalization-fragmentation)**（AI Tribalization / Fragmentation Hypothesis）：認為 AI 發展將呈現**多極化、碎片化**格局，不同意識形態群體建立各自的 AI 生態與標準，導致**全球治理失序與標準分裂**。
 - 🚰 **[AI 公用事業假說](glossary.zh-hant.md#ai-utilities-hypothesis)**（AI Utilities Hypothesis）：主張 AI 將如同電力或網路一樣，成為**普及、隱形、無所不在的社會基礎設施**，並由政府、企業與社群共同監管，以確保公平取用與安全性。
+
+㉄
+:::
 
 ***
 
