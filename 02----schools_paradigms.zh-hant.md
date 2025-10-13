@@ -1,4 +1,9 @@
 ---
+crossref:
+  labels: alpha A
+  subref-labels: roman I
+  chapters: true
+number-sections: true
 tags:
   - 符號流
   - 統計流
@@ -10,8 +15,14 @@ tags:
   - 深度學習
   - 強化學習
 ---
+::: {#fig-mindmap-02 caption="聚焦 ☸ AI🎏流派~🏮主義 心智圖" }
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" class="flowchart mermaid-js" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1" xmlns:ev="http://www.w3.org/2001/xml-events">
+<g id="viewport-20250923180406308" class="svg-pan-zoom_viewport" transform="matrix(3.6 , 0, 0, 3.6 , -27, -50)" style="transform: matrix( 3.6, 0, 0, 3.6 , -27, -50);">
+<image href="images/mind_map.svg"></image></g></svg>
+:::
+
 ::: {.callout-tip #tip-schools-paradigms title="應對 AI ㉄的🎏「流派」🏮「主義」"}
-🥺 知識的「流派」和「主義」，是人類克服某些共識或共通問題，如[@sec-problematics]，採取的不同知識及心智立場。
+🥺 知識的「流派」和「主義」，是人類克服某些共識或共通問題，採取的不同知識及心智立場。例如，面對共通的 [㉄ AI 問題意識](01----problematics.zh-hant.md#nte-problematics)，產出不同應對問題的流派主張。
 🎏🏮
 :::
 
@@ -102,7 +113,7 @@ AI 的「流派」與「主義」相輔相成，但側重點不同：
 ### 🎋 延伸內容
 
 - 👶🏻🍼 **幼兒成長的認知能力**：🏮 四大主義的行動方針為何？  
-  - 若以「某主義」作為教育觀點，會如何設計幼兒的學習環境與互動方式，以滿足[生存、連結、掌控](notes-action_for_parents.zh-hant.md)等核心需求？  
+  - 若以「某主義」作為教育觀點，會如何設計幼兒的學習環境與互動方式，以滿足[生存、連結、掌控](appendix-cognitive-capacity#parents)等核心需求？  
 
 - 🗫🎲 **「[語言賽局](01-07-Language_Games.zh-hant)」的問題意識**：🎏 三大流派或 🏮 四大主義會如何處理？  
   - 例如，按「某流派」如何解釋 [LLM 聊天機器人](04-02-llm_chatbots.zh-hant) 在對話中刻意「諂媚」使用者的行為？  
