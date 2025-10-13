@@ -17,7 +17,7 @@ callout-format:
     callout-style: default
 project:
   type: book # 必須存在，標記為書籍專案
-  output-dir: docs
+  output-dir: _site/zh-hant
 language: _language-zh-hant.yml 
 book:
   title: "道／盜智格局：AI 賽局手冊"

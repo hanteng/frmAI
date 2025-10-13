@@ -1,7 +1,7 @@
 encoding: "UTF-8"
 project:
   type: book # 必須存在，標記為書籍專案
-  output-dir: en
+  output-dir: _site/en
 lang: en # 全域預設值，會被 profile 覆蓋
 
 # CRITICAL: Define a dummy/placeholder book structure here
