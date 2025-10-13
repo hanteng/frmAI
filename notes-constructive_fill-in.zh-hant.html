@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>📑筆記~🙶補全🙷知行合一 – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -51,7 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./toc.zh-hant.html" rel="next">
+<link href="./notes-mental_fill-in.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -92,6 +92,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -105,7 +134,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./notes-constructive_fill-in.zh-hant.html">📑筆記~🙶補全🙷知行合一</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +200,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -183,7 +212,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notes-constructive_fill-in.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./notes-constructive_fill-in.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">📑筆記~🙶補全🙷知行合一</span></a>
   </div>
 </li>
@@ -768,41 +797,30 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
-  <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
-  </ul></li>
+  <li><a href="#科技預見價值" id="toc-科技預見價值" class="nav-link active" data-scroll-target="#科技預見價值">🔭科技預見價值🦾</a></li>
+  <li><a href="#科技-補全-力" id="toc-科技-補全-力" class="nav-link" data-scroll-target="#科技-補全-力">🧩科技 🙶補全🙷 力💪</a></li>
+  <li><a href="#ai代價與未來" id="toc-ai代價與未來" class="nav-link" data-scroll-target="#ai代價與未來">⚡AI代價與未來🏙</a></li>
+  <li><a href="#開始即成功" id="toc-開始即成功" class="nav-link" data-scroll-target="#開始即成功">🌟 開始即成功 🏙</a></li>
+  <li><a href="#定勢與框架" id="toc-定勢與框架" class="nav-link" data-scroll-target="#定勢與框架">⏱️定勢與框架🖼️</a></li>
+  <li><a href="#框智力" id="toc-框智力" class="nav-link" data-scroll-target="#框智力">💪🦾 框智力🖼️</a></li>
+  <li><a href="#補全的操作手冊" id="toc-補全的操作手冊" class="nav-link" data-scroll-target="#補全的操作手冊">🧠🙶補全🙷的操作手冊🪜</a></li>
+  <li><a href="#示例補全中文新詩" id="toc-示例補全中文新詩" class="nav-link" data-scroll-target="#示例補全中文新詩">🙈示例補全中文新詩🙉</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/notes-constructive_fill-in.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title">📑筆記~🙶補全🙷知行合一</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,174 +830,526 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
 <blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
+<p>⚡🔥 <strong>一次 ChatGPT 問答 ≈ 0.43 Wh</strong>，算算 2025 年總能耗？</p>
+<p>🌍🤖 <strong>經年使用</strong> AI 問答，將如何改變人生、人際與群體未來？</p>
+<p>💧⚡預想 2035 年每日 <strong>300 億問答</strong>需求，如何影響城市與國家？</p>
 </blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p>如同人生在世，性雖相近，習則相遠。</p>
+<p>日日「一盞電、一瓢飲」的 AI 問答，如何填補生命缺口，改寫人生軌跡？</p>
+<p>月月「數據、能耗」的 AI 互動與交易，如何重塑世界規則與未來？</p>
+<p>這些看似「日常」的行為，實則牽動多重「社會技術系統」的交織，包括生命的<strong>習慣積累</strong>與<strong>價值判斷</strong>。</p>
+<p>承接《<a href="./notes-mental_fill-in.zh-hant.html">導論</a>》，本篇《筆記》邀請讀者共同思索：從 2025 年起，如何預見 2035 年的自己。</p>
+<p>設想人類如何從 ❝腦補❞（認知捷徑）走向 🙶補全🙷（按需填補人生與社會空缺），以創建未來。</p>
+<section id="科技預見價值" class="level2">
+<h2 class="anchored" data-anchor-id="科技預見價值">🔭科技預見價值🦾</h2>
+<p>🙶補全🙷 是一種「科技預見」未來力（technological forecasting）。</p>
+<p>本書既是 AI 工具書，旨在推廣 AI 工程與教育，也希望讓「科技預見」的能力與好處，不再只是專家或政府的專利，而是人人可培養的心智能力。</p>
+<p>「科技預見」的核心在於： - 🔭 <strong>觀察趨勢</strong>：從日常數據、新聞、乃至社群文化，捕捉科技發展的蛛絲馬跡。<br>
+- 📈 <strong>推演未來</strong>：將這些訊號延伸，想像它們在 5 年、10 年後可能帶來的社會與個人影響。<br>
+- 🛠 <strong>行動補全</strong>：把想像轉化為具體選擇，投資未來、解決問題、發揮價值。既可能補全個人生命的缺口，也可能補全社會的需求。</p>
+<p>為什麼要用「補全」？除了聯想到「自動補全」（auto-complete），本書假設讀者有以下需求：</p>
 <ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
+<li>👤 <strong>個人層次</strong>：預見 AI 在地與全球發展，如何影響自己「生命機運」的選項與選擇。<br>
 </li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
+<li>👨‍👩‍👧 <strong>家庭層次</strong>：預想 AI 如何改變日常生活，如何影響自己與家人「生命交織」的關係與照護。</li>
+<li>🌐 <strong>社會層次</strong>：預判 AI 如何改變社會肌理與世界格局，如何推動制度與科技的創新。</li>
 </ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
 </section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
+<section id="科技-補全-力" class="level2">
+<h2 class="anchored" data-anchor-id="科技-補全-力">🧩科技 🙶補全🙷 力💪</h2>
+<p>科技預見 🙶補全🙷 力，對於個人自主未來（autonomy-complete），包含：</p>
 <ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
-</ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
+<li>⏳🌌 <strong>時間空間尺度</strong>：意識到「一次問答 ≈ 一盞電、一瓢飲」與「每日數十億次 ≈ 一座城市、一個國家」之間的放大與加速效應，學會在微觀與宏觀之間切換視角。</li>
+<li>🤼🏙 <strong>社會技術系統</strong>：運用趨勢觀察與未來推演，理解個人日常選擇如何累積成社會與國家級的基礎設施壓力，並思考「生命機運」與制度、環境永續的路徑，鍛鍊科技預見🙶補全🙷 力。</li>
+<li>💪🆚🦾 <strong>人機學習對照</strong>：系統化比較人類「腦補」的直覺捷徑與 AI 「推論」的能耗代價，反思如何在人機協作中找到最適的 🙶補全🙷 互動，確保自己與後代的未來。</li>
 </ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
-<ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
-</ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
+<p>🌟 <strong>科技預見 🙶補全🙷 力</strong>，就是讓每個人都能用「未來視角」來補全當下的不足。</p>
+<p>它不是遙不可及的專業，而是人人可練的心智能力：幫助我們看見機會，把握潛能，在人生與社會的旅程中，實現「知行合一」。</p>
+<div id="tip-constructive-fill-in" class="callout callout-style-default callout-tip callout-titled" title="💬知行合一 小貼士：**🌟TLDR**" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
+提示&nbsp;1: 💬知行合一 小貼士：<strong>🌟TLDR</strong>
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
+<p><strong>🌟TLDR言簡意賅</strong> 〜 讀者可以按需操練，鍛鍊「科技預見」🙶補全🙷力：</p>
 <ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
+<li>⏳🌌 <strong>時間空間尺度</strong>：練習在微觀與宏觀之間切換視角。</li>
+<li>🤼🏙 <strong>社會技術系統</strong>：透過「人類腦補」與「AI 推論」，鍛鍊預見力。</li>
+<li>💪🆚🦾 <strong>人機學習對照</strong>：「人類腦補」與「AI 推論」互補，確保未來。</li>
 </ul>
-<p>🎲🏁</p>
+<p>總之，把 ❝腦補❞ 力鍛鍊成 🙶補全🙷 的能力，是個體與集體人生旅程的知行合一修行。</p>
+<p>🦾💪🔥💧</p>
+</div>
 </div>
 </div>
 <hr>
 </section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
-<ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
-</ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<section id="ai代價與未來" class="level2">
+<h2 class="anchored" data-anchor-id="ai代價與未來">⚡AI代價與未來🏙</h2>
+<p>準備好，以 2025 年 ChatGPT 為起點，展開一段關於 AI 的人類未來預見。</p>
+<p>意識到，日常 <strong>ChatGPT 問答</strong> 已在世界各地擴散，這意味著人類個體與總體都將踏上一段被深刻改變的旅程。</p>
+<p><strong>AI 的代價</strong>，以 2025 年現況為基準，可以粗略估算如下表：</p>
+<div id="nte-ai-cost-forecasting" class="callout callout-style-default callout-note callout-titled" title="⚡AI 代價預見" open="false">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
+註釋&nbsp;1: ⚡AI 代價預見
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+<div id="tbl-ai-cost-forecasting" class="table-small-print quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ai-cost-forecasting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+表&nbsp;1: ⚡AI 代價預見
+</figcaption>
+<div aria-describedby="tbl-ai-cost-forecasting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-small-print caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 13%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 18%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>時間</strong></th>
+<th style="text-align: left;">⚡<strong>單次</strong><br>能耗<br>(Wh)</th>
+<th style="text-align: left;">💧<strong>單次</strong><br>耗水<br>(mL)</th>
+<th style="text-align: left;">🗫<strong>每日</strong><br>問答量<br>(億次／日)</th>
+<th style="text-align: left;">⚡<strong>總量</strong><br>能耗<br>(GWh／日)</th>
+<th style="text-align: left;">💧<strong>總量</strong><br>耗水<br>(萬公升／日)</th>
+<th style="text-align: left;"><strong>宏觀電力預測</strong><br>（資料中心）<br>(TWh／年)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>2025 現況</strong><br>（文字為主）</td>
+<td style="text-align: left;"><strong>~0.43</strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></td>
+<td style="text-align: left;"><strong>~0.3</strong></td>
+<td style="text-align: left;"><strong>~25</strong></td>
+<td style="text-align: left;"><strong>~1.08</strong></td>
+<td style="text-align: left;"><strong>~75</strong></td>
+<td style="text-align: left;">全球資料中心用電：<strong>415–536</strong><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>2030 預測</strong><br>（多模態增長）</td>
+<td style="text-align: left;"><strong>~0.30–0.40</strong> <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></td>
+<td style="text-align: left;"><strong>~0.20–0.25</strong> <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></td>
+<td style="text-align: left;"><strong>~200–400</strong></td>
+<td style="text-align: left;"><strong>~8–16</strong> <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></td>
+<td style="text-align: left;"><strong>~400–1000</strong> <a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></td>
+<td style="text-align: left;">2030 年：<strong>~945</strong>，AI 為主要驅動<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>2035 展望</strong><br>（全球普及）</td>
+<td style="text-align: left;"><strong>~0.15–0.25</strong> <a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></td>
+<td style="text-align: left;"><strong>~0.10</strong></td>
+<td style="text-align: left;"><strong>~500–1000</strong></td>
+<td style="text-align: left;"><strong>10–100</strong> <a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></td>
+<td style="text-align: left;"><strong>~1500–3000</strong> <a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></td>
+<td style="text-align: left;">2035 年：<strong>可能突破 1,500</strong> <a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>從上表，可以得出以下關鍵觀察與意涵：</p>
+<ul>
+<li><strong>微到巨的放大效應 📈</strong>： 單次 AI 問答看似微小只是「一盞電（<strong>~0.43 Wh</strong> ⚡）、一瓢飲（<strong>~0.3 mL</strong> 💧）」，但隨著問答量從 2025 年的 <strong>25 億次</strong> 暴增至 2035 年的 <strong>500-1000 億次</strong>，微小的單次成本被數百億次的規模效應放大，凸顯了 <strong>普及率</strong> 對總體環境成本的決定性影響。</li>
+<li><strong>效率與增長的拔河 ⚖️</strong>： 即使到 2035 年單次能耗因技術優化而下降，總能耗與耗水總量仍會因使用量的爆炸性增長而飆升。這種 <strong>效率提升卻刺激總量增加</strong> 的現象，印證了著名的 <strong>傑文斯悖論</strong>（Jevons Paradox）。</li>
+<li><strong>資源與永續挑戰 🌍</strong>： 預計到 2035 年，資料中心用電將突破 <strong>1,500 TWh／年</strong>，對全球電網構成巨大壓力。同時，每日數千萬公升的耗水需求，將在水資源匱乏地區引發嚴峻的<strong>社會與永續挑戰</strong>，甚至可能導致<strong>AI 帝國資源競逐</strong>。</li>
 </ul>
+<p>依上述預見為背景，請做一下筆記，檢驗以下 <strong>AI 未來假說</strong>：</p>
+<ul>
+<li>💥 <strong><a href="./glossary.zh-hant.html#ai-alignment-collapse">AI 對齊崩潰假說</a></strong></li>
+<li>🌐 <strong><a href="./glossary.zh-hant.html#ai-commons-hypothesis">AI 公共財假說</a></strong></li>
+<li>👑 <strong><a href="./glossary.zh-hant.html#ai-empire-hypothesis">AI 帝國假說</a></strong></li>
+<li>⚔️ <strong><a href="./glossary.zh-hant.html#ai-tribalization-fragmentation">AI 部落化／碎片化假說</a></strong></li>
+<li>🚰 <strong><a href="./glossary.zh-hant.html#ai-utilities-hypothesis">AI 公用事業假說</a></strong></li>
+</ul>
+<p>試著寫下自己在 <strong>2025 現況</strong>、<strong>2030 預測</strong>、<strong>2035 展望</strong> 三個時間點的想像：</p>
+<p>每日與 AI 的互動、所在的城市、所處的社會與制度，將如何演變？</p>
+<div id="nte-ai-life-self-forecasting" class="callout callout-style-default callout-note callout-titled" title="🏙AI 個人生活預見" open="false">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+註釋&nbsp;2: 🏙AI 個人生活預見
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div id="tbl-ai-life-self-forecasting" class="table-small-print quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ai-life-self-forecasting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+表&nbsp;2: 🏙AI 個人生活預見
+</figcaption>
+<div aria-describedby="tbl-ai-life-self-forecasting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-small-print caption-top table">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 11%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>時間</strong></th>
+<th style="text-align: left;"><strong>AI 未來假說</strong> (主要體現)</th>
+<th style="text-align: left;"><strong>個人生活</strong> <br>(我與 AI 的關係)</th>
+<th style="text-align: left;"><strong>工作律動</strong> <br>(AI 對產能影響)</th>
+<th style="text-align: left;"><strong>家庭日常</strong> <br>(AI 對關係影響)</th>
+<th style="text-align: left;"><strong>社會互動</strong> <br>(制度與城市)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>2025 現況</strong></td>
+<td style="text-align: left;"><strong>AI 公用事業假說</strong> (工具階段)</td>
+<td style="text-align: left;">擔任 <strong>….</strong>，每日使用 <strong>…</strong> 進行資訊彙整與創意發想。 <br>AI 是 <strong>…</strong> 。</td>
+<td style="text-align: left;"><strong>產能提高 ….%</strong>，但需要人工覆核。 <br> <br>與人和 AI 打交道的比例為 <strong>…</strong> 。</td>
+<td style="text-align: left;">僅用於娛樂推薦和瑣事提醒。 <br> <br><strong>親密關係未受影響</strong>，但訊息過載。</td>
+<td style="text-align: left;"><strong>資訊碎片化</strong>嚴重，公眾討論受演算法驅動。 <br> <br>城市生活主要受交通 AI 優化。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>2030 預測</strong></td>
+<td style="text-align: left;"><strong>AI 部落化假說</strong> <br> <br>(資源/價值觀分化)</td>
+<td style="text-align: left;">擁有 <strong>專屬個人化 LLM</strong> <strong>…</strong></td>
+<td style="text-align: left;">工作任務 80% 由 AI 代理執行…</td>
+<td style="text-align: left;"><strong>家用智慧體</strong>….。 <br> <br>親密關係與期待受新考驗，需重新定義世代間的邊界與承諾。</td>
+<td style="text-align: left;">社會價值觀趨向分裂，形成由不同 <strong>巨型 AI 生態系</strong> 主導的「AI 部落」。 <br> <br><strong>能源…</strong> 開始成….</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>2035 展望</strong></td>
+<td style="text-align: left;"><strong>AI 帝國假說</strong></td>
+<td style="text-align: left;"><strong>…</strong></td>
+<td style="text-align: left;"><strong>…</strong></td>
+<td style="text-align: left;"><strong>…</strong></td>
+<td style="text-align: left;"><strong>…</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>跟作者說實話，是真有直接動手填呢？還是你拷貝貼上問ChatGPT了？</p>
+</section>
+<section id="開始即成功" class="level2">
+<h2 class="anchored" data-anchor-id="開始即成功">🌟 開始即成功 🏙</h2>
+<p>不用焦慮，你能耐心讀到這裡，已經超越了世界上 95% 的人<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>。</p>
+<p>不論你填表時有多自信，或多心虛，你已經踏出了<strong>把需求具象化</strong>的第一步。</p>
+<p>不管<a href="#tbl-ai-life-self-forecasting">上表</a>是靠自己 ❝腦補❞，還是全靠 ChatGPT 自動 🙶補全🙷，你應該已感受到自己未來十年的生命空白，總會被某種方式 🙶補全🙷。</p>
+<p>問題是：你要選擇 <strong>被補全</strong>，還是 <strong>自補全</strong>？</p>
+<p>這一問「🙶被補全🙷 或 🙶自補全🙷 ？」希望會像種子一樣，隨著時間和行動慢慢在你心中發芽，帶來許多可能性（焦慮和興奮）：</p>
+<ul>
+<li>🌱 <strong>更清晰的方向感</strong>：逐漸明白自己在 <strong>個人、工作、家庭、社會</strong> 四個面向想要達成什麼，以及 AI 在其中扮演的角色，從而指引當下的學習與資源分配。<br>
+</li>
+<li>⚖️ <strong>更高的自主意識</strong>：開始警覺 <strong>AI 帝國</strong>與 <strong>AI 部落化</strong>的潛在風險，更注重自身的 <strong>數據主權</strong>、<strong>能源意識</strong>與 <strong>價值觀對齊</strong>，主動塑造自己，而非被趨勢裹挾。<br>
+</li>
+<li>💎 <strong>更深的時空脈絡感</strong>：理解 🙶補全🙷 不僅改變自己，也可能在社群、產業甚至全球議題中產生正向影響。你會更清楚地看到，在 <strong>物質、社會、科技</strong> 的交織下，人的價值不僅在於生產力，而在於 <strong>定義目標、提供監督、發掘意義</strong>。</li>
+</ul>
+<p>如同 AI 需要 <strong>世界模型</strong>，需要 <strong>目標函數</strong>，你也需要屬於自己的 <strong>未來</strong>。</p>
+</section>
+<section id="定勢與框架" class="level2">
+<h2 class="anchored" data-anchor-id="定勢與框架">⏱️定勢與框架🖼️</h2>
+<p>本書自始即定位為工具書，不在於宣揚哪個世界更好、哪個目標更妙，而在於提供一套可用的工具，讓讀者在設計或使用智能系統、安排自己與智能社會的關係時，能有所依循。</p>
+<p>❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 與 🙶補全🙷 之間，其實還有「<strong>思維定勢</strong>」或譯「<strong>心理定勢</strong>」（mental set）的概念。它指人類在解題或思考時，習慣使用「套路」（即過去成功的方法）來處理新問題。這能快速套用經驗、節省思考成本，但也容易導致「認知僵化」。這種取捨，正與「快思慢想」<a href="glossary.zh-hant.html#sec-dual-process-theory" class="quarto-xref"><span>⚡🧮雙系統理論</span></a> 的二元模式相呼應。</p>
+<p>的確 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 本能是勾勒出經驗與想像「事實」，驅使我們「行動」的「<strong>知行捷徑</strong>」，這包括演化出來生下來就可能有的 <a href="./01-05-Gestalt_Psychology.zh-hant.html">完形心理</a>，也包括後來環境及社會習慣學得的「套路」，或較符合教育或心理學的說法，「經驗法則」（heuristics）。</p>
+<p>這些經驗法則的範圍極廣，從古代的甲骨占卜、占星術，到現代的魔術、厚黑學、甚至兩性話術，都帶有人類作為生物本能的 ❝腦補❞ 面向，伴有人類社會學習模仿的「套路」與「<strong>思維定勢</strong>」。「<strong>思維定勢</strong>」可視為「經驗法則」(heuristics) 的一種具體表現。</p>
+<p>就連啟蒙及科學理性的前期基礎，似乎脫離不了「經驗法則」的捷徑省腦思維。（當然，如可證偽、理論建構、等等更具有打破「套路」的嚴謹科學或哲學方法等等，是想擺脫這種「快思捷想」的。）</p>
+<p>所以這本工具書的目標就能比較清楚且謙和的說明：介紹 AI 如何建構出不同的❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞套路，以及說明幾種較具科學或實踐意義的「經驗法則」，在這一點上可能和占星、魔術、厚黑、把妹等等書籍差不多。差比較多的可能是說破這些「套路」的同時，突出其本質上要應對的 <a href="./01----problematics.zh-hant.html">AI 問題意識</a>，這樣子就把改變及創新的責任又還給讀者。</p>
+<p>換句話說，這本書不像套路書籍，不蛇油化或萬金油化 AI 。（這也說明，我為什麼每次聽到某專業院長說自己的專業是「萬金油專業」時，會不舒服。）</p>
+<p>從中文日常語言的「套路」，可以連結到許多知識的習慣，如「<strong>SOP</strong>」（強調某組織或文化已訂的標準化或制式化流程）、<strong>老梗</strong>（強調缺乏創意或了無新意）、<strong>話術</strong>（強調語言上的技巧與欺騙性）等等，這反而證明其引導自己或他人行為的「知行合一」。</p>
+<p>如此，讀者即可較容易理解 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 為何是 AI 問題意識的核心「套路」問題，而 <a href="./01-03-Symbol_Grounding_Problem.zh-hant.html">符碼紮根問題</a> 為何可以看成某一「套路」在某一場景的有效性檢驗問題。</p>
+<ul>
+<li><strong>心理定勢</strong>：人類的「思考慣性」，會限制我們在解題時的靈活度。</li>
+<li><strong>框架問題</strong>：「資訊過載或不足」的問題，AI 必須決定哪些因素要納入推理，若不加限制，會陷入「無窮考慮」，若過度簡化，又可能忽略關鍵因素。</li>
+</ul>
+<p>👉 可以這樣理解：</p>
+<ul>
+<li>人類因為心理定勢，<strong>太快排除</strong>其他可能解法。</li>
+<li>AI 因為框架問題，<strong>太難排除</strong>無關資訊，因此常陷入無窮考慮。</li>
+</ul>
+<p>這種對照其實很有啟發性：</p>
+<ul>
+<li>若人類能學習 AI 的「全面考慮」，就能避免思維僵化，（但也容易找不到北）。</li>
+<li>若 AI 能學習人類的「直覺取捨」的專注力，就能更快聚焦在關鍵因素，（但也易習得人之偏見及定勢）。</li>
+</ul>
+<p>這也說明『人機協作』的價值不在於簡單拼接，而在於理解『此套路』與『彼套路』的差異，判斷能否真正互補，而非笨上加拙。</p>
+</section>
+<section id="框智力" class="level2">
+<h2 class="anchored" data-anchor-id="框智力">💪🦾 框智力🖼️</h2>
+<p>為了更清楚說明這本工具書的用處，我將 ❝腦補❞ 到 🙶補全🙷 的能力，提升為一種行動準備的心智能力——「<strong>框智力</strong>」（frame setting capabilities）。</p>
+<blockquote class="blockquote">
+<p><strong>框智力</strong>：指在大千世局中，如何依<strong>脈絡</strong>情境，「謀<strong>定</strong>而後<strong>動</strong>」。</p>
+</blockquote>
+<p>它呼應了<a href="./01----problematics.zh-hant.html">第壹篇</a> [@#nte-problematics]中的核心議題：</p>
+<ul>
+<li><strong>脈絡</strong>
+<ul>
+<li>👁️⯊ <strong><a href="01-05-Gestalt_Psychology.zh-hant.html" class="quarto-xref"><span>5&nbsp; 完形心理👁️⯊</span></a></strong><br>
+</li>
+<li>🗫🎲 <strong><a href="01-07-Language_Games.zh-hant.html" class="quarto-xref"><span>7&nbsp; 語言賽局 🗫🎲</span></a></strong><br>
+</li>
+</ul></li>
+<li><strong>定</strong>
+<ul>
+<li>🖼️⏱️ <strong><a href="01-04-Frame_Problem.zh-hant.html" class="quarto-xref"><span>4&nbsp; 框架問題 🖼️⏱️</span></a></strong><br>
+</li>
+<li>🔤⚓ <strong><a href="01-03-Symbol_Grounding_Problem.zh-hant.html" class="quarto-xref"><span>3&nbsp; 符碼紮根問題🔤㊙</span></a></strong><br>
+</li>
+</ul></li>
+<li><strong>動</strong>
+<ul>
+<li>🎯🛡️ <strong><a href="01-06-Alignment_Control_Problem.zh-hant.html" class="quarto-xref"><span>6&nbsp; AI對齊控制問題🎯🛡️</span></a></strong></li>
+</ul></li>
+</ul>
+<p>「謀定」：依情境選擇「套路」或「經驗法則」。更高層次上，則是依脈絡（常伴隨時間壓力）與認知資源（無論是生物或機器）去應對 <strong><a href="01-04-Frame_Problem.zh-hant.html" class="quarto-xref"><span>4&nbsp; 框架問題 🖼️⏱️</span></a></strong> 與 <strong><a href="01-03-Symbol_Grounding_Problem.zh-hant.html" class="quarto-xref"><span>3&nbsp; 符碼紮根問題🔤㊙</span></a></strong>。</p>
+<p>「後動」：則是依行動前後的目標與結果，進行對齊與控制。</p>
+<p>因此，「謀<strong>定</strong>後<strong>動</strong>」是一種專注力，也是一種有效能行動的情境感知力——而情境感知本身必然伴隨取捨。</p>
+<blockquote class="blockquote">
+<p>框智力的<strong>取捨</strong>：指「弱水有三千，只取一瓢飲」為行動準備的專注力取捨。</p>
+</blockquote>
+<p>這源自對人類「行動力」與「學習」的觀察與假設：</p>
+<ol type="1">
+<li><strong>知識🡾行動</strong>：學習本身就是行動——無論是模仿經驗，還是吸收知識，都是在<strong>準備行動</strong>或<strong>以行動作為準備</strong>。
+<ul>
+<li>🧰 將<strong>所學</strong>轉化為行動<br>
+</li>
+</ul></li>
+<li><strong>行動🡽世界</strong>：學習同時也是<strong>個體</strong>在<strong>世界</strong>中展開多層次心智活動的方式。
+<ul>
+<li>🗺 讓行動成為<strong>與世界互動</strong>的橋樑</li>
+</ul></li>
+</ol>
+<p>然而，世事如長河奔流、萬象紛呈——「弱水有三千，只取一瓢飲」正點出，在世之「<strong>局</strong>」中，<strong>專注力</strong>對行動的關鍵影響。</p>
+<p>正如行旅於大千世界的旅人，需深知「弱水有三千，只取一瓢飲」——在無限可能中，選擇最契合當下的行動。</p>
+<p>⛵ <strong>行動</strong>與<strong>主客觀交織</strong>的歷程，如行舟於四海八荒：</p>
+<ul>
+<li>🡼🐣 <strong>主觀經驗</strong>（內在的「我」）：體會「如人飲水，冷暖自知」<br>
+</li>
+<li>🡽🐥 <strong>客觀經驗</strong>（外在的「它」）：明白「弱水有三千，只取一瓢飲」，亦知「水火無情」<br>
+</li>
+<li>🡿🤝⚔ <strong>主體間</strong>（內在的「我們」）：或見「水乳交融」、「水火同舟」、「水火相安」，或「水火不容」<br>
+</li>
+<li>🡾🏛️🌐 <strong>客體間</strong>（外在的「它們」）：見證「水火既濟」，以及「救人於水火」</li>
+</ul>
+<p><strong>框智力</strong>讓<strong>選項</strong>更清晰，為<strong>選擇</strong>做好準備。</p>
+<p><strong>擇</strong>其所需、<strong>取</strong>其所長，既能渡己，亦能渡人。更多詳見 🔖附錄A. 💪<a href="./appendix-action.zh-hant.html">行動</a> <a href="appendix-action.zh-hant.html#imp-aqal-4-quadrants" class="quarto-xref">要點&nbsp;<span>A.3</span></a>。</p>
+<div id="imp-frame-set" class="callout callout-style-default callout-important callout-titled" title="💪🦾 框智力🖼️ " open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+要&nbsp;1: 💪🦾 框智力🖼️
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>框智力</strong>：</p>
+<ul>
+<li>一種由 ❝腦補❞ 走向 🙶補全🙷 的心智能力<br>
+</li>
+<li>依 <strong>世界</strong> 與 <strong>脈絡</strong>
+<ul>
+<li>👁️⯊ <strong><a href="01-05-Gestalt_Psychology.zh-hant.html" class="quarto-xref"><span>5&nbsp; 完形心理👁️⯊</span></a></strong><br>
+</li>
+<li>🗫🎲 <strong><a href="01-07-Language_Games.zh-hant.html" class="quarto-xref"><span>7&nbsp; 語言賽局 🗫🎲</span></a></strong><br>
+</li>
+</ul></li>
+<li>謀<strong>定</strong>而後<strong>動</strong>
+<ul>
+<li><strong>定</strong>
+<ul>
+<li>🖼️⏱️ <strong><a href="01-04-Frame_Problem.zh-hant.html" class="quarto-xref"><span>4&nbsp; 框架問題 🖼️⏱️</span></a></strong><br>
+</li>
+<li>🔤⚓ <strong><a href="01-03-Symbol_Grounding_Problem.zh-hant.html" class="quarto-xref"><span>3&nbsp; 符碼紮根問題🔤㊙</span></a></strong><br>
+</li>
+</ul></li>
+<li><strong>動</strong>
+<ul>
+<li>🎯🛡️ <strong><a href="01-06-Alignment_Control_Problem.zh-hant.html" class="quarto-xref"><span>6&nbsp; AI對齊控制問題🎯🛡️</span></a></strong></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>更多詳見 🔖附錄A. 💪<a href="./appendix-action.zh-hant.html">行動</a> <a href="appendix-action.zh-hant.html#imp-aqal-4-quadrants" class="quarto-xref">要點&nbsp;<span>A.3</span></a>。</p>
+<p>💡 結合「<strong>如何思考自己與世界</strong>」與「<strong>在何種脈絡下思考</strong>」，構建全景式行動框架。</p>
 </div>
 </div>
 </div>
 </section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
+<section id="補全的操作手冊" class="level2">
+<h2 class="anchored" data-anchor-id="補全的操作手冊">🧠🙶補全🙷的操作手冊🪜</h2>
+<p>在理解上述「謀定後動」的「<strong>框智力</strong>」後，人類力❝腦補❞ 力和科技🙶補全🙷力之間，就有了比較參照的先框定脈絡情境感知，後決策行動的具體流程單元。</p>
+<div id="tip-note-ai-taxonomy" class="callout callout-style-default callout-note callout-titled" title="🔖AI 分類雙維度對照：學界典範🆚業界經驗ℹ">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+註記&nbsp;2: 🔖AI 分類雙維度對照：學界典範🆚業界經驗ℹ
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>AI 導向</code> 可以視為 🪜 <a href="./notes-constructive_fill-in.zh-hant.html">知行鷹架</a> 的一種 「<strong>業界經驗法則分類</strong>」維度。讀者可藉此對照 AI 領域的兩種主要分類方法：</p>
+<ul>
+<li><strong>「學界典範流派分類」</strong>：見 <a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a> 流派與主義</li>
+<li><strong>「業界經驗法則分類」</strong>：即 <a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a> 區分 AI 5 大導向</li>
+</ul>
+<p>可參照 <strong><a href="./appendix-mindmap.zh-hant.html">🔖附錄🌌 心智圖</a></strong>，理解這兩套分類如何銜接 <a href="./01----problematics.zh-hant.html">第壹篇 ㉄</a> AI 問題意識。</p>
+<p>🪜🆚🔖</p>
+</div>
+</div>
+<p>#　drafty</p>
+<!--
+- 從 **個體層次**：學會在便利與資源之間做出更有意識的選擇，在補全個人需求及人生成長時，要如何用 AI 來平衡「一盞電、一瓢飲」的代價？    
+- 到 **社會層次**：思考個人、家庭、及群體必得克服的難題，在補全彼此與彼此關係時，要如何用 AI 構建「一座城市、一個國家」的永續未來？    
+
+最終，我們將會意識到：  
+
+必然伴隨代價與獲益，與 AI 一同成長及演化之路，不只得有成本效益意識，更需要有目標方向感。
+
+要如何真實掌握選項，實際按需做出選擇？這正是 ❝腦補❞ 走向 🙶補全🙷 的終極問題。
+
+
+
+- 🛠️ **可行的行動計畫**：將模糊的想法轉化為具體的「動詞－名詞」任務，方便立即著手。  
+- 🤝 **更強的連結與資源**：在書寫與行動中，吸引志同道合的人與你合作。  
+- 🚀 **加速的學習曲線**：因為目標明確，學 AI 或其他技能時能更快聚焦並應用。  
+- 🌏 **長遠的影響力**：行動不只改變自己，也可能在社群、產業甚至全球議題中產生正向影響。  
+
+
+必然伴隨代價與獲益，與 AI 一同成長及演化之路，不只得有成本效益意識，更需要有目標方向感。
+
+要如何真實掌握選項，實際按需做出選擇？這正是 ❝腦補❞ 走向 🙶補全🙷 的終極問題。
+
+這展示的就是各種層級的心智能力，都有其對人類生存演化的用處。
+
+
+- 迴圈與弧線 → 幫助歷程；
+
+-->
+</section>
+<section id="示例補全中文新詩" class="level2">
+<h2 class="anchored" data-anchor-id="示例補全中文新詩">🙈示例補全中文新詩🙉</h2>
+<!-- **歷史與文明的復仇** -->
+<p>🌬🪽</p>
+<p>一圈又一圈，左支右絀</p>
+<p>展翅的鵬鳥，在萬里高空裡</p>
+<p>轉著，越飛越遠，</p>
+<p>牠馭的風漩衝騰，天道再也聽不到。</p>
+<p><strong>萬物散潰，中道難攏。</strong></p>
+<p>無章法的亂子，就這樣竄訪到人間，</p>
+<p>如一股血紅濁水，淹四方天下潰堤，</p>
+<p>連最起碼的道德底線，也被沖得不留蹤跡。</p>
+<hr>
+<!-- **第二節：善惡顛倒** -->
+<p>🙊🙉🙈</p>
+<p>最優秀的君子與公知，竟毫無定見，</p>
+<p><strong>信念與勇氣皆已耗盡。</strong></p>
+<p>反倒是媚俗的煽情者，個個充滿狂熱激情，</p>
+<p>喊聲震耳致聾，蓋過一切理性。</p>
+<!-- **第三節：終極之問** -->
+<p>☠🧌</p>
+<p>難道，這無盡甲子的文明輪迴，</p>
+<p>真又要<strong>重續無間業緣</strong>？</p>
+<p>彷彿看到一個龐大的身影，</p>
+<p><strong>那怪獸，長著饕餮的身子，卻有人的臉，</strong></p>
+<p>眼睛裡空空的，一點仁義沒有，</p>
+<p>像毒日頭曬得人發暈，透露狠毒氣。</p>
+<p>牠慢吞吞地，拖著沉重的腿，朝萬民的發源地走去。</p>
+<p>那五千年的大智之眠，竟被</p>
+<p><strong>現代搖籃</strong>晃醒成<strong>惡夢</strong>，到底</p>
+<p>會是哪粗獷異族，拖著腳步走向新生？</p>
+<hr>
+<!-- **跋：歷史的包袱（個體的選擇）** -->
+<details>
+<summary>
+👉 點此展開跋文：歷史的包袱
+</summary>
+<p>🏴‍☠️🦤</p>
+<p>一進又一退，左顧右盼</p>
+<p>潛游的鯤鮞，在深淵萬丈裡</p>
+<p>爭扎，越游越遠，</p>
+<p>困牠的漩渦因緣，活路再也擋不住。</p>
+<p><strong>萬物散潰，中道難攏。</strong></p>
+<p>有南洋東洋的路子，硬是闖盪出惡水，</p>
+<p>如北冰西洋衝騰，湧四方全景希望，</p>
+<p>連最素昧的互助之情，也被苦難逼得復甦。</p>
+<hr>
+<p>就問你，在這亂世，如何選擇？</p>
+<p>你可以相忘於江湖，走那<strong>大道左衽</strong>，不為人情所累，得內心自由平靜。</p>
+<p>你也可以相濡以沫，學那<strong>人情右衽</strong>，自願承受重擔，守微茫值得情義。</p>
+<p>在禮樂崩壞的文明廢墟上，真正<strong>復仇</strong>，</p>
+<p>不是重拾舊禮，更不是强逼民女。</p>
+<p>而是自願穿上這左衽右衽，只為忠於自己的<strong>心中道</strong>。</p>
+<p><strong>萬物散潰，中道難攏。</strong></p>
+<hr>
+</details>
+<hr>
+<p><strong>計算註解</strong></p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
+<div id="ref-Modeled2030Energy" class="csl-entry" role="listitem">
+Agent Calculated and Modeled. 2025. <span>《Projected Energy Consumption for LLM Inference: 2030 Multimodal Scenario》</span>.
+</div>
+<div id="ref-Deloitte2025" class="csl-entry" role="listitem">
+Deloitte Insights. 2025. <span>《Technology, Media, and Telecom Predictions 2025: As generative AI asks for more power, data centers seek more reliable, cleaner energy solutions》</span>. <em>Deloitte Insights</em>. <a href="https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/genai-power-consumption-creates-need-for-more-sustainable-data-centers.html">https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/genai-power-consumption-creates-need-for-more-sustainable-data-centers.html</a>.
+</div>
+<div id="ref-IEA2024DC" class="csl-entry" role="listitem">
+International Energy Agency (IEA). 2024. <span>《Energy Demand from AI》</span>. <a href="https://www.iea.org/reports/energy-and-ai">https://www.iea.org/reports/energy-and-ai</a>.
+</div>
+<div id="ref-IEA2030AI" class="csl-entry" role="listitem">
+———. 2025. <span>《Energy and AI: A Global Outlook and Strategy》</span>. <a href="https://www.iea.org/reports/energy-and-ai">https://www.iea.org/reports/energy-and-ai</a>.
+</div>
+<div id="ref-Jegham2025HowHungry" class="csl-entry" role="listitem">
+Jegham, Mahsa, Jean Mairesse, 和 Jean Maëlle. 2025. <span>《How Hungry is an LLM? A Granular Analysis of Energy and Water Consumption for Large Language Model Inference》</span>. <em>Pre-print/Working Paper</em>.
 </div>
 </div>
-</section>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>數據參考來源：<span class="citation" data-cites="Jegham2025HowHungry">(<a href="references.zh-hant.html#ref-Jegham2025HowHungry" role="doc-biblioref">Jegham, Mairesse, 和 Maëlle 2025</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><strong>全球資料中心用電 (2024-2025)</strong> 數據參考來源：<span class="citation" data-cites="IEA2024DC">(<a href="references.zh-hant.html#ref-IEA2024DC" role="doc-biblioref">International Energy Agency (IEA) 2024</a>)</span>（2024 年約 415 TWh）和 <span class="citation" data-cites="Deloitte2025">(<a href="references.zh-hant.html#ref-Deloitte2025" role="doc-biblioref">Deloitte Insights 2025</a>)</span>（預測 2025 年約 536 TWh）。<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>單次⚡ 能耗（2030 預測）: 假設硬體與演算法效率（約 40-55% 提升）被多模態（影音、圖像）查詢的更高運算需求所抵消。因此單次能耗維持在高位，略低於 2025 現況。參考來源：<span class="citation" data-cites="Modeled2030Energy">(<a href="references.zh-hant.html#ref-Modeled2030Energy" role="doc-biblioref">Agent Calculated and Modeled 2025</a>)</span><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>單次💧 耗水（2030 預測）: 隨硬體效率提升（降低熱量產生）及資料中心設計優化，單次耗水量預計有所下降。<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>總量⚡ 能耗 &amp; 💧 耗水（2030 預測）: 每日總量主要受每日🗫問答量 (200-400 億次／日) 暴增的影響。計算為：<em>（單次能耗/耗水）<span class="math inline">\(\times\)</span>（問答量）</em>。<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>總量⚡ 能耗 &amp; 💧 耗水（2030 預測）: 每日總量主要受每日🗫問答量 (200-400 億次／日) 暴增的影響。計算為：<em>（單次能耗/耗水）<span class="math inline">\(\times\)</span>（問答量）</em>。<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>宏觀電力預測 (2030) 數據參考來源：<span class="citation" data-cites="IEA2030AI">(<a href="references.zh-hant.html#ref-IEA2030AI" role="doc-biblioref">International Energy Agency (IEA) 2025</a>)</span>。<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>單次⚡ 能耗（2035 展望）: 假設隨著 AI 全球普及，整個生態系統（包含晶片、模型與軟體）達到極致的規模化效率，單次推論能耗大幅下降，即便考慮多模態仍優於 2030。<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p><strong>總量⚡ 能耗 &amp; 💧 耗水（2035 展望）</strong>: 在單次效率提升的前提下，總量仍因每日問答量（500-1000 億次／日）達到 類搜尋引擎的規模 而呈現爆炸性增長。<strong>（數值：10 GWh/日至 100 GWh/日的範圍。）</strong><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p><strong>總量⚡ 能耗 &amp; 💧 耗水（2035 展望）</strong>: 在單次效率提升的前提下，總量仍因每日問答量（500-1000 億次／日）達到 類搜尋引擎的規模 而呈現爆炸性增長。<strong>（數值：10 GWh/日至 100 GWh/日的範圍。）</strong><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>宏觀電力預測（2035 展望）: 在全球 AI 普及且多模態常態化的前提下，資料中心用電預估將超過 IEA 2030 預測值的 1.5 倍，成為全球電網的重大挑戰。<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>根據 2025 年中數據，<strong>ChatGPT 活躍使用者</strong>約佔全球成年人口的 10%；而網路用戶平均只閱讀長文的 20% 內容。因此，能深入閱讀此類複雜表格與分析的讀者，約佔全球成年人口的 <strong>2%</strong> 或更少。相信讀者你屬於<strong>極少數同時具備 AI 意識與深度思考的人群</strong>。<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -1386,10 +1756,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./toc.zh-hant.html" class="pagination-link" aria-label="⸻📖目錄📑⸻">
+        <span class="nav-page-text">⸻📖目錄📑⸻</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1774,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/notes-constructive_fill-in.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

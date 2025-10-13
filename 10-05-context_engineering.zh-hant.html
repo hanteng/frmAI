@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>65&nbsp; 🪟脈絡工程🧭 – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./10-06-AI_PM.zh-hant.html" rel="next">
+<link href="./10-04-retrieval_augmented_generation.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./10----ai_engineering.zh-hant.html">🌉 「AI 工程」</a></li><li class="breadcrumb-item"><a href="./10-05-context_engineering.zh-hant.html"><span class="chapter-number">65</span>&nbsp; <span class="chapter-title">🪟脈絡工程🧭</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +151,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -656,11 +636,11 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="./10----ai_engineering.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🌉 「AI 工程」</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./10-01-API_MCP.zh-hant.html" class="sidebar-item-text sidebar-link">
@@ -687,7 +667,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./10-05-context_engineering.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./10-05-context_engineering.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">65</span>&nbsp; <span class="chapter-title">🪟脈絡工程🧭</span></span></a>
   </div>
 </li>
@@ -768,41 +748,34 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
+  <li><a href="#核心概念" id="toc-核心概念" class="nav-link active" data-scroll-target="#核心概念"><span class="header-section-number">65.1</span> 🏷️核心概念</a></li>
+  <li><a href="#exm-ai-coding-assistant" id="toc-exm-ai-coding-assistant" class="nav-link" data-scroll-target="#exm-ai-coding-assistant"><span class="header-section-number">65.2</span> 🛅 闡明範例</a>
   <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
+  <li><a href="#智能程式助理" id="toc-智能程式助理" class="nav-link" data-scroll-target="#智能程式助理"><span class="header-section-number">65.2.1</span> 🧑‍💻🫶智能程式助理</a></li>
+  <li><a href="#命令列ide" id="toc-命令列ide" class="nav-link" data-scroll-target="#命令列ide"><span class="header-section-number">65.2.2</span> 命令列🆚IDE</a></li>
   </ul></li>
+  <li><a href="#專家混合模型-moe" id="toc-專家混合模型-moe" class="nav-link" data-scroll-target="#專家混合模型-moe"><span class="header-section-number">65.3</span> 🆚專家混合模型 (MoE)</a></li>
+  <li><a href="#最佳實務" id="toc-最佳實務" class="nav-link" data-scroll-target="#最佳實務"><span class="header-section-number">65.4</span> 👍💖最佳實務</a></li>
+  <li><a href="#創新思路" id="toc-創新思路" class="nav-link" data-scroll-target="#創新思路"><span class="header-section-number">65.5</span> 🪬💞創新思路</a></li>
+  <li><a href="#注意事項" id="toc-注意事項" class="nav-link" data-scroll-target="#注意事項"><span class="header-section-number">65.6</span> 🤞❣️注意事項</a></li>
+  <li><a href="#回顧及資源" id="toc-回顧及資源" class="nav-link" data-scroll-target="#回顧及資源"><span class="header-section-number">65.7</span> 🌉回顧及資源🪸</a></li>
+  <li><a href="#編輯筆記" id="toc-編輯筆記" class="nav-link" data-scroll-target="#編輯筆記"><span class="header-section-number">65.8</span> ✎ 編輯筆記</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/10-05-context_engineering.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./10----ai_engineering.zh-hant.html">🌉 「AI 工程」</a></li><li class="breadcrumb-item"><a href="./10-05-context_engineering.zh-hant.html"><span class="chapter-number">65</span>&nbsp; <span class="chapter-title">🪟脈絡工程🧭</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title"><span id="sec-context-engineering" class="quarto-section-identifier"><span class="chapter-number">65</span>&nbsp; <span class="chapter-title">🪟脈絡工程🧭</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +785,306 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
-<blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
-</li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
-</ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
-</section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
-<ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
-</ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
-</ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
-<ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
-</ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
-<ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
-</ul>
-<p>🎲🏁</p>
-</div>
-</div>
+<p><code>脈絡工程</code>（Context Engineering）是一套讓 AI 具備<strong>脈絡感知</strong>（Context-Awareness）能力的技術與方法論，確保系統能理解使用者的<strong>意圖</strong>、<strong>情境</strong>與<strong>任務背景</strong>，並生成更相關、精確且實用的輸出。它的目標是打造能「讀懂空氣」的 AI，使回應與行動更貼近真實需求與情境。</p>
+<p>與 <a href="10-03-prompt_engineering.zh-hant">提示工程</a> 或 <a href="10-04-retrieval_augmented_generation.zh-hant">檢索增強生成（RAG）</a> 相比，<code>脈絡工程</code>涵蓋範圍更廣，著重於<strong>系統性地設計、組織與管理</strong> AI 在推理與生成時所使用的<strong>全部脈絡</strong>——包括任務描述、背景知識、互動歷史、外部訊號等。資料來源不限於外部知識庫，還可來自使用者輸入、感測器、<a href="@sec-api-mcp">API 與 MCP工具</a>、多模態感知輸入等。可以說，它是在提示工程與 RAG 基礎上的進一步<strong>系統創新工程</strong>，確保<strong>有效且安全</strong>地共享<strong>脈絡資訊</strong>。</p>
+<p>在應用層面，<code>脈絡工程</code>推動了從「單輪指令」到「多輪對話」的演進，並促進了從「單模態任務」到「跨模態任務協作」的轉變，支撐更複雜的 Agentic AI 與「知識融合」應用。實際應用時可能涉及到不同層次的脈絡：産品、專案、大語言模型、外部知識等等。它同時與 <strong><a href="01-04-Frame_Problem.zh-hant">框架問題</a></strong>、<strong><a href="./01-06-Alignment_Control_Problem.zh-hant.html">對齊與控制問題</a></strong> 等核心議題緊密相關，並衍生出更多 AI 控制與安全挑戰，包括潛在的 <a href="01-07-Language_Games.zh-hant">語言賽局</a> 風險及創新。</p>
 <hr>
+<section id="核心概念" class="level2" data-number="65.1">
+<h2 data-number="65.1" class="anchored" data-anchor-id="核心概念"><span class="header-section-number">65.1</span> 🏷️核心概念</h2>
+<p><code>脈絡工程</code>的設計範疇涵蓋 <strong>脈絡收集</strong>、<strong>脈絡組織</strong> 與 <strong>脈絡優化</strong> 三大面向，並可結合多代理（Agents）與多模態資料，形成可持續更新、可重用的上下文系統，支撐更精準的推理與生成。</p>
+<ul>
+<li>📥 <strong>脈絡收集</strong>
+<ul>
+<li>🗂️ <strong>脈絡來源</strong>：包括使用者輸入、歷史對話、檢索結果（RAG）、外部 API 資料，以及多模態感知輸入（如圖像、音訊、影片），並可輔以時間與地點資訊、裝置狀態等情境訊號，確保模型獲取的資訊完整且具時效性。</li>
+<li>🔌 <strong>API 與模組協定整合</strong>：透過 <a href="@sec-api-mcp">API 與 MCP</a> 等標準化協定安全共享脈絡，避免資訊孤島，並支援跨系統、跨代理的資料流通。</li>
+</ul></li>
+<li>🏗️ <strong>脈絡組織</strong>
+<ul>
+<li>🏗️ <strong>脈絡結構化</strong>：將收集到的脈絡分為任務描述、背景知識、限制條件、範例與輔助資訊等模組，方便模型解析與利用，並提升重用性。</li>
+<li>🌐 <strong>跨模態脈絡融合</strong>：將文字、圖像、音訊等不同模態的資訊轉換為統一表示，讓模型能在多模態環境中進行一致且高效的推理。</li>
+<li>🧩 <strong>脈絡與提示協同</strong>：將脈絡工程與提示工程結合，確保提示能正確引導模型利用脈絡，並在多輪互動中保持語境一致。</li>
+</ul></li>
+<li>🔄 <strong>脈絡優化</strong>
+<ul>
+<li>⏳ <strong>脈絡長度管理</strong>：在 Token 限制下，透過摘要、壓縮與關鍵資訊提取，保留最有價值的內容，避免冗餘資訊干擾模型判斷。</li>
+<li>🔄 <strong>動態脈絡更新</strong>：根據任務進展與模型回應，及時調整脈絡內容與優先順序，確保系統始終聚焦於最相關的資訊。</li>
+<li>🛡️ <strong>脈絡安全與對齊</strong>：過濾敏感或不可靠的脈絡來源，並檢查生成內容是否符合安全與倫理規範，防範脈絡污染與提示注入等風險。</li>
+</ul></li>
+</ul>
+<p><strong>小結</strong>：<code>脈絡工程</code>是將「任務需求、背景知識、互動歷史與外部檢索結果」組織成智慧化上下文的系統創新過程，並優化其與基礎模型的輸入輸出互動，以確保 AI 能真正具備脈絡感知，準確理解使用者的意圖與情境目標，並在多代理、多模態的應用場景中保持高效與安全。</p>
 </section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
+<section id="exm-ai-coding-assistant" class="level2" data-number="65.2">
+<h2 data-number="65.2" class="anchored" data-anchor-id="exm-ai-coding-assistant"><span class="header-section-number">65.2</span> 🛅 闡明範例</h2>
+<section id="智能程式助理" class="level3" data-number="65.2.1">
+<h3 data-number="65.2.1" class="anchored" data-anchor-id="智能程式助理"><span class="header-section-number">65.2.1</span> 🧑‍💻🫶智能程式助理</h3>
+<p><code>智能程式助理</code>或<code>代理式 AI 程式設計助理</code>（AI Coding Assistants）的目標不僅是生成程式碼，更要理解開發者的複雜需求與專案脈絡（可能橫跨多份文件），並主動協助完成各類程式設計任務。</p>
+<p>這類助理的共通功能源自底層 LLM 的能力及其在程式設計領域的應用，至少有兩種脈絡可用來加值：<br>
+一是<strong>專案程式碼風格或需求文件</strong>的脈絡，二是與助理<strong>多輪對話</strong>的脈絡。</p>
 <ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
+<li><strong>🐸⚡ 程式碼生成與自動完成</strong>
+<ul>
+<li><strong>⚙功能</strong>：根據自然語言提示或現有程式碼脈絡，生成程式碼片段、完整函式或類別，並提供智慧化自動完成。<br>
+</li>
+<li><strong>🫶脈絡增值</strong>：
+<ul>
+<li>📳 <strong>專案</strong>：生成符合專案規範、使用現有函式庫並與模組風格一致的程式碼。</li>
+<li>🗫 <strong>對話</strong>：納入過往對話中開發者的意圖與需求約束。<br>
+</li>
+</ul></li>
+</ul></li>
+<li><strong>🐘💞 程式碼解釋與文件</strong>
+<ul>
+<li><strong>⚙功能</strong>：以清晰自然的語言解釋複雜程式碼、演算法或語法，並自動生成函式與類別文件（docstrings）。<br>
+</li>
+<li><strong>🫶脈絡增值</strong>：
+<ul>
+<li>📳 <strong>專案</strong>：解釋時聚焦專案相關模式與最佳實踐，並生成符合文件標準的內容。<br>
+</li>
+<li>🗫 <strong>對話</strong>：依開發者的理解程度與提問歷程調整解釋深度。<br>
+</li>
+</ul></li>
+</ul></li>
+<li><strong>💡⚕ 偵錯與錯誤解決</strong>
+<ul>
+<li><strong>⚙功能</strong>：識別潛在錯誤、提供修復方案並解釋錯誤訊息，能分析堆疊追蹤精確定位問題。<br>
+</li>
+<li><strong>🫶脈絡增值</strong>：
+<ul>
+<li>📳 <strong>專案</strong>：修復建議會考慮專案架構與常用除錯策略。<br>
+</li>
+<li>🗫 <strong>對話</strong>：整合開發者描述的情境與已嘗試方法，提供更精準的建議。<br>
+</li>
+</ul></li>
+</ul></li>
+<li><strong>✨🚀 程式碼重構與優化</strong>
+<ul>
+<li><strong>⚙功能</strong>：建議改善結構、風格與效能，支援跨語言轉換與現代化更新。<br>
+</li>
+<li><strong>🫶脈絡增值</strong>：
+<ul>
+<li>📳 <strong>專案</strong>：重構建議遵循專案風格指南並符合性能目標。<br>
+</li>
+<li>🗫 <strong>對話</strong>：優先考量開發者在對話中表達的重構目標。<br>
+</li>
+</ul></li>
+</ul></li>
+<li><strong>✍️▶️ 自然語言轉程式碼</strong>
+<ul>
+<li><strong>⚙功能</strong>：將自然語言需求直接轉譯為程式碼，是代理性行為的核心。<br>
+</li>
+<li><strong>🫶脈絡增值</strong>：
+<ul>
+<li>📳 <strong>專案</strong>：生成程式碼遵循命名慣例與架構模式，並假設開發者熟悉特定 API。<br>
+</li>
+<li>🗫 <strong>對話</strong>：依逐步細化的需求生成更貼近意圖的程式碼。<br>
+</li>
+</ul></li>
+</ul></li>
+<li><strong>🌐🧠 專案脈絡理解與管理（專案管理）</strong>
+<ul>
+<li><strong>⚙功能</strong>：理解專案全貌，包括檔案結構、現有程式碼、依賴關係與近期互動目標。<br>
+</li>
+<li><strong>🫶脈絡增值</strong>：
+<ul>
+<li>📳 <strong>專案</strong>：遵循文件規範與架構設計，並引用內部程式碼進行分析或生成。</li>
+<li>🗫 <strong>對話</strong>：追蹤對專案目標、問題與偏好的持續討論，提供更個人化的協助。</li>
+</ul></li>
+</ul></li>
 </ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+<p>這些功能與脈絡增值共同展現了<code>智能程式助理</code>如何作為智慧夥伴，深刻改變開發者體驗。其他可延伸的方向還包括<strong>版本控制</strong>與<strong>開發環境</strong>整合。</p>
+</section>
+<section id="命令列ide" class="level3" data-number="65.2.2">
+<h3 data-number="65.2.2" class="anchored" data-anchor-id="命令列ide"><span class="header-section-number">65.2.2</span> 命令列🆚IDE</h3>
+<p><code>智能程式助理</code>依使用介面可分為<strong>命令列介面</strong>（如 Gemini CLI、Claude）與<strong>整合開發環境</strong>（IDE）（如 Cursor）：</p>
+<ul>
+<li>🗔 <strong>命令列介面</strong>
+<ul>
+<li><strong>⚙功能</strong>：支援快速查詢、程式碼生成、錯誤分析與版本控制指令。</li>
+<li><strong>🫶脈絡增值</strong>：整合 Git 狀態、分支策略與 commit 訊息風格，並根據 CLI 操作歷程提供上下文感知的建議與命令補全，包括版本控制指令生成。</li>
+</ul></li>
+<li>🖥 <strong>整合開發環境</strong>
+<ul>
+<li><strong>⚙功能</strong>：提供即時程式碼建議、錯誤提示、重構工具與文件生成。</li>
+<li><strong>🫶脈絡增值</strong>：可視化版本控制、模組依賴圖與測試覆蓋率，並透過互動式提示與側欄對話持續追蹤開發者意圖，提供精準協助。</li>
+</ul></li>
 </ul>
-</div>
-</div>
-</div>
-</section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
-
-
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
-</div>
-</div>
+<p>從程式碼生成到錯誤修復，從自然語言理解到專案管理，智能程式助理的真正價值在於其<strong>脈絡感知能力</strong>。這種能力不僅來自模型的語言理解，更源於<code>脈絡工程</code>的系統化設計——將專案脈絡與對話脈絡整合進 AI 的生產力流程中。</p>
+<p>橋接「懂你」與「懂程式」，未來的程式設計將不再是孤立的編碼，而是與 AI 智慧夥伴共同完成的協作旅程。</p>
 </section>
 </section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<section id="專家混合模型-moe" class="level2" data-number="65.3">
+<h2 data-number="65.3" class="anchored" data-anchor-id="專家混合模型-moe"><span class="header-section-number">65.3</span> 🆚專家混合模型 (MoE)</h2>
+<p><strong>專家混合模型</strong> (MoE)是一種神經網路架構，它由多個專門不同類型任務或數據的「專家」子網路組成，並透過一個「門控網路」來決定將輸入分流導向哪些專家，以實現更高效精準回應。雖然它本身不是<code>脈絡工程</code>的技術，但兩者有著極為緊密的共生關係。</p>
+<p>換句話說，設計與執行<code>脈絡工程</code>時，可以考慮使用 MoE 支持以下方向的應用： * <strong>專門化處理</strong>：MoE 核心是讓模型由多個「專家子網路」組成，每個專家擅長處理特定類型的資訊或任務。這讓 AI 能在面對複雜、多樣的上下文時，將不同部分分配給最適合的專家進行處理，例如，將程式碼分給一個專家，將法律文件分給另一個專家。這大幅提升了處理效率與準確性。 * <strong>擴大上下文視窗</strong>：傳統模型在處理極長的文本（例如數百頁的法律文件或書籍）時，會遇到記憶和運算上的瓶頸。MoE 架構通過「<a href="09-04-sparse_modeling.zh-hant">稀疏性</a>」解決了這個問題，只啟用最相關的專家來處理當前輸入，從而能在不顯著增加運算成本的情況下，有效擴大模型的上下文處理能力。 * <strong>高效能與低延遲</strong>：對於需要即時處理大量上下文的應用，如即時對話或大型文件分析，MoE 能夠大幅降低延遲。因為每次推論（inference）時，只有一小部分參數被啟動，這使得模型能夠以更快的速度回應，同時維持龐大的總參數規模。</p>
+<p>總結來說，MoE 提供高效的「知識專業分工」，而<code>脈絡工程</code>負責<strong>提供</strong>和<strong>管理</strong>豐富的上下文，來利用 MoE 為底使 AI 模型更有效率、更聰明地<strong>利用</strong>這些脈絡。兩者相輔相成，共同推動 AI 系統處理複雜任務的能力。</p>
+</section>
+<section id="最佳實務" class="level2" data-number="65.4">
+<h2 data-number="65.4" class="anchored" data-anchor-id="最佳實務"><span class="header-section-number">65.4</span> 👍💖最佳實務</h2>
+<p>為了讓<code>脈絡工程</code>發揮效能，不再只是如<strong>提示工程</strong>的「用詞和措辭」調整，而是提供「最相關的完整的事實、規則和文檔」（參考<a href="@sec-relevance-modern">情境「相關性」現代觀點</a>）。以下是常見的最佳實務：</p>
+<ul>
+<li><strong>專案</strong>及<strong>産品</strong>層次優化🎁🌱 ：
+<ul>
+<li>🖼️⏱️ <strong>明確脈絡目標</strong>：釐清用途與需求，避免加入無關資訊，如「<a href="https://github.com/mattgierhart/PRD-driven-context-engineering">三文件原則</a>」：
+<ul>
+<li>指揮中心（Command Center）管專案的<strong>運作事實</strong>；</li>
+<li>產品需求文件（PRD）管<strong>產品事實</strong>：單一、漸進式隨產品演進的文件；</li>
+<li>當前史詩級任務（EPIC）管專案的<strong>執行事實</strong>：單一「史詩級任務」及其子任務、技術細節和執行計畫。</li>
+</ul></li>
+</ul></li>
+<li><strong>大語言模型</strong>與<strong>提示工程</strong>層次優化😵‍💫🧞‍♀️
+<ul>
+<li>🗃️ <strong>模組化脈絡設計</strong>：將脈絡分為可重用的模組，方便不同任務間快速組裝。<br>
+</li>
+<li>🧪 <strong>測試脈絡配置</strong>：透過 A/B 測試比較不同脈絡組合對輸出的影響。<br>
+</li>
+<li>🔄 <strong>迭代優化</strong>：根據<strong>模型表現</strong>與<strong>使用者反饋</strong>，調整<strong>脈絡</strong>內容與結構。<br>
+</li>
+</ul></li>
+<li><strong>知識驅動生成</strong>層次優化🔗📝
+<ul>
+<li>🛡️ <strong>驗證脈絡來源</strong>：確保外部資料的真實性與可靠性，防止檢索污染。 脈絡品質與更新策略對 <a href="10-02-agent_reliability_evaluation.zh-hant">智慧體可靠性與評估</a> 有直接影響。</li>
+<li>⏱️ <strong>平衡脈絡豐富度與效率</strong>：在提供足夠資訊的同時，避免超過模型脈絡長度限制。<br>
+</li>
+<li>🤝 <strong>升級 RAG 與 Agents 結合</strong>：在多步推理與任務規劃中，動態調用檢索與工具，更新脈絡內容。</li>
+</ul></li>
+</ul>
+<p><strong>小結</strong>：最佳實務的核心是讓脈絡既「足夠」又「精準」，並能隨任務動態調整。在產品層面，脈絡策略的規劃與落實是 <a href="10-06-AI_PM.zh-hant.html">AI 產品經理</a> 的重要職責之一。</p>
+</section>
+<section id="創新思路" class="level2" data-number="65.5">
+<h2 data-number="65.5" class="anchored" data-anchor-id="創新思路"><span class="header-section-number">65.5</span> 🪬💞創新思路</h2>
+<p><code>脈絡工程</code>還有以下<a href="https://github.com/Meirtz/Awesome-Context-Engineering/">創新思路</a> ：</p>
+<ul>
+<li>🦾🔄💪 <strong>多代理人系統</strong>（Multi-Agent）：著重多個AI代理人有效協同，包括：
+<ul>
+<li><strong>溝通協議（Communication Protocols）</strong>：定義代理人之間交換資訊的標準。</li>
+<li><strong>協調機制（Coordination Strategies）</strong>：設計代理人之間分工合作和解決衝突的策略。</li>
+</ul></li>
+<li>🏛️☸⚖️複雜脈絡組織與圖形問題解決（Complex Context Organization and Solving Graph Problems）：
+<ul>
+<li>讓AI能夠理解和處理非線性的、圖形化的資訊，例如關係數據庫、知識圖譜或社群網絡。</li>
+<li>使AI能夠應對更複雜、更需要推理的任務，例如理解複雜的組織架構或人際關係網絡。</li>
+</ul></li>
+<li>🧠🤖🚨 <strong>AI 記憶與長期上下文管理</strong>：這項創新專注於讓 AI 具備長期記憶與學習能力。透過<strong>遞歸式摘要</strong>和<strong>上下文修剪</strong>等技術，AI 不僅能從過去的互動中學習，還能高效地整理並壓縮資訊，克服上下文窗口限制，確保在複雜情境下仍能維持準確性。</li>
+<li>🛠️🔗🔐 <strong>複雜工具整合與情境化協作</strong>：讓 AI 代理人不僅能使用外部工具，更能智慧地選擇、協調多種工具，如多模態上下文整合（Multimodal Context Integration），並與環境進行複雜互動。這將 AI 的角色從被動指令執行者，轉變為能主動利用工具解決複雜問題的「AI 協作者」。</li>
+<li>🌉🔗📝 <strong>先進檢索與知識圖譜應用</strong>：這條路徑旨在超越傳統的檢索增強生成（RAG），透過更精密的技術讓 AI 能夠有效利用外部知識庫。例如，結合<strong>知識圖譜</strong>來提供更結構化的關聯資訊，或透過<strong>模組化RAG</strong>來提升檢索的精準度，讓 AI 在複雜查詢中能找到更準確的答案。</li>
+<li>📡🌡️🤖 <strong>動態情境解決與跨領域推理</strong>：這項創新著重於讓 AI 能夠處理複雜且非線性的問題。它不僅是簡單地理解文字，而是能夠像人類一樣，對圖形化的關係數據、系統架構等進行推理，這將使 AI 能夠應對需要跨領域知識和高階認知能力的挑戰性任務。</li>
+</ul>
+<p>在實現<strong>競爭與合作</strong>的轉型方面，透過 <strong>「語言賽局](01-07-Language_Games.zh-hant)」</strong> 的策略性互動，還可能建構出<strong>多代理人語言賽局</strong>（Multi-agent Language Games）。這些新興系統設計顯示，<code>脈絡工程</code>不僅是一項技術，更是引領未來 AI <strong>系統創新</strong>的跨界關鍵領域：</p>
+<ul>
+<li>👨‍🚀<strong>AI 協作者與團隊競合轉型</strong>：<code>脈絡工程</code>是推動 AI 從單純的「工具」進化為主動的「協作者」的關鍵技術。它賦予 AI 理解情境、預測需求與主動協助的能力，使其不再只是被動的問答機器，而能在複雜任務中發揮協作價值，甚至不只一個角色，而是具備多種不同專業知識形成<strong>競爭及合作</strong>的賽局。</li>
+</ul>
 <hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
+</section>
+<section id="注意事項" class="level2" data-number="65.6">
+<h2 data-number="65.6" class="anchored" data-anchor-id="注意事項"><span class="header-section-number">65.6</span> 🤞❣️注意事項</h2>
+<p><code>脈絡工程</code>在設計與部署時需注意以下挑戰與風險：</p>
+<ul>
+<li>🔒 <strong>隱私與安全</strong>：避免將敏感資訊直接放入脈絡中，必要時進行脫敏處理。<br>
+</li>
+<li>🚫 <strong>脈絡污染</strong>：防範惡意或錯誤資訊進入脈絡，影響生成結果。<br>
+</li>
+<li>📉 <strong>脈絡過載</strong>：過多或冗餘資訊可能干擾模型判斷，降低輸出品質。<br>
+</li>
+<li>🛡️ <strong>防禦提示注入</strong>：在多輪對話中防範惡意輸入修改脈絡內容。<br>
+</li>
+<li>🔍 <strong>結果驗證</strong>：對生成內容進行事後檢查，確保其與脈絡一致且正確。</li>
+</ul>
+<p>透過精煉的情境框架，它幫助 AI 在動態環境中辨識並專注於相關資訊，從而提升推理與決策效率，應對 <strong><a href="01-04-Frame_Problem.zh-hant">框架問題</a></strong>；藉由納入外部系統知識與工具，讓系統連結至世界的行動方案及後果檢驗，有助於緩解 <strong><a href="01-03-Symbol_Grounding_Problem.zh-hant">符碼紮根問題</a></strong>。同時，它也為應對 <strong><a href="./01-06-Alignment_Control_Problem.zh-hant.html">對齊與控制問題</a></strong> 提供了具脈絡實踐及檢驗的路徑。</p>
+<hr>
+</section>
+<section id="回顧及資源" class="level2" data-number="65.7">
+<h2 data-number="65.7" class="anchored" data-anchor-id="回顧及資源"><span class="header-section-number">65.7</span> 🌉回顧及資源🪸</h2>
+<ul>
+<li><p>✨ <strong>核心知識</strong>：<code>脈絡工程</code>是連接 <a href="10-03-prompt_engineering.zh-hant">提示工程</a> 與 <a href="10-04-retrieval_augmented_generation.zh-hant">檢索增強生成（RAG）</a> 的關鍵橋樑，負責將多來源、多模態資訊（任務描述、背景知識、互動歷史、外部檢索結果、感測器資料、API 輸出等）整合成高效可用的上下文，並以結構化方式輸入 LLM。這一過程直接影響系統的推理深度、生成品質、可解釋性與對齊性，也促進更複雜的「多輪對話」、「跨模態任務協作」可能性，引發更多 AI 控制、AI 安全等問題。</p></li>
+<li><p>✅ <strong>實務應用檢核表</strong>： ## 🌉回顧及資源🪸</p></li>
+<li><p>✨ <strong>核心知識</strong>：<code>脈絡工程</code>是連接 <a href="10-03-prompt_engineering.zh-hant">提示工程</a> 與 <a href="10-04-retrieval_augmented_generation.zh-hant">檢索增強生成（RAG）</a> 的關鍵橋樑，負責將多來源、多模態資訊（任務描述、背景知識、互動歷史、外部檢索結果、感測器資料、API 輸出等）整合成高效可用的上下文，並以結構化方式輸入 LLM。這一過程直接影響系統的推理深度、生成品質、可解釋性與對齊性，也促進更複雜的「多輪對話」、「跨模態任務協作」可能性，引發更多 AI 控制、AI 安全等問題。</p></li>
+<li><p>✅ <strong>實務應用檢核表</strong><br>
+&gt; 下表將檢核項目依「三大面向」（脈絡收集、脈絡組織、脈絡優化）與「三大層次」（專案／產品、大語言模型／提示工程、知識驅動生成）交叉整理，方便在不同場景下快速檢查與落實脈絡工程的最佳實務。</p>
+<ul>
+<li>📥 <strong>脈絡收集</strong>
+<ul>
+<li><strong>專案／產品層次</strong>
+<ul>
+<li>明確定義脈絡收集目標與範圍，避免引入無關資訊<br>
+</li>
+<li>確保資料來源涵蓋專案需求文件、版本控制紀錄、使用者回饋等<br>
+</li>
+</ul></li>
+<li><strong>大語言模型／提示工程層次</strong>
+<ul>
+<li>設計提示以引導模型主動詢問缺失的脈絡<br>
+</li>
+<li>在多輪對話中保留並更新關鍵上下文<br>
+</li>
+</ul></li>
+<li><strong>知識驅動生成層次</strong>
+<ul>
+<li>驗證外部檢索結果的真實性與可信度<br>
+</li>
+<li>避免將低品質或不可靠的資料納入脈絡</li>
+</ul></li>
+</ul></li>
+<li>🏗️ <strong>脈絡組織</strong>
+<ul>
+<li><strong>專案／產品層次</strong>
+<ul>
+<li>將脈絡分模組化（任務描述、背景知識、限制條件、範例等）以便重用<br>
+</li>
+<li>建立跨團隊一致的脈絡結構標準<br>
+</li>
+</ul></li>
+<li><strong>大語言模型／提示工程層次</strong>
+<ul>
+<li>在提示中明確標示不同模組的用途與優先順序<br>
+</li>
+<li>測試不同脈絡組合對輸出品質的影響<br>
+</li>
+</ul></li>
+<li><strong>知識驅動生成層次</strong>
+<ul>
+<li>將檢索結果與內部知識融合為統一結構<br>
+</li>
+<li>在多模態情境下保持資訊表示一致性</li>
+</ul></li>
+</ul></li>
+<li>🔄 <strong>脈絡優化</strong>
+<ul>
+<li><strong>專案／產品層次</strong>
+<ul>
+<li>制定脈絡長度管理策略（摘要、壓縮、關鍵資訊提取）<br>
+</li>
+<li>根據專案進度動態更新脈絡內容<br>
+</li>
+</ul></li>
+<li><strong>大語言模型／提示工程層次</strong>
+<ul>
+<li>透過 A/B 測試比較不同脈絡配置的效果<br>
+</li>
+<li>根據模型表現與使用者反饋迭代優化脈絡<br>
+</li>
+</ul></li>
+<li><strong>知識驅動生成層次</strong>
+<ul>
+<li>平衡脈絡豐富度與推理效率，避免超過模型上下文限制<br>
+</li>
+<li>部署安全與對齊策略，防範脈絡污染與提示注入</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>🏄 <strong>延伸閱讀與工具資源</strong>：可參考最新的 OpenAI、Anthropic 等關於脈絡管理的<strong>最佳實務</strong>文件，RAG 框架（如 LangChain、Haystack）的<strong>脈絡組裝模組</strong>，以及多代理系統的<strong>脈絡協作</strong>案例。</p></li>
+</ul>
+</section>
+<section id="編輯筆記" class="level2" data-number="65.8">
+<h2 data-number="65.8" class="anchored" data-anchor-id="編輯筆記"><span class="header-section-number">65.8</span> ✎ 編輯筆記</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">逐句事實查核</label></li>
+<li><label><input type="checkbox">邏輯流程</label></li>
+<li><label><input type="checkbox">本部分內部鏈結</label></li>
+<li><label><input type="checkbox">本書各章內部鏈結</label></li>
+<li><label><input type="checkbox">外部資源鏈結</label></li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1490,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./10-04-retrieval_augmented_generation.zh-hant.html" class="pagination-link" aria-label="🔗知識驅動生成📝">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">64</span>&nbsp; <span class="chapter-title">🔗知識驅動生成📝</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./10-06-AI_PM.zh-hant.html" class="pagination-link" aria-label="🎁AI 產品經理🌱🚀">
+        <span class="nav-page-text"><span class="chapter-number">66</span>&nbsp; <span class="chapter-title">🎁AI 產品經理🌱🚀</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1508,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/10-05-context_engineering.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

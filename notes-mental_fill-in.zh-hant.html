@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>💬導論~❝腦補❞知行捷徑 – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./notes-constructive_fill-in.zh-hant.html" rel="next">
+<link href="./index.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -92,6 +72,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -105,7 +114,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./notes-mental_fill-in.zh-hant.html">💬導論~❝腦補❞知行捷徑</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,13 +180,13 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notes-mental_fill-in.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./notes-mental_fill-in.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">💬導論~❝腦補❞知行捷徑</span></a>
   </div>
 </li>
@@ -768,41 +777,31 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
-  <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
-  </ul></li>
+  <li><a href="#關於水火" id="toc-關於水火" class="nav-link active" data-scroll-target="#關於水火">💧🔥關於水火</a></li>
+  <li><a href="#心智能力" id="toc-心智能力" class="nav-link" data-scroll-target="#心智能力">🧠心智能力🐸🐘🧘</a></li>
+  <li><a href="#腦補-知行捷徑" id="toc-腦補-知行捷徑" class="nav-link" data-scroll-target="#腦補-知行捷徑">🤯 ❝腦補❞ 知行捷徑</a></li>
+  <li><a href="#應對-ai-問題" id="toc-應對-ai-問題" class="nav-link" data-scroll-target="#應對-ai-問題">🖼️🙶應對🙷 AI 問題㉄</a></li>
+  <li><a href="#問題還是學科" id="toc-問題還是學科" class="nav-link" data-scroll-target="#問題還是學科">㉄問題還是學科🤖</a></li>
+  <li><a href="#拆用本書" id="toc-拆用本書" class="nav-link" data-scroll-target="#拆用本書">🌌拆用本書📑</a></li>
+  <li><a href="#經度和緯度" id="toc-經度和緯度" class="nav-link" data-scroll-target="#經度和緯度">🧭經度和緯度🔗</a></li>
+  <li><a href="#發散及收歛" id="toc-發散及收歛" class="nav-link" data-scroll-target="#發散及收歛">🎍發散及收歛🎋</a></li>
+  <li><a href="#從腦補到補全" id="toc-從腦補到補全" class="nav-link" data-scroll-target="#從腦補到補全">🪜從❝腦補❞到🙶補全🙷🌌</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/notes-mental_fill-in.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title">💬導論~❝腦補❞知行捷徑</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +811,315 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
 <blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
+<p>🥶🥵 看到「<strong>水</strong>深<strong>火</strong>熱」，你想到什麼？</p>
+<p>🌬️🌞 看到「<strong>水火</strong>不容」，你想到什麼？</p>
+<p>💧🔥 「<strong>水</strong>」與「<strong>火</strong>」是可比的事嗎？</p>
 </blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p>以上三個看似「常識性」的問題，實則已有多重（且不同的）心智能力交織。</p>
+<p>準備好，以水火為例，展開心智能力的旅程，見證人類如何 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞。</p>
+<section id="關於水火" class="level2">
+<h2 class="anchored" data-anchor-id="關於水火">💧🔥關於水火</h2>
+<p>關於「<strong>水</strong>」與「<strong>火</strong>」：</p>
 <ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
-</li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
+<li>🥶🥵 你的「反應型」身體感覺是啥？</li>
+<li>🌬️🌞 你的「情緒－關係」情緒記憶是啥？</li>
+<li>💧🔥 你的（化學知識）「反思－符號」告訴你，「<strong>水</strong>」與「<strong>火</strong>」又是什麼？</li>
 </ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
+<p>再想想人類社會演化中： * 🪵🔥 會<strong>用</strong>「火」的神話故事與實際技能？ * 🌊🏗️ 想<strong>治</strong>「水」的神話故事與當代工程？ * 🚂💨 「水火交融」的<strong>工業革命</strong>，怎麼構建現代都市文明？</p>
+<p>思考並做筆記一下，以上六個問題，你能❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞出什麼答案呢？</p>
 </section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
+<section id="心智能力" class="level2">
+<h2 class="anchored" data-anchor-id="心智能力">🧠心智能力🐸🐘🧘</h2>
+<p>看到「水」與「火」的不同面向，我們已經在不知不覺間調動了多層次的心智資源——從<strong>本能反應</strong>，到<strong>情感記憶</strong>，再到<strong>符號化</strong>的<strong>知識推理</strong>。</p>
 <ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
-</ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
+<li>🐸⚡ 🙶反應型🙷心智：對「水」的觸感與溫度變化、對「火」的熱與光的本能避讓，屬於快速、無需深思的生理反射。</li>
+<li>🐘💞 🙶情緒~關係🙷心智：「<strong>水火</strong>無情」、「<strong>水</strong>深<strong>火</strong>熱」、「如人飲<strong>水</strong>」、「打的<strong>火</strong>熱」等語言與情境，喚起情感記憶與社會互動經驗。</li>
+<li>🧘☸️ 🙶反思⫘符號🙷心智：「水」是 <span class="math inline">\(H_{2}O\)</span>，「火」是一種燃燒現象，需氧氣 <span class="math inline">\(O_{2}\)</span>，並可進一步推論其物理與化學條件。</li>
 </ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
-<ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
-</ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
+<p>這些層次並非彼此孤立，而是交織成一套協同運作的心智能力系統。</p>
+<p>為了更清楚地分析與應用這些能力，我們可以將其抽象化、分類化，形成一個可對照人類與人工智慧的認知框架。</p>
+<p>正是這些認知框架，讓❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞的經驗法則，提升到更高層次的認知能力。</p>
+<div id="imp-tri-cognitive-model" class="callout callout-style-default callout-important callout-titled" title="🧠 ⟨**三重心智**⟩ " open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
-<ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
-</ul>
-<p>🎲🏁</p>
-</div>
-</div>
-<hr>
-</section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
-<ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
-</ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
+要&nbsp;1: 🧠 ⟨<strong>三重心智</strong>⟩
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+<p>本書原創整合的<strong>心智能力分類</strong>，提供了較細化的名詞«選項»分類起點：</p>
+<ul>
+<li>🐸⚡ 🙶反應型🙷心智：<strong>即時感知與快速反應模組</strong>為主。</li>
+<li>🐘💞 🙶情緒~關係🙷心智 ：<strong>人機互動、情感計算與社會模擬</strong>為主。</li>
+<li>🧘☸️ 🙶反思⫘符號🙷心智 ：<strong>高階推理、規劃、倫理與對齊</strong>為主。</li>
+</ul>
+<p>反思人類的心智活動，依其<strong>處理速度</strong>、<strong>社會功能</strong>與<strong>符號能力</strong>，區分自己和機器的認知能力。</p>
+<p>詳細見<strong>🔖附錄</strong> B. 🧠<a href="./appendix-brain.zh-hant.html#sec-tri-cognitive-model">心智〜 三重心智整合</a>。</p>
+<p>⚡💞☸️</p>
+</div>
+</div>
+</div>
+</section>
+<section id="腦補-知行捷徑" class="level2">
+<h2 class="anchored" data-anchor-id="腦補-知行捷徑">🤯 ❝腦補❞ 知行捷徑</h2>
+<p>❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞（Mental Fill-in），指人類在資訊不完整時，<strong>依賴經驗與想像，自動在腦中填補出完整「情節」或「事實」</strong>的行為。</p>
+<p>它可能是生活中的無數個瞬間：</p>
+<ul>
+<li>💌 伴侶發來一句語氣不明的短信，你心裡已上演：<strong>「他是不是生氣了？是不是在暗示什麼？還是我做錯了什麼？」</strong><br>
+</li>
+<li>📺 當新聞背景音樂襯上旁白提到兩個國家，你情緒已滿：<strong>「啊，又是衝突！一定是那一方挑釁在先，另一方被迫反擊。」</strong>「誰對誰錯，責任在誰」早已有定論。<br>
+</li>
+<li>🎭 當追劇時演到關鍵時刻，你已有期待反轉再反轉：<strong>「這角色一定會背叛！不對，他其實是臥底！等等，難道導演還要再翻一次？」</strong></li>
+</ul>
+<p>這些❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞的心智活動，既是我們的本能，也可能是誤讀現實的源頭。<strong>情緒</strong>、<strong>立場</strong>、<strong>故事</strong>……一切都能補。</p>
+<p>正是這，可以為我們解鎖「人工智慧」（Artificial Intelligence, AI）的理解及創新之鑰：</p>
+<blockquote class="blockquote">
+<p>❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞本能是人類的「<strong>知行捷徑</strong>」（Cognitive shortcuts for actions），依賴經驗與想像，我們在不完整的資訊中填補空缺，勾勒出「事實」，驅使我們「行動」。</p>
+</blockquote>
+</section>
+<section id="應對-ai-問題" class="level2">
+<h2 class="anchored" data-anchor-id="應對-ai-問題">🖼️🙶應對🙷 AI 問題㉄</h2>
+<p>❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞勾勒「事實」，驅使「行動」，如此關照「水」與「火」的心智能力分層，在構建人工智慧系統時，可以用來：</p>
+<ul>
+<li>應對 <strong><a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a></strong>：
+<ul>
+<li>界定 「<strong>感知—決策—行動</strong>」 模式或模組，如
+<ul>
+<li>太暗時要？🔥</li>
+<li>太渴時要？💧</li>
+</ul></li>
+</ul></li>
+<li>應對 <strong><a href="./01-05-Gestalt_Psychology.zh-hant.html">完形心理</a></strong> 提供「<strong>腦補</strong>」的認知捷徑及經驗法則，如 * 🍏🤤「<strong>望梅止渴</strong>」是什麼「<strong>腦補</strong>」？ * ——透過想像與記憶觸發生理反應，彌補當下資源不足的情境。 * 🧨🔥「<strong>星火燎原</strong>」是什麼「<strong>腦補</strong>」？ * ——從微小跡象推測出即將爆發的巨大變化。 * 🌬️👤「<strong>補風捉影</strong>」是什麼「<strong>腦補</strong>」？ * ——在資訊不足時，憑空構建情節與因果。</li>
+<li>應對 <strong><a href="./01-03-Symbol_Grounding_Problem.zh-hant.html">符碼紮根問題</a></strong>，
+<ul>
+<li>依據反應時間尺度，規劃系統的「<strong>資訊需求</strong>及<strong>資源配置</strong>」，如
+<ul>
+<li>引發🚂💨<strong>工業革命</strong> 的「水」與「火」機制是要為啥及如何配置可燃物資源？<br>
+</li>
+<li>支持 🌡️☁️ <strong>超大規模數據中心</strong> 的「水」與「火」，則是指<strong>電力消耗</strong>（火）與<strong>散熱冷卻</strong>（水）的平衡，數據中心如何平衡<strong>算力</strong>（火）與<strong>冷卻</strong>（水）的需求，規劃其<strong>極致規模部署</strong>時<strong>計算資源</strong>與<strong>能源消耗</strong>，確保穩定性與永續性？</li>
+<li>支撐 🏭🤖 <a href="./08----embodied_ai.zh-hant.html">暗工廠</a> 的「水」與「火」，分別指<strong>自動化運行</strong>（水般持續流動）及<strong>能源供應</strong>（火）與的協同，實現<strong>高度自主化</strong>、<strong>無需人類干預</strong>的閉環生產 ？</li>
+<li>展望 🌐 <strong>具身 AI 與智慧城市</strong> 的「水」與「火」，則將延伸到<strong>能源網格</strong>（火）與<strong>社會基礎設施</strong>（水代表的循環資源）的整合，要如何協同配置資源？</li>
+</ul></li>
+</ul></li>
+<li>應對 <strong><a href="./01-06-Alignment_Control_Problem.zh-hant.html">對齊與控制問題</a></strong>
+<ul>
+<li>設計<strong>倫理或行為約束</strong>，以維持可控性與可預測性。
+<ul>
+<li>🥸🤖 智能<strong>國師</strong> 真能檢視一國的<strong>能源組合</strong>（energy mix），控制<span class="math inline">\(CO_{2}\)</span>排放，改變<strong>國運</strong>嗎？</li>
+<li>🥳👨‍👩‍👧‍👦 智能<strong>紅娘</strong> 真能改變<strong>人生</strong>，甚至改變一國或一社群的出生率？</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>以上應對 <a href="./01----problematics.zh-hant.html">AI 問題意識</a> 時，關於如 <strong>時間空間尺度</strong> 及 人類 <strong>社會-技術</strong>規模化尺度 等等問題已浮現。</p>
+<p>人類的❝腦補❞心智能力，可以說是一種有用的「<strong>知行捷徑</strong>」，還可以靠經驗及學習打磨，而「人工智慧」的基礎問題，如上述的 <strong><a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a></strong>、<strong><a href="./01-05-Gestalt_Psychology.zh-hant.html">完形心理</a></strong>、<strong><a href="./01-03-Symbol_Grounding_Problem.zh-hant.html">符碼紮根問題</a></strong> 等等，正是這理解並仿擬人類❝腦補❞經驗的經驗與工程學科。</p>
+</section>
+<section id="問題還是學科" class="level2">
+<h2 class="anchored" data-anchor-id="問題還是學科">㉄問題還是學科🤖</h2>
+<p>人工智慧（AI）是個獨立學科，也像是<strong>吸引跨領域的一組問題</strong>——類似於<strong>核子工程</strong>——需要各領域知識的源頭活水，儘管 AI 在電機及電腦領域也被視為一門獨立學科領域，而 AI 工程則以業界<strong>落地實踐</strong>為核心。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 21%">
+<col style="width: 31%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">類別</th>
+<th style="text-align: center;">領域</th>
+<th style="text-align: center;">核心焦點</th>
+<th>應用焦點</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>應用領域</strong></td>
+<td style="text-align: center;"><strong>核子工程<br> (Nuclear Engineering)</strong></td>
+<td style="text-align: center;">核分裂和核融合過程應用，常用於發電。<br>（💡 專注於高風險應用領域。）</td>
+<td>問題是<strong>現實世界中的系統</strong>（例如：設計安全的反應爐、管理廢料、確保核不擴散），這需要物理學、化學、材料科學、機械工程和國際政策方面的專業知識。</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>基礎學科</strong></td>
+<td style="text-align: center;"><strong>人工智慧<br> (Artificial Intelligence, AI)</strong></td>
+<td style="text-align: center;">建立能夠執行通常需要人類智慧才能完成任務的系統。<br>（📚 專注於理論與演算法的通用性，跨越應用領域。）</td>
+<td>問題是<strong>廣泛的現實應用</strong>（例如：醫療診斷、自動駕駛車輛、語言處理、戰略穩定性），這需要電腦科學、倫理學、認知科學、政治學和領域特定知識（如醫學或法律）方面的專業知識。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>應用學科</strong></td>
+<td style="text-align: center;"><strong>AI 工程<br> (AI Engineering)</strong></td>
+<td style="text-align: center;">設計、開發和部署 AI 系統，以可靠、可擴展和倫理方式解決實際問題。<br>（🛠️ 從實驗室到市場的工程化、運營化挑戰。）</td>
+<td>問題是<strong>將 AI 投入運作</strong>（例如：模型版本控制、MLOps、穩健評估、管理延遲、確保數據品質），需要結合電腦科學、軟體工程和機器學習的原理。</td>
+</tr>
+</tbody>
+</table>
+<p>在學術和產業界，AI 同時是：</p>
+<ol type="1">
+<li>專注於理論的<strong>基礎學科</strong>。<br>
+</li>
+<li>🧭 應用於<strong>跨領域問題集</strong>的高風險<strong>多學科應用</strong>跨領域，類似於核子工程。強調 AI 的關鍵挑戰（認知能力、安全性、倫理、監管）的解決必須是多學科的合作。**</li>
+<li>🏗️「<strong>AI 工程</strong>」的出現強化「跨領域問題集」的觀點，但重點在於<strong>系統可靠性</strong>和<strong>運營化</strong>，如同時理解 ML 模型的工作方式（資料科學）和大規模軟體系統的運營挑戰（軟體工程）。</li>
+</ol>
+<p>因此，本書 <a href="./01----problematics.zh-hant.html">第壹篇 ㉄</a> 以 AI 問題意識開始。</p>
+</section>
+<section id="拆用本書" class="level2">
+<h2 class="anchored" data-anchor-id="拆用本書">🌌拆用本書📑</h2>
+<p>在進入各篇章之前，本書提供一個「拆用」導引，幫助讀者理解如何靈活運用全書。</p>
+<p>這裡的「拆用」有兩層意涵：一方面是把書本視為一張知識地圖，可以依經緯等方式來定位與導航（本書🌌<a href="./appendix-mindmap.zh-hant.html">心智圖</a> «AI 知識鷹架»）；另一方面則是把書本當作一套可組裝的工具箱，讀者可以依需求拆解、重組，形成自己的知行鷹架（💪<a href="./appendix-action.zh-hant.html">行動</a> 🧠<a href="./appendix-brain.zh-hant.html">心智</a>🪜<a href="./appendix-cognitive_capacity.zh-hant.html">能力</a> «知行鷹架»<a href="notes-constructive_fill-in.zh-hant">操練手冊</a>）。</p>
+<p>以下「經度和緯度」，將分別提供不同的閱讀與應用視角。</p>
+<div id="imp-book-navigation" class="callout callout-style-default callout-important callout-titled" title="🌐🧭 本書 **經緯** 導航 " open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+要&nbsp;2: 🌐🧭 本書 <strong>經緯</strong> 導航
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>本書10<strong>篇</strong>及各<strong>章</strong>，適合讀者按圖拆解應用。</p>
+<ul>
+<li><strong>X</strong> 軸 <strong>經度</strong>：《<a href="./06----analytics_decisions.zh-hant.html">分析與決策 6 點</a>》<sup>📍<a href="06----analytics_decisions.zh-hant.html#fig-mindmap-06" class="quarto-xref">圖&nbsp;<span>A</span></a></sup>
+<ul>
+<li>含有融合『<strong><a href="./06-05-analysis_generative.zh-hant.html">生成式 AI</a></strong>』及『<strong><a href="./06-06-decision_making_algorithm.zh-hant.html">決策演算法</a></strong>』的創新發散及收歛 <strong>迴圈和弧線</strong></li>
+</ul></li>
+<li><strong>Y</strong> 軸 <strong>緯度</strong>：分選《<a href="./05----ai_orientations.zh-hant.html">☸ AI 5 大導向</a>》<sup>📍 <a href="05----ai_orientations.zh-hant.html#fig-mindmap-05" class="quarto-xref">圖&nbsp;<span>A</span></a></sup>
+<ul>
+<li>還有《<a href="./01----problematics.zh-hant.html">AI 問題意識</a> 》<sup>📍<a href="01----problematics.zh-hant.html#fig-mindmap-01" class="quarto-xref">圖&nbsp;<span>A</span></a> </sup>、《<a href="./02----schools_paradigms.zh-hant.html">流派與主義</a> 》<sup>📍 <a href="02----schools_paradigms.zh-hant.html#fig-mindmap-02" class="quarto-xref">圖&nbsp;<span>A</span></a></sup> 、等切入點；</li>
+</ul></li>
+<li><strong>Z</strong> + 軸 <strong>能力階梯</strong>、歷史發展等：助力讀者從能力逐級提升。</li>
 </ul>
 </div>
 </div>
 </div>
 </section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
-
-
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
+<section id="經度和緯度" class="level2">
+<h2 class="anchored" data-anchor-id="經度和緯度">🧭經度和緯度🔗</h2>
+<p>快速掌握本書主要知識點，可從本書🌌<a href="./appendix-mindmap.zh-hant.html">心智圖</a> 開始，縱向（«數據驅動決策»過程）與橫向（不同問題意識、流派與主義、導向等等）開展定位：</p>
+<ul>
+<li><strong>X</strong> 軸 <strong>經度</strong>~說明«數據驅動決策»過程，見《<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> 分析與決策 6 點》<sup>📍<a href="06----analytics_decisions.zh-hant.html#fig-mindmap-06" class="quarto-xref">圖&nbsp;<span>A</span></a></sup> 結合 ✍️💡 布魯姆 6 能力：
+<ul>
+<li>🤓📘 從大千世界中，進行『<strong><a href="./06-04-analysis_descriptive.zh-hant.html">描述型分析</a></strong>』，以求<strong>當下</strong>相關之«<strong>記憶</strong>»框定；</li>
+<li>😷🩺 在相關記憶中，進行『<strong><a href="./06-01-analysis_diagnostic.zh-hant.html">診斷型分析</a></strong>』，以求<strong>因子</strong>相關之«<strong>理解</strong>»匡謬；</li>
+<li>🤠🔮 在相關因子中，進行『<strong><a href="./06-02-analysis_predictive.zh-hant.html">預測型分析</a></strong>』，以求<strong>模型</strong>知識之«<strong>應用</strong>»匡助；</li>
+<li>🧐🧭 在知識模型中，進行『<strong><a href="./06-03-analysis_prescriptive.zh-hant.html">指導型分析</a></strong>』，以求<strong>系統</strong>智能之«<strong>評估</strong>»及«<strong>創造</strong>»；</li>
+<li>除了以上 4 點 分析學核心主軸，有創新的發散及收歛輔線：
+<ul>
+<li>🙀🎨 從眾智大模型中，利用『<strong><a href="./06-05-analysis_generative.zh-hant.html">生成式 AI</a></strong>』，以求«<strong>選項</strong>»的各種可能的創新發散；</li>
+<li>😽🪄 從發散各選項中，利用『<strong><a href="./06-06-decision_making_algorithm.zh-hant.html">決策演算法</a></strong>』，以求«<strong>選擇</strong>»的自主決策判斷的創新收歛；</li>
+</ul></li>
+</ul></li>
+<li><strong>Y</strong> 軸 <strong>緯度</strong>~說明不同問題意識、流派等，有多篇進入點，見：
+<ul>
+<li>《<a href="./01----problematics.zh-hant.html">第壹篇 ㉄</a> AI 問題意識》<sup>📍<a href="01----problematics.zh-hant.html#fig-mindmap-01" class="quarto-xref">圖&nbsp;<span>A</span></a></sup></li>
+<li>《<a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a> 區分 AI 5 大導向》 <sup>📍<a href="05----ai_orientations.zh-hant.html#fig-mindmap-05" class="quarto-xref">圖&nbsp;<span>A</span></a></sup></li>
+<li>《<a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a> 流派與主義》 <sup>📍<a href="02----schools_paradigms.zh-hant.html#fig-mindmap-02" class="quarto-xref">圖&nbsp;<span>A</span></a></sup></li>
+<li>《<a href="./03----symbolic_ai.zh-hant.html">第參篇 🏛️</a> 「符號流」AI》 <sup>📍<a href="03----symbolic_ai.zh-hant.html#fig-mindmap-03" class="quarto-xref">圖&nbsp;<span>A</span></a></sup></li>
+<li>《<a href="./04----statistical_ai.zh-hant.html">第肆篇 🌀</a> 「統計流」AI》 <sup>📍<a href="04----statistical_ai.zh-hant.html#fig-mindmap-04" class="quarto-xref">圖&nbsp;<span>A</span></a></sup></li>
+</ul></li>
+</ul>
+<p>餘下 6 篇，包括以下內容，見：</p>
+<ul>
+<li>《<a href="./07----game_ai.zh-hant.html">第柒篇 🏆</a> 「博弈派」AI》 <sup>📍<a href="07----game_ai.zh-hant.html#fig-mindmap-07" class="quarto-xref">圖&nbsp;<span>A</span></a></sup></li>
+<li>《<a href="./08----embodied_ai.zh-hant.html">第捌篇 🦾</a> 「具身派」AI》 <sup>📍<a href="08----embodied_ai.zh-hant.html#fig-mindmap-08" class="quarto-xref">圖&nbsp;<span>A</span></a></sup></li>
+<li>《<a href="./09----ai_math.zh-hant.html">第玖篇 📐</a> AI用到的數學》 <sup>📍<a href="09----ai_math.zh-hant.html#fig-mindmap-09" class="quarto-xref">圖&nbsp;<span>A</span></a></sup></li>
+<li>《<a href="./10----ai_engineering.zh-hant.html">第拾篇 🌉</a> AI工程》 <sup>📍<a href="10----ai_engineering.zh-hant.html#fig-mindmap-10" class="quarto-xref">圖&nbsp;<span>A</span></a></sup></li>
+</ul>
+<p>可以說本書🌌<a href="./appendix-mindmap.zh-hant.html">心智圖</a>與📖<a href="./toc.zh-hant.html">目錄</a>是作者為讀者搭建的«AI 知識鷹架»初稿，旨在幫助讀者快速掌握學習方向。</p>
+<div id="imp-mindmap-fill-in" class="callout callout-style-default callout-important callout-titled" title="🧭 心智圖 **導航** 交互功能">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+要&nbsp;3: 🧭 心智圖 <strong>導航</strong> 交互功能
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>本書🌌<a href="./appendix-mindmap.zh-hant.html">心智圖</a> 精簡龐雜知識為網格，不僅為讀者🧭 <strong>導航</strong> 智能生成過程，也幫助區分不同技術與應用場景：</p>
+<ul>
+<li>各知識點<strong>節點</strong>方塊的則內嵌🔗<strong>超鏈結</strong>，讀者可藉此快速跳轉、比對和進行交叉參照，</li>
+<li>各<strong>連線</strong>說明知識點間的關係；</li>
+<li>其中部份條目還有歷史回顧的時間尺度。</li>
+</ul>
 </div>
 </div>
 </section>
+<section id="發散及收歛" class="level2">
+<h2 class="anchored" data-anchor-id="發散及收歛">🎍發散及收歛🎋</h2>
+<p>經度與緯度的定位，為的是<strong>化 AI 知識為創新行動</strong>：如何拆解知識、發散思路、在有限資源下收歛創新想法？</p>
+<ul>
+<li>🔗 <strong>探究概念關聯</strong>：透過🌌心智圖瀏覽（其中各節點皆有可點擊的超鏈結），以及各條目的文內／文後超鏈結，讀者能快速跳轉、比對，建立跨章節的知識脈絡。</li>
+<li>📚 <strong>學習整套系統</strong>：依循十篇總述，按心智圖的經緯來瀏覽，逐步區辨不同的問題意識、流派、導向與應用，為未來的整合奠基。</li>
+<li>🛠️ <strong>創造智能系統</strong>：讀者可依需求構建自己的「<strong>知行鷹架</strong>」🟰 動詞 ➕ 名詞，先列出「<strong>行動</strong>」動詞（要做、可做、不必做），再分類「<strong>知識</strong>」名詞（需知、可知、暫不知），如此交織成欄例，開始🙶補全🙷並逐步鍛鍊。</li>
+</ul>
+<p>🌱 總之，這一小節的任務是讓讀者把「導航」與「操練」結合起來： - 經度與緯度 → 幫助定位； - 拆用、發散、及收歛 → 幫助行動。</p>
+<p>這樣，讀者便能帶著一張知識地圖與一套操練手冊。</p>
 </section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
+<section id="從腦補到補全" class="level2">
+<h2 class="anchored" data-anchor-id="從腦補到補全">🪜從❝腦補❞到🙶補全🙷🌌</h2>
+<p>本篇導論說明❝腦補❞及AI，介紹這本工具書的使用方式，讀者可以用搜尋、心智圖瀏覽等方式快速查找資訊，本書的系統性編排能提供清晰的知識索引與參照價值。</p>
+<p>下篇📑筆記《<a href="notes-constructive_fill-in.zh-hant">🙶補全🙷 知行合一</a>》則說明🙶補全🙷的實踐，讀者展開屬於自己的«<strong>知行鷹架</strong>»，即可交織成欄例，開始有«<strong>選項</strong>»«<strong>選擇</strong>»取捨後的自己的操作型知識體係，逐步拓展行動與知識的邊界。</p>
+<p>然而，若讀者願意投入更多心力，本書更是一套交織的系統：透過一篇導論、一篇筆記、多篇附錄的結構，幫助讀者探究方法。相關附錄的《💪<a href="./appendix-action.zh-hant.html">行動</a> 》、《🧠<a href="./appendix-brain.zh-hant.html">心智</a>》、《🪜<a href="./appendix-cognitive_capacity.zh-hant.html">能力</a> 》等篇是作者為讀者整理的«<strong>知行鷹架</strong>»操練手冊！</p>
+<div id="tip-mental-fill-in" class="callout callout-style-default callout-tip callout-titled" title="💬知行捷徑 小貼士：**🌟TLDR**">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+提示&nbsp;1: 💬知行捷徑 小貼士：<strong>🌟TLDR</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>🌟TLDR 言簡意賅</strong>：本書是您在 AI 時代的<strong>知識地圖</strong>與<strong>行動指南</strong>。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 33%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>模式</th>
+<th>目的</th>
+<th>關鍵操作</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>🔍 快速檢索</strong></td>
+<td>查找單點資訊或解釋。</td>
+<td>利用🔍<strong>搜尋功能</strong>與📚*左側欄目**快速瀏覽。</td>
+</tr>
+<tr class="even">
+<td><strong>🔗 概念串聯</strong></td>
+<td>建立跨領域的知識脈絡。</td>
+<td>透過<strong>🌌心智圖</strong>的<strong>超鏈結節點</strong>進行比對和<strong>交叉參照</strong>。</td>
+</tr>
+<tr class="odd">
+<td><strong>📚 系統學習</strong></td>
+<td>掌握 AI 的流派、問題與應用。</td>
+<td>依循<strong>十篇</strong>總述，按心智圖🧭<strong>經緯</strong>逐步區辨與整合。</td>
+</tr>
+<tr class="even">
+<td><strong>🏗️ 行動實踐</strong></td>
+<td>構建個人化的 AI 系統 <strong>知行鷹架</strong>。</td>
+<td>列出「<strong>行動</strong>」（動詞）與「<strong>知識</strong>」（名詞）並<strong>交織</strong>成欄例，逐步<strong>🙶補全🙷</strong>。</td>
+</tr>
+</tbody>
+</table>
+<p>總之，本書旨在助讀者將人類的❝<strong>腦補</strong>❞心智能力，轉化為<strong>系統性、有意識</strong>的🙶<strong>補全</strong>🙷創新實踐。</p>
+<p>🦾💪🔥💧</p>
+</div>
+</div>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1525,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./index.zh-hant.html" class="pagination-link" aria-label="🤗 序言">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">🤗 序言</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./notes-constructive_fill-in.zh-hant.html" class="pagination-link" aria-label="📑筆記~🙶補全🙷知行合一">
+        <span class="nav-page-text">📑筆記~🙶補全🙷知行合一</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1543,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/notes-mental_fill-in.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

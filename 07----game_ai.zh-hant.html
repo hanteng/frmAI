@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>🏆「博弈派」AI – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -51,7 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./07-01-ieee_micromouse.zh-hant.html" rel="next">
+<link href="./06-06-decision_making_algorithm.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +105,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07----game_ai.zh-hant.html">🏆「博弈派」AI</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +171,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -495,13 +495,13 @@ div.csl-indent {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./07----game_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
+            <a href="./07----game_ai.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">🏆「博弈派」AI</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./07-01-ieee_micromouse.zh-hant.html" class="sidebar-item-text sidebar-link">
@@ -768,41 +768,32 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
+  <li><a href="#博弈派-ai-概論" id="toc-博弈派-ai-概論" class="nav-link active" data-scroll-target="#博弈派-ai-概論">🏆博弈派 AI 概論🎲</a></li>
+  <li><a href="#博弈派-ai-簡史" id="toc-博弈派-ai-簡史" class="nav-link" data-scroll-target="#博弈派-ai-簡史">🏆博弈派 AI 簡史📜</a></li>
+  <li><a href="#博弈派-ai-新論" id="toc-博弈派-ai-新論" class="nav-link" data-scroll-target="#博弈派-ai-新論">🏆博弈派 AI 新論🏗️</a></li>
+  <li><a href="#對照解讀" id="toc-對照解讀" class="nav-link" data-scroll-target="#對照解讀">🏆對照解讀✨</a></li>
+  <li><a href="#關鍵技術構成" id="toc-關鍵技術構成" class="nav-link" data-scroll-target="#關鍵技術構成">🏆關鍵技術構成🔑</a></li>
+  <li><a href="#內容大綱" id="toc-內容大綱" class="nav-link" data-scroll-target="#內容大綱">🪴 內容大綱</a>
   <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
+  <li><a href="#內容核心條目" id="toc-內容核心條目" class="nav-link" data-scroll-target="#內容核心條目">🌰 內容：核心條目</a></li>
+  <li><a href="#延伸智能軍師" id="toc-延伸智能軍師" class="nav-link" data-scroll-target="#延伸智能軍師">📦 延伸：智能軍師</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/07----game_ai.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title">🏆「博弈派」AI</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +803,340 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
 <blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
+<p>「<strong>若世事皆局，何處棲慧根？何以生智源？</strong>」〜「博弈派」AI</p>
 </blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
+<p><code>博弈</code>是人類，更是生物在應對環境「<strong>不確定性</strong>」時必備的認知能力。</p>
+<p>隨著各類電子遊戲與數位模擬的發展，現代人工智慧的<code>博弈</code>應用已不僅限於數字符碼世界。</p>
+<div id="nte-game-ai-eg" class="callout callout-style-default callout-tip callout-titled" title="🏆 AI 的`博弈`例子 （點開⏵可揭露細節）">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
-</li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
-</ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
-</section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
-<ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
-</ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
-</ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
-<ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
-</ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
-<ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
-</ul>
-<p>🎲🏁</p>
-</div>
-</div>
-<hr>
-</section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
-<ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
-</ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
+註釋&nbsp;A: 🏆 AI 的<code>博弈</code>例子 （點開⏵可揭露細節）
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+<p><code>博弈</code>也闡釋 <strong>遊戲</strong> 與 <strong>人工智慧發展史</strong> 之間的交織：</p>
+<ul>
+<li>🎭🗪 首先，<a href="01-01-Turing_Test.zh-hant">圖靈測試</a> 是一場「模仿<strong>遊戲</strong>」。<br>
+</li>
+<li>👁️⯊ 其次，<a href="01-05-Gestalt_Psychology.zh-hant">完形心理</a> 展現了「生存<strong>賽局</strong>」中含對賭元素的判斷捷徑。<br>
+</li>
+<li>🎲🌿 再來，🌀「統計流 AI」的 <a href="04-01-probabilistic_association.zh-hant">機率性關聯</a> 將 <code>博弈</code> 的「<strong>不確定性</strong>」數學化。
+<ul>
+<li>在二戰期間的 <strong>曼哈頓計畫</strong> 中，<a href="09-06-monte_carlo_tree_search.zh-hant">蒙地卡羅方法</a>（命名源自摩納哥<strong>賭場</strong>）與 <a href="./09-05-markov_modeling.zh-hant.html">馬可夫模型</a> 等創新開展，不僅推動了科學計算，也深刻影響了現代遊戲開發。這些方法在<strong>人工智慧</strong>、<strong>遊戲設計</strong>與<strong>遊戲測試</strong>等領域，創造了更具動態性、智慧性與真實感的體驗。<br>
+</li>
+</ul></li>
+<li>🗫🎲 再來，因 <a href="./02-07-large_language_models.zh-hant.html">大語言模型</a> 的「討好用戶」特性，<a href="./01-07-Language_Games.zh-hant.html">語言賽局</a> 成為現象級的當代事實。<br>
+</li>
+<li>🎲🏆 最終，正是本篇將依序探討的「博弈派」AI 實例。</li>
 </ul>
 </div>
 </div>
 </div>
+<p>由此可見，<code>「博弈派」AI</code>&nbsp;不僅是技術分支，更是人工智慧發展中回應「如何讓智能<strong>參與</strong>世界<strong>賽局</strong>」的核心答案。</p>
+<div id="nte-game-ai" class="callout callout-style-default callout-note callout-titled" title="🏆什麼是「博弈派」AI？">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+註釋&nbsp;B: 🏆什麼是「博弈派」AI？
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>「博弈派」AI</code> 指任何涉及到 <code>博弈論</code>（Game Theory）或 <code>賽局</code> 觀點的自動決策或智能系統，包括但不限於數字遊戲或模擬。</p>
+<p><strong>🏆「博弈派」AI 三句箴言</strong>：（點開⏵可揭露細節）</p>
+<details>
+<summary>
+⚔️ 「<strong>知彼知己，百局不殆</strong>」 〜 對手建模，自我調整，與自身互博。
+</summary>
+這對應到現代 AI 的 <strong>對手建模</strong>，<strong>自身互博</strong> 與 <strong>多智能體強化學習</strong>，例如 AlphaGo 的策略設計 <span class="citation" data-cites="Malinovskiy2025-advanced-game-theoretic-frameworks">(<a href="references.zh-hant.html#ref-Malinovskiy2025-advanced-game-theoretic-frameworks" role="doc-biblioref">Malinovskiy 2025</a>)</span>。
+</details>
+<details>
+<summary>
+🤝 「<strong>世事如局，博弈生智</strong>」 〜 世界即賽局，智慧由此生。
+</summary>
+這呼應了 <strong>語言遊戲</strong> 與 <strong>社會互動框架</strong>，LLM 的行為深受語境<strong>框架</strong>影響 <span class="citation" data-cites="lore2024">(<a href="references.zh-hant.html#ref-lore2024" role="doc-biblioref">Lorè 和 Heydari 2024</a>)</span>。
+</details>
+<details>
+<summary>
+🌀 「<strong>局中有道，道生智能</strong>」 〜 從賽局中提煉 AI 的核心智慧。
+</summary>
+這正是 <strong>博弈派 AI</strong> 的核心之一：從 報酬結構 中抽取規則，並利用 <strong>LLM‑智能體</strong> 的 <strong>湧現</strong> 等行為參與賽局 <span class="citation" data-cites="Mensfelt2024-autoformalizing-game-theoretic-scenarios Mao2025-llm-meet-game-theory">(<a href="references.zh-hant.html#ref-Mensfelt2024-autoformalizing-game-theoretic-scenarios" role="doc-biblioref">Mensfelt, Stathis, 和 Trencsenyi, 不详</a>; <a href="references.zh-hant.html#ref-Mao2025-llm-meet-game-theory" role="doc-biblioref">Mao 等 2023</a>)</span>。
+</details>
+<p>收斂三句箴言「<strong>妙問</strong>」成長偈：</p>
+<ul>
+<li>🪷「<strong>本來無勝負，何處論成敗？</strong>」 〜 智慧，不止於勝負之「<strong>賽局</strong>」，更在於個體與世界的安頓之「<strong>格局</strong>」。</li>
+</ul>
+<p>參照 <strong><a href="./appendix-mindmap.zh-hant.html">🔖附錄🌌 心智圖</a></strong> 🎲🏆</p>
+</div>
+</div>
+<div id="fig-mindmap-07" class="part quarto-float quarto-figure quarto-figure-center anchored" data-caption="聚焦 🏆「博弈派」AI  心智圖">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mindmap-07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" class="flowchart mermaid-js" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1" xmlns:ev="http://www.w3.org/2001/xml-events">
+<g id="viewport-20250923180406308" class="svg-pan-zoom_viewport" transform="matrix(5,0,0,5,-500,-480)" style="transform: matrix(5,0,0,5,-500,-480);"> <image href="images/mind_map.svg"></image></g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-mindmap-07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+圖&nbsp;A
+</figcaption>
+</figure>
+</div>
+<hr>
+<section id="博弈派-ai-概論" class="level2">
+<h2 class="anchored" data-anchor-id="博弈派-ai-概論">🏆博弈派 AI 概論🎲</h2>
+<p><code>「博弈派」AI</code>（Game AI）狹義上指專注於各類競技、遊戲與模擬環境中，透過策略規劃、對手建模與決策優化，達到或超越人類水準的智能系統。</p>
+<p>它不僅是娛樂或比賽的工具，更是人工智慧研究的重要試驗場；遊戲環境通常具備「<strong>明確規則</strong>」、「<strong>可重複實驗</strong>」、「<strong>可量化評估</strong>」特性，使其成為驗證<strong>演算法</strong>與系統設計的理想平台。</p>
+<p>AI 在遊戲領域的突破，往往預示在其他複雜任務上的潛力。核心能力包括：</p>
+<ul>
+<li>⤣⤤🗺️ <strong>策略規劃</strong>：在有限時間與資源下選擇最優行動序列，完成 <a href="08-06-robot_tasks_and_goals.zh-hant">任務與目標規劃</a>，並運用 <a href="09-06-monte_carlo_tree_search.zh-hant">蒙地卡羅樹搜尋</a> 等演算法。</li>
+<li>🎲🛞 <strong>不確定性處理</strong>：在隱藏資訊或隨機事件下做出合理決策。</li>
+<li>🗺️⛶✜ <strong>世界、情境、對手與隊友建模</strong>：對「個體—脈絡—世界」進行建模與框定，識別不確定性並生成 <a href="./06----analytics_decisions.zh-hant.html">❖分析與決策</a> 以調整策略。</li>
+<li>🧮⚔️🤝 <strong>多智能體協作與競爭</strong>：在團隊或對抗環境中協調行動，包括運用 <a href="09-08-multi_agent_payoff_matrix.zh-hant">多智能體報酬矩陣</a> 等數學工具。</li>
+</ul>
+<p>可以說，<code>「博弈派」AI</code> 是人工智慧的「試煉場」，推動演算法、硬體與系統協同進化；從迷宮到棋盤，從虛擬戰場到現實應用，展現了 AI 在策略性思考、協作與創新上的巨大潛能。</p>
+<hr>
 </section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
+<section id="博弈派-ai-簡史" class="level2">
+<h2 class="anchored" data-anchor-id="博弈派-ai-簡史">🏆博弈派 AI 簡史📜</h2>
+<p>以下按本篇各條目，簡述 <code>「博弈派」AI</code> 的發展進程：</p>
+<ul>
+<li>🏆🐭🗺️ <a href="./07-01-ieee_micromouse.zh-hant.html">IEEE電子老鼠走迷宮</a>：自 <strong>1977 年</strong>起，作為微型機器人比賽，驗證路徑規劃與感測器融合技術。</li>
+<li>🏆🕹️👾 <a href="./07-02-atari_dqn.zh-hant.html">Atari DQN</a>：<strong>2013 年</strong>，DeepMind 以深度 Q 網路在多款 Atari 遊戲中達到人類水準，開啟深度強化學習新篇章。</li>
+<li>🏆⚪⚫ <a href="./07-03-alphago.zh-hant.html">AlphaGo 圍棋</a>：<strong>2016 年</strong>，以深度神經網路與蒙地卡羅樹搜尋結合，擊敗世界冠軍李世乭。</li>
+<li>🏆🃏💰 <a href="./07-04-poker_ai.zh-hant.html">撲克 AI</a>：<strong>2017–2019 年</strong>，在無限注德州撲克中擊敗頂尖職業選手，處理不完全資訊賽局的里程碑。</li>
+<li>🏆🧙‍♂🥷 <a href="./07-05-openai_five.zh-hant.html">OpenAI Five</a>：<strong>2018–2019 年</strong>，在多人即時戰略遊戲（Dota 2）中擊敗世界冠軍隊伍，展現多智能體協作能力。</li>
+<li>🏆🐺🧑‍🌾 <a href="./07-06-werewolf_ai.zh-hant.html">狼人殺 AI</a>：<strong>2020 年</strong>，在語言推理與社交博弈中達到高勝率，凸顯<a href="./01-07-Language_Games.zh-hant.html">語言賽局</a>的挑戰。</li>
+<li>🏆🪖⚔️ <a href="./07-07-battlefield_simulation.zh-hant.html">戰場模擬</a>：自 <strong>2020 年代</strong>起，產業級應用於軍事與災害應變模擬，驗證策略與資源分配演算法。</li>
+</ul>
+<p>從早期的迷宮探索到今日的多智能體戰場模擬，<code>「博弈派」AI</code> 的演進不僅映照了人工智慧技術的躍升，也為跨領域應用鋪設了策略性思考的基礎，為後續「新論」的探討奠定背景。</p>
+<hr>
+</section>
+<section id="博弈派-ai-新論" class="level2">
+<h2 class="anchored" data-anchor-id="博弈派-ai-新論">🏆博弈派 AI 新論🏗️</h2>
+<p>本書採取較寬泛定義，<code>「博弈派」AI</code> 指任何涉及到 <code>博弈論</code>（Game Theory）或<code>賽局</code>觀點的自動決策或智能系統，包括但不限於數字遊戲或模擬。</p>
+<p>這操作性定義的使用主要是尋求啟發，雖然本篇精挑的案例大多數都可以被歸類至<strong>數字遊戲</strong>，但這些精挑的案例主要是來展示<strong>當代人工智慧發展史</strong>和 <code>博弈論</code>，甚至是更廣的 AI <strong>情境主義</strong>（Situated-ism）中任何能利用或運用具體「<strong>賽局或格局</strong>」去進行「<strong>感知、行動與環境</strong>」的智能體導向互動。</p>
+<p>i為了更好的應用及創新，本書進一步主張，這種因 AI <strong>情境主義</strong> 框定的「個體—脈絡—世界」的「感知—行動」時，若可以應用寬泛<code>「博弈派」AI</code>觀點的「<strong>脈絡</strong>—世界」取得啟發，來設計個體或群體<strong>參與</strong>的任何賽局或格局：</p>
+<ul>
+<li><code>「博弈派」AI</code> 克服或應對無所不在、不得不面對的「不確定性」與「未知性」挑戰。</li>
+<li><code>「博弈派」AI</code> 能為 <a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖ 分析與決策</a> 應用並創新<code>博弈論</code>觀點進行「脈絡」或「情境」分析，而所在「世界」存有至少一個以上的具體<code>賽局或格局</code>。</li>
+<li><code>「博弈派」AI</code> 通常突出了以下本書主張的新型態 <a href="./01----problematics.zh-hant.html">㉄ AI 問題意識</a>：
+<ul>
+<li><a href="01-05-Gestalt_Psychology.zh-hant">完形心理</a> 是人類「生存賽局」中含對賭的認知捷徑經驗法測，是基於視覺的認知賭局</li>
+<li><a href="./01-07-Language_Games.zh-hant.html">語言賽局</a> 因 <a href="./02-07-large_language_models.zh-hant.html">大語言模型</a> 的討好用戶，成為現象級當代事實，而 <a href="07-06-werewolf_ai.zh-hant">狼人殺 AI</a> 更凸顯語言類別的認知賭局</li>
+</ul></li>
+</ul>
+<p>可以說，凡存在「認知賽局」——即任何涉及認知能力進行競爭與合作的賽局場景——都能運用 <code>「博弈派」AI</code> 的經驗與教訓。這種跨域適用性在本書其他篇章亦有呼應，例如：</p>
+<ul>
+<li><a href="./09----ai_math.zh-hant.html">第玖篇 📐</a>　AI 用到的數學
+<ul>
+<li>以賽局理論發展的 <strong>9.8</strong> 🧮💰<a href="09-08-multi_agent_payoff_matrix.zh-hant">多智能體報酬矩陣</a>，為多代理系統設計與分析提供數學基礎。</li>
+</ul></li>
+<li><a href="./10----ai_engineering.zh-hant.html">第拾篇 🌉</a>　AI 工程
+<ul>
+<li><a href="10-06-AI_PM.zh-hant.html">AI 產品經理</a> 在開發如 <a href="10-04-retrieval_augmented_generation.zh-hant">知識驅動生成（RAG）</a> 或 <a href="10-05-context_engineering.zh-hant">脈絡工程</a> 的應用時，常能從客戶或使用者所處脈絡中觀察到顯性或隱性的賽局；其「價值」即在於具備能「取勝」的 <code>「博弈派」AI</code>思維。</li>
+</ul></li>
+</ul>
+<p>這些跨篇案例顯示，<code>博弈派 AI</code> 發展啟發的方法論不僅適用於遊戲與模擬，更能滲透至數學建模、產品設計與脈絡分析等多元領域。</p>
+<div id="tip-situatedism-this-book" class="callout callout-style-default callout-tip callout-titled" title="🏮🛣🤖 情境主義">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+提示&nbsp;A: 🏮🛣🤖 情境主義
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>因篇幅限制，本書未系統介紹 <code>情境主義</code>，以下簡要說明：</p>
+<ul>
+<li><code>情境主義</code> 核心主張是，智能是透過「<strong>感知、行動與環境</strong>」之間的即時互動而產生的，以 <code>具身智能</code> 與 <code>情境感知</code> 為其智能基礎。</li>
+<li><code>情境主義</code> 主要影響本書精選說明的，以下兩派 AI 的發展：🏆「博弈派」AI 與 <a href="./08----embodied_ai.zh-hant.html">🦾</a>　「具身派」AI</li>
+</ul>
+<p>🛣🤖</p>
+</div>
+</div>
+</section>
+<section id="對照解讀" class="level2">
+<h2 class="anchored" data-anchor-id="對照解讀">🏆對照解讀✨</h2>
+<p>本書關於 博弈派 vs 具身派 AI 新論如下：</p>
+<ul>
+<li><strong>博弈派</strong>：偏向「外部結構」——強調規則、格局、脈絡，智慧是如何在賽局中運作。</li>
+<li><strong>具身派</strong>：偏向「內部載體」——強調身體、感知、行動，智慧是如何在世界中落地。</li>
+</ul>
+<p>兩者其實互補： - 博弈派提供「局勢與規則」的框架， - 具身派提供「身體與行動」的基礎。</p>
+<p>合起來就是「<strong>身在局中，體道自然</strong>」：AI 既要能在格局中運籌帷幄，也要能在世界中具體行動。</p>
+<p>兩者互補合體的如🦾🧭🎯 <a href="./08-06-robot_tasks_and_goals.zh-hant.html">任務與目標規劃</a> 的應用，以及🏆🐭🗺️ <a href="./07-01-ieee_micromouse.zh-hant.html">IEEE電子老鼠走迷宮</a> 的實例。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 47%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>面向</th>
+<th>🏆 博弈派 AI 新論</th>
+<th>🦾 具身派 AI 新論</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>定義範圍</strong></td>
+<td>涉及 <code>博弈論</code> 或 <code>賽局</code> 視角的自動決策與智能系統，不限於數字遊戲或模擬</td>
+<td>涉及 <code>具身認知</code> 或 <code>實體驅動</code> 的智能系統，包括物理身體、虛擬身體或代理人</td>
+</tr>
+<tr class="even">
+<td><strong>操作性定義</strong></td>
+<td>案例多屬「數字遊戲」，但用來展示 AI 發展史與博弈論在情境主義中的角色</td>
+<td>知識點多屬「機器人學」，但用來展示 AI 發展史與具身認知／實體驅動在情境主義中的角色</td>
+</tr>
+<tr class="odd">
+<td><strong>情境主義關鍵</strong></td>
+<td>強調「<strong>賽局或格局</strong>」作為智能體進行「感知—行動—環境」互動的框架</td>
+<td>強調「<strong>實體間或群體間</strong>」作為智能體進行「感知—行動—環境」互動的載體</td>
+</tr>
+<tr class="even">
+<td><strong>進一步主張</strong></td>
+<td>在「個體—脈絡—世界」的框架下，應用博弈派觀點的「<strong>脈絡—世界</strong>」來設計個體或群體的<strong>參與</strong>（賽局／格局）</td>
+<td>在「個體—脈絡—世界」的框架下，應用具身派觀點的「<strong>個體—脈絡</strong>」來設計個體或群體的<strong>湧現交互</strong></td>
+</tr>
+<tr class="odd">
+<td>創新<strong>隱喻焦點</strong></td>
+<td>「局」：智慧在於如何在格局中定位、博弈、協作或競爭創新</td>
+<td>「體」：智慧在於如何透過身體與環境互動，展現感知與行動的融合創新</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="關鍵技術構成" class="level2">
+<h2 class="anchored" data-anchor-id="關鍵技術構成">🏆關鍵技術構成🔑</h2>
+<p><code>「博弈派」AI</code> 的實現，通常結合以下核心技術模組，每一項都對策略性智能的形成至關重要：</p>
+<ul>
+<li>🗺️⛶ <strong>世界與情境建模</strong>
+<ul>
+<li>建立遊戲環境、規則、地圖與動態元素的數位化表示，使 AI 能理解並預測環境變化。<br>
+</li>
+<li>涉及地圖構建、狀態空間定義、對手與隊友行為建模等方法。<br>
+</li>
+<li>代表案例： <a href="07-01-ieee_micromouse.zh-hant">IEEE 電子老鼠走迷宮</a>、機器人足球等需要即時空間推理與策略規劃的任務。</li>
+</ul></li>
+<li>🎲 <strong>機率與統計建模</strong>
+<ul>
+<li>處理不確定性與隱藏資訊，例如 <a href="07-04-poker_ai.zh-hant">撲克 AI</a> 或 <a href="07-06-werewolf_ai.zh-hant">狼人殺 AI</a> 中的推理。<br>
+</li>
+<li>常用方法包括 <a href="09-03-bayesian_network.zh-hant">貝氏推斷</a>、<a href="09-05-markov_modeling.zh-hant">馬可夫決策過程（MDP）</a>。</li>
+</ul></li>
+<li>♾️ <strong>最佳化與搜尋演算法</strong>
+<ul>
+<li>包括 <a href="09-06-monte_carlo_tree_search.zh-hant">蒙地卡羅樹搜尋</a>（MCTS）、啟發式搜尋與梯度最佳化。<br>
+</li>
+<li>在棋類與策略遊戲中尋找最優解，如 <a href="07-04-poker_ai.zh-hant">撲克 AI</a>。</li>
+</ul></li>
+<li>🧠 <strong>深度強化學習</strong>
+<ul>
+<li>結合 <a href="04-03-neural_networks.zh-hant">深度神經網路</a> 與 <a href="02-06-behaviorism.zh-hant">強化學習</a>，從高維感知輸入（如遊戲畫面）中學習策略。<br>
+</li>
+<li>代表案例： <a href="07-02-atari_dqn.zh-hant">Atari DQN</a>、<a href="07-03-alphago.zh-hant">AlphaGo 圍棋</a>。</li>
+</ul></li>
+<li>🤖 <strong><a href="09-08-multi_agent_payoff_matrix.zh-hant">多智能體系統</a></strong>
+<ul>
+<li>在團隊遊戲或戰場模擬中協調行動與策略，涉及通信、角色分工與資源分配。<br>
+</li>
+<li>代表案例： <a href="07-05-openai_five.zh-hant">OpenAI Five 的 Dota 遊戲</a>、處理複雜戰場感知的 <a href="07-07-battlefield_simulation.zh-hant">戰場模擬</a>。</li>
+</ul></li>
+</ul>
+<p><code>「博弈派」AI</code> 的核心貢獻在於，能對「個體—脈絡—世界」進行精確建模，並在具體賽局中框定可持續優化的策略格局，形成跨環境的「框智」能力。</p>
+</section>
+<section id="內容大綱" class="level2">
+<h2 class="anchored" data-anchor-id="內容大綱">🪴 內容大綱</h2>
+<p>本章精選的案例，展示了 <code>「博弈派」AI</code>從單代理到多代理、從完全資訊到不完全資訊、從回合制到即時制的多元發展路徑，詳見以下核心條目內容。</p>
+<section id="內容核心條目" class="level3">
+<h3 class="anchored" data-anchor-id="內容核心條目">🌰 內容：核心條目</h3>
+<ul>
+<li><strong>7.1</strong> 🏆🐭🗺️ <a href="07-01-ieee_micromouse.zh-hant">IEEE電子老鼠走迷宮</a>（IEEE Micromouse）
+<ul>
+<li>機器人自主探索與最短路徑規劃的經典賽事，考驗感測器融合、地圖構建與路徑搜尋，啟發<a href="08-03-adaptive_robotics.zh-hant">自適應機器人</a>研究與人才培育。</li>
+<li>推動感測與導航研發，促進智慧製造與自動化市場成長。</li>
+</ul></li>
+<li><strong>7.2</strong> 🏆🕹️👾 <a href="07-02-atari_dqn.zh-hant">Atari DQN</a>（Atari DQN）
+<ul>
+<li>深度強化學習在街機遊戲的突破，直接從像素學習控制策略，開啟應用浪潮。</li>
+<li>促進遊戲 AI、廣告推薦與自動化決策商業化，推動雲端與 GPU 需求。</li>
+</ul></li>
+<li><strong>7.3</strong> 🏆⚫⚪ <a href="07-03-alphago.zh-hant">AlphaGo 圍棋</a>（AlphaGo）
+<ul>
+<li>結合策略網路、價值網路與<a href="09-06-monte_carlo_tree_search.zh-hant">蒙地卡羅樹搜尋</a>，在複雜棋類中擊敗世界冠軍。</li>
+<li>引發全球 AI 投資與人才熱潮，促進雲端服務與半導體市場擴張。</li>
+</ul></li>
+<li><strong>7.4</strong> 🏆🃏💰 <a href="07-04-poker_ai.zh-hant">撲克 AI</a>（Libratus / Pluribus）
+<ul>
+<li>在不完全資訊博弈中運用對手建模與均衡策略，精於隱藏資訊推理，達到超人類水準。</li>
+<li>應用於金融風險管理、談判模擬與安全策略分析，提升決策效率與競爭力。</li>
+</ul></li>
+<li><strong>7.5</strong> 🏆🧠⚔️ <a href="07-05-openai_five.zh-hant">OpenAI Five</a>（Dota 2）
+<ul>
+<li>多智能體深度強化學習系統，在 Dota 2 展現團隊協作與戰術靈活性，能即時適應對手策略。</li>
+<li>推動電競、雲端 AI 訓練平台與多代理協作商業化，促進跨產業合作與新創。</li>
+</ul></li>
+<li><strong>7.6</strong> 🏆🐺🧠 <a href="07-06-werewolf_ai.zh-hant">狼人殺 AI</a>（Werewolf AI）
+<ul>
+<li>結合自然語言理解與博弈推理，分析語言線索與行為進行角色判斷，參與社交推理遊戲。</li>
+<li>助推語音助理、客服自動化與內容審核等應用，影響數位互動與線上社群經濟。</li>
+</ul></li>
+<li><strong>7.7</strong> 🏆🪖⚔️ <a href="07-07-battlefield_simulation.zh-hant">戰場模擬</a>（Battlefield Simulation）
+<ul>
+<li>虛擬戰場中進行戰術規劃、資源管理與多單位協同，支援單兵至聯合作戰層級的演練。</li>
+<li>為國防與安全產業核心能力，用於兵棋推演與 ISR 系統，測試戰術、驗證計畫與優化後勤。</li>
+<li>國防科技與民用領域，用於災害應變、基礎設施防護與維和，提升應變能力並降低成本。</li>
+</ul></li>
+</ul>
+</section>
+<section id="延伸智能軍師" class="level3">
+<h3 class="anchored" data-anchor-id="延伸智能軍師">📦 延伸：智能軍師</h3>
+<p><code>博弈派 AI</code> 聚焦多方互動與不確定性下的<strong>智能決策</strong>，可應用在商業、金融、公共政策與國際關係等等。其核心是對「個體—脈絡—世界」建模並框定有效賽局的綜合能力。</p>
+<p>可依自身興趣與需求，<strong>學習</strong>與<strong>操練</strong>搭建<a href="notes-constructive_fill-in.zh-hant">知行鷹架</a>，理解所處世界的「<a href="index.zh-hant">框智格局</a>」。以下為代表性案例：</p>
+<ul>
+<li>⚡🌱🧮 <strong>能源組合與氣候變遷博弈</strong>
+<ul>
+<li>以碳權交易與能源投資為核心的「能源組合遊戲」（Energy Mix Game），在減碳與經濟成長間權衡，成為各國與企業的戰略工具。<br>
+</li>
+<li>2025 年全球碳市場進入關鍵轉折，高完整性碳權需求上升；歐盟 CBAM、美國《通脹削減法案》、中國擴大排放交易至鋼鐵與水泥等重工業，推動企業加速低碳轉型。<br>
+</li>
+<li>產業層面，科技巨頭與中小企業將碳權納入永續策略，投資再生能源、藍碳生態系與碳移除技術，形成跨產業競爭格局，影響能源結構、全球供應鏈與資本流向。</li>
+</ul></li>
+<li>🌏♟🎮 <strong>全球與中等強權的地緣政治戰略博弈</strong>
+<ul>
+<li>在美中競爭加劇、全球秩序碎片化背景下，中等強權（日本、德國、土耳其、印度、澳洲等）透過靈活外交與經貿策略，在大國間尋求戰略縫隙。<br>
+</li>
+<li>2025 年多極化趨勢中，這些國家在關鍵礦產供應、區域安全合作與貿易重組中發揮槓桿作用。</li>
+<li>例如，土耳其在俄烏戰爭期間同時維持與俄、烏對話並促成黑海穀物協議，展現中等強權在特定議題上的博弈能力。此類戰略遊戲影響全球能源安全、供應鏈穩定與國際規則制定。</li>
+</ul></li>
+</ul>
+<hr>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
+<div id="ref-lore2024" class="csl-entry" role="listitem">
+Lorè, Niccolò, 和 Babak Heydari. 2024. <span>《Strategic behavior of large language models and the role of game structure versus contextual framing》</span>. <em>Scientific Reports</em> 14 (1): 12345.
+</div>
+<div id="ref-Malinovskiy2025-advanced-game-theoretic-frameworks" class="csl-entry" role="listitem">
+Malinovskiy, Pavel. 2025. <span>《Advanced Game-Theoretic Frameworks for Multi-Agent AI Challenges: A 2025 Outlook》</span>. <em>arXiv preprint arXiv:2506.17348</em>.
+</div>
+<div id="ref-Mao2025-llm-meet-game-theory" class="csl-entry" role="listitem">
+Mao, Shaoguang, Yuzhe Cai, Yan Xia, Wenshan Wu, Xun Wang, Fengyi Wang, Tao Ge, 和 Furu Wei. 2023. <span>《ALYMPICS: LLM Agents Meet Game Theory–Exploring Strategic Decision-Making with AI Agents》</span>. 收入 <em>arXiv preprint arXiv:2311.03220</em>.
+</div>
+<div id="ref-Mensfelt2024-autoformalizing-game-theoretic-scenarios" class="csl-entry" role="listitem">
+Mensfelt, Agnieszka, Kostas Stathis, 和 Vince Trencsenyi. 不详. <span>《Autoformalizing and simulating game-theoretic scenarios using llm-augmented agents》</span>.
 </div>
 </div>
 </section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1542,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./06-06-decision_making_algorithm.zh-hant.html" class="pagination-link" aria-label="🔁😽🪄 決策演算法">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">🔁😽🪄 決策演算法</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./07-01-ieee_micromouse.zh-hant.html" class="pagination-link" aria-label="🐭🗺️ IEEE電子鼠🏆">
+        <span class="nav-page-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">🐭🗺️ IEEE電子鼠🏆</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1560,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/07----game_ai.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>64&nbsp; 🔗知識驅動生成📝 – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./10-05-context_engineering.zh-hant.html" rel="next">
+<link href="./10-03-prompt_engineering.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./10----ai_engineering.zh-hant.html">🌉 「AI 工程」</a></li><li class="breadcrumb-item"><a href="./10-04-retrieval_augmented_generation.zh-hant.html"><span class="chapter-number">64</span>&nbsp; <span class="chapter-title">🔗知識驅動生成📝</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +151,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -656,11 +636,11 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="./10----ai_engineering.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🌉 「AI 工程」</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./10-01-API_MCP.zh-hant.html" class="sidebar-item-text sidebar-link">
@@ -681,7 +661,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./10-04-retrieval_augmented_generation.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./10-04-retrieval_augmented_generation.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">64</span>&nbsp; <span class="chapter-title">🔗知識驅動生成📝</span></span></a>
   </div>
 </li>
@@ -768,41 +748,31 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
+  <li><a href="#核心概念" id="toc-核心概念" class="nav-link active" data-scroll-target="#核心概念"><span class="header-section-number">64.1</span> 🏷️ 核心概念</a></li>
+  <li><a href="#智能情報助理rag-的知識引擎" id="toc-智能情報助理rag-的知識引擎" class="nav-link" data-scroll-target="#智能情報助理rag-的知識引擎"><span class="header-section-number">64.2</span> 🗺️🤓 智能情報助理：RAG 的知識引擎</a>
   <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
+  <li><a href="#rag-在專案中的優化策略" id="toc-rag-在專案中的優化策略" class="nav-link" data-scroll-target="#rag-在專案中的優化策略"><span class="header-section-number">64.2.1</span> 🚀 RAG 在專案中的優化策略</a></li>
+  <li><a href="#與提示工程的協同" id="toc-與提示工程的協同" class="nav-link" data-scroll-target="#與提示工程的協同"><span class="header-section-number">64.2.2</span> 🤝 與提示工程的協同</a></li>
   </ul></li>
+  <li><a href="#最佳實務" id="toc-最佳實務" class="nav-link" data-scroll-target="#最佳實務"><span class="header-section-number">64.3</span> 👍💖最佳實務</a></li>
+  <li><a href="#注意事項" id="toc-注意事項" class="nav-link" data-scroll-target="#注意事項"><span class="header-section-number">64.4</span> 🤞❣️ 注意事項</a></li>
+  <li><a href="#回顧及資源" id="toc-回顧及資源" class="nav-link" data-scroll-target="#回顧及資源"><span class="header-section-number">64.5</span> 🌉 回顧及資源</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/10-04-retrieval_augmented_generation.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./10----ai_engineering.zh-hant.html">🌉 「AI 工程」</a></li><li class="breadcrumb-item"><a href="./10-04-retrieval_augmented_generation.zh-hant.html"><span class="chapter-number">64</span>&nbsp; <span class="chapter-title">🔗知識驅動生成📝</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title"><span id="sec-retrieval-augmented-generation" class="quarto-section-identifier"><span class="chapter-number">64</span>&nbsp; <span class="chapter-title">🔗知識驅動生成📝</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +782,76 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
-<blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p><code>知識驅動生成</code>（Retrieval-Augmented Generation, RAG）是一種結合<strong>外部知識檢索</strong> 與<a href="02-07-large_language_models.zh-hant">生成模型</a>（Large Language Models, LLMs） 的技術框架，旨在讓 在生成內容時，能即時訪問外部知識庫或資料源，以提升輸出的<strong>準確性</strong>、<strong>時效性</strong>與<strong>可解釋性</strong>。它突破了純生成模型僅依賴訓練參數記憶的限制，將檢索與生成緊密結合，形成一個動態的<a href="05-01-oriented_knowledge.zh-hant">知識導向</a> 問答有效閉環。</p>
+<p>特別是在 <strong>大型語言模型</strong> 與 <strong><a href="06-05-analysis_generative.zh-hant">生成式 AI</a></strong> 快速發展背景下，RAG 標誌著從「封閉式生成」（受限於基礎模型）走向「開放式知識融合」（可指定額外外部資料源）的新階段。這種方法不僅能減少幻覺（hallucination）問題，還能讓 AI 在面對專業領域或快速變化的資訊時，保持高準確度與可追溯性。</p>
+<p>RAG 的核心思想，是透過檢索模組從外部資料源（如文件庫、向量資料庫、網頁等）中獲取與查詢相關的內容，並將這些內容作為額外上下文脈絡（context）提供給生成模型，從而生成更精確、相關且符合需求的結果。這種方法衍生出<a href="10-05-context_engineering.zh-hant">脈絡工程</a>，並且在應對<a href="01-04-Frame_Problem.zh-hant">框架問題</a>與<a href="./01-06-Alignment_Control_Problem.zh-hant.html">對齊與控制問題</a>發揮重要作用，因為它能讓人類更好地控制 AI 的參考知識來源與生成邏輯。</p>
+<hr>
+<section id="核心概念" class="level2" data-number="64.1">
+<h2 data-number="64.1" class="anchored" data-anchor-id="核心概念"><span class="header-section-number">64.1</span> 🏷️ 核心概念</h2>
+<p>RAG 的運作可分為兩大階段：<strong>檢索（Retrieval）</strong> 與 <strong>生成（Generation）</strong>，並可延伸至多模態與多代理（Agents）協作場景。</p>
 <ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
-</li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
+<li>📚 <strong>RAG 架構</strong>：由檢索器（Retriever）與生成器（Generator）組成。檢索器負責從外部知識源中找到與查詢相關的內容，生成器則將檢索結果與原始查詢結合，生成最終輸出。</li>
+<li>🔍 <strong>檢索演算法</strong>：常用方法包括稀疏檢索（BM25）、密集檢索（Dense Retrieval, 如 DPR）、混合檢索（Hybrid Retrieval）等，依需求選擇不同策略。</li>
+<li>⚙️ <strong>檢索優化</strong>：透過查詢擴展（Query Expansion）、重排序（Re-ranking）、向量壓縮等技術，提升檢索的精準度與效率。</li>
+<li>🌐 <strong>超越文本的 RAG</strong>：不僅限於文字資料，還可應用於圖像、音訊、影片等多模態資料檢索與生成。</li>
+<li>🤖 <strong>Agents 與 RAG</strong>：在多步推理或複雜任務中，Agent 可作為協調者，根據任務需求動態選擇檢索策略與工具，並進行規劃與行動。</li>
+<li>🛠️ <strong>工具（Tools）整合</strong>：RAG 系統可與資料庫查詢、<a href="@sec-api-mcp">API 調用</a>、計算模組等工具結合，擴展知識與能力邊界。</li>
+<li>🗺️ <strong>規劃（Planning）</strong>：在多步任務中，Agent 需規劃檢索與生成的順序與策略，確保結果的完整性與一致性。</li>
+<li>🚧 <strong>失效模式與評估</strong>：包括檢索不到相關資料、檢索結果噪音過高、生成內容與檢索內容不一致等，需要透過評估指標與測試集進行監測。</li>
+<li>🧠 <strong>記憶（Memory）</strong>：在長期任務中，Agent 可維護任務記憶與檢索歷史，提升後續檢索與生成的效率與一致性。</li>
 </ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
+<p><strong>小結</strong>：RAG 將檢索與生成結合，形成一個可擴展、可控且可解釋的 AI 知識應用框架，適用於需要高準確度與專業知識的場景。</p>
 </section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
+<section id="智能情報助理rag-的知識引擎" class="level2" data-number="64.2">
+<h2 data-number="64.2" class="anchored" data-anchor-id="智能情報助理rag-的知識引擎"><span class="header-section-number">64.2</span> 🗺️🤓 智能情報助理：RAG 的知識引擎</h2>
+<p>延續 <a href="10-03-prompt_engineering.zh-hant">提示工程</a> 中的智能情報助理專案，RAG 在這裡扮演了「知識引擎」的角色。<br>
+在該專案中，使用者的查詢往往涉及多個資料源與專業領域，例如經濟數據、地理資訊、人口統計與政策背景。單靠模型內建知識，很難保證即時性與準確性。</p>
+<p>📌 <strong>RAG 的應用流程如下</strong>： * 1️⃣ <strong>檢索階段</strong>：根據提示工程生成的檢索指令，從向量資料庫中找到與查詢相關的文件片段（例如 IMF 報告、CIA 世界概況）。<br>
+* 2️⃣ <strong>資料融合</strong>：將檢索到的內容與即時 API 回傳的數據（如世銀 GDP、OSM 城市座標）整合成統一的上下文。<br>
+* 3️⃣ <strong>生成階段</strong>：將融合後的上下文與原始查詢一併輸入 LLM，生成包含數據分析、地圖可視化與政策解讀的完整報告。</p>
+<section id="rag-在專案中的優化策略" class="level3" data-number="64.2.1">
+<h3 data-number="64.2.1" class="anchored" data-anchor-id="rag-在專案中的優化策略"><span class="header-section-number">64.2.1</span> 🚀 RAG 在專案中的優化策略</h3>
 <ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
-</ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
+<li>🎯 <strong>檢索精度提升</strong>：透過查詢擴展與重排序，確保檢索結果與使用者意圖高度匹配。<br>
+</li>
+<li>🖼️ <strong>多模態支持</strong>：不僅檢索文字資料，還能檢索地理圖層、統計圖表等非文字資源。<br>
+</li>
+<li>🔄 <strong>動態上下文更新</strong>：在多輪對話中，根據使用者的追問動態更新檢索內容，避免重複與冗餘。</li>
 </ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
-<ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
-</ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
-<ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
-</ul>
-<p>🎲🏁</p>
-</div>
-</div>
+</section>
+<section id="與提示工程的協同" class="level3" data-number="64.2.2">
+<h3 data-number="64.2.2" class="anchored" data-anchor-id="與提示工程的協同"><span class="header-section-number">64.2.2</span> 🤝 與提示工程的協同</h3>
+<p>在智能情報助理中，提示工程負責「問對問題、拆解任務、規範輸出」，而 RAG 則負責「找到正確的知識並即時補充」。兩者結合，讓系統既能保持對話的靈活性，又能保證內容的準確性與可追溯性。</p>
+<p>這種結構化的協作模式，使得智能情報助理不僅能回答「巴西近五年的 GDP 與主要城市分佈」，還能在追問「該期間的主要經濟政策與其影響」時，立即檢索並引用 IMF 或世界銀行的政策分析文件，生成帶有數據與地圖的深度報告。</p>
 <hr>
 </section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
-<ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
-</ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+</section>
+<section id="最佳實務" class="level2" data-number="64.3">
+<h2 data-number="64.3" class="anchored" data-anchor-id="最佳實務"><span class="header-section-number">64.3</span> 👍💖最佳實務</h2>
+<p>為了讓 RAG 系統發揮最大效能，以下是常見的最佳實務： - 🧩 <strong>明確定義檢索範圍</strong>：確保知識庫的內容與使用者提出的任務需求高度相關，透過精準的查詢與篩選，最大程度地減少不相關的檢索結果（檢索噪音），從而提高後續生成的回應質量。 - 🗂️ <strong>結構化知識庫</strong>：採用先進的向量資料庫，並結合文件分割、元資料標籤（metadata tagging）以及優化的索引策略，能夠顯著提升檢索的速度、精確度以及處理大量資訊的能力。 - 🧪 <strong>測試與評估檢索效果</strong>：定期使用預設的測試集或真實的用戶查詢來驗證檢索系統的表現，並根據評估結果（如檢索召回率、精確率）不斷調整搜尋演算法、分塊策略或嵌入模型。 - 🔄 <strong>迭代優化檢索與生成</strong>：將檢索的結果與 LLM 生成的回應進行整合評估，根據準確性、相關性及時效性等反饋，持續改進檢索策略、更新提示工程的設計，甚至調整 LLM 的參數。 - 🛡️ <strong>控制知識來源</strong>：確保用於 RAG 的外部知識來源是可信且權威的，例如使用官方文件、學術論文或經過驗證的數據庫。當從外部獲取資訊時，可透過 <a href="@sec-api-mcp">API</a> 獲取可靠的外部更新資訊，並在生成的回應中<strong>標註引用的來源</strong>，以提升資訊的可追溯性與用戶的信任感。<br>
+- 📏 <strong>平衡脈絡長度與效率</strong>：在向 LLM 提供足夠上下文資訊以確保生成質量的同時，必須謹慎控制輸入的總長度，避免超出模型的最大脈絡長度（context window limit），這不僅影響生成品質，也關乎運算成本與處理效率。<br>
+- 🤝 <strong>與 <a href="10-03-prompt_engineering.zh-hant">提示工程</a> 結合</strong>：在檢索出的資訊傳遞給 LLM 後，運用精心設計的提示（prompts），引導模型正確地理解、整合並利用檢索到的資訊，以生成最符合要求的最終輸出。</p>
+<p><strong>小結</strong>：最佳實務的核心是確保檢索與生成的協同效應，並透過持續優化與監測，保持系統的高效與可靠。</p>
+</section>
+<section id="注意事項" class="level2" data-number="64.4">
+<h2 data-number="64.4" class="anchored" data-anchor-id="注意事項"><span class="header-section-number">64.4</span> 🤞❣️ 注意事項</h2>
+<p>RAG 系統在設計與部署時需注意以下安全與穩健性問題：</p>
+<ul>
+<li>🔒 <strong>資料隱私與安全</strong>：確保檢索過程不洩露敏感或機密資訊。</li>
+<li>🚫 <strong>檢索污染</strong>：防範惡意資料注入知識庫，影響生成結果。</li>
+<li>📉 <strong>檢索失敗處理</strong>：設計回退機制（Fallback），在檢索不到資料時仍能生成合理回應。檢索失敗與知識庫污染會直接影響系統的穩定性與安全性，可參考 <a href="10-02-agent_reliability_evaluation.zh-hant">智慧體可靠性與評估</a> 的測試與防護方法。</li>
+<li>🛡️ <strong>防禦提示攻擊</strong>：在生成階段防範提示注入與越獄攻擊，確保模型行為可控。</li>
+<li>🔍 <strong>結果驗證</strong>：對生成內容進行事後驗證，特別是在高風險或高精度需求的應用中。</li>
 </ul>
-</div>
-</div>
-</div>
-</section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
-
-
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
-</div>
-</div>
-</section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
+</section>
+<section id="回顧及資源" class="level2" data-number="64.5">
+<h2 data-number="64.5" class="anchored" data-anchor-id="回顧及資源"><span class="header-section-number">64.5</span> 🌉 回顧及資源</h2>
+<p><strong>核心知識</strong>：RAG 是結合檢索與生成的混合式 AI 架構，能顯著提升 LLM 的準確性、可追溯性與專業適用性。</p>
+<p><strong>實務應用檢核表</strong>：檢查知識庫品質、檢索策略有效性、生成提示設計、結果驗證機制與安全防護是否到位。</p>
+<p><strong>延伸閱讀與工具資源</strong>：可參考 Facebook AI Research 的 RAG 論文、向量資料庫（如 FAISS、Pinecone）、檢索框架（如 Haystack、LangChain）與多代理協作平台的實作案例。</p>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1257,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./10-03-prompt_engineering.zh-hant.html" class="pagination-link" aria-label="❔提示工程📌">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">63</span>&nbsp; <span class="chapter-title">❔提示工程📌</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./10-05-context_engineering.zh-hant.html" class="pagination-link" aria-label="🪟脈絡工程🧭">
+        <span class="nav-page-text"><span class="chapter-number">65</span>&nbsp; <span class="chapter-title">🪟脈絡工程🧭</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1275,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/10-04-retrieval_augmented_generation.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
