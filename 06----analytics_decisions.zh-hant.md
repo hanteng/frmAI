@@ -1,4 +1,9 @@
 ---
+crossref:
+  labels: alpha A
+  subref-labels: roman I
+  chapters: true
+number-sections: true
 tags: 
 - 資料分析
 - 商業分析
@@ -11,8 +16,24 @@ tags:
 - 系統思考
 - 決策演算法
 ---
-# ❖ 分析+決策 6 點
-> ❖ 在展示或執行 **自主判斷** 的決策前，需要什麼具體的 **分析** 與 **創造** 能力？
+# ❖分析+決策 6 點
+
+::: {#fig-mindmap-06 caption="聚焦 **❖ 分析+決策** 6 點心智圖" .part }
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" class="flowchart mermaid-js" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1" xmlns:ev="http://www.w3.org/2001/xml-events">
+<g id="viewport-20250923180406308" class="svg-pan-zoom_viewport" transform="matrix(4.5,0,0,4.5, -426, -316 )" style="transform: matrix(4.5, 0, 0, 4.5, -426, -316 );">
+<image href="images/mind_map.svg"></image></g></svg>
+
+:::
+
+***
+
+
+
+***
+
+
+
+> ❖ 在執行 **自主判斷** 的決策前，需要什麼具體的 **分析** 與 **創造** 能力？
  
 ::: {.callout-tip #tip-analytics-decisions title="❖「分析+決策6點」"}  
 
@@ -22,9 +43,9 @@ tags:
 
 AI 系統的品質，取決於 `資料分析` 與 [決策演算法](06-06-decision_making_algorithm.zh-hant.md) 的協同運作，並可嘗試加入 [生成式 AI](06-05-analysis_generative.zh-hant.md) 以增強創造性與靈活性。
 
-本篇以「分析+決策6點」框架串連六個核心條目，分別回答從「發生了什麼」到「我們如何決策」的關鍵問題，涵蓋 `資料分析` 分析鏈上的 [描述型分析](06-04-analysis_descriptive.zh-hant.md)、[診斷型分析](06-01-analysis_diagnostic.zh-hant.md)、[預測型分析](06-02-analysis_predictive.zh-hant.md)、[指導型分析](06-03-analysis_prescriptive.zh-hant.md) 四種分析型態，以及新興的 [生成式 AI](06-05-analysis_generative.zh-hant.md) 與 [決策演算法](06-06-decision_making_algorithm.zh-hant.md)。每個條目介紹其核心任務、分析鏈定位角色，並聚焦「數據 ⇨ 可行動情報 ⇨ 決策」，與本書梳理的 [AI 問題意識](01----problematics.zh-hant.md) 及 [認知能力](appendix-action.zh-hant.md) 串接，確保即時反應與長期價值對齊。
+本篇以「分析+決策6點」框架串連六個核心條目，分別回答從「發生了什麼」到「我們如何決策」的關鍵問題，涵蓋 `資料分析` 分析鏈上的 [描述型分析](06-04-analysis_descriptive.zh-hant.md)、[診斷型分析](06-01-analysis_diagnostic.zh-hant.md)、[預測型分析](06-02-analysis_predictive.zh-hant.md)、[指導型分析](06-03-analysis_prescriptive.zh-hant.md) 四種分析型態，以及新興的 [生成式 AI](06-05-analysis_generative.zh-hant.md) 與 [決策演算法](06-06-decision_making_algorithm.zh-hant.md)。每個條目介紹其核心任務、分析鏈定位角色，說明«數據驅動決策»（Data-Driven Decisions, DDD）過程：「數據 ⇨ 可行動情報 ⇨ 決策」，與本書梳理的 [AI 問題意識](01----problematics.zh-hant.md) 及 [認知能力](appendix-action.zh-hant.qmd) 串接，確保即時反應與長期價值對齊。
 
-本篇亦強調融會貫通，特別突出新興的 [生成式 AI](06-05-analysis_generative.zh-hant.md) 與 [決策演算法](06-06-decision_making_algorithm.zh-hant.md)，討論如何將 `資料分析` 洞察轉化為行動的自動化決策（決策演算法）及智能化生成（生成式 AI），並具體串接相關的 [AI 問題意識](01----problematics.zh-hant.md) 及 [認知能力](appendix-action.zh-hant.md)，方便讀者將本篇內容與前後章節串聯，成為包括**RLHF（人類回饋強化學習）** 及 **HITL（人類在迴圈中）** 的重要智能治理與智能分析工具箱，為分析與決策注入創造性，引出「**元決策**」體系的討論。
+本篇亦強調融會貫通，特別突出新興的 [生成式 AI](06-05-analysis_generative.zh-hant.md) 與 [決策演算法](06-06-decision_making_algorithm.zh-hant.md)，討論如何將 `資料分析` 洞察轉化為行動的自動化決策（決策演算法）及智能化生成（生成式 AI），並具體串接相關的 [AI 問題意識](01----problematics.zh-hant.md) 及 [認知能力](appendix-action.zh-hant.qmd)，方便讀者將本篇內容與前後章節串聯，成為包括**RLHF（人類回饋強化學習）** 及 **HITL（人類在迴圈中）** 的重要智能治理與智能分析工具箱，為分析與決策注入創造性，引出「**元決策**」體系的討論。
 
 ***
 ## ❖🏗️ 分析與決策概論
@@ -55,13 +76,13 @@ AI 系統的品質，取決於 `資料分析` 與 [決策演算法](06-06-decisi
 - 🟣🙀🎨 [生成式 AI](06-05-analysis_generative.zh-hant.md) 可在每個 `資料分析` 環節生成更多元的資料、假設、詮釋框架、敘事與策略等「選項」，創造多種可能解方，形成新興的分析創造性節點。
 - 🔁😽🪄 [決策演算法](06-06-decision_making_algorithm.zh-hant.md) 則將這些多元「選項」動態整合，依據決策所依的規則、狀態、目標、效用等多維基礎生成可落地的行動方案，形成有依據的「選擇」，將全鏈洞察落地為行動。
 
-這種連續的組合拳既確保「資料 ⇨ 可行動情報 ⇨ 決策」能有所依地閉環運作，更能凸顯智能體系中的「**元決策**」可同時考量 **即時反應** 與 **長期價值** 的對齊與控制問題。如此便能分門別類、按步就班地探究並串接 [認知能力](appendix-action.zh-hant.md) 與 [AI 問題意識](01----problematics.zh-hant.md)，形成高階決策設計能力。
+這種連續的組合拳既確保「資料 ⇨ 可行動情報 ⇨ 決策」能有所依地閉環運作，更能凸顯智能體系中的「**元決策**」可同時考量 **即時反應** 與 **長期價值** 的對齊與控制問題。如此便能分門別類、按步就班地探究並串接 [認知能力](appendix-action.zh-hant.qmd) 與 [AI 問題意識](01----problematics.zh-hant.md)，形成高階決策設計能力。
 
 ## 📚 對映認知能力
 
 在掌握了「分析+決策6點」的結構與兩大 AI 加速器的互補作用後，下一步便是將這些**分析與決策**環節，映射到不同層次的認知行動。
 
-透過 本書前述摘要的🪜 [知識鷹架](notes-constructive_fill-in.zh-hant.md)與附錄的[學習行動](appendix-action.zh-hant.md)，我們可以用一系列代表認知能力的「動詞」，來檢視它們如何整合進「資料 ⇨ 可行動情報 ⇨ 決策」的流程之中。這樣的對映不僅揭示了各分析型式在認知複雜度上的定位，也讓「決策」這個核心動詞在不同層次的能力與問題意識中有了清晰的落點。
+透過 本書前述摘要的🪜 [知行鷹架](notes-constructive_fill-in.zh-hant.md)與附錄的[學習行動](appendix-action.zh-hant.qmd)，我們可以用一系列代表認知能力的「動詞」，來檢視它們如何整合進「資料 ⇨ 可行動情報 ⇨ 決策」的流程之中。這樣的對映不僅揭示了各分析型式在認知複雜度上的定位，也讓「決策」這個核心動詞在不同層次的能力與問題意識中有了清晰的落點。
 ### 🪜 分析決策力對映
 
 如下表所統整的，各層次的認知行動「動詞」（第1欄），對映到「個人」學習成長的核心能力（第2欄），這認知能力可以再對映到本章，主要基於「組織」分析決策可用的「分析+決策6點」（第3欄），進一步串接到對映的分析問題（第4欄）及分析目的（第5欄）。
@@ -79,7 +100,7 @@ AI 系統的品質，取決於 `資料分析` 與 [決策演算法](06-06-decisi
 | ⚖️ <br/>對齊／整合／協調                       | 能夠**在多目標間對齊人類價值**，並協調不同利害參與方    | 🟣🙀🎨[生成式 AI](06-05-analysis_generative.zh-hant.md)＋<br/>🔁😽🪄[決策演算法](06-06-decision_making_algorithm.zh-hant.md)                                            | 「如何參與主體所在賽局？」     | 能否在**競爭與合作**中確保策略與行動在多方利害者間取得平衡或達成共識        |
 | 🚀 <br/>奉獻／領導                          | 能夠**形塑長期意義與方向**，引領系統性變革         | 🔁😽🪄[決策演算法](06-06-decision_making_algorithm.zh-hant.md)                                                                                                      | 「如何認清主體及世界的意義方向？」 | 建立可持續**策略**與長期**價值框架**，**引領**並**形塑**共同願景    |
 
-上表有效串接 [認知能力](appendix-action.zh-hant.md) 形成高階**決策設計**能力。
+上表有效串接 [認知能力](appendix-action.zh-hant.qmd) 形成高階**決策設計**能力。
 
 ### 🧠 決策心智能力問題意識表
 
@@ -103,9 +124,9 @@ AI 系統的品質，取決於 `資料分析` 與 [決策演算法](06-06-decisi
 
 「分析+決策6點」和流行術語 RLHF 及 HITL 相關，為求有效理解及掌握，本節除了說明其異同，更著重於如何活化思維、精準溝通，讓技術與流程的結合更清晰。
 
-- 🤖 **RLHF（Reinforcement Learning from Human Feedback，人類回饋強化學習）**  
+- 🤖 **RLHF**（Reinforcement Learning from Human Feedback，人類回饋強化學習）  
     一種模型訓練優化技術，透過人類對模型輸出的比較、評分或排序，訓練獎勵模型（Reward Model），再用強化學習調整原模型策略，使輸出更符合人類偏好與價值。
-- 🧑‍💻 **HITL（Human-in-the-loop，人類在迴圈中）**  
+- 🧑‍💻 **HITL**（Human-in-the-loop，人類在迴圈中） 
     一種系統設計理念，在整個資料—分析—決策生命週期中持續引入人類判斷與干預，涵蓋資料收集、模型訓練、部署監控、決策執行等全流程，確保系統行為與人類價值對齊。
 
 ---
@@ -182,7 +203,7 @@ AI 系統的品質，取決於 `資料分析` 與 [決策演算法](06-06-decisi
 - **豐富** 從觀測到決策的反應時間尺度，在動態情境中保持即時反應與長期適應能力。  
 - **對齊** 分析與決策的價值觀與脈絡，確保技術輸出符合長期目標與倫理要求。
 
-透過「分析+決策6點」，讀者不僅能見證「數據 ⇨ 可行動情報 ⇨ 決策」的綜合能力，更能系統地結合 **[布魯姆分類學](appendix-action.zh-hant.md)** 與 **[知識鷹架](notes-constructive_fill-in.zh-hant.md)** 的**認知技能**[@sec-action-taxonomy]。此體系的認知與心智能力，不僅能有效應對 **[㉄ AI 問題意識](01----problematics.zh-hant.md)**，還能構成「選項」與「選擇」的「元決策」高階認知，支持組織決策並促進個人學習成長。
+透過「分析+決策6點」，讀者不僅能見證「數據 ⇨ 可行動情報 ⇨ 決策」的綜合能力，更能系統地結合 **[布魯姆分類學](appendix-action.zh-hant.qmd)** 與 **[知行鷹架](notes-constructive_fill-in.zh-hant.md)** 的**認知技能**[@sec-action-taxonomy]。此體系的認知與心智能力，不僅能有效應對 **[㉄ AI 問題意識](01----problematics.zh-hant.md)**，還能構成「選項」與「選擇」的「元決策」高階認知，支持組織決策並促進個人學習成長。
 
 ### 🌰 核心條目內容
 
@@ -191,32 +212,32 @@ AI 系統的品質，取決於 `資料分析` 與 [決策演算法](06-06-decisi
 - **6.1** 🟡😷🩺 [診斷型分析](06-01-analysis_diagnostic.zh-hant)（Diagnostic Analysis）  
     - 「**為什麼會發生❓**」：如何幫助我們找出**關鍵原因或因子**，以利後續預測與調整？  
     - ⛓️⚓**定位**：「描述」之後、「預測」之前，承接觀測結果並轉化為**可行動情報**。  
-    - 🕸❖**主題**：對映到[布魯姆分類學](appendix-action.zh-hant.md)中的**理解**（Understand）層次；對映到 **[機率性關聯](04-01-probabilistic_association.zh-hant.md)** 的「思維鏈」與 **[形式邏輯](03-01-formal_logic.zh-hant.md)** 的「推論鏈」等[㉄ AI 問題意識](01----problematics.zh-hant.md)。
+    - 🕸❖**主題**：對映到[布魯姆分類學](appendix-action.zh-hant.qmd)中的**理解**（Understand）層次；對映到 **[機率性關聯](04-01-probabilistic_association.zh-hant.md)** 的「思維鏈」與 **[形式邏輯](03-01-formal_logic.zh-hant.md)** 的「推論鏈」等[㉄ AI 問題意識](01----problematics.zh-hant.md)。
 
 - **6.2** 🟠🤠🔮 [預測型分析](06-02-analysis_predictive.zh-hant)（Predictive Analysis）  
     - 「**未來會發生什麼❓**」：如何幫助我們在**不確定**中提前布局，降低風險並提升**前瞻性**與**規劃力**？  
     - ⛓️⚓**定位**：「診斷」之後、「指導」之前，將因果洞察應用於當下情境預判未來。  
-    - 🕸❖**主題**：對映到[布魯姆分類學](appendix-action.zh-hant.md)中的**應用**（Apply）層次；對映到 **[知識圖譜](03-04-knowledge_representation.zh-hant.md)** 與 **[機器學習模型](04-05-machine_learning_models.zh-hant.md)** 等[㉄ AI 問題意識](01----problematics.zh-hant.md)。
+    - 🕸❖**主題**：對映到[布魯姆分類學](appendix-action.zh-hant.qmd)中的**應用**（Apply）層次；對映到 **[知識圖譜](03-05-knowledge_graph.zh-hant.md)** 與 **[機器學習模型](04-05-machine_learning_models.zh-hant.md)** 等[㉄ AI 問題意識](01----problematics.zh-hant.md)。
 
 - **6.3** 🔴🧐🧭 [指導型分析](06-03-analysis_prescriptive.zh-hant)（Prescriptive Analysis）  
     - 「**我們該怎麼做❓**」：如何將分析洞察**轉化為**可落地的最佳行動方案，並確保與**價值對齊**？  
     - ⛓️⚓**定位**：「預測」之後，收斂前面各階段的洞察並生成可執行策略。  
-    - 🕸❖**主題**：對映到[布魯姆分類學](appendix-action.zh-hant.md)中的**分析**（Analyze）、**評估**（Evaluate）與**創造**（Create）層次；對映到 **[對齊與控制問題](01-06-Alignment_Control_Problem.zh-hant.md)**、**[完形心理](01-05-Gestalt_Psychology.zh-hant.md)** 與 **[語言賽局](01-07-Language_Games.zh-hant.md)** 等[㉄ AI 問題意識](01----problematics.zh-hant.md)。
+    - 🕸❖**主題**：對映到[布魯姆分類學](appendix-action.zh-hant.qmd)中的**分析**（Analyze）、**評估**（Evaluate）與**創造**（Create）層次；對映到 **[對齊與控制問題](01-06-Alignment_Control_Problem.zh-hant.md)**、**[完形心理](01-05-Gestalt_Psychology.zh-hant.md)** 與 **[語言賽局](01-07-Language_Games.zh-hant.md)** 等[㉄ AI 問題意識](01----problematics.zh-hant.md)。
 
 - **6.4** 🔵🤓📘 [描述型分析](06-04-analysis_descriptive.zh-hant)（Descriptive Analysis）  
     - 「**發生了什麼❓**」：如何看清現況，為後續診斷、預測與指導奠定**可靠的事實基礎**？  
     - ⛓️⚓**定位**：分析鏈起點，提供現況與歷史的基準線。  
-    - 🕸❖**主題**：對映到[布魯姆分類學](appendix-action.zh-hant.md)中的**記憶**（Remember）層次；對映到如「_當下，啥才重要？_」 **[框架問題](01-04-Frame_Problem.zh-hant.md)** 等[㉄ AI 問題意識](01----problematics.zh-hant.md)。
+    - 🕸❖**主題**：對映到[布魯姆分類學](appendix-action.zh-hant.qmd)中的**記憶**（Remember）層次；對映到如「_當下，啥才重要？_」 **[框架問題](01-04-Frame_Problem.zh-hant.md)** 等[㉄ AI 問題意識](01----problematics.zh-hant.md)。
 
 - **6.5** 🟣🙀🎨 [生成式 AI](06-05-analysis_generative.zh-hant)（Generative AI）  
     - 「**我們可以創造什麼❓**」：如何在分析與決策鏈中注入創造性，擴展思路並補全資訊缺口？  
     - ⛓️⚓**定位**：作為前端擴散器與後端收斂器，既能在分析前擴展假設空間，也能在分析後生成策略藍圖。  
-    - 🕸❖**主題**：對映到[布魯姆分類學](appendix-action.zh-hant.md)中的**創造**（Create）層次；對映到 **[紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md)**、**[框架問題](01-04-Frame_Problem.zh-hant.md)**、**[完形心理](01-05-Gestalt_Psychology.zh-hant.md)**、**[對齊與控制問題](01-06-Alignment_Control_Problem.zh-hant.md)** 與 **[語言賽局](01-07-Language_Games.zh-hant.md)** 等[㉄ AI 問題意識](01----problematics.zh-hant.md)。
+    - 🕸❖**主題**：對映到[布魯姆分類學](appendix-action.zh-hant.qmd)中的**創造**（Create）層次；對映到 **[紮根問題](01-03-Symbol_Grounding_Problem.zh-hant.md)**、**[框架問題](01-04-Frame_Problem.zh-hant.md)**、**[完形心理](01-05-Gestalt_Psychology.zh-hant.md)**、**[對齊與控制問題](01-06-Alignment_Control_Problem.zh-hant.md)** 與 **[語言賽局](01-07-Language_Games.zh-hant.md)** 等[㉄ AI 問題意識](01----problematics.zh-hant.md)。
 
 - **6.6** 🔁😽🪄 [決策演算法](06-06-decision_making_algorithm.zh-hant)（Decision-making Algorithm）  
     - 「**我們如何決策❓**」：如何成為分析鏈的行動引擎，並確保策略與價值的即時及長期對齊？  
     - ⛓️⚓**定位**：分析鏈收斂端，將「描述」、「診斷」、「預測」、「指導」及「生成式 AI」的洞察落地為行動並持續優化。  
-    - 🕸❖**主題**：對映到[布魯姆分類學](appendix-action.zh-hant.md)中的**評估**（Evaluate）與**創造**（Create）層次；對映到 **[對齊與控制問題](01-06-Alignment_Control_Problem.zh-hant.md)**、**[框架問題](01-04-Frame_Problem.zh-hant.md)** 與 **[語言賽局](01-07-Language_Games.zh-hant.md)** 等[㉄ AI 問題意識](01----problematics.zh-hant.md)，並強調「**元決策**」作為系統運作邏輯的錨點。
+    - 🕸❖**主題**：對映到[布魯姆分類學](appendix-action.zh-hant.qmd)中的**評估**（Evaluate）與**創造**（Create）層次；對映到 **[對齊與控制問題](01-06-Alignment_Control_Problem.zh-hant.md)**、**[框架問題](01-04-Frame_Problem.zh-hant.md)** 與 **[語言賽局](01-07-Language_Games.zh-hant.md)** 等[㉄ AI 問題意識](01----problematics.zh-hant.md)，並強調「**元決策**」作為系統運作邏輯的錨點。
 
 掌握以上核心內容，讀者將具備系統性的認知能力，為組織決策與個人學習成長打造合宜的代理或「智能體」（Agent）。
 
@@ -228,7 +249,7 @@ AI 系統的品質，取決於 `資料分析` 與 [決策演算法](06-06-decisi
 
 AI 在資料分析與決策演算法的應用範圍，橫跨商業情報、產業策略到公共政策等多個領域。梳理並框定「數據 ⇨ 可行動情報 ⇨ 決策」的綜合能力，是學習與實踐的核心重點。  
 
-讀者可依自身興趣與需求，進一步搭建專屬的 [知識鷹架](notes-constructive_fill-in.zh-hant)，並認識所處世界的 [框智格局](index.zh-hant)，以構建屬於自己的「智能國師」：
+讀者可依自身興趣與需求，進一步搭建專屬的 [知行鷹架](notes-constructive_fill-in.zh-hant)，並認識所處世界的 [框智格局](index.zh-hant)，以構建屬於自己的「智能國師」：
 
 - ⚡🌱🧮 **跨域分析與決策融合應用**  
   - 將診斷、預測、指導與生成式 AI 結合，應用於智慧城市、能源管理、公共衛生等跨領域決策。  
@@ -243,7 +264,7 @@ AI 在資料分析與決策演算法的應用範圍，橫跨商業情報、產�
 
 ## 👉 承先啟後
 
-- 本篇 `第陸篇 ❖` 對「數據 ⇨ 可行動情報 ⇨ 決策」進行梳理與框定有效「數據驅動決策」的綜合能力，是學習與操練的重點。
+- 本篇 `第陸篇 ❖` 對「數據 ⇨ 可行動情報 ⇨ 決策」進行梳理與框定有效「«數據驅動決策»」的綜合能力，是學習與操練的重點。
 	- AI 系統正從單純的 **分析** 邁向 **決策**，這意味著必須同時關注 **技術效能** 與 **價值對齊**
 	- 在這個閉環中， `資料分析`與 **決策演算法** 及 **生成式 AI** 開始有分析與決策的創新
 	- 未來，能否在演算法中同時實現 **精確性**、**可解釋性** 與 **價值對齊**，將直接影響 AI 在社會中的信任度與長期影響力。
