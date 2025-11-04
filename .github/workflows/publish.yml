@@ -23,17 +23,11 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render with zh-hant profile
-        run: quarto render --profile zh-hant
-
-      - name: Move zh-hant build to _site root
-        run: |
-            rm -rf _site/*
-            cp -r _site/zh-hant/* _site/
-
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+          # 👇 Add this line to specify the profile name
+          profile: zh-hant
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
