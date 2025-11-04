@@ -23,11 +23,11 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Publish to GitHub Pages
+      - name: Publish to GitHub Pages with zh-hant profile
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           #target: gh-pages
           # 👇 Add this line to specify the profile name
-          command: quarto publish gh-pages --profile zh-hant
+          run: quarto publish gh-pages --profile zh-hant --no-prompt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
