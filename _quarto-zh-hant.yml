@@ -132,8 +132,8 @@ book:
           id: sec-openai-five
         - file: 07-06-werewolf_ai.zh-hant.md
           id: sec-werewolf-ai
-        - file: 07-07-battlefield_simulation.zh-hant.md
-          id: sec-battlefield-simulation
+        - file: 07-07-complex-strategic-simulation.zh-hant.md
+          id: sec-complex-strategic-simulation
     - part: 08----embodied_ai.zh-hant.md
       chapters:
         - file: 08-01-robotics_and_physical_actuation.zh-hant.md

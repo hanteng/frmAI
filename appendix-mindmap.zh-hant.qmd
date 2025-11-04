@@ -294,7 +294,7 @@ graph LR
   C7d>7.4 🏆🃏💰 <br/>撲克 AI]
   C7e>7.5 🏆🧙‍♂🥷 <br/>OpenAI Five]
   C7f>7.6 🏆🐺🧑‍🌾 <br/>狼人殺 AI]
-  C7g>7.7 🏆🪖⚔️ <br/>戰場模擬]
+  C7g>7.7 🏆🪖⚔️ <br/>複雜戰略模擬]
   C7 --> C7a -.-> C7b -.-> C7c -.-> C7d 
   C7a -.-> C7e -.-> C7f -.-> C7g 
   click C7 "07----game_ai.zh-hant.html"
@@ -304,7 +304,7 @@ graph LR
   click C7d "07-04-poker_ai.zh-hant.html"
   click C7e "07-05-openai_five.zh-hant.html"
   click C7f "07-06-werewolf_ai.zh-hant.html"
-  click C7g "07-07-battlefield_simulation.zh-hant.html"
+  click C7g "07-07-complex_strategic_simulation.zh-hant.html"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   C4 -.-> C9

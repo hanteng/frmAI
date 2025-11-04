@@ -54,7 +54,7 @@
 	* **7.4** 🏆🃏💰 [撲克 AI](07-04-poker_ai.zh-hant.md)（Libratus / Pluribus）  
 	* **7.5** 🏆🧙‍♂🥷 [OpenAI Five](07-05-openai_five.zh-hant.md)（Dota 2）  
 	* **7.6** 🏆🐺🧑‍🌾 [狼人殺 AI](07-06-werewolf_ai.zh-hant.md)（Werewolf AI）  
-	* **7.7** 🏆🪖⚔️ [戰場模擬](07-07-battlefield_simulation.zh-hant.md)（Battlefield Simulation）
+	* **7.7** 🏆🪖⚔️ [複雜戰略模擬](07-07-complex_strategic_simulation.zh-hant.md)（Battlefield Simulation）
 * [第捌篇 🦾](08----embodied_ai.zh-hant.md)　「具身派」AI（Embodied AI）
 	* **8.1** 🦾🎬🔋 [機器人學與實體驅動](08-01-robotics_and_physical_actuation.zh-hant.md)（Robotics & Physical Actuation）
 	* **8.2** 🦾📡🌡️ [感知與環境](08-02-perception_and_environment.zh-hant.md)（Perception & Environment）
