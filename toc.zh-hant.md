@@ -11,9 +11,9 @@
 	* **1.6** 🎯🛡️ [對齊與控制問題](01-06-Alignment_Control_Problem.zh-hant.md)（AI Alignment & Control Problem）
 	* **1.7** 🗫🎲 [語言賽局](01-07-Language_Games.zh-hant.md)（Language Games）
 * [第貳篇 🎏🏮](02----schools_paradigms.zh-hant.md)　流派與主義（Schools & Paradigms）
-	* **2.1** 🎏🏛️ [符號流／邏輯主義](02-01-symbolic_ai.zh-hant.md)（Symbolic AI / Logicism）
-	* **2.2** 🎏🌀 [統計流](02-02-statistical_ai.zh-hant.md)（Statistical AI）
-	* **2.3** 🎏🧠 [神經－符號合流](02-03-neurosymbolic_ai.zh-hant.md)（Neuro-Symbolic AI）
+	* **2.1** 🎏🏛️ [符號流／邏輯主義](02-01-symbolic_ai.zh-hant.md) AI（Symbolic AI / Logicism）
+	* **2.2** 🎏🌀 [統計流](02-02-statistical_ai.zh-hant.md) AI（Statistical AI）
+	* **2.3** 🎏🧠 [神經－符號合流](02-03-neurosymbolic_ai.zh-hant.md) AI（Neuro-Symbolic AI）
 	* **2.4** 🪙🫣 [AGI 人工通用智慧](02-04-agi.zh-hant.md)（AGI）
 	* **2.5** 🏮🧬 [連結主義](02-05-connectionism.zh-hant.md)（Connectionism）
 	* **2.6** 🏮💪 [行為主義](02-06-behaviorism.zh-hant.md)（Behaviorism）
