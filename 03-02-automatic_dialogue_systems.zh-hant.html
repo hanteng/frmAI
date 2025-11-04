@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>16&nbsp; 🤖💬 自動對話系統🏛️ – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./03-03-expert_systems.zh-hant.html" rel="next">
+<link href="./03-01-formal_logic.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03----symbolic_ai.zh-hant.html">🏛️「符號流」AI</a></li><li class="breadcrumb-item"><a href="./03-02-automatic_dialogue_systems.zh-hant.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">🤖💬 自動對話系統🏛️</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +151,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -303,11 +283,11 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="./03----symbolic_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🏛️「符號流」AI</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-01-formal_logic.zh-hant.html" class="sidebar-item-text sidebar-link">
@@ -316,7 +296,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-02-automatic_dialogue_systems.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./03-02-automatic_dialogue_systems.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">🤖💬 自動對話系統🏛️</span></span></a>
   </div>
 </li>
@@ -768,41 +748,32 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
+  <li><a href="#智能對話思考" id="toc-智能對話思考" class="nav-link active" data-scroll-target="#智能對話思考"><span class="header-section-number">16.1</span> 🔼 智能對話思考 🤔</a></li>
+  <li><a href="#對話系統設計" id="toc-對話系統設計" class="nav-link" data-scroll-target="#對話系統設計"><span class="header-section-number">16.2</span> ▶️ 對話系統設計 🥸</a>
   <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
+  <li><a href="#特性" id="toc-特性" class="nav-link" data-scroll-target="#特性"><span class="header-section-number">16.2.1</span> ✨ 特性</a></li>
+  <li><a href="#對比-llm-聊天機器人" id="toc-對比-llm-聊天機器人" class="nav-link" data-scroll-target="#對比-llm-聊天機器人"><span class="header-section-number">16.2.2</span> 🆚 對比 LLM 聊天機器人</a></li>
   </ul></li>
+  <li><a href="#歷史演進" id="toc-歷史演進" class="nav-link" data-scroll-target="#歷史演進"><span class="header-section-number">16.3</span> 🔄 歷史演進 🗿</a></li>
+  <li><a href="#人工無能的弱-ai" id="toc-人工無能的弱-ai" class="nav-link" data-scroll-target="#人工無能的弱-ai"><span class="header-section-number">16.4</span> 🪫人工無能的弱 AI💬</a></li>
+  <li><a href="#小結與展望" id="toc-小結與展望" class="nav-link" data-scroll-target="#小結與展望"><span class="header-section-number">16.5</span> 🪾 小結與展望 ♻</a></li>
+  <li><a href="#接下來" id="toc-接下來" class="nav-link" data-scroll-target="#接下來"><span class="header-section-number">16.6</span> 👉 接下來 🪸</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/03-02-automatic_dialogue_systems.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03----symbolic_ai.zh-hant.html">🏛️「符號流」AI</a></li><li class="breadcrumb-item"><a href="./03-02-automatic_dialogue_systems.zh-hant.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">🤖💬 自動對話系統🏛️</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">🤖💬 自動對話系統🏛️</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +783,144 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
-<blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p><code>自動對話系統</code>（Automatic Dialogue Systems）透過預先定義的<strong>符號</strong>與<strong>規則</strong>來模擬人類對話。其運作原理是將人類語言解構為可處理的符號體系，再利用<strong>模式匹配</strong>（pattern matching）與<strong>規則腳本</strong>（rule script）進行回應。其中，由 Joseph Weizenbaum 開發的 <strong>ELIZA</strong> 便是一個具代表性的應用範例，它透過簡單的模式匹配，成功模擬了心理諮詢師的回應。</p>
+<p>作為<strong>符號流 AI</strong>（Symbolic AI）的早期代表，自動對話系統與<strong>專家系統</strong>（Expert System）類似，核心思想是將人類專家的知識符號化、規則化，並以符號比對進行推論與回應。由於依賴手動編寫的<strong>知識庫</strong>（Knowledge Base）與<strong>推理引擎</strong>（Inference Engine），它在封閉、有明確定義的場景下表現出色，但在開放對話中顯得僵化。</p>
+<hr>
+<section id="智能對話思考" class="level2" data-number="16.1">
+<h2 data-number="16.1" class="anchored" data-anchor-id="智能對話思考"><span class="header-section-number">16.1</span> 🔼 智能對話思考 🤔</h2>
+<p>早期的自動對話系統（如 1966 年的 ELIZA、1972 年的 PARRY）並未真正使用推理引擎。這些系統的特徵包括：</p>
 <ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
+<li>😶 幾乎完全依賴模式匹配與預先編寫的對話腳本。<br>
 </li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
+<li>⛓️‍💥 缺乏多步邏輯推導與規則鏈結。<br>
+</li>
+<li>🚫 無法動態組合已知事實來產生新的結論。</li>
 </ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
-</section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
+<p>直到 1980 年代，當自動對話系統開始與<a href="03-03-expert_systems.zh-hant">專家系統</a>結合，用於醫療診斷、技術支援等專業領域時，部分系統才在後端整合真正的推理引擎：</p>
 <ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
-</ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
+<li>💬 <strong>對話模組</strong>作為前端與使用者互動。<br>
+</li>
+<li>⚙️ <strong>推理引擎</strong>在後端根據專家事先編寫的知識庫進行推論，產生答案或建議。</li>
 </ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
+<p>這種架構常見於基於<a href="03-03-expert_systems.zh-hant">專家系統</a>（如 MYCIN 的 EMYCIN 框架）開發的領域專用對話系統。因此可以總結如下：</p>
 <ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
+<li>🏢 <strong>早期、開放領域</strong> → 無推理引擎，純模式匹配。<br>
+</li>
+<li>🏥 <strong>後期、專用領域</strong> → 可能整合專家系統的推理引擎，具備真正的規則推論能力。</li>
 </ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
-<ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
-</ul>
-<p>🎲🏁</p>
-</div>
-</div>
 <hr>
 </section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
+<section id="對話系統設計" class="level2" data-number="16.2">
+<h2 data-number="16.2" class="anchored" data-anchor-id="對話系統設計"><span class="header-section-number">16.2</span> ▶️ 對話系統設計 🥸</h2>
+<p><code>自動對話系統</code>的設計核心在於將<strong>自然語言</strong>轉換為<strong>符號化結構</strong>，並依據<strong>預設規則</strong>生成回應。其運作流程通常包含三個階段：</p>
 <ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
+<li>🧩 <strong>解析</strong>（<strong>Parsing</strong>） 將使用者輸入分解與標註，識別<strong>關鍵字</strong>、<strong>句法結構</strong>與<strong>語意單元</strong>。</li>
+<li>⚙️ <strong>處理</strong>（<strong>Processing</strong>） 根據解析結果，在<strong>規則庫</strong>或<strong>知識庫</strong>中尋找匹配項，並觸發對應的<strong>推論規則</strong>或<strong>腳本動作</strong>。</li>
+<li>🗣 <strong>產生</strong>（<strong>Generating</strong>） 結合處理結果與<strong>回應模板</strong>生成最終輸出。 &gt; 💡 <strong>注意</strong>：此處的「生成」屬於<strong>模板填充式輸出</strong>，與生成式 AI的<strong>機率性生成</strong>不同。</li>
 </ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+<p>這種流程保證了<strong>穩定性</strong>與<strong>可控性</strong>，但在<strong>靈活性</strong>與<strong>適應性</strong>上存在限制，尤其在開放域對話中表現不足。</p>
+<section id="特性" class="level3" data-number="16.2.1">
+<h3 data-number="16.2.1" class="anchored" data-anchor-id="特性"><span class="header-section-number">16.2.1</span> ✨ 特性</h3>
+<p><code>自動對話系統</code>在早期既沒有後來 <strong><a href="03-03-expert_systems.zh-hant">專家系統</a></strong> 的<strong>推理引擎</strong>（Inference Engine），也缺乏 <strong><a href="04-02-llm_chatbots.zh-hant">LLM 聊天機器人</a></strong> 依託語料大數據展現的<strong>語言流暢性</strong>。其基於<strong>離散符號</strong>與<strong>明確邏輯規則</strong>的運作模式，造就了以下特性：</p>
+<ul>
+<li><p>👍 <strong>優勢</strong></p>
+<ul>
+<li><p>🛠️ <strong>高可解釋性</strong>：決策過程透明，規則可追溯、可驗證。</p></li>
+<li><p>🛡️ <strong>高可控性</strong>：開發者可完全掌握對話流程與內容。</p></li>
+<li><p>🎯 <strong>封閉領域專精</strong>：在醫療、法務等明確定義的場景中表現穩定。</p></li>
+<li><p>🚄 <strong>運行高效</strong>：低運算資源需求即可快速回應。</p></li>
+<li><p>📈 <strong>回應一致性</strong>：輸出可預測，避免隨機性與語意漂移。</p></li>
+</ul></li>
+<li><p>👎 <strong>限制</strong></p>
+<ul>
+<li><p>🤯 <strong>缺乏語境理解</strong>：無法掌握跨句、跨段的語意連貫。</p></li>
+<li><p>🔄 <strong>無法應對新情境</strong>：僅能回應預先定義模式。</p></li>
+<li><p>👨‍💻 <strong>維護成本高</strong>：規則與知識庫需人工持續更新。</p></li>
+<li><p>🗣️ <strong>對話不自然</strong>：語言表達生硬，缺乏流暢性與多樣性。</p></li>
+</ul></li>
 </ul>
-</div>
-</div>
-</div>
 </section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
-
-
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
-</div>
-</div>
-</section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<section id="對比-llm-聊天機器人" class="level3" data-number="16.2.2">
+<h3 data-number="16.2.2" class="anchored" data-anchor-id="對比-llm-聊天機器人"><span class="header-section-number">16.2.2</span> 🆚 對比 LLM 聊天機器人</h3>
+<p>較成熟、並與具備<strong>推理引擎</strong>的 <a href="03-03-expert_systems.zh-hant">專家系統</a> 搭配的 <code>自動對話系統</code>，與 <a href="04-02-llm_chatbots.zh-hant">LLM 聊天機器人</a> 相比，具有以下優勢與限制：</p>
+<ul>
+<li>👍 <strong>優勢</strong>
+<ul>
+<li>🛡️ <strong>可控性高</strong>：回應內容與流程可完全由開發者掌握。<br>
+</li>
+<li>🧮 <strong>推理鏈可追溯</strong>：每一步推論都有明確規則支撐。<br>
+</li>
+<li>🎯 <strong>領域精準度高</strong>：在特定專業領域能提供可靠答案。<br>
+</li>
+<li>⚡ <strong>資源需求低</strong>：可在低功耗環境中穩定運行。</li>
+</ul></li>
+<li>👎 <strong>限制</strong>
+<ul>
+<li>🤯 <strong>缺乏語境脈絡理解</strong>：難以處理跨句、跨段的語意連貫，無法理解深層語意與連貫性，回應顯得機械。<br>
+</li>
+<li>🔄 <strong>無法應對新情境</strong>：僅能回應預先定義模式，對未知問題無能為力。<br>
+</li>
+<li>👨‍💻 <strong>維護成本高</strong>：需人工編寫大量規則，規則與知識庫需人工持續更新，致複雜度增加時成本急升。<br>
+</li>
+<li>🗣️ <strong>對話不自然</strong>：語言表達生硬，易出現跳躍或重複回應，缺乏 LLM 的流暢性與多樣性，體驗較差。</li>
+</ul></li>
+</ul>
+<p>這具體展示了 <strong>符號流 AI</strong> 的 <strong>統計流 AI</strong> 的差異。</p>
+<ul>
+<li>🏛️🤖💬 符號流 AI：專家知識、規則驅動、靈活性低、可解釋性高。</li>
+<li>🌀🧞‍♀️🗪 統計流 AI：海量數據、機率驅動、靈活性高、可解釋性低。</li>
+</ul>
 <hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
+</section>
+</section>
+<section id="歷史演進" class="level2" data-number="16.3">
+<h2 data-number="16.3" class="anchored" data-anchor-id="歷史演進"><span class="header-section-number">16.3</span> 🔄 歷史演進 🗿</h2>
+<p><code>自動對話系統</code>的發展歷程，從最初的<strong>簡單模式匹配</strong>，到與<strong>專家系統</strong>結合，再到<strong>語音應用</strong>的普及，完整見證了<strong>符號流 AI</strong>在對話領域的演進與局限。</p>
+<ul>
+<li><p>💻💬 <strong>1966 年：ELIZA</strong> — 早期<strong>符號流 AI</strong>範例，透過<strong>簡單模式匹配</strong>模擬心理諮詢對話，但缺乏基於<strong>形式邏輯</strong>的複雜<strong>演繹推理</strong>。</p></li>
+<li><p>🧠🛋️ <strong>1972 年：PARRY</strong> — 模仿<strong>偏執型精神分裂症患者</strong>的對話，引入更複雜的<strong>規則引擎</strong>與早期<strong>本體論</strong>雛形，比 ELIZA 更具深度。</p></li>
+<li><p>🩺📚 <strong>1980s：專家系統結合</strong> — 與<strong>知識庫</strong>、<strong>推理引擎</strong>整合，用於<strong>專業診斷</strong>（如 <strong>MYCIN / EMYCIN</strong>），提升推論能力與專業適用性。</p></li>
+<li><p>☎️🗣️ <strong>1990s–2000s：語音導覽與客服</strong> — 結合<strong>語音辨識技術</strong>，推動自動對話系統應用於<strong>電話客服</strong>與<strong>語音導覽</strong>，但核心邏輯仍以<strong>規則</strong>為主。</p></li>
+</ul>
+<p>這段歷史顯示，<code>自動對話系統</code>雖在<strong>可解釋性</strong>與<strong>專業應用</strong>上有優勢，但在<strong>開放域</strong>與<strong>自然流暢性</strong>上始終受限，為後來<strong>統計流 AI</strong>的崛起留下了空間。</p>
+<hr>
+</section>
+<section id="人工無能的弱-ai" class="level2" data-number="16.4">
+<h2 data-number="16.4" class="anchored" data-anchor-id="人工無能的弱-ai"><span class="header-section-number">16.4</span> 🪫人工無能的弱 AI💬</h2>
+<p>早期的<code>自動對話系統</code>因依賴<strong>固定規則</strong>與<strong>模式匹配</strong>，在<strong>開放域對話</strong>中表現僵化，缺乏對語境與深層語意的理解，被批評為「<strong>人工無能</strong>」**。</p>
+<ul>
+<li><p>🧩 <strong>缺乏真正理解</strong>：僅依規則生成回應，無法進行<strong>語意推理</strong>或靈活應對新情境。</p></li>
+<li><p>🗜️ <strong>規則僵化</strong>：知識庫與腳本需人工維護，難以擴展至多樣化場景。</p></li>
+<li><p>🧪 <strong>有限圖靈測試通過</strong>：如 <strong>ELIZA</strong> 與 <strong>PARRY</strong> 能在短時對話中「看似」智能，但並不具備內在理解。</p></li>
+</ul>
+<p>這些特徵成為<strong>弱 AI</strong>立場的重要論據：只要規則設計巧妙，機器即可表現出類似智能的行為，而不需要真正的意識或理解。 然而，這種模式在<strong>自然流暢性</strong>與<strong>跨領域適應性</strong>上的不足，為後來<strong>統計流 AI</strong>（如LLM 聊天機器人）的崛起鋪平了道路。</p>
+<hr>
+</section>
+<section id="小結與展望" class="level2" data-number="16.5">
+<h2 data-number="16.5" class="anchored" data-anchor-id="小結與展望"><span class="header-section-number">16.5</span> 🪾 小結與展望 ♻</h2>
+<p>基於明確的邏輯規則運作，<code>自動對話系統</code>展現了<strong>符號流 AI</strong>的推理可解釋性 ，但由於對話缺乏自然流暢性，長期以來被貼上🪫「人工無能」的評價 。這反映出當<strong>符號</strong>無法有效紮根於語境時，系統的理解與反應容易陷入僵化 。其核心困境在於僵化的符號與規則，難以應對人類語言的複雜性與多樣性 。對話的自然流暢性需求，則是在多年後由<strong>統計流 AI</strong>的 <a href="04-02-llm_chatbots.zh-hant">LLM 聊天機器人</a> 所克服。</p>
+<p>隨著 <a href="02-07-large_language_models.zh-hant">大語言模型</a> 的興起，未來的對話系統有望結合 LLM 的「流暢性」與 <a href="03-04-knowledge_representation.zh-hant">知識圖譜</a> 及 <a href="03-03-expert_systems.zh-hant">專家系統</a> 的「可解釋性」，創造出既能自然交流又能推理可驗的新一代混合架構對話系統 。</p>
+<p>值得注意的案例是具備<strong>腳本式對話策略</strong>的🩺 <a href="https://doi.org/10.48550/arXiv.2412.15242">AI 治療師</a> 。在該設計中，LLM 負責生成流暢、擬人化的回應，而整體對話流程<strong>由專家編寫的腳本引導</strong> 。這確保 AI 代理依據預設規則行事，並允許其決策路徑被檢視，以滿足<strong>風險管理</strong>與<strong>問責制</strong>需求。在<strong>心理健康</strong>照護等敏感領域，這種設計尤為關鍵 。</p>
+<p>因此，<code>自動對話系統</code>的規則腳本概念與可解釋性，未來可作為統計流 AI 的重要補充，為高風險應用場景提供🛡️安全、透明且可審核的對話解決方案 。</p>
+<hr>
+</section>
+<section id="接下來" class="level2" data-number="16.6">
+<h2 data-number="16.6" class="anchored" data-anchor-id="接下來"><span class="header-section-number">16.6</span> 👉 接下來 🪸</h2>
+<ul>
+<li><p>⇆🚥 區分「<strong>自動對話系統</strong>」與「<strong><a href="04-02-llm_chatbots.zh-hant">LLM聊天機器人</a></strong>」在<strong>對話聊天實現</strong>上的核心差異。<br>
+前者基於<strong>演繹</strong>，依賴預設的邏輯規則、腳本與模式匹配，追求絕對的「因果關係」與可驗證性；<br>
+後者基於<strong>歸納</strong>，透過「<strong>機率性關聯</strong>」從大量語料中學習模式，生成流暢且多樣化的回應。</p></li>
+<li><p>⮦🚦 探究 <a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> <strong>符號流 AI</strong>（Symbolic AI）的其它條目，評估自己可否說明 <strong>自動對話系統</strong> 與它們的關係，如下所述：</p>
+<ul>
+<li><p><strong>🏛️⊨∴ <a href="03-01-formal_logic.zh-hant">形式邏輯</a></strong>：自動對話系統的運作邏輯，本質上是一種<strong>簡化的符號比對</strong>。它沒有完整的推理引擎，而是透過<strong>模式匹配</strong>來回應，屬於形式邏輯在簡化應用上的體現。</p></li>
+<li><p><strong>🏛️🎁🧠 <a href="03-03-expert_systems.zh-hant">專家系統</a></strong>：早期的自動對話系統可視為基於模式匹配、但缺少複雜<strong>演繹推理</strong>（deductive reasoning）的專家系統。它們沒有真正的理解能力，而是依賴預先設定的「如果…則…」腳本來回應，本質上是為特定目的設計的「對話專家」。</p></li>
+<li><p><strong>🏛️🛠️🏗️ <a href="03-04-knowledge_representation.zh-hant">知識表徵工程</a></strong>：早期自動對話系統的核心任務是<strong>知識表徵</strong>，知識僅限於將對話腳本與關鍵字配對。這種簡易的知識工程雖能運作，但也導致對話僵化。</p></li>
+<li><p><strong>🏛️🕸💡 <a href="03-05-knowledge_graph.zh-hant">知識圖譜</a></strong> 與 <strong>🏛️🌐🔗 <a href="03-06-semantic_web.zh-hant">語意網</a></strong>：這些更複雜的符號流技術，為後來的對話系統提供了更豐富的<strong>知識基礎</strong>，幫助系統理解詞彙間的<strong>關係</strong>，讓對話不再僅限於簡單的腳本配對。</p></li>
+<li><p><strong>🏛️🌌🗺️ <a href="03-07-ontology.zh-hant">本體論</a></strong>：本體論為自動對話系統提供<strong>抽象概念空間</strong>的結構化藍圖。相較於僅用關鍵字比對，本體論能定義詞彙之間的關係與階層，使系統能進行更複雜的語義推理，克服早期的僵化問題。</p></li>
+</ul></li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1326,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./03-01-formal_logic.zh-hant.html" class="pagination-link" aria-label="⊨∴ 形式邏輯🏛️">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">⊨∴ 形式邏輯🏛️</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./03-03-expert_systems.zh-hant.html" class="pagination-link" aria-label="🏛️🎁🧠 專家系統">
+        <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">🏛️🎁🧠 專家系統</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1344,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/03-02-automatic_dialogue_systems.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

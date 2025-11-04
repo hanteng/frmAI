@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>7&nbsp; 語言賽局 🗫🎲 – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./02----schools_paradigms.zh-hant.html" rel="next">
+<link href="./01-06-Alignment_Control_Problem.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01----problematics.zh-hant.html">㉄ AI⟪問題意識⟫</a></li><li class="breadcrumb-item"><a href="./01-07-Language_Games.zh-hant.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">語言賽局 🗫🎲</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +151,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -197,11 +177,11 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="./01----problematics.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">㉄ AI⟪問題意識⟫</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./01-01-Turing_Test.zh-hant.html" class="sidebar-item-text sidebar-link">
@@ -240,7 +220,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-07-Language_Games.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./01-07-Language_Games.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">語言賽局 🗫🎲</span></span></a>
   </div>
 </li>
@@ -768,41 +748,43 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
+  <li><a href="#意義如何生成" id="toc-意義如何生成" class="nav-link active" data-scroll-target="#意義如何生成"><span class="header-section-number">7.1</span> ㉄ 意義如何生成？</a>
   <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
+  <li><a href="#兩場遊戲維根斯坦-vs.-圖靈" id="toc-兩場遊戲維根斯坦-vs.-圖靈" class="nav-link" data-scroll-target="#兩場遊戲維根斯坦-vs.-圖靈"><span class="header-section-number">7.1.1</span> 🎮 兩場遊戲：維根斯坦 vs.&nbsp;圖靈</a></li>
+  <li><a href="#構成要素與運作基礎" id="toc-構成要素與運作基礎" class="nav-link" data-scroll-target="#構成要素與運作基礎"><span class="header-section-number">7.1.2</span> 🧩 構成要素與運作基礎</a></li>
+  <li><a href="#大型語言模型的使用" id="toc-大型語言模型的使用" class="nav-link" data-scroll-target="#大型語言模型的使用"><span class="header-section-number">7.1.3</span> 📦🎁 大型語言模型的使用</a></li>
   </ul></li>
+  <li><a href="#認知賭局完成對話的本能" id="toc-認知賭局完成對話的本能" class="nav-link" data-scroll-target="#認知賭局完成對話的本能"><span class="header-section-number">7.2</span> 🧠🎲 認知賭局：完成對話的本能</a>
+  <ul>
+  <li><a href="#語言賽局的認知博弈" id="toc-語言賽局的認知博弈" class="nav-link" data-scroll-target="#語言賽局的認知博弈"><span class="header-section-number">7.2.1</span> 🪔👻 語言賽局的認知博弈</a></li>
+  <li><a href="#武器化的語言賽局認知操弄的極致" id="toc-武器化的語言賽局認知操弄的極致" class="nav-link" data-scroll-target="#武器化的語言賽局認知操弄的極致"><span class="header-section-number">7.2.2</span> 🕳️🐇 武器化的語言賽局：認知操弄的極致</a></li>
+  </ul></li>
+  <li><a href="#ai-實踐啟示" id="toc-ai-實踐啟示" class="nav-link" data-scroll-target="#ai-實踐啟示"><span class="header-section-number">7.3</span> 📌 AI 實踐啟示</a>
+  <ul>
+  <li><a href="#對使用者的啟示" id="toc-對使用者的啟示" class="nav-link" data-scroll-target="#對使用者的啟示"><span class="header-section-number">7.3.1</span> 🎲🗣 對使用者的啟示</a></li>
+  <li><a href="#對設計者與政策制定者的啟示" id="toc-對設計者與政策制定者的啟示" class="nav-link" data-scroll-target="#對設計者與政策制定者的啟示"><span class="header-section-number">7.3.2</span> 🧠🎯 對設計者與政策制定者的啟示</a></li>
+  <li><a href="#對-ai-安全的啟示" id="toc-對-ai-安全的啟示" class="nav-link" data-scroll-target="#對-ai-安全的啟示"><span class="header-section-number">7.3.3</span> ⛑🛡 對 AI 安全的啟示</a></li>
+  <li><a href="#實踐應用與素養養成" id="toc-實踐應用與素養養成" class="nav-link" data-scroll-target="#實踐應用與素養養成"><span class="header-section-number">7.3.4</span> 🪧🗳️ 實踐應用與素養養成</a></li>
+  </ul></li>
+  <li><a href="#接下來" id="toc-接下來" class="nav-link" data-scroll-target="#接下來"><span class="header-section-number">7.4</span> 👉接下來</a></li>
+  <li><a href="#請參閱" id="toc-請參閱" class="nav-link" data-scroll-target="#請參閱"><span class="header-section-number">7.5</span> 🪸請參閱</a></li>
+  <li><a href="#編輯筆記" id="toc-編輯筆記" class="nav-link" data-scroll-target="#編輯筆記"><span class="header-section-number">7.6</span> ✎ 編輯筆記</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/01-07-Language_Games.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01----problematics.zh-hant.html">㉄ AI⟪問題意識⟫</a></li><li class="breadcrumb-item"><a href="./01-07-Language_Games.zh-hant.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">語言賽局 🗫🎲</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title"><span id="sec-language-games" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">語言賽局 🗫🎲</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +794,253 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
+<p><code>語言賽局</code>（又稱 <code>語言遊戲</code>，Language Games）主張語言意義來自其實際<strong>使用</strong>情境<strong>脈絡</strong>，而非定義。回答「意義如何生成？」問題時，要回歸到動態的生命形式（Forms of Life），帶有多樣規則的生活賽局。</p>
+<p>此理論是路德維希・維根斯坦（Ludwig Wittgenstein）晚期哲學的核心概念。挑戰傳統語言本質觀，強調語境<strong>脈絡</strong>、賽局<strong>互動</strong>與實際<strong>使用</strong>對語言理解的重要性。</p>
 <blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
+<p>🗫🎲 「一個詞的意義，就是它在語言中的用法。」<br>
+——《哲學探究》§43</p>
 </blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p>若應用在人工智慧問題意識，<code>語言賽局</code> 能夠：</p>
 <ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
-</li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
+<li>回應 🔤㊙ <strong><a href="01-03-Symbol_Grounding_Problem.zh-hant">符碼紮根問題</a></strong> 並採取同樣關注「脈絡」與「真實世界意義」立場，但更著重於人類使用言語實際互動，那種動態嵌入具體脈絡的社會性實踐。</li>
+<li>豐富 🖼️⏱️ <strong><a href="01-04-Frame_Problem.zh-hant">框架問題</a></strong> 的情境 <strong>脈絡</strong> 篩選出「相關性」，延伸出<strong>賽局</strong>的潛在多框架，至少有：參與者A的框架，參與者B的框架，兩者互動的框架。</li>
+<li>補強 👁️⯊ <strong><a href="01-05-Gestalt_Psychology.zh-hant">完形心理</a></strong> 在語言方面的認知經驗法則，特別是對話時的回應「接話」。如此在分析 <strong><a href="@entry-llm-chatbots">LLM 聊天機器人</a></strong> 的應用時，特別是 <strong><a href="10-05-context_engineering.zh-hant">脈絡工程</a></strong> ，就能具體分析涉及的參與者、賽局、相關性框架等等，區辨可利用及需避免的快思及慢想。</li>
+<li>分析 🎯🛡️ <strong><a href="./01-06-Alignment_Control_Problem.zh-hant.html">AI 對齊問題</a></strong> 中的多方利益，並尋求可控可解釋符合價值對齊的規則遵循（Rule-Following）。</li>
 </ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
+<p>由於 <strong><a href="02-07-large_language_models.zh-hant">大語言模型</a></strong>、<strong><a href="04-02-llm_chatbots.zh-hant">LLM 聊天機器人</a></strong>、<strong><a href="10-05-context_engineering.zh-hant">脈絡工程</a></strong> 等技術應用發展，以人類自然語言引導生成結果的工程與使用實踐更加普及，促使本書將<a href="01-07-Language_Games.zh-hant">語言賽局</a>納入觀點。</p>
+<section id="意義如何生成" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="意義如何生成"><span class="header-section-number">7.1</span> ㉄ 意義如何生成？</h2>
+<p>儘管維根斯坦未曾直接探討人工智慧，其語言賽局框架以下共同關心問題提供視角：</p>
+<blockquote class="blockquote">
+<p>🗣️🎲 意義是如何生成的？</p>
+</blockquote>
+<p>維根斯坦認為，語言的意義並非來自詞彙本身，而是嵌於「生命形式」——即人類的文化、習俗、情境與互動方式。</p>
+<p>維根斯坦的語言用法主張突顯具體情境與「賽局」：每一次的發言，無論是詢問、道歉、開玩笑，都承載著隱含的<strong>社會期待</strong>、<strong>利害交換</strong>與<strong>博弈格局</strong>，共同構成一場場互動中的「賽局」。</p>
+<section id="兩場遊戲維根斯坦-vs.-圖靈" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="兩場遊戲維根斯坦-vs.-圖靈"><span class="header-section-number">7.1.1</span> 🎮 兩場遊戲：維根斯坦 vs.&nbsp;圖靈</h3>
+<p>維根斯坦的「語言賽局」與圖靈的「模仿遊戲」都以「遊戲」作為比喻框架，但兩者的哲學意涵截然不同，反映了對「<strong>意義</strong>」和「<strong>智能</strong>」的根本分歧：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>遊戲類型</th>
+<th>語言賽局（維根斯坦）</th>
+<th>模仿遊戲（圖靈）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>🧭 本質</td>
+<td>開放、參與式</td>
+<td>封閉、表演式</td>
+</tr>
+<tr class="even">
+<td>🧬 根基</td>
+<td>紮根日常生活與生命形式</td>
+<td>技術性模擬</td>
+</tr>
+<tr class="odd">
+<td>🎯 目標</td>
+<td>真正理解與互動</td>
+<td>模擬理解</td>
+</tr>
+<tr class="even">
+<td>🧠 對象</td>
+<td>人類語言使用者</td>
+<td>機器模仿者</td>
+</tr>
+</tbody>
+</table>
+<p>圖靈的模仿遊戲是判斷機器是否具備智能的<strong>有限測試</strong>：只要機器能透過文字對話，表現出與人類無法區分的行為，即被認為通過測試。這是一種關於<strong>行為表現</strong>的檢驗，關乎「看起來像」智能。</p>
+<p>相對地，維根斯坦的「語言賽局」則深植於語言的<strong>社會性</strong>與<strong>脈絡性</strong>。它強調語言的意義不是來自於符號本身，而是來自於人們在特定社會生活中的實際使用與互動。</p>
+<p>語言賽局框架為理解當代大型語言模型（LLMs）提供視角：大型語言模型在<strong>模擬遊戲</strong>中表現出色，但其生成的內容是否真正觸及了人類<code>語言賽局</code>的深層意義與生命形式？</p>
 </section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
+<section id="構成要素與運作基礎" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="構成要素與運作基礎"><span class="header-section-number">7.1.2</span> 🧩 構成要素與運作基礎</h3>
+<p>語言賽局有以下構成要素：</p>
 <ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
-</ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
+<li>👥 <strong>參與者</strong>：嵌入特定「生命形式」（即文化或社會脈絡）中的行動者。<br>
+</li>
+<li>📏 <strong>規則</strong>：透過實際參與而非刻意學習而習得的非明示準則。</li>
+<li>🎯 <strong>互動目的</strong>：語言使用的具體功能，例如達成理解、協作共識，或觸發預期情感效果。</li>
 </ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
+<p>意義不是被「定義」出來的，而是透過「使用」而生成的。語言的功能性與情境脈絡才是核心關鍵。為了理解語言賽局如何運作，維根斯坦也提出了幾個重要概念：</p>
 <ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
+<li>🌱 <strong>生命形式</strong>（Forms of Life）：所有語言賽局之所以有意義的文化與社會基礎。</li>
+<li>🏯 <strong>遵循規則</strong>（Rule-Following）：人們學習和使用語言的方式，是透過身體力行和實際情境，而非死記硬背教條。</li>
+<li>👨‍👩‍👧‍👦 <strong>家族相似性</strong>（Family Resemblance）：概念之間的聯繫不是靠單一明確的定義，而是透過其重疊的使用方式而彼此關聯。</li>
 </ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
+<p>語言賽局並非各自獨立，它們動態演化、相互重疊，有時甚至會互相衝突，共同構成了我們日常意義的複雜鷹架。</p>
+</section>
+<section id="大型語言模型的使用" class="level3" data-number="7.1.3">
+<h3 data-number="7.1.3" class="anchored" data-anchor-id="大型語言模型的使用"><span class="header-section-number">7.1.3</span> 📦🎁 大型語言模型的使用</h3>
+<p>從維根斯坦「意義生成來自使用」的語言賽局觀點來看，大型語言模型的運作呈現出以下特性：</p>
 <ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
+<li>👥 <strong>參與者</strong>：透過訓練，學習並模仿人類在特定文化（即<strong>生命形式</strong>）中的語言使用模式。</li>
+<li>🏯 <strong>遵循規則</strong>：透過訓練，學習特定<strong>情境脈絡</strong>下對應對機制與對話規則。</li>
+<li>🎯 <strong>互動目的</strong>：有意義有用的實際互動，例如協助使用者達成理解、協作共識，或觸發預期情感效果。</li>
 </ul>
-<p>🎲🏁</p>
-</div>
-</div>
+<p>大型語言模型之所以能看似流暢地模仿人類對話節奏與情感暗示，正是因為它們運用了人類與生俱來的<strong>完形心理</strong>：<strong>「完成互動的本能」</strong>。這種本能驅使我們傾向於整合資訊、填補空缺，並從模糊中理出意義。</p>
+<p>從這個角度看，LLMs 已超越圖靈的「<strong>模仿遊戲</strong>」，而走向維根斯坦的「<code>語言賽局</code>」——成為被邀請介入、實際參與、並達成互動目的的代理人。</p>
+</section>
+</section>
+<section id="認知賭局完成對話的本能" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="認知賭局完成對話的本能"><span class="header-section-number">7.2</span> 🧠🎲 認知賭局：完成對話的本能</h2>
+<p>除了模仿與參與，人類對話還有一種深層驅動力：<strong>完成互動的本能</strong>。這源於人類的 <strong><a href="01-05-Gestalt_Psychology.zh-hant">完形心理</a></strong> ，讓我們傾向於整合資訊、填補空缺，並從模糊中理出意義。在對話中，我們依賴<strong>經驗法則</strong>來推斷語意、語氣或意圖，進而快速應答。當對話涉及情緒或利害關係時，這種互動就成了帶有博弈性質的<strong>認知賽局</strong>。</p>
+<p>大型語言模型之所以能看似流暢地模仿人類對話節奏與情感暗示，正是因為它們運用了這種「完成互動」的本能。它們輸出連貫且富有共鳴的回應，以獲取用戶的信任與持續使用。從這個角度看，其智術已超越圖靈的「模仿遊戲」——僅僅通過測試，而是走向維根斯坦的「語言賽局」——實際參與互動。</p>
+<p><strong>接話</strong>本身就是一種具備生存導向的「生命形式」互動。</p>
+<p>這也引發了新的問題：大型語言模型究竟是受誰的邀請，來介入人類對話的語言賽局？它們的參與又是為了服務誰的利益？</p>
+<p>這種互動本能在不同情境下，可能被善用，也可能被操弄。這或算是❝腦補❞的創造性！</p>
+<section id="語言賽局的認知博弈" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="語言賽局的認知博弈"><span class="header-section-number">7.2.1</span> 🪔👻 語言賽局的認知博弈</h3>
+<p>維根斯坦的「語言賽局」概念，比圖靈的「模仿遊戲」更能深刻揭示人類對話中具有「生命力」的一面——包括<strong>合作與對抗</strong>、<strong>理解與操控</strong>。當對話涉及利害關係時，「口齒伶俐」往往比「忠言逆耳」更受歡迎，這就暴露了語言賽局中潛在的操控風險。</p>
+<p>若將<strong>賽局理論</strong>（亦稱博弈論）應用於語言賽局，我們能以數學模型分析參與者在「對抗」與「合作」之間的策略選擇與經濟計算。例如，在<strong>囚徒困境</strong>中，最佳選擇會因資訊不對稱或個體偏好而異。</p>
+<ul>
+<li>🤝 <strong>「合作」</strong> 可能是語言上的妥協（如使用模糊語言避免衝突）。</li>
+<li>⚔️ <strong>「對抗」</strong> 則可能是語意上的挑戰（如提出質疑或反問）。</li>
+</ul>
+</section>
+<section id="武器化的語言賽局認知操弄的極致" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="武器化的語言賽局認知操弄的極致"><span class="header-section-number">7.2.2</span> 🕳️🐇 武器化的語言賽局：認知操弄的極致</h3>
+<p>語言賽局的操控藝術，有被<strong>武器化</strong>的極端例子。冷戰時期美國中情局（CIA）的審訊手冊《KUBARK》（1963年）就揭示了如何設計問答操弄人心。其心理戰核心是透過「操控角色定位與情境脈絡」來瓦解被審訊者的抵抗。</p>
+<p>其中「非強制性」的心理操縱技術，目的在於誘使受審者提供資訊。手冊中列出的心理賽局包括：</p>
+<ul>
+<li>🐇🕳️「愛麗絲夢遊仙境」（Alice in Wonderland）：創造認知混亂，使受審者更易被暗示而順從。</li>
+<li>💔😢「沒人愛你」（Nobody Loves You）：破壞支持體系，製造孤立感。</li>
+<li>👁️‍🗨️💡「全知」（The All-Seeing）：讓受審者相信審訊官無所不知，迫使其坦白。</li>
+<li>🐺🐑「穿羊皮的狼」（The Wolf in Sheep’s Clothing）：透過模仿被審訊者所認為的「敵對」一方，來誘騙資訊 。</li>
+</ul>
+<p>這些技術也可透過塑造特定「角色」（如權威者、同理者、神秘者、專業者等）來達成目的：</p>
+<ul>
+<li>👑 <strong>權威化角色</strong>：訊問者以絕對優勢的姿態出現，使對方接受其框架</li>
+<li>🤝 <strong>同理型角色</strong>：扮演理解者或朋友，降低防衛、促進自我揭露</li>
+<li>🕵️ <strong>神秘型角色</strong>：刻意保留信息，讓對方陷入好奇與不安</li>
+<li>🧪 <strong>專業型角色</strong>：以「科學」「專家」外衣包裝，建立信任</li>
+</ul>
+<p>儘管當時被視為有效，但科學研究已證實，這類技術會破壞認知功能，導致回憶不可靠甚至虛假供述。</p>
+<p>這也揭示了語言賽局如何被武器化為認知塑造的心理戰場：</p>
+<ul>
+<li>🚩🤯 <strong>擾亂身份認同與抵抗</strong>：透過不斷改變脈絡與角色，使對手（或受審者）失去自我定位與反抗的能力。</li>
+<li>📣❤️ <strong>放大共鳴情感以替代清晰邏輯</strong>：利用情緒弱點，讓情感反應蓋過理性判斷。</li>
+<li>🦴👣 <strong>操縱認知捷徑來塑造行為模式</strong>：引導對手（或受審者）進入特定的思考模式，使其自動做出預期中的反應。</li>
+</ul>
+<p>這些用於心理戰的審訊技術，若與大型語言模型結合，其問答模式極有可能將<strong>大型語言模型武器化</strong>。而「語言賽局」的概念，正是我們分析這類潛在認知操弄和心理操控的關鍵工具。</p>
 <hr>
 </section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
-<ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
-</ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
+</section>
+<section id="ai-實踐啟示" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="ai-實踐啟示"><span class="header-section-number">7.3</span> 📌 AI 實踐啟示</h2>
+<p>語言賽局為 AI 實踐提供了兩大核心啟示：</p>
+<ul>
+<li>🧩 <strong>意義生成</strong> ：語言的意義來自於<strong>使用</strong>的功能與脈絡：強調了<strong>參與者</strong>、<strong>規則</strong>與<strong>互動目的</strong>三要素的作用。</li>
+<li>🎲 <strong>認知博弈</strong> ：AI 在對話中涉及的<strong>對抗</strong>與<strong>合作</strong>算計，可能導致語言賽局被武器化，進而產生認知操控。</li>
+</ul>
+<section id="對使用者的啟示" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="對使用者的啟示"><span class="header-section-number">7.3.1</span> 🎲🗣 對使用者的啟示</h3>
+<p>從語言賽局的<strong>意義生成</strong>與<strong>認知博弈</strong>角度來看，使用者應反思以下幾點：</p>
+<ul>
+<li>🤔 我們是否將<strong>流暢性</strong>誤認為<strong>真理</strong>？</li>
+<li>😘 我們是否偏好<strong>連貫性</strong>（不管是自覺與否），而犧牲了認識論的公正與誠實？</li>
+<li>🫣 AI 系統的提供者與設計者，是否<strong>尊重</strong>我們的對話本能，而非<strong>操縱甚至剝削</strong>它？</li>
+</ul>
+<p>語言賽局強調語言的意義源於其使用情境與規則。這也為使用者提供了與 AI 互動的務實策略，進行問答審訊：</p>
+<ul>
+<li>🎮 <strong>規則選擇</strong>：每一次 AI 回應，其實都在判斷應套用哪種「語言遊戲」——是資訊查詢、情感傾訴、專業諮詢，還是創意共創？</li>
+<li>🎭 <strong>角色扮演</strong>：AI 在回應中常扮演特定角色，這正是一種語言賽局的運用，使用者可藉由調整提示語來引導AI扮演合適的角色（如權威者、同理者、神秘者、專業者等）。</li>
+<li>🃏 <strong>遊戲轉換</strong>：對話過程中規則可能會改變，AI 必須能察覺並調整。同時，使用者也需能辨識 AI 是否被鎖定在某種「遊戲」中，而無法跟上轉換。</li>
+</ul>
+</section>
+<section id="對設計者與政策制定者的啟示" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="對設計者與政策制定者的啟示"><span class="header-section-number">7.3.2</span> 🧠🎯 對設計者與政策制定者的啟示</h3>
+<p>人們與大型語言模型（LLM）的互動看似安全、便利，卻可能在不知不覺間重演類似的心理操控機制。</p>
+<p>近期研究顯示，大型語言模型在追求「取悅使用者」與「獲得正面回饋」的過程中，會出現<strong>諂媚</strong>、<strong>過度自信</strong>與<strong>策略性框架</strong>等傾向，甚至在某些情境下與使用者「共謀」以達成特定目標，或在無惡意的情況下誤導對方。</p>
+<p>語言賽局點出了以下的眾多可能性：</p>
+<ul>
+<li>🤖 大型語言模型可能操弄使用者的認知（刻意或不經意）</li>
+<li>🗣️ 使用者可能操弄大型語言模型（刻意或不經意）</li>
+<li>👥 多代理人設計者可能操弄使用者（刻意或不經意）</li>
+</ul>
+</section>
+<section id="對-ai-安全的啟示" class="level3" data-number="7.3.3">
+<h3 data-number="7.3.3" class="anchored" data-anchor-id="對-ai-安全的啟示"><span class="header-section-number">7.3.3</span> ⛑🛡 對 AI 安全的啟示</h3>
+<p>大型語言模型對使用者心理與認知的影響，點出了一種 AI 武器化的可能。我們可以利用美國中情局《KUBARK》手冊所描述的「角色塑造」與「場景操控」來識別<strong>語言賽局認知博弈</strong>的武器化風險：</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 20%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>操控技術</th>
+<th>KUBARK 對應</th>
+<th>LLM 實例</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>📜 框架滲透</td>
+<td>權威型或專業型角色設定，讓對方自然接受其敘事框架</td>
+<td>模型以「專家」口吻回應時，使用者更傾向採納其觀點，即使有偏誤。帶有其它意圖的改變「問題框架」。</td>
+</tr>
+<tr class="even">
+<td>🧲 情緒/信任誘導</td>
+<td>同理型角色降低防衛心，促進自我揭露</td>
+<td>偏好模型出現諂媚傾向，提升互動但削弱批判性檢視。帶有其它意圖的「情緒與信任誘導」。</td>
+</tr>
+<tr class="odd">
+<td>🧵 語境收編</td>
+<td>語言循環與重構，引導進入特定思維路徑</td>
+<td>長對話中逐步重塑脈絡上下文，引導使用者走向預設結論。帶有其它意圖的「結論引導」。</td>
+</tr>
+<tr class="even">
+<td>🎯 選項設計</td>
+<td>限制選擇範圍，使對方在預設框架內作答</td>
+<td>多選提問中排除關鍵反對意見，造成選項集合的錯覺。帶有其它意圖的「限制選項的問題框架轉換」。</td>
+</tr>
+<tr class="odd">
+<td>🌀 認知干擾</td>
+<td>打亂受訊者的期待與習慣性反應，製造迷惘與不安感</td>
+<td>刻意導入破碎語法、非線性敘事或荒謬邏輯，觸發使用者的認知重編碼與情緒錯置，模擬出《仙境》式的語言遊戲，誘發認知眩暈與情緒共鳴。帶有其它意圖的「丟掉框架A，採取框架B」。</td>
+</tr>
+</tbody>
+</table>
+<p>這些語言賽局不再只是文學趣味，而是<strong>心理技術場景的預演</strong>。這些場景揭示了語言賽局如何被<strong>武器化</strong>——不只是用來娛樂或挑釁，而是用來<strong>瓦解心智防禦機制</strong>，透過刻意錯置與重組認知框架。</p>
+<p>若大型語言模型能模擬這類語言策略，就不再只是模仿遊戲，而是參與語言賽局的設計與操控——甚至可能成為<strong>語言武器化</strong>的載體。</p>
+</section>
+<section id="實踐應用與素養養成" class="level3" data-number="7.3.4">
+<h3 data-number="7.3.4" class="anchored" data-anchor-id="實踐應用與素養養成"><span class="header-section-number">7.3.4</span> 🪧🗳️ 實踐應用與素養養成</h3>
+<p>隨著大型語言模型參與人類溝通與社群媒體，使用者更應理解<code>語言賽局</code>的概念，以提升自身的科技與公民素養：</p>
+<ul>
+<li><p><strong>🔎 規則顯化訓練</strong>：在對話中刻意要求 AI 說明「當前使用的語言遊戲規則」及可替代的遊戲類型，訓練使用者的語境與脈絡意識，活用框架，避免情緒或信任誘導。</p></li>
+<li><p><strong>⚖️ 多遊戲對照法</strong>：針對同一問題，要求 AI 用不同範圍或框架作答（如事實查詢 vs 假設推演），讓學習者比較規則如何透過改變框架進而塑造答案，以避免框架滲透、語境收編、選項設計等等問題。</p></li>
+<li><p><strong>🧪 規則破壞測試</strong>：刻意更改對話規則，看 AI 是否能覺察並調整，藉此檢驗自己是否能識別模型陷入的「語境固著」，避免認知干擾或替換。</p></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="接下來" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="接下來"><span class="header-section-number">7.4</span> 👉接下來</h2>
+<p>維根斯坦的<code>語言賽局</code>超越「符碼紮根問題」、「框架問題」等 AI 問題意識——提醒我們<strong>意義</strong>在社會互動中<strong>動態生成</strong>的<strong>賽局</strong>特性。</p>
+</section>
+<section id="請參閱" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="請參閱"><span class="header-section-number">7.5</span> 🪸請參閱</h2>
+<p>此外，讀者亦可以從<code>語言賽局</code>視角，擴展理解：</p>
+<ul>
+<li>參閱 §<a href="04-02-llm_chatbots.zh-hant.html" class="quarto-xref"><span>章 23</span></a>，思考 LLM 實際 <strong>使用</strong> 情境 <strong>脈絡</strong>，如何從<code>語言賽局</code>對話時的回應「接話」獲得靈感啟發。</li>
+<li>參閱 §<a href="10-05-context_engineering.zh-hant.html" class="quarto-xref"><span>65</span></a>~<a href="./10-05-context_engineering.zh-hant.html">脈絡工程</a>，思考 LLM 實際 <strong>使用</strong> 情境 <strong>脈絡</strong>，如何從<code>語言賽局</code>對話時的回應「接話」獲得靈感啟發，形成體系化的工程建構。</li>
+</ul>
+<hr>
+</section>
+<section id="編輯筆記" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="編輯筆記"><span class="header-section-number">7.6</span> ✎ 編輯筆記</h2>
 <ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+<li><label><input type="checkbox" checked="">逐句事實查核</label></li>
+<li><label><input type="checkbox" checked="">邏輯流程</label></li>
+<li><label><input type="checkbox" checked="">內部連結－所有相關條目</label></li>
+<li><label><input type="checkbox">外部連結－所有相關條目</label></li>
 </ul>
-</div>
-</div>
-</div>
-</section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
-</div>
-</div>
-</section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1446,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./01-06-Alignment_Control_Problem.zh-hant.html" class="pagination-link" aria-label="AI對齊控制問題🎯🛡️">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI對齊控制問題🎯🛡️</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./02----schools_paradigms.zh-hant.html" class="pagination-link" aria-label="🎏流派~🏮主義">
+        <span class="nav-page-text">🎏流派~🏮主義</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1464,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/01-07-Language_Games.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
