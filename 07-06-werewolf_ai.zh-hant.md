@@ -79,4 +79,4 @@ tags:
 
 ## 👉 下一部分
 
-在理解 **[狼人殺 AI](https://www.google.com/search?q=07-06-werewolf_ai.zh-hant.md)** 在推理與欺騙博弈中的啟發後，接下來探討 **[複雜戰略模擬](https://www.google.com/search?q=07-07-battlefield_simulation.zh-hant.md)** 在大型策略決策中的啟發。
+在理解 **[狼人殺 AI](https://www.google.com/search?q=07-06-werewolf_ai.zh-hant.md)** 在推理與欺騙博弈中的啟發後，接下來探討 **[複雜戰略模擬](https://www.google.com/search?q=07-07-complex_strategic_simulation.zh-hant.md)** 在大型策略決策中的啟發。
