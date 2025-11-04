@@ -1,5 +1,4 @@
 ---
-title: "🤖💬 自動對話系統🏛️"
 tags: 
 - 自動對話系統
 - 人機互動
@@ -11,6 +10,7 @@ tags:
 - 知識庫
 - 知識表徵工程
 ---
+# 🤖💬 自動對話系統 {#sec-automatic-dialogue-systems}
 `自動對話系統`（Automatic Dialogue Systems）透過預先定義的**符號**與**規則**來模擬人類對話。其運作原理是將人類語言解構為可處理的符號體系，再利用**模式匹配**（pattern matching）與**規則腳本**（rule script）進行回應。其中，由 Joseph Weizenbaum 開發的 **ELIZA** 便是一個具代表性的應用範例，它透過簡單的模式匹配，成功模擬了心理諮詢師的回應。
 
 作為**符號流 AI**（Symbolic AI）的早期代表，自動對話系統與**專家系統**（Expert System）類似，核心思想是將人類專家的知識符號化、規則化，並以符號比對進行推論與回應。由於依賴手動編寫的**知識庫**（Knowledge Base）與**推理引擎**（Inference Engine），它在封閉、有明確定義的場景下表現出色，但在開放對話中顯得僵化。
