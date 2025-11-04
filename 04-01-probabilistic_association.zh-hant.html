@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>22&nbsp; 🎲🌿機率性關聯🌀 – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./04-02-llm_chatbots.zh-hant.html" rel="next">
+<link href="./04----statistical_ai.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04----statistical_ai.zh-hant.html">🌀「統計流」AI</a></li><li class="breadcrumb-item"><a href="./04-01-probabilistic_association.zh-hant.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">🎲🌿機率性關聯🌀</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +151,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -356,14 +336,14 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="./04----statistical_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🌀「統計流」AI</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-01-probabilistic_association.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./04-01-probabilistic_association.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">🎲🌿機率性關聯🌀</span></span></a>
   </div>
 </li>
@@ -768,41 +748,37 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
+  <li><a href="#關聯性思維" id="toc-關聯性思維" class="nav-link active" data-scroll-target="#關聯性思維"><span class="header-section-number">22.1</span> 🎲關聯性思維🤨</a></li>
+  <li><a href="#推理設計" id="toc-推理設計" class="nav-link" data-scroll-target="#推理設計"><span class="header-section-number">22.2</span> ▶️推理設計🥸</a></li>
+  <li><a href="#歷史演進" id="toc-歷史演進" class="nav-link" data-scroll-target="#歷史演進"><span class="header-section-number">22.3</span> ⏪歷史演進🗿</a></li>
+  <li><a href="#llm思維鏈" id="toc-llm思維鏈" class="nav-link" data-scroll-target="#llm思維鏈"><span class="header-section-number">22.4</span> 🎁LLM思維鏈🌹</a>
   <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
+  <li><a href="#兩種實現" id="toc-兩種實現" class="nav-link" data-scroll-target="#兩種實現"><span class="header-section-number">22.4.1</span> 🗣️🌿兩種實現</a></li>
+  <li><a href="#關鍵作用" id="toc-關鍵作用" class="nav-link" data-scroll-target="#關鍵作用"><span class="header-section-number">22.4.2</span> ⚙️ 關鍵作用</a></li>
   </ul></li>
+  <li><a href="#小結與展望" id="toc-小結與展望" class="nav-link" data-scroll-target="#小結與展望"><span class="header-section-number">22.5</span> 🎄 小結與展望 🪩</a>
+  <ul>
+  <li><a href="#機率性關聯" id="toc-機率性關聯" class="nav-link" data-scroll-target="#機率性關聯"><span class="header-section-number">22.5.1</span> 🎲🌿 機率性關聯</a></li>
+  <li><a href="#對比" id="toc-對比" class="nav-link" data-scroll-target="#對比"><span class="header-section-number">22.5.2</span> 🆚 對比</a></li>
+  <li><a href="#展望" id="toc-展望" class="nav-link" data-scroll-target="#展望"><span class="header-section-number">22.5.3</span> 🔭 展望</a></li>
+  </ul></li>
+  <li><a href="#接下來" id="toc-接下來" class="nav-link" data-scroll-target="#接下來"><span class="header-section-number">22.6</span> 👉接下來🪸</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/04-01-probabilistic_association.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04----statistical_ai.zh-hant.html">🌀「統計流」AI</a></li><li class="breadcrumb-item"><a href="./04-01-probabilistic_association.zh-hant.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">🎲🌿機率性關聯🌀</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title"><span id="sec-probabilistic-association" class="quarto-section-identifier"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">🎲🌿機率性關聯🌀</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +788,197 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
-<blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p><code>機率性關聯</code>（Probabilistic Association）是一種以數據資料為基礎、結合<strong>歸納推理</strong>（Inductive Reasoning）與<strong>機率推理</strong>（Probabilistic Inference）所打造的推理框架。作為<strong>統計流 AI</strong>建構模型的基石，<code>機率性關聯</code>支撐著預測、分類、決策與風險評估等任務。這種以機率學量化兩個或多個變數之間<strong>關聯性</strong>的視角，透過現代大數據與機器學習方法，確保<strong>歸納學習</strong>後的<strong>預測能力</strong>與<strong>泛化性</strong>。</p>
+<p><strong>🤨推理機制🤔</strong>：<code>機率性關聯</code>核心在於融合<strong>歸納推理</strong>與<strong>機率推論</strong>，從觀察到的數據出發，依循統計規律與機率模型，推導出「最有可能」或「相對的可能性」的結論。其推理特性如下： * 🎯 <strong>追求</strong> 的是「<strong>關聯性</strong>與<strong>可能性</strong>」，而非絕對的因果關係。 * 🧱 <strong>依賴</strong> 的是「<strong>數據與模型</strong>」，並接受結論的<strong>不確定性</strong>與<strong>機率性</strong>。 * ⭬🐚這正與「<a href="01-04-Frame_Problem.zh-hant">框架問題</a>」類似，然而<code>機率性關聯</code>透過<strong>機率分布</strong>和<strong>置信度</strong>來量化並處理這種不確定性。 * 🔍 <strong>對比</strong> 鮮明的是 <strong>符號流 AI</strong> 基於 <strong>形式邏輯</strong> 的「絕對正確性」推理。</p>
+<p><strong>🎞️語意立場🌹</strong>：<code>機率性關聯</code> 展現出與形式邏輯截然不同的語意立場： * ① <strong>數據內嵌語意</strong>（Data-Embedded Semantics） * 🎯 <strong>追求</strong> 的是「意義內嵌於分布」，從大量資料學習<strong>語意關聯</strong>，自動捕捉變數間的複雜依存關聯性。 * 🎞️ <strong>依賴</strong> 的是「數據本身的模式與結構」，而非預設的符號規則。模型的語意理解是從數據的「統計特性」中「湧現」出來的。 * ⚚ <strong>應對</strong> 的是從數據學習的「<a href="01-03-Symbol_Grounding_Problem.zh-hant">符碼紮根</a>」，機器可從大量數據自動學習，但「湧現」的意義可能是偏見或幻覺。 * ② <strong>外部語意輔助</strong>（Externally-Aided Semantics）<br>
+* 🎯 <strong>追求</strong> 的是模型輸出「<strong>可解釋性與穩定性</strong>」的提升，使推理結果能受結構化知識檢驗。<br>
+* 🌹 <strong>依賴</strong> 的是外部的<strong>語意詮釋結構</strong>（interpretation structure），如<a href="03-05-knowledge_graph.zh-hant">知識圖譜</a>或<a href="03-07-ontology.zh-hant">本體論</a>。這些結構為模型提供額外的背景知識，幫助模型在特定任務語境下，更精確地理解與運用語意。 * ⚚ <strong>應對</strong> 的是「<strong>任務語境的精確性</strong>」需求，透過結合數據學習的語意與結構化知識，使模型輸出更符合現實世界的邏輯與常識，減少模糊性和誤解。</p>
+<p>在理解 <code>機率性關聯</code> 的推理機制與語意立場後，可以看到它在「關聯性思維」作為一種認知能力方面，對人類學習者與 AI 系統都有啟發。</p>
+<section id="關聯性思維" class="level2" data-number="22.1">
+<h2 data-number="22.1" class="anchored" data-anchor-id="關聯性思維"><span class="header-section-number">22.1</span> 🎲關聯性思維🤨</h2>
+<p>對人類學習者而言，機率性關聯不只是數學公式，而是一種消化世界各種信息的處理方式。對人類學習者而言，機率性關聯不只是統計或數學的專業技能，更是一種在不確定情境下進行判斷與決策的思維方式。它訓練我們：</p>
 <ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
+<li>🔍 如何在不確定中尋找模式、在雜訊中提取訊息。</li>
+<li>🔍 從有限或不完整的資訊中，推估事件發生的<strong>可能性</strong>；<br>
 </li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
+<li>📊 量化<strong>風險</strong>與<strong>不確定性</strong>，並在多種可能結果間比較取捨；<br>
+</li>
+<li>🎯 接受結論的<strong>機率性本質</strong>，而非追求絕對確定的答案。</li>
 </ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
+<p>在日常生活中，這種思維能幫助人類在面對複雜、多變的情境時，做出更靈活且具適應性的判斷，例如健康風險評估、財務規劃、策略選擇等。</p>
 </section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
+<section id="推理設計" class="level2" data-number="22.2">
+<h2 data-number="22.2" class="anchored" data-anchor-id="推理設計"><span class="header-section-number">22.2</span> ▶️推理設計🥸</h2>
+<p>對 AI 使用者與開發者而言，<code>機率性關聯</code>是讓機器「<strong>懂得預測與估計</strong>」的語言。它提供了數據驅動的框架來表達<strong>條件關係</strong>與<strong>不確定性</strong>，並可依不同語意立場採取兩種策略：</p>
 <ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
-</ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
+<li>📈 透過 <strong>純數據驅動</strong>，直接從觀測數據中學得模式與關聯；<br>
+</li>
+<li>🧠 透過 <strong>數據＋知識結合</strong>，在統計模型中引入外部語意結構，提升可解釋性與一致性。</li>
 </ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
+<p>因此，在 AI 領域中，機率性關聯提供了一套<strong>靈活且可適應</strong>的推理方法，讓系統能在不確定環境中進行預測與決策。常見的機率模型包括：</p>
 <ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
+<li>🔮🕸️ <strong><a href="09-03-bayesian_network.zh-hant">貝氏網路</a></strong>（Bayesian Networks）：以圖形結構表示變數間的條件依賴關係。<br>
+</li>
+<li>⛓️🔄 <strong><a href="09-05-markov_modeling.zh-hant">馬可夫模型</a></strong>（Markov Models）：描述狀態轉移的機率過程。<br>
+</li>
+<li>🎲🧮 <strong>條件隨機場</strong>（Conditional Random Fields）：用於序列標註與結構化預測。<br>
+</li>
+<li>🌌📊 <strong>高斯混合模型</strong>（Gaussian Mixture Models）：用於聚類與密度估計。例如，在<strong>推薦系統</strong>中，AI 會根據使用者過去的行為計算某商品被喜歡的機率；在<strong>語音辨識</strong>中，系統會根據語音特徵判斷某字詞出現的可能性。</li>
 </ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
-<ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
-</ul>
-<p>🎲🏁</p>
-</div>
-</div>
+<p>這種『根據機率做決策』的能力，使得統計流 AI 能夠在複雜、動態的環境中表現出高度適應性。這些構成統計流 AI 的基礎，支撐機率推理引擎的運作，也能與符號方法結合，形成跨範式的應用。</p>
+<p>在 AI 領域，它是讓機器『懂得預測』的關鍵；在人類社會，它則是讓我們『懂得風險』的工具。</p>
 <hr>
 </section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
-<ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
-</ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+<section id="歷史演進" class="level2" data-number="22.3">
+<h2 data-number="22.3" class="anchored" data-anchor-id="歷史演進"><span class="header-section-number">22.3</span> ⏪歷史演進🗿</h2>
+<p><code>機率性關聯</code>的發展歷程，從早期的機率論到現代統計學與機器學習，逐步擴展了 AI 在不確定性下推理與決策的能力。它見證了從數學理論到工程實踐的轉變，也為今日統計流 AI 的多樣化應用奠定了基礎。</p>
+<ul>
+<li>📜 <strong>早期機率論</strong>（17–19 世紀）：帕斯卡、費馬建立機率論基礎；貝葉斯提出條件機率與貝氏定理。<br>
+</li>
+<li>🧮 <strong>統計學與推斷</strong>（19–20 世紀）：費雪、皮爾森發展統計推斷；馬可夫提出馬可夫鏈。<br>
+</li>
+<li>💻 <strong>AI 早期機率推理</strong>（1970s–1980s）：Judea Pearl 引入貝氏網路；應用於專家系統與診斷系統。<br>
+</li>
+<li>🌌 <strong>機器學習與資料驅動</strong>（1990s–2000s）：SVM、隨機森林等統計學習方法興起；HMM、CRF 廣泛應用於語音與自然語言處理。<br>
+</li>
+<li>🤖 <strong>現代深度學習與生成模型</strong>（2010s–至今）：深度神經網路結合機率建模（如 VAE、GAN）；大型語言模型（LLM）透過機率性關聯生成自然語言，引入「思維鏈」提示與解碼法。</li>
 </ul>
-</div>
-</div>
-</div>
-</section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
-
-
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
-</div>
-</div>
-</section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<p>從早期機率論、統計推斷，到貝氏網路與現代深度學習模型，<code>機率性關聯</code>的學習能力隨著計算機處理大數據的能力提升而顯著進展，在多個應用領域取得了<strong>泛化性</strong>與<strong>適應性</strong>等成果。特別是<strong>深度強化學習</strong>在<strong>計算機視覺</strong>與<strong>自然語言處理</strong>領域的突破性發展，包括大型語言模型（LLM）。</p>
 <hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
+</section>
+<section id="llm思維鏈" class="level2" data-number="22.4">
+<h2 data-number="22.4" class="anchored" data-anchor-id="llm思維鏈"><span class="header-section-number">22.4</span> 🎁LLM思維鏈🌹</h2>
+<p><code>思維鏈</code>（Chain‑of‑Thought, CoT）是一種讓現代<strong>大型語言模型</strong>（LLM）「拆解問題、逐步推導」，以便模型逐步接近獲得更精準答案的技術。它鼓勵模型不要急於給最終答案，而是先生成一系列<strong>推理</strong>問答步驟。</p>
+<p>常見的 CoT 結構包括：<br>
+- 🪢 <strong>線性步驟展開</strong>（Linear Step‑by‑Step）：中間推理步驟按單一路徑依序展開，類似人類在紙上逐行計算的過程。<br>
+- 📜 <strong>逐步推進</strong>（Step‑by‑Step）：強調每一步都基於前一步的結果，直到得出結論。<br>
+- 🌳 <strong>樹狀思維鏈</strong>（Tree‑of‑Thought, ToT）：在推理過程中同時探索多條分支路徑，每條分支代表一種可能的推理方向，最後選擇最佳或最合理的分支。<br>
+- 🕸 <strong>圖狀思維鏈</strong>（Graph‑of‑Thought, GoT）：允許不同推理分支之間共享中間結果，形成可重用、可合流的推理網路。</p>
+<p><strong>機率性關聯</strong>在這裡的角色，是為每一步（或每個分支）生成「最可能的續寫」，並根據上下文概率分布決定下一步的內容。這種方法靈活、可探索性高，但每一步的正確性並沒有形式邏輯的保證。</p>
+<hr>
+<section id="兩種實現" class="level3" data-number="22.4.1">
+<h3 data-number="22.4.1" class="anchored" data-anchor-id="兩種實現"><span class="header-section-number">22.4.1</span> 🗣️🌿兩種實現</h3>
+<p><strong>機率性關聯</strong>的作用，可以在思維鏈兩種實現方式觀察：<strong>思維鏈提示法</strong>（CoT Prompting）與<strong>思維鏈解碼法</strong>（CoT Decoding）。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 40%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">特性</th>
+<th style="text-align: left;"><strong>思維鏈提示法（CoT Prompting）</strong></th>
+<th style="text-align: left;"><strong>思維鏈解碼法（CoT Decoding）</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>實現方式</strong></td>
+<td style="text-align: left;">提示工程（Prompt Engineering）</td>
+<td style="text-align: left;">解碼策略（Decoding Strategy）</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>控制層級</strong></td>
+<td style="text-align: left;">外部，使用者層級</td>
+<td style="text-align: left;">內部，演算法層級</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>效果穩定性</strong></td>
+<td style="text-align: left;">較不穩定</td>
+<td style="text-align: left;">較為穩定，精確度更高</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>實作難度</strong></td>
+<td style="text-align: left;">低</td>
+<td style="text-align: left;">高</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>運算成本</strong></td>
+<td style="text-align: left;">低</td>
+<td style="text-align: left;">高</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>適用情境</strong></td>
+<td style="text-align: left;">輕量級應用、快速原型驗證</td>
+<td style="text-align: left;">追求高精準度、高可解釋性的關鍵應用</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="關鍵作用" class="level3" data-number="22.4.2">
+<h3 data-number="22.4.2" class="anchored" data-anchor-id="關鍵作用"><span class="header-section-number">22.4.2</span> ⚙️ 關鍵作用</h3>
+<p><strong>機率性關聯</strong>是這兩種 <code>思維鏈</code> 實現方式的核心運作機制。大型語言模型並非像<strong>形式邏輯</strong>般進行演繹推理，而是在海量數據中學會語言符號之間的統計關聯。 <code>思維鏈</code> 技術巧妙地利用了這種<strong>機率性關聯</strong>，讓模型表現出類似邏輯推理的能力。</p>
+<ul>
+<li>🗣️🧠 思維鏈提示法（CoT Prompting）：創造機率性脈絡
+<ul>
+<li><strong>使用者要求</strong>模型去思考。<br>
+</li>
+<li>透過在提示詞中加入「<strong>一步一步來思考</strong>」（Let’s think step by step），或提供帶有逐步推導的範例，創造了一個新的<strong>機率性脈絡上下文</strong>。<br>
+</li>
+<li>模型基於其學習到的大量邏輯性文本，會偏向於生成具有邏輯順序的詞元，實現一種高階的<strong>模式匹配</strong>與<strong>機率性聯想</strong>整合。</li>
+</ul></li>
+<li>🌿⚙️ 思維鏈解碼法（CoT Decoding）：選取最佳機率路徑
+<ul>
+<li><strong>系統演算法</strong>引導模型去思考。<br>
+</li>
+<li>解碼演算法透過累積<strong>機率值</strong>，搜尋多條可能的思考序列，並在龐大的<strong>向量空間</strong>中，尋找與「正確答案」相關聯性最高的路徑。<br>
+</li>
+<li>例如，<strong>樹狀思維鏈</strong>（Tree‑of‑Thought）會像樹枝一樣分岔，探索多條可能的思考路徑，評估哪條路徑最可能通往正確答案，最終選取最優路徑。</li>
+</ul></li>
+</ul>
+<p>這展示<code>思維鏈</code> 實現方式取決於中間步驟提示設計、模型生成策略或解碼方法。</p>
+<hr>
+<p>總之，<code>思維鏈</code> 技術並沒有改變 LLM 的<strong>歸納</strong>統計本質，而是巧妙地運用技巧，讓模型更有效率地利用其內在的<strong>機率性關聯</strong>。這使模型的機率性運作過程更具結構性和透明度，從而提高答案的準確性並增強其可解釋性。其推理過程底層運作仍是基於<strong>機率性關聯</strong>，而非形式邏輯。</p>
+<p>掌握機率性關聯，就是進入統計流 AI 世界的第一步 🎲。</p>
+</section>
+</section>
+<section id="小結與展望" class="level2" data-number="22.5">
+<h2 data-number="22.5" class="anchored" data-anchor-id="小結與展望"><span class="header-section-number">22.5</span> 🎄 小結與展望 🪩</h2>
+<section id="機率性關聯" class="level3" data-number="22.5.1">
+<h3 data-number="22.5.1" class="anchored" data-anchor-id="機率性關聯"><span class="header-section-number">22.5.1</span> 🎲🌿 機率性關聯</h3>
+<p>作為統計流 AI 的基石，機率性關聯以<strong>歸納推理</strong> 與 <strong>機率推理</strong>為核心，能靈活處理不確定性，透過大量數據的機器學習（包括現代的強化深度學習），來取得「最有可能」或「相對的可能性」的語意近似掌握，以<strong>數據內嵌語意</strong>為主，可以額外加上 <strong>外部語意輔助</strong> 。</p>
+</section>
+<section id="對比" class="level3" data-number="22.5.2">
+<h3 data-number="22.5.2" class="anchored" data-anchor-id="對比"><span class="header-section-number">22.5.2</span> 🆚 對比</h3>
+<ul>
+<li>🌀🎲🌿<strong>機率性關聯</strong>：擅長處理不確定性與噪聲，能在資訊不完整時給出合理預測，並以自然語言流暢呈現推理過程。<br>
+</li>
+<li>🏛️⊨∴<strong>形式邏輯</strong>：擅長處理結構嚴謹、規則明確的推理任務，能提供可驗證的必然結論與語意落地能力。</li>
+</ul>
+</section>
+<section id="展望" class="level3" data-number="22.5.3">
+<h3 data-number="22.5.3" class="anchored" data-anchor-id="展望"><span class="header-section-number">22.5.3</span> 🔭 展望</h3>
+<p>未來 AI 推理系統將融合兩者：<br>
+- <strong>探索與生成</strong>階段：用機率性關聯快速產生多樣化推理候選與假設。<br>
+- <strong>驗證與落地</strong>階段：用形式邏輯檢查、篩選與修正，確保邏輯一致與語意精確。</p>
+<p>這種結合能同時擁有「機率推理的廣度」與「形式推理的深度」。</p>
+<hr>
+</section>
+</section>
+<section id="接下來" class="level2" data-number="22.6">
+<h2 data-number="22.6" class="anchored" data-anchor-id="接下來"><span class="header-section-number">22.6</span> 👉接下來🪸</h2>
+<ul>
+<li>⇆🚥區分<strong>機率性關聯</strong>與<strong><a href="03-01-formal_logic.zh-hant">形式邏輯</a></strong>在<strong>因果推論</strong>上的核心差異。前者基於<strong>歸納</strong>，探討「機率性關聯」；後者基於<strong>演繹</strong>，追求絕對的「因果關係」。<br>
+</li>
+<li>⮦🚦探究<a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> <strong>統計流 AI</strong>（Statistical AI）的其它條目，評估自己可不可以說明<strong>機率性關聯</strong>和它們的關係，如下所述：
+<ul>
+<li><strong>🌀🧞‍♀️🗪 <a href="04-02-llm_chatbots.zh-hant">LLM聊天機器人</a></strong>：這類應用是基於<strong>大語言模型</strong>的，而其核心運作原理就是透過<strong>機率性關聯</strong>來生成對話。<br>
+</li>
+<li><strong>🌀🪢🧠 <a href="04-03-neural_networks.zh-hant">神經網路</a></strong>：神經網路透過調整權重與偏置，來學習資料中的<strong>機率性關聯</strong>，並以此進行預測與分類。<br>
+</li>
+<li><strong>🌀🛠️🤏 <a href="04-04-feature_engineering.zh-hant">特徵工程</a></strong>：這個過程從原始數據中提取並轉換出有意義的<strong>特徵</strong>，是為了讓<strong>機器學習模型</strong>能更有效地捕捉到潛在的<strong>機率性關聯</strong>。<br>
+</li>
+<li><strong>🌀🤖📦 <a href="04-05-machine_learning_models.zh-hant">機器學習模型</a></strong>：這是一個通稱，絕大多數的機器學習模型，其建構目的就是為了從數據中發現、建模並利用<strong>機率性關聯</strong>來進行預測或決策。<br>
+</li>
+<li><strong>🌀🌐🔗 <a href="./04-06-llm_webassembly.zh-hant.html">大語言模型網組合</a></strong>：作為統計流 AI 的集大成者，大語言模型的<strong>生成</strong>能力完全基於海量資料學到的<strong>機率性關聯</strong>。<br>
+</li>
+<li><strong>🌀🌌▦ <a href="04-07-vector_space.zh-hant">向量空間</a></strong>：<strong>向量空間</strong>是<strong>機率性關聯</strong>的數學體現，它將語言符號轉換為數值向量，並透過向量間的距離來表示它們之間的<strong>關聯性</strong>。</li>
+</ul></li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1384,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./04----statistical_ai.zh-hant.html" class="pagination-link" aria-label="🌀「統計流」AI">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">🌀「統計流」AI</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./04-02-llm_chatbots.zh-hant.html" class="pagination-link" aria-label="🧞‍♀️🗪 LLM 聊天機器人🌀">
+        <span class="nav-page-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">🧞‍♀️🗪 LLM 聊天機器人🌀</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1402,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/04-01-probabilistic_association.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

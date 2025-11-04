@@ -1,0 +1,2386 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hant" xml:lang="zh-Hant"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>附錄 C — 🪜能力：挑 🙶補全🙷 – 道／盜智格局：AI 賽局手冊</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./appendix-MCP_API.zh-hant.html" rel="next">
+<link href="./appendix-brain.zh-hant.html" rel="prev">
+<link href="./cover.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-881e6b1d70d56ce3cf9c07ed1b45e128.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "沒有結果",
+    "search-matching-documents-text": "符合的文件",
+    "search-copy-link-title": "複製搜尋連結",
+    "search-hide-matches-text": "隱藏其他符合的結果",
+    "search-more-match-text": "更多符合結果",
+    "search-more-matches-text": "更多符合結果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "送出",
+    "search-label": "搜尋"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./appendix-action.zh-hant.html">🔖附錄</a></li><li class="breadcrumb-item"><a href="./appendix-cognitive_capacity.zh-hant.html"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">🪜能力：挑 🙶補全🙷</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">道／盜智格局：AI 賽局手冊</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/hanteng/frmAI/" title="原始碼" class="quarto-navigation-tool px-1" aria-label="原始碼"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./道／盜智格局：AI-賽局手冊.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./道／盜智格局：AI-賽局手冊.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜尋"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🤗 序言</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes-mental_fill-in.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">💬導論~❝腦補❞知行捷徑</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes-constructive_fill-in.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">📑筆記~🙶補全🙷知行合一</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./toc.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">⸻📖目錄📑⸻</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./01----problematics.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">㉄ AI⟪問題意識⟫</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="切換區段">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-01-Turing_Test.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">圖靈測試🎭🗪</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-02-Chinese_Room.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">中文房間🧱🗣️</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-03-Symbol_Grounding_Problem.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">符碼紮根問題🔤㊙</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-04-Frame_Problem.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">框架問題 🖼️⏱️</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-05-Gestalt_Psychology.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">完形心理👁️⯊</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-06-Alignment_Control_Problem.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI對齊控制問題🎯🛡️</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-07-Language_Games.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">語言賽局 🗫🎲</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./02----schools_paradigms.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🎏流派~🏮主義</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="切換區段">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-01-symbolic_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">🏛️符號流AI🎏</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-02-statistical_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">🌀統計流AI🎏</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-03-neurosymbolic_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">🧠神經－符號流🎏</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-04-agi.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">🫣通用人工智慧🪙</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-05-connectionism.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">🧬聯結主義🏮</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-06-behaviorism.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">💪行為主義🏮</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-07-large_language_models.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">😵‍💫大語言模型🧞‍♀️</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./03----symbolic_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🏛️「符號流」AI</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="切換區段">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-01-formal_logic.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">⊨∴ 形式邏輯🏛️</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-02-automatic_dialogue_systems.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">🤖💬 自動對話系統🏛️</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-03-expert_systems.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">🏛️🎁🧠 專家系統</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-04-knowledge_representation.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">🛠️🏗️ 知識表徵🏛️</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-05-knowledge_graph.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">🕸💡 知識圖譜🏛️</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-06-semantic_web.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">🌐🔗 語意網（Semantic Web）🏛️</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-07-ontology.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">🗺️🌌 本體論🏛️</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./04----statistical_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🌀「統計流」AI</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="切換區段">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-01-probabilistic_association.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">🎲🌿機率性關聯🌀</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-02-llm_chatbots.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">🧞‍♀️🗪 LLM 聊天機器人🌀</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-03-neural_networks.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">🪢🧠 神經網路🌀</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-04-feature_engineering.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">🛠️🤏 特徵工程🌀</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-05-machine_learning_models.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">🤖📦 機器學習模型🌀</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-06-llm_webassembly.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">🌐🔗 LLM網組合🌀</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-07-vector_space.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">🌌▦ 向量空間🌀</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./05----ai_orientations.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">☸ AI「5 導向」</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="切換區段">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-01-oriented_task.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">☸任務導向型🎯</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-02-oriented_tool.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">☸工具導向🛠</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-03-oriented_agent.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">☸智能體導向🤖</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-04-oriented_collaborative.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">☸協作導向🤝</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-05-oriented_governance.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">☸治理導向⚖️</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./06----analytics_decisions.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">❖分析+決策 6 點</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="切換區段">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-01-analysis_diagnostic.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">🟡😷🩺 診斷型分析</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-02-analysis_predictive.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">🟠🤠🔮 預測型分析</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-03-analysis_prescriptive.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">🔴🧐🧭 指導型分析</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-04-analysis_descriptive.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">🔵🤓📘 描述型分析</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-05-analysis_generative.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">🟣🙀🎨 生成式 AI</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-06-decision_making_algorithm.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">🔁😽🪄 決策演算法</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./07----game_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🏆「博弈派」AI</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="切換區段">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-01-ieee_micromouse.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">🐭🗺️ IEEE電子鼠🏆</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-02-atari_dqn.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">🕹️👾 Atari DQN🏆</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-03-alphago.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">⚫⚪ AlphaGo🏆</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-04-poker_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">🃏💰 撲克 AI🏆</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-05-openai_five.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">🧙‍♂🥷 OpenAI Five🏆</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-06-werewolf_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">🐺🧑‍🌾 狼人殺 AI🏆</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-07-battlefield_simulation.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">🏆🪖⚔️ 戰場模擬</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./08----embodied_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🦾「具身派」AI</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="切換區段">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-01-robotics_and_physical_actuation.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">🎬機器人學🔋</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-02-perception_and_environment.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">📡感知與環境🌡️</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-03-adaptive_robotics.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">🔄自適應機器人🖼️</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-04-human_robot_interaction.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">💪人機互動🦾</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-05-robot_safety_and_robustness.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">🛡️安全與穩健性🚨</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-06-robot_tasks_and_goals.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">🧭任務與目標規劃🎯</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./09----ai_math.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">📐 AI 「數學」</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="切換區段">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-01-collaborative_filtering.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">🚿協同過濾🤝</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-02-steepest_descent_method.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">📉最陡下降法⛰️</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-03-bayesian_network.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">🔮貝氏網路🕸️</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-04-sparse_modeling.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">56</span>&nbsp; <span class="chapter-title">🧹稀疏建模🧩</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-05-markov_modeling.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">57</span>&nbsp; <span class="chapter-title">⛓️馬可夫模型🔄</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-06-monte_carlo_tree_search.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">58</span>&nbsp; <span class="chapter-title">🌲蒙地卡羅樹搜尋</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-07-hebb_rule.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">59</span>&nbsp; <span class="chapter-title">🧠赫布學習論⚡</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-08-multi_agent_payoff_matrix.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">60</span>&nbsp; <span class="chapter-title">💰報酬矩陣🧮</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./10----ai_engineering.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🌉 「AI 工程」</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="切換區段">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-01-API_MCP.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">61</span>&nbsp; <span class="chapter-title">🔗API與MCP🌐</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-02-agent_reliability_evaluation.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">62</span>&nbsp; <span class="chapter-title">🤖可靠性與評估🚨</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-03-prompt_engineering.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">63</span>&nbsp; <span class="chapter-title">❔提示工程📌</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-04-retrieval_augmented_generation.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">64</span>&nbsp; <span class="chapter-title">🔗知識驅動生成📝</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-05-context_engineering.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">65</span>&nbsp; <span class="chapter-title">🪟脈絡工程🧭</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-06-AI_PM.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">66</span>&nbsp; <span class="chapter-title">🎁AI 產品經理🌱🚀</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
+ <span class="menu-text">🔖附錄</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="切換區段">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix-action.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">💪行動：動❝腦補❞</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix-brain.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">🧠心智：名❝鍛練❞</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix-cognitive_capacity.zh-hant.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">🪜能力：挑 🙶補全🙷</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix-MCP_API.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">⚙API分類：辨用</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix-mindmap.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">🌌心智圖：經緯</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cover_back.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">📔封面封底說明</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">G</span>&nbsp; <span class="chapter-title">🪧詞彙表：訂</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.zh-hant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">📚參考書目</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
+   
+  <ul>
+  <li><a href="#有所為的-補全" id="toc-有所為的-補全" class="nav-link active" data-scroll-target="#有所為的-補全">🩵有所為的 🙶補全🙷 🏗️</a>
+  <ul>
+  <li><a href="#sec-cc-formula" id="toc-sec-cc-formula" class="nav-link" data-scroll-target="#sec-cc-formula">–🌊名➕🏄🏼動🟰鷹架</a></li>
+  <li><a href="#實例大語言模型" id="toc-實例大語言模型" class="nav-link" data-scroll-target="#實例大語言模型">–😵‍💫實例~大語言模型🧞‍♀️</a></li>
+  <li><a href="#名動-跨領域" id="toc-名動-跨領域" class="nav-link" data-scroll-target="#名動-跨領域">–🌊名➕🏄🏼動 跨領域</a></li>
+  </ul></li>
+  <li><a href="#雙鑽模型" id="toc-雙鑽模型" class="nav-link" data-scroll-target="#雙鑽模型">🔀雙鑽模型</a></li>
+  <li><a href="#探索名動組合" id="toc-探索名動組合" class="nav-link" data-scroll-target="#探索名動組合">1.🏗️探索名＋動組合</a>
+  <ul>
+  <li><a href="#名詞選項" id="toc-名詞選項" class="nav-link" data-scroll-target="#名詞選項">–🌊 名詞«選項»</a></li>
+  <li><a href="#動詞選項" id="toc-動詞選項" class="nav-link" data-scroll-target="#動詞選項">–🏄🏼 動詞«選項»</a></li>
+  <li><a href="#語法組合ai做啥" id="toc-語法組合ai做啥" class="nav-link" data-scroll-target="#語法組合ai做啥">–🧩語法組合：AI做啥</a></li>
+  </ul></li>
+  <li><a href="#鎖定問題目標-職涯助手實例界定" id="toc-鎖定問題目標-職涯助手實例界定" class="nav-link" data-scroll-target="#鎖定問題目標-職涯助手實例界定">2.🎯鎖定<strong>問題</strong>🙶目標🙷：<br>職涯助手實例界定🛡️</a>
+  <ul>
+  <li><a href="#個體的選擇與限制" id="toc-個體的選擇與限制" class="nav-link" data-scroll-target="#個體的選擇與限制">–🧍‍♂️個體的選擇與限制</a></li>
+  <li><a href="#機器-補全與代價" id="toc-機器-補全與代價" class="nav-link" data-scroll-target="#機器-補全與代價">–🤖機器 🙶補全🙷與代價</a></li>
+  <li><a href="#人機協作的鷹架" id="toc-人機協作的鷹架" class="nav-link" data-scroll-target="#人機協作的鷹架">–🤝 人機協作的鷹架</a></li>
+  </ul></li>
+  <li><a href="#逐級建補能力解方" id="toc-逐級建補能力解方" class="nav-link" data-scroll-target="#逐級建補能力解方">3.🌌 逐級建補能力解方</a>
+  <ul>
+  <li><a href="#流程循環鷹架" id="toc-流程循環鷹架" class="nav-link" data-scroll-target="#流程循環鷹架">–🔄流程／循環鷹架</a>
+  <ul class="collapse">
+  <li><a href="#註解型參考書目" id="toc-註解型參考書目" class="nav-link" data-scroll-target="#註解型參考書目">–📚 註解型參考書目</a></li>
+  </ul></li>
+  <li><a href="#llm-ai工程" id="toc-llm-ai工程" class="nav-link" data-scroll-target="#llm-ai工程">–🌉 LLM AI工程</a></li>
+  <li><a href="#多智能體等原型" id="toc-多智能體等原型" class="nav-link" data-scroll-target="#多智能體等原型">–🧭多智能體等原型🔗</a>
+  <ul class="collapse">
+  <li><a href="#多智能體架構" id="toc-多智能體架構" class="nav-link" data-scroll-target="#多智能體架構">🪟🧭 多智能體架構</a></li>
+  <li><a href="#工具鏈原型" id="toc-工具鏈原型" class="nav-link" data-scroll-target="#工具鏈原型">🔗📒工具鏈原型</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#選擇方案-補全-學習方案落地" id="toc-選擇方案-補全-學習方案落地" class="nav-link" data-scroll-target="#選擇方案-補全-學習方案落地">4.🪜 選擇<strong>方案</strong> 🙶補全🙷：<br>學習方案落地🛡️</a>
+  <ul>
+  <li><a href="#收斂與驗證mvp" id="toc-收斂與驗證mvp" class="nav-link" data-scroll-target="#收斂與驗證mvp">📌收斂與驗證MVP</a></li>
+  <li><a href="#多智能體架構-mvp" id="toc-多智能體架構-mvp" class="nav-link" data-scroll-target="#多智能體架構-mvp">🪟🧭多智能體架構 MVP</a></li>
+  <li><a href="#工具鏈-mvp" id="toc-工具鏈-mvp" class="nav-link" data-scroll-target="#工具鏈-mvp">🔗📒工具鏈 MVP</a></li>
+  <li><a href="#協同網絡-mvp" id="toc-協同網絡-mvp" class="nav-link" data-scroll-target="#協同網絡-mvp">🏋👨‍🏭👨🏽‍⚕️協同網絡 MVP</a></li>
+  </ul></li>
+  <li><a href="#補全工程" id="toc-補全工程" class="nav-link" data-scroll-target="#補全工程">🚀⚛ 「補全」工程</a></li>
+  <li><a href="#註腳" id="toc-註腳" class="nav-link" data-scroll-target="#註腳">註腳</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/appendix-cognitive_capacity.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./appendix-action.zh-hant.html">🔖附錄</a></li><li class="breadcrumb-item"><a href="./appendix-cognitive_capacity.zh-hant.html"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">🪜能力：挑 🙶補全🙷</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="app-cognitive-capacity" class="quarto-section-identifier">附錄 C — 🪜能力：挑 🙶補全🙷</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+註釋&nbsp;C.1: ✎ 編輯筆記
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul class="task-list">
+<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
+<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
+</label></li>
+<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
+</label></li>
+<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
+</label></li>
+<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+<li><label><input type="checkbox">確認導航區塊：.callout-tip .callout-imp .callout-nte .callout-warning</label></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="small">
+<blockquote class="blockquote">
+<p><strong>能力之梯</strong>，跨越 <em>億載時空</em>，生靈自<strong>生存</strong>至<strong>超越</strong>； 其階層迭進，乃心智之歷程。</p>
+<p><strong>能力之合</strong>，映照 <em>互動宇宙</em>，人機合<strong>行動</strong>至<strong>協奏</strong>； 其合力動態，乃技術之回響。</p>
+<p><strong>昇華</strong> ❝腦補❞ 為 🙶補全🙷，追索「意圖」之導向， 設計<strong>智能系統</strong>以「建補鷹架」，以值<strong>世界能源</strong>之「智能代價」。<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+</blockquote>
+</div>
+<p>以接續前篇《💪<a href="./appendix-action.zh-hant.html">行動</a>》<strong>動詞</strong>«選項»與《🧠<a href="./appendix-brain.zh-hant.html">心智</a>》<strong>名詞</strong>«選項»，本篇附錄集《🪜能力》總結與分類<strong>名詞</strong>➕<strong>動詞</strong>的「<strong><a href="#sec-cc-formula">建補鷹架</a></strong>」，並以雙鑽模型展示智能體系統的「能力構建」階段。</p>
+<div id="tip-cognitive-capacity" class="callout callout-style-default callout-tip callout-titled" title="🪜能力 小貼士：«附錄三連»「行動~ 心智 ~能力」" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+提示&nbsp;C.1: 🪜能力 小貼士：«附錄三連»「行動~ 心智 ~能力」
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="de-emphasize">《💪行動》：聚焦 <strong>動詞</strong> 的「行動協奏」</span></li>
+<li><span class="de-emphasize">《🧠心智》：聚焦 <strong>名詞</strong> 的「道智修行」</span></li>
+<li>➜《🪜能力》：聚焦 <strong>名詞➕動詞</strong> 的「建補鷹架」
+<ul>
+<li>〜 昇華 ❝腦補❞ 為 🙶補全🙷 以達目標的系統創新能力。</li>
+</ul></li>
+</ul>
+<p>🪜 🙶補全🙷 人機的«<strong>選擇</strong>»，以達目標的系統創新能力，可按需擇用「先細化，後整合」的「<strong>建補鷹架</strong>」發散從«<strong>選項</strong>»後，從中取捨做«<strong>選擇</strong>»，實踐自身目標。</p>
+<p>「建補鷹架」產出🌊<a href="appendix-brain.zh-hant.html#sec-cc-nouns">學習</a> <strong>名詞</strong>➕🏄🏼<a href="appendix-action.zh-hant.html#sec-cc-verbs">行動</a> <strong>動詞</strong>組合«選項»，成體系的按意圖或意志做出«<strong>選擇</strong>»。</p>
+<p>«<strong>選擇</strong>»<strong>動➕名詞</strong> 能挑選 🙶補全🙷 的<strong>協同能力</strong>，成就<strong>系統動態</strong>編排，需要「行動~ 心智 ~<strong>能力</strong>」三連，將 AI 視為共同行動夥伴。</p>
+<p>💡🌌</p>
+</div>
+</div>
+</div>
+<p>突顯「意圖」與「意志」之導向，<strong>名詞</strong>➕<strong>動詞</strong>的「<strong><a href="#sec-cc-formula">建補鷹架</a></strong>」，強調其「知行合一」「有所為」的AI操作型定義，本書亦稱為「AI 知行鷹架」，是個體對世界『參與』的內容、過程與成果。</p>
+<p>這些『<strong>參與</strong>』的結構與脈絡，都離不開我們心智對自身和世界的<strong>行動意圖</strong>及意義的符號紮根。無論是： * 本書 <strong>經緯</strong> 與 <strong>迴圈和弧線</strong> 導航的細節內容為主（參見<a href="notes-mental_fill-in.zh-hant.html#imp-book-navigation" class="quarto-xref">要點&nbsp;<span>2</span></a>），*</p>
+<p>以補充進一步展示系統化選取的來源依據及過程。</p>
+<p>因此，各附錄的圖表內容，是可以按需擇用「先細化，後整合」使用的，可以運用«<strong>選項</strong>»發散，再做«<strong>選擇</strong>»精挑的方式，做為讀者自行擴展刪減的「AI 知行鷹架」。</p>
+<section id="有所為的-補全" class="level2">
+<h2 class="anchored" data-anchor-id="有所為的-補全">🩵有所為的 🙶補全🙷 🏗️</h2>
+<p>本篇附錄集《🪜能力》主張，「建補鷹架」（Constructive Fill-in Scaffolding）需要取捨做«<strong>選擇</strong>»，實踐自身目標，是一種「有所為有所不為」的 🙶補全🙷 （Constructive Fill-in）。</p>
+<ul>
+<li><strong>建補</strong>：從❝腦補❞到🙶補全🙷，<strong>🌊<a href="appendix-brain.zh-hant.html#sec-cc-nouns">名詞</a>➕🏄🏼<a href="appendix-action.zh-hant.html#sec-cc-verbs">動詞</a></strong> 的«<strong>選項</strong>»</li>
+<li><strong><a href="glossary.zh-hant.html#sec-scaffolding" class="quarto-xref"><span>鷹架</span></a></strong>：指人類構建 AI 時<strong>使用</strong>的知識與方法的創新«<strong>選擇</strong>»</li>
+</ul>
+<p>如此，在「行動~ 心智 ~<strong>能力</strong>」三連下，系統創新<strong>能力</strong>是發散可能«<strong>選項</strong>»，成體系精挑，按情境及需求做可行«<strong>選擇</strong>»。</p>
+<div id="nte-ai-scaffolding" class="note callout callout-style-default callout-note callout-titled" title="🏗️ AI 知行鷹架：建補鷹架公式" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+註釋&nbsp;C.2: 🏗️ AI 知行鷹架：建補鷹架公式
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>🏗️ 建補鷹架 🟰 🌊<a href="appendix-brain.zh-hant.html#sec-cc-nouns">名詞</a> ➕ 🏄🏼<a href="appendix-action.zh-hant.html#sec-cc-verbs">動詞</a></p>
+</blockquote>
+</div>
+</div>
+</div>
+<section id="sec-cc-formula" class="level3">
+<h3 class="anchored" data-anchor-id="sec-cc-formula">–🌊名➕🏄🏼動🟰鷹架</h3>
+<p>為總結與分類這種「<strong>建補鷹架</strong>」，本書亦稱為「AI 知行鷹架」以強調其「知行合一」「有所為」的AI 操作型定義：</p>
+<blockquote class="blockquote">
+<p>🏗️ AI 知行鷹架 🟰 🌊<a href="appendix-brain.zh-hant.html#sec-cc-nouns">名詞</a> ➕ 🏄🏼<a href="appendix-action.zh-hant.html#sec-cc-verbs">動詞</a></p>
+</blockquote>
+<p>為了清楚表達「用 AI 做（<strong>動詞</strong>）什麼（<strong>名詞</strong>）」，本書建議按需去取捨«<strong>選項</strong>»，做出«<strong>選擇</strong>»：</p>
+<ul>
+<li><strong>名詞</strong>：從 作為「<strong>知識</strong>」名詞«<strong>選項</strong>»，分為<strong>需知</strong>、<strong>可知</strong>、<strong>暫不知</strong>（參見<a href="appendix-brain.zh-hant.html#sec-cc-nouns">🌊列表</a>）；</li>
+<li><strong>動詞</strong>：從 作為「<strong>行動</strong>」動詞«<strong>選項</strong>»，分為<strong>要做</strong>、<strong>可做</strong>、<strong>不必做</strong>（參見<a href="appendix-action.zh-hant.html#sec-cc-verbs">🏄🏼列表</a>）；</li>
+</ul>
+<p>當你能清楚表達「用 AI 做（<strong>動詞</strong>）什麼（<strong>名詞</strong>）」時，就像在工地搭起鷹架——有了結構，就能按需建造想要的成果。</p>
+<p>有了 <strong>鷹架</strong>，讀者想蓋什麼、建什麼，都有可能。</p>
+<p>系統性創新的能力主要在於，掌握發散的可能性«<strong>選項</strong>»，有目標收歛的做出«<strong>選擇</strong>»。</p>
+<p>這裡，有其同心圓體系的名詞<a href="appendix-brain.zh-hant.html#sec-cc-nouns">🌊列表</a>及動詞<a href="appendix-action.zh-hant.html#sec-cc-verbs">🏄🏼列表</a>，更能有系統讓我們掌握«<strong>選項</strong>»做出«<strong>選擇</strong>»。</p>
+</section>
+<section id="實例大語言模型" class="level3">
+<h3 class="anchored" data-anchor-id="實例大語言模型">–😵‍💫實例~大語言模型🧞‍♀️</h3>
+<p>以<a href="./02-07-large_language_models.zh-hant.html">大語言模型</a>為例，相關的「建補鷹架」🌊<a href="appendix-brain.zh-hant.html#sec-cc-nouns">名詞</a> ➕ 🏄🏼<a href="appendix-action.zh-hant.html#sec-cc-verbs">動詞</a> 的取捨創新體系可以展開如下：</p>
+<ul>
+<li>🔴 <strong>核心圓（基礎鷹架）</strong>：
+<ul>
+<li>🌊名詞：語料、數據、分析、決策演算法、AI 知識點、等等<br>
+</li>
+<li>🏄🏼動詞：<strong>生存</strong>、<strong>記憶</strong>、<strong>理解</strong>、等等<br>
+</li>
+<li><strong>建補鷹架示例</strong>：
+<ul>
+<li>「生存＋語料；算力＋能源」→ 模型依靠龐大語料與算力維持運作。<br>
+</li>
+<li>「記憶＋數據；演算＋參數」→ 以參數權重記憶龐大文本模式。<br>
+</li>
+<li>「理解＋語意；嵌入＋向量空間」→ 透過上下文嵌入向量形成語意理解。<br>
+</li>
+</ul></li>
+</ul></li>
+<li>🟠 <strong>中層圓（互動鷹架）</strong>：
+<ul>
+<li>🌊名詞：上下文脈絡、使用者意圖、互動任務、社群平台</li>
+<li>🏄🏼動詞：<strong>歸屬</strong>、<strong>連結</strong>、<strong>掌控</strong>、<strong>應用</strong><br>
+</li>
+<li><strong>建補鷹架示例</strong>：
+<ul>
+<li>「歸屬＋社群平台」→ 模型被納入特定技術生態，透過「鈎癮」用戶習慣形成歸屬。<br>
+</li>
+<li>「連結＋上下文脈絡」→ 透過 API 與人類互動，建立語境相互人機 ❝腦補❞「連結」。</li>
+<li>「掌控＋互動任務」→ 在自動化決策中，模型被用來協助互動流程，給於用戶及平台方掌控感。<br>
+</li>
+<li>「應用＋使用者意圖」→ 將模式應用於生成回答、翻譯、摘要、等的使用者意圖。</li>
+</ul></li>
+</ul></li>
+<li>🟢 <strong>外層圓（系統鷹架）</strong>：
+<ul>
+<li>🌊名詞：世界模型、價值觀、跨領域知識、湧現理論</li>
+<li>🏄🏼動詞：<strong>應用／達成</strong>、<strong>分析／評估</strong>、<strong>脈絡化／系統化</strong>、<strong>對齊／策劃／整合</strong>、<strong>創造</strong>、<strong>創構／理論化／引領</strong><br>
+</li>
+<li><strong>建補鷹架示例</strong>：
+<ul>
+<li>「應用／達成＋專業領域」→ 在醫療、教育、法律等領域完成專業任務。</li>
+<li>「分析／評估＋跨領域知識」→ 嘗試分析輸入並評估輸出，支援跨域決策。</li>
+<li>「脈絡化／系統化＋世界模型」→ 將不同來源的資訊脈絡化，並嘗試「概化」系統知識。</li>
+<li>「對齊／策劃／整合＋價值觀」→ 涉及 AI <a href="./01-06-Alignment_Control_Problem.zh-hant.html">對齊與控制問題</a>，對齊人類價值並整合多元知識。</li>
+<li>「創造＋語言表徵」→ 生成新文本或敘事，展現創造潛能。</li>
+<li>「創構／理論化／引領＋湧現理論」→ 在研究與應用中，形成新知識框架，甚至引領未來知識生產模式。</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>作為本書的附錄，讀者可以帶著自己（或學生或小孩）以 <strong>系統思維</strong> 觀照自身、環境、與世界有用的「名詞➕動詞」組合，並學會如何透過「建補鷹架」將 ❝腦補❞ 昇華為 🙶補全🙷 。</p>
+</section>
+<section id="名動-跨領域" class="level3">
+<h3 class="anchored" data-anchor-id="名動-跨領域">–🌊名➕🏄🏼動 跨領域</h3>
+<p>本書定義<strong>AI 知行鷹架</strong>，其實在是種廣泛存在於語言與思維中的「🌊名➕🏄🏼動」組合形式。</p>
+<p>其核心價值在於，透過簡潔的語法結構，將「行動」與「對象」壓縮為一個可操作的<strong>世界片段</strong>。這組合不僅是語言學現象，也因為其功能性或創造性應用於<strong>教育學</strong>、<strong>人工智慧</strong>、<strong>人機互動設計</strong>以及<strong>文學修辭</strong>等多個領域，如<span class="quarto-unresolved-ref">?tbl-actions-nouns-disciplines</span>。</p>
+<div id="nte-actions-nouns-disciplines" class="note callout callout-style-default callout-note callout-titled" title="🌊名➕🏄🏼動 跨領域的可操作**世界片段**" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+註釋&nbsp;C.3: 🌊名➕🏄🏼動 跨領域的可操作<strong>世界片段</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div id="tbl-actions-nouns-disciplines-.table-small-print" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-actions-nouns-disciplines-.table-small-print-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+表&nbsp;C.1: 🌊名➕🏄🏼動 跨領域的可操作<strong>世界片段</strong>
+</figcaption>
+<div aria-describedby="tbl-actions-nouns-disciplines-.table-small-print-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>學科領域</th>
+<th>🏷️ 理論/框架</th>
+<th>📖 說明</th>
+<th>🔤 範例</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>🎓 教育學</td>
+<td>布魯姆分類法</td>
+<td>學習目標常以「動詞＋名詞」表述，動詞=認知層次，名詞=知識領域</td>
+<td>分析數據、評估論點、創造模型</td>
+</tr>
+<tr class="even">
+<td>📚 教學設計</td>
+<td>任務導向學習 (Task-based Learning)</td>
+<td>任務以「動詞＋名詞」呈現，清楚指示行動與對象</td>
+<td>解釋概念、設計實驗、比較文本</td>
+</tr>
+<tr class="odd">
+<td>🤖 人工智慧</td>
+<td><strong><a href="./05-01-oriented_task.zh-hant.html">任務導向型 AI</a></strong>；<a href="./10-03-prompt_engineering.zh-hant.html">提示工程</a></td>
+<td>指令多以「動詞＋名詞」結構，符合人類直覺與模型解析</td>
+<td>生成圖片、翻譯文本、總結文章</td>
+</tr>
+<tr class="even">
+<td>💻 人機互動 (HCI)</td>
+<td>功能語法化設計</td>
+<td>介面功能以「動詞＋名詞」定義，便於操作與理解</td>
+<td>點擊按鈕、拖曳檔案、搜尋資料</td>
+</tr>
+<tr class="odd">
+<td>🌐 系統思維</td>
+<td>模組化行動單元</td>
+<td>系統建模或課程設計中，動詞＋名詞作為可操作模組</td>
+<td>建構模型、檢驗假設、優化流程</td>
+</tr>
+<tr class="even">
+<td>🗣️ 語言學</td>
+<td>功能複合詞 <br>(Functional Compounds)</td>
+<td>動詞＋名詞組合成新詞，直接描述功能或角色</td>
+<td>打火機, <em>pickpocket</em></td>
+</tr>
+<tr class="odd">
+<td>🧠 認知語言學</td>
+<td>概念隱喻 / 概念融合 <br>(Metaphor &amp; Blending)</td>
+<td>動詞＋名詞作為「概念壓縮」，快速生成新意象</td>
+<td><em>pick-me-up</em> (提神飲料), 追夢人</td>
+</tr>
+<tr class="even">
+<td>✍️ 文學 / 詩學</td>
+<td>修辭與隱喻創造</td>
+<td>動詞＋名詞組合創造新鮮意象或角色</td>
+<td>逐光者、偷火者、逐夢人</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>教育領域中<strong>布魯姆分類法</strong>中的學習目標常以「動詞＋名詞」表述，例如「分析數據」或「創造模型」，其中動詞標示<strong>認知層次</strong>，名詞則界定<strong>知識領域</strong>。「<strong>任務導向學習</strong>」同樣依賴這種組合來設計教學活動，使學習者能清楚理解「要做什麼」以及「作用於何者」。</p>
+<p>在人工智慧與設計領域，「動詞＋名詞」組合成為人機互動的語法基礎。AI 有「<strong><a href="./05-01-oriented_task.zh-hant.html">任務導向型</a></strong>」；介面設計常以「點擊按鈕」「拖曳檔案」等結構定義功能，而 <a href="./06-05-analysis_generative.zh-hant.html">生成式 AI</a> 的 <a href="./10-03-prompt_engineering.zh-hant.html">提示工程</a> 則依賴「生成圖片」「翻譯文本」等指令，既符合人類直覺，也便於模型解析。</p>
+<p>接續前篇《💪<a href="./appendix-action.zh-hant.html">行動</a>》<strong>動詞</strong>«選項»中的<a href="appendix-action.zh-hant.html#tbl-actions-10" class="quarto-xref">表&nbsp;<span>A.1</span></a>，下<span class="quarto-unresolved-ref">?tbl-actions-10-nouns</span> 展示了搭配名詞後的可操作性，產出層次不同，領域各異的<strong>世界片段</strong>”。</p>
+<div id="nte-actions-10-nouns" class="note callout callout-style-default callout-note callout-titled" title="🌊名➕🏄🏼動 跨領域的可操作**世界片段**" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+註釋&nbsp;C.4: 🌊名➕🏄🏼動 跨領域的可操作<strong>世界片段</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div id="tbl-actions-10-nouns-.table-small-print" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-actions-10-nouns-.table-small-print-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+表&nbsp;C.2: ⟨<strong>布魯姆+全宇層10類</strong>⟩ 🌊名➕🏄🏼動 跨領域實例
+</figcaption>
+<div aria-describedby="tbl-actions-10-nouns-.table-small-print-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 18%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>層級</th>
+<th>🧰 動詞</th>
+<th>📊 數據/資訊</th>
+<th>🧪 實驗/系統</th>
+<th>🤖 機器/AI</th>
+<th>📖 文本/語言</th>
+<th>🤝 人/社會</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>10</strong></td>
+<td>🚀⚛ 創構／理論化／引領</td>
+<td>創構數據理論</td>
+<td>引領系統設計</td>
+<td>理論化智能架構</td>
+<td>創構語言模型</td>
+<td>引領社會願景</td>
+</tr>
+<tr class="even">
+<td><strong>9</strong></td>
+<td>🧭☯ 對齊／策劃／整合</td>
+<td>整合數據源</td>
+<td>策劃實驗流程</td>
+<td>對齊 AI 模組</td>
+<td>整合語料庫</td>
+<td>策劃社會行動</td>
+</tr>
+<tr class="odd">
+<td><strong>8</strong></td>
+<td>🪞🪟 脈絡化／系統化</td>
+<td>脈絡化數據</td>
+<td>系統化實驗結果</td>
+<td>脈絡化 AI 輸出</td>
+<td>系統化文本</td>
+<td>脈絡化人際互動</td>
+</tr>
+<tr class="even">
+<td><strong>7</strong></td>
+<td>🎯🛠️ 應用／達成</td>
+<td>應用統計方法</td>
+<td>達成實驗目標</td>
+<td>應用演算法</td>
+<td>應用修辭技巧</td>
+<td>達成人際協議</td>
+</tr>
+<tr class="odd">
+<td><strong>6</strong></td>
+<td>📚🤓 理解</td>
+<td>理解數據模式</td>
+<td>理解系統運作</td>
+<td>理解 AI 推理</td>
+<td>理解語義結構</td>
+<td>理解社會規範</td>
+</tr>
+<tr class="even">
+<td><strong>5</strong></td>
+<td>💾🤓 記憶</td>
+<td>記憶數據點</td>
+<td>記憶實驗步驟</td>
+<td>記憶模型參數</td>
+<td>記憶詞彙語法</td>
+<td>記憶人際經驗</td>
+</tr>
+<tr class="odd">
+<td><strong>4</strong></td>
+<td>🏘️👨‍👩‍👧‍👦 歸屬</td>
+<td>歸屬數據社群</td>
+<td>歸屬研究團隊</td>
+<td>歸屬 AI 生態</td>
+<td>歸屬語言共同體</td>
+<td>歸屬社會群體</td>
+</tr>
+<tr class="even">
+<td><strong>3</strong></td>
+<td>💪☸ 掌控</td>
+<td>掌控數據流</td>
+<td>掌控系統運行</td>
+<td>掌控 AI 行為</td>
+<td>掌控文本生成</td>
+<td>掌控社會權力</td>
+</tr>
+<tr class="odd">
+<td><strong>2</strong></td>
+<td>🤝💞 連結</td>
+<td>連結數據集</td>
+<td>連結實驗模組</td>
+<td>連結 AI 網路</td>
+<td>連結語境</td>
+<td>連結社群</td>
+</tr>
+<tr class="even">
+<td><strong>1</strong></td>
+<td>🥗🚰 生存</td>
+<td>數據保存</td>
+<td>系統維持</td>
+<td>AI 存活</td>
+<td>語言延續</td>
+<td>社會生存</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="雙鑽模型" class="level2">
+<h2 class="anchored" data-anchor-id="雙鑽模型">🔀雙鑽模型</h2>
+<p>在意識到「🌊名➕🏄🏼動」組合的<strong>AI 知行鷹架</strong>的思維語法單元後，利用 AI 解決問題就可以預想成為要找到並定義一對概化問題及方案的「動詞＋名詞」，而這一對包括了一連串或一循環的「動詞＋名詞」組合。</p>
+<p>為系統引導讀者從<strong>發掘問題</strong>到<strong>設計解決方案</strong>的完整歷程，本附錄採用知名的<strong>雙鑽石模型</strong>（Double Diamond），將設計流程劃分為兩個「發散」與「收斂」的循環階段，用以定義最終的「動詞＋名詞<strong>」目標</strong>及相關的<strong>任務</strong>組合。</p>
+<p><strong>雙鑽石模型</strong>（簡稱<strong>雙鑽模型</strong>）是 依賴的核心模型，包含四個階段（探索、定義、發展、交付）。它圍繞兩個核心名詞（<strong>問題定義</strong>與<strong>解決方案</strong>）展開，旨在確保設計者能先「<strong>做對的事情</strong>」（解決真問題），再「<strong>把事情做到對</strong>」（提供好方案）。這正是 <a href="./10-06-AI_PM.zh-hant.html">AI 產品經理</a> 的核心工作之一。</p>
+<div id="imp-diamond-model-2-spaces" class="note callout callout-style-default callout-important callout-titled" title="**雙鑽模型**：分問題及解決兩空間" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+要&nbsp;C.1: <strong>雙鑽模型</strong>：分問題及解決兩空間
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div id="tbl-diamond-model-2-spaces" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-diamond-model-2-spaces-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+表&nbsp;C.3: <strong>雙鑽模型</strong>：分問題及解決兩空間
+</figcaption>
+<div aria-describedby="tbl-diamond-model-2-spaces-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 18%">
+<col style="width: 31%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>鑽石</th>
+<th>階段</th>
+<th>核心目的</th>
+<th>空間及關鍵原則</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>♦️</td>
+<td><strong>探索 → 定義</strong></td>
+<td><strong>問題定義</strong>：確保<br>「做對的事情」。</td>
+<td><strong>問題空間</strong>：透過發散與收斂，從廣泛洞察中<strong>精準聚焦方向</strong>。</td>
+</tr>
+<tr class="even">
+<td>💠</td>
+<td><strong>發展 → 交付</strong></td>
+<td><strong>解決方案</strong>：確保<br>「把事情做到對」。</td>
+<td><strong>解決空間</strong>：透過發散與收斂，從多種構想中<strong>選出最佳解方</strong>。</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>這四個階段的結構，確保我們在提出任何可行<strong>解決方案</strong>之前，都能先充分<strong>理解問題</strong>，再精準<strong>鎖定方向</strong>。</p>
+<p>在開發<strong>智能解決方案</strong>的能力構建過程中，雙鑽石結構能有效指引：第一個鑽石幫助我們<strong>發散</strong>探索問題並<strong>收斂</strong>出目標；第二個鑽石則幫助我們<strong>發散</strong>發展解方並<strong>收斂</strong>出可交付的成品。</p>
+<p>下表展示本附錄章節如何對應雙鑽石的四大階段，確保智能體目標的設定與執行都能<strong>有章可循</strong>：</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 23%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>階段</strong></th>
+<th><strong>對應章節標題</strong></th>
+<th><strong>核心內容</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Discover <br>探索</td>
+<td>🏗️探索名詞＋動詞組合<strong>目標</strong></td>
+<td>充分地<strong>驗證問題與機會</strong>。從三類名詞與三類動詞選項中，系統性地發散出所有能達「目標」（如<strong>解決痛點</strong>或<strong>成就增長點</strong>）的智能組合。釐清個體、機器與人機協作在目標上的選項與限制。</td>
+</tr>
+<tr class="even">
+<td>Define <br>定義</td>
+<td>🎯鎖定<strong>問題</strong>🙶目標🙷：職涯助手實例界定🛡️</td>
+<td>利用 <strong>HMW (How Might We)</strong> 等問題提問法，選擇出具可操作性的「名詞＋動詞」語法鷹架，將廣泛的探索結果<strong>收斂</strong>為<strong>單一、可執行的智能目標定義</strong>。</td>
+</tr>
+<tr class="odd">
+<td>Develop <br>發展</td>
+<td>🌌 逐級建補能力<strong>解方</strong></td>
+<td>根據<strong>定義</strong>好的目標，開始發展不同的<strong>智能體架構</strong>和<strong>工具鏈</strong>原型（例如：採用 RAG、多智能體協作等）。應用「動詞流程／循環」的鷹架選項，結合系統創新建補能力進行原型生成。</td>
+</tr>
+<tr class="even">
+<td>Deliver <br>交付</td>
+<td>🪜 選擇<strong>方案</strong> 🙶補全🙷：職涯助手實例落地</td>
+<td>從眾多解決方案中，<strong>收斂</strong>出可部署的<strong>最小可行方案（MVP）</strong>。透過測試和驗證定義的目標指標，對解方原型進行<strong>迭代</strong>改進，確保能可靠、準確地落地並交付價值。<br></td>
+</tr>
+</tbody>
+</table>
+<p>總之，本附錄彙集了智能體系統所需的<strong>目標設定、架構探索與能力構建</strong>的完整思維流程，透過「<strong>名詞 + 動詞</strong>」的組合，將抽象需求與智能能力具象化。本附錄總結的實用框架方法，旨在幫助讀者將大量「<strong>選項</strong>」發散，轉化為具有明確意圖的«<strong>選擇</strong>»。</p>
+<hr>
+</section>
+<section id="探索名動組合" class="level2">
+<h2 class="anchored" data-anchor-id="探索名動組合">1.🏗️探索名＋動組合</h2>
+<p>本節將透過「名詞＋動詞」的語法鷹架，<strong>系統性發散</strong> 出所有能對應「<strong>解決痛點</strong>」或「<strong>成就增長</strong>」的智能目標，並驗證每種組合的<strong>可行性與潛在價值</strong>。這個過程的重點不在於立即找到唯一答案，而是先廣泛生成「選項」，再逐步收斂為「選擇」。</p>
+<section id="名詞選項" class="level3">
+<h3 class="anchored" data-anchor-id="名詞選項">–🌊 名詞«選項»</h3>
+<p>名詞代表知識點或對象情報，可以分為三類：</p>
+<ul>
+<li><strong>需知</strong>：必須掌握的核心資訊或對象，例如「學生側寫」「職涯路徑」「技能需求」「升學方案」。</li>
+<li><strong>可知</strong>：<strong>透過努力或工具可以獲得</strong>的資訊，例如「產業趨勢」「導師資源」「學習平台」。</li>
+<li><strong>暫不知</strong>：<strong>目前無法完全掌握</strong>或具高度不確定性的資訊，例如「未來職場型態」「新興職業」「AI 對就業的長期影響」。</li>
+</ul>
+<p>這三類名詞的區分，有助於設計者判斷哪些資訊需要立即補足，哪些可以透過 AI 系統逐步探索，哪些則需要保留彈性以應對不確定性。</p>
+</section>
+<section id="動詞選項" class="level3">
+<h3 class="anchored" data-anchor-id="動詞選項">–🏄🏼 動詞«選項»</h3>
+<p><strong>動詞</strong>代表行動方式，可劃分為三類：</p>
+<ul>
+<li><strong>要做</strong>：必須完成的<strong>核心行動</strong>，例如「探索」「分析」「規劃」。<br>
+</li>
+<li><strong>可做</strong>：可選擇性完成的<strong>輔助行動</strong>，例如「比較」「模擬」「連結」。<br>
+</li>
+<li><strong>不必做</strong>：在特定情境下可<strong>暫時忽略</strong>的行動，例如「過度預測」「冗餘驗證」。</li>
+</ul>
+<p>此分類有助於團隊在設計智能目標時，<strong>聚焦於真正帶來價值的行動</strong>，避免「動作過多」或「資源浪費」。</p>
+</section>
+<section id="語法組合ai做啥" class="level3">
+<h3 class="anchored" data-anchor-id="語法組合ai做啥">–🧩語法組合：AI做啥</h3>
+<p>當能清楚表達「用 AI 做（動詞）什麼（名詞）」時，就像在工地搭起鷹架，有了結構，就能按需建造成果。 例如：</p>
+<ul>
+<li>「用 AI <strong>分析</strong>（動詞）<strong>技能需求</strong>（名詞）」<br>
+</li>
+<li>「用 AI <strong>規劃</strong>（動詞）<strong>學習方案</strong>（名詞）」<br>
+</li>
+<li>「用 AI <strong>連結</strong>（動詞）<strong>導師資源</strong>（名詞）」</li>
+</ul>
+<p>這些語法組合不僅是語言上的表述，更是將抽象需求轉化為具體設計任務的過程。</p>
+<p>🔎 <strong>探索目標表述選項</strong></p>
+<p>透過「名詞＋動詞」語法框架，可將感知的探索目標用<strong>具體行動</strong>及<strong>對象物</strong>精確表述。每種表述都代表人類在<strong>物質世界</strong>、<strong>社會世界</strong>與<strong>科技世界</strong>中，培養<strong>自我意識</strong>與<strong>認知能力</strong>的路徑。</p>
+<p>藉由以上八種層次的「動詞－名詞」配對，讀者可按層次逐步構建身處「智能化社會」的能力與項目。這些「探索性組合」將在下一節透過 HMW 提問法，進一步<strong>收斂</strong>為<strong>單一、可執行的智能目標</strong>。</p>
+<hr>
+</section>
+</section>
+<section id="鎖定問題目標-職涯助手實例界定" class="level2">
+<h2 class="anchored" data-anchor-id="鎖定問題目標-職涯助手實例界定">2.🎯鎖定<strong>問題</strong>🙶目標🙷：<br>職涯助手實例界定🛡️</h2>
+<p>在列出「問題組合」後，便能更明確<strong>目標</strong>，從而界定個體、機器與人機協作各自的<strong>選擇與限制</strong>。<strong>清晰界定實際問題</strong>是決定後續解方設計方向的關鍵。</p>
+<p>本節以實例展示，如何運用 <strong>HMW（How Might We）等提問法，將廣泛的探索成果收斂</strong>為<strong>單一可執行的智能目標定義</strong>，並清楚界定個體、機器與人機協作在職涯助手場景中的選擇與限制。</p>
+<section id="個體的選擇與限制" class="level3">
+<h3 class="anchored" data-anchor-id="個體的選擇與限制">–🧍‍♂️個體的選擇與限制</h3>
+<p>人類的 ❝腦補❞ 能力來自經驗、情境與想像力，能在資訊不完整時進行推測與創造。然而，這種能力也受限於 <strong>認知偏誤</strong>（如過度自信、選擇性注意）、<strong>情緒能量</strong>（疲勞、焦慮會降低判斷力）、以及 <strong>知識邊界</strong>（缺乏跨領域資訊時難以突破）。</p>
+<p>因此，個體在職涯規劃中雖能提出創意，但往往需要外部支持來補足盲點。為了突破限制，增加個體互助互諒的選項，可以採用以下<strong>設計方法</strong>去理解<strong>利害關係人</strong>個體的需求，以助明確「目標」：</p>
+<ul>
+<li><p>👤 <strong>人物誌式角色扮演</strong>（Persona‑Based Role‑Enactment）：設計者可建立「高中生探索者」、「焦慮的家長」、「職涯顧問」、「留學顧問」、「技職師傅」等人物誌，並在工作坊中扮演這些角色，模擬他們在職涯選擇時的語言、情緒與需求。這能揭示個體在資訊不足時的「腦補」策略與認知偏誤。</p></li>
+<li><p>🔮 <strong>未來情境角色扮演</strong>（Future Role‑Play）：讓學生或設計者想像「五年後的自己」與 AI 助手互動的場景，能凸顯個體對未來不確定性的焦慮與期待，並幫助設計者理解學生在不同時間尺度下的需求。</p></li>
+<li><p>🔄 <strong>利害關係人映射＋角色輪替</strong>（Stakeholder Mapping + Role Rotation）：設計者輪流扮演學生、家長與專家，能體驗不同立場下的張力，幫助理解個體在決策時的限制，並揭示角色間的衝突與互補。</p></li>
+</ul>
+<p>有了以上的具體情報及理解，就可以明確「目標」去對齊<strong>利害關係人</strong>的需求與期望，面對個體的選擇與限制，去設計更具針對性的智能輔助方案。</p>
+</section>
+<section id="機器-補全與代價" class="level3">
+<h3 class="anchored" data-anchor-id="機器-補全與代價">–🤖機器 🙶補全🙷與代價</h3>
+<p>機器的「<strong>補全</strong>」能力源於<strong>龐大的數據與算力</strong>，能快速生成答案、模擬多種可能性，並在<strong>大規模資訊處理</strong>上超越人類。然而，這種能力的代價是：<strong>能源消耗</strong>（大模型運算）、<strong>倫理風險</strong>（偏見數據）、以及<strong>缺乏情境感知</strong>（無法真正理解人類的價值與情感）。因此，機器的補全雖高效，但需要<strong>人類監督與調整</strong>。</p>
+<p>人工智慧雖能透過 <strong><a href="./02-07-large_language_models.zh-hant.html">大語言模型</a></strong> 提供快速的資訊補全與建議，但設計者仍需將其輸出轉化為可操作的「目標」：</p>
+<ul>
+<li>📝 <strong>提示模板</strong>（Prompt Template）：將人物誌輸出轉化為<strong>角色化提示</strong>，讓系統能針對不同角色需求調整語氣與內容（例如：「以高中生身份，請用簡單語言解釋…」）。<br>
+</li>
+<li>📈 <strong>長期情境模擬</strong>（Long-Term Scenario Simulation）：將未來情境角色扮演的洞察轉化為檢索與生成策略，RAG 系統可針對「五年後的職場趨勢」或「未來技能需求」提供<strong>模擬性回答</strong>。<br>
+</li>
+<li>🌐 <strong>多視角檢索</strong>（Multi-Perspective Retrieval）：將角色輪替的結果用於設計<strong>多視角回答</strong>，同一問題由「學生視角」「家長視角」「專家視角」分別呈現，幫助使用者比較與平衡不同觀點。</li>
+</ul>
+<p>透過這些具體情報，設計者便能明確「目標」，利用 <strong><a href="./02-07-large_language_models.zh-hant.html">大語言模型</a></strong> 的檢索與生成能力，鎖定<strong>問題</strong>🙶目標🙷，並確保輸出能被人類<strong>正確理解與採納</strong>。</p>
+</section>
+<section id="人機協作的鷹架" class="level3">
+<h3 class="anchored" data-anchor-id="人機協作的鷹架">–🤝 人機協作的鷹架</h3>
+<p>人機協作的關鍵在於<strong>編排兩種不同的補全形式</strong>：人類的「腦補」提供<strong>價值判斷與情境理解</strong>；機器的「補全」提供<strong>資料廣度與計算深度</strong>。當兩者在<strong>語法框架</strong>（動詞＋名詞組合）下協同運作，便能形成「合奏」：人類設定目標與倫理邊界，機器生成解方並快速迭代，人類再進行篩選與修正。此模式既能<strong>避免單方的盲點</strong>，也能<strong>提升決策的全面性與可行性</strong>。</p>
+<p>根據雙鑽模型前一階段的「目標」選項與限制，此階段開始<strong>收斂</strong>，以鎖定<strong>問題</strong>🙶目標🙷。可利用 <strong>HMW (How Might We)</strong> 等提問法，將廣泛的探索結果<strong>收斂</strong>為<strong>單一、可執行的智能目標定義</strong>。</p>
+<p>以<strong>職涯助手</strong>為例，其核心問句「我們如何能夠幫助學生與家長…？」可具體收斂到以下具可操作性的「名詞＋動詞」語法框架：</p>
+<ul>
+<li>🎯 <strong>探索 職涯路徑</strong>（Explore Career Pathways）</li>
+<li>📊 <strong>分析 技能需求</strong>（Analyze Skill Demands）<br>
+</li>
+<li>🧭 <strong>規劃 學習方案及歷程</strong>（Plan Learning Programs and Portfolios）<br>
+</li>
+<li>🤝 <strong>連結 導師資源</strong>（Connect Mentorship Resources）<br>
+</li>
+<li>🧪 <strong>檢驗 決策假設</strong>（Test Decision Assumptions）</li>
+</ul>
+<p>透過此收斂過程，智能<strong>職涯助手</strong>的開發設計團隊就能依據自身能力及市場情報，選擇一個<strong>最核心、最值得解決的</strong>問題🙶目標🙷，並對相應的<strong>解決痛點</strong>或<strong>成就增長點</strong>有更明確的掌握。</p>
+</section>
+</section>
+<section id="逐級建補能力解方" class="level2">
+<h2 class="anchored" data-anchor-id="逐級建補能力解方">3.🌌 逐級建補能力解方</h2>
+<p>根據已鎖定的目標，本節會分階段展開多種智能體架構 或 工具鏈原型（例如 RAG、多智能體協作等），並結合「動詞流程／循環」鷹架，逐步建構、測試與優化可行解方。</p>
+<p>本附錄集繼續以「我們要如何為高中生建構職涯助手？」為例，展示如何建補架構<strong>解方</strong>，針對以下「名詞＋動詞」組合作為鎖定目標：</p>
+<blockquote class="blockquote">
+<p>🧭 「我們如何能夠幫助學生與家長…<strong>規劃 學習方案及歷程</strong>？」</p>
+</blockquote>
+<section id="流程循環鷹架" class="level3">
+<h3 class="anchored" data-anchor-id="流程循環鷹架">–🔄流程／循環鷹架</h3>
+<p>在熟悉「名詞➕動詞」的組合語法之後，下一階段就是逐級地構建系統，本附錄介紹一個 <strong>動詞流程／循環</strong>的<strong>鷹架範本</strong>，協助起草具體具有動態能力的循環。</p>
+<p>這 SIPAEA <strong>鷹架範本</strong>為整合部分來自 <strong>控制論與機器人學</strong>的 <strong>感知–規劃–行動</strong>（Sense–Plan–Act）架構，以及來自 <strong>組織學習與適應系統</strong> 的 <strong>感知–詮釋–調適</strong> 飛輪模型（Sense–Interpret–Adapt Flywheel）：</p>
+<blockquote class="blockquote">
+<p>🛰Sense → 🪟Frame/Interpret → 🗺️Plan → 💪Act → 🧮Evaluate → 🔂Adapt</p>
+<p>🛰感測 → 🪟框定/詮釋 → 🗺️策劃 → 💪行動 → 🧮評估 → 🔂調適/適應</p>
+</blockquote>
+<p>設計者與建構者能依需求調整、增刪或替換動詞，以建立最適合自己情境的創新流程。如<strong>回饋</strong>，可以在任何兩行動之間增加有意義的返回修正。</p>
+<p>這<strong>鷹架範本</strong>的知識來源如下，並在接下來的一下節<strong>註解型參考書目</strong>做說明：</p>
+<ul>
+<li><strong>控制論與系統理論</strong>（Wiener, Beer）提供了<strong>適應</strong>與<strong>回饋</strong>的工程數學及實踐基礎。<br>
+</li>
+<li><strong>決策科學與軍事理論</strong>（Boyd, Endsley）提供了<strong>感知</strong>、<strong>詮釋</strong>、<strong>行動</strong>的動態模型。<br>
+</li>
+<li><strong>管理與學習理論</strong>（Deming, Kolb）提供了<strong>持續改進</strong>與<strong>反思</strong>的循環。<br>
+</li>
+<li><strong>人工智慧架構</strong>（Russell &amp; Norvig）則將這些循環模式落實於 <strong>智能代理（intelligent agents）</strong> 的設計，透過「感測–策劃–行動」的基礎架構，並延伸加入「評估–調適」，使系統能在複雜環境中持續學習與優化。</li>
+</ul>
+<div id="tbl-sipaea-.table-small-print" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-sipaea-.table-small-print-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+表&nbsp;C.4: <strong>🔄 SIPAEA 鷹架範本對應表</strong>
+</figcaption>
+<div aria-describedby="tbl-sipaea-.table-small-print-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 21%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>來源／理論</strong></th>
+<th style="text-align: left;">🛰<strong>感測</strong><br>Sense</th>
+<th style="text-align: left;">🪟<strong>框定／<br>詮釋</strong><br>Frame/<br>Interpret</th>
+<th style="text-align: left;">🗺️<strong>策劃</strong><br>Plan</th>
+<th style="text-align: left;">💪<strong>行動</strong><br>Act</th>
+<th style="text-align: left;">🧮<strong>評估</strong><br>Evaluate</th>
+<th style="text-align: left;">🔂<strong>調適</strong><br>Adapt</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>控制論與系統理論</strong></td>
+<td style="text-align: left;">觀察／監測（Wiener）</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">學習／<br>修正（Beer）</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>人工智慧與機器人架構</strong></td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">決策／<br>概念化（Newell <br>&amp; Simon）</td>
+<td style="text-align: left;">執行／操作（Brooks、Russell &amp; Norvig）</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">–</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>決策科學與軍事理論</strong></td>
+<td style="text-align: left;">觀察（Boyd）、監測（Holling）</td>
+<td style="text-align: left;">導向／<br>反思<br>（Endsley）</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;">–</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>學習與管理循環</strong></td>
+<td style="text-align: left;">監測（Holling）</td>
+<td style="text-align: left;">反思<br>（Kolb）</td>
+<td style="text-align: left;">規劃（Deming）、概念化（Kolb）</td>
+<td style="text-align: left;">實驗／實踐（Kolb）</td>
+<td style="text-align: left;">檢查（Deming）、評估（Holling）</td>
+<td style="text-align: left;">修正（Kolb）、調適（Holling）</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<section id="註解型參考書目" class="level4">
+<h4 class="anchored" data-anchor-id="註解型參考書目">–📚 註解型參考書目</h4>
+<p>以下是本書提出<strong>鷹架範本</strong>的具體來源及對應的動詞組：</p>
+<ul>
+<li>⚙️<strong>控制論與系統理論</strong>
+<ul>
+<li><strong>Norbert Wiener,</strong> <em><strong>Cybernetics</strong></em> <strong>(1948)</strong> – 奠定控制論基礎，強調「感測（Sense）→ 回饋（Evaluate）→ 調適（Adapt）」的循環。</li>
+<li><strong>Stafford Beer,</strong> <em><strong>Brain of the Firm</strong></em> <strong>(1972)</strong> – 可行系統模型：遞迴式的「感測（Sense）→ 詮釋（Interpret）→ 策劃（Plan）→ 行動（Act）→ 調適（Adapt）」，確保組織存活。</li>
+</ul></li>
+<li>🤖人工智慧與機器人架構
+<ul>
+<li><strong>Newell &amp; Simon (1972),</strong> <em><strong>Human Problem Solving</strong></em> – 早期認知架構，提出「感測（Sense）→ 詮釋（Interpret）→ 策劃（Plan）→ 行動（Act）」的 SIPA 循環。</li>
+<li><strong>Russell &amp; Norvig,</strong> <em><strong>Artificial Intelligence: A Modern Approach</strong></em> <strong>(3rd ed., 2010)</strong> – 描述 <strong>感測（Sense）→ 策劃（Plan）→ 行動（Act）</strong> 架構，並延伸至「評估（Evaluate）→ 調適（Adapt）」。</li>
+<li><strong>Brooks, subsumption architecture in robotics (1986, 1991)</strong> – 分層的「感測（Sense）→ 行動（Act）」迴路，具備「調適（Adapt）」能力。</li>
+</ul></li>
+<li>🎖️ <strong>決策科學與軍事理論</strong>
+<ul>
+<li><strong>John Boyd 的 OODA 迴路</strong> (1987) – 「觀察（Sense）→ 導向（Interpret）→ 決策（Plan）→ 行動（Act）」，在戰略學與決策科學中廣泛使用；現代管理學文獻通常會補充「評估（Evaluate）→ 調適（Adapt）」。</li>
+<li><strong>Mica R. Endsley,</strong> <em>Toward a Theory of Situation Awareness</em>（《邁向情境感知理論》, 1995） – 提出情境感知三層次：「感知（Sense）→ 理解（Interpret）→ 預測（Plan）」，對應於智能代理的 <strong>感測–策劃–行動</strong> 架構。</li>
+</ul></li>
+<li>🔂 <strong>學習與管理循環</strong>
+<ul>
+<li><strong>Deming’s PDCA 循環 (Plan–Do–Check–Act, 1950s)</strong> – 迭代改進循環「策劃→做→檢查→行動」，直接對應「策劃→行動→評估→調適修正」（Plan–Act–Evaluate–Adapt）</li>
+<li><strong>Kolb’s 經驗學習 (1984)</strong> – 學習循環：「具體經驗（Sense）→ 反思觀察（Interpret）→ 抽象概念化（Plan）→ 主動實驗（Act）」。</li>
+<li><strong>適應管理 (Holling, Walters, 1978–1986)</strong> – 生態管理：「監測（Sense）→ 詮釋（Interpret）→ 策劃（Plan）→ 行動（Act）→ 評估（Evaluate）→ 調適（Adapt）」。</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="llm-ai工程" class="level3">
+<h3 class="anchored" data-anchor-id="llm-ai工程">–🌉 LLM AI工程</h3>
+<p>根據 <strong>動詞流程／循環</strong>的<strong>鷹架範本</strong> ，可以具體拆解如何達成 「學生與家長…<strong>規劃 學習方案及歷程</strong>」，如下表所述：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>動詞環節</strong></th>
+<th><strong>建補能力（AI 知行鷹架）</strong></th>
+<th><strong>任務目標</strong></th>
+<th><strong>工程實現與技術細節</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>🛰<strong>感測<br> (Sense)</strong></td>
+<td>記錄需求及學生側寫</td>
+<td>捕捉全面的用戶與環境數據</td>
+<td><strong>多模態 API 或 MCP</strong>： 提取用戶上傳的<strong>成績單 (PDF 結構化提取)</strong> 或<strong>作品集 (圖像/文本 嵌入)</strong>。使用 <strong>Named Entity Recognition (NER)</strong> 提取關鍵知識點。</td>
+</tr>
+<tr class="even">
+<td>🪟<strong>框定／詮釋<br> (Interpret)</strong></td>
+<td>理解、脈絡化</td>
+<td>將數據轉換為<strong>可行動</strong>的情境與意圖</td>
+<td><strong><a href="./10-05-context_engineering.zh-hant.html">脈絡工程</a></strong> 與 角色化 <strong><a href="./10-03-prompt_engineering.zh-hant.html">提示工程</a></strong>： 賦予 LLM 「<strong>職涯顧問</strong>」角色，使用 RAG 檢索<strong>相似學生</strong>的成功路徑（案例研究），進行情境<strong>框定</strong>。</td>
+</tr>
+<tr class="odd">
+<td>🗺️<strong>策劃<br> (Plan)</strong></td>
+<td>策劃、應用</td>
+<td>生成分階段、多樣化的行動路徑</td>
+<td><strong>思維鏈 (CoT) 或規劃 智能體</strong>： 要求 LLM <strong>內部先分解</strong>目標。推外部工具（如 Course API）時取得家長或學生用戶討論。</td>
+</tr>
+<tr class="even">
+<td>💪<strong>行動<br> (Act)</strong></td>
+<td>連結、達成</td>
+<td>執行規劃中的外部操作</td>
+<td><strong>工具調用 (Tool Use) 與外部 API 連接</strong>： LLM 輸出結構化的 JSON 請求，由執行器調用 求職平台（如 LinkedIn） API 獲取<strong>職位空缺</strong>或 課程平台 API 獲取<strong>課程連結</strong>。</td>
+</tr>
+<tr class="odd">
+<td>🧮<strong>評估<br> (Evaluate)</strong></td>
+<td>評估、掌控</td>
+<td>衡量行動與用戶反饋的效果</td>
+<td><strong>LLM 作為評估器與 RLHF 數據收集</strong>： 處理用戶反饋，轉化為<strong>量化獎勵訊號</strong>。運用 <strong>智能體評量</strong> 檢查 API 響應速度和連結有效性。</td>
+</tr>
+<tr class="even">
+<td>🔂<strong>調適<br> (Adapt)</strong></td>
+<td>調適、對齊</td>
+<td>根據評估結果優化模型與流程</td>
+<td><strong><a href="./10-05-context_engineering.zh-hant.html">脈絡工程</a>監督式微調</strong>： 將高質量「<strong>成功範例</strong>」與「<strong>失敗範例</strong>」用於對<strong>智能體</strong>改進，確保下次策劃更貼合用戶價值觀。</td>
+</tr>
+</tbody>
+</table>
+<p>如此，要達成對家長和學生有用的「學習方案及歷程」，就有一套<strong>動詞流程／循環</strong>的<strong>鷹架範本</strong>，且可以系統性納入就業市場等會時間及情境變化去做服務。</p>
+</section>
+<section id="多智能體等原型" class="level3">
+<h3 class="anchored" data-anchor-id="多智能體等原型">–🧭多智能體等原型🔗</h3>
+<p>列出各種「動詞流程／循環」鷹架選項後，接下來就是要逐步建構、測試與優化可行解方。本附錄限於篇幅，僅展示逐步建構的兩種可能性：<strong>多種智能體架構</strong> 或 <strong>工具鏈原型</strong>。</p>
+<p>要示範解決的問題：「我們要如何為高中生及家長<strong>規劃 學習方案及歷程</strong>？」</p>
+<section id="多智能體架構" class="level4">
+<h4 class="anchored" data-anchor-id="多智能體架構">🪟🧭 多智能體架構</h4>
+<p><strong>多智能體架構：精準分工與多維度對齊</strong>。在這個<strong>規劃學習方案</strong>的任務中，多智能體架構確保學習路徑不僅是學術上可行，更要考量<strong>家長關注的資源與風險</strong>（例如：時間成本、回報率）。MoE<strong>路由智能體</strong>（Router Agent）負責將「<strong>選課</strong>」問題導向<strong>學術專家</strong>，將「<strong>費用</strong>」問題導向<strong>財務顧問</strong>。</p>
+<p><strong>MoE 核心機制</strong>是將「職涯教練」角色拆解為數個<strong>專家智能體</strong>（例如：<strong>學術課程專家、職場技能導師、家庭財務顧問</strong>等）。這些專精於「學習路徑<strong>規劃</strong>」的<strong>專家</strong>，共同利用大語言模型及數據庫構成<strong>導師組 MoE</strong>（Mixture of Experts）。</p>
+<p>關於「生命機會」的專家角色，利用大語言模型及數據庫構成導師組 MoE。此智能系統可以提供決策支援，依學生側寫，按以下步驟「<strong>🛰感測 → 🪟框定 → 🗺️策劃 → 💪行動 → 🧮評估</strong>」：</p>
+<ul>
+<li><strong>🛰感測</strong>：透過 <strong><a href="./10-01-API_MCP.zh-hant.html">API 或 MCP</a></strong> 調用相關大學專業數據、就業市場數據、及其現況與未來的預測數據，為導師組 MoE 取得<strong>適切學生具體時空的數據</strong>。</li>
+<li><strong>🪟框定</strong>：透過 <strong><a href="./10-03-prompt_engineering.zh-hant.html">提示工程</a></strong> 設計並依時空數據<strong>精準框定</strong>導師專家組 MoE 的<strong>角色定位</strong>，如某國大學及專業系所顧問、某城市人力資源仲介、等等，協助<strong>框定詮釋相關數據的對話</strong>。</li>
+<li><strong>🗺️規劃</strong>：接著生成符合<strong>培訓方案</strong>接續<strong>職場路徑</strong>的路徑圖（roadmapping），特別是利用 <strong><a href="./10-04-retrieval_augmented_generation.zh-hant.html">知識驅動生成（RAG）</a></strong> <strong>擴充</strong>真實知識庫（如從專業社交網站領英），提供各種路徑圖選項。</li>
+<li><strong>🔨行動</strong>：使用 <strong><a href="./10-05-context_engineering.zh-hant.html">脈絡工程</a></strong> 將學生個人與導師專家組 MoE 歷史對話記錄與新接收的資訊<strong>串接</strong>，確保連貫性。</li>
+<li><strong>✅評估</strong>：運用 <strong><a href="./10-02-agent_reliability_evaluation.zh-hant.html">智能體可靠性與評估</a></strong> 知識點，挑戰學生個人，或導師專家組某一暫時論點，擁抱不確定性，提供如「轉向」（pivot）的<strong>多條</strong>替代路徑，並適當引入學生個人及家長對於潛在職涯的生命機會及風險的額外考量與評估，如找到伴侶的機會、成家的預期時程、職涯的城市與生活型態、等等。</li>
+</ul>
+<p>透過這五步循環，<strong>MoE 職涯導師網絡</strong>能在複雜場景中<strong>動態協同</strong>，既能保有各領域的<strong>深度見解</strong>，又能整合成連貫的<strong>整體建議</strong>。</p>
+</section>
+<section id="工具鏈原型" class="level4">
+<h4 class="anchored" data-anchor-id="工具鏈原型">🔗📒工具鏈原型</h4>
+<p><strong>核心價值：效率執行與透明追蹤</strong>。工具鏈的價值在於將<strong>規劃</strong>好的學習路徑，轉化為<strong>可執行、可追蹤</strong>的<strong>任務清單</strong>，並利用 <strong>協同過濾</strong> 提高資源推薦的效率。</p>
+<p>將原人類社會各相關領域的<strong>匹配</strong>資源與平台上的 <strong><a href="./09-01-collaborative_filtering.zh-hant.html">協同過濾</a> 工具</strong> 連結，構成一套支援「生命機會」決策的工具集。這套工具鏈將專注於各種<strong>匹配</strong>服務，幫助學生探索<strong>潛在職業選項匹配</strong>、<strong>專業匹配</strong>、<strong>伴侶匹配</strong>、<strong>城市或國家匹配</strong>等，依學生側寫，按以下步驟「<strong>🛰感測 → 🪟框定 → 🗺️策劃 → 💪行動 → 🧮評估</strong>」：</p>
+<ul>
+<li><strong>🛰感測</strong>：透過初始問卷及對話，利用 <strong><a href="./10-01-API_MCP.zh-hant.html">API 或 MCP</a></strong> <strong>結構化</strong>地提取學生的
+<ul>
+<li><strong>核心價值觀、興趣、性格特質 (VIP)</strong>、以及對未來生活的<strong>預期</strong>（如：預期薪資、工作生活平衡、成家時程等），作為所有後續匹配的基礎數據。<br>
+</li>
+<li><strong>學習風格 (Learning Style)</strong>、<strong>當前技能水平</strong>、以及對<strong>內容形式的偏好</strong>（如：影音、文本、實戰），作為所有後續匹配的基礎數據。</li>
+</ul></li>
+<li><strong>🪟框定</strong>：核心是結合 <strong><a href="./09-01-collaborative_filtering.zh-hant.html">協同過濾</a></strong> 技術，將學生的 VIP 數據與政府、產業、學術等<strong>多元數據源</strong>進行<strong>比對</strong>，<strong>框定</strong>並推薦與學生<strong>學習偏好</strong>、<strong>知識缺口</strong>最匹配的<strong>學習資源</strong>，如與學生特質相似、或成功路徑相仿的<strong>學長姐/職業導師</strong>等資源。<br>
+</li>
+<li><strong>🗺️策劃</strong>：運行多個獨立的<strong>匹配算法</strong>，並利用 <strong><a href="./10-04-retrieval_augmented_generation.zh-hant.html">知識驅動生成（RAG）</a></strong> <strong>擴充</strong>
+<ul>
+<li>課程評價、前置技能需求等知識庫，提供多個<strong>組合式的學習進程方案</strong>，計算並<strong>權重化</strong>各選項的<strong>完成度與效率得分</strong>。</li>
+<li>匹配知識庫（如：城市生活成本、移民政策），提供多個<strong>組合式的人生路徑方案</strong>，計算並<strong>權重化</strong>各選項的<strong>契合度得分</strong>。</li>
+</ul></li>
+<li><strong>🔨行動</strong>：透過 <strong><a href="./10-03-prompt_engineering.zh-hant.html">提示工程</a></strong> 建立互動模組，允許學生對匹配結果或特定路徑<strong>提出假設或情境測試</strong>，系統再利用 <strong><a href="./10-05-context_engineering.zh-hant.html">脈絡工程</a></strong> <strong>即時更新</strong>匹配權重和參數，<strong>優化</strong>算法的結果。<br>
+</li>
+<li><strong>✅評估</strong>：運用 <strong><a href="./10-02-agent_reliability_evaluation.zh-hant.html">智能體可靠性與評估</a></strong> 的評估框架，挑戰學生當前的選擇或<strong>當前的學習進度</strong>，<strong>揭示</strong>每一條路徑的<strong>潛在風險與生命機會</strong>（如：錯過申請截止日、行業壽命、找到伴侶的機會等），確保學生在充分理解執行不確定性的前提下，做出<strong>最終的進度管理選擇</strong>。</li>
+</ul>
+<p>此工具鏈示例展示將多個服務<strong>模組化整合</strong>，並透過迴圈確保每次推薦更貼近用戶需求。</p>
+<hr>
+<p>上述逐步建構的兩種架構原型，具體展示「動詞流程／循環」鷹架可以發展不同性質的解決方案。值得提示的是：</p>
+<ul>
+<li><strong>🔂調適/適應（Adaptation）的工程必要性</strong>：
+<ul>
+<li>這個階段不只是概念上的「<strong>修正</strong>」，在工程上，它要求系統具備<strong>持續集成與部署 (CI/CD)</strong> 的能力，並將<strong>🧮評估</strong>階段收集到的用戶反饋，用於<strong>模型微調（Fine-Tuning）或知識庫自動更新</strong>。<br>
+</li>
+<li>對於變動快速的<strong>考試或學術標準</strong>，<strong>調適</strong>是確保<strong>數據新鮮度</strong>的關鍵機制。若要追求職涯的相對穩定性，反而更需要<strong>每年更新的數據</strong>去確認路線的相對穩定不變，這本身就是一種<strong>動態穩定</strong>的<strong>調適</strong>行為。<br>
+</li>
+</ul></li>
+<li><strong>🪟框定（Framing）的決策價值</strong>：
+<ul>
+<li>LLM 時代的<strong>框定</strong>是承先啟後的關鍵流程。它具體而微地展示了「<strong>解方發散</strong>」階段內，如何針對特定用戶進行<strong>數據發散與收歛</strong>的過程。<br>
+</li>
+<li><strong>框定</strong>的品質，直接決定了後續 LLM 輸出的<strong>相關性</strong>和<strong>偏見風險</strong>。透過<strong>脈絡工程</strong>和<strong>提示工程</strong>進行精確框定，能幫助 LLM 更好地<strong>感知</strong>現實世界和個人追求的發掘過程。</li>
+</ul></li>
+</ul>
+<p>這兩套方案，示範了如何在第二鑽石的 <strong>發展</strong> 階段，利用六步驟的動詞鷹架發散出可交付的方案<strong>選項</strong>，以利在從多元選項中精煉出最能驗證需求的<strong>最小可行方案（MVP）進行交付</strong>佈置，同時累積可供未來場景復用的通用模式。</p>
+</section>
+</section>
+</section>
+<section id="選擇方案-補全-學習方案落地" class="level2">
+<h2 class="anchored" data-anchor-id="選擇方案-補全-學習方案落地">4.🪜 選擇<strong>方案</strong> 🙶補全🙷：<br>學習方案落地🛡️</h2>
+<p>在雙鑽石模型的最後階段 <strong>交付（Deliver）</strong>，我們的目標是從「發展」階段的眾多原型（多智能體或工具鏈）中<strong>收斂</strong>出最能驗證核心價值的<strong>最小可行方案（MVP）</strong>。本階段強調在真實環境中<strong>測試</strong>、<strong>驗證指標</strong>與<strong>持續迭代</strong>，確保<strong>智能學習方案</strong>能<strong>可靠地</strong>部署並持續創造價值。</p>
+<section id="收斂與驗證mvp" class="level3">
+<h3 class="anchored" data-anchor-id="收斂與驗證mvp">📌收斂與驗證MVP</h3>
+<p>要成功「交付」一套有用的<strong>學習方案系統</strong>，必須結合 <strong><a href="./10-02-agent_reliability_evaluation.zh-hant.html">智能體可靠性與評估</a></strong> 和 <strong><a href="./10-06-AI_PM.zh-hant.html">AI 產品經理</a></strong> 的思維。構建最小可行方案（MVP）時，我們將焦點放在<strong>協助學生及家長用戶「規劃 學習方案及歷程</strong>」，以檢驗方案的<strong>時程可行性、資源匹配度與價值對齊性</strong>。</p>
+</section>
+<section id="多智能體架構-mvp" class="level3">
+<h3 class="anchored" data-anchor-id="多智能體架構-mvp">🪟🧭多智能體架構 MVP</h3>
+<p>多智能體架構解決方案以分層規劃與專家資源對齊為特色：</p>
+<ul>
+<li><strong>目標</strong>： 驗證多智能體架構中，<strong>分層專家組</strong>結合核心流程的<strong>有效性</strong>與<strong>資源匹配度</strong>。 &nbsp; &nbsp;&nbsp;</li>
+<li><strong>MVP 內容</strong>： 選用「<strong>學術課程專家</strong>」與「<strong>家庭財務顧問</strong>」兩組子代智能體<strong>，作為 MVP 的核心。系統結合 </strong><a href="./10-04-retrieval_augmented_generation.zh-hant.html">RAG</a>** 檢索<strong>最新考試大綱</strong>。
+<ul>
+<li><strong>學術專家</strong>：專注於生成分階段的<strong>學習內容清單</strong>和<strong>時程規劃</strong>。</li>
+<li><strong>財務顧問</strong>：專注於根據家長輸入的<strong>預算範圍</strong>，對學習內容清單中的<strong>外部資源</strong>（如補習班、線上課程費用）進行<strong>費用估算</strong>和<strong>風險提示</strong>。</li>
+<li>這種協同模式確保交付的學習方案不僅「<strong>學術可行</strong>」，更要「<strong>經濟可行</strong>」。 &nbsp; &nbsp;&nbsp;</li>
+</ul></li>
+<li><strong>交付與監控</strong>： 後端置入儀表板監控<strong>方案的「預算符合度</strong>」（驗證財務顧問的效能）和「<strong>時程完成率</strong>」（驗證學術規劃的有效性）。我們需要確保回應品質（如<strong><a href="./10-02-agent_reliability_evaluation.zh-hant.html">智能體可靠性與評估</a></strong> ）達到預期。</li>
+</ul>
+</section>
+<section id="工具鏈-mvp" class="level3">
+<h3 class="anchored" data-anchor-id="工具鏈-mvp">🔗📒工具鏈 MVP</h3>
+<p>工具鏈解決方案專注於學習資源的協同與輸出：</p>
+<ul>
+<li><strong>目標</strong>： 驗證工具鏈模式在特定、高頻率的<strong>學習資源匹配與成果輸出</strong>任務上的<strong>效率</strong>和<strong>精準度</strong>。 &nbsp; &nbsp;&nbsp;</li>
+<li><strong>MVP 內容</strong>： 上線「<strong>風格匹配算法</strong> + <strong>成果結構化輸出</strong>」組合。專門解決「<strong>課程匹配</strong>」和「<strong>作品集優化</strong>」任務。
+<ul>
+<li><strong>課程匹配</strong>：利用 <strong><a href="./09-01-collaborative_filtering.zh-hant.html">協同過濾</a></strong> 演算法，根據學生的<strong>學習風格</strong>（如視覺型、實踐型）和<strong>當前知識缺口</strong>，推薦最適合的<strong>線上課程、書籍或實作專案</strong>。</li>
+<li><strong>輸出優化</strong>：應用 <strong><a href="./10-03-prompt_engineering.zh-hant.html">提示工程</a></strong> 和 <strong><a href="./10-05-context_engineering.zh-hant.html">脈絡工程</a></strong>，允許用戶將學習成果輸入（如一個項目簡介），系統能將其優化為符合大學申請標準的<strong>專業作品集敘事</strong>，並輸出為<strong>結構化的 JSON/PDF 格式</strong>。 &nbsp; &nbsp;&nbsp;</li>
+</ul></li>
+<li><strong>交付與監控</strong>： 用戶在 UI 側可見「<strong>課程契合度得分</strong>」。系統應用 <strong><a href="./10-03-prompt_engineering.zh-hant.html">提示工程</a></strong> 允許學生或家長用戶更新學生情境，並在 UI 側展示儀表板數據，允許用戶能有 <strong><a href="./10-06-AI_PM.zh-hant.html">AI 產品經理</a></strong> 的視角<strong>迭代更新</strong>提示及生成效果，衡量「<strong>結構化輸出接受度</strong>」：即用戶對系統生成作品集描述的<strong>修改次數</strong>，以確認方案是否能有效協助用戶<strong>發散與收斂【學習資源選項】</strong>。</li>
+</ul>
+</section>
+<section id="協同網絡-mvp" class="level3">
+<h3 class="anchored" data-anchor-id="協同網絡-mvp">🏋👨‍🏭👨🏽‍⚕️協同網絡 MVP</h3>
+<p>結合以上兩方案，考量家長-學生-智能體協作與價值對齊，再提升一層次，構建整合的協同網絡 MVP：</p>
+<ul>
+<li><strong>目標</strong>： 驗證智能體與<strong>家長</strong>互動結合後，能否幫助<strong>對齊</strong>雙方的<strong>學習目標與價值觀</strong>，減少決策衝突。 &nbsp; &nbsp;&nbsp;</li>
+<li><strong>MVP 內容</strong>： 整合「<strong>MoE 學習方案</strong>」與「<strong>價值觀對話</strong>」模組。
+<ul>
+<li>系統先為學生和家長分別提供<strong>獨立的價值觀問卷</strong>（例如：重視<strong>穩定性</strong>還是<strong>高薪潛力</strong>），然後由 MoE <strong>整合結果</strong>。</li>
+<li>智能體在對話中<strong>揭示雙方的價值觀差異</strong>，並提供<strong>彌合分歧的對話框架</strong>，例如：「<strong>學術專家</strong>建議選擇 A 路徑，但<strong>家長</strong>更傾向 B 路徑，我們來模擬兩種選擇的<strong>長期影響</strong>。」 &nbsp; &nbsp;&nbsp;</li>
+</ul></li>
+<li><strong>交付與監控</strong>： 系統透過 <strong><a href="./10-02-agent_reliability_evaluation.zh-hant.html">智能體可靠性與評估</a></strong> 監控「<strong>對話衝突指數</strong>」（例如：情緒詞彙密度）和「<strong>目標共識率</strong>」，確保該網絡能成為一個安全的「<strong>協同決策</strong>」環境，以對抗單一家庭或社會價值觀的壓力。</li>
+</ul>
+<p>這三種 MVP 示例示範了如何在<strong>發展</strong>階段的<strong>發散</strong>後，透過<strong>有機結合</strong> <strong><a href="./10-04-retrieval_augmented_generation.zh-hant.html">知識驅動生成（RAG）</a></strong>、<strong><a href="./10-03-prompt_engineering.zh-hant.html">提示工程</a></strong>、<strong><a href="./10-05-context_engineering.zh-hant.html">脈絡工程</a></strong>、<strong><a href="./10-02-agent_reliability_evaluation.zh-hant.html">智能體可靠性與評估</a></strong> <strong>與</strong> <strong><a href="./10-06-AI_PM.zh-hant.html">AI 產品經理</a></strong> 等知識點，快速收斂出最能驗證<strong>學習方案規劃價值</strong>的最小可行產品方案。</p>
+</section>
+</section>
+<section id="補全工程" class="level2">
+<h2 class="anchored" data-anchor-id="補全工程">🚀⚛ 「補全」工程</h2>
+<p>回顧本篇附錄集，我們從核心概念 「<strong>動詞流程／循環</strong>」 出發，將抽象的<strong>能力</strong>與<strong>心智</strong>具體化為可執行、可協作的<strong>行動鷹架</strong>，成功實現了從發散的 «<strong>選項</strong>» 到聚焦的 «<strong>選擇</strong>» 的工程化閉環。</p>
+<p>名詞 «<strong>選擇</strong>» 在此被用來統攝全篇，從理論框架、流程拆解到 MVP 落地，成為建構 AI 智能系統的基本方法論。</p>
+<p>我們透過「<strong>動詞流程／循環鷹架</strong>」建構了行動藍圖：</p>
+<ul>
+<li>⚙️ <strong>核心價值</strong>：將決策過程（從 Sense 到 Adapt）模組化並可追蹤。</li>
+<li>🔄 <strong>關鍵循環</strong>：聚焦於<strong>框定</strong>（Interpret/Frame）與<strong>評估</strong>（Evaluate），以確保<strong>輸入的相關性</strong>與<strong>輸出的對齊性</strong>。</li>
+<li>🤝 <strong>人機共構</strong>：將 LLM 融入流程，使機器從單純工具升級為可進行<strong>感測、詮釋、策劃、行動、評估與調適</strong>的協同夥伴。</li>
+</ul>
+<p>我們進一步將理論架構落地為 <strong>智能體原型</strong>：</p>
+<ul>
+<li>🪟🧭 <strong>MoE 協同引擎</strong>：體現「<strong>專業分工與對齊</strong>」。透過<strong>學術專家</strong>與<strong>財務顧問</strong>的分層協作，解決<strong>規劃學習方案</strong>時的<strong>學術可行性</strong>與<strong>經濟可行性</strong>雙重考量。</li>
+<li>🔗📒 <strong>工具鏈強化匹配</strong>：體現「<strong>效率執行與透明追蹤</strong>」。透過<strong>協同過濾</strong>與<strong>結構化輸出</strong>，將規劃路徑轉化為<strong>可執行、可追蹤的任務清單</strong>，並賦予 LLM 實質性的<strong>外部行動</strong>能力。</li>
+</ul>
+<p>回應最初的叩問：如何達成對家長與學生有用的「<strong>規劃學習方案及歷程</strong>」？如何將<strong>動詞流程</strong>化為<strong>工程實務</strong>？</p>
+<ul>
+<li>🪜 <strong>收斂的建補鷹架</strong>：以「先細化，後整合」為準則，將分散的 <strong>«選項»</strong> 收斂為有序的 <strong>«選擇»</strong>，把人機協作的 <strong>❝腦補❞</strong> 提升為可驗證、可移轉的 <strong>🙶補全🙷</strong>。透過<strong>智能體</strong>與<strong>工具鏈</strong>的設計，使「<strong>學習資源</strong>」、「<strong>預算</strong>」與「<strong>目標價值</strong>」得以對齊。</li>
+<li>🎯 <strong>對齊的意圖到設計</strong>：以目標導向的取捨，呈現自身的「<strong>方向、邊界與標準</strong>」。透過<strong>價值對齊 MVP</strong>，挑戰學生與家長的「<strong>價值觀差異</strong>」，讓能力真正落地為符合共同預期的系統化成果。</li>
+</ul>
+<p>總之，由於人工智慧的機器學習目前仍未能自主決定並修改「<strong>目標函數</strong>」，因此人作為使用者與設計者的 「<strong>目標</strong>」，就是有意識地將<strong>學習規劃</strong>與<strong>價值觀</strong>進行<strong>對齊</strong>，以回應學生與家長的需求。在此過程中，「名詞＋動詞」的組合語法收束為方案«<strong>選擇</strong>»，構成我們從<strong>行動</strong>到<strong>能力</strong>、再到<strong>心智</strong>的完整<strong>工程化體系</strong>。</p>
+<p>✨ <strong>三連合奏</strong>：以「行動 ~ 心智 ~ <strong>能力</strong>」為主旋律，將 AI 視為共同行動夥伴，讓 <strong>🙶補全🙷</strong> 不只是修補，而是促成新動態生成的創新。</p>
+</section>
+<section id="註腳" class="level2">
+<h2 class="anchored" data-anchor-id="註腳">註腳</h2>
+
+
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>這段話要表達的是關於當代 AI 的科學演化視角：</p>
+<ul>
+<li><strong>能力之梯</strong>：指的經過漫長演化，從最基本的求「生存」逐步追求「超越」的心智成長過程。</li>
+<li><strong>能力之合</strong>：強調人與機器在互動宇宙中協作，透過行動的合奏，展現出技術所帶來的力量與回響。<br>
+</li>
+<li>以世界角度看：從人腦的想像推測（腦補），到 AI 的能力（自動補全），並需追問背後意圖與意志，使用「建補鷹架」來引導智能系統的發展，同時也要思考能源代價是否值得。</li>
+</ul>
+<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./appendix-brain.zh-hant.html" class="pagination-link" aria-label="🧠心智：名❝鍛練❞">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">🧠心智：名❝鍛練❞</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./appendix-MCP_API.zh-hant.html" class="pagination-link" aria-label="⚙API分類：辨用">
+        <span class="nav-page-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">⚙API分類：辨用</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>《道／盜智格局：AI 賽局手冊》： (預印版) Han-Teng Liao</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/appendix-cognitive_capacity.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+<script src="scripts/toggle.js"></script>
+<script>
+(function () {
+  const STORAGE_KEY = "numberingMode"; // "legal" | "arabic"
+  const DEFAULT_MODE = "legal";
+
+  // Create UI
+  function makeButton(label, value) {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "numbering-btn";
+    btn.dataset.mode = value;
+    btn.textContent = label;
+    btn.addEventListener("click", () => setMode(value, true));
+    return btn;
+  }
+
+  function setActive(container, mode) {
+    container.querySelectorAll(".numbering-btn").forEach(b => {
+      b.classList.toggle("active", b.dataset.mode === mode);
+      b.setAttribute("aria-pressed", b.dataset.mode === mode ? "true" : "false");
+    });
+  }
+
+  function setMode(mode, persist) {
+    try {
+      if (window.setNumberingMode) {
+        window.setNumberingMode(mode);
+      }
+      document.documentElement.classList.remove("legal", "arabic");
+      document.documentElement.classList.add(mode);
+      if (persist) localStorage.setItem(STORAGE_KEY, mode);
+      if (container) setActive(container, mode);
+    } catch(e) {
+      // no-op on error
+    }
+  }
+
+  function findSidebarTools() {
+    // Try common Quarto selectors; fall back to sidebar header
+    return (
+      document.querySelector(".sidebar-tools-main") ||
+      document.querySelector(".sidebar-tools") ||
+      document.querySelector(".sidebar-header") ||
+      document.querySelector(".sidebar")
+    );
+  }
+
+  // Build container
+  const container = document.createElement("div");
+  container.className = "numbering-toggle";
+  container.setAttribute("role", "group");
+  container.setAttribute("aria-label", "Numbering mode");
+
+  const legalBtn = makeButton("Legal", "legal");
+  const arabicBtn = makeButton("Arabic", "arabic");
+  container.appendChild(legalBtn);
+  container.appendChild(arabicBtn);
+
+  // Insert in sidebar tools area once DOM is ready
+  function initUI() {
+    const host = findSidebarTools();
+    if (!host) return false;
+
+    // Place it inline with other tools
+    host.appendChild(container);
+
+    // Restore last mode or default
+    const saved = localStorage.getItem(STORAGE_KEY) || DEFAULT_MODE;
+    setActive(container, saved);
+
+    // Ensure mode applied after your toggle.js initialized
+    // Try immediately, then once after a tick
+    setMode(saved, false);
+    setTimeout(() => setMode(saved, false), 0);
+
+    // Keyboard shortcut: Alt+N to toggle
+    document.addEventListener("keydown", (e) => {
+      if (e.altKey && (e.key === "n" || e.key === "N")) {
+        const current = localStorage.getItem(STORAGE_KEY) || DEFAULT_MODE;
+        const next = current === "legal" ? "arabic" : "legal";
+        setMode(next, true);
+      }
+    });
+
+    return true;
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => { initUI(); });
+  } else {
+    if (!initUI()) {
+      // Retry once if sidebar mounts late
+      setTimeout(initUI, 100);
+    }
+  }
+})();
+</script>
+<!-- v0.0.3 This HTML snippet is designed to be included in a Quarto document to enable zooming and panning functionality for SVG diagrams, including those embedded via <embed> tags. It uses the svg-pan-zoom library to provide interactive controls. -->
+<script src="scripts/svg-pan-zoom.min.js"></script>
+<style>
+/* Targets the SVG itself to ensure it fills the parent container's height */
+figure.figure svg {
+  height: 82vh !important;
+  width: 100% !important;
+}
+div.part figure svg, figure.part svg {
+  height: 160px !important;
+  width: 100% !important;
+}
+</style>
+<script>
+window.addEventListener('load', (event) => {
+  // A single, reusable function to initialize a diagram and its controls
+  const initializeDiagram = (diagramElement) => {
+    if (!diagramElement || typeof svgPanZoom === 'undefined') {
+      console.error("SVG element or svg-pan-zoom library not found.");
+      return;
+    }
+
+    // Correctly get the transform from the element's inner viewport
+    const viewport = diagramElement.querySelector('.svg-pan-zoom_viewport');
+    let initialTransform = null;
+    if (viewport) {
+      initialTransform = viewport.getAttribute('transform');
+    }
+
+
+    const panZoomInstance = svgPanZoom(diagramElement, {
+      zoomEnabled: true,
+      controlIconsEnabled: true,
+      fit: false,
+      center: false,
+      onPan: function(newPan) {
+        const panXElement = document.getElementById('pan-x-value');
+        const panYElement = document.getElementById('pan-y-value');
+        const panXPercentElement = document.getElementById('pan-x-percent-value');
+        if (panXElement && panYElement && panXPercentElement) {
+          panXElement.textContent = newPan.x.toFixed(2);
+          panYElement.textContent = newPan.y.toFixed(2);
+          const sizes = panZoomInstance.getSizes();
+          const diagramWidth = sizes.viewBox.width;
+          const viewportWidth = sizes.width;
+          const currentX = ((-newPan.x + (viewportWidth / 2) * sizes.realZoom) / sizes.realZoom);
+          const panXPercent = (currentX / diagramWidth) * 100;
+          panXPercentElement.textContent = panXPercent.toFixed(2) + "%";
+        }
+      },
+      onZoom: function(newZoom) {
+        const zoomElement = document.getElementById('zoom-value');
+        if (zoomElement) {
+          zoomElement.textContent = newZoom.toFixed(2);
+        }
+      }
+    });
+
+    // Apply the initial pan and zoom values from the transform
+    if (initialTransform) {
+      // Parse the matrix string into a usable object
+      const matrix = initialTransform.match(/matrix\(([^)]+)\)/)[1].split(',').map(Number);
+      const zoom = matrix[0];
+      const panX = matrix[4];
+      const panY = matrix[5];
+      
+      setTimeout(() => {
+        panZoomInstance.zoom(zoom);
+        panZoomInstance.pan({ x: panX, y: panY });
+      }, 50); // Small delay to avoid race conditions
+    }
+    const zoomButtons = document.querySelectorAll('.zoom-to-button');
+    zoomButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const panXPercent = parseFloat(e.target.dataset.panXPercent) / 100;
+        const zoomValue = parseFloat(e.target.dataset.zoom);
+        
+        if (panZoomInstance) {
+          panZoomInstance.zoom(zoomValue);
+          const sizes = panZoomInstance.getSizes();
+          const diagramWidth = sizes.viewBox.width;
+          const viewportWidth = sizes.width;
+          const targetX = diagramWidth * panXPercent;
+          const panX = -(targetX * sizes.realZoom) + (viewportWidth / 2) * sizes.realZoom;
+          panZoomInstance.pan({ x: panX, y: panZoomInstance.getPan().y });
+          
+          const panXElement = document.getElementById('pan-x-value');
+          const panYElement = document.getElementById('pan-y-value');
+          const panXPercentElement = document.getElementById('pan-x-percent-value');
+          const zoomElement = document.getElementById('zoom-value');
+          if (panXElement && panYElement && panXPercentElement && zoomElement) {
+            panXElement.textContent = panX.toFixed(2);
+            panYElement.textContent = panZoomInstance.getPan().y.toFixed(2);
+            zoomElement.textContent = zoomValue.toFixed(2);
+            panXPercentElement.textContent = (panXPercent * 100).toFixed(2) + "%";
+          }
+        }
+      });
+    });
+  };
+
+  // Find the first SVG or EMBED element on the page
+  const mainDiagramContainer = document.querySelector('svg.mermaid-js, embed[type="image/svg+xml"]');
+
+  if (mainDiagramContainer) {
+    if (mainDiagramContainer.tagName.toLowerCase() === 'svg') {
+      // It's a native SVG, so initialize it directly
+      initializeDiagram(mainDiagramContainer);
+    } else if (mainDiagramContainer.tagName.toLowerCase() === 'embed') {
+      // It's an <embed> tag, so wait for its content to load
+      mainDiagramContainer.addEventListener('load', () => {
+        try {
+          // Get the SVG element from inside the loaded document
+          const embeddedSvg = mainDiagramContainer.contentDocument.querySelector('svg');
+          if (embeddedSvg) {
+            initializeDiagram(embeddedSvg);
+          } else {
+            console.error("Could not find SVG inside the embed tag.");
+          }
+        } catch (e) {
+          console.error("Could not access contentDocument of embed:", e);
+        }
+      });
+    }
+  } else {
+    console.error("No valid SVG or embed element found for initialization.");
+  }
+});
+</script>
+
+
+
+
+</body></html>

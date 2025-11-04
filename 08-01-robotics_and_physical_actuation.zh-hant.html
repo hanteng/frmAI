@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>47&nbsp; 🎬機器人學🔋 – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./08-02-perception_and_environment.zh-hant.html" rel="next">
+<link href="./08----embodied_ai.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./08----embodied_ai.zh-hant.html">🦾「具身派」AI</a></li><li class="breadcrumb-item"><a href="./08-01-robotics_and_physical_actuation.zh-hant.html"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">🎬機器人學🔋</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +151,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -550,14 +530,14 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="./08----embodied_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🦾「具身派」AI</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./08-01-robotics_and_physical_actuation.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./08-01-robotics_and_physical_actuation.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">🎬機器人學🔋</span></span></a>
   </div>
 </li>
@@ -768,41 +748,35 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
+  <li><a href="#應用場景" id="toc-應用場景" class="nav-link active" data-scroll-target="#應用場景"><span class="header-section-number">47.1</span> 🚀 應用場景</a></li>
+  <li><a href="#細說" id="toc-細說" class="nav-link" data-scroll-target="#細說"><span class="header-section-number">47.2</span> 🔬 細說</a>
   <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
+  <li><a href="#機器人學主要挑戰" id="toc-機器人學主要挑戰" class="nav-link" data-scroll-target="#機器人學主要挑戰"><span class="header-section-number">47.2.1</span> 🤖 機器人學：主要挑戰</a></li>
+  <li><a href="#實體驅動核心技術" id="toc-實體驅動核心技術" class="nav-link" data-scroll-target="#實體驅動核心技術"><span class="header-section-number">47.2.2</span> ⚙️ 實體驅動核心技術</a></li>
+  <li><a href="#挑戰與考量" id="toc-挑戰與考量" class="nav-link" data-scroll-target="#挑戰與考量"><span class="header-section-number">47.2.3</span> 🌎 挑戰與考量</a></li>
   </ul></li>
+  <li><a href="#定位與應用考量" id="toc-定位與應用考量" class="nav-link" data-scroll-target="#定位與應用考量"><span class="header-section-number">47.3</span> 🌟 定位與應用考量</a>
+  <ul>
+  <li><a href="#定位" id="toc-定位" class="nav-link" data-scroll-target="#定位"><span class="header-section-number">47.3.1</span> ⚓🗺 定位</a></li>
+  <li><a href="#應用考量" id="toc-應用考量" class="nav-link" data-scroll-target="#應用考量"><span class="header-section-number">47.3.2</span> 📐🌉 應用考量</a></li>
+  </ul></li>
+  <li><a href="#小結及連結" id="toc-小結及連結" class="nav-link" data-scroll-target="#小結及連結"><span class="header-section-number">47.4</span> ✨小結及連結🏁</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/08-01-robotics_and_physical_actuation.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./08----embodied_ai.zh-hant.html">🦾「具身派」AI</a></li><li class="breadcrumb-item"><a href="./08-01-robotics_and_physical_actuation.zh-hant.html"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">🎬機器人學🔋</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title"><span id="sec-robotics-and-physical-actuation" class="quarto-section-identifier"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">🎬機器人學🔋</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +786,132 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
+<p><code>機器人學與實體驅動</code>（Robotics &amp; Physical Actuation）是讓 AI 系統能夠在物理世界中<strong>移動、操作與施力</strong>的核心領域。它涵蓋了從<strong>機械結構設計</strong>、<strong>感測器與控制系統整合</strong>，到<strong>致動器</strong>（actuators）與<strong>能源管理</strong>的<strong>運動規劃</strong>全套技術，使 AI 能「行動」，回答了「如何讓 AI 擁有並有效控制一個身體？」這個關鍵問題。此領域專注賦予 AI 一個能與現實世界互動的物理身體。</p>
+<p><strong>實體驅動</strong>（Physical Actuation）指的是驅動機器人硬體運動的技術，是將 AI 的「思想」（運算）轉化為物理「行動」的橋樑。它利用馬達、液壓系統或氣壓系統等致動器（actuators），精準地控制機器人的關節、手臂或輪子等部位，使其能夠完成預設的任務：</p>
+<ul>
+<li><p>在 <strong>具身派 AI</strong> 中，實體驅動是將虛擬決策轉化為物理行動的橋樑，讓系統能透過身體與環境互動。</p></li>
+<li><p>在 <strong>實體 AI</strong> 中，實體驅動系統直接決定了機器人的運動能力、操作精度與任務執行效率。</p></li>
+</ul>
+<p>在 AI 的機器人學與實體驅動中，通常要應對以下核心 <a href="01----problematics.zh-hant">㉄ AI 問題意識</a>：</p>
+<ul>
+<li><p><strong>🖼️⏱️ <a href="01-04-Frame_Problem.zh-hant">框架問題</a></strong>：在控制與驅動過程中，如何確定哪些物理狀態需要即時反應，哪些可以忽略，以確保效率與安全。</p></li>
+<li><p><strong>🔤⚓ <a href="01-03-Symbol_Grounding_Problem.zh-hant">符碼紮根問題</a></strong>：如何將高階的任務指令（如「抓取杯子」）轉化為低階的馬達控制信號與精確的運動軌跡。</p></li>
+<li><p><strong>🎯🛡️ <a href="01-06-Alignment_Control_Problem.zh-hant">對齊與控制問題</a></strong>：如何確保驅動系統在執行任務時遵守安全規範與倫理約束，避免對人或環境造成危害。</p></li>
+</ul>
+<p><code>機器人學與實體驅動</code> 可被視為一種 <strong>行動實現工具箱</strong>，其核心思想是：</p>
 <blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
+<p>將抽象的決策與計畫，透過精確的控制與機械結構，轉化為可觀測、可測量且可重複的物理行動。</p>
 </blockquote>
+<p>對於 AI 系統來說，則是：</p>
 <blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
+<p>需要具備將「想做什麼」轉化為「如何做」的能力，並在物理世界中穩定、精確且安全地執行。</p>
 </blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<hr>
+<section id="應用場景" class="level2" data-number="47.1">
+<h2 data-number="47.1" class="anchored" data-anchor-id="應用場景"><span class="header-section-number">47.1</span> 🚀 應用場景</h2>
+<p><code>機器人學與實體驅動</code> 在 <strong>工業自動化、醫療機器人、服務型機器人、探索與救援、太空探測</strong> 等領域都是不可或缺的。例如：</p>
 <ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
-</li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
+<li><p>🏭 <strong>工業機械手臂</strong>：在生產線上進行高速、精準的組裝與焊接。</p></li>
+<li><p>🩺 <strong>手術機器人</strong>：在醫療手術中提供高精度、低侵入性的操作。</p></li>
+<li><p>🛠️ <strong>服務型機器人</strong>：在餐飲、物流、家務等場景中執行搬運、清潔等任務。</p></li>
+<li><p>🚀 <strong>太空探測車</strong>：在極端環境中移動、採樣與操作儀器。</p></li>
 </ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
-</section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
-<ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
-</ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
-</ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
-<ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
-</ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
-<ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
-</ul>
-<p>🎲🏁</p>
-</div>
-</div>
 <hr>
 </section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
-<ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
-</ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+<section id="細說" class="level2" data-number="47.2">
+<h2 data-number="47.2" class="anchored" data-anchor-id="細說"><span class="header-section-number">47.2</span> 🔬 細說</h2>
+<p>在自駕車這個典型的具身派 AI 應用中，<strong>實體驅動</strong>扮演了不可或缺的角色。它負責將自動駕駛系統（AI）的決策，轉化為車輛的實際運動，確保車輛能精準且安全地行駛。</p>
+<p>想像一輛自駕車正在行駛，AI 系統透過感應器偵測到前方有行人：</p>
+<ul>
+<li><p>🚨 <strong>感知層 (Perception)</strong>：光達（LiDAR）、雷達和攝影機等感應器持續收集環境資料，AI 透過這些資料識別出前方有行人。</p></li>
+<li><p>🧠 <strong>決策層 (Decision Making)</strong>：AI 系統判斷需要減速或煞車，並計算出最佳的煞車力道與時機。</p></li>
+<li><p>🦾 <strong>驅動層 (Actuation)</strong>：AI 的決策訊號傳輸至<strong>電子控制單元</strong>（ECU），再透過以下致動器執行指令：</p>
+<ul>
+<li><p>🛑 <strong>煞車致動器</strong>：精準控制液壓系統，施加適當煞車力道，使車輛減速。</p></li>
+<li><p>🛞 <strong>轉向致動器</strong>：在需要閃避時，精準轉動方向盤，改變行駛路徑。</p></li>
+<li><p>🎚 <strong>油門致動器</strong>：在需要加速時，控制燃油供給或電動馬達輸出，調整車速。</p></li>
+</ul></li>
 </ul>
-</div>
-</div>
-</div>
+<p>這個例子體現了<strong>實體驅動</strong>的重要性——沒有這些精密的驅動系統，AI 的智慧決策將無法在現實世界中落地。</p>
+<section id="機器人學主要挑戰" class="level3" data-number="47.2.1">
+<h3 data-number="47.2.1" class="anchored" data-anchor-id="機器人學主要挑戰"><span class="header-section-number">47.2.1</span> 🤖 機器人學：主要挑戰</h3>
+<p>機器人學在賦予 AI 身體的過程中，面臨著多重挑戰，這些挑戰也是具身派 AI 研究的核心議題：</p>
+<ul>
+<li><p>🚀 <strong>運動規劃與控制</strong>：如何讓機器人靈活、準確地在複雜環境中移動與操作，需要精密演算法規劃路徑並控制致動器。</p></li>
+<li><p>🦾 <strong>力學與穩健性</strong>：如何讓機器人應對各種物理干擾（如風、地面不平），涉及力學平衡、材料設計與控制系統的穩健性。</p></li>
+<li><p>🔄 <strong>動態適應性</strong>：如何讓機器人在遇到意外狀況（如物體突然移動、感應器失靈）時，能即時調整行為，展現高度自適應能力。</p></li>
+</ul>
+<p>儘管挑戰繁多，但隨著 AI 演算法、硬體製造與感測器技術的進步，具身機器人正逐步走出實驗室，進入工業自動化、醫療照護、服務業與探索任務等多元場景，應用範圍持續擴張。</p>
 </section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
-
-
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
-</div>
-</div>
+<section id="實體驅動核心技術" class="level3" data-number="47.2.2">
+<h3 data-number="47.2.2" class="anchored" data-anchor-id="實體驅動核心技術"><span class="header-section-number">47.2.2</span> ⚙️ 實體驅動核心技術</h3>
+<ul>
+<li><p>🔩 <strong>機械結構設計</strong>：涵蓋關節、連桿、底盤等結構的設計與材料選擇，直接影響機器人的運動範圍、承載能力與穩定性。優化結構設計可在重量、剛性與靈活性之間取得平衡。</p></li>
+<li><p>🔋 <strong>致動器技術</strong>：包括伺服馬達、步進馬達、液壓與氣壓致動器等，決定了運動的力量、速度與精度。不同任務對致動器的扭矩、響應速度與能效有不同要求。</p></li>
+<li><p>🧠 <strong>控制系統</strong>：從低階的 PID 控制到高階的運動規劃與力控制，確保動作平穩、精確且符合任務需求，並能根據感測回饋動態調整。</p></li>
+<li><p>🔗 <strong>感測器整合</strong>：結合位置、速度、力覺、觸覺等感測器，形成閉迴路控制（closed-loop control），讓系統能即時修正偏差並保持穩定。</p></li>
+<li><p>🗜️ <strong>末端執行器</strong>（End Effectors）：如夾爪、吸盤、焊接頭等，直接與任務物體互動，其設計需兼顧抓取力、靈活性與適應不同物體形狀的能力。</p></li>
+<li><p>⚡ <strong>能源管理</strong>：涵蓋電池容量、電源分配與能效優化，確保長時間運作與穩定性，並在高負載任務中避免能源瓶頸。</p></li>
+</ul>
 </section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<section id="挑戰與考量" class="level3" data-number="47.2.3">
+<h3 data-number="47.2.3" class="anchored" data-anchor-id="挑戰與考量"><span class="header-section-number">47.2.3</span> 🌎 挑戰與考量</h3>
+<ul>
+<li><p>🔄 <strong>動態環境適應</strong>：在不確定或變化的環境中保持穩定控制，例如應對突發障礙或地形變化。</p></li>
+<li><p>⚖️ <strong>精度與速度的平衡</strong>：根據任務需求在快速反應與高精度之間取捨，例如高速分揀與精密裝配的不同要求。</p></li>
+<li><p>🛡️ <strong>安全性</strong>：避免對人員、物體或自身造成損害，需設計多層次的安全機制與容錯策略。</p></li>
+<li><p>🔧 <strong>維護與耐用性</strong>：確保長期運行的可靠性與易維修性，降低停機時間與維護成本。</p></li>
+</ul>
 <hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
+</section>
+</section>
+<section id="定位與應用考量" class="level2" data-number="47.3">
+<h2 data-number="47.3" class="anchored" data-anchor-id="定位與應用考量"><span class="header-section-number">47.3</span> 🌟 定位與應用考量</h2>
+<p>在 <strong>三層心智能力分類法</strong> 中，<code>機器人學與實體驅動</code> 的對應如下：</p>
+<ul>
+<li><p><strong>🐸⚡ 反應型心智</strong>：低延遲的避障、平衡控制、緊急停止。</p></li>
+<li><p><strong>🐘💞 情緒－關係心智</strong>：在人機協作中調整動作速度與力道，確保安全與舒適。</p></li>
+<li><p><strong>🧘☸️ 反思－符號心智</strong>：將任務計畫轉化為運動序列與控制參數，並根據回饋進行優化。</p></li>
+</ul>
+<section id="定位" class="level3" data-number="47.3.1">
+<h3 data-number="47.3.1" class="anchored" data-anchor-id="定位"><span class="header-section-number">47.3.1</span> ⚓🗺 定位</h3>
+<p><code>機器人學與實體驅動</code> 作為具身 AI 的執行層，主要屬於 <strong>🐸⚡ 反應型心智</strong> 的範疇，因為它需要即時、低延遲地執行物理動作來回應環境變化並確保基本安全。同時，它也與 <strong>🐘💞 情緒－關係心智</strong>（例如在人機協作時調整力道）及 <strong>🧘☸️ 反思－符號心智</strong>（將高階計畫轉化為具體運動序列）緊密協作。</p>
+</section>
+<section id="應用考量" class="level3" data-number="47.3.2">
+<h3 data-number="47.3.2" class="anchored" data-anchor-id="應用考量"><span class="header-section-number">47.3.2</span> 📐🌉 應用考量</h3>
+<p>在 AI 系統中，<code>機器人學與實體驅動</code> 可與以下方法結合：</p>
+<ul>
+<li><p>🎏🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流 AI</a></p>
+<ul>
+<li><p><strong>任務到動作的映射</strong>：運用邏輯規則、知識圖譜與規劃語言（如 PDDL），將高階的任務目標（例如「將桌上的杯子移動到廚房」）轉換為一系列具體的、按順序執行的運動控制指令。這確保了 AI 的高階意圖能被精確地翻譯成機器人能執行的動作序列，使得機器人的行為更具備可解釋性和可驗證性。</p></li>
+<li><p><strong>約束檢查</strong>：在生成運動指令前，系統會透過符號層檢查所有約束條件，例如：<strong>物理約束</strong>（如關節運動範圍、手臂最大負載），<strong>安全約束</strong>（如避開碰撞、避免操作不當導致損壞），以及<strong>任務約束</strong>（如必須在特定時間完成、保持特定姿態）。這能有效預防不符合物理定律、倫理規範或任務要求的危險或無效動作。</p></li>
+</ul></li>
+<li><p>🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>的<strong>強化學習</strong></p>
+<ul>
+<li><p><strong>運動策略優化</strong>：透過試誤學習（trial-and-error）和獎勵機制，讓機器人不斷嘗試和學習，從而優化其運動策略。例如，機器人透過反覆練習抓取不同形狀的物體，逐步學習如何調整夾爪的力度、角度和移動軌跡，以提升抓取的成功率和穩定性，即使面對不完全相同的物體也能有效應對。</p></li>
+<li><p><strong>自適應控制</strong>：機器人能夠根據即時的感測器回饋（如力覺、視覺）和環境變化，自動調整其運動參數。例如，當機器人手臂在搬運一個易碎物品時，如果感測器偵測到額外的阻力或不平穩，系統會即時微調馬達的輸出，以減少對物品的壓力，避免損壞。</p></li>
+</ul></li>
+<li><p>🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>的<strong>深度學習</strong></p>
+<ul>
+<li><p><strong>感知到控制的端到端學習</strong>：利用深度神經網路（如 CNNs、RNNs）直接從原始感測器數據（如攝影機影像、LiDAR 點雲）學習，生成控制機器人運動的訊號。例如，機器人可以直接從影像中識別目標物體，並學習到如何控制機械手臂以完成抓取，無需顯式地編寫複雜的特徵提取和運動規劃程式碼。</p></li>
+<li><p><strong>運動模式識別</strong>：分析機器人自身的運動狀態（如關節角度、速度、加速度）以及環境中其他物體的運動模式。這有助於預測機器人未來的運動軌跡，或識別出異常運動模式，從而進行預防性的調整或錯誤診斷。</p></li>
+</ul></li>
+<li><p>🎏🧠 混合式架構的 <strong><a href="02-03-neurosymbolic_ai.zh-hant">神經－符號合流</a></strong></p>
+<ul>
+<li><p><strong>符號規劃與感知控制融合</strong>：結合符號 AI 的高階邏輯推理能力（用於任務規劃和理解約束）與深度學習的強大感知與低階控制能力（用於即時環境響應與動作執行）。這使得機器人既能進行複雜的策略規劃，又能根據即時環境變化做出靈活的反應，例如，在規劃搬運路徑的同時，也能立即避開突然出現的行人。</p></li>
+<li><p><strong>多層回饋優化</strong>：在不同層級（從高階的任務目標到低階的感測器數據）之間建立回饋迴路，進行聯合優化。例如，任務規劃層的成功或失敗會反饋給低階控制層，指導其調整運動策略；反之，低階控制層的回饋（如感知到的環境變化）也會影響高階規劃的決策，從而實現更精確、更魯棒的系統性能。</p></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="小結及連結" class="level2" data-number="47.4">
+<h2 data-number="47.4" class="anchored" data-anchor-id="小結及連結"><span class="header-section-number">47.4</span> ✨小結及連結🏁</h2>
+<p><code>機器人學與實體驅動</code> 是具身派 AI 與實體 AI 將「思考」轉化為「行動」的關鍵橋樑，與 <a href="08-02-perception_and_environment.zh-hant">感知與環境</a>、<a href="08-03-adaptive_robotics.zh-hant">可適應機器人學</a>、<a href="08-06-robot_tasks_and_goals.zh-hant">任務與目標規劃</a> 等領域緊密協作。精確、可靠且安全的實體驅動能力，是實現自主性與高效任務執行的基礎，保障<strong>能源管理</strong>的<strong>運動規劃</strong>，使自駕車、智慧製造、和服務型機器人等等能在真實世界中穩定運作並完成任務。</p>
+<p>它聯繫抽象「思考」決策，以及具體的「行動」物理行為，使系統與世界互動，並不斷拓展在工業自動化、醫療服務、太空探索等領域的 AI 應用。實體驅動系統需要高度<strong>整合硬體與軟體</strong>，在控制與規劃上達到最佳效果，同時應對 <strong><a href="01-03-Symbol_Grounding_Problem.zh-hant">符碼紮根問題</a></strong>（將抽象指令與具體動作聯繫）、<strong><a href="01-04-Frame_Problem.zh-hant">框架問題</a></strong>（確定哪些物理狀態會改變）、以及 <strong><a href="01-06-Alignment_Control_Problem.zh-hant">對齊與控制問題</a></strong>（確保物理行為的安全與符合人類意圖）等核心挑戰。</p>
+<p>作為具身派 AI 的基石，<code>機器人學與實體驅動</code> 讓 AI 化程式碼邏輯為實體存在與現實世界互動的，推動自駕車、智慧製造、服務型機器人等未來科技的落地。當機器人具備實體並能與人類協作時，<a href="08-03-adaptive_robotics.zh-hant">可適應機器人學</a> 與 <a href="08-04-human_robot_interaction.zh-hant">人機互動</a> 的研究便成為確保適應性、有效協作的關鍵。</p>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1317,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./08----embodied_ai.zh-hant.html" class="pagination-link" aria-label="🦾「具身派」AI">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">🦾「具身派」AI</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./08-02-perception_and_environment.zh-hant.html" class="pagination-link" aria-label="📡感知與環境🌡️">
+        <span class="nav-page-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">📡感知與環境🌡️</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1335,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/08-01-robotics_and_physical_actuation.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

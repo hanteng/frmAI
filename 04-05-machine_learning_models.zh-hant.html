@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>26&nbsp; 🤖📦 機器學習模型🌀 – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./04-06-llm_webassembly.zh-hant.html" rel="next">
+<link href="./04-04-feature_engineering.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04----statistical_ai.zh-hant.html">🌀「統計流」AI</a></li><li class="breadcrumb-item"><a href="./04-05-machine_learning_models.zh-hant.html"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">🤖📦 機器學習模型🌀</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +151,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -356,11 +336,11 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="./04----statistical_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🌀「統計流」AI</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-01-probabilistic_association.zh-hant.html" class="sidebar-item-text sidebar-link">
@@ -387,7 +367,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-05-machine_learning_models.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./04-05-machine_learning_models.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">🤖📦 機器學習模型🌀</span></span></a>
   </div>
 </li>
@@ -768,41 +748,28 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
-  <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
-  </ul></li>
+  <li><a href="#模組化生產力" id="toc-模組化生產力" class="nav-link active" data-scroll-target="#模組化生產力"><span class="header-section-number">26.1</span> 🔂模組化生產力🏭</a></li>
+  <li><a href="#常見類型與任務" id="toc-常見類型與任務" class="nav-link" data-scroll-target="#常見類型與任務"><span class="header-section-number">26.2</span> ▶️常見類型與任務🎯</a></li>
+  <li><a href="#運作流程" id="toc-運作流程" class="nav-link" data-scroll-target="#運作流程"><span class="header-section-number">26.3</span> ▶️運作流程⛑</a></li>
+  <li><a href="#歷史演進" id="toc-歷史演進" class="nav-link" data-scroll-target="#歷史演進"><span class="header-section-number">26.4</span> 🔄歷史演進🗿</a></li>
+  <li><a href="#小結與展望" id="toc-小結與展望" class="nav-link" data-scroll-target="#小結與展望"><span class="header-section-number">26.5</span> 🎄小結與展望🔳</a></li>
+  <li><a href="#接下來" id="toc-接下來" class="nav-link" data-scroll-target="#接下來"><span class="header-section-number">26.6</span> 👉接下來🪸</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/04-05-machine_learning_models.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04----statistical_ai.zh-hant.html">🌀「統計流」AI</a></li><li class="breadcrumb-item"><a href="./04-05-machine_learning_models.zh-hant.html"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">🤖📦 機器學習模型🌀</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title"><span id="sec-machine-learning-models" class="quarto-section-identifier"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">🤖📦 機器學習模型🌀</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +779,170 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
-<blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
-</li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
-</ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
-</section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
-<ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
-</ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
-</ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
-<ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
-</ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
-<ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
-</ul>
-<p>🎲🏁</p>
-</div>
-</div>
+<p><code>機器學習模型</code>（Machine Learning Models）是 「統計流」AI 的 <strong>經典模組半成品</strong>，能將輸入資料轉換為對應的輸出結果，廣泛應用於圖像識別、自然語言處理、推薦系統、金融風控等領域。它們的本質是<strong>學習輸入與輸出之間的映射關係</strong>，並在面對新數據時進行<strong>預測</strong>或<strong>決策</strong>。</p>
+<p>作為「統計流」AI 的 <strong>經典模組半成品</strong>，<code>機器學習模型</code> 奠定了 AI 系統的應用生產力：它們將數據轉化為可用的模式，並以此支撐各種自動化與智慧化應用。</p>
+<p>這些模型的特徵之一是「<strong>黑盒性</strong>」（black box）：雖然能夠高效產生結果，但內部運算過程往往不透明，難以直接解釋其推理邏輯。這種特性使它們在實務中「隨取隨用」，但在需要可解釋性與可驗證性的場景中，則必須輔以額外的分析與驗證方法。</p>
+<p>概念上，它與「符號流」AI 的 <strong>知識圖譜</strong> 遙相呼應：知識圖譜透過節點與關係明確表達「意義」，而 <code>機器學習模型</code> 則透過數據訓練習得隱含的模式與結構，並將這些習得的「意義」應用於新情境中，產生有效回應。</p>
 <hr>
+<section id="模組化生產力" class="level2" data-number="26.1">
+<h2 data-number="26.1" class="anchored" data-anchor-id="模組化生產力"><span class="header-section-number">26.1</span> 🔂模組化生產力🏭</h2>
+<p>在實踐應用中，<code>機器學習模型</code> 的<strong>模組化生產力</strong>十分顯著：</p>
+<ul>
+<li>📦 <strong>可重複使用</strong>：一旦訓練完成，模型可作為半成品模組嵌入不同應用場景。<br>
+</li>
+<li>🔄 <strong>可持續優化</strong>：透過不同策略，讓模型在生命週期中持續保持高效能，快速適應新任務或新資料分佈。
+<ul>
+<li>⮼ <strong>再訓練</strong>（Retraining）
+<ul>
+<li>🏃 <strong>全量再訓練</strong>：使用最新完整資料集，從頭或在原架構上重新訓練全部參數，以反映資料分佈的變化。</li>
+<li>🏋 <strong>增量再訓練（Incremental Retraining）</strong>：在保留原有權重的基礎上，僅用新增資料進行更新，降低計算成本與時間。</li>
+</ul></li>
+<li>⮻ <strong>遷移學習</strong>（Transfer Learning）
+<ul>
+<li>🌱 <strong>全參數微調（Full Fine‑tuning）</strong>：在預訓練模型基礎上，針對新任務調整所有參數。</li>
+<li>✂️ <strong>部分參數微調（Partial Fine‑tuning）</strong>：僅調整最後幾層或特定模組，保留大部分原權重。</li>
+<li>🪶 <strong>參數高效微調（PEFT，如 LoRA、Prefix Tuning）</strong>：新增少量可訓練參數，保留原模型權重不變，以極低成本適配新任務。</li>
+</ul></li>
+</ul></li>
+<li>🧩 <strong>與特徵工程協同</strong>：高品質的特徵輸入能顯著提升模型效能，而模型的輸出也可反饋特徵設計。</li>
+</ul>
+<p>作為「統計流」AI 的 <strong>經典模組半成品</strong>，<code>機器學習模型</code> 奠定了 AI 系統的應用生產力：它們將數據轉化為可用的模式，並以此支撐各種自動化與智慧化應用。</p>
 </section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
+<section id="常見類型與任務" class="level2" data-number="26.2">
+<h2 data-number="26.2" class="anchored" data-anchor-id="常見類型與任務"><span class="header-section-number">26.2</span> ▶️常見類型與任務🎯</h2>
+<p><code>機器學習模型</code> 的種類繁多，各有擅長，但它們的共同目標都是在給定的數據與目標下，找到最佳的 <strong>映射關係</strong>以執行特定的任務。以下是根據常見的機器學習分類列表：</p>
+<ul>
+<li>📘 <strong>監督式學習 (Supervised Learning)</strong>
+<ul>
+<li>📈 <strong>回歸 (Regression)</strong>
+<ul>
+<li>📝 預測連續數值輸出。</li>
+<li>🔍 <strong>常見模型/任務</strong>：
+<ul>
+<li>📊 線性迴歸 (Linear Regression)</li>
+<li>📊 多項式迴歸 (Polynomial Regression)</li>
+<li>📊 支持向量迴歸 (Support Vector Regression - SVR)</li>
+<li>🌳 決策樹迴歸 (Decision Tree Regressor)</li>
+<li>🌳 隨機森林迴歸 (Random Forest Regressor)</li>
+<li>🚀 梯度提升迴歸 (Gradient Boosting Regressor)</li>
+</ul></li>
+</ul></li>
+<li>🗂️ <strong>分類 (Classification)</strong>
+<ul>
+<li>📝 預測離散類別輸出。</li>
+<li>🔍 <strong>常見模型/任務</strong>：
+<ul>
+<li>📊 邏輯迴歸 (Logistic Regression)</li>
+<li>👥 K-近鄰 (K-Nearest Neighbors - KNN)</li>
+<li>📊 支持向量機 (Support Vector Machine - SVM)</li>
+<li>🌳 決策樹分類 (Decision Tree Classifier)</li>
+<li>🌳 隨機森林分類 (Random Forest Classifier)</li>
+<li>🚀 梯度提升分類 (Gradient Boosting Classifier)</li>
+<li>📜 樸素貝葉斯 (Naive Bayes)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>📗 <strong>非監督式學習 (Unsupervised Learning)</strong>
+<ul>
+<li>👥 <strong>分群 (Clustering)</strong>
+<ul>
+<li>📝 將數據點分組到相似的群體中。</li>
+<li>🔍 <strong>常見模型/任務</strong>：
+<ul>
+<li>📊 K-平均 (K-Means)</li>
+<li>🪜 階層式分群 (Agglomerative Clustering)</li>
+<li>🌀 DBSCAN</li>
+</ul></li>
+</ul></li>
+<li>📉 <strong>降維 (Dimensionality Reduction)</strong>
+<ul>
+<li>📝 減少特徵的數量，同時保留重要資訊。</li>
+<li>🔍 <strong>常見模型/任務</strong>：
+<ul>
+<li>📊 主成分分析 (Principal Component Analysis - PCA)</li>
+<li>📊 非負矩陣分解 (Non-negative Matrix Factorization - NMF)</li>
+<li>🌀 t-分佈隨機鄰域嵌入 (t-Distributed Stochastic Neighbor Embedding - t-SNE)</li>
+</ul></li>
+</ul></li>
+<li>🚨 <strong>異常偵測 (Outlier Detection)</strong>
+<ul>
+<li>📝 識別數據集中的罕見或異常數據點。</li>
+<li>🔍 <strong>常見模型/任務</strong>：
+<ul>
+<li>🌲 隔離森林 (Isolation Forest)</li>
+<li>📍 局部異常因子 (Local Outlier Factor - LOF)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>📙 <strong>半監督式學習 (Semi-Supervised Learning)</strong>
+<ul>
+<li>📝 介於監督式和非監督式之間，使用標記和未標記的數據進行訓練。</li>
+</ul></li>
+<li>📕 <strong>強化學習 (Reinforcement Learning)</strong>
+<ul>
+<li>📝 透過試錯來學習最佳行為策略，以最大化獎勵。</li>
+<li>🔍 <strong>常見模型/任務</strong>：
+<ul>
+<li>🎯 Q-Learning</li>
+<li>🤖 Deep Q-Networks (DQN)</li>
+<li>🧭 Policy Gradients</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>此列表涵蓋了機器學習中較為核心的模型類型和任務，<code>scikit-learn</code>、<code>TensorFlow</code>、<code>PyTorch</code> 等框架均提供了上述許多模型的實現，使得研究與應用更加便捷。</p>
+</section>
+<section id="運作流程" class="level2" data-number="26.3">
+<h2 data-number="26.3" class="anchored" data-anchor-id="運作流程"><span class="header-section-number">26.3</span> ▶️運作流程⛑</h2>
+<p><code>機器學習模型</code> 的生命週期是一個<strong>迭代優化</strong>的過程，通常包括以下步驟：</p>
 <ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
+<li>📥 <strong>資料收集與理解</strong>：獲取並探索資料，確保其品質與完整性。<br>
+</li>
+<li>🛠 <strong>特徵工程</strong>：清理、轉換與構建特徵，為模型提供高品質輸入。<br>
+</li>
+<li>🧮 <strong>模型選擇與初始化</strong>：根據任務類型與資料特性選擇合適的模型架構與超參數。</li>
+<li>🏋 <strong>模型訓練</strong>：使用訓練資料調整模型參數，學習輸入與輸出之間的映射關係。</li>
+<li>📊 <strong>模型評估</strong>：在驗證集或測試集上評估模型效能，檢查泛化能力與穩定性。</li>
+<li>🔄 <strong>優化與調整</strong>：透過超參數調整、再訓練或遷移學習提升模型表現。</li>
+<li>🚀 <strong>部署與監控</strong>：將模型部署到生產環境，並持續監控效能與資料漂移（Data Drift）。</li>
+<li>♻ <strong>持續改進</strong>：根據監控結果與新資料，進行增量再訓練或微調，保持模型長期有效性。</li>
 </ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+<p>綜上，<code>機器學習模型</code> 的運作流程是一個閉環系統，從資料到部署再到持續優化，確保模型在動態環境中保持高效、可靠與可擴展。</p>
+</section>
+<section id="歷史演進" class="level2" data-number="26.4">
+<h2 data-number="26.4" class="anchored" data-anchor-id="歷史演進"><span class="header-section-number">26.4</span> 🔄歷史演進🗿</h2>
+<p><code>機器學習模型</code> 的發展史，是一部不斷自我精進，同時擴大應用領域的故事。從早期的數理統計方法，到今日與深度學習、大型語言模型及符號推理融合的混合式智慧系統，其演進可分為以下幾個主要階段：</p>
+<ul>
+<li>📜 <strong>統計基礎期（1950s‑1970s）</strong> ➠ 以線性迴歸、邏輯迴歸、判別分析等統計方法為主，強調數學可解性與可解釋性。這一時期的模型多用於經濟學、心理測量與品質控制等領域，為後續的機器學習奠定了理論基礎。</li>
+<li>🧮 <strong>演算法擴展期（1980s‑1990s）</strong> ➠ 支援向量機（SVM）、k 最近鄰（k‑NN）、決策樹等演算法興起，提升了非線性與高維資料的處理能力。這一時期的模型開始廣泛應用於文字分類、醫療診斷與工業檢測。</li>
+<li>🤖 <strong>集成學習興起（2000s）</strong> ➠ 集成方法（如隨機森林、梯度提升樹）透過結合多個弱學習器提升預測效能與穩定性，成為許多競賽與實務應用的首選方案。</li>
+<li>🌌 <strong>深度學習革命（2010s）</strong> ➠ 隨著計算能力的提升與海量數據的可用性，<strong>深度學習</strong>模型（如卷積神經網路 CNNs、循環神經網路 RNNs、<strong>轉換器架構</strong> Transformers）取得巨大成功。這些模型能夠自動從原始數據中<strong>學習與提取特徵</strong>，在圖像、語音與自然語言處理等領域取得突破性進展，在一定程度上減少了對手工 <code>特徵工程</code> 的依賴。</li>
+<li>🤝 <strong>模型融合與 AutoML（2010s‑2020s）</strong> ➠ AutoML（自動化機器學習）技術旨在自動化模型選擇、特徵工程與超參數調優的過程，降低開發門檻。同時，模型融合（Ensemble Learning）進一步提升效能，而將神經網路與符號邏輯結合的<strong>神經符號系統</strong>（Neuro‑Symbolic Systems）則成為新興研究熱點，結合了數據驅動的模式學習與規則驅動的推理能力。</li>
+<li>🌐 <strong>混合智慧期（2020s‑至今）</strong> ➠ <code>機器學習模型</code> 與符號流 AI、知識圖譜、大型語言模型（LLM）深度結合，探索可解釋性、可驗證性與自適應性的平衡。新興技術如聯邦學習（Federated Learning）、自監督學習（Self‑Supervised Learning）與多模態學習（Multimodal Learning）正在推動模型向跨領域、可信 AI 與邊緣部署發展。</li>
 </ul>
-</div>
-</div>
-</div>
+<p>由此可見，<code>機器學習模型</code> 的歷史演進不僅反映了統計流 AI 的成熟，也為今日混合式 AI 提供了模式學習與推理的基礎，鋪墊了與符號流方法協同發展的道路。</p>
 </section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
+<section id="小結與展望" class="level2" data-number="26.5">
+<h2 data-number="26.5" class="anchored" data-anchor-id="小結與展望"><span class="header-section-number">26.5</span> 🎄小結與展望🔳</h2>
+<p>👧👦🏻 對人類學習者而言，<code>機器學習模型</code> 的核心價值在於高效的<strong>生產力</strong>，能有效將<strong>數據</strong>轉化為<strong>洞見</strong>與<strong>行動</strong>。它不僅是人工智慧工程的基礎技能，也是日常生活中分析、預測與決策的能力延伸，儘管要小心注意其「<strong>黑盒子</strong>」的不可解釋性問題，以及在高風險應用中可能出現的<strong>對齊偏差</strong>（模型目標與人類價值不一致）與<strong>控制困難</strong>（模型行為偏離預期）風險。掌握 <code>機器學習模型</code>，就像擁有一套📦「智慧決策引擎」，能在統計流 AI 的世界中快速構建解決方案，並靈活應對不同領域的挑戰。</p>
+<p>🤖🦾 對 AI 而言，<code>機器學習模型</code> 是「統計流」AI 的 <strong>經典模組半成品</strong>，承載了模式學習與推理的核心能力。它們將特徵工程處理後的數據映射為可操作的預測與決策，並透過再訓練、遷移學習與自動化優化持續進化。在多模態學習、異常檢測、邊緣運算與可信 AI 等領域，這些模型已成為驅動智慧系統的中樞元件。然而，若缺乏有效的<strong>價值對齊機制</strong>與<strong>行為約束策略</strong>，模型在自動化決策中可能產生不可預期甚至有害的結果。</p>
+<p>展望未來，應對「<strong>黑盒子</strong>」的解釋性低挑戰與<strong>對齊與控制問題</strong>，<code>機器學習模型</code> 將朝向 <strong>自動化、高效化、可解釋化與可控化</strong> 持續發展，並在 <strong>多模態推理</strong>、<strong>生成式 AI</strong>、<strong>聯邦學習</strong> 與 <strong>神經符號融合</strong> 等方向深化應用。「統計流」AI 的自動特徵提取與「符號流」AI 的知識表徵將更緊密結合，形成既能高效學習、又能提供因果洞察並受控於人類價值的混合式智慧系統。同時，模型壓縮、參數高效微調與邊緣部署技術將推動 <code>機器學習模型</code> 從單一任務解決方案，進化為跨領域、跨平台且可持續監管的智慧核心。</p>
+</section>
+<section id="接下來" class="level2" data-number="26.6">
+<h2 data-number="26.6" class="anchored" data-anchor-id="接下來"><span class="header-section-number">26.6</span> 👉接下來🪸</h2>
+<ul>
+<li>⮦🚦 探究 <a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> <strong>統計流 AI</strong>（Statistical AI）的其它條目，評估自己可不可以說明<code>機器學習模型</code>和它們的關係，如下所述：
+<ul>
+<li><strong>🌀🎲🌿 <a href="04-01-probabilistic_association.zh-hant">機率性關聯</a></strong>：<code>機器學習模型</code>型透過訓練學習輸入與輸出之間的<code>機率性關聯</code>。 &nbsp; &nbsp;</li>
+<li><strong>🌀🧞‍♀️🗪 <a href="04-02-llm_chatbots.zh-hant">LLM聊天機器人</a></strong>：<code>LLM聊天機器人</code>本身就是一種複雜的<code>機器學習模型</code>，利用龐大的參數和海量數據進行訓練，以實現自然語言的理解與生成。 &nbsp; &nbsp;</li>
+<li><strong>🌀🪢🧠 <a href="04-03-neural_networks.zh-hant">神經網路</a></strong>：<code>神經網路</code>是現代<code>機器學習模型</code>中最為強大和流行的一類，尤其是在處理複雜的非線性關係和高維度數據方面。 &nbsp; &nbsp;</li>
+<li><strong>🌀🛠️🤏 <a href="04-04-feature_engineering.zh-hant">特徵工程</a></strong>：<code>特徵工程</code>直接為<code>機器學習模型</code>提供輸入數據，其品質直接決定了模型的學習效果和最終表現。<br>
+</li>
+<li><strong>🌀🌐🔗 <a href="04-06-llm_webassembly.zh-hant">大語言模型網組合</a></strong>：<strong>大語言模型網組合</strong>的實現，依賴於高效能的<code>機器學習模型</code>，特別是<strong>大語言模型</strong>，能夠在網際網絡瀏覽器環境中處理複雜的自然語言任務。 &nbsp; &nbsp;</li>
+<li><strong>🌀🌌▦ <a href="04-07-vector_space.zh-hant">向量空間</a></strong>：<code>機器學習模型</code>在<strong>向量空間</strong>中進行操作，將輸入數據轉換為向量表示，並在此空間中尋找模式和進行預測。</li>
+</ul></li>
+</ul>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
-</div>
-</div>
-</section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1348,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./04-04-feature_engineering.zh-hant.html" class="pagination-link" aria-label="🛠️🤏 特徵工程🌀">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">🛠️🤏 特徵工程🌀</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./04-06-llm_webassembly.zh-hant.html" class="pagination-link" aria-label="🌐🔗 LLM網組合🌀">
+        <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">🌐🔗 LLM網組合🌀</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1366,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/04-05-machine_learning_models.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

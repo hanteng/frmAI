@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>附錄 E — 🌌心智圖：經緯 – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./cover_back.zh-hant.html" rel="next">
+<link href="./appendix-MCP_API.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -91,6 +71,10 @@ div.csl-indent {
     "search-label": "搜尋"
   }
 }</script>
+<meta name="mermaid-theme" content="default">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -105,7 +89,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./appendix-action.zh-hant.html">🔖附錄</a></li><li class="breadcrumb-item"><a href="./appendix-mindmap.zh-hant.html"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">🌌心智圖：經緯</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +155,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -701,13 +685,13 @@ div.csl-indent {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
  <span class="menu-text">🔖附錄</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendix-action.zh-hant.html" class="sidebar-item-text sidebar-link">
@@ -734,7 +718,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./appendix-mindmap.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./appendix-mindmap.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">🌌心智圖：經緯</span></span></a>
   </div>
 </li>
@@ -768,41 +752,23 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
-  <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
-  </ul></li>
+  <li><a href="#mermaid-版" id="toc-mermaid-版" class="nav-link active" data-scroll-target="#mermaid-版"><span class="header-section-number">E.1</span> Mermaid 版</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/appendix-mindmap.zh-hant.qmd" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./appendix-action.zh-hant.html">🔖附錄</a></li><li class="breadcrumb-item"><a href="./appendix-mindmap.zh-hant.html"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">🌌心智圖：經緯</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title">附錄 E — 🌌心智圖：經緯</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +778,450 @@ div.csl-indent {
 </header>
 
 
+<section id="mermaid-版" class="level2" data-number="E.1">
+<h2 data-number="E.1" class="anchored" data-anchor-id="mermaid-版"><span class="header-section-number">E.1</span> Mermaid 版</h2>
+<div id="fig-mindmap" class="quarto-float quarto-figure quarto-figure-center anchored" data-caption="🌌心智圖">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mindmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{ init: { 'flowchart': { 'curve': 'bumpX' }, 'theme': 'redux', 'themeVariables': { 'lineColor': '#000', 'nodeBorder': '#000' } } }%%
+graph LR
+  
+  C1b ~~~ INTRO ~~~ C2
+  C1d ~~~ NOTES
+  
+  %% LLM 大語言模型
+  C2f -.-&gt; C2g 
+  C2b -.-&gt; C2g -.-&gt; C4b 
+  %%C4b -.-&gt; C4f
+  Situatedism ==&gt; C7 
 
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
-<blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
-</li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
-</ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
-</section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
-<ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
-</ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
-</ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
-<ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
-</ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
-<ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
-</ul>
-<p>🎲🏁</p>
-</div>
-</div>
-<hr>
-</section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
-<ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
-</ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
+  C2b eC4@&lt;==&gt; C4
+  eC4@{ animate: true }
+
+  C2e -.-&gt; C4 ~~~ C7a
+
+  C3 ~~~ C3a
+  %%   ROOT[📚 AI 知識地圖]
+  %%   ROOT --&gt; INTRO
+  %%   ROOT --&gt; NOTES
+  %%   ROOT --&gt; C1
+  
+  INTRO -.-&gt; C2 &amp; INTRO1 &amp; C5 &amp; INTRO2
+  %% 導論
+  INTRO[🤗💬 &lt;br/&gt;框智&lt;br/&gt;格局]
+  INTRO@{ shape: subproc}
+  INTRO1[🧠 &lt;br/&gt;心智能力&lt;br/&gt; 🐸🐘🧘]
+  INTRO1@{ shape: subproc}
+  INTRO2[🧠🧞‍♀️ &lt;br/&gt;〜語言賽局&lt;br/&gt;腦補機]
+  INTRO2@{ shape: subproc}
+  click INTRO1 "notes-mind.zh-hant.html"
+  click INTRO2 "notes-mental_fill-in.zh-hant.html"
+  %% 第壹篇
+  C1[第壹篇 &lt;br/&gt;㉄ AI &lt;br/&gt;問題意識]
+  C1a[1.1 🎭🗪 &lt;br/&gt;圖靈測試]
+  C1b[1.2 🧱🗣️ &lt;br/&gt;中文房間]
+  C1c[1.3 🔤⚓ &lt;br/&gt;符碼紮根問題]
+  C1d[1.4 🖼️⏱️ &lt;br/&gt;框架問題]
+  C1e[1.5 👁️⯊ &lt;br/&gt;完形心理]
+  C1f[1.6 🎯🛡️ &lt;br/&gt;對齊與控制問題]
+  C1g[1.7 🗫🎲 &lt;br/&gt;語言賽局]
+  C1 --&gt; C1a &amp; C1b &amp; C1c &amp; C1d &amp; C1e &amp; C1f &amp; C1g
+  click C1 "01----problematics.zh-hant.html"
+  click C1a "01-01-Turing_Test.zh-hant.html"
+  click C1b "01-02-Chinese_Room.zh-hant.html"
+  click C1c "01-03-Symbol_Grounding_Problem.zh-hant.html"
+  click C1d "01-04-Frame_Problem.zh-hant.html"
+  click C1e "01-05-Gestalt_Psychology.zh-hant.html"
+  click C1f "01-06-Alignment_Control_Problem.zh-hant.html"
+  click C1g "01-07-Language_Games.zh-hant.html"
+
+  NOTES -.-&gt; NOTES1 &amp; NOTES2 &amp; NOTES3 &amp; C5 &amp; INTRO2
+  %% 筆記
+  NOTES[📑 筆記]
+  NOTES@{ shape: procs}
+  NOTES1[🪜 &lt;br/&gt;知行鷹架]
+  NOTES2[🪜👨‍👩‍👧‍👦 &lt;br/&gt;〜家長篇&lt;br/&gt;~傳承]
+  NOTES3[🪜🧘 &lt;br/&gt;〜自學篇&lt;br/&gt;~紥根]
+  NOTES1@{ shape: trap-b }
+  NOTES2@{ shape: trap-b }
+  NOTES3@{ shape: trap-b }
+  click NOTES1 "notes-constructive_fill-in.zh-hant.html"
+  click NOTES2 "appendix-cognitive_capacity_parents.zh-hant.html"
+  click NOTES3 "appendix-cognitive_capacity.zh-hant.html"
+
+  %% Extra Anchor 前中 系統創新
+  C1a &amp; C1b &amp; C1c &amp; C1d &amp; C1e &amp; C1f &amp; C1g --&gt;   SysThk
+  SysThk[🧠🏛️🌀&lt;br/&gt;❝腦補❞應對&lt;br/&gt;與&lt;br/&gt;系統思維]
+  SysThk@{ shape: braces}
+ 
+  %% 第貳篇
+  C2[/&lt;br/&gt;第貳篇 &lt;br/&gt;🎏🏮 &lt;br/&gt;流派與主義&lt;br/&gt;&lt;br/&gt;\]
+  
+  C2a[2.1 🎏🏛️ &lt;br/&gt;符號流／&lt;br/&gt;邏輯主義]
+  C2b[2.2 🎏🌀 &lt;br/&gt;統計流]
+  C2c[2.3 🎏🧠 &lt;br/&gt;神經－符號合流]
+  C2d[2.4 🪙🫣 &lt;br/&gt;AGI &lt;br/&gt;通用人工v智慧]
+  C2d@{ shape: dbl-circ }
+  C2e([2.5 🏮🧬&lt;br/&gt; 連結主義])
+  C2f([2.6 🏮💪&lt;br/&gt; 行為主義])
+  C2g[(2.7 😵‍💫🧞‍♀️ &lt;br/&gt;大語言模型)]
+  click C2 "02----schools_paradigms.zh-hant.html"
+  click C2a "02-01-symbolic_ai.zh-hant.html"
+  click C2b "02-02-statistical_ai.zh-hant.html"
+  click C2c "02-03-neurosymbolic_ai.zh-hant.html"
+  click C2d "02-04-agi.zh-hant.html"
+  click C2e "02-05-connectionism.zh-hant.html"
+  click C2f "02-06-behaviorism.zh-hant.html"
+  click C2g "02-07-large_language_models.zh-hant.html"
+
+  %% 第伍篇
+  C5[\第伍篇&lt;br/&gt; ☸ &lt;br/&gt;區分 AI &lt;br/&gt;5 大導向&lt;br/&gt;&lt;br/&gt;/]
+  C5a[/5.1 ☸🎯 &lt;br/&gt;任務導向/]
+  C5b[/5.2 ☸🛠 &lt;br/&gt;工具導向/]
+  C5c[/5.3 ☸🤖 &lt;br/&gt;智能體／代理人導向/]
+  C5d[/5.4 ☸🤝 &lt;br/&gt;協作導向/]
+  C5e[/5.5 ☸⚖️ &lt;br/&gt;治理導向/]
+  click C5 "05----ai_orientations.zh-hant.html"
+  click C5a "05-01-oriented_task.zh-hant.html"
+  click C5b "05-02-oriented_tool.zh-hant.html"
+  click C5c "05-03-oriented_agent.zh-hant.html"
+  click C5d "05-04-oriented_collaborative.zh-hant.html"
+  click C5e "05-05-oriented_governance.zh-hant.html"
+
+  %% 3--&gt;4 上至中至下
+  SysThk --&gt; C2
+  SysThk --&gt; C5
+
+  %% 4--&gt;5 上至中至下
+  %% C2 C5 transitions
+  
+  %% 上上 ~~~ 
+  C2 ~~~ C5e ~~~ C8
+  C2 ~~~ C5c ~~~ C8
+  
+  %% 上上  
+  C2 -.流／主義.-&gt; C2a 
+  
+  C5a -.-&gt; C4
+  
+  C5 --導向--&gt; C5c
+  C5 --導向--&gt; C5e 
+    C5c ==&gt; C8
+    C5d -.-&gt; C6
+  C5 --導向--&gt; C5b
+  
+  C2 -.主義.-&gt; C2f 
+  Situatedism([🏮🛣 &lt;br/&gt;情境+脈絡主義])
+  C2 -.主義.-&gt; Situatedism
+  %% AGI 
+  C2 --立場--x C2d 
+    %%C2c -.整合運用.-&gt; C3e
+    %% 上」神經－符號合流 
+    C2a -.-&gt; C2c ~~~ C9
+    %% 中」神經－符號合流
+    C2e &amp; C2f -.-&gt; C2c ~~~ C9
+    %% 下」神經－符號合流
+    C2b -.-&gt; C2c ~~~ C9
+    %%C2c -.整合運用.-&gt; C4e
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
+  C2 -.主義.-&gt; C2e  ~~~ C4
+
+  %% 下
+  C5 --導向--&gt; C5d 
+    C5d ==&gt; C7 
+  %% 下下
+  C2 --流--&gt; C2b 
+  C5 --導向--&gt; C5a
+%%%% %% %% %% %% %% %% %% %% %%
+
+  %% 5--&gt;6 (C6) 上至中至下
+  %% 上上 「符號流」AI C3
+  C2a eC3@&lt;==&gt; C3
+  eC3@{ animate: true }
+  C5e -.-&gt; C3
+  %%C2a ~~~ C3 &amp; C8
+  %%C5e ~~~ C6
+
+  %% 第參篇
+  C3{{第參篇 &lt;br/&gt;🏛️ &lt;br/&gt;「符號流」AI}}
+  C3a[3.1 🏛️⊨∴&lt;br/&gt; 形式邏輯]
+  C3b[3.2 🏛️🤖💬&lt;br/&gt; 自動對話系統]
+  C3c[3.3 🏛️🎁🧠&lt;br/&gt; 專家系統]
+  C3d[3.4 🏛️🛠️🏗️&lt;br/&gt; 知識表徵]
+  C3e[3.5 🏛️🕸💡&lt;br/&gt; 知識圖譜]
+  C3f[3.6 🏛️🌐🔗&lt;br/&gt; 語意網]
+  C3g[3.7 🏛️🌌🗺️&lt;br/&gt; 本體論]
+  C3 --&gt; C3d --&gt; C3e --&gt; C3g --&gt; C3f
+  C3 --&gt; C3a --&gt; C3b --&gt; C3c
+  click C3 "03----symbolic_ai.zh-hant.html"
+  click C3a "03-01-formal_logic.zh-hant.html"
+  click C3b "03-02-automatic_dialogue_systems.zh-hant.html"
+  click C3c "03-03-expert_systems.zh-hant.html"
+  click C3d "03-04-knowledge_representation.zh-hant.html"
+  click C3e "03-05-knowledge_graph.zh-hant.html"
+  click C3f "03-06-semantic_web.zh-hant.html"
+  click C3g "03-07-ontology.zh-hant.html"
+
+    C3 -.-&gt; C9
+    %%Situatedism ==&gt; C8 
+
+  %% 第捌篇
+  C8[第捌篇 &lt;br/&gt;🦾 &lt;br/&gt;「具身派」AI&lt;br/&gt;]
+  C8@{ shape: notch-rect }
+  C8a&gt;8.1 🦾🎬🔋&lt;br/&gt; 機器人+實體驅動]
+  C8b&gt;8.2 🦾📡🌡️&lt;br/&gt; 感知與環境]
+  C8c&gt;8.3 🦾🔄🖼️&lt;br/&gt; 自適應機器人]
+  C8d&gt;8.4 🦾🤝💪&lt;br/&gt; 人機互動]
+  C8e&gt;8.5 🦾🛡️🚨&lt;br/&gt; 安全與穩健性]
+  C8f&gt;8.6 🦾🧭🎯&lt;br/&gt; 任務與目標規劃]
+  C8 --&gt; C8a &amp; C8b -.-&gt; C8c 
+  C8c --&gt; C8d --&gt; C8e &amp; C8f
+  click C8 "08----embodied_ai.zh-hant.html"
+  click C8a "08-01-robotics_and_physical_actuation.zh-hant.html"
+  click C8b "08-02-perception_and_environment.zh-hant.html"
+  click C8c "08-03-adaptive_robotics.zh-hant.html"
+  click C8d "08-04-human_robot_interaction.zh-hant.html"
+  click C8e "08-05-robot_safety_and_robustness.zh-hant.html"
+  click C8f "08-06-robot_tasks_and_goals.zh-hant.html"
+
+  %%C8 -.-&gt; C7a
+
+        %% 中類 C6
+        C5e ~~~ C6 
+        %%C2f &amp; C5c -.-&gt; C6
+        Situatedism -.-&gt; C6
+        %%C5b &amp; C5d -.-&gt; C6
+        C5a ~~~ C6 
+        
+  %% 6--&gt;7 (C6-&gt;) 上至中至下      
+  %% C6 全序　定下
+      %% C6 ❖ 分析與決策
+      %% C6 ==創新==&gt;
+      C6 ==時序==&gt; C6d ==時序==&gt; C6a ==時序==&gt; C6b ==時序==&gt; C6c 
+      
+      C6e ==創新==&gt; C6f ==&gt; C6c
+      %%C6 -.-&gt; C6e
+    C2g -.-&gt; C6e 
+  %% 横中 第陸篇 ❖ 分析與決策
+    
+  %% 第陸篇
+  C6@{ shape: diamond, label: "第陸篇 &lt;br/&gt;❖ &lt;br/&gt;分析與決策&lt;br/&gt; 6 點" }
+  %% SysThk --&gt; C6
+  C6a[[6.1 🟡😷🩺&lt;br/&gt; 診斷型分析]]
+  C6b[[6.2 🟠🤠🔮&lt;br/&gt; 預測型分析]]
+  C6c[[6.3 🔴🧐🧭&lt;br/&gt; 指導型分析]]
+  C6d[[6.4 🔵🤓📘&lt;br/&gt; 描述型分析]]
+  C6e[[6.5 🟣🙀🎨&lt;br/&gt; 生成式 AI]]
+  C6f[[6.6 🔁😽🪄&lt;br/&gt; 決策演算法]]
+  click C6 "06----analytics_decisions.zh-hant.html"
+  click C6a "06-01-analysis_diagnostic.zh-hant.html"
+  click C6b "06-02-analysis_predictive.zh-hant.html"
+  click C6c "06-03-analysis_prescriptive.zh-hant.html"
+  click C6d "06-04-analysis_descriptive.zh-hant.html"
+  click C6e "06-05-analysis_generative.zh-hant.html"
+  click C6f "06-06-decision_making_algorithm.zh-hant.html"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  %% C9 ~~~ C6a
+  %% C9 ~~~ C6f
+  %% Math[數學]=C9 上 C3a
+  C9 e1@-.-&gt; C3a
+  e1@{ animate: true }
+
+
+  %% Math[數學]=C9 下 C4a
+  C9 e2@-.-&gt; C4a
+  e2@{ animate: true }
+    %% 第玖篇
+  C9(第玖篇&lt;br/&gt; 📐&lt;br/&gt; AI用到的數學)
+  C9@{ shape: flag }
+  C9a(9.1 🤝🚿&lt;br/&gt; 協同過濾)
+  C9b(9.2 📉⛰️&lt;br/&gt; 最陡下降法)
+  C9c(9.3 🔮🕸️&lt;br/&gt; 貝氏網路)
+  C9d(9.4 🧹🧩&lt;br/&gt; 稀疏建模)
+  C9e(9.5 ⛓️🔄&lt;br/&gt; 馬可夫模型)
+  C9f(9.6 🌲🧭&lt;br/&gt; 蒙地卡羅樹搜尋)
+  C9g(9.7 🧠⚡&lt;br/&gt; 赫布學習論)
+  C9h(9.8 🧮💰&lt;br/&gt; 多智能體報酬矩陣)
+  C9 --&gt; C9a --&gt; C9d --&gt; C9f
+  C9 --&gt; C9b --&gt; C9g
+  C9 --&gt; C9e --&gt; C9c --&gt; C9h
+  click C9 "09----ai_math.zh-hant.html"
+  click C9a "09-01-collaborative_filtering.zh-hant.html"
+  click C9b "09-02-steepest_descent_method.zh-hant.html"
+  click C9c "09-03-bayesian_network.zh-hant.html"
+  click C9d "09-04-sparse_modeling.zh-hant.html"
+  click C9e "09-05-markov_modeling.zh-hant.html"
+  click C9f "09-06-monte_carlo_tree_search.zh-hant.html"
+  click C9g "09-07-hebb_rule.zh-hant.html"
+  click C9h "09-08-multi_agent_payoff_matrix.zh-hant.html"
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% 大類 Situatedism C7
+    %% C7 博弈派 /
+    %% Situatedism ==&gt; C7 
+
+  %% 第柒篇
+  C7[第柒篇&lt;br/&gt; 🏆 &lt;br/&gt;「博弈派」AI&lt;br/&gt;]
+  C7@{ shape: notch-rect }
+  C7a&gt;7.1 🏆🐭🗺️ &lt;br/&gt;IEEE電子老鼠&lt;br/&gt;走迷宮]
+  C7b&gt;7.2 🏆🕹️👾 &lt;br/&gt;Atari DQN]
+  C7c&gt;7.3 🏆⚪⚫ &lt;br/&gt;AlphaGo 圍棋]
+  C7d&gt;7.4 🏆🃏💰 &lt;br/&gt;撲克 AI]
+  C7e&gt;7.5 🏆🧙‍♂🥷 &lt;br/&gt;OpenAI Five]
+  C7f&gt;7.6 🏆🐺🧑‍🌾 &lt;br/&gt;狼人殺 AI]
+  C7g&gt;7.7 🏆🪖⚔️ &lt;br/&gt;戰場模擬]
+  C7 --&gt; C7a -.-&gt; C7b -.-&gt; C7c -.-&gt; C7d 
+  C7a -.-&gt; C7e -.-&gt; C7f -.-&gt; C7g 
+  click C7 "07----game_ai.zh-hant.html"
+  click C7a "07-01-ieee_micromouse.zh-hant.html"
+  click C7b "07-02-atari_dqn.zh-hant.html"
+  click C7c "07-03-alphago.zh-hant.html"
+  click C7d "07-04-poker_ai.zh-hant.html"
+  click C7e "07-05-openai_five.zh-hant.html"
+  click C7f "07-06-werewolf_ai.zh-hant.html"
+  click C7g "07-07-battlefield_simulation.zh-hant.html"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  C4 -.-&gt; C9
+  %% C5c -.-&gt; C7
+  %% 第肆篇
+  C4{{第肆篇&lt;br/&gt; 🌀 &lt;br/&gt;「統計流」AI}}
+  C4a[4.1 🌀🎲🌿 &lt;br/&gt;機率性關聯]
+  C4b[4.2 🌀🧞‍♀️🗪 &lt;br/&gt;LLM聊天機器人]
+  C4c[4.3 🌀🪢🧠 &lt;br/&gt;神經網路]
+  C4d[4.4 🌀🛠️🤏 &lt;br/&gt;特徵工程]
+  C4e[4.5 🌀🤖📦 &lt;br/&gt;機器學習模型]
+  C4f[4.6 🌀🌐🔗 &lt;br/&gt;大語言模型網組合]
+  C4g[4.7 🌀🌌▦ &lt;br/&gt;向量空間]
+  C4 --&gt; C4a --&gt; C4b --&gt; C4c
+  C4 --&gt; C4d --&gt; C4e --&gt; C4g --&gt; C4f
+  
+  click C4 "04----statistical_ai.zh-hant.html"
+  click C4a "04-01-probabilistic_association.zh-hant.html"
+  click C4b "04-02-llm_chatbots.zh-hant.html"
+  click C4c "04-03-neural_networks.zh-hant.html"
+  click C4d "04-04-feature_engineering.zh-hant.html"
+  click C4e "04-05-machine_learning_models.zh-hant.html"
+  click C4f "04-06-llm_webassembly.zh-hant.html"
+  click C4g "04-07-vector_space.zh-hant.html"
+
+  %% C4「統計流」
+  %% 下下
+  %% C5a -.-&gt; C4
+  %% C2b &lt;==&gt; C4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %% 第拾篇 收尾
+  C3f &amp; C3c --&gt; C10
+   C8e &amp; C8f --&gt; C10
+    C9f &amp; C9h --&gt; C10
+    C9g --&gt; C10
+    %% 横中尾 第陸篇 ❖ 分析與決策    
+    
+    C6c --&gt; C10
+    
+   C7d &amp; C7g --&gt; C10
+  C4c --&gt; C10
+  C4f --&gt; C10
+  
+
+  %% 第拾篇
+  C10((第拾篇 &lt;br/&gt;🌉&lt;br/&gt; AI工程))
+
+  C10a[10.1 &lt;br/&gt;🌉🔗🌐 &lt;br/&gt;API與MCP]
+  C10b[10.2 &lt;br/&gt;🌉🤖🚨 &lt;br/&gt;智能體&lt;br/&gt;可靠性與評估]
+  C10c[10.3 &lt;br/&gt;🌉❔📌 &lt;br/&gt;提示工程]
+  C10d[10.4 &lt;br/&gt;🌉🔗📝 &lt;br/&gt;知識驅動生成&lt;br/&gt;（RAG）]
+  C10e[10.5 &lt;br/&gt;🌉🪟🧭 &lt;br/&gt;脈絡工程]
+  C10f[10.6 &lt;br/&gt;🎁🌱🚀 &lt;br/&gt;AI 產品經理]
+  C10 --&gt; C10a &amp; C10b &amp; C10c &amp; C10d &amp; C10e &amp; C10f
+  click C10 "10----ai_engineering.zh-hant.html"
+  click C10a "10-01-API_MCP.zh-hant.html"
+  click C10b "10-02-agent_reliability_evaluation.zh-hant.html"
+  click C10c "10-03-prompt_engineering.zh-hant.html"
+  click C10d "10-04-retrieval_augmented_generation.zh-hant.html"
+  click C10e "10-05-context_engineering.zh-hant.html"
+  click C10f "10-06-AI_PM.zh-hant.html"
+
+
+  C4a@{ shape: flag }
+  C3a@{ shape: flag }
+  C10c@{shape: tag-rect}
+  C10d@{shape: tag-rect}
+  C10e@{shape: tag-rect}
+
+  %% Gray
+  classDef classSchoolC6 fill:#eee,stroke-width:3px;
+  class C5,C5a,C5c,C5b,C6,C6a,C6b,C6c,C6d,C6f classSchoolC6;
+
+  %% Yellow
+  classDef classSchoolClassic fill:#ffd,stroke-width:3px,stroke-dasharray: 10 3;
+  class C1,C1a,C10c,C10d,C10e,C2,C3,C4,C2a,C2b classSchoolClassic;
+  
+  %% Blue
+  classDef classSchoolC7 fill:#dff,stroke-width:3px,stroke-dasharray: 10 3;
+  class C7,C7a,C7b,C7c,C7d,C7e,C7f,C7g classSchoolC7;
+  
+  %% Green
+  classDef classSchoolC8 fill:#dfd,stroke-width:3px,stroke-dasharray: 10 3;
+  class NOTES,NOTES1,C10b,C1f,C5d,C5e,C8,C8a,C8b,C8c,C8d,C8e,C8f classSchoolC8;
+
+  %% Pink
+  classDef classNN color:#000,fill:#fdf,stroke-width:3px,stroke-dasharray: 10 3;
+  class C10a,C10f,C1c,C1d,C1e,INTRO,INTRO1,C2c,C4c,C9g classNN;
+
+  %% Purple
+  classDef classLLM fill:#ddf,stroke-width:5px;
+  class C1g,INTRO2,C2g,C6e,C4b,C4f classLLM;
+  
+  %% Orange -ism
+  classDef class_ism fill:#fdb;
+  class Situatedism,C2e,C2f, class_ism;
+
+  C4 ~~~ C4a
+
+  C5b -.-&gt; C8
+
+  %% LLM 大語言模型
+  C2e -.-&gt; C2g 
+
+Situatedism ==&gt; C8 
+</pre>
+</div>
+<p></p></figure><p></p>
 </div>
 </div>
-</section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mindmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+圖&nbsp;E.1: <strong>《道／盜智格局：AI 賽局手冊》心智圖</strong>
+</figcaption>
+</figure>
+</div>
+<div style="display:flex; align-items:center; margin-bottom:3px;">
+<button class="zoom-to-button" data-pan-x-percent="10" data-pan-y-percent="50" data-zoom="3">⏮</button> <button class="zoom-to-button" data-pan-x-percent="40" data-pan-y-percent="50" data-zoom="3">◀️</button> <button class="zoom-to-button" data-pan-x-percent="60" data-pan-y-percent="50" data-zoom="3">▶️</button> <button class="zoom-to-button" data-pan-x-percent="80" data-pan-y-percent="50" data-zoom="3">⏭</button>
+<p style="margin:0 3px 0 0;">
+z: <span id="zoom-value">1</span>
+</p>
+<p style="margin:0 3px 0 0;">
+X: <span id="pan-x-value">0</span>
+</p>
+<p style="margin:0 3px 0 0;">
+Y: <span id="pan-y-value">0</span>
+</p>
+<p style="margin:0;">
+X%: <span id="pan-x-percent-value">0</span>
+</p>
+</div>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1627,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./appendix-MCP_API.zh-hant.html" class="pagination-link" aria-label="⚙API分類：辨用">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">⚙API分類：辨用</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./cover_back.zh-hant.html" class="pagination-link" aria-label="📔封面封底說明">
+        <span class="nav-page-text"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">📔封面封底說明</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1645,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/appendix-mindmap.zh-hant.qmd" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

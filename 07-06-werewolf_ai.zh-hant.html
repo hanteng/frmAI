@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>45&nbsp; 🐺🧑‍🌾 狼人殺 AI🏆 – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./07-07-battlefield_simulation.zh-hant.html" rel="next">
+<link href="./07-05-openai_five.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07----game_ai.zh-hant.html">🏆「博弈派」AI</a></li><li class="breadcrumb-item"><a href="./07-06-werewolf_ai.zh-hant.html"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">🐺🧑‍🌾 狼人殺 AI🏆</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +151,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -497,11 +477,11 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="./07----game_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🏆「博弈派」AI</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./07-01-ieee_micromouse.zh-hant.html" class="sidebar-item-text sidebar-link">
@@ -534,7 +514,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07-06-werewolf_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./07-06-werewolf_ai.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">🐺🧑‍🌾 狼人殺 AI🏆</span></span></a>
   </div>
 </li>
@@ -768,41 +748,30 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
+  <li><a href="#博弈挑戰與歷史" id="toc-博弈挑戰與歷史" class="nav-link active" data-scroll-target="#博弈挑戰與歷史"><span class="header-section-number">45.1</span> 🐺🧑‍🌾 博弈挑戰與歷史</a>
   <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
+  <li><a href="#博弈挑戰" id="toc-博弈挑戰" class="nav-link" data-scroll-target="#博弈挑戰"><span class="header-section-number">45.1.1</span> 🏆 博弈挑戰</a></li>
+  <li><a href="#博弈歷史" id="toc-博弈歷史" class="nav-link" data-scroll-target="#博弈歷史"><span class="header-section-number">45.1.2</span> 📜 博弈歷史</a></li>
+  <li><a href="#克服難點方式-how-werewolf-ai-overcomes-challenges" id="toc-克服難點方式-how-werewolf-ai-overcomes-challenges" class="nav-link" data-scroll-target="#克服難點方式-how-werewolf-ai-overcomes-challenges"><span class="header-section-number">45.1.3</span> ✅ 克服難點方式 (How Werewolf AI Overcomes Challenges)</a></li>
   </ul></li>
+  <li><a href="#ai-應用啟發" id="toc-ai-應用啟發" class="nav-link" data-scroll-target="#ai-應用啟發"><span class="header-section-number">45.2</span> 💡 AI 應用啟發</a></li>
+  <li><a href="#下一部分" id="toc-下一部分" class="nav-link" data-scroll-target="#下一部分"><span class="header-section-number">45.3</span> 👉 下一部分</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/07-06-werewolf_ai.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07----game_ai.zh-hant.html">🏆「博弈派」AI</a></li><li class="breadcrumb-item"><a href="./07-06-werewolf_ai.zh-hant.html"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">🐺🧑‍🌾 狼人殺 AI🏆</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title"><span id="sec-werewolf-ai" class="quarto-section-identifier"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">🐺🧑‍🌾 狼人殺 AI🏆</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +781,73 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
-<blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p><code>狼人殺 AI</code> （Werewolf AI，日語_Jinrō Game_）代表著人工智慧在<strong>非完全資訊博弈</strong>領域的一大挑戰與突破。這類 AI 專案，例如由日本與加拿大研究團隊共同開發的 AI 玩家，成功在《狼人殺》或《Mafia》 這類遊戲中，實現了基於<strong>推理</strong>、<strong>溝通</strong>與<strong>欺騙</strong>的複雜博弈。狼人殺 AI 的成就，標誌著 AI 在處理<strong>自然語言溝通</strong>和<strong>社會動態博弈</strong>中的重要里程碑，更見證了 <strong><a href="02-07-large_language_models.zh-hant">大語言模型</a></strong> 能介入人類社會 <strong><a href="01-07-Language_Games.zh-hant">語言賽局</a></strong> 的能力，如採用 <a href="10-03-prompt_engineering.zh-hant">提示工程</a>及<a href="10-05-context_engineering.zh-hant">脈絡工程</a>去形塑互動角色。</p>
+<section id="博弈挑戰與歷史" class="level2" data-number="45.1">
+<h2 data-number="45.1" class="anchored" data-anchor-id="博弈挑戰與歷史"><span class="header-section-number">45.1</span> 🐺🧑‍🌾 博弈挑戰與歷史</h2>
+<p>《狼人殺》是一款典型的<strong>多人非完全資訊博弈</strong>遊戲，可以算是 <strong><a href="01-07-Language_Games.zh-hant">語言賽局</a></strong> 的一種。遊戲中，玩家身份分為<strong>狼人</strong>和<strong>平民</strong>兩大陣營，目標分別是消滅所有平民或所有狼人。由於身份資訊對玩家是隱藏的，所有決策都必須基於對話、邏輯推理與觀察。</p>
+<section id="博弈挑戰" class="level3" data-number="45.1.1">
+<h3 data-number="45.1.1" class="anchored" data-anchor-id="博弈挑戰"><span class="header-section-number">45.1.1</span> 🏆 博弈挑戰</h3>
+<p>《狼人殺》的具體挑戰有：</p>
 <ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
-</li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
+<li><p><strong>非完全資訊</strong>：玩家僅知道自己的身份，必須在資訊不對稱的環境中做出判斷；</p></li>
+<li><p><strong>自然語言溝通</strong>：AI 必須理解複雜的人類語言，包括言外之意、矛盾、以及隱藏的謊言；</p></li>
+<li><p><strong>推理與欺騙</strong>：AI 不僅要根據對話邏輯推理出其他玩家的身份，還必須學會<strong>說謊</strong>或<strong>掩飾</strong>自己的真實意圖；</p></li>
+<li><p><strong>多智能體社會動態</strong>：AI 必須在多個智能體之間進行複雜的互動，處理聯盟、背叛與合作等動態。</p></li>
 </ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
 </section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
+<section id="博弈歷史" class="level3" data-number="45.1.2">
+<h3 data-number="45.1.2" class="anchored" data-anchor-id="博弈歷史"><span class="header-section-number">45.1.2</span> 📜 博弈歷史</h3>
+<p>狼人殺 AI 的研究始於 2010 年代初，主要由學術界推動，旨在測試 AI 在處理複雜社會博弈中的能力：</p>
 <ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
-</ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
+<li><p>2017年，一個由日本科學家開發的 AI 狼人，在與四位人類玩家的遊戲中，成功在第一晚就贏得勝利，這被視為一次重大突破。</p></li>
+<li><p>2021年，卡內基美隆大學等團隊開發的 AI <strong>“Werewolf AI”</strong>，在多輪遊戲中表現出與人類玩家相當的推理與欺騙能力。</p></li>
+<li><p>這些 AI 項目雖然還未達到頂級人類玩家的水平，但已證明 AI 在<strong>語言博弈</strong>和<strong>信任推論</strong>方面具備了強大的潛力。</p></li>
 </ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
-<ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
-</ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
-<ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
-</ul>
-<p>🎲🏁</p>
-</div>
-</div>
-<hr>
+<p>如下段所詳述，狼人殺 AI 主要透過結合<strong>邏輯推理</strong>與<strong>深度學習</strong>，來應對自然語言和複雜博弈的挑戰。</p>
 </section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
+<section id="克服難點方式-how-werewolf-ai-overcomes-challenges" class="level3" data-number="45.1.3">
+<h3 data-number="45.1.3" class="anchored" data-anchor-id="克服難點方式-how-werewolf-ai-overcomes-challenges"><span class="header-section-number">45.1.3</span> ✅ 克服難點方式 (How Werewolf AI Overcomes Challenges)</h3>
+<p>要讓 AI 玩狼人殺，光靠死板的規則和邏輯是不夠的。研究人員結合了兩種主要技術，讓 AI 不只會算，更會「演」。主要利用 <strong><a href="./03-01-formal_logic.zh-hant.html">邏輯推理</a></strong> 與 <strong><a href="./04-03-neural_networks.zh-hant.html">深度學習</a></strong>，分以下2學習階段：</p>
 <ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
+<li><strong>語言理解</strong> 與 <strong>情勢分析</strong>：AI 必須先聽懂大家在說什麼，才能做出判斷
+<ul>
+<li>這部分主要靠 <strong>自然語言處理</strong>（NLP）技術。</li>
+<li>AI 會把每個玩家的發言，轉化成數學上可以分析的數據。它不只是分析詞彙，更重要的是會評估發言的「可信度」**。</li>
+<li>例如，如果某個玩家的發言前後矛盾，AI 會馬上降低他身份為平民的機率。這就像福爾摩斯一樣，從每個人的話裡找線索。<br>
+</li>
+</ul></li>
+<li><strong>策略學習與應用</strong>：光有線索還不夠，AI 還要學會如何利用線索進行模擬對戰
+<ul>
+<li>這部分是<strong>強化學習</strong>發揮作用的地方，AI 會跟自己進行數百萬場的模擬對戰。從這些經驗中，AI 會學習並應用博弈論概念，叫<strong>納許均衡</strong>，來發展出自己的贏家策略</li>
+<li>簡單來說，就是一種「誰都無法單獨改變策略來獲利」的穩定狀態。因為狼人殺的變數太多，AI 無法計算出完美的納許均衡，所以它會：
+<ul>
+<li><strong>分析小賽局</strong>：把複雜的遊戲切成一個個的小情境，例如「當只剩下三個人時，我該怎麼發言？」然後找出每個小情境中的最佳應對方式。</li>
+<li><strong>學習應變策略</strong>：AI 的目標不是只贏一次，而是要發展出「<strong>穩健</strong>」的策略。就算對手的策略改變了，AI 也能夠穩定地獲勝。</li>
+<li><strong>欺騙與合作</strong>：最終學會如何在資訊不對稱的環境中，決定何時說謊、如何隱藏身份以及如何與隊友合作。</li>
+</ul></li>
+</ul></li>
 </ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+<p>透過以上技術，狼人殺 AI 不僅能理解遊戲中的複雜對話，還能發展出靈活且難以捉摸的戰術，這也是它能和人類高手匹敵的關鍵，使 AI 成為一個難以被預測和擊敗的對手。</p>
+</section>
+</section>
+<section id="ai-應用啟發" class="level2" data-number="45.2">
+<h2 data-number="45.2" class="anchored" data-anchor-id="ai-應用啟發"><span class="header-section-number">45.2</span> 💡 AI 應用啟發</h2>
+<p>狼人殺 AI 的案例，展示了 AI 不僅能在數據明確的環境中獲勝，也能在充滿不確定性、資訊不對稱與社會動態的複雜環境中展現智能。</p>
+<p>此案例對 AI 應用有以下啟發：</p>
+<ul>
+<li><p><strong>🎯 問題意識</strong>：適用於 <strong>需要處理口頭溝通、不確定性與欺騙</strong> 的任務，例如談判、法律諮詢或網路安全。</p></li>
+<li><p><strong>🗺️ 建構資源</strong>：能將 <strong>自然語言對話</strong> 與<strong>社會動態</strong>轉化為可供 AI 分析的<strong>結構化數據</strong>。</p></li>
+<li><p><strong>⚡ 智能加值</strong>：AI 能夠學會<strong>多方策略</strong>，並在<strong>資訊不對稱</strong>的環境中做出最佳決策。</p></li>
+<li><p><strong>✨ LLM入語言賽局</strong>： <strong><a href="./02-07-large_language_models.zh-hant.html">大語言模型</a></strong> 的加入，讓 AI 的語言表達能力大幅提升，能生成更自然、更具說服力的發言，甚至主動發起謊言或質疑，進而影響遊戲進程。</p></li>
+<li><p><strong>⚡️ 提示與脈絡工程</strong>：為了讓 LLM 扮演好特定社會角色（如狼人、預言家），可以利用精準的 <strong><a href="./10-03-prompt_engineering.zh-hant.html">提示工程</a></strong> 來定義其身份、目標與個性。同時，<strong><a href="./10-05-context_engineering.zh-hant.html">脈絡工程</a></strong> 則用於提供當前遊戲狀態與所有玩家歷史發言的完整資訊，確保 LLM 的回應符合情境且連貫。</p></li>
+<li><p><strong>🏭 佈署條件</strong>：適合在<strong>人機協作</strong>或<strong>多智能體</strong>的虛擬環境中部署，並可逐步擴展至需要自然語言理解和社會判斷的現實應用。</p></li>
 </ul>
-</div>
-</div>
-</div>
 </section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
+<section id="下一部分" class="level2" data-number="45.3">
+<h2 data-number="45.3" class="anchored" data-anchor-id="下一部分"><span class="header-section-number">45.3</span> 👉 下一部分</h2>
+<p>在理解 <strong><a href="https://www.google.com/search?q=07-06-werewolf_ai.zh-hant.md">狼人殺 AI</a></strong> 在推理與欺騙博弈中的啟發後，接下來探討 <strong><a href="https://www.google.com/search?q=07-07-battlefield_simulation.zh-hant.md">戰場模擬</a></strong> 在大型策略決策中的啟發。</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
-</div>
-</div>
-</section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1253,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./07-05-openai_five.zh-hant.html" class="pagination-link" aria-label="🧙‍♂🥷 OpenAI Five🏆">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">🧙‍♂🥷 OpenAI Five🏆</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./07-07-battlefield_simulation.zh-hant.html" class="pagination-link" aria-label="🏆🪖⚔️ 戰場模擬">
+        <span class="nav-page-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">🏆🪖⚔️ 戰場模擬</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1271,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/07-06-werewolf_ai.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

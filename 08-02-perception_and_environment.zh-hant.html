@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>48&nbsp; 📡感知與環境🌡️ – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./08-03-adaptive_robotics.zh-hant.html" rel="next">
+<link href="./08-01-robotics_and_physical_actuation.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./08----embodied_ai.zh-hant.html">🦾「具身派」AI</a></li><li class="breadcrumb-item"><a href="./08-02-perception_and_environment.zh-hant.html"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">📡感知與環境🌡️</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +151,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -550,11 +530,11 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="./08----embodied_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🦾「具身派」AI</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./08-01-robotics_and_physical_actuation.zh-hant.html" class="sidebar-item-text sidebar-link">
@@ -563,7 +543,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./08-02-perception_and_environment.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./08-02-perception_and_environment.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">📡感知與環境🌡️</span></span></a>
   </div>
 </li>
@@ -768,41 +748,35 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
+  <li><a href="#應用場景" id="toc-應用場景" class="nav-link active" data-scroll-target="#應用場景"><span class="header-section-number">48.1</span> 🚀 應用場景</a></li>
+  <li><a href="#細說" id="toc-細說" class="nav-link" data-scroll-target="#細說"><span class="header-section-number">48.2</span> 🔬 細說</a>
   <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
+  <li><a href="#感知技術" id="toc-感知技術" class="nav-link" data-scroll-target="#感知技術"><span class="header-section-number">48.2.1</span> 📡 感知技術</a></li>
+  <li><a href="#環境建模與挑戰" id="toc-環境建模與挑戰" class="nav-link" data-scroll-target="#環境建模與挑戰"><span class="header-section-number">48.2.2</span> 🌎 環境建模與挑戰</a></li>
+  <li><a href="#導向分析與決策" id="toc-導向分析與決策" class="nav-link" data-scroll-target="#導向分析與決策"><span class="header-section-number">48.2.3</span> ⛓️🦾 導向、分析與決策</a></li>
   </ul></li>
+  <li><a href="#定位與應用考量" id="toc-定位與應用考量" class="nav-link" data-scroll-target="#定位與應用考量"><span class="header-section-number">48.3</span> 🌟 定位與應用考量</a>
+  <ul>
+  <li><a href="#定位" id="toc-定位" class="nav-link" data-scroll-target="#定位"><span class="header-section-number">48.3.1</span> ⚓🗺 定位</a></li>
+  <li><a href="#應用考量" id="toc-應用考量" class="nav-link" data-scroll-target="#應用考量"><span class="header-section-number">48.3.2</span> 📐🌉 應用考量</a></li>
+  </ul></li>
+  <li><a href="#小結及連結" id="toc-小結及連結" class="nav-link" data-scroll-target="#小結及連結"><span class="header-section-number">48.4</span> ✨小結及連結🏁</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/08-02-perception_and_environment.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./08----embodied_ai.zh-hant.html">🦾「具身派」AI</a></li><li class="breadcrumb-item"><a href="./08-02-perception_and_environment.zh-hant.html"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">📡感知與環境🌡️</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title"><span id="sec-perception-and-environment" class="quarto-section-identifier"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">📡感知與環境🌡️</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +786,127 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
-<blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p><code>感知與環境</code>（Perception &amp; Environment）指 AI 系統理解其所處環境（物理或虛擬世界狀態）的關鍵領域，如同人類的感官系統，它賦予機器人理解周遭物理世界的能力。該領域涉及從<strong>感測器</strong>（sensors）接收原始數據，經過<strong>處理</strong>、<strong>解釋</strong>轉化為有意義的資訊（物體的位置、形狀、材質，甚至是動態變化），最終形成對周遭<strong>環境</strong>的<strong>認知</strong>模型。 可靠的、清晰的環境感知，是 AI 執行任務、做出決策、安全互動的基礎。</p>
+<p>具身 AI 的感知能力不僅僅是單純的數據採集，更重要的是<strong>情境理解</strong>（Contextual Understanding），通常要應對以下核心 <a href="01----problematics.zh-hant">㉄ AI 問題意識</a>：</p>
 <ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
-</li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
+<li><strong>🔤⚓ <a href="01-03-Symbol_Grounding_Problem.zh-hant">符碼紮根問題</a></strong>：AI 如何將感測器接收到的低階、量化數據（如像素點、聲波頻率）與高階、抽象的符號概念（如「桌子」、「障礙物」、「人」）聯繫起來？</li>
+<li><strong>🖼️⏱️ <a href="01-04-Frame_Problem.zh-hant">框架問題</a></strong>：AI 如何知道環境中哪些資訊是重要的，哪些可以忽略？尤其是在動態變化且資訊量龐大的環境中，確定哪些狀態會改變，哪些不會，直接影響感知效率與決策正確性。</li>
+<li><strong>👁️⯊ <a href="01-05-Gestalt_Psychology.zh-hant">完形心理</a></strong>：AI 的感知能力學習了哪些處理不確定性的<strong>認知捷徑</strong>或<strong>經驗法則</strong>？要如何避免可能的認知幻覺？</li>
 </ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
+<p><code>感知與環境</code> 可被視為一種 <strong>環境與情境理解的基礎工具箱</strong>，其核心思想是：</p>
+<blockquote class="blockquote">
+<p>從多模態感測器數據中提取有意義的資訊，構建出對周遭世界的結構化、動態化的表徵，以支援更高層次的決策與行動。</p>
+</blockquote>
+<p>對於 AI 系統來說，則是：</p>
+<blockquote class="blockquote">
+<p>需要能夠「看見」、「聽見」、「感覺」到周遭世界，並將這些原始數據轉化為對環境特徵（如物體、空間、動態）的理解，以便進行後續的推理與互動。</p>
+</blockquote>
+<hr>
+<section id="應用場景" class="level2" data-number="48.1">
+<h2 data-number="48.1" class="anchored" data-anchor-id="應用場景"><span class="header-section-number">48.1</span> 🚀 應用場景</h2>
+<p><code>感知與環境</code> 在 <strong>自動駕駛、機器人導航、智慧監控、虛擬實境/擴增實境、無人機操作、環境監測</strong> 等情境脈絡下，是系統能否安全、有效地與環境互動的核心。 它直接影響著系統的<strong>安全性</strong>、<strong>效率</strong>和<strong>自主性</strong>。例如：</p>
+<ul>
+<li>🚗 <strong>自動駕駛車輛</strong>需要精確感知周圍的車輛、行人、道路標誌、交通信號燈，才能安全導航。</li>
+<li>🚁 <strong>無人機</strong>需要感知地形、障礙物和飛行路徑，以進行自主飛行和偵察任務。</li>
+<li>🛍️ <strong>倉儲機器人</strong>需要識別貨架、商品和工作區域，才能準確地執行搬運和分類任務。</li>
+<li>💡 <strong>智慧家居系統</strong>需要感知房間的光線、溫度、人員活動，以自動調節設備。</li>
+</ul>
 </section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
+<section id="細說" class="level2" data-number="48.2">
+<h2 data-number="48.2" class="anchored" data-anchor-id="細說"><span class="header-section-number">48.2</span> 🔬 細說</h2>
+<section id="感知技術" class="level3" data-number="48.2.1">
+<h3 data-number="48.2.1" class="anchored" data-anchor-id="感知技術"><span class="header-section-number">48.2.1</span> 📡 感知技術</h3>
+<p>感知技術是 AI 系統認識世界的窗口，它不僅是感應器的堆疊，更是一種將多源數據<strong>整合、處理和解釋</strong>的智慧過程。在現代自動化倉儲中，機器人需要精準地在複雜的環境中移動並操作貨物，它們的感知系統是實現這些任務的關鍵：</p>
 <ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
+<li>⚙️ <strong>感應器融合</strong> (Sensor Fusion)：機器人通常會配備多種感應器以獲得全面的環境資訊。
 <ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
+<li>💡 <strong>光達</strong> (LiDAR)：透過發射雷射光束並測量反射時間，建立精確的<strong>三維環境地圖</strong>，用於偵測障礙物和規劃路徑。</li>
+<li>📸 <strong>深度攝影機</strong> (Depth Camera)：例如 Intel RealSense 或 Microsoft Azure Kinect，能提供物體的深度資訊，幫助機器人判斷物體距離和大小。</li>
+<li>📷 <strong>傳統攝影機 (RGB Camera)</strong>：捕捉彩色影像，用於識別貨架上的條碼、標籤或特定貨物。</li>
+<li>🔊 <strong>超音波感應器</strong>：用於近距離偵測，防止碰撞。</li>
 </ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
+<li>🗺️ <strong>即時定位與地圖構建</strong> (SLAM)：機器人運用上述感應器，在移動的同時<strong>建構出環境的地圖</strong>，並 <strong>在該地圖中確定自己的位置</strong>。這項技術讓機器人即使在沒有 GPS 或其他外部定位訊號的室內環境，也能自主導航。</li>
+<li>📦 <strong>物體識別與追蹤</strong>：當機器人接近貨物時，會使用電腦視覺演算法來識別目標貨物，例如利用深度學習模型來辨識不同形狀的箱子，並追蹤其位置，以便機械手臂能夠精準抓取。</li>
+</ul>
+</section>
+<section id="環境建模與挑戰" class="level3" data-number="48.2.2">
+<h3 data-number="48.2.2" class="anchored" data-anchor-id="環境建模與挑戰"><span class="header-section-number">48.2.2</span> 🌎 環境建模與挑戰</h3>
+<p>感知到的數據需要被轉換成結構化的<strong>環境模型</strong>，以便 AI 進行推理和決策。這過程充滿挑戰，需要克服多個難題：</p>
 <ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
+<li><p>🔄 <strong>動態環境</strong>：現實世界充滿了變化，例如突然移動的行人、光線的變化、或地面上的雜物。機器人必須具備<strong>即時適應</strong>這些變化的能力，這要求其感知系統能快速處理大量資訊並做出反應。</p></li>
+<li><p>🎛️ <strong>感應器雜訊與不確定性</strong>：任何感應器都有其限制，例如光線不足時攝影機的影像品質會下降，或灰塵和水氣會影響光達的測量。機器人必須能<strong>處理這些不確定性</strong>，並從有雜訊的數據中提取出穩健的資訊。</p></li>
+<li><p>🧠 <strong>資料解釋與抽象化</strong>：將原始感應數據轉化為高階的、可供決策的資訊是極大的挑戰。例如，如何從點雲數據中判斷出「這是一個可供坐下的椅子」？這需要深度的語義理解，而這正是目前具身 AI 研究的熱點。</p></li>
+<li><p>🔋 <strong>能源效率</strong>：高階感應器和運算處理通常需要大量能源，這對於電力有限的移動機器人來說是一大挑戰。如何平衡感知能力的精準度與能源消耗，是設計上必須考量的重要因素。</p></li>
+<li><p>🤯 <strong>心智模型</strong>：系統需要能整合不同感應器的資訊，建立<strong>自身與世界的心智模型</strong>的完整「心智模型」（mental model）。這不僅是辨識單一物體，更是一種對其<strong>屬性、功能與關係</strong>的深度理解。例如，自駕車的心智模型能將感應器數據（點雲、影像、雷達訊號）轉化為以下<strong>關鍵類別</strong>：</p>
 <ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
+<li><strong>道路參與者</strong>：區分出行人、自行車、汽車、卡車，並預測其行為模式。</li>
+<li><strong>靜態障礙物</strong>：辨識並記錄路緣、護欄、施工路障等，這些是需要避開的固定物體。</li>
+<li><strong>交通號誌與標線</strong>：理解紅綠燈、路牌、車道線等符號的意義與規則。 這種深度的環境理解，是實現複雜行為和自主決策的基石。</li>
 </ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
+</ul>
+</section>
+<section id="導向分析與決策" class="level3" data-number="48.2.3">
+<h3 data-number="48.2.3" class="anchored" data-anchor-id="導向分析與決策"><span class="header-section-number">48.2.3</span> ⛓️🦾 導向、分析與決策</h3>
+<p><code>感知與環境</code> 的研究與實踐，因為其目的是理解周遭的<strong>真實世界</strong>，並將其轉化為 AI 系統可用的資訊，屬於 AI ☸🌀 <a href="05-02-oriented_data.zh-hant">數據導向</a>（Data-oriented），因為它大量依賴從感測器獲取的數據，也涉及☸🤖 <a href="05-03-oriented_agent.zh-hant">智能體／代理人導向</a>，因為它要建構<strong>自身與世界的心智模型</strong>。</p>
+<p>在分析與決策層面，它主要提供對現狀的描述，屬於描述「世界是什麼樣子的」的 🔵🤓📘 <a href="06-04-analysis_descriptive.zh-hant">描述型分析</a>，以及「為什麼會發生？」🟡😷🩺 <a href="06-01-analysis_diagnostic.zh-hant">診斷型分析</a>。然而，透過結合其他技術（如預測模型），它也能支撐🟠🤠🔮 <a href="06-02-analysis_predictive.zh-hant">預測型</a> 和🔴🧐🧭 <a href="06-03-analysis_prescriptive.zh-hant">指導型分析</a>。</p>
+</section>
+</section>
+<section id="定位與應用考量" class="level2" data-number="48.3">
+<h2 data-number="48.3" class="anchored" data-anchor-id="定位與應用考量"><span class="header-section-number">48.3</span> 🌟 定位與應用考量</h2>
+<p><code>感知與環境</code> 涉及 <strong>三層心智能力分類法</strong> 的多層次協作，尤其在底層的反應與中層的關係建立上扮演關鍵角色：</p>
+<ul>
+<li><p><strong>🐸⚡ 反應型心智</strong>：即時偵測到危險（如突然出現的障礙物），並觸發快速的避讓或停止反應。</p></li>
+<li><p><strong>🐘💞 情緒－關係心智</strong>：感知周遭的「人」或「人群」及其行為、情緒狀態，影響 AI 的互動方式（如對人的行為進行預測或提供輔助）。</p></li>
+<li><p><strong>🧘☸️ 反思－符號心智</strong>：將感知到的物體和空間資訊，與記憶中的知識、目標進行連結，進行高階推理和規劃。</p></li>
+</ul>
+<section id="定位" class="level3" data-number="48.3.1">
+<h3 data-number="48.3.1" class="anchored" data-anchor-id="定位"><span class="header-section-number">48.3.1</span> ⚓🗺 定位</h3>
+<p>在心智能力定位上，<code>感知與環境</code> 是所有更高級心智能力的<strong>基礎</strong>。 它屬於 <strong>🐸⚡ 反應型心智</strong> 的範疇，因為它需要即時處理感測器數據以確保基本安全；同時，它也為 <strong>🐘💞 情緒－關係型</strong> 和 <strong>🧘☸️ 反思－符號型</strong> 心智提供了所需的環境資訊。</p>
+</section>
+<section id="應用考量" class="level3" data-number="48.3.2">
+<h3 data-number="48.3.2" class="anchored" data-anchor-id="應用考量"><span class="header-section-number">48.3.2</span> 📐🌉 應用考量</h3>
+<p>在 AI 系統中，<code>感知與環境</code> 的個別實踐可與以下方法相結合：</p>
+<ul>
+<li><strong>深度學習模型</strong>（如卷積神經網路 CNN、循環神經網路 RNN、Transformer）用於圖像識別、物體偵測、感測器數據融合。</li>
+<li><strong>統計學與機率模型</strong>（如卡爾曼濾波器、粒子濾波器）用於狀態估計、濾波雜訊、不確定性處理。</li>
+<li><strong>幾何學與拓撲學</strong>用於地圖構建、路徑規劃、空間推理。</li>
+<li><strong>機器學習中的數據增強與遷移學習</strong>，以提高模型在不同環境下的泛化能力。</li>
+<li><strong>多感測器融合算法</strong>，以克服單一感測器的局限性。</li>
+</ul>
+<p>在 AI 系統中，<code>感知與環境</code> 的實踐的優化還可以考量以下：</p>
+<ul>
+<li>🎏🏛️ <a href="***02-01-symbolic_ai.zh-hant">符號流 AI</a>
+<ul>
+<li><strong>環境語義理解與知識表示</strong>：將感知到的低階特徵轉換為高階的符號化表徵（如「這是個行人」、「這是個紅綠燈」），並結合知識圖譜來理解物體之間的關係與環境的規則。</li>
+<li><strong>幾何推理與空間認知</strong>：利用幾何學和拓撲學的原理，對感知數據進行地圖構建、定位，並進行空間關係推理，這對於導航和路徑規劃至關重要。</li>
 </ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
-</ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
+<li>🏮💪 <a href="***02-06-behaviorism.zh-hant">行為主義</a>的<strong>強化學習</strong>
 <ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
-</ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
+<li><strong>感知驅動的決策與行動</strong>：利用感知到的環境資訊作為強化學習的狀態輸入，讓智能體學習如何在複雜環境中做出最佳行動決策，例如導航、避障。</li>
+<li><strong>自適應感知策略</strong>：在某些情況下，智能體甚至可以透過強化學習來學習如何調整其感知策略，例如決定何時需要更詳細地掃描某個區域。</li>
+</ul></li>
+<li>🏮🧬 <a href="***02-05-connectionism.zh-hant">連結主義</a>的<strong>深度學習</strong>
 <ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
+<li><strong>感知數據處理與特徵提取</strong>：利用卷積神經網路 (CNN) 處理視覺數據，循環神經網路 (RNN) 或 Transformer 處理序列數據（如語音、時間序列感測器數據），從原始感測器輸入中提取有意義的特徵。</li>
+<li><strong>多感測器融合與情境感知</strong>：整合來自不同感測器（如攝影機、LiDAR、雷達、IMU）的數據，透過深度學習模型建立更全面、更魯棒的環境表徵，例如辨識物體、判斷其距離、速度與類型。</li>
+</ul></li>
+<li>🎏🧠 混合式架構的 <strong><a href="02-03-neurosymbolic_ai.zh-hant">神經－符號合流</a></strong>
+<ul>
+<li><strong>感知與符號推理整合</strong>：結合深度學習的強大感知能力和符號 AI 的推理能力，實現對環境的深度理解，例如能夠區分「一個看起來像椅子但不能坐的東西」（如裝飾品）與「一個真正可供坐下的椅子」。<br>
 </li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
+<li><strong>魯棒性與泛化能力的提升</strong>：透過數據增強、遷移學習等技術，讓模型在不同環境和條件下都能保持良好的感知與理解能力。同時，將統計學與機率模型（如卡爾曼濾波器、粒子濾波器）應用於狀態估計和雜訊濾波，進一步增強系統的穩健性。</li>
+</ul></li>
 </ul>
-<p>🎲🏁</p>
-</div>
-</div>
 <hr>
 </section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
-<ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
-</ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
-</ul>
-</div>
-</div>
-</div>
 </section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
+<section id="小結及連結" class="level2" data-number="48.4">
+<h2 data-number="48.4" class="anchored" data-anchor-id="小結及連結"><span class="header-section-number">48.4</span> ✨小結及連結🏁</h2>
+<p><code>感知與環境</code> 是具身派 AI 的「感官」，理解周遭世界的基石。隨著<strong>感應器技術</strong>的進步和<strong>機器學習</strong>演算法的突破，具身 AI 的感知能力將越來越接近人類，甚至在某些方面的感知超越人類（如紅外線、超音波等）。這種感知與學習的能力不僅限於工業應用，也在服務型機器人、自駕交通工具等領域發揮關鍵作用。將原始感測器數據轉化為有意義的環境表徵，為 AI 的決策、規劃和行動提供必要資訊，並支撐並推進 <a href="08-01-robotics_and_physical_actuation.zh-hant">機器人學與實體驅動</a>、<a href="08-03-adaptive_robotics.zh-hant">可適應機器人學</a>、<a href="08-05-robot_safety_and_robustness.zh-hant">機器人安全與穩健性</a>、<a href="08-06-robot_tasks_and_goals.zh-hant">任務與目標規劃</a> 等領域。</p>
+<p>為了實現更強大的環境感知能力，AI 系統需要應對 <strong><a href="01-03-Symbol_Grounding_Problem.zh-hant">符碼紮根問題</a></strong>（如何聯繫感測數據與符號概念）、<strong><a href="01-04-Frame_Problem.zh-hant">框架問題</a></strong>（如何<strong>聚焦</strong>重要感知資訊）、以及 <strong><a href="01-05-Gestalt_Psychology.zh-hant">完形心理</a></strong>（如何在應用<strong>認知捷徑</strong>或<strong>經驗法則</strong>時避免誤判）。透過結合<strong>深度學習</strong>、<strong>感測器融合</strong>、<strong>幾何推理</strong>等技術，AI 能夠更深入地理解周遭世界脈絡並為行動提供精準依據。</p>
+<p><code>感知與環境</code> 是賦予 AI 環境「觀察力」的關鍵。隨著<strong>感應器技術</strong>和<strong>機器學習</strong>的進一步發展，我們將看到更多能觀察、監測、追蹤的智慧機器人，它們不僅能收集及分享情報，更能提供更高層次的<strong>態勢感知</strong>（Situational Awareness, SA）進一步<strong>理解</strong>與<strong>解釋</strong>環境狀態，並<strong>預測</strong>未來可能的變化，以支持決策與行動。這也包括了軍事與安全領域的ISR情報、監視與偵察核心任務。當機器人能夠感知與理解環境後，還需具備根據情境動態調整行為的能力，這正是 <a href="08-03-adaptive_robotics.zh-hant">可適應機器人學</a> 的核心任務，同時也為 <a href="08-04-human_robot_interaction.zh-hant">人機互動</a> 、<a href="08-05-robot_safety_and_robustness.zh-hant">機器人安全與穩健性</a>、<a href="08-06-robot_tasks_and_goals.zh-hant">任務與目標規劃</a>提供了更堅實的互動基礎。</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
-</div>
-</div>
-</section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1312,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./08-01-robotics_and_physical_actuation.zh-hant.html" class="pagination-link" aria-label="🎬機器人學🔋">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">🎬機器人學🔋</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./08-03-adaptive_robotics.zh-hant.html" class="pagination-link" aria-label="🔄自適應機器人🖼️">
+        <span class="nav-page-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">🔄自適應機器人🖼️</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1330,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/08-02-perception_and_environment.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

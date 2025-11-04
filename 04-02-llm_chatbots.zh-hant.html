@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>23&nbsp; 🧞‍♀️🗪 LLM 聊天機器人🌀 – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./04-03-neural_networks.zh-hant.html" rel="next">
+<link href="./04-01-probabilistic_association.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04----statistical_ai.zh-hant.html">🌀「統計流」AI</a></li><li class="breadcrumb-item"><a href="./04-02-llm_chatbots.zh-hant.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">🧞‍♀️🗪 LLM 聊天機器人🌀</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +151,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -356,11 +336,11 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="./04----statistical_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🌀「統計流」AI</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-01-probabilistic_association.zh-hant.html" class="sidebar-item-text sidebar-link">
@@ -369,7 +349,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-02-llm_chatbots.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./04-02-llm_chatbots.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">🧞‍♀️🗪 LLM 聊天機器人🌀</span></span></a>
   </div>
 </li>
@@ -768,41 +748,32 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
+  <li><a href="#智能對話思考" id="toc-智能對話思考" class="nav-link active" data-scroll-target="#智能對話思考"><span class="header-section-number">23.1</span> 🔼 智能對話思考 🤔</a></li>
+  <li><a href="#對話系統設計" id="toc-對話系統設計" class="nav-link" data-scroll-target="#對話系統設計"><span class="header-section-number">23.2</span> ▶️ 對話系統設計 🥸</a>
   <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
+  <li><a href="#特性" id="toc-特性" class="nav-link" data-scroll-target="#特性"><span class="header-section-number">23.2.1</span> ✨ 特性</a></li>
+  <li><a href="#對比-llm-聊天機器人" id="toc-對比-llm-聊天機器人" class="nav-link" data-scroll-target="#對比-llm-聊天機器人"><span class="header-section-number">23.2.2</span> 🆚 對比 LLM 聊天機器人</a></li>
   </ul></li>
+  <li><a href="#歷史演進" id="toc-歷史演進" class="nav-link" data-scroll-target="#歷史演進"><span class="header-section-number">23.3</span> 🔄歷史演進🗿</a></li>
+  <li><a href="#高階-llm-聊天機器人" id="toc-高階-llm-聊天機器人" class="nav-link" data-scroll-target="#高階-llm-聊天機器人"><span class="header-section-number">23.4</span> 🪄高階 LLM 聊天機器人✨</a></li>
+  <li><a href="#小結與展望" id="toc-小結與展望" class="nav-link" data-scroll-target="#小結與展望"><span class="header-section-number">23.5</span> 🎄 小結與展望 🪩</a></li>
+  <li><a href="#接下來" id="toc-接下來" class="nav-link" data-scroll-target="#接下來"><span class="header-section-number">23.6</span> 👉 接下來 🪸</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/04-02-llm_chatbots.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04----statistical_ai.zh-hant.html">🌀「統計流」AI</a></li><li class="breadcrumb-item"><a href="./04-02-llm_chatbots.zh-hant.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">🧞‍♀️🗪 LLM 聊天機器人🌀</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title"><span id="sec-llm-chatbots" class="quarto-section-identifier"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">🧞‍♀️🗪 LLM 聊天機器人🌀</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +783,142 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
-<blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
 <ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
-</li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
+<li><a href="01-01-Turing_Test.zh-hant.html" class="quarto-xref"><span>章 1</span></a></li>
+<li>app-api</li>
+<li>app-action</li>
+<li><a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a></li>
+<li>imp-tri-aspect-cognitive</li>
+<li>sec-hypothesis-mental-fill-in</li>
+<li>sec-notes-constructive_fill-in</li>
 </ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
-</section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
+<p><code>LLM 聊天機器人</code>（LLM‑based Chatbots）是一類基於<strong>大型語言模型</strong>（Large Language Models, LLMs）的對話系統，透過在海量數據上進行<strong>機率性關聯</strong>（probabilistic association）學習，將語言符號轉換為<strong>向量空間</strong>（vector space）中的數值向量，並根據機率預測生成上下文連貫的回應。</p>
+<p>代表性案例是由 OpenAI 開發的 <strong>ChatGPT</strong>，自 2022 年底發布後迅速普及，向大眾展示了 LLM 在自然對話與內容生成上的強大能力，並於 2025 年成為市場領導者。</p>
+<p>作為<strong>統計流 AI</strong>（Statistical AI）的<strong>對話聊天實現</strong>實例，LLM 聊天機器人大量運用<strong>大語言模型</strong>與<strong>類神經網路</strong>（neural networks），推動全球對 <strong>GPU</strong> 與 <strong>Hyperscale</strong> 資料中心的投資熱潮。其核心思想是結合龐大的訓練數據與網路或用戶提供的脈絡資訊，透過機率性關聯生成靈活應對多種情境與對話需求的回應，大幅提升互動的<strong>自然度</strong>與<strong>多樣性</strong>。</p>
+<hr>
+<section id="智能對話思考" class="level2" data-number="23.1">
+<h2 data-number="23.1" class="anchored" data-anchor-id="智能對話思考"><span class="header-section-number">23.1</span> 🔼 智能對話思考 🤔</h2>
+<p>從「符號流」AI 歷史上的<a href="03-02-automatic_dialogue_systems.zh-hant">自動對話系統</a>相比，當代的<code>LLM 聊天機器人</code>在運作原理上有根本差異：</p>
 <ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
-</ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
+<li>🌀 <strong>統計流 AI</strong>：依賴<strong>機率性關聯</strong>與<strong>深度學習</strong>，能從大量語料中歸納模式，靈活應對開放域對話，但<strong>可解釋性</strong>與<strong>一致性</strong>較低。</li>
+<li>🏛️ <strong>符號流 AI</strong>：依賴<strong>明確規則</strong>與<strong>推理鏈</strong>，可解釋性高，但靈活性與泛化能力有限。</li>
 </ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
-<ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
-</ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
-<ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
-</ul>
-<p>🎲🏁</p>
-</div>
-</div>
+<p><code>LLM 聊天機器人</code>不需要人工編寫龐大的規則庫，而是透過大規模語料學習模式，具備處理開放式、多變對話的能力。因此，在有大數據語料的新歷史條件下，它達成使用者認可的語言流暢性，進而取得市場認可的自然對話與內容生成能力。</p>
 <hr>
 </section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
+<section id="對話系統設計" class="level2" data-number="23.2">
+<h2 data-number="23.2" class="anchored" data-anchor-id="對話系統設計"><span class="header-section-number">23.2</span> ▶️ 對話系統設計 🥸</h2>
+<p><code>LLM 聊天機器人</code>的設計核心在於利用<strong>深度學習模型</strong>將<strong>自然語言</strong>轉換為<strong>向量表示</strong>，並透過<strong>機率性關聯</strong>生成回應。其運作流程通常包含三個階段：</p>
 <ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
+<li>🧩 <strong>編碼</strong>（<strong>Encoding</strong>）<br>
+將輸入文字轉換為<strong>向量空間</strong>中的高維表示，捕捉<strong>語意特徵</strong>與<strong>上下文關係</strong>。</li>
+<li>⚙️ <strong>推斷</strong>（<strong>Inference</strong>）<br>
+利用 <strong>Transformer</strong> 架構與<strong>自注意力機制</strong>（Self‑Attention），根據上下文預測下一個<strong>詞元</strong>（token）的機率分佈。</li>
+<li>🗣 <strong>生成</strong>（<strong>Generating</strong>）<br>
+根據機率分佈逐步選擇詞元，生成<strong>連貫</strong>且<strong>上下文相關</strong>的回應。</li>
 </ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
-
-
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
-</div>
-</div>
-</section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<blockquote class="blockquote">
+<p>💡 <strong>對比</strong>：與自動對話系統的<strong>規則驅動</strong>不同，LLM 採用<strong>數據驅動</strong>與<strong>機率預測</strong>，因此在開放域對話中更具<strong>靈活性</strong>與<strong>泛化能力</strong>，但可解釋性較低。</p>
+</blockquote>
+<p>這種流程賦予系統高度的<strong>生成能力</strong>與<strong>適應性</strong>，但也帶來了<strong>幻覺現象</strong>與<strong>一致性挑戰</strong>，需要透過脈絡工程等方法加以改善。</p>
 <hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
+<section id="特性" class="level3" data-number="23.2.1">
+<h3 data-number="23.2.1" class="anchored" data-anchor-id="特性"><span class="header-section-number">23.2.1</span> ✨ 特性</h3>
+<p><code>LLM 聊天機器人</code>擅長處理<strong>複雜</strong>且<strong>開放</strong>的對話情境，展現出極高的<strong>對話流暢性</strong>與<strong>泛化能力</strong>，但其<strong>生成式</strong>運作原理也帶來了<strong>可解釋性較低</strong>等挑戰：</p>
+<ul>
+<li><p>👍 <strong>優勢</strong></p>
+<ul>
+<li>💬 <strong>對話自然流暢</strong>：回應高度連貫、擬人化。</li>
+<li>🌀 <strong>高泛化能力</strong>：可處理未見過的語句與情境，具備零樣本與少樣本學習能力。</li>
+<li>💡 <strong>知識整合力強</strong>：可跨領域整合知識回答複雜問題。</li>
+<li>📝 <strong>多樣化生成</strong>：支援摘要、翻譯、寫作等多種任務。</li>
+<li>🚀 <strong>開發門檻低</strong>：透過提示詞即可快速應用，無需大量規則編寫。</li>
+</ul></li>
+<li><p>👎 <strong>限制</strong></p>
+<ul>
+<li>👻 <strong>可解釋性低</strong>：決策過程難以追溯。</li>
+<li>😶‍🌫 <strong>幻覺現象</strong>：可能生成錯誤或捏造資訊。</li>
+<li>🔄 <strong>一致性不足</strong>：長對話中易出現前後矛盾。</li>
+<li>🚫 <strong>知識更新延遲</strong>：無法即時反映最新資訊。</li>
+<li>💰 <strong>高運算成本</strong>：訓練與推理需大量資源。</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="對比-llm-聊天機器人" class="level3" data-number="23.2.2">
+<h3 data-number="23.2.2" class="anchored" data-anchor-id="對比-llm-聊天機器人"><span class="header-section-number">23.2.2</span> 🆚 對比 LLM 聊天機器人</h3>
+<p>作為人機互動的智能對話實現，當代的<strong>大語言模型（LLM）聊天機器人</strong> 與較成熟、並與具備<strong>推理引擎</strong>的<a href="03-03-expert_systems.zh-hant">專家系統</a>搭配的<code>自動對話系統</code>相比：</p>
+<ul>
+<li><p>👍 <strong>優勢</strong></p>
+<ul>
+<li>🌐 <strong>開放域適應性強</strong>：能靈活應對多變的對話情境。</li>
+<li>🗣️ <strong>語言表達自然</strong>：生成內容流暢且具人性化。</li>
+<li>📚 <strong>知識覆蓋廣</strong>：可同時調用多領域知識。</li>
+<li>⚡ <strong>快速部署</strong>：透過提示詞即可啟用新應用。</li>
+</ul></li>
+<li><p>👎 <strong>限制</strong></p>
+<ul>
+<li>👻 <strong>可解釋性低</strong>：決策過程難以追溯。</li>
+<li>😶‍🌫 <strong>幻覺現象</strong>：可能生成錯誤或捏造資訊。</li>
+<li>🔄 <strong>一致性不足</strong>：長對話中易出現前後矛盾。</li>
+<li>🚫 <strong>知識更新延遲</strong>：無法即時反映最新資訊。</li>
+<li>💰 <strong>高運算成本</strong>：訓練與推理需大量資源。</li>
+</ul></li>
+</ul>
+<p>這具體展示了 <strong>統計流 AI</strong> 與 <strong>符號流 AI</strong> 的差異：</p>
+<ul>
+<li>🌀🧞‍♀️🗪 統計流 AI：海量數據、機率驅動、靈活性高、可解釋性低。</li>
+<li>🏛️🤖💬 符號流 AI：專家知識、規則驅動、靈活性低、可解釋性高。</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="歷史演進" class="level2" data-number="23.3">
+<h2 data-number="23.3" class="anchored" data-anchor-id="歷史演進"><span class="header-section-number">23.3</span> 🔄歷史演進🗿</h2>
+<p>LLM 聊天機器人的發展得益於<strong>統計流 AI</strong>與<strong>類神經網路</strong>（深度學習）的突破，從早期的簡單模型到基礎架構創新，再到多模態整合，短短數年間完成了質的飛躍，演進為當今複雜且功能強大的大型模型，重塑了人機對話的可能性。</p>
+<ul>
+<li><p>🟢 <strong>2017 年：Transformer 架構</strong> － 引入自注意力機制（Self-Attention），大幅提升模型處理長文本的能力，奠定後續 LLM 發展的基礎。</p></li>
+<li><p>🟡 <strong>2018 年：BERT</strong> － 開創雙向編碼器模型，讓模型能更深層次地理解語言上下文。</p></li>
+<li><p>🟠 <strong>2020 年代：GPT-3 與其他 LLM</strong> － 參數規模呈指數級增長，展現出驚人的 few-shot 與零樣本能力，引發全球關注。</p></li>
+<li><p>🔴 <strong>2023 年至今：多模態 LLM</strong> － 結合文本、圖像、語音等多模態數據，模型功能不再局限於文字處理，進一步擴展應用範疇。</p></li>
+</ul>
+<p>這段歷程展現了 LLM 聊天機器人從技術基礎到應用範疇的快速擴張，也揭示了其在<strong>多模態</strong>、<strong>跨領域</strong>與<strong>生成能力</strong>上的優勢，為未來<strong>神經符號混合型</strong>對話系統奠定了基礎。</p>
+</section>
+<section id="高階-llm-聊天機器人" class="level2" data-number="23.4">
+<h2 data-number="23.4" class="anchored" data-anchor-id="高階-llm-聊天機器人"><span class="header-section-number">23.4</span> 🪄高階 LLM 聊天機器人✨</h2>
+<p>高階<code>LLM 聊天機器人</code>受益於 <a href="10-03-prompt_engineering.zh-hant">提示工程</a>（Prompt Engineering）、 <strong><a href="10-05-context_engineering.zh-hant">脈絡工程</a></strong>（Context Engineering）的發展，透過優化<strong>提示詞</strong>與<strong>上下文設計</strong>，顯著提升了對使用者意圖的理解與回應品質，並有效減少<strong>幻覺現象</strong>。</p>
+<ul>
+<li><p>🎭 <strong>角色扮演</strong>：讓模型以特定身份回應（如專業律師、幽默朋友），增強專業性與個性化。</p></li>
+<li><p>📋 <strong>明確指示</strong>：提供具體範例（few‑shot prompting）或格式要求，引導生成更精準的內容。</p></li>
+<li><p>📚 <strong>參考資料注入</strong>：在提示中提供可靠資料，並限制生成範圍，包括系統性使用<a href="10-04-retrieval_augmented_generation.zh-hant">知識驅動生成（RAG）</a>以降低幻覺風險。</p></li>
+</ul>
+<p>這些方法不僅提升了<strong>精準度</strong>與<strong>相關性</strong>，還讓 LLM 聊天機器人在<strong>專業領域</strong>與<strong>高風險場景</strong>（如AI 治療師）中更為可靠，確保回應<strong>可追溯</strong>、<strong>可驗證</strong>且<strong>安全</strong>。</p>
+</section>
+<section id="小結與展望" class="level2" data-number="23.5">
+<h2 data-number="23.5" class="anchored" data-anchor-id="小結與展望"><span class="header-section-number">23.5</span> 🎄 小結與展望 🪩</h2>
+<p><code>LLM 聊天機器人</code>憑藉其強大的<strong>泛化能力</strong>與<strong>自然流暢性</strong>，作為<strong>統計流 AI</strong>的代表作，克服了<strong>符號流 AI</strong> 的<strong>自動對話系統</strong>在對話應用上的不足與限制。然而，其<strong>大語言模型</strong>的「黑盒子」特性與<strong>幻覺現象</strong>，使得在需要高度準確性與可解釋性的場景中，仍存在潛在風險，需要參考符號流 AI 的作法增強可解釋性。</p>
+<p>未來，<strong>神經符號流 AI</strong> 將是發展的重要方向。它試圖結合<strong>符號流</strong>的可解釋性與<strong>統計流</strong>的泛化能力，創造出既能靈活應對、又能提供可靠且可解釋回應的新一代<strong>混合型智能體</strong>。這類系統將能有效利用 LLM 的流暢生成能力，同時透過<strong>知識圖譜</strong>或<strong>規則腳本</strong>來約束其行為，確保決策的透明與可靠。</p>
+<p>值得注意的案例是具備腳本式對話策略的「<a href="https://doi.org/10.48550/arXiv.2412.15242">AI 治療師</a>」。雖然 LLM 負責生成流暢、擬人化的回應，但整體對話流程皆由專家編寫的腳本來引導。這確保了 AI 代理能依據預設規則行事，並允許其決策路徑被檢視，以滿足風險管理與問責制的需求，這在心理健康照護等敏感領域至關重要。</p>
+<p>另一個例子是應用於電力系統最佳化的智能代理「<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12010440/">RePower</a>」。它不直接解題，而是扮演<strong>公式生成器</strong>的角色，協助使用者將對情境的描述轉換為精確、可供求解的數學公式，並配合<strong>驗證與改進</strong>流程提供迭代反饋來檢查，最終產出可執行的數學模型，以確保解決方案的可行性與可解釋性。</p>
+</section>
+<section id="接下來" class="level2" data-number="23.6">
+<h2 data-number="23.6" class="anchored" data-anchor-id="接下來"><span class="header-section-number">23.6</span> 👉 接下來 🪸</h2>
+<ul>
+<li><p>⇆🚥 區分「<strong>LLM 聊天機器人</strong>」與「<strong><a href="03-02-automatic_dialogue_systems.zh-hant">自動對話系統</a></strong>」在<strong>對話聊天實現</strong>上的核心差異。<br>
+前者基於<strong>歸納</strong>，透過「<strong>機率性關聯</strong>」從大量語料中學習模式，生成流暢且多樣化的回應；<br>
+後者基於<strong>演繹</strong>，依賴預設的邏輯規則與腳本，追求絕對的「因果關係」與可驗證性。</p></li>
+<li><p>⮦🚦 探究 <a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> <strong>統計流 AI</strong>（Statistical AI）的其它條目，評估自己可不可以說明 <strong>LLM 聊天機器人</strong> 和它們的關係，如下所述：</p>
+<ul>
+<li><p><strong>🌀🎲🌿 <a href="04-01-probabilistic_association.zh-hant">機率性關聯</a></strong>：<strong>LLM 聊天機器人</strong>的核心運作原理，就是透過機率性關聯在上下文中預測最可能的下一個詞元，進而生成對話。</p></li>
+<li><p><strong>🌀🪢🧠 <a href="04-03-neural_networks.zh-hant">神經網路</a></strong>：當代大語言模型是以深度神經網路為基礎，透過多層參數化權重學習語言模式，支撐 <strong>LLM 聊天機器人</strong>的生成能力。</p></li>
+<li><p><strong>🌀🛠️🤏 <a href="04-04-feature_engineering.zh-hant">特徵工程</a></strong>：雖然 <strong>LLM</strong> 多依賴端到端學習，但在特定應用中仍可透過特徵工程（如關鍵詞抽取、結構化輸入）優化模型輸入，提升回應的相關性與精準度。</p></li>
+<li><p><strong>🌀🤖📦 <a href="04-05-machine_learning_models.zh-hant">機器學習模型</a></strong>：<strong>LLM</strong> 屬於機器學習模型的一種，其訓練與推理過程遵循統計學習原理，並可與其他模型（如檢索模型、分類器）組合，形成更完整的對話系統。</p></li>
+<li><p><strong>🌀🌐🔗 <a href="./04-06-llm_webassembly.zh-hant.html">大語言模型網組合</a></strong>：若要在網路瀏覽器中運行大語言模型並開發 <strong>LLM 聊天機器人</strong>，可透過「大語言模型網組合」技術將模型部署至前端環境，實現即時互動。</p></li>
+<li><p><strong>🌀🌌▦ <a href="04-07-vector_space.zh-hant">向量空間</a></strong>：向量空間為 LLM 表示語言符號的數學基礎，詞元與句子被映射為高維向量，向量間的距離與方向反映語意相似度與關聯性，直接影響<strong>LLM 聊天機器人</strong>的語意理解與生成品質。</p></li>
+</ul></li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1324,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./04-01-probabilistic_association.zh-hant.html" class="pagination-link" aria-label="🎲🌿機率性關聯🌀">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">🎲🌿機率性關聯🌀</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./04-03-neural_networks.zh-hant.html" class="pagination-link" aria-label="🪢🧠 神經網路🌀">
+        <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">🪢🧠 神經網路🌀</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1342,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/04-02-llm_chatbots.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>13&nbsp; 💪行為主義🏮 – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -51,7 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./02-07-large_language_models.zh-hant.html" rel="next">
+<link href="./02-05-connectionism.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +105,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02----schools_paradigms.zh-hant.html">🎏流派~🏮主義</a></li><li class="breadcrumb-item"><a href="./02-06-behaviorism.zh-hant.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">💪行為主義🏮</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +171,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -250,11 +250,11 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="./02----schools_paradigms.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🎏流派~🏮主義</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02-01-symbolic_ai.zh-hant.html" class="sidebar-item-text sidebar-link">
@@ -287,7 +287,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-06-behaviorism.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./02-06-behaviorism.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">💪行為主義🏮</span></span></a>
   </div>
 </li>
@@ -768,41 +768,43 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
+  <li><a href="#深度強化學習deep-reinforcement-learning-drl" id="toc-深度強化學習deep-reinforcement-learning-drl" class="nav-link active" data-scroll-target="#深度強化學習deep-reinforcement-learning-drl"><span class="header-section-number">13.0.1</span> 🧠 深度強化學習（Deep Reinforcement Learning, DRL）</a></li>
+  <li><a href="#強化深度學習reinforced-deep-learning" id="toc-強化深度學習reinforced-deep-learning" class="nav-link" data-scroll-target="#強化深度學習reinforced-deep-learning"><span class="header-section-number">13.0.2</span> 🔍 強化深度學習（Reinforced Deep Learning）</a></li>
+  <li><a href="#詩意比喻" id="toc-詩意比喻" class="nav-link" data-scroll-target="#詩意比喻"><span class="header-section-number">13.0.3</span> 🧭 詩意比喻</a></li>
+  <li><a href="#結論" id="toc-結論" class="nav-link" data-scroll-target="#結論"><span class="header-section-number">13.0.4</span> ✅ 結論</a></li>
+  <li><a href="#從心理學到-ai" id="toc-從心理學到-ai" class="nav-link" data-scroll-target="#從心理學到-ai"><span class="header-section-number">13.0.5</span> 💪 從心理學到 AI</a></li>
+  <li><a href="#歷史節點與具體主張" id="toc-歷史節點與具體主張" class="nav-link" data-scroll-target="#歷史節點與具體主張"><span class="header-section-number">13.0.6</span> 📜 歷史節點與具體主張</a></li>
+  <li><a href="#啟發問題意識與導向決策" id="toc-啟發問題意識與導向決策" class="nav-link" data-scroll-target="#啟發問題意識與導向決策"><span class="header-section-number">13.1</span> 啟發㉄問題意識與☸導向❖決策</a></li>
+  <li><a href="#影響博弈派具身派" id="toc-影響博弈派具身派" class="nav-link" data-scroll-target="#影響博弈派具身派"><span class="header-section-number">13.2</span> 影響🏆博弈派🦾具身派</a></li>
+  <li><a href="#用到的數學及-ai-工程" id="toc-用到的數學及-ai-工程" class="nav-link" data-scroll-target="#用到的數學及-ai-工程"><span class="header-section-number">13.3</span> 📐🌉 用到的數學及 AI 工程</a>
   <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
+  <li><a href="#數學整合與應用" id="toc-數學整合與應用" class="nav-link" data-scroll-target="#數學整合與應用"><span class="header-section-number">13.3.1</span> 📐 數學整合與應用</a></li>
+  <li><a href="#數學輔助建模行為主義思維" id="toc-數學輔助建模行為主義思維" class="nav-link" data-scroll-target="#數學輔助建模行為主義思維"><span class="header-section-number">13.3.2</span> 📦 數學輔助建模×💪行為主義思維</a></li>
+  </ul></li>
+  <li><a href="#小結與展望行為主義" id="toc-小結與展望行為主義" class="nav-link" data-scroll-target="#小結與展望行為主義"><span class="header-section-number">13.4</span> 🏁 小結與展望：行為主義</a></li>
+  <li><a href="#蘇格拉底式問答操練" id="toc-蘇格拉底式問答操練" class="nav-link" data-scroll-target="#蘇格拉底式問答操練"><span class="header-section-number">13.5</span> 🗫 蘇格拉底式問答操練</a>
+  <ul>
+  <li><a href="#人工智慧三大思維之一" id="toc-人工智慧三大思維之一" class="nav-link" data-scroll-target="#人工智慧三大思維之一"><span class="header-section-number">13.5.1</span> 💪 人工智慧三大思維之一</a></li>
+  <li><a href="#例子遊戲代理人-與-機器學習機器人" id="toc-例子遊戲代理人-與-機器學習機器人" class="nav-link" data-scroll-target="#例子遊戲代理人-與-機器學習機器人"><span class="header-section-number">13.5.2</span> 🤖 例子：遊戲代理人 與 機器學習機器人</a></li>
+  <li><a href="#作法強化學習-與-策略空間探索" id="toc-作法強化學習-與-策略空間探索" class="nav-link" data-scroll-target="#作法強化學習-與-策略空間探索"><span class="header-section-number">13.5.3</span> 🛠️ 作法：強化學習 與 策略空間探索</a></li>
+  <li><a href="#web-發展成果自動化決策系統-與-自主代理人" id="toc-web-發展成果自動化決策系統-與-自主代理人" class="nav-link" data-scroll-target="#web-發展成果自動化決策系統-與-自主代理人"><span class="header-section-number">13.5.4</span> Web 發展成果：自動化決策系統 與 自主代理人</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/02-06-behaviorism.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02----schools_paradigms.zh-hant.html">🎏流派~🏮主義</a></li><li class="breadcrumb-item"><a href="./02-06-behaviorism.zh-hant.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">💪行為主義🏮</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title"><span id="sec-behaviorism" class="quarto-section-identifier"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">💪行為主義🏮</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +814,252 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
+<p><a id="強化學習"></a> ### 🏮💪 行為主義貢獻</p>
+<p>🎯 <strong>強化學習</strong>：體現<strong>行為主義</strong> 🙶刺激⇥反應🔄獎懲🙷 的學習原理，強化學習（Reinforcement Learning, RL）讓智慧體透過與環境互動、試錯探索與回饋信號來優化行為策略。它不僅在遊戲 AI、機器人控制、自動駕駛等動態決策場景中表現突出，還與深度學習結合形成<strong>深度強化學習</strong>（Deep RL），實現端到端的感知—決策—行動鏈條。</p>
+<p>行為主義（Behaviorism）在 AI 中的主要體現是<strong>強化學習</strong>（Reinforcement Learning, RL），強調智慧體透過與環境的互動、試錯（trial-and-error）與獎懲回饋來學習行為策略。其核心機制是<strong>策略更新</strong>：智慧體在每一步選擇動作，觀察環境回饋（獎勵或懲罰），並根據回饋調整未來的行動傾向。演算法如 Q-learning、深度 Q 網路（DQN）與策略梯度（Policy Gradient）等，將行為主義的心理學原理轉化為可計算的數學框架。</p>
+<p><strong>行為主義</strong>（Behaviorism）主張，學習和智慧的本質在於<strong>透過外部獎勵或懲罰，來改變個體的行為</strong>。其核心機制是<strong>刺激-反應</strong>（Stimulus-Response）的學習迴路。在 AI 領域，這被直接應用於<strong>強化學習</strong>（Reinforcement Learning, RL）中，系統根據與環境互動所獲得的<strong>獎勵訊號</strong>，來調整其行為策略，以最大化長期報酬。</p>
+<p><strong>主要成果與影響</strong>：行為主義為 AI 提供了<strong>目標導向</strong>的學習範式，使機器能夠在沒有明確指令的情況下，自行探索並找出達成目標的最佳策略。這讓 AI 在複雜的決策與控制任務中表現出色，例如<strong>棋類遊戲</strong>（如 AlphaGo）、<strong>機器人控制</strong>和<strong>自動駕駛</strong>等領域，皆是強化學習的經典應用。這也使得 AI 能夠在動態且不可預測的環境中，實現自主學習與決策。行為主義為統計流 AI 注入了<strong>決策優化與長期規劃</strong>的能力，特別適用於動態與不確定環境，如機器人控制、自動駕駛、遊戲 AI 及資源分配。與連結主義結合形成的<strong>深度強化學習</strong>（Deep RL），能同時利用神經網路的特徵提取能力與強化學習的策略探索能力，實現端到端的感知—決策—行動鏈條。這種方法不僅在模擬環境中取得超越人類的表現（如 AlphaGo），也推動了多智能體協作與自適應系統的發展。然而，行為主義方法在<strong>樣本效率</strong>與<strong>獎勵設計</strong>上仍面臨挑戰，且在高風險場景中需要額外的安全約束與對齊機制。</p>
 <blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
+<p>💪🏮 行為主義 AI 專注可觀察的<strong>外在行為</strong>，提供「如何學」的獎懲框架，促進<strong>強化學習</strong>的發展，運算上通常用 <strong>報酬函數</strong> 與 <strong>策略函數</strong> 構建回饋機制，實踐在具身派與博弈派 AI 工程及產品設計。</p>
 </blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p><code>行為主義</code>（Behaviorism）是深受<strong>行為心理學</strong>啟發的人工智慧領域，特別是「如何學」的獎懲框架，促進<strong>強化學習</strong>分支的發展。此領域專注於可觀察的<strong>外在行為</strong>，而非深究抽象的<strong>內在心理過程</strong>。</p>
+<p>對人類學習者而言，理解 <code>行為主義</code> 對 AI 的影響與啟發，不僅是思維的鍛鍊，更是對<strong>系統設計</strong>與<strong>影響力法則</strong>的深刻洞察。它引導我們學習如何<strong>客觀地觀察與測量</strong>，理解<strong>環境</strong>與<strong>行為</strong>之間的互動關聯，並構建出<strong>可預測</strong>且<strong>可控的</strong>互動模式。在 AI 的世界裡，<code>行為主義</code> 提供了讓機器「<strong>學習與適應</strong>」的<strong>基礎架構</strong>；而在日常生活中，它則是讓人們「<strong>理解行為模式並有效干預</strong>」的<strong>核心原則</strong>。</p>
+<p>值得注意的是，雖然 <code>行為主義</code> 表面上不處理抽象的<strong>內在心理過程</strong>，但其應用後果卻值得深思，尤其是在網路和科技產品中常見的「鉤癮模型」（Hook Model）。</p>
+<p>旨在<strong>打造用戶黏性</strong>的產品心理學，便是根植於行為主義的操作性條件（operant conditioning）反應理論。它將參與過程分解為「觸發因素、行為、可變獎勵、投入、強化形成習慣」的循環，過程中也觸及了內在情緒與想法。因此，儘管 <code>行為主義</code> 表面上符合電腦「不受偏見、情感或自由意志」的印象，這並不代表「電腦沒有偏見、不會操縱人類情感」。一個吃角子老虎機器在搖號時或許不受偏好影響，但不代表用戶不會對它上癮；更不能因此斷定，因為它沒有偏見，所以就一定公平。</p>
+<section id="深度強化學習deep-reinforcement-learning-drl" class="level3" data-number="13.0.1">
+<h3 data-number="13.0.1" class="anchored" data-anchor-id="深度強化學習deep-reinforcement-learning-drl"><span class="header-section-number">13.0.1</span> 🧠 深度強化學習（Deep Reinforcement Learning, DRL）</h3>
+<p>這是目前主流的術語，指的是：</p>
 <ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
-</li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
+<li><p><strong>強化學習（Reinforcement Learning）</strong> 的架構中，使用 <strong>深度神經網路</strong> 作為策略函數、價值函數或環境模型的近似器。</p></li>
+<li><p>代表性例子：Deep Q-Network (DQN)、A3C、PPO 等。</p></li>
+<li><p>應用場景：AlphaGo、機器人控制、自動駕駛、遊戲代理人等。</p></li>
 </ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
+<p>👉 本質是「用深度學習來強化強化學習」。</p>
 </section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
+<section id="強化深度學習reinforced-deep-learning" class="level3" data-number="13.0.2">
+<h3 data-number="13.0.2" class="anchored" data-anchor-id="強化深度學習reinforced-deep-learning"><span class="header-section-number">13.0.2</span> 🔍 強化深度學習（Reinforced Deep Learning）</h3>
+<p>這個詞較少見，可能指：</p>
 <ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
+<li><p>在 <strong>深度學習模型的訓練過程中</strong>，引入 <strong>強化學習的機制</strong> 來優化某些非微分目標，例如：</p>
 <ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
+<li><p>文本生成中的策略梯度（如 REINFORCE）</p></li>
+<li><p>GAN 中的對抗性訓練</p></li>
+<li><p>ChatGPT 類模型的 RLHF（Reinforcement Learning from Human Feedback）</p></li>
 </ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
+</ul>
+<p>👉 本質是「用強化學習來優化深度學習」。</p>
+</section>
+<section id="詩意比喻" class="level3" data-number="13.0.3">
+<h3 data-number="13.0.3" class="anchored" data-anchor-id="詩意比喻"><span class="header-section-number">13.0.3</span> 🧭 詩意比喻</h3>
+<p>如果把「深度學習」比喻為一艘智能船，「強化學習」就是風帆與航向策略：</p>
 <ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
+<li><p><strong>深度強化學習</strong>：在強化學習的航海圖上，裝上深度學習的船艦，探索未知海域。</p></li>
+<li><p><strong>強化深度學習</strong>：在深度學習的船上，安裝強化學習的風帆，讓它能自主調整航向。</p></li>
+</ul>
+</section>
+<section id="結論" class="level3" data-number="13.0.4">
+<h3 data-number="13.0.4" class="anchored" data-anchor-id="結論"><span class="header-section-number">13.0.4</span> ✅ 結論</h3>
 <ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
+<li><p><strong>「深度強化學習」是標準術語</strong>，在學術與產業界廣泛使用。</p></li>
+<li><p><strong>「強化深度學習」則是非主流表達</strong>，偶爾出現在特定語境中，但不具統一定義。 ## 🏮 學科脈絡與具體主張</p></li>
+</ul>
+</section>
+<section id="從心理學到-ai" class="level3" data-number="13.0.5">
+<h3 data-number="13.0.5" class="anchored" data-anchor-id="從心理學到-ai"><span class="header-section-number">13.0.5</span> 💪 從心理學到 AI</h3>
+<p>儘管行為主義在 20 世紀 60 年代的「認知革命」後，因過度簡化人類複雜認知（如偏見、情感）而在心理學界影響力式微，但它<strong>清晰、可操作性強</strong>的特點，為電腦科學家提供了絕佳的 AI 設計藍圖。</p>
+<ul>
+<li><p><strong>心理學的黃金時代（1920s–1950s）：</strong> 在這段時期，行為主義是心理學的主流，將學習視為一種機械過程：<strong>回饋 → 行為改變</strong>。</p></li>
+<li><p><strong>AI 的借鏡：</strong> 這種「不探討內在、只看外在表現」的觀點，為 AI 提供了<strong>清晰的行為調控框架</strong>，讓科學家得以設計出能從互動中學習和改進的機器。</p></li>
+</ul>
+<p>值得一提的是，<strong>反應流 AI</strong>（Reactive AI）指的是技術上<strong>一個沒有記憶、無法從過去經驗中學習、只能對當前環境刺激做出回應的 AI 系統</strong>，這與範圍較大且影響較深的 AI 領域的<strong>行為主義</strong>不同。</p>
+</section>
+<section id="歷史節點與具體主張" class="level3" data-number="13.0.6">
+<h3 data-number="13.0.6" class="anchored" data-anchor-id="歷史節點與具體主張"><span class="header-section-number">13.0.6</span> 📜 歷史節點與具體主張</h3>
+<p>行為主義對 AI 發展的關鍵主張與歷史節點如下：</p>
+<ul>
+<li>🎭🗪 <strong>圖靈測試</strong>（Turing Test）：這是以外在行為判斷智能的經典方法。只要機器的表現足以讓人類無法區分，就視為通過，至於它是否真正「理解」並不在考量之列。 &nbsp; &nbsp;&nbsp;</li>
+<li>⚡💡 <strong>S–R 模型</strong>：史金納（B.F. Skinner, 1971）強調環境刺激（Stimulus）與反應（Response）的連結，凸顯環境在塑造行為中的關鍵作用。 &nbsp; &nbsp;&nbsp;</li>
+<li>⚡🦾 <strong>強化學習突破</strong>：1970–1980 年代，Watkins（1989）提出的 Q-learning，讓智能體得以根據狀態的最大預期值來選擇行動。 &nbsp; &nbsp;&nbsp;</li>
+<li>🚀🎲 <strong>進階應用</strong>：1990–2000 年代，Tesauro 等人將強化學習成功應用於<strong>博弈</strong>與<strong>控制</strong>系統，推動了機器人與遊戲 AI 的進步。 &nbsp; &nbsp;&nbsp;</li>
+<li>🤖🔄 <strong>現代發展</strong>：2010 年代以來，<strong>深度學習</strong>與 <strong>RLHF（人類回饋強化學習）</strong> 結合，使 AI 能夠根據人類的偏好與回饋訊號精確地微調其行為。</li>
+</ul>
+</section>
+<section id="啟發問題意識與導向決策" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="啟發問題意識與導向決策"><span class="header-section-number">13.1</span> 啟發㉄問題意識與☸導向❖決策</h2>
+<p><code>行為主義</code> 回應了 AI 的<strong>問題意識</strong>，特別是「圖靈測試」如何透過觀察外在行為來判斷智能，以及「中文房間」實驗質疑僅有符號操作是否等於理解。它強調了 AI 應專注於「可觀察的反應」，而不必深究抽象的「內在心理」。</p>
+<p><code>行為主義</code> 對 AI 的<strong>導向、分析與決策</strong>有深遠啟示：</p>
+<ul>
+<li><p>☸🤖🛠 <strong>導向</strong>：它推動了<strong>智能體／代理人導向</strong>（Agent-oriented）和<strong>任務導向型</strong>（Task-oriented AI）的發展，強調智能體如何透過與環境互動來達成目標。</p></li>
+<li><p>❖🔮🧭 <strong>分析</strong>：促使AI在<strong>預測型分析</strong>（Predictive Analysis）和<strong>指導型分析</strong>（Prescriptive Analysis）中，聚焦於預測行為模式並設計最佳回饋機制。</p></li>
+<li><p>🪄🔨🥕 <strong>決策</strong>：其核心是基於<strong>獎勵與懲罰</strong>的<strong>決策演算法</strong>（Decision-making Algorithm），讓AI能透過試誤學習來優化行為。</p></li>
+</ul>
+</section>
+<section id="影響博弈派具身派" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="影響博弈派具身派"><span class="header-section-number">13.2</span> 影響🏆博弈派🦾具身派</h2>
+<p><code>行為主義</code> 為「<strong>博弈派</strong>」AI 提供了「如何學」的獎懲框架，其中，賽局理論則提供了「學什麼」與「如何在多方互動中取勝」的數學基礎：</p>
+<ul>
+<li>🏆🐭🗺️ <strong>IEEE Micromouse</strong>：透過探索與回饋，學習最短路徑策略，對應單智能體在靜態賽局中的最優解尋找。</li>
+<li>🏆🕹️👾 <strong>Atari DQN</strong>：在高維感知輸入下，透過強化學習與獎懲信號，逐步逼近最優遊戲策略。</li>
+<li>🏆⚪⚫ <strong>AlphaGo</strong>：結合蒙地卡羅樹搜尋與深度策略網路，在零和賽局中學習長期佈局與局部戰術的平衡。</li>
+<li>🏆🃏💰 <strong>撲克 AI</strong>（Libratus / Pluribus）：在不完全資訊賽局中，透過對手建模與混合策略，最大化期望收益並降低可被利用性。</li>
+<li>🏆🧙‍♂🥷 <strong>OpenAI Five</strong>（Dota 2）：在多智能體合作與對抗的動態賽局中，平衡資源分配、角色分工與即時戰術。</li>
+<li>🏆🐺🧑‍🌾 <strong>狼人殺 AI</strong>：在社交推理賽局中，利用行為線索與概率推斷，優化欺瞞與識破策略。</li>
+<li>🏆🪖⚔️ <strong>戰場模擬</strong>：在多方博弈的戰術環境中，結合資源管理、風險評估與聯合作戰策略，追求全局策略優化。</li>
+</ul>
+<p>💡 <strong>總結</strong>：行為主義強調<strong>環境互動</strong>和<strong>目標達成</strong>，結合「學什麼」與「如何在多方互動中取勝」的賽局理論，更能使 AI 在複雜、動態且多方參與的環境中持續優化決策。</p>
+<p><code>行為主義</code> 對「<strong>具身派</strong>」AI 的影響，體現在它強調 ** 🙶感知↹行動🔄回饋🙷 ** 的閉環學習模式。具身派 AI 不僅在虛擬策略空間中學習，還必須在真實或模擬的物理環境中，透過獎懲信號不斷調整行為，以達成任務目標並適應環境變化。</p>
+<ul>
+<li><p>🦾🤖🔋 <strong>機器人學與實體驅動</strong>：行為主義提供了將動作與回饋直接關聯的框架，使機器人能透過反覆嘗試與修正，優化運動控制與能耗效率。</p></li>
+<li><p>🦾📡🌡️ <strong>感知與環境</strong>：透過刺激–反應模型，將感測器輸入轉化為可行動的狀態表徵，並根據回饋信號調整感知策略。</p></li>
+<li><p>🦾🔄🖼️ <strong>自適應機器人學</strong>：在動態環境中，行為主義驅動的強化學習讓機器人能根據即時回饋快速更新策略，維持任務表現。</p></li>
+<li><p>🦾🤝💪 <strong>人機互動（HRI）</strong>：將人類的語言、手勢、情緒等作為刺激，透過回饋信號塑造機器人的互動行為，提升協作效率與自然度。</p></li>
+<li><p>🦾🛡️🚨 <strong>機器人安全與穩健性</strong>：行為主義的懲罰機制可用於抑制危險行為，強化安全策略，確保在不確定環境下的穩健運作。</p></li>
+<li><p>🦾🧭🎯 <strong>任務與目標規劃</strong>：將任務分解為可獲取回饋的子目標，透過報酬函數引導行動序列的優化，實現長期目標對齊。</p></li>
+</ul>
+<p>💡 <strong>總結</strong>：在具身派 AI 中，行為主義不只是學習理論，更是將感知、行動與回饋緊密耦合的設計哲學，讓智能體能在真實世界中持續學習、適應並安全地完成任務。</p>
+</section>
+<section id="用到的數學及-ai-工程" class="level2" data-number="13.3">
+<h2 data-number="13.3" class="anchored" data-anchor-id="用到的數學及-ai-工程"><span class="header-section-number">13.3</span> 📐🌉 用到的數學及 AI 工程</h2>
+<p><code>行為主義</code> 的核心理念，即透過<strong>觀察行為</strong>和<strong>回饋機制</strong>來塑造反應，與許多 AI 的數學建模和工程實踐緊密結合，特別是構建 <strong>報酬函數</strong> 與 <strong>策略函數</strong> 的回饋機制。</p>
+<section id="數學整合與應用" class="level3" data-number="13.3.1">
+<h3 data-number="13.3.1" class="anchored" data-anchor-id="數學整合與應用"><span class="header-section-number">13.3.1</span> 📐 數學整合與應用</h3>
+<p>行為主義的原則在 AI 中常透過以下數學工具與領域實現：</p>
+<ul>
+<li><strong>機率式模型</strong>（例如：馬可夫模型、貝氏網路）：這些模型能夠處理不確定性，並從序列數據中學習轉換機率，非常適合模擬「刺激-反應」的動態過程。</li>
+<li><strong>線性代數</strong> （例如：向量空間）：用於表示狀態空間、學習參數（如權重矩陣）、進行向量運算，是神經網路和許多機器學習演算法的基礎。</li>
+<li><strong>最佳化演算法</strong>（如梯度下降）：用於調整模型參數以最大化預期獎勵或最小化損失，直接呼應了行為主義中的「最大化獎勵」原則。</li>
+<li><strong>賽局理論</strong>（如 <a href="09-08-multi_agent_payoff_matrix.zh-hant">多智能體報酬矩陣</a>）：分析多個智能體在共享或競爭環境中的互動，建構報酬結構與策略空間，評估合作、競爭與均衡狀態，並為策略優化提供數學依據。</li>
+</ul>
+<p>💡 <strong>總結</strong>：這些數學工具相互補充，將行為主義的獎懲原則轉化為可計算、可優化的模型，支撐 AI 在不確定、多方互動的環境中持續學習與決策。</p>
+</section>
+<section id="數學輔助建模行為主義思維" class="level3" data-number="13.3.2">
+<h3 data-number="13.3.2" class="anchored" data-anchor-id="數學輔助建模行為主義思維"><span class="header-section-number">13.3.2</span> 📦 數學輔助建模×💪行為主義思維</h3>
+<p>行為主義在 AI 中的核心是以 <strong>獎懲機制</strong> 為驅動，透過構建 <strong>報酬函數</strong> 與 <strong>策略函數</strong> 的 <strong>回饋</strong> 引導智能體的 <strong>策略傾向</strong>。這一思維模式將觀察到的行為置於情境中分析，<strong>脈絡化</strong> 為具獎懲結構的 <strong>賽局</strong>，並由數學運算流程支撐。</p>
+<ol type="1">
+<li><p>🎯 <strong>行為觀察與情境分析</strong>：將賽局互動<strong>脈絡化</strong>為可觀察、可行動的<strong>參數</strong>，透過<strong>分析</strong>參與者行為、<strong>評估</strong>獎懲機制，並<strong>創造</strong>最佳策略與指標。</p></li>
+<li><p>📐 <strong>機率建模與狀態表徵</strong>：以數學與統計方法將<strong>脈絡化資訊</strong>轉化為可計算的<strong>狀態</strong>或<strong>機率分佈</strong>。</p></li>
+<li><p>🏆 <strong>報酬與策略函數設計</strong>：界定 <strong>報酬函數</strong> 與 <strong>策略函數</strong>，建模回饋以塑造策略傾向。</p></li>
+<li><p>🎚 <strong>參數調整與目標對齊</strong>：收集並對齊關鍵參數，持續調整模型以符合目標。</p></li>
+<li><p>🔄 <strong>多方資料整合與閉環優化</strong>：整合多方行為資料與參數，結合 <strong>RLHF 人類回饋強化學習</strong> 等方法，驗證並優化決策與預測。</p></li>
+</ol>
+<p>💡📦 <strong>總結</strong>：此流程透過觀察、建模、設計、調整與整合，構成從行為到決策的閉環，確保智能體在動態環境中<strong>持續學習</strong>、<strong>對齊目標</strong>，並優化其表現。</p>
+<p><code>行為主義</code> 對「<strong>AI 工程</strong>」的思維，體現在<strong>提示工程</strong>（Prompt Engineering）和<strong>知識驅動生成</strong>（RAG）中，工程師透過設計精巧的「刺激」（提示或上下文）來引導 AI 產生期望的「反應」（輸出）。同時，智能體可靠性與評估也需要考量行為回饋的穩定性，而<strong>AI 產品經理</strong>則需要設計能有效<strong>引導用戶行為</strong>的機制。</p>
+</section>
+</section>
+<section id="小結與展望行為主義" class="level2" data-number="13.4">
+<h2 data-number="13.4" class="anchored" data-anchor-id="小結與展望行為主義"><span class="header-section-number">13.4</span> 🏁 小結與展望：行為主義</h2>
+<p><code>行為主義</code> 有以下啟發：</p>
+<ul>
+<li><p>🤔 對<strong>人類學習者</strong>而言：</p>
+<ul>
+<li>🗫 學習如何<strong>客觀分析</strong>外顯可見的「刺激」與「反應」之間的因果關係，以及環境回饋如何塑造行為。</li>
+<li>🛠️ 掌握 <code>行為主義</code> 作為<strong>檢驗智能</strong>的基礎工具箱，理解許多 AI 系統的「刺激」與「反應」運作原理，並設計更有效的智能互動。</li>
+<li>💪 思考自身 <strong>持續練習</strong> 的心-腦連結的強化機制，進而體會<code>聯結主義</code>與<code>行為主義</code>結合的<strong>強化深度學習</strong>原理。<br>
+</li>
 </ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
+<li><p>🤖 在 <strong>AI 的世界</strong>裡：</p>
+<ul>
+<li>💡 認識到 <code>行為主義</code> 是許多 AI 系統（特別是<strong>強化學習</strong>）的基石，可用於設計與優化智能體的學習與決策機制。</li>
 </ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
-</ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
+<li><p>🏙 在 <strong>人類日常生活</strong>裡：</p>
 <ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
+<li>💭 形成「<strong>透過環境互動與回饋，調整行為以達成目標</strong>」的<strong>行為假設</strong>與<strong>學習信念</strong>。</li>
+</ul></li>
 </ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
+<p>展望未來，<code>行為主義</code> 的核心思想雖為 AI 的發展奠定基礎，但更複雜的 AI 系統將需結合其他理論。特別是隨著<strong>大語言模型</strong>的普及與<strong>語言賽局</strong>的啟示，挑戰「完全理性玩家」假設的心理賽局理論，將是關鍵。這包括有限理性（Bounded Rationality）、他人偏好（Other-regarding Preferences）、非最大化報酬的行為選擇、信任、羞辱、報復等情緒驅動行為等等，將是超越<strong>用戶黏性</strong>、脈絡化<strong>群體間競爭與合作</strong>、對齊<strong>群體利害</strong>，保障<strong>社會凝聚力</strong>的關鍵。</p>
+</section>
+<section id="蘇格拉底式問答操練" class="level2" data-number="13.5">
+<h2 data-number="13.5" class="anchored" data-anchor-id="蘇格拉底式問答操練"><span class="header-section-number">13.5</span> 🗫 蘇格拉底式問答操練</h2>
+<p>請以 <code>行為主義</code> 觀點，開始回答以下初始問題並深入追問，探討「童話行為主義模型」的智能體難點與創新點：</p>
+<ol type="1">
+<li>👗😶 <strong>國王的新衣</strong>：
 <ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
-</ul>
-<p>🎲🏁</p>
-</div>
-</div>
+<li>🙊🙈 根據獎勵人人說謊，真理還能現身嗎？ 指鹿為馬？</li>
+<li>🦌🐎 <strong>AI 專家組</strong>（Mixture of Experts）真能當訓練有素的忠言狗，還是有求必應的舔狗群？</li>
+</ul></li>
+<li>👠🎊 <strong>灰姑娘</strong>：
+<ul>
+<li>🧚 如果沒仙女教母預先用魔法獎勵區分好壞，那後來的王子是如何區辨好壞？</li>
+<li>🪄 AI 是否能理解「美德」區別好壞？仙女教母和王子獎勵機制分別是？</li>
+</ul></li>
+<li>🐺🔕 <strong>狼來了</strong>：
+<ul>
+<li>🐑 「刺激」與「反應」模型，要如何解釋個人和群體的警報關係嗎？</li>
+<li>📢 AI 「警報」的發與不發，要如何信它？</li>
+</ul></li>
+<li>🍬🍭 <strong>糖果屋</strong>的誘惑與🍞🧭 <strong>麵包屑</strong>的導航：
+<ul>
+<li>🧭 哥哥留下的麵包屑是「刺激」還是「反應」？</li>
+<li>🍪 糖果屋是獎勵還是陷阱？</li>
+<li>🧲 <strong>智能體</strong>能代替人分辨糖果屋嗎（詐騙🆚合法）？</li>
+</ul></li>
+<li>🧙‍♀🍎 <strong>白雪公主</strong>：
+<ul>
+<li>🪞🔆 魔鏡只根據輸入回應，它真的「懂」美嗎？</li>
+<li>🪞⚡ 誠實又好賣的<strong>智能魔鏡</strong>現實嗎？</li>
+</ul></li>
+<li>👸🏻💤 <strong>睡美人</strong>：
+<ul>
+<li>⏰🔆 怎麼解釋睡美人的「百年沉睡」與「覺醒」？</li>
+<li>😴🛌🏼 AI長期無回饋會怎樣？</li>
+</ul></li>
+<li>🧜🏻‍♀️🐚 <strong>小美人魚</strong>：
+<ul>
+<li>🔕💞 放棄聲音換愛情，這決定策略是如何回應環境的變化？</li>
+<li>💞🧬 要怎樣設計<strong>小美人魚智能體</strong>，使其在愛情與生存間做出好決策？</li>
+</ul></li>
+</ol>
+<hr>
+<p>根據牛津書目在線發布的《人工智慧、機器學習與心理學》一文，</p>
+<p>行為主義對人工智慧發展的影響主要體現在以下幾點： 直接啟發：中的直接受到了行為心理學的啟發。 強化學習演算法旨在透過獎懲機制來學習，而這個概念正是行為主義的核心原則之一。</p>
+<p>跨學科先驅：人工智慧的發展並非與心理學孤立無連結。該文指出，許多人工智慧研究的先驅人物都是心理學家，或具有心理學背景，這顯示心理學與人工智慧之間存在著歷史悠久的緊密合作關係。</p>
+<p>這表明，行為主義的理念自人工智慧誕生之初便已融入其中。</p>
+<p>，又稱 <code>反應流 AI</code> 或 <code>外顯行為 AI</code> <span class="citation" data-cites="Yu2023-AI-psychology-OxfordBiblio">(<a href="references.zh-hant.html#ref-Yu2023-AI-psychology-OxfordBiblio" role="doc-biblioref">Yu 2023</a>)</span></p>
+<p><code>行為主義</code>不依賴內部符號或神經結構，而是聚焦於「行動—回饋—調整」的動態歷程。</p>
+<hr>
+<section id="人工智慧三大思維之一" class="level3" data-number="13.5.1">
+<h3 data-number="13.5.1" class="anchored" data-anchor-id="人工智慧三大思維之一"><span class="header-section-number">13.5.1</span> 💪 人工智慧三大思維之一</h3>
+<p><code>行為主義</code>源自心理學領域，尤其是 B.F. Skinner 的操作制約理論，主張智慧不在於內部表徵，而在於外部行為的適應性。此思維在 AI 中轉化為 <strong>強化學習</strong>（Reinforcement Learning），透過獎勵與懲罰機制，讓代理人逐步學習最佳策略。</p>
+<p>與之相對的是 <code>符號主義</code>（內部邏輯推理）與 <code>連結主義</code>（神經網路表徵）。<code>行為主義</code>則主張：不需理解、不需表徵，只需透過行動與回饋來調整策略。</p>
 <hr>
 </section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
-<ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
-</ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+<section id="例子遊戲代理人-與-機器學習機器人" class="level3" data-number="13.5.2">
+<h3 data-number="13.5.2" class="anchored" data-anchor-id="例子遊戲代理人-與-機器學習機器人"><span class="header-section-number">13.5.2</span> 🤖 例子：遊戲代理人 與 機器學習機器人</h3>
+<p><code>行為主義</code>的代表應用包括：</p>
+<ul>
+<li><p>🎮 <strong>遊戲代理人</strong>：如 DeepMind 的 AlphaGo，結合蒙地卡羅樹搜尋與深度強化學習，在不依賴人類策略的情況下，自我探索並優化棋局行為。</p></li>
+<li><p>🤖 <strong>機器學習機器人</strong>：如 Boston Dynamics 的 Spot，透過環境回饋調整步態與行動策略，達成穩定行走與任務執行。</p></li>
 </ul>
-</div>
-</div>
-</div>
+<p>這些系統不需預設符號或網路結構，而是透過反覆試驗與回饋，逐步建立有效行為模式。</p>
+<hr>
 </section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
+<section id="作法強化學習-與-策略空間探索" class="level3" data-number="13.5.3">
+<h3 data-number="13.5.3" class="anchored" data-anchor-id="作法強化學習-與-策略空間探索"><span class="header-section-number">13.5.3</span> 🛠️ 作法：強化學習 與 策略空間探索</h3>
+<p>主要作法為運用 <code>強化學習</code> 演算法探索 <code>策略空間</code>，以最大化長期報酬。</p>
+<p><code>行為主義</code>的核心技術包括：</p>
+<ul>
+<li><p>💪 <strong>強化學習</strong>（Reinforcement Learning）：代理人透過與環境互動，根據回饋信號（獎勵或懲罰）調整行為策略。常見演算法包括 Q-learning、Policy Gradient、Actor-Critic 等。</p></li>
+<li><p>🎯 <strong>策略空間探索</strong>：不預設行為模型，而是讓代理人在可能行為空間中試探、評估、優化。例如 DQN（Deep Q-Network）結合深度學習與強化學習，能在高維空間中學習策略。</p></li>
+</ul>
+<p>這些技術使 AI 能夠在未知環境中自主學習、調整行為，達成目標導向的智慧表現。</p>
+<hr>
+</section>
+<section id="web-發展成果自動化決策系統-與-自主代理人" class="level3" data-number="13.5.4">
+<h3 data-number="13.5.4" class="anchored" data-anchor-id="web-發展成果自動化決策系統-與-自主代理人"><span class="header-section-number">13.5.4</span> Web 發展成果：自動化決策系統 與 自主代理人</h3>
+<p>在當今 Web 與平台技術中，<code>行為主義</code>的理念延伸為：</p>
+<ul>
+<li><p>🧾 <strong>自動化決策系統</strong>：如推薦系統根據使用者行為回饋，動態調整推薦策略，提升點擊率與使用者滿意度。</p></li>
+<li><p>🤖 <strong>自主代理人</strong>：如 OpenAI 的 AutoGPT 或 Meta 的 CICERO，能在多步任務中根據環境回饋調整策略，展現目標導向的行為智慧。</p></li>
+</ul>
+<hr>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
+<div id="ref-Yu2023-AI-psychology-OxfordBiblio" class="csl-entry" role="listitem">
+Yu, Chong Ho. 2023. <span>《Artificial Intelligence, Machine Learning, and Psychology》</span>. 收入 <em>Oxford Bibliographies in Psychology</em>, 编辑 Dana S. Dunn. Oxford University Press. <a href="https://doi.org/10.1093/obo/9780199828340-0323">https://doi.org/10.1093/obo/9780199828340-0323</a>.
 </div>
 </div>
 </section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1465,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./02-05-connectionism.zh-hant.html" class="pagination-link" aria-label="🧬聯結主義🏮">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">🧬聯結主義🏮</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./02-07-large_language_models.zh-hant.html" class="pagination-link" aria-label="😵‍💫大語言模型🧞‍♀️">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">😵‍💫大語言模型🧞‍♀️</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1483,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/02-06-behaviorism.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

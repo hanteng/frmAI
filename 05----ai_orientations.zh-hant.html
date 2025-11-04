@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>☸ AI「5 導向」 – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./05-01-oriented_task.zh-hant.html" rel="next">
+<link href="./04-07-vector_space.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./05----ai_orientations.zh-hant.html">☸ AI「5 導向」</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +151,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -407,13 +387,13 @@ div.csl-indent {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./05----ai_orientations.zh-hant.html" class="sidebar-item-text sidebar-link">
+            <a href="./05----ai_orientations.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">☸ AI「5 導向」</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./05-01-oriented_task.zh-hant.html" class="sidebar-item-text sidebar-link">
@@ -768,41 +748,43 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
+  <li><a href="#ai-導向定義" id="toc-ai-導向定義" class="nav-link active" data-scroll-target="#ai-導向定義">☸ AI 導向定義 🥋</a>
   <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
+  <li><a href="#ai-導向公式" id="toc-ai-導向公式" class="nav-link" data-scroll-target="#ai-導向公式">📐 AI 導向公式</a></li>
+  <li><a href="#比喻瑜伽與太極" id="toc-比喻瑜伽與太極" class="nav-link" data-scroll-target="#比喻瑜伽與太極">🧘‍♀️ 比喻：瑜伽與太極</a></li>
+  <li><a href="#為何重要" id="toc-為何重要" class="nav-link" data-scroll-target="#為何重要">✨ 為何重要？</a></li>
   </ul></li>
+  <li><a href="#啟發式框架" id="toc-啟發式框架" class="nav-link" data-scroll-target="#啟發式框架">☸ 啟發式框架 🤔</a></li>
+  <li><a href="#系統思維啟發" id="toc-系統思維啟發" class="nav-link" data-scroll-target="#系統思維啟發">☸ 系統思維啟發 ☯</a>
+  <ul>
+  <li><a href="#優先假設與核心任務" id="toc-優先假設與核心任務" class="nav-link" data-scroll-target="#優先假設與核心任務">🧩 優先假設與核心任務</a></li>
+  <li><a href="#多導向協作" id="toc-多導向協作" class="nav-link" data-scroll-target="#多導向協作">🤝 多導向協作</a></li>
+  <li><a href="#現代人機協作平台" id="toc-現代人機協作平台" class="nav-link" data-scroll-target="#現代人機協作平台">🤝 現代人機協作平台</a></li>
+  <li><a href="#系統思維運用" id="toc-系統思維運用" class="nav-link" data-scroll-target="#系統思維運用">🧙‍♂ 系統思維運用</a></li>
+  </ul></li>
+  <li><a href="#內容大綱" id="toc-內容大綱" class="nav-link" data-scroll-target="#內容大綱">🪴 內容大綱</a>
+  <ul>
+  <li><a href="#核心條目內容" id="toc-核心條目內容" class="nav-link" data-scroll-target="#核心條目內容">🌰 核心條目內容</a></li>
+  <li><a href="#延伸內容" id="toc-延伸內容" class="nav-link" data-scroll-target="#延伸內容">🎋 延伸內容</a></li>
+  </ul></li>
+  <li><a href="#承先啟後" id="toc-承先啟後" class="nav-link" data-scroll-target="#承先啟後">👉 承先啟後</a></li>
+  <li><a href="#前十關鍵詞" id="toc-前十關鍵詞" class="nav-link" data-scroll-target="#前十關鍵詞">🔑 前十關鍵詞</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/05----ai_orientations.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title">☸ AI「5 導向」</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,144 +794,17 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
-<blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
-</li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
-</ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
-</section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
-<ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
-</ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
-</ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
-<ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
-</ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
-<ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
-</ul>
-<p>🎲🏁</p>
-</div>
-</div>
-<hr>
-</section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
-<ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
-</ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
 <div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
+註釋&nbsp;A: ✎ 編輯筆記
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul class="task-list">
 <li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
@@ -960,27 +815,618 @@ div.csl-indent {
 <li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
 </label></li>
 <li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+<li><label><input type="checkbox">確認導航區塊：.callout-tip .callout-imp .callout-nte .callout-warning</label></li>
 </ul>
 </div>
 </div>
 </div>
-</section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
-
-
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
+<blockquote class="blockquote">
+<p>「<strong>若世事多變且生也有涯，何因勢利導？以向風慕義求匡道濟世</strong>」〜 ☸ <code>AI 導向</code></p>
+<p>⛵ 要如何選擇適切的 AI 導向，航向解方？</p>
+</blockquote>
+<p>🪁🪞 簡言之，<code>AI 導向</code>是一種『<strong>啟發式框架</strong>』，內涵成套的「意圖」與「預設行動」的「經驗法則」腳本，可視作『<strong>套路招術</strong>』的行動準備。</p>
+<p>這種分類方式不僅在學術界逐漸成形，也在產業實踐中被廣泛採用：</p>
+<ul>
+<li>☸🎯 <strong>任務導向</strong>：對應狹窄任務型 AI，如客服機器人、推薦系統，強調精準性與可重複性。</li>
+<li>☸🛠 <strong>工具導向</strong>：反映多工具編排趨勢，如 Copilot Studio、LangChain 等框架。</li>
+<li>☸🤖 <strong>智能體導向</strong>：聚焦自主性與長期目標，如 AutoGPT、Meta’s CICERO、DeepMind’s Astra。</li>
+<li>☸🤝 <strong>協作導向</strong>：強調人機互動與價值對齊，符合「以人為中心 AI」（Human-Centered AI）的設計原則。</li>
+<li>☸⚖️ <strong>治理導向</strong>：呼應「責任式 AI」（Responsible AI）、GRC（Governance, Risk, Compliance）模型，包括「模型卡」（Model Cards）、ISO/IEC 42001 等透明化與合規標準。</li>
+</ul>
+<div id="nte-ai-orientations" class="callout callout-style-default callout-note callout-titled" title="☸什麼是 `AI 導向`ℹ？">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+註釋&nbsp;B: ☸什麼是 <code>AI 導向</code>ℹ？
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p><strong>☸ <code>AI 導向</code> 三句箴言</strong>：（點開⏵可揭露細節）</p>
+<details>
+<summary>
+📜🥋 <strong>「何以因勢利導，手隨心轉？」</strong> 〜 如習得套路，施展「預設行動」。
+</summary>
+強調智能體的「<strong>預設行動</strong>」操練，如武功秘笈或瑜伽手冊。經過<strong>刻意練習</strong>，形成「手隨心轉」的自然流暢，以便在環境變化中即時施展。
+</details>
+<details>
+<summary>
+💞👊 <strong>「何以向風慕義，法從手出？」</strong> 〜 如「意圖」心法，內化準備好的姿態。
+</summary>
+呼應智能體的「<strong>意圖</strong>」方向，如武功心法。人從整套技術展現「法從手出」的行動意圖，以承載義理（義）與良俗（風），成為價值對齊的實踐。
+</details>
+<details>
+<summary>
+☯🤺 <strong>「何以匡道濟世，立定知姿？」</strong> 〜 「知識姿態」融合行動及意圖。
+</summary>
+學會區分並整合智能體的「<strong>知識姿態</strong>」套路，如人在吐吶間運力而為。它在「<strong>數據</strong>」間完成具導向性的施展，融合「預設行動」與「意圖」。
+</details>
+<p>收斂三聯問「<strong>妙問</strong>」成長偈：</p>
+<ul>
+<li>☯ 「<strong>導向不唯知姿，亦在無招勝有招。</strong>」〜 智慧不止於 <code>AI 導向</code> 的習得與操練，更在於如何面對多變世事，在有限套路中施展無限解方。</li>
+</ul>
+<p>參照 <strong><a href="./appendix-mindmap.zh-hant.html">🔖附錄🌌 心智圖</a></strong><br>
+☸☯</p>
+</div>
+</div>
+<div id="fig-mindmap-05" class="quarto-float quarto-figure quarto-figure-center anchored" data-caption="聚焦 ☸ AI「5 導向」心智圖">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mindmap-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" class="flowchart mermaid-js" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1" xmlns:ev="http://www.w3.org/2001/xml-events">
+<g id="viewport-20250923180406308" class="svg-pan-zoom_viewport" transform="matrix(3.6 , 0, 0, 3.6 , -27, -50)" style="transform: matrix( 3.6, 0, 0, 3.6 , -27, -50);"> <image href="images/mind_map.svg"></image></g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-mindmap-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+圖&nbsp;A
+</figcaption>
+</figure>
+</div>
+<section id="ai-導向定義" class="level2">
+<h2 class="anchored" data-anchor-id="ai-導向定義">☸ AI 導向定義 🥋</h2>
+<p><code>AI 導向</code>（AI Orientation）指 AI 系統在<strong>設計</strong>、<strong>佈署</strong>與<strong>建構</strong>上的『<strong>啟發式框架</strong>』（Heuristic Framework）。不同導向各自具有設計<strong>優先級</strong>、佈署<strong>情境</strong>，以及<strong>風險</strong>與<strong>倫理</strong>考量，因此適合作為識別與選取框架的依據。雖然實踐中往往會結合多種導向，但透過區分仍能幫助我們澄清思路，提升理解的實用性。</p>
+<p>本書進一步將 <code>AI 導向</code> 定義為一套<strong>智能的知識姿態</strong>（intelligent epistemic posture）。它不僅是技術的選擇，更是一種涵蓋 <strong>意圖</strong> 與 <strong>預設行動選項</strong> 的整體性認知框架。</p>
+<p>如同人類認知能力可具多種導向並能融合，實際 AI 系統亦可整合不同導向。</p>
+<div id="tip-ai-orientations" class="callout callout-style-default callout-tip callout-titled" title="☸ AI「5 導向」">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+提示&nbsp;A: ☸ AI「5 導向」
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>☸ 學會區分 <code>AI 導向</code> 的『<strong>啟發式框架</strong>』，有助於選取與整合 AI 系統。本書歸納為五類：</p>
+<ul>
+<li><strong>5.1</strong> ☸🎯 <a href="./05-01-oriented_task.zh-hant.html">任務導向</a>（Task-oriented AI）<br>
+</li>
+<li><strong>5.2</strong> ☸🛠 <a href="./05-02-oriented_tool.zh-hant.html">工具導向</a>（Tool-oriented AI）<br>
+</li>
+<li><strong>5.3</strong> ☸🤖 <a href="./05-03-oriented_agent.zh-hant.html">智能體／代理人導向</a>（Agent-oriented AI）<br>
+</li>
+<li><strong>5.4</strong> ☸🤝 <a href="./05-04-oriented_collaborative.zh-hant.html">協作導向／以人為本導向</a>（Collaborative AI / Human-Centered AI）<br>
+</li>
+<li><strong>5.5</strong> ☸⚖️ <a href="./05-05-oriented_governance.zh-hant.html">治理導向</a>（Governance-oriented AI）</li>
+</ul>
+<p>讀者可依其『<strong>啟發式框架</strong>』（由「意圖」與「預設行動」構成）的差異來加以區分。</p>
+<p>導向如同『<strong>套路招術</strong>』，讀者亦可參照本書📑筆記 ~ <a href="notes-constructive_fill-in.zh-hant">🙶補全🙷 知行合一</a> 獲取靈感並操練。</p>
+<p>☸🤺☯</p>
+</div>
+</div>
+<section id="ai-導向公式" class="level3">
+<h3 class="anchored" data-anchor-id="ai-導向公式">📐 AI 導向公式</h3>
+<p>概括為一個簡明公式：</p>
+<blockquote class="blockquote">
+<p><code>AI 導向</code> 🟰 智能的知識姿態 🟰 <strong>意圖</strong> ➕ <strong>預設行動選項</strong></p>
+</blockquote>
+<p>相較於 <strong>AI 模態</strong>（Modality）側重於資訊的「表現形式」（如文本或影音），<strong>知識姿態</strong>則強調 AI 在不同情境下所展現的「準備工夫與備選行動」。</p>
 </section>
+<section id="比喻瑜伽與太極" class="level3">
+<h3 class="anchored" data-anchor-id="比喻瑜伽與太極">🧘‍♀️ 比喻：瑜伽與太極</h3>
+<p>如同練習瑜伽或太極，一套行動體系包含 <strong>意念</strong>、一系列的<strong>姿勢行動選項</strong>、以及自我<strong>吐納</strong>練習。</p>
+<p><code>AI 導向</code> 亦同樣描繪了一套智能「準備工夫與備選行動」，並據此預先定義<strong>優先假設</strong>、<strong>核心任務</strong>、與系統<strong>吐納</strong>（資料數據）。</p>
 </section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<section id="為何重要" class="level3">
+<h3 class="anchored" data-anchor-id="為何重要">✨ 為何重要？</h3>
+<p>『<strong>啟發式框架</strong>』具備三個關鍵特徵，有助於釐清<strong>智能行動體系</strong>的運作架構：</p>
+<ul>
+<li>🔄 <strong>動態性</strong>：描述行動者在面對情境轉變時的準備狀態、過渡與調整過程。<br>
+</li>
+<li>🎯 <strong>具象性</strong>：將 AI 視為具「姿態」的行動者，強調其準備動作、即將採取的行為與預期影響。<br>
+</li>
+<li>🤝 <strong>關係定位性</strong>：指明知識主體與受體之間的角色與位置，涵蓋對話、協作乃至對抗的互動賽局。</li>
+</ul>
+<p>理解這些特徵，能幫助我們在設計與部署 AI 系統時，明確其<strong>優先假設</strong>與<strong>核心任務</strong>。</p>
+<div id="important-heuristic-framework" class="callout callout-style-default callout-important callout-titled" title="🪁「啟發式框架」🪞">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">重要</span>🪁「啟發式框架」🪞
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>「導向」之義，可從「啟發式框架」（Heuristic Framework）一詞拆解理解：</p>
+<ul>
+<li>🪁 <strong>啟發式</strong>：指『<strong>經驗法則</strong>』或『<strong>簡化策略</strong>』，是一種快速有效、基於經驗的應對方法，雖可能產生偏差，但在實務上極具操作性。例如，<a href="./01-05-Gestalt_Psychology.zh-hant.html">完形心理</a> 的快速感知❝腦補❞潛在威脅，或在陌生環境中「多聽少說」，皆屬於繞過<strong>複雜分析</strong>的「認知捷徑」，帶有<strong>特定方向</strong>的考量（如求生存）。<br>
+</li>
+<li>🪞 <strong>框架</strong>：指幫助人們看待問題或組織知識的『<strong>丈量觀點</strong>』。例如，「多聽少說」可被理解為「社會和諧」導向，也可同時帶有「避免風險」導向。</li>
+</ul>
+<p>🪁🪞</p>
+</div>
+</div>
 <hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</section>
+</section>
+<section id="啟發式框架" class="level2">
+<h2 class="anchored" data-anchor-id="啟發式框架">☸ 啟發式框架 🤔</h2>
+<p><code>AI 導向</code> 有不同的『<strong>啟發式框架</strong>』，可視為<strong>套路框架</strong>或<strong>經驗法則框架</strong>。</p>
+<p>『<strong>啟發式框架</strong>』由 <strong>意圖</strong>、<strong>預設行動</strong>、與 <strong>知識姿態</strong> 三個核心要素構成，共同決定 AI 系統的設計哲學與行為模式：</p>
+<ul>
+<li>📜🥋 <strong>預設行動</strong>（Default Actions）：採取的<strong>具體操作</strong>或<strong>執行機制</strong>，回應「當導向確立後，慣例上有哪些可選動作？」。「預設行動」亦可稱為「既定行為」（Established Behavior）。<br>
+</li>
+<li>💞👊 <strong>意圖</strong>（Intent）：追求的<strong>最終目標</strong>與<strong>價值取向</strong>，回應「為什麼要採用此導向？」<br>
+</li>
+<li>☯🤺 <strong>知識姿態</strong>（Epistemic Posture）：持有的<strong>經驗法則偏好</strong>或<strong>知識立場</strong>，回應「如何看待自身與所處世界的互動關係？」</li>
+</ul>
+<hr>
+<p>如下節【🪴內容大綱】所概述，本書依據當代產業實踐，總結出五大類 <code>AI 導向</code>，分述其<strong>意圖</strong>、<strong>預設行動</strong>、與<strong>知識姿態</strong>三個核心要素所構成的『<strong>啟發式框架</strong>』（Heuristic Framework）。</p>
+<p>在實踐應用時，讀者應注意以下三點：</p>
+<ul>
+<li>🧠 <strong>多導向協作</strong>：在複雜系統中整合不同導向的優勢，將限制轉化為主動的創新。<br>
+</li>
+<li>🔍 <strong>透明與可解釋</strong>：確保導向下的設計決策過程可追溯與驗證，以利持續改進。<br>
+</li>
+<li>💡 <strong>跨域應用</strong>：將導向思維延伸至跨領域的智能系統設計與部署。</li>
+</ul>
+<p>面對多變與跨域的應用場景時，<code>AI 導向</code> 的『<strong>啟發式框架</strong>』思維能提供穩定且可調整的需求依據。</p>
+<div id="tip-heuristic-framework-compare" class="callout callout-style-default callout-tip callout-titled" title="🆚 AI 導向對照簡表 🌟" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+提示&nbsp;B: 🆚 AI 導向對照簡表 🌟
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div id="tbl-heuristic-framework-compare" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-heuristic-framework-compare-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+表&nbsp;A: 🆚 AI 導向對照簡表 🌟
+</figcaption>
+<div aria-describedby="tbl-heuristic-framework-compare-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 27%">
+<col style="width: 15%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>導向</th>
+<th>對比</th>
+<th>知識姿態</th>
+<th>意圖</th>
+<th>預設行動</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>☸🎯 任務導向</td>
+<td>☸🛠 工具導向</td>
+<td>明確<strong>界線</strong>、單一功能的預定義</td>
+<td>準確性、可靠性、可重複性</td>
+<td>流程或規則驅動，形成可預測行為</td>
+</tr>
+<tr class="even">
+<td>☸🛠 工具導向</td>
+<td>☸🎯 任務導向</td>
+<td>強調<strong>編排</strong>與模組化</td>
+<td>靈活性、擴展性、跨領域整合</td>
+<td>API 調用與工具鏈<strong>編排</strong></td>
+</tr>
+<tr class="odd">
+<td>☸🤖 智能體導向</td>
+<td>☸🎯 任務導向<br>☸🛠 工具導向</td>
+<td><strong>情境感知</strong>、持續追求<strong>長期目標</strong></td>
+<td>自主性、適應性</td>
+<td>依目標規劃調整路徑，形成反饋迴路</td>
+</tr>
+<tr class="even">
+<td>☸🤝 協作導向</td>
+<td>☸⚖️ 治理導向<br>☸🤖 智能體導向</td>
+<td>以<strong>協作</strong>與價值對齊為核心</td>
+<td>信任、跨角色<strong>協作</strong></td>
+<td>建立協作界面、共同理解模型、可介入機制</td>
+</tr>
+<tr class="odd">
+<td>☸⚖️ 治理導向</td>
+<td>☸🤝 協作導向</td>
+<td>偏向<strong>規範化</strong>與責任分配</td>
+<td>公平、問責、透明</td>
+<td>建立<strong>審計</strong>與問責體系</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="系統思維啟發" class="level2">
+<h2 class="anchored" data-anchor-id="系統思維啟發">☸ 系統思維啟發 ☯</h2>
+<p>這些「智能的<strong>知識姿態</strong>」，如同武功秘笈或瑜珈手冊中的套路知識，是可供操作與反覆練習的實用框架。它們的價值在於，當我們面對複雜問題時，能夠見招拆招，甚至無招勝有招地，精確釐清並界定 AI 系統的<strong>優先假設</strong>與<strong>核心任務</strong>。</p>
+<section id="優先假設與核心任務" class="level3">
+<h3 class="anchored" data-anchor-id="優先假設與核心任務">🧩 優先假設與核心任務</h3>
+<p>為了確保 AI 系統的<strong>知識姿態</strong>與解決策略保持一致，設計者與規劃者可以根據不同的 <code>AI 導向</code> 來拆解所需的 <strong>優先假設</strong>（Prior Assumptions）與<strong>核心任務</strong>（Core Tasks）。這裡可以從資料數據的吐納頻率與反應時間來思量『<strong>啟發式框架</strong>』的三要素：</p>
+<ul>
+<li><strong>知識姿態</strong>：界定系統在特定情境下的立場與<strong>界線</strong>，決定其如何感知與組織資訊。<br>
+</li>
+<li><strong>意圖</strong>：明確系統所追求的目標與價值，決定其在任務或互動中的優先方向。<br>
+</li>
+<li><strong>預設行動</strong>：規劃系統在面對輸入或環境變化時的操作腳本，決定其行為模式與反應機制。</li>
+</ul>
+<p>理解 <code>AI 導向</code> 的三要素，就能幫助我們在設計與部署 AI 系統時，明確其<strong>優先假設</strong>與<strong>核心任務</strong>，並確保整體行動體系具備一致性與可解釋性。</p>
+<p>為求 <code>AI 導向</code> 啟發的實用性，可以思考以下關於智能系統或工具<strong>自身</strong>與<strong>情境</strong>的問題：</p>
+<ul>
+<li>🗺️🪁 <strong>框架優先</strong>：先比對<strong>導向</strong>啟發式框架，再參照對應的『<strong>預設行動</strong>』技術與『<strong>經驗法則</strong>』方法，「當導向確立後，慣例來說有啥可選動作？」</li>
+<li>🪞💞 <strong>意圖丈量</strong>：根據自身<strong>條件</strong>，思量<strong>最終目標</strong>和<strong>價值取向</strong>，回應「為什麼要採用這導向？」</li>
+<li>🖼️⚡ <strong>情境適配</strong>：根據世界<strong>情境條件</strong>，靈活<strong>切換</strong>或<strong>融合</strong>多種導向，回應「如何確保自身和環境的互動？」</li>
+<li>☯🤺 <strong>知識姿態</strong>：根據自身及世界的關係觀點，界定可操作或可持續的<strong>經驗法則偏好</strong>或<strong>知識立場</strong>，回應「如何長期保持或引導自身和世界的關係？」</li>
+</ul>
+</section>
+<section id="多導向協作" class="level3">
+<h3 class="anchored" data-anchor-id="多導向協作">🤝 多導向協作</h3>
+<p><strong>💡「多導向協作」核心要點</strong>：複雜系統往往融合多種導向。例如，一個以 <em>任務導向</em> 為核心的倉儲機器人，可能同時內嵌 <em>智能體導向</em> 的路徑規劃<strong>預設行動</strong>，運用 <em>知識導向</em> 的貨品分類<strong>知識姿態</strong>，並結合 <em>數據導向</em> 的預測模型來即時預判壅塞情況。這證明了導向的價值在於靈活整合，而非僵化分立。</p>
+<p>因此，在進一步探討各個導向的細節與應用前，讀者可先將「多導向協作」視為一種貫穿全局的思維準則——它不僅能提升單一導向的效能，更能在跨章節、跨領域的 AI 系統設計中發揮綜效。</p>
+<p>一個實際 AI 系統可以運用多個導向進行<strong>系統思維</strong>檢驗與改進。</p>
+</section>
+<section id="現代人機協作平台" class="level3">
+<h3 class="anchored" data-anchor-id="現代人機協作平台">🤝 現代人機協作平台</h3>
+<p>為 <strong>AI 五大導向</strong> 各舉一個「現代人機協作平台（Human–AI Collaboration Platform）」的代表性案例，展示「多導向協作」的眾多可能性：</p>
+<ul>
+<li>🎯 <strong>任務導向型（Task-oriented AI）</strong>
+<ul>
+<li><strong>案例</strong>：🛫 <strong>航空公司客服聊天機器人</strong>（如 KLM、United Airlines）<br>
+</li>
+<li><strong>特徵</strong>：專注於完成單一明確任務（訂票、改票、查詢航班），流程清晰，輸入與輸出對應明確。<br>
+</li>
+<li><strong>人機協作</strong>：人類提供需求，AI 依照固定流程完成，若遇到例外情況再轉交人工客服。</li>
+</ul></li>
+<li>🛠 <strong>工具導向（Tool-oriented AI）</strong>
+<ul>
+<li><strong>案例</strong>：📊 <strong>Notion AI / Coda AI</strong><br>
+</li>
+<li><strong>特徵</strong>：透過 API 與插件模組，整合翻譯、資料庫查詢、摘要生成等工具，形成跨模組的知識工作平台。<br>
+</li>
+<li><strong>人機協作</strong>：人類設定需求，AI 調用多工具完成複合任務（如「整理會議紀錄並生成專案計畫」）。<br>
+</li>
+</ul></li>
+<li>🤖 <strong>智能體／代理人導向（Agent-oriented AI）</strong>
+<ul>
+<li><strong>案例</strong>：🛒 <strong>Amazon Bedrock Agents</strong></li>
+<li><strong>特徵</strong>：AI 代理人能根據人類輸入，自主規劃並調用外部 API（CRM、ERP、物流系統），完成多步驟任務。<br>
+</li>
+<li><strong>人機協作</strong>：人類給定高層次目標，AI 代理人自主分解並執行，最後回報結果。</li>
+</ul></li>
+<li>🤝 <strong>協作導向／以人為本導向（Collaborative AI / Human-Centered AI）</strong>
+<ul>
+<li><strong>案例</strong>：🧑‍💻 <strong>GitHub Copilot</strong><br>
+</li>
+<li><strong>特徵</strong>：AI 與人類程式設計師「並肩工作」，AI 提供即時程式碼建議，人類則負責審核、修改與決策。<br>
+</li>
+<li><strong>人機協作</strong>：AI 不取代人類，而是作為「協作者」，提升生產力與創造力。</li>
+</ul></li>
+<li>⚖️ <strong>治理導向（Governance-oriented AI）</strong>
+<ul>
+<li><strong>案例</strong>：🏥 <strong>醫療輔助決策平台（如 IBM Watson Health, Tempus）</strong><br>
+</li>
+<li><strong>特徵</strong>：AI 協助醫師進行診斷建議，但所有輸出需符合醫療法規、倫理與審計要求。<br>
+</li>
+<li><strong>人機協作</strong>：人類醫師保有最終決策權，AI 提供輔助建議並受治理框架監管，確保合規與安全。</li>
+</ul></li>
+</ul>
+</section>
+<section id="系統思維運用" class="level3">
+<h3 class="anchored" data-anchor-id="系統思維運用">🧙‍♂ 系統思維運用</h3>
+<p>熟練這五大導向，有助於檢視並校準<strong>知識姿態</strong>與<strong>問題解決策略</strong>是否一致，並為系統設計提供強大的分析工具。雖然這些導向並非放諸四海皆準的分類法，但它們提供了一種具高度適應性的<strong>系統思維</strong>視角。</p>
+<p>這些「智能的<strong>知識姿態</strong>」，如同武功秘笈或瑜珈手冊中的套路知識，是可供操作與反覆練習的實用框架。它們的價值在於，當我們面對複雜問題時，能夠見招拆招，甚至無招勝有招地，精確釐清並界定 AI 系統的<strong>優先假設</strong>與<strong>核心任務</strong>。</p>
+<div id="tip-ai-orientations-systems-thinking" class="callout callout-style-default callout-tip callout-titled" title="🧙‍♂系統思維運用AI 導向" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+提示&nbsp;C: 🧙‍♂系統思維運用AI 導向
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<ul>
+<li>📐 <strong>三要素</strong>：知識姿態、意圖、預設行動 → 定義優先假設與核心任務<br>
+</li>
+<li>🎯 <strong>精確性</strong>：幫助釐清任務邊界與行為模式<br>
+</li>
+<li>🤝 <strong>協作性</strong>：可多導向整合，避免僵化分立<br>
+</li>
+<li>🔄 <strong>靈活性</strong>：導向可反覆練習，適應不同情境<br>
+</li>
+<li>🧩 <strong>系統思維</strong>：檢驗並校準設計策略，確保一致性與可解釋性</li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="內容大綱" class="level2">
+<h2 class="anchored" data-anchor-id="內容大綱">🪴 內容大綱</h2>
+<p>在思考與設計 AI 系統部署時，可以比對五大導向的「經驗法則」腳本，看哪一個或哪些成套的<strong>意圖</strong>與<strong>預設行動</strong>，有適切的 <code>AI 導向</code> 可以解決問題。可以說，<code>AI 導向</code> 是種<strong>智能行動體系</strong>的套路招術，為不同應用場景提供可操作的『<strong>啟發式框架</strong>』。</p>
+<div id="imp-heuristic-framework-compare" class="table-small-print callout callout-style-default callout-important callout-titled" title="🆚 對比 AI 導向 啟發式要素表 🌟" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+要&nbsp;A: 🆚 對比 AI 導向 啟發式要素表 🌟
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><code>AI 導向</code>啟發式要素表如下，方便讀者快速查找、比較、及整合：</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 20%">
+<col style="width: 23%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">篇章</th>
+<th style="text-align: left;">AI 導向</th>
+<th style="text-align: left;">☯🤺知識姿態</th>
+<th style="text-align: left;">💞👊意圖</th>
+<th style="text-align: left;">📜🥋預設行動</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>5.1</strong><br>☸🎯</td>
+<td style="text-align: left;"><strong>任務導向型</strong><br> (Task-oriented)</td>
+<td style="text-align: left;">偏向「單一功能」的<strong>預定義</strong>架構</td>
+<td style="text-align: left;">實現<strong>專業化</strong>、「狹窄應用」領域的<strong>準確性</strong>、<strong>可靠性</strong>與<strong>可重複性</strong></td>
+<td style="text-align: left;">「流程或規則驅動」專業化<strong>可預測行為</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>5.2</strong><br>☸🛠</td>
+<td style="text-align: left;"><strong>工具導向</strong><br> (Tool-oriented)</td>
+<td style="text-align: left;">偏向「多工具使用」的<strong>編排性</strong>、<strong>模組化</strong>模型</td>
+<td style="text-align: left;">提升<strong>靈活性</strong>、<strong>擴展性</strong>與<strong>跨領域整合</strong>能力</td>
+<td style="text-align: left;">「編排」 API 調用、插件與工具鏈設計</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>5.3</strong><br>☸🤖</td>
+<td style="text-align: left;"><strong>智能體／代理人導向</strong><br> (Agent-oriented)</td>
+<td style="text-align: left;">偏向「長期目標」的持續追求的<strong>實體</strong></td>
+<td style="text-align: left;">提升<strong>自主性</strong>、<strong>環境適應性</strong>（不是預設「流程或規則」腳本）與多智能體協作</td>
+<td style="text-align: left;">「按目標規劃調整路徑」<strong>反應行為機制</strong>、持續性逼近<strong>長期目標</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>5.4</strong><br>☸🤝</td>
+<td style="text-align: left;"><strong>協作導向／以人為本導向</strong> <br>(Collaborative)</td>
+<td style="text-align: left;">偏向「參與及協作」的<strong>多元參與</strong>與<strong>價值對齊</strong>模型。</td>
+<td style="text-align: left;">促進信任、<strong>跨領域或角色</strong>的 「協同創作」 或 「人機協同」</td>
+<td style="text-align: left;">「建立和發展」人機互動的品質，「引入」<strong>可介入</strong>機制</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>5.5</strong><br>☸⚖️</td>
+<td style="text-align: left;"><strong>治理導向</strong><br> (Governance-oriented)</td>
+<td style="text-align: left;">偏向「治理規範及執行」的<strong>規範化</strong>、<strong>制度化</strong>與<strong>責任分配</strong>的模型。</td>
+<td style="text-align: left;">提升<strong>可解釋性</strong>、<strong>概念清晰度</strong>或<strong>推理透明度</strong>，以確保「公平、問責與合規」。</td>
+<td style="text-align: left;">建構「可執行並運營」的<strong>問責體系</strong>、<strong>審計機制</strong>、<strong>倫理準則</strong>與<strong>監管框架</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="核心條目內容" class="level3">
+<h3 class="anchored" data-anchor-id="核心條目內容">🌰 核心條目內容</h3>
+<ul>
+<li><strong>5.1</strong> ☸🎯 <strong><a href="./05-01-oriented_task.zh-hant.html">任務導向型</a></strong>（Task-oriented AI）
+<ul>
+<li><strong>知識姿態</strong>：偏向明確<strong>界線</strong>與<strong>預定義</strong>「單一功能」架構。</li>
+<li><strong>意圖</strong>：實現<strong>專業化</strong>、「狹窄應用」領域的<strong>準確性</strong>、<strong>可靠性</strong>與<strong>可重複性</strong>。</li>
+<li><strong>預設行動</strong>：「流程或規則驅動」部署流程或規則或模型、設計專業化<strong>可預測行為</strong>。</li>
+<li><strong>對比</strong>：☸🛠 工具導向 〜 側重外部工具的「多工具使用」調用與編排。</li>
+</ul></li>
+<li><strong>5.2</strong> ☸🛠 <strong><a href="./05-02-oriented_tool.zh-hant.html">工具導向</a></strong>（Tool-oriented AI）
+<ul>
+<li><strong>知識姿態</strong>：偏向<strong>編排性</strong>、<strong>模組化</strong>與<strong>外部資源調</strong>用的「多工具使用」模型。</li>
+<li><strong>意圖</strong>：提升<strong>靈活性</strong>、<strong>擴展性</strong>與<strong>跨領域整合</strong>能力。</li>
+<li><strong>預設行動</strong>：「編排」 API 調用、插件系統與工具鏈設計。</li>
+<li><strong>對比</strong>：☸🎯 任務導向 〜 側重「單一功能」的執行，而非多工具的靈活運用。</li>
+</ul></li>
+<li><strong>5.3</strong> ☸🤖 <strong><a href="./05-03-oriented_agent.zh-hant.html">智能體／代理人導向</a></strong>（Agent-oriented AI）
+<ul>
+<li><strong>知識姿態</strong>：偏向<strong>情境感知</strong>、與持續追求「長期目標」的<strong>實體</strong>。</li>
+<li><strong>意圖</strong>：提升<strong>自主性</strong>、環境<strong>適應性</strong>（不是預設「流程或規則」腳本）與多智能體協作。</li>
+<li><strong>預設行動</strong>：「按目標規劃調整路徑」、設計感知與反應<strong>行為機制</strong>、持續性<strong>長期目標</strong>的「反饋迴路」與「目標更新」機制，如 RLHF 等。</li>
+<li><strong>對比</strong>：☸🎯 任務導向 〜 側重「單一功能」最佳化，而非長期目標持續追求。</li>
+</ul></li>
+<li><strong>5.4</strong> ☸🤝 <strong><a href="./05-04-oriented_collaborative.zh-hant.html">協作導向／以人為本導向</a></strong>（Collaborative AI / Human-Centered AI）
+<ul>
+<li><strong>知識姿態</strong>：偏向<strong>關係導向</strong>、<strong>多元參與</strong>與<strong>價值對齊</strong>的「參與及協作」模型。</li>
+<li><strong>意圖</strong>：促進信任、<strong>跨領域或角色</strong>的 「協同創作」 或 「人機協作」。</li>
+<li><strong>預設行動</strong>：「建立和發展」人機互動的品質與機制，如設計<strong>協作界面</strong>、建立<strong>共同理解模型</strong>、實踐<strong>多模態溝通</strong>，以及「引入」<strong>可介入</strong>機制，如「人機共決」設計原則，如 <strong>可調整自主性</strong> (adjustable autonomy)、<strong>混合主動式互動</strong> (mixed-initiative interaction)。</li>
+<li><strong>對比</strong>：
+<ul>
+<li>☸⚖️ 治理導向 〜 側重「治理規範及執行」。</li>
+<li>☸🤖 智能體導向 〜 側重「自主行動」。</li>
+</ul></li>
+</ul></li>
+<li><strong>5.5</strong> ☸⚖️ <strong><a href="./05-05-oriented_governance.zh-hant.html">治理導向</a></strong>（Governance-oriented AI）
+<ul>
+<li><strong>知識姿態</strong>：偏向<strong>規範化</strong>、<strong>制度化</strong>與<strong>責任分配</strong>的「治理規範及執行」模型。</li>
+<li><strong>意圖</strong>：提升<strong>可解釋性</strong>、<strong>概念清晰度</strong>或<strong>推理透明度</strong>，以確保「公平、問責與合規」。</li>
+<li><strong>預設行動</strong>：建立「可執行並運營」的<strong>問責體系</strong>、<strong>審計機制</strong>、<strong>倫理準則</strong>與<strong>監管框架</strong>。</li>
+<li><strong>對比</strong>：☸🤝 協作導向 〜 側重「信任與互動」，而非規範與約束。</li>
+</ul></li>
+</ul>
+<div id="tip-heuristic-framework-compare" class="table-small-print callout callout-style-default callout-tip callout-titled" title="🆚 對比 AI 導向 🌟" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+提示&nbsp;D: 🆚 對比 AI 導向 🌟
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 45%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">篇章</th>
+<th style="text-align: left;">AI 導向</th>
+<th style="text-align: left;">對比</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>5.1</strong></td>
+<td style="text-align: left;">☸🎯<strong>任務導向</strong><br> 〜側重「單一功能」的執行與最佳化</td>
+<td style="text-align: left;">☸🛠 工具導向 <br>〜 側重外部的「多工具使用」調用與編排，而非「單一功能」的執行與最佳化</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>5.2</strong></td>
+<td style="text-align: left;">☸🛠<strong>工具導向</strong><br> 〜側重外部的「多工具使用」調用與編排</td>
+<td style="text-align: left;">☸🎯 任務導向 <br>〜 側重「單一功能」的執行與最佳化，而非多工具的靈活運用</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>5.3</strong></td>
+<td style="text-align: left;">☸🤖<strong>智能體／代理人導向</strong><br> 〜側重「<strong>自主行動</strong>」，透過「情境感知」與「長期目標」的持續追求</td>
+<td style="text-align: left;">☸🎯 任務導向 <br>〜 側重「單一功能」最佳化，而非<strong>長期目標</strong>持續追求</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>5.4</strong></td>
+<td style="text-align: left;">☸🤝<strong>協作導向／以人為本導向</strong><br> 〜側重「關係導向」與「人機協同」的價值對齊</td>
+<td style="text-align: left;">☸⚖️ 治理導向 <br>〜 側重「治理規範及執行」 <br>☸🤖 智能體導向 <br>〜 側重「<strong>自主行動</strong>」</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>5.5</strong></td>
+<td style="text-align: left;">☸⚖️<strong>治理導向</strong><br> 〜側重「治理規範及執行」的<strong>規範化</strong>、<strong>制度化</strong>與<strong>責任分配</strong></td>
+<td style="text-align: left;">☸🤝 協作導向 <br> 〜 側重「<strong>信任與互動</strong>」，而非規範與約束</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="延伸內容" class="level3">
+<h3 class="anchored" data-anchor-id="延伸內容">🎋 延伸內容</h3>
+<ul>
+<li>🎯⚖️ <strong>任務＋治理導向型</strong>（Task- and Governance-oriented AI）
+<ul>
+<li>☸️ <strong>融合導向</strong>：此系統不僅要<strong>高效完成任務</strong>（任務導向），還要確保<strong>完成過程完全符合規範並可追溯</strong>（治理導向）。</li>
+<li>☯🤺 <strong>知識姿態</strong>：它從<strong>治理導向</strong>啟發<strong>規範化、制度化與責任分配</strong>的設計思維，並融入<strong>任務導向</strong>對<strong>預定義界線與單一功能</strong>的嚴謹要求。</li>
+<li>💞👊 <strong>意圖</strong>：這是一套將治理原則與特定功能融合的追蹤系統，用於確保某項治理任務的<strong>可解釋性</strong>與<strong>問責性</strong>。</li>
+<li>📜🥋 <strong>預設行動</strong>：<strong>部署固定流程與規則</strong>來執行目標任務，並<strong>建立審計與問責機制</strong>來同時記錄執行的「每一步推理過程」。</li>
+<li>🏦💱 <strong>例子</strong>：一個<strong>金融清算監管系統</strong>，會追蹤<strong>每一筆交易的資金流向</strong>，利用<strong>法規知識</strong>作為行動規則，完成自動標示<strong>與洗錢相關的</strong>潛在<strong>異常</strong>高風險<strong>交易</strong>，同時解釋其判斷<strong>所依據</strong>的數據、法規、及使用模型。</li>
+</ul></li>
+<li>🛠🤝 <strong>工具＋協作導向型</strong>（Tool- and Collaborative-oriented AI）
+<ul>
+<li>☸️ <strong>融合導向</strong>：此系統同時體現<strong>工具導向</strong>的「外部資源調用與編排」和<strong>協作導向</strong>的「多元參與與人機協同」。</li>
+<li>☯🤺 <strong>知識姿態</strong>：用外部資源時偏向<strong>編排性與模組化</strong>（工具導向），同時設計易於<strong>人機共創</strong>的介面與流程時偏向<strong>關係創造</strong>（協作導向）。</li>
+<li>💞👊 <strong>意圖</strong>：促進<strong>跨領域或角色</strong>的協同創作與協作，同時提升其<strong>靈活性</strong>與<strong>擴展性</strong>，使不同使用者能調用多種工具完成目標。</li>
+<li>📜🥋 <strong>預設行動</strong>：<strong>編排 API 調用</strong>與<strong>插件系統</strong>以擴充功能，同時設計<strong>人機協作介面</strong>與<strong>共同理解模型</strong>，促進參與者間的信任與透明度。</li>
+<li>🎦🎬 <strong>例子</strong>：一個結合素材分享、腳本創作、與影片智能工具箱的<strong>短影片合作</strong>平台，它允許不同用戶（腳本家、剪輯師、AI 工具）<strong>模組化地調用</strong>各種生成式 AI 插件，並通過<strong>透明介面</strong>即時同步協作進度。</li>
+</ul></li>
+<li>🤖⚖️ <strong>智能體＋治理導向型</strong>（Agent- and Governance-oriented AI）
+<ul>
+<li>☸️ <strong>融合導向</strong>：此系統同時體現<strong>智能體導向</strong>的「情境感知與自主性」和<strong>治理導向</strong>的「規範化與問責制」。</li>
+<li>☯🤺 <strong>知識姿態</strong>：它偏向<strong>情境感知與長期目標的實體</strong>（智能體導向），同時要求所有自主決策都需納入<strong>規範化、制度化</strong>的審計軌跡（治理導向）。</li>
+<li>💞👊 <strong>意圖</strong>：在追求長期目標的同時，確保所有<strong>自主行動</strong>的決策過程都具備<strong>可解釋性</strong>、<strong>推理透明度</strong>，以滿足<strong>合規</strong>與<strong>問責</strong>要求。</li>
+<li>📜🥋 <strong>預設行動</strong>：<strong>按目標規劃調整路徑</strong>並設計<strong>感知與反應行為機制</strong>，建立<strong>審計機制</strong>與<strong>問責體系</strong>，強制記錄所有自主決策的依據。</li>
+<li>🤖🌊 <strong>例子</strong>：一個海底電纜<strong>災害預警</strong>和<strong>氣候監測</strong>安全系統，多種智能體（含自主式水下機器人）<strong>在沒有人類干預下</strong>會分析即時數據，<strong>在偵測到異常後</strong>通知相關單位進行巡檢與修復，達成長期的多項治理目標，並<strong>自動生成所有異常判斷的決策記錄</strong>，以供事後審計。</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="承先啟後" class="level2">
+<h2 class="anchored" data-anchor-id="承先啟後">👉 承先啟後</h2>
+<div id="tip-note-ai-taxonomy" class="callout callout-style-default callout-note callout-titled" title="🔖AI 分類雙維度對照：學界典範🆚業界經驗ℹ">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+註記&nbsp;E: 🔖AI 分類雙維度對照：學界典範🆚業界經驗ℹ
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>AI 導向</code> 可以視為 🪜 <a href="./notes-constructive_fill-in.zh-hant.html">知行鷹架</a> 的一種 「<strong>業界經驗法則分類</strong>」維度。讀者可藉此對照 AI 領域的兩種主要分類方法：</p>
+<ul>
+<li><strong>「學界典範流派分類」</strong>：見 <a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a> 流派與主義</li>
+<li><strong>「業界經驗法則分類」</strong>：即 <a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a> 區分 AI 5 大導向</li>
+</ul>
+<p>可參照 <strong><a href="./appendix-mindmap.zh-hant.html">🔖附錄🌌 心智圖</a></strong>，理解這兩套分類如何銜接 <a href="./01----problematics.zh-hant.html">第壹篇 ㉄</a> AI 問題意識。</p>
+<p>🪜🆚🔖</p>
+</div>
+</div>
+<p>接下來，讀者可以按需找「套路」展開自己所需打造的「智能行為體系」之旅，如：</p>
+<ul>
+<li>🕹️ 設計一個互動式「<strong>導向選擇器</strong>」</li>
+<li>💡 製作一個「<strong>導向融合建議表</strong>」</li>
+</ul>
+</section>
+<section id="前十關鍵詞" class="level2">
+<h2 class="anchored" data-anchor-id="前十關鍵詞">🔑 前十關鍵詞</h2>
+<ol type="1">
+<li><strong>知識姿態</strong> — 系統的立場與認知框架<br>
+</li>
+<li><strong>意圖</strong> — 最終目標與價值取向<br>
+</li>
+<li><strong>預設行動</strong> — 預定義的行為模式或操作腳本<br>
+</li>
+<li><strong>界線／預定義</strong> — 任務範疇與功能邊界<br>
+</li>
+<li><strong>編排</strong> — 工具調用與模組化組合<br>
+</li>
+<li><strong>情境感知</strong> — 感知環境並調整行為<br>
+</li>
+<li><strong>長期目標</strong> — 超越單一任務的持續追求<br>
+</li>
+<li><strong>協作</strong> — 人機互動與多元參與<br>
+</li>
+<li><strong>規範化／制度化</strong> — 治理與責任分配<br>
+</li>
+<li><strong>審計／問責</strong> — 可追溯性與透明化機制</li>
 </ol>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1832,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./04-07-vector_space.zh-hant.html" class="pagination-link" aria-label="🌌▦ 向量空間🌀">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">🌌▦ 向量空間🌀</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./05-01-oriented_task.zh-hant.html" class="pagination-link" aria-label="☸任務導向型🎯">
+        <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">☸任務導向型🎯</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1850,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/05----ai_orientations.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

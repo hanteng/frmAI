@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="廖漢騰">
 
-<title>道／盜智格局：AI 賽局手冊</title>
+<title>36&nbsp; 🔴🧐🧭 指導型分析 – 道／盜智格局：AI 賽局手冊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./notes-mental_fill-in.zh-hant.html" rel="next">
+<link href="./06-04-analysis_descriptive.zh-hant.html" rel="next">
+<link href="./06-02-analysis_predictive.zh-hant.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -105,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.zh-hant.html">🤗 序言</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06----analytics_decisions.zh-hant.html">❖分析+決策 6 點</a></li><li class="breadcrumb-item"><a href="./06-03-analysis_prescriptive.zh-hant.html"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">🔴🧐🧭 指導型分析</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄導航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜尋" onclick="window.quartoOpenSearch();">
@@ -171,7 +151,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🤗 序言</span></a>
   </div>
 </li>
@@ -450,11 +430,11 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="./06----analytics_decisions.zh-hant.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">❖分析+決策 6 點</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="切換區段">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="切換區段">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./06-01-analysis_diagnostic.zh-hant.html" class="sidebar-item-text sidebar-link">
@@ -469,7 +449,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06-03-analysis_prescriptive.zh-hant.html" class="sidebar-item-text sidebar-link">
+  <a href="./06-03-analysis_prescriptive.zh-hant.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">🔴🧐🧭 指導型分析</span></span></a>
   </div>
 </li>
@@ -768,41 +748,36 @@ div.csl-indent {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#序言" id="toc-序言" class="nav-link active" data-scroll-target="#序言">🤗 序言</a>
+  <li><a href="#核心概念" id="toc-核心概念" class="nav-link active" data-scroll-target="#核心概念"><span class="header-section-number">36.1</span> ❖🔴核心概念</a>
   <ul>
-  <li><a href="#道盜智格局-ai賽局手冊" id="toc-道盜智格局-ai賽局手冊" class="nav-link" data-scroll-target="#道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</a></li>
-  <li><a href="#本書結構" id="toc-本書結構" class="nav-link" data-scroll-target="#本書結構">📦 本書結構</a></li>
-  <li><a href="#sec-book-features" id="toc-sec-book-features" class="nav-link" data-scroll-target="#sec-book-features">✨ 本書特色</a></li>
-  <li><a href="#註釋" id="toc-註釋" class="nav-link" data-scroll-target="#註釋">📌 註釋</a></li>
+  <li><a href="#功能與目的" id="toc-功能與目的" class="nav-link" data-scroll-target="#功能與目的"><span class="header-section-number">36.1.1</span> 🧐🧭 功能與目的</a></li>
+  <li><a href="#情境脈絡方案評估執行" id="toc-情境脈絡方案評估執行" class="nav-link" data-scroll-target="#情境脈絡方案評估執行"><span class="header-section-number">36.1.2</span> 🔁情境脈絡－方案評估－執行</a></li>
   </ul></li>
+  <li><a href="#生成式ai加值" id="toc-生成式ai加值" class="nav-link" data-scroll-target="#生成式ai加值"><span class="header-section-number">36.2</span> 🟣🙀🎨 生成式AI加值</a>
+  <ul>
+  <li><a href="#豐富內部運作" id="toc-豐富內部運作" class="nav-link" data-scroll-target="#豐富內部運作"><span class="header-section-number">36.2.1</span> 🔁😷 豐富內部運作</a></li>
+  <li><a href="#hitl及rlhf關鍵補充" id="toc-hitl及rlhf關鍵補充" class="nav-link" data-scroll-target="#hitl及rlhf關鍵補充"><span class="header-section-number">36.2.2</span> ⏩🪄 HITL及RLHF關鍵補充</a></li>
+  </ul></li>
+  <li><a href="#決策演算法加值" id="toc-決策演算法加值" class="nav-link" data-scroll-target="#決策演算法加值"><span class="header-section-number">36.3</span> 🔁😽🪄 決策演算法加值</a></li>
+  <li><a href="#小結決策啟發" id="toc-小結決策啟發" class="nav-link" data-scroll-target="#小結決策啟發"><span class="header-section-number">36.4</span> ✨🪄 小結：決策啟發</a></li>
+  <li><a href="#接下來" id="toc-接下來" class="nav-link" data-scroll-target="#接下來"><span class="header-section-number">36.5</span> 👉 接下來</a></li>
+  <li><a href="#請參閱" id="toc-請參閱" class="nav-link" data-scroll-target="#請參閱"><span class="header-section-number">36.6</span> 🪸 請參閱</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/06-03-analysis_prescriptive.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06----analytics_decisions.zh-hant.html">❖分析+決策 6 點</a></li><li class="breadcrumb-item"><a href="./06-03-analysis_prescriptive.zh-hant.html"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">🔴🧐🧭 指導型分析</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">道／盜智格局：AI 賽局手冊</h1>
+<h1 class="title"><span id="sec-analysis-prescriptive" class="quarto-section-identifier"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">🔴🧐🧭 指導型分析</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>廖漢騰 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發佈於</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026年6月8日</p>
-    </div>
-  </div>
   
     
   </div>
@@ -812,175 +787,241 @@ div.csl-indent {
 </header>
 
 
-
-<section id="序言" class="level1 unnumbered">
-<h1 class="unnumbered">🤗 序言</h1><p><img src="cover.png" title="道／盜智格局：AI 賽局手冊" class="quarto-cover-image nolightbox img-fluid"></p>
 <blockquote class="blockquote">
-<p>「用甲骨文問卦？」🐢 智能<strong>國師</strong>真能改變<strong>國運</strong>嗎？</p>
+<p>❖ 🧭 <code>指導型分析</code>如何將分析洞察<strong>轉化為</strong>可落地的最佳行動方案，並確保與<strong>價值對齊</strong>？</p>
 </blockquote>
-<blockquote class="blockquote">
-<p>「心累ChatGPT求拍拍」👨‍👩‍👧‍👦 智能<strong>紅娘</strong>能改變<strong>人生</strong>嗎？</p>
-</blockquote>
-<p>從<strong>甲骨</strong>到<strong>大語言模型</strong>，人類不斷尋求 ❝<a href="./glossary.zh-hant.html#def-mental-fill-in">腦補</a>❞ 來擴展心智、解決問題。</p>
-<p>怎麼理解並掌握最新的腦補科技，人工智慧 （AI）呢？</p>
-<div id="tip-book-features-short" class="callout callout-style-default callout-tip callout-titled" title="本書特色亮點💖">
+<p><code>指導型分析</code>（Prescriptive Analysis）的目的在回答「<strong>我們該怎麼做？</strong>」。它承接預測型分析的結果，結合<strong>最佳化演算法</strong>、<strong>情境規劃</strong>與<strong>模擬技術</strong>，生成<strong>可執行的策略與行動方案</strong>（通常包括資源配置與操作規則等）。它運用<strong>最佳化</strong>、<strong>模擬</strong>與<strong>決策演算法</strong>等技術，幫助決策者在多個可能的選擇中，找到能夠達成特定目標的最佳路徑。這一階段不僅是技術運算，更涉及價值判斷與多方協調，確保方案在現實中確保決策的即時性與可行性，且與長期目標對齊。這對映到 AI 的<a href="./01-06-Alignment_Control_Problem.zh-hant.html">對齊與控制問題</a>問題、<a href="./01-05-Gestalt_Psychology.zh-hant.html">完形心理</a>等<a href="./01-07-Language_Games.zh-hant.html">賽局</a>，以確保指導型分析在AI應用時能確保決策與行動與組織價值對齊。</p>
+<p>在 AI 與自動化工具的加持下，<code>指導型分析</code>不再只是靜態建議清單，而是能即時更新、動態調整，並結合 <strong>生成式 AI</strong> 與 <strong>決策演算法</strong>，形成「<strong>策略生成與執行層</strong>」，確保策略在不同情境下保持高效與適應性。</p>
+<ul>
+<li>🟣🙀🎨 <strong>生成式 AI</strong> 能將複雜的決策空間轉譯為易讀的策略地圖，自動產生多組可行方案與差異化敘事，如「行動藍圖」、「跨部門協作計畫」與「情境化 SOP」，以自然語言解讀權衡與風險，支援跨部門溝通與共識形成，並在執行過程中持續優化。<br>
+</li>
+<li>🔁😽🪄 <strong>決策演算法</strong> 能將策略編譯為可執行的工作流程與資源分配方案，並引入反思型機制，實現「監測 ⮫ 觸發 ⮫ 執行 ⮫ 回饋」動態閉環，並在數據變化根據回饋調整策略與行動。</li>
+</ul>
+<div id="tip-analysis-prescriptive" class="callout callout-style-default callout-tip callout-titled" title="🔴🧐🧭 指導型分析">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-提示&nbsp;1: 本書特色亮點💖
+提示&nbsp;36.1: 🔴🧐🧭 指導型分析
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<p>🧭 <strong>策略落地器（行動羅盤）</strong>：<code>指導型分析</code>將預測與目標轉化為可執行的行動方案，並在執行中持續優化。</p>
 <ul>
-<li>👨‍👩‍👧‍👦<em>讀者對象</em>：對人工智慧有興趣的<strong>一般讀者</strong>、<strong>學生</strong>、<strong>家長</strong>、與<strong>專業人士</strong>，科普與職修皆宜。</li>
-<li>🏮<em>簡明扼要</em>：66 個關鍵詞<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，撐起完整知行鷹架，力求簡明避免教條。<br>
+<li>回答「我們該怎麼做？」——它位於<strong>描述 ⮫ 診斷 ⮫ 預測 ⮫ 指導</strong> 數據分析價值鏈的第 4 階段，收斂前面各階段的洞察。<br>
 </li>
-<li>🤠<em>道／盜</em>： 突出智能<strong>競爭</strong>與<strong>合作</strong>性質：知識能成規則也能挑戰規則。</li>
-<li>🐛<em>問題意識</em>：聚焦<strong>符碼紮根問題</strong>、<strong>框架問題</strong>等「道」理與解方。</li>
-<li>🎄<em>系統性</em>：介紹人工智慧的<strong>流派</strong>、<strong>主義</strong>、<strong>分析形式</strong>、<strong>導向</strong>等概念。</li>
-<li>💊<em>AI紅藥</em>：引進<strong>完形心理學</strong>、<strong>語言賽局</strong>等演化與賽局觀點。</li>
-<li>🪜<em>個人化</em>：帶領讀者「格物致智」，構築<strong>個人化</strong>的知行鷹架。</li>
-<li>🎍<em>體系應用思路</em>：<strong>紮根</strong>世界應「用」思路，體系挑選<strong>創造性</strong>解方。</li>
-</ul>
-<p>↪️詳見<a href="#sec-book-features">本書特色</a>。💖</p>
-</div>
-</div>
-<section id="道盜智格局-ai賽局手冊" class="level2">
-<h2 class="anchored" data-anchor-id="道盜智格局-ai賽局手冊">🎲《道／盜智格局》<br>AI賽局手冊</h2>
-<p>這本手冊紮根於人工智慧底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a> ），透過嚴謹的 <strong>事實查核</strong> 與 <strong>邏輯追源</strong> ，協助讀者建構個人化的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong> 。</p>
-<p>這套能「框智」、具「格局」的鷹架，協助讀者檢視現有科技方案，更能啟發創新智能化包括<strong>AI 工程</strong>（見第拾篇 🌉 ）的解決之道。</p>
-<p>本書聚焦人類創造智能科技時，能「道」且「盜」的重要格局與框架。</p>
-<p>雖然本書以<strong>知識</strong>為本，處理複雜概念時卻力求簡明，避免教條式的說法。</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌌：心智圖">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">提示</span>🌌：心智圖
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書亦附有一視覺化的心智圖，見 <a href="appendix-mindmap.zh-hant.html#fig-mindmap" class="quarto-xref">圖&nbsp;<span>E.1</span></a>。 🌌</p>
-</div>
-</div>
-</section>
-<section id="本書結構" class="level2">
-<h2 class="anchored" data-anchor-id="本書結構">📦 本書結構</h2>
-<p>這本手冊紮根底層的<strong>問題意識</strong>（見<a href="01----problematics.zh-hant">第壹篇 ㉄</a>），目標創新智能化<strong>AI 工程</strong>之道（見第拾篇 🌉 ），在起點和終點之間有以下各章：</p>
+<li>映到 AI 的<a href="./01-06-Alignment_Control_Problem.zh-hant.html">對齊與控制問題</a>問題、<a href="./01-05-Gestalt_Psychology.zh-hant.html">完形心理</a>等<a href="./01-07-Language_Games.zh-hant.html">賽局</a>博弈模擬。<br>
+</li>
+<li>結合<strong>生成式 AI</strong> 與 <strong>決策演算法</strong>，形成動態的「<strong>策略生成與執行層</strong>」：
 <ul>
-<li>聚焦<strong>具身</strong>、<strong>賽局</strong>與未來前瞻，本書精選相關知識與案例，確保選取內容不只對過去歷史能有系統性理解，更能對未來發展能有創新性啟示：
-<ul>
-<li>「博弈派AI」（見<a href="07----game_ai.zh-hant">第柒篇 🏆</a> ）、</li>
-<li>「具身派AI」（見<a href="08----embodied_ai.zh-hant">第捌篇 🦾</a> ）、 與</li>
-<li>「AI 數學」（見<a href="09----ai_math.zh-hant">第玖篇 📐</a> ）</li>
+<li><strong>生成式 AI</strong> 可生成行動藍圖與情境化 SOP。<br>
+</li>
+<li><strong>決策演算法</strong> 可將策略轉化為可執行的流程並動態調整。 ❖🔴</li>
 </ul></li>
-<li>力求融合經典與現代實踐，本書系統性介紹<strong>流派</strong>與<strong>主義</strong>：
-<ul>
-<li><a href="02----schools_paradigms.zh-hant">第貳篇 🎏🏮</a> 流派與主義（Schools &amp; Paradigms）
-<ul>
-<li><strong>2.1</strong> 🎏🏮🏛️ <a href="02-01-symbolic_ai.zh-hant">符號流／主義</a>（Symbolic AI / Symbolism）</li>
-<li><strong>2.5</strong> 🏮🧬 <a href="02-05-connectionism.zh-hant">連結主義</a>（Connectionism）</li>
-<li><strong>2.6</strong> 🏮💪 <a href="02-06-behaviorism.zh-hant">行為主義</a>（Behaviorism）</li>
-</ul></li>
-<li><a href="03----symbolic_ai.zh-hant">第參篇 🏛️</a> 「符號流」AI（Symbolic AI）</li>
-<li><a href="04----statistical_ai.zh-hant">第肆篇 🌀</a> 「統計流」AI（Statistical AI）</li>
-</ul></li>
-<li>主推系統創新與分析層次，本書系統性總結「智能導向」 5 種（見<a href="05----ai_orientations.zh-hant">第伍篇 ☸</a> ），以及「分析與決策」 6 點（見<a href="./06----analytics_decisions.zh-hant.html">第陸篇 ❖</a> ）。</li>
 </ul>
-<p>以上分章結構，不只勾勒出格局與框架，更鼓勵讀者構架自己的 <strong><a href="notes-constructive_fill-in.zh-hant">🪜 知行鷹架</a></strong>，運用作者創建的新學習分類法，系統地產出關鍵的<strong>動詞－名詞</strong>組合 <a href="appendix-cognitive_capacity.zh-hant.html#nte-ai-scaffolding" class="quarto-xref">註釋&nbsp;<span>C.2</span></a>。</p>
-<p>建議讀者可以從兩章選一做為入口開始探索：</p>
-<ul>
-<li><a href="./02----schools_paradigms.zh-hant.html">第貳篇 🎏🏮</a>　流派與主義</li>
-<li><a href="./05----ai_orientations.zh-hant.html">第伍篇 ☸</a>　區分 AI 5 大導向 <a href="05----ai_orientations.zh-hant.html#tip-ai-orientations" class="quarto-xref">提示&nbsp;<span>A</span></a></li>
-</ul>
-<div id="tip-book-zen" class="callout callout-style-default callout-tip callout-titled" title="禪意長偈：🎲賽局 vs 🏁格局">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-提示&nbsp;2: 禪意長偈：🎲賽局 vs 🏁格局
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>本書取名為《框智格局》又名《道／盜智格局》，除了強調 AI 問題意識 <a href="./01-04-Frame_Problem.zh-hant.html">框架問題</a> 之外，還妄想有點禪意點綴當代人工智慧的賽局困境：</p>
-<ul>
-<li>🏆 「<strong>身處賽局，勝負如實</strong>」 〜 （賽）局內之境，勝負雖真切，卻只是相對現象。<br>
-</li>
-<li>🧭 「<strong>智觀格局，安頓為真</strong>」 〜 超越（賽局）局限，觀照全體（格局），方能開始取得安頓。<br>
-</li>
-<li>❤️ 「<strong>心若逐局，終困於局</strong>」 〜 若執著於勝負，反而被賽局所縛。<br>
-</li>
-<li>🪷 「<strong>慧若觀格，志在破格</strong>」 〜 以智慧觀全體（格局），意識到框架的存在與用處，尋求新境與新框架。<br>
-</li>
-<li>⚡ 「<strong>破局非毀，為顯局外真</strong>」 〜 破除特定（舊局）不應僅是摧毀，而需顯現局外的紥根真實。<br>
-</li>
-<li>🏯 「<strong>立格非執，為安格內善</strong>」 〜 建立特定（新局）不應僅是執著，而是開拓可安頓真善美的空間。</li>
-<li>🌑 「<strong>若只知破，則墮於空</strong>」 〜 只懂破壞而不懂建立，終將陷入虛無。<br>
-</li>
-<li>🌞 「<strong>若能破立，方成大用</strong>」 〜 破與立並行，才能成就圓滿的大用。</li>
-</ul>
-<p>🎲🏁</p>
 </div>
 </div>
 <hr>
+<section id="核心概念" class="level2" data-number="36.1">
+<h2 data-number="36.1" class="anchored" data-anchor-id="核心概念"><span class="header-section-number">36.1</span> ❖🔴核心概念</h2>
+<p><code>指導型分析</code>旨在回答 <strong>「我們應該怎麼做？」</strong>，其特徵包括：</p>
+<ul>
+<li>📂<strong>資料來源</strong>：預測型分析輸出、歷史與即時數據、外部市場與政策資訊、資源/成本/容量限制、風險與合規要求<br>
+</li>
+<li>🛠️<strong>處理方式</strong>：數學規劃與優化（線性/整數/多目標）、情境與蒙地卡羅模擬、決策樹與影響圖、強化學習、成本效益/風險回報分析<br>
+</li>
+<li>📊<strong>輸出形式</strong>：策略建議書、行動計劃與SOP、優化方案比較表、資源配置與排程、風險與應變方案、決策規則集</li>
+</ul>
+<p><code>指導型分析</code>承接預測型分析的未來推估，專注於回答「我們應該怎麼做？」它將解釋與預測轉化為具體可執行的策略與行動計劃，並評估各方案的影響、成本與風險，確保資源配置與決策路徑最優化。若缺乏<code>指導型分析</code>，組織將難以把洞察落地為行動。</p>
+<p>作為資料分析的最終階段，它不僅理解過去（描述型）、解釋原因（診斷型）、預測未來（預測型），更進一步地，會根據這些洞察，在考量各種限制（如預算、時間、法規）與資源條件下，提供最佳決策與行動建議。</p>
+<p>常見方法包括<strong>優化模型</strong>、<strong>情境模擬</strong>、<strong>決策分析</strong>、<strong>多方案比較矩陣</strong>、與<strong>強化學習</strong>的即時策略調整建議等，在多目標、多約束下尋求近似最優解，並為執行與監控提供準則與閾值。</p>
+<p>例如，一家零售商在得知某產品需求將增加（預測型分析）後，指導型分析會建議<strong>最優的進貨量、庫存配置與定價策略</strong>，以最大化利潤並同時避免缺貨。</p>
+<p>與 <strong><a href="./appendix-action.zh-hant.html">布魯姆分類學</a></strong> 的<strong>創造</strong>（Create）與<strong>評估</strong>（Evaluate）認知能力對應，<code>指導型分析</code>將解釋與預測整合為新的解決方案與可操作設計，驅動行動落地。</p>
+<section id="功能與目的" class="level3" data-number="36.1.1">
+<h3 data-number="36.1.1" class="anchored" data-anchor-id="功能與目的"><span class="header-section-number">36.1.1</span> 🧐🧭 功能與目的</h3>
+<p>對於組織決策鏈中，<code>指導型分析</code>的主要功能與特性包括：</p>
+<ul>
+<li>🚀 <strong>行動導向</strong>：其核心價值是將數據洞察轉化為具體的、可執行的策略與行動方案，確保洞察能落地為實際成果<br>
+</li>
+<li>🤖 <strong>自動化與最佳化</strong>：能夠在複雜、多變數的環境中自動尋找最佳解，並持續優化決策過程<br>
+</li>
+<li>🚧 <strong>考量限制</strong>：分析模型能夠將現實世界的各種限制（如預算、時間、資源）納入考量，確保建議的可行性與落地性<br>
+</li>
+<li>🔮 <strong>模擬性</strong>：能夠對不同決策所帶來的結果進行模擬與預估，幫助決策者在行動前就了解其潛在影響<br>
+</li>
+<li>🎯 <strong>目標優化</strong>：在多個可能方案中選擇能最大化效益或最小化風險的方案<br>
+</li>
+<li>📊 <strong>多情境評估</strong>：比較不同情境下各方案的表現，確保策略具備適應性<br>
+</li>
+<li>⚖️ <strong>資源配置建議</strong>：根據限制條件與優先順序，提供最佳資源分配方案<br>
+</li>
+<li>🛡️ <strong>風險管理與應變計劃</strong>：針對潛在風險制定預防與應對措施<br>
+</li>
+<li>🔄 <strong>動態調整能力</strong>：隨著新數據與環境變化，及時更新策略建議<br>
+</li>
+<li>📉 <strong>依賴基礎</strong>：必須建立在可靠的預測型分析之上，避免基於錯誤推估做出錯誤決策</li>
+</ul>
+<p>💡 這些特性使<code>指導型分析</code>成為實現<strong>自動化決策</strong>與<strong>智慧營運</strong>的關鍵能力。AI 驅動的策略生成、情境模擬與自動化執行等能力，詳見後續〈生成式 AI 加值〉與〈決策演算法加值〉小節。</p>
 </section>
-<section id="sec-book-features" class="level2">
-<h2 class="anchored" data-anchor-id="sec-book-features">✨ 本書特色</h2>
-<p>本書主要特色是：</p>
+<section id="情境脈絡方案評估執行" class="level3" data-number="36.1.2">
+<h3 data-number="36.1.2" class="anchored" data-anchor-id="情境脈絡方案評估執行"><span class="header-section-number">36.1.2</span> 🔁情境脈絡－方案評估－執行</h3>
+<p><code>指導型分析</code>的運作流程可歸納為三個關鍵步驟：</p>
+<ul>
+<li><p>🌐 <strong>情境脈絡與資料與目標設定</strong>：整合預測型分析的輸出與外部環境資訊（如市場動態、政策變化、資源限制），並輸入來自描述、診斷與預測分析的數據。同時明確設定決策目標（例如：最大化利潤、最小化成本、提高客戶滿意度），並定義所有相關的限制條件（如預算上限、人力限制、供應鏈能力），建立決策所需的全貌脈絡與優先順序。</p></li>
+<li><p>📊 <strong>方案評估與情境模擬最佳化</strong>：根據情境脈絡生成多個可行策略，透過模擬、優化與風險分析，評估各方案的效益、成本與風險。例如，模擬在不同定價下對利潤的影響，或在不同廣告投放策略下對銷售額與成本的綜合影響。這一步驟會運用<strong>最佳化演算法</strong>來找出最能達成目標的決策組合，並在必要時進行多情境比較。</p></li>
+<li><p>🚀 <strong>執行與生成行動建議</strong>：選擇最佳方案並付諸實行，同時建立監控機制與回饋迴路，確保策略在執行過程中可持續調整與優化。模型會輸出具體的、可操作的行動建議，不僅包含「做什麼」，還會說明「為什麼這麼做」，並預估其潛在結果。</p></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="生成式ai加值" class="level2" data-number="36.2">
+<h2 data-number="36.2" class="anchored" data-anchor-id="生成式ai加值"><span class="header-section-number">36.2</span> 🟣🙀🎨 生成式AI加值</h2>
+<p>透過與<strong>生成式 AI</strong>和<strong>決策演算法</strong>的結合，<code>指導型分析</code>的能力將被推向新高度。這不僅是提供建議，更是建立一個能夠與人類協同工作的<strong>智慧決策夥伴</strong>。</p>
+<section id="豐富內部運作" class="level3" data-number="36.2.1">
+<h3 data-number="36.2.1" class="anchored" data-anchor-id="豐富內部運作"><span class="header-section-number">36.2.1</span> 🔁😷 豐富內部運作</h3>
+<p>生成式 AI 讓<code>指導型分析</code>更具人性化與互動性，並在「情境脈絡－方案評估－執行」三階段中全面加值：<br>
+從前端的情境建構與目標設定、到中段的多方案模擬與最佳化、再到末端的行動生成與持續監控，AI 都能注入智慧化的輔助與自動化能力，讓決策過程更精準、更高效、更貼近實際需求。</p>
+<ul>
+<li>🌐 <strong>情境脈絡強化</strong>：
+<ul>
+<li>⛓️ <strong>鏈式規劃與目標導向行動</strong>：基於最終目標（如最大化利潤），自動推導出一系列鏈式規劃與目標導向行動，將複雜任務分解為可執行步驟，並提供詳細的實施建議<br>
+</li>
+<li>📚 <strong>基於案例與情境的學習</strong>：分析過去的成功與失敗案例（case-based learning）與多種情境（scenario-based learning），提煉經驗與決策模式，應用於當前問題</li>
+</ul></li>
+<li>📊 <strong>方案評估與模擬最佳化</strong>：
+<ul>
+<li>🗣️ <strong>自然語言決策介面</strong>：允許使用者用自然語言提問並即時獲得模擬結果，例如「如果我們將廣告預算提高20%，並將重點放在Instagram，會發生什麼？」<br>
+</li>
+<li>📊 <strong>可視化決策模擬</strong>：將複雜的最佳化結果轉化為易於理解的互動式圖表，直觀比較不同方案的優劣勢</li>
+</ul></li>
+<li>🚀 <strong>執行與智慧化輸出</strong>：
+<ul>
+<li>✍️ <strong>智慧化決策報告</strong>：自動生成包含決策邏輯、建議方案、潛在風險與效益分析的專業報告，大幅節省人力與時間</li>
+</ul></li>
+</ul>
+</section>
+<section id="hitl及rlhf關鍵補充" class="level3" data-number="36.2.2">
+<h3 data-number="36.2.2" class="anchored" data-anchor-id="hitl及rlhf關鍵補充"><span class="header-section-number">36.2.2</span> ⏩🪄 HITL及RLHF關鍵補充</h3>
+<p>在 <code>指導型分析</code> 中，結合 <strong>HITL</strong> 與 <strong>RLHF</strong> 能確保「<strong>策略</strong>生成、<strong>行動</strong>落地、<strong>價值</strong>對齊」的核心本質，避免生成脫離現實或與組織目標不符的方案。</p>
+<ul>
+<li>🧑‍💻 <strong>HITL（人類在迴圈中，Human‑in‑the‑loop）</strong>
+<ul>
+<li>🧭 <strong>整合專家知識與多元觀點</strong>：由具備領域專業的決策者<strong>審查並補充</strong>模型生成的<strong>策略及行動</strong>，並引入不同部門或背景的觀點，確保方案涵蓋<strong>多元情境與利害相關者</strong>。<br>
+</li>
+<li>📏 <strong>一致性與可信度檢核</strong>：制定明確的<strong>策略評估與優化標準</strong>，確保不同回饋者的判斷能被模型有效吸收並保持一致性。<br>
+</li>
+<li>🔍 <strong>風險與限制檢測</strong>：人工介入檢查<strong>自動化策略</strong>中可能忽略的法規、資源或倫理限制，避免落地時出現不可行或有爭議的行動。<br>
+</li>
+<li>🛡️ <strong>資料隱私與合規性</strong>：在<strong>策略生成與審核過程</strong>中遵守隱私法規與組織規範，保護敏感資訊。<br>
+</li>
+</ul></li>
+<li>🤖 <strong>RLHF（人類回饋強化學習，Reinforcement Learning from Human Feedback）</strong>
+<ul>
+<li>🔄 <strong>持續優化與適應</strong>：將 RLHF 視為迭代循環，根據執行結果與人類回饋持續再訓練模型，並，確保<strong>策略生成</strong>能適應市場、政策與環境變化。</li>
+<li>🤝 <strong>引入專家混合模型</strong>：可採用或引入<strong>MoE</strong>（專家混合模型，Mixture of Experts）架構，讓不同專家子模型專注於不同<strong>策略領域</strong>（如財務優化、風險管理、資源配置），由路由機制動態選擇最合適的專家領域進行分工合作。</li>
+<li>📏 <strong>回饋標準化</strong>：在<strong>獎勵模型</strong>訓練中維持一致的評分規範，提升不同情境下的<strong>策略</strong>穩定性與可解釋性。<br>
+</li>
+<li>🕰️ <strong>時效性維護</strong>：確保回饋與模型更新的節奏能跟上決策時效需求，避免<strong>策略</strong>過時。</li>
+<li>🔍 <strong>偏差修正</strong>：在訓練過程中持續檢測並修正人類回饋引入的偏差，確保<strong>策略</strong>建議的客觀性與價值對齊。</li>
+</ul></li>
+</ul>
+<p>總結來說，HITL 與 RLHF 讓 <code>指導型分析</code> 能夠融入人類不同知識領域的 <code>指導型分析</code> 智慧與經驗，確保最終<strong>策略</strong>與<strong>行動</strong>兼具科學性與實用性，並考量基本問題意識如<strong>AI對齊問題</strong>與<strong>AI控制問題</strong>等，以確保形成 <code>指導型分析</code> 「<strong>行動優化層</strong>」提升應用價值時，確保決策與行動與組織價值對齊。</p>
+<hr>
+</section>
+</section>
+<section id="決策演算法加值" class="level2" data-number="36.3">
+<h2 data-number="36.3" class="anchored" data-anchor-id="決策演算法加值"><span class="header-section-number">36.3</span> 🔁😽🪄 決策演算法加值</h2>
+<p><strong>決策演算法</strong>（Decision Algorithms）能透過幾個關鍵方式顯著增強<strong>指導型分析</strong>（Prescriptive Analytics）：</p>
 <ol type="1">
-<li>著重格局視野的<strong>知識框架</strong>：以「<strong>格物</strong>致智」中的格物為起點，以66個關鍵詞，撐起完整而豐富的知行鷹架，直面如<code>符碼紮根問題</code>、<code>框架問題</code>等底層<strong>問題意識</strong>，促進系統性掌握各流派、分析形式、等等「道」理。</li>
-<li>注重紮根實用的<strong>應用思路</strong>：以「格物<strong>致智</strong>」中的致智為目標，挑選具啟發性的解決與應用取徑，補上如<code>博弈派AI</code>、<code>具身派AI</code>、<code>AI數學</code>、<code>AI工程</code>等等的新興課題，展開創造性吸收各發展路徑的「用」法。</li>
-<li>以「格物致智」的新中文成語，把經典知識點和最新如<code>大語言模型</code> 等課題做紥根且更新的參照，構築能自我改進及擴張及延伸的<strong>知行鷹架</strong>。</li>
-<li>其中，引進了如<code>完形心理學</code>、<code>語言賽局</code>等概念，提出作者的「格物致智」的<code>演化</code>與<code>賽局</code>觀點，突出從語言到人工智能科技的系統科學觀點。</li>
-<li>最後，建構道／盜 的雙關語，點出智能在人類社會的競爭與合作性質，把「用甲骨文問卦」到「用ChatGPT求拍拍」等實踐，用<code>演化</code>與<code>賽局</code>觀點體會知識系統的底層邏輯：知識能成規則，也能挑戰規則的框智格局演化論。</li>
+<li><strong>🤖 自動化最佳決策</strong>：<strong>指導型分析</strong>的最終目標是自動化最佳決策。它能整合多種輸入（如來自<strong>預測型分析</strong>的未來預測、資源限制、成本效益等），透過如<strong>最佳化演算法</strong>（Optimization Algorithms）等技術，快速計算在特定目標下的最佳行動方案。例如，在物流供應鏈中，演算法能自動決定最佳的庫存補充量與配送路線，以最小化成本。<br>
+</li>
+<li><strong>🎯 多目標最佳化</strong>（Multi-objective Optimization）：處理現實世界中多個相互衝突的目標（如最大化利潤同時最小化風險）。<strong>決策演算法</strong>能夠處理這類複雜的<strong>多目標最佳化</strong>問題，提供權衡不同選項的解決方案，讓決策者能根據優先順序做出最有利的選擇。<br>
+</li>
+<li><strong>🔍 增強決策過程的透明度</strong>：儘管指導型分析旨在自動化決策，但理解其背後邏輯至關重要。<strong>決策演算法</strong>可以提供清晰的規則集或決策路徑，讓使用者能審核演算法的推論過程。這種透明度不僅建立了信任，也讓模型在面對新的、複雜情境時，能被手動調整與優化，避免成為避免成為「黑箱模型」（Black Box Models）。</li>
+<li><strong>🔗 情境感知優化與跨系統整合</strong>：<strong>決策演算法</strong>能根據外部環境變化（如市場波動、供應鏈中斷）動態調整策略，確保決策的即時性與有效性。當預設條件達成時，演算法能自動觸發跨系統或跨部門的工作流程，將決策從單一軟體平台延伸至整個企業生態系。<br>
+</li>
+<li><strong>🔄 與診斷／預測分析閉環</strong>：<strong>決策演算法</strong>能將實際執行結果（例如，某項促銷活動的實際銷售量）回饋至 <strong>診斷型分析</strong> 與 <strong>預測型分析</strong> 模型中。這種持續的回饋循環不僅能驗證決策的有效性，也能不斷優化底層的診斷與預測模型，從而形成一個自我強化的智慧決策閉環，持續提升決策品質。</li>
 </ol>
-<p>這本手冊在陪伴讀者理解人工智慧不同的<code>問題意識</code>及<code>解決方式</code>同時，期待也能讓讀者從系統性的理解出發，展開自己<strong>實踐</strong>與<strong>設計</strong>之旅。</p>
-<div id="nte--ed-index" class="callout callout-style-default callout-warning callout-titled" title="✎ 編輯筆記" open="false">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-註釋&nbsp;1: ✎ 編輯筆記
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">逐句<strong>事實查核</strong></label></li>
-<li><label><input type="checkbox">檢視<strong>邏輯流程</strong><br>
-</label></li>
-<li><label><input type="checkbox">確保<strong>精簡易懂</strong>的文字風格<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>內部連結</strong>：所有相關條目是否已連結<br>
-</label></li>
-<li><label><input type="checkbox">檢查<strong>外部連結</strong>：所有相關條目是否已連結</label></li>
+<p>總結來說，<strong>決策演算法</strong>將<strong>指導型分析</strong>從單純的洞察提升至可執行的智慧行動，使複雜的決策過程能被系統性地優化與自動化，幫助企業不僅「看見未來」，更能「形塑未來」。</p>
+</section>
+<section id="小結決策啟發" class="level2" data-number="36.4">
+<h2 data-number="36.4" class="anchored" data-anchor-id="小結決策啟發"><span class="header-section-number">36.4</span> ✨🪄 小結：決策啟發</h2>
+<p>值得注意的是，在 AI 與自動化工具的加持下，<code>指導型分析</code>不再只是靜態的策略建議，而是能即時更新、動態調整，並結合<strong>生成式 AI</strong>與<strong>決策演算法</strong>，成為一個持續運作的「行動優化層」，為組織提供最新、最可信的行動依據。</p>
+<p>雖然<code>指導型分析</code>的核心是將洞察轉化為行動，但它與決策演算法的結合，能將這些策略直接落地為可執行的自動化流程：</p>
+<ul>
+<li>🚨 <strong>即時觸發與行動落地</strong>：持續監控關鍵決策指標（如庫存水位、風險事件），一旦條件達成，便自動啟動應對措施或通知相關人員<br>
+</li>
+<li>🤖 <strong>策略驅動的智慧儀表板</strong>：透過機器學習與生成式 AI，自動更新並重點呈現最具影響力的策略選項，讓決策者專注於最關鍵的變數與行動<br>
+</li>
+<li>🔄 <strong>自動化決策迴路</strong>：將策略建議直接餵入決策引擎，實現從「數據輸入 → 策略生成 → 行動執行」的全自動閉環<br>
+</li>
+<li>🧭 <strong>情境感知優化</strong>：根據外部環境變化（如市場行情、政策變動、供應鏈狀況）動態調整策略與決策規則，保持行動的即時適應性<br>
+</li>
+<li>📡 <strong>跨部門策略協作整合</strong>：當策略條件達成時，可自動觸發跨平台或跨部門的協作流程，例如同步調整庫存、部署人力或啟動行銷活動</li>
 </ul>
-</div>
-</div>
-</div>
-</section>
-<section id="註釋" class="level2">
-<h2 class="anchored" data-anchor-id="註釋">📌 註釋</h2>
-
-
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-MiyakeYouichiro2017-68-concepts-AI" class="csl-entry" role="listitem">
-三宅∙陽一郎（Youichiro　Miyake）. 2017. <em>從人到人工智慧，破解AI革命的68個核心概念：實戰專家全圖解X人腦不被電腦淘汰的關鍵思考</em>. 臉譜.
-</div>
-</div>
-</section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<p>這些啟發不僅適用於組織決策，也能提升個人在面對複雜情境時的判斷力與行動力：</p>
+<ul>
+<li>🎯 <strong>問題意識</strong>：我們究竟想解決什麼？這些策略對業務或任務的影響有多大？如何將其轉化為可最佳化的數學模型與決策流程，同時確保不同利害關係人的需求與優先順序被納入考量？<br>
+</li>
+<li>🗺️ <strong>建構資源</strong>：是否擁有足夠且高品質的數據與資源來支持策略生成與執行？如何建立一個強韌的<strong>決策流程</strong>，在數據不足或模型失靈時仍可運作？<br>
+</li>
+<li>⚡ <strong>智能加值</strong>：如何利用生成式 AI 將策略建議轉化為具體的行動方案，並自動化執行？如何在<strong>決策流程</strong>中引入人類專家審核環節，以平衡自動化效率與風險控制？<br>
+</li>
+<li>📊 <strong>效果評估</strong>：如何衡量策略落地的成效？除了業務指標，也需檢視<strong>決策流程</strong>的效率、透明性與各利害關係人信任度，來系統性地把決策價值框架與人工智慧對齊<br>
+</li>
+<li>🧩 <strong>跨域連結</strong>：能否將不同領域或部門的策略需求與數據進行關聯分析，發現單一視角無法揭示的機會？<br>
+</li>
+<li>🕹️ <strong>決策模擬</strong>：能否基於策略方案快速建立「假設情境」，並模擬不同行動的可能後果，以提升行動前的判斷力？</li>
+</ul>
+<p>總之，<code>指導型分析</code>不僅是從洞察走向智慧行動的關鍵一步，更是將過去的經驗與當下的數據轉化為面向未來的行動指南。透過與新興 AI 技術的結合，它將從單純的策略工具，進化為能即時掌握<strong>行動脈絡</strong>、協同各<strong>利害關係人</strong>、<strong>對齊價值</strong>並提供具體可執行建議的<strong>智慧化決策中樞</strong>。</p>
 <hr>
-<ol>
-<li id="fn1"><p>這裡致敬日本人工智慧作家 <strong>三宅 陽一郎</strong> 的 68個核心概念 一書 <span class="citation" data-cites="MiyakeYouichiro2017-68-concepts-AI">(<a href="references.zh-hant.html#ref-MiyakeYouichiro2017-68-concepts-AI" role="doc-biblioref">三宅∙陽一郎（Youichiro　Miyake） 2017</a>)</span>。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
+</section>
+<section id="接下來" class="level2" data-number="36.5">
+<h2 data-number="36.5" class="anchored" data-anchor-id="接下來"><span class="header-section-number">36.5</span> 👉 接下來</h2>
+<ul>
+<li>決策鏈回顧（ <strong><a href="./06-04-analysis_descriptive.zh-hant.html">描述型</a> ⮫ <a href="./06-01-analysis_diagnostic.zh-hant.html">診斷型</a> ⮫ <a href="./06-02-analysis_predictive.zh-hant.html">預測型</a> ⮫ <code>指導型</code></strong> ）</li>
+<li>深究：
+<ul>
+<li>🟣🙀🎨 <a href="./06-05-analysis_generative.zh-hant.html">生成式 AI</a><br>
+</li>
+<li>🔁😽🪄 <a href="./06-06-decision_making_algorithm.zh-hant.html">決策演算法</a></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="請參閱" class="level2" data-number="36.6">
+<h2 data-number="36.6" class="anchored" data-anchor-id="請參閱"><span class="header-section-number">36.6</span> 🪸 請參閱</h2>
+<p>參照 <strong><a href="./appendix-mindmap.zh-hant.html">🔖附錄🌌 心智圖</a></strong>，將<code>指導型分析</code>與下述概念對比，檢視其是否可歸類到「指導行動」的範疇：</p>
+<ul>
+<li><a href="./03----symbolic_ai.zh-hant.html">第參篇 🏛️</a>　「符號流」AI（Symbolic AI）
+<ul>
+<li><strong>3.3</strong> 🏛️🎁🧠 <a href="./03-03-expert_systems.zh-hant.html">專家系統</a>（Expert Systems）</li>
+</ul></li>
+<li><a href="./04----statistical_ai.zh-hant.html">第肆篇 🌀</a>　「統計流」AI（Statistical AI）
+<ul>
+<li><strong>4.3</strong> 🌀🪢🧠 <a href="./04-03-neural_networks.zh-hant.html">神經網路</a>（Neural Networks）</li>
+</ul></li>
+<li><a href="./07----game_ai.zh-hant.html">第柒篇 🏆</a>　「博弈派」AI（Game AI）
+<ul>
+<li><strong>7.6</strong> 🏆🐺🧑‍🌾 <a href="./07-06-werewolf_ai.zh-hant.html">狼人殺 AI</a>（Werewolf AI）<br>
+</li>
+<li><strong>7.7</strong> 🏆🪖⚔️ <a href="./07-07-battlefield_simulation.zh-hant.html">戰場模擬</a>（Battlefield Simulation）</li>
+</ul></li>
+<li><a href="./08----embodied_ai.zh-hant.html">第捌篇 🦾</a>　「具身派」AI（Embodied AI）
+<ul>
+<li><strong>8.5</strong> 🦾🛡️🚨 <a href="./08-05-robot_safety_and_robustness.zh-hant.html">機器人安全與穩健性</a>（Robot Safety &amp; Robustness）</li>
+<li><strong>8.6</strong> 🦾🧭🎯 <a href="./08-06-robot_tasks_and_goals.zh-hant.html">任務與目標規劃</a>（Task &amp; Goal Planning）</li>
+</ul></li>
+<li><a href="./10----ai_engineering.zh-hant.html">第拾篇 🌉</a>　AI工程（AI Engineering）
+<ul>
+<li><strong>10.2</strong> 🌉🤖🚨 <a href="./10-02-agent_reliability_evaluation.zh-hant.html">智能體可靠性與評估</a>（Agent Reliability &amp; Evaluation）</li>
+<li><strong>10.5</strong> 🌉🪟🧭 <a href="./10-05-context_engineering.zh-hant.html">脈絡工程</a>（Context Engineering）</li>
+<li><strong>10.6</strong> 🎁🌱🚀 <a href="./10-06-AI_PM.zh-hant.html">AI 產品經理</a>（AI Product Management）</li>
+</ul></li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -1386,10 +1427,13 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./06-02-analysis_predictive.zh-hant.html" class="pagination-link" aria-label="🟠🤠🔮 預測型分析">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">🟠🤠🔮 預測型分析</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./notes-mental_fill-in.zh-hant.html" class="pagination-link" aria-label="💬導論~❝腦補❞知行捷徑">
-        <span class="nav-page-text">💬導論~❝腦補❞知行捷徑</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./06-04-analysis_descriptive.zh-hant.html" class="pagination-link" aria-label="🔵🤓📘 描述型分析">
+        <span class="nav-page-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">🔵🤓📘 描述型分析</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1401,7 +1445,7 @@ div.csl-indent {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/index.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/06-03-analysis_prescriptive.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
