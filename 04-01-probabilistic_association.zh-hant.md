@@ -10,7 +10,7 @@ tags:
 - 思維鏈提示法
 - 思維鏈解碼法
 ---
-# 🎲🌿機率性關聯🌀 {#sec-probabilistic-association}
+# 🎲🌿機率性關聯 {#sec-probabilistic-association}
 
 `機率性關聯`（Probabilistic Association）是一種以數據資料為基礎、結合**歸納推理**（Inductive Reasoning）與**機率推理**（Probabilistic Inference）所打造的推理框架。作為**統計流 AI**建構模型的基石，`機率性關聯`支撐著預測、分類、決策與風險評估等任務。這種以機率學量化兩個或多個變數之間**關聯性**的視角，透過現代大數據與機器學習方法，確保**歸納學習**後的**預測能力**與**泛化性**。
 

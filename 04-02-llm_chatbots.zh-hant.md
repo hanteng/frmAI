@@ -6,7 +6,7 @@ tags:
 - 向量空間
 - 脈絡工程
 ---
-# 🧞‍♀️🗪 LLM 聊天機器人🌀 {#sec-llm-chatbots}
+# 🧞‍♀️🗪LLM 聊天機器人 {#sec-llm-chatbots}
 * @sec-turing-test
 * app-api 
 * app-action

@@ -11,7 +11,7 @@ tags:
 - 資料處理
 - 數值表徵
 ---
-# 🛠️🤏 特徵工程🌀 {#sec-feature-engineering}
+# 🛠️🤏特徵工程 {#sec-feature-engineering}
 
 `特徵工程`（Feature Engineering）是**統計流 AI**（Statistical AI）中承上啟下的關鍵環節，負責將原始資料轉換為能讓**機器學習模型**有效學習的**數值特徵**（Numerical Features）。它被譽為 AI 流程中的「**資料煉金術**」——透過清理、轉換與組合原始數據，將雜亂訊號精煉成能捕捉潛在模式與關聯的精華表示。  
 
