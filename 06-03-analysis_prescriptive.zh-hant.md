@@ -179,7 +179,7 @@ tags:
 	- **4.3** 🌀🪢🧠 [神經網路](04-03-neural_networks.zh-hant.md)（Neural Networks） 
 * [第柒篇 🏆](07----game_ai.zh-hant.md)　「博弈派」AI（Game AI）
 	* **7.6** 🏆🐺🧑‍🌾 [狼人殺 AI](07-06-werewolf_ai.zh-hant.md)（Werewolf AI）  
-	* **7.7** 🏆🪖⚔️ [戰場模擬](07-07-battlefield_simulation.zh-hant.md)（Battlefield Simulation）
+	* **7.7** 🏆🪖⚔️ [複雜戰略模擬](07-07-complex_strategic_simulation.zh-hant.md)（Battlefield Simulation）
 * [第捌篇 🦾](08----embodied_ai.zh-hant.md)　「具身派」AI（Embodied AI）
 	* **8.5** 🦾🛡️🚨 [機器人安全與穩健性](08-05-robot_safety_and_robustness.zh-hant.md)（Robot Safety & Robustness）
 	* **8.6** 🦾🧭🎯 [任務與目標規劃](08-06-robot_tasks_and_goals.zh-hant.md)（Task & Goal Planning）

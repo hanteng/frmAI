@@ -222,7 +222,7 @@ tags:
 	* **5.4** ☸🛠 [任務導向](05-01-oriented_task.zh-hant.md)（Task-oriented AI）
 	* **5.5** ☸⚖️ [治理導向](05-05-oriented_governance.zh-hant.md)（Ethics-oriented）
 * [第柒篇 🏆](07----game_ai.zh-hant.md)　「博弈派」AI（Game AI）
-	* **7.7** 🏆🪖⚔️ [戰場模擬](07-07-battlefield_simulation.zh-hant.md)（Battlefield Simulation）
+	* **7.7** 🏆🪖⚔️ [複雜戰略模擬](07-07-complex_strategic_simulation.zh-hant.md)（Battlefield Simulation）
 * [第捌篇 🦾](08----embodied_ai.zh-hant.md)　「具身派」AI（Embodied AI）
 	* **8.2** 🦾📡🌡️ [感知與環境](08-02-perception_and_environment.zh-hant.md)（Perception & Environment）
 	* **8.5** 🦾🛡️🚨 [機器人安全與穩健性](08-05-robot_safety_and_robustness.zh-hant.md)（Robot Safety & Robustness）
