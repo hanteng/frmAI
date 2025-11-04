@@ -23,6 +23,12 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      # -------------------------------------------------------------
+      # 🌟 CORRECT STEP: Configure Git User Identity with the Bot ID
+      - name: Configure Git User
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com" 
       - name: Publish to GitHub Pages with zh-hant profile
         run: quarto publish gh-pages --profile zh-hant --no-prompt
         env:
