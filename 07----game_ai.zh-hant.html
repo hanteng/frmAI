@@ -763,8 +763,23 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
+   
+  <ul>
+  <li><a href="#博弈派-ai-概論" id="toc-博弈派-ai-概論" class="nav-link active" data-scroll-target="#博弈派-ai-概論">🏆博弈派 AI 概論🎲</a></li>
+  <li><a href="#博弈派-ai-簡史" id="toc-博弈派-ai-簡史" class="nav-link" data-scroll-target="#博弈派-ai-簡史">🏆博弈派 AI 簡史📜</a></li>
+  <li><a href="#博弈派-ai-新論" id="toc-博弈派-ai-新論" class="nav-link" data-scroll-target="#博弈派-ai-新論">🏆博弈派 AI 新論🏗️</a></li>
+  <li><a href="#對照解讀" id="toc-對照解讀" class="nav-link" data-scroll-target="#對照解讀">🏆對照解讀✨</a></li>
+  <li><a href="#關鍵技術構成" id="toc-關鍵技術構成" class="nav-link" data-scroll-target="#關鍵技術構成">🏆關鍵技術構成🔑</a></li>
+  <li><a href="#內容大綱" id="toc-內容大綱" class="nav-link" data-scroll-target="#內容大綱">🪴 內容大綱</a>
+  <ul>
+  <li><a href="#內容核心條目" id="toc-內容核心條目" class="nav-link" data-scroll-target="#內容核心條目">🌰 內容：核心條目</a></li>
+  <li><a href="#延伸智能軍師" id="toc-延伸智能軍師" class="nav-link" data-scroll-target="#延伸智能軍師">📦 延伸：智能軍師</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/07----game_ai.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -848,9 +863,9 @@ div.csl-indent {
 這正是 <strong>博弈派 AI</strong> 的核心之一：從 報酬結構 中抽取規則，並利用 <strong>LLM‑智能體</strong> 的 <strong>湧現</strong> 等行為參與賽局 <span class="citation" data-cites="Mensfelt2024-autoformalizing-game-theoretic-scenarios Mao2025-llm-meet-game-theory">(<a href="references.zh-hant.html#ref-Mensfelt2024-autoformalizing-game-theoretic-scenarios" role="doc-biblioref">Mensfelt, Stathis, 和 Trencsenyi, 不详</a>; <a href="references.zh-hant.html#ref-Mao2025-llm-meet-game-theory" role="doc-biblioref">Mao 等 2023</a>)</span>。&nbsp;
 </details>
 <p>收斂三句箴言「<strong>妙問</strong>」成長偈：&nbsp;&nbsp;</p>
-<ul>
-<li>🪷「<strong>本來無勝負，何處論成敗？</strong>」 〜 智慧，不止於勝負之「<strong>賽局</strong>」，更在於個體與世界的安頓之「<strong>格局</strong>」。</li>
-</ul>
+<blockquote class="blockquote">
+<p>🪷「<strong>本來無勝負，何處論成敗？</strong>」 〜 智慧，不止於勝負之「<strong>賽局</strong>」，更在於個體與世界的安頓之「<strong>格局</strong>」。</p>
+</blockquote>
 <p>參照 <strong><a href="./appendix-mindmap.zh-hant.html">🔖附錄🌌 心智圖</a></strong>&nbsp; 🎲🏆</p>
 </div>
 </div>
@@ -860,21 +875,48 @@ div.csl-indent {
 <svg aria-roledescription="flowchart-v2" role="graphics-document document" class="flowchart mermaid-js" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1" xmlns:ev="http://www.w3.org/2001/xml-events">
 <g id="viewport-20250923180406308" class="svg-pan-zoom_viewport" transform="matrix(5,0,0,5,-500,-480)" style="transform: matrix(5,0,0,5,-500,-480);"> <image href="images/mind_map.svg"></image></g>
 </svg>
-<div class="&nbsp;">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-mindmap-07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+圖&nbsp;A
+</figcaption>
+</figure>
+</div>
 <hr>
 <section id="博弈派-ai-概論" class="level2">
 <h2 class="anchored" data-anchor-id="博弈派-ai-概論">🏆博弈派 AI 概論🎲</h2>
-<p><code>「博弈派」AI</code>（Game AI）狹義上指專注於各類競技、遊戲與模擬環境中，透過策略規劃、對手建模與決策優化，達到或超越人類水準的智能系統。</p>
-<p>它不僅是娛樂或比賽的工具，更是人工智慧研究的重要試驗場；遊戲環境通常具備「<strong>明確規則</strong>」、「<strong>可重複實驗</strong>」、「<strong>可量化評估</strong>」特性，使其成為驗證<strong>演算法</strong>與系統設計的理想平台。</p>
+<p><code>「博弈派」AI</code>（Game AI）狹義上指專注於各類競技、遊戲與模擬環境中，透過<strong>策略規劃</strong>、<strong>對手建模</strong>與<strong>決策優化</strong>，達到或超越人類水準的智能系統。</p>
+<p>博弈型 AI 不僅是娛樂或比賽的工具，更是<strong>人工智慧研究的關鍵試驗場</strong>。遊戲環境通常具備以下理想特性：</p>
+<ul>
+<li><strong>明確規則</strong>：便於定義問題和邊界。<br>
+</li>
+<li><strong>可重複實驗</strong>：支持大規模數據生成和模型迭代。<br>
+</li>
+<li><strong>可量化評估</strong>：結果（如勝率、得分）能直接衡量效能。</li>
+</ul>
 <p>AI 在遊戲領域的突破，往往預示在其他複雜任務上的潛力。核心能力包括：</p>
 <ul>
-<li>⤣⤤🗺️ <strong>策略規劃</strong>：在有限時間與資源下選擇最優行動序列，完成 <a href="08-06-robot_tasks_and_goals.zh-hant">任務與目標規劃</a>，並運用 <a href="09-06-monte_carlo_tree_search.zh-hant">蒙地卡羅樹搜尋</a> 等演算法。</li>
-<li>🎲🛞 <strong>不確定性處理</strong>：在隱藏資訊或隨機事件下做出合理決策。</li>
-<li>🗺️⛶✜ <strong>世界、情境、對手與隊友建模</strong>：對「個體—脈絡—世界」進行建模與框定，識別不確定性並生成 <a href="./06----analytics_decisions.zh-hant.html">❖分析與決策</a> 以調整策略。</li>
-<li>🧮⚔️🤝 <strong>多智能體協作與競爭</strong>：在團隊或對抗環境中協調行動，包括運用 <a href="09-08-multi_agent_payoff_matrix.zh-hant">多智能體報酬矩陣</a> 等數學工具。</li>
+<li>🗺️⤣⤤ <strong>策略與目標規劃</strong>：
+<ul>
+<li>在有限時間與資源下，選擇並執行<strong>最優行動序列</strong>，完成 <a href="08-06-robot_tasks_and_goals.zh-hant">任務與目標規劃</a>。</li>
+<li>應用如<strong><a href="09-06-monte_carlo_tree_search.zh-hant">蒙地卡羅樹搜尋</a> </strong>（MCTS）等先進演算法進行決策。</li>
+</ul></li>
+<li>🎲🛞 <strong>不確定性處理</strong>：
+<ul>
+<li>在<strong>資訊不完整</strong>（隱藏資訊）或<strong>隨機事件</strong>的環境中，制定出穩健且合理的決策。</li>
+</ul></li>
+<li>⛶✜ <strong>世界、情境與個體建模</strong>：
+<ul>
+<li>對「<strong>環境</strong>—<strong>情境</strong>—<strong>對手與隊友</strong>」進行精確建模與框定，通常需要對「個體—脈絡—世界」建基本模型。</li>
+<li>識別環境中的不確定性，並生成 <strong><a href="./06----analytics_decisions.zh-hant.html">❖分析與決策</a></strong> 來動態調整策略。</li>
+</ul></li>
+<li>🧮⚔️🤝 <strong>多智能體協作與競爭</strong>：
+<ul>
+<li>在<strong>團隊或對抗</strong>環境中，高效協調或競爭行動。</li>
+<li>利用 <strong><a href="09-08-multi_agent_payoff_matrix.zh-hant">多智能體報酬矩陣</a> </strong> 等數學工具優化群體決策。</li>
+</ul></li>
 </ul>
-<p>可以說，<code>「博弈派」AI</code> 是人工智慧的「試煉場」，推動演算法、硬體與系統協同進化；從迷宮到棋盤，從虛擬戰場到現實應用，展現了 AI 在策略性思考、協作與創新上的巨大潛能。</p>
-<hr>
+<p>可以說，<code>「博弈派」AI</code> 是人工智慧的「試煉場」，推動了<strong>演算法</strong>、<strong>硬體</strong>與<strong>系統協同</strong>的進化。</p>
+<p>從圍棋、電子遊戲到虛擬模擬，博弈型 AI 展示 AI 在在<strong>策略性思考</strong>、<strong>多方協作</strong>與<strong>創新決策</strong>的巨大應用潛力。</p>
 </section>
 <section id="博弈派-ai-簡史" class="level2">
 <h2 class="anchored" data-anchor-id="博弈派-ai-簡史">🏆博弈派 AI 簡史📜</h2>
@@ -1020,15 +1062,6 @@ div.csl-indent {
 <hr>
 
 
-</section>
-</section>
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-mindmap-07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-圖&nbsp;A
-</figcaption>
-</figure>
-</div>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-lore2024" class="csl-entry" role="listitem">
 Lorè, Niccolò, 和 Babak Heydari. 2024. <span>《Strategic behavior of large language models and the role of game structure versus contextual framing》</span>. <em>Scientific Reports</em> 14 (1): 12345.
@@ -1043,6 +1076,8 @@ Mao, Shaoguang, Yuzhe Cai, Yan Xia, Wenshan Wu, Xun Wang, Fengyi Wang, Tao Ge, �
 Mensfelt, Agnieszka, Kostas Stathis, 和 Vince Trencsenyi. 不详. <span>《Autoformalizing and simulating game-theoretic scenarios using llm-augmented agents》</span>.
 </div>
 </div>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1465,7 +1500,7 @@ Mensfelt, Agnieszka, Kostas Stathis, 和 Vince Trencsenyi. 不详. <span>《Auto
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/07----game_ai.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/07----game_ai.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
