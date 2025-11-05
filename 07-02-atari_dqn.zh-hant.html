@@ -749,15 +749,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#核心博弈類型非對抗型-vs.-對抗型" id="toc-核心博弈類型非對抗型-vs.-對抗型" class="nav-link active" data-scroll-target="#核心博弈類型非對抗型-vs.-對抗型"><span class="header-section-number">41.1</span> 🤼 核心博弈類型：非對抗型 vs.&nbsp;對抗型</a></li>
-  <li><a href="#博弈挑戰與歷史" id="toc-博弈挑戰與歷史" class="nav-link" data-scroll-target="#博弈挑戰與歷史"><span class="header-section-number">41.2</span> 🕹️👾 博弈挑戰與歷史</a>
-  <ul>
-  <li><a href="#關於-atari-2600" id="toc-關於-atari-2600" class="nav-link" data-scroll-target="#關於-atari-2600"><span class="header-section-number">41.2.1</span> 🎮 關於 Atari 2600</a></li>
-  <li><a href="#博弈挑戰" id="toc-博弈挑戰" class="nav-link" data-scroll-target="#博弈挑戰"><span class="header-section-number">41.2.2</span> 🏆 博弈挑戰</a></li>
-  <li><a href="#博弈歷史" id="toc-博弈歷史" class="nav-link" data-scroll-target="#博弈歷史"><span class="header-section-number">41.2.3</span> 📜 博弈歷史</a></li>
-  </ul></li>
-  <li><a href="#克服難點方式" id="toc-克服難點方式" class="nav-link" data-scroll-target="#克服難點方式"><span class="header-section-number">41.3</span> ✅ 克服難點方式</a></li>
-  <li><a href="#ai-應用啟發" id="toc-ai-應用啟發" class="nav-link" data-scroll-target="#ai-應用啟發"><span class="header-section-number">41.4</span> 💡 AI 應用啟發</a></li>
-  <li><a href="#下一部分" id="toc-下一部分" class="nav-link" data-scroll-target="#下一部分"><span class="header-section-number">41.5</span> 👉 下一部分</a></li>
+  <li><a href="#博弈挑戰" id="toc-博弈挑戰" class="nav-link" data-scroll-target="#博弈挑戰"><span class="header-section-number">41.2</span> 🏆 博弈挑戰</a></li>
+  <li><a href="#博弈歷史" id="toc-博弈歷史" class="nav-link" data-scroll-target="#博弈歷史"><span class="header-section-number">41.3</span> 📜 博弈歷史</a></li>
+  <li><a href="#克服難點方式" id="toc-克服難點方式" class="nav-link" data-scroll-target="#克服難點方式"><span class="header-section-number">41.4</span> ✅ 克服難點方式</a></li>
+  <li><a href="#關鍵技術" id="toc-關鍵技術" class="nav-link" data-scroll-target="#關鍵技術"><span class="header-section-number">41.5</span> 🔑 關鍵技術</a></li>
+  <li><a href="#ai-應用啟發" id="toc-ai-應用啟發" class="nav-link" data-scroll-target="#ai-應用啟發"><span class="header-section-number">41.6</span> 💡 AI 應用啟發</a></li>
+  <li><a href="#下一部分" id="toc-下一部分" class="nav-link" data-scroll-target="#下一部分"><span class="header-section-number">41.7</span> 👉 下一部分</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/07-02-atari_dqn.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
@@ -784,72 +781,92 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><code>Atari DQN</code>（Atari Deep Q-Network）是由 Google DeepMind 於 2013 年開發的一種人工智慧模型 Deep Q-Network（DQN），能在數十款經典 Atari 2600 遊戲中，僅以螢幕像素作為輸入，就能達到甚至超越人類玩家的表現。</p>
-<p>DQN 的成功，標誌著<strong>深度學習</strong>與<strong>強化學習</strong>的首次完美融合，開創了「<strong>深度強化學習</strong>」（Deep Reinforcement Learning）這個重要的研究領域。</p>
+<p>DQN 的成功，標誌著<strong>深度學習</strong>與<strong>強化學習</strong>的首次完美融合，開創了「<strong>深度強化學習</strong>」（Deep Reinforcement Learning, DRL）這個重要的研究領域。</p>
 <section id="核心博弈類型非對抗型-vs.-對抗型" class="level2" data-number="41.1">
 <h2 data-number="41.1" class="anchored" data-anchor-id="核心博弈類型非對抗型-vs.-對抗型"><span class="header-section-number">41.1</span> 🤼 核心博弈類型：非對抗型 vs.&nbsp;對抗型</h2>
-<p>DQN 的重大突破在於，它能以同一套模型架構，成功處理兩種截然不同的遊戲類型，這與<strong>電子老鼠</strong>專注於<strong>非對抗型</strong>任務有所不同。</p>
+<p>DQN 的重大突破在於，它能以同一套模型架構，成功處理兩種截然不同的遊戲類型，這展示了其<strong>通用性</strong>和<strong>魯棒性</strong>。</p>
 <ul>
-<li><p>🧘 <strong>非對抗型博弈（Non-Adversarial Games）</strong></p>
-<ul>
-<li><p><strong>特徵</strong>：AI 無需與直接對手互動，其目標是單純地在環境中追求最佳表現，例如獲得最高分或生存最久。</p></li>
-<li><p><strong>🕹️ Atari 案例</strong>：在《打磚塊》（Breakout）中，AI 透過控制球拍來擊破磚塊，其挑戰來自於<strong>遊戲物理機制</strong>與<strong>自身表現的優化</strong>。AI 只需要學習如何最大化分數，而沒有來自對手的策略干擾。</p></li>
-</ul></li>
-<li><p>⚔️ <strong>對抗型博弈（Adversarial Games）</strong></p>
-<ul>
-<li><p><strong>特徵</strong>：AI 必須直接與遊戲內建的<strong>虛擬對手</strong>進行策略對抗，其目標是透過出色的策略來「擊敗」對手。</p></li>
-<li><p><strong>👾 Atari 案例</strong>：在《太空侵略者》（Space Invaders）中，AI 必須預測敵人的移動並進行反擊；在《乓》（Pong）中，AI 則要與另一方球拍進行互動，攻防往來。這些都屬於<strong>對抗型博弈</strong>，考驗 AI 在有對手環境下的決策能力。</p></li>
-</ul></li>
+<li>🧘 <strong>非對抗型博弈（Non-Adversarial Games）</strong> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - <strong>特徵</strong>：AI 無需與直接對手互動，其目標是單純地在環境中追求最佳表現，例如獲得最高分或生存最久。此類遊戲的挑戰主要來自於<strong>環境物理機制</strong>或<strong>分數優化</strong>。 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - <strong>🕹️ Atari 案例</strong>：在《打磚塊》（Breakout）中，AI 透過控制球拍來擊破磚塊，只需要學習如何最大化分數，沒有來自對手的策略干擾。 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
+<li>⚔️ <strong>對抗型博弈（Adversarial Games）</strong> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - <strong>特徵</strong>：AI 必須直接與遊戲內建的<strong>虛擬對手</strong>進行策略對抗，其目標是透過出色的策略來「擊敗」對手。 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - <strong>👾 Atari 案例</strong>：在《太空侵略者》（Space Invaders）中，AI 必須預測敵人的移動並進行反擊；在《乓》（Pong）中，AI 則要與另一方球拍進行互動。這些都屬於<strong>對抗型博弈</strong>，考驗 AI 在有對手環境下的決策能力。</li>
 </ul>
+<p>DQN 在這兩種類型遊戲中的表現均證明了深度強化學習架構的通用性。</p>
 </section>
-<section id="博弈挑戰與歷史" class="level2" data-number="41.2">
-<h2 data-number="41.2" class="anchored" data-anchor-id="博弈挑戰與歷史"><span class="header-section-number">41.2</span> 🕹️👾 博弈挑戰與歷史</h2>
-<p>在 DQN 誕生前，傳統 AI 難以在 Atari 遊戲中取得成功，因為這類遊戲的挑戰來自於高維度的感官輸入和延遲的獎勵機制。</p>
-<section id="關於-atari-2600" class="level3" data-number="41.2.1">
-<h3 data-number="41.2.1" class="anchored" data-anchor-id="關於-atari-2600"><span class="header-section-number">41.2.1</span> 🎮 關於 Atari 2600</h3>
+<section id="博弈挑戰" class="level2" data-number="41.2">
+<h2 data-number="41.2" class="anchored" data-anchor-id="博弈挑戰"><span class="header-section-number">41.2</span> 🏆 博弈挑戰</h2>
+<p><strong>在 DQN 誕生前，傳統 AI 難以在 Atari 遊戲中取得成功，因為這類遊戲的挑戰來自於高維度的感官輸入和延遲的獎勵機制。</strong></p>
 <p>Atari 2600 是一款在 1970 至 80 年代風靡一時的家用遊戲主機。儘管其遊戲畫面像素低、操作簡單（通常只有一個搖桿和一個按鈕），但遊戲內容卻需要玩家具備靈敏的反應與策略規劃能力。遊戲的狀態並非像西洋棋那樣有明確的規則可循，AI 必須從不斷變化的螢幕畫面中學習。</p>
-</section>
-<section id="博弈挑戰" class="level3" data-number="41.2.2">
-<h3 data-number="41.2.2" class="anchored" data-anchor-id="博弈挑戰"><span class="header-section-number">41.2.2</span> 🏆 博弈挑戰</h3>
 <p>DQN 團隊發現，若想開發能玩這類遊戲的 AI，必須克服以下幾個技術挑戰：</p>
 <ul>
-<li><p>🖼️ <strong>高維度感知輸入</strong>：傳統 AI 通常處理結構化的數據（如棋盤上的座標），但 Atari 遊戲的輸入是原始的<strong>像素</strong>畫面，這是一個巨大的數據矩陣。AI 必須能從這些像素中，理解遊戲的物件（如玩家、敵人、道具）和情境。</p></li>
-<li><p>⏳ <strong>延遲獎勵</strong>：AI 的行動（如向右移動）通常不會立即獲得獎勵（如分數）。一個成功的操作可能需要數秒甚至數分鐘後才會產生效果。AI 必須學會將當前的行動與未來的獎勵關聯起來。</p></li>
-<li><p>🌌 <strong>巨大的狀態空間</strong>：即使是簡單的 Atari 遊戲，所有可能的螢幕畫面組合也多得難以計算，這使得傳統的「查表法」學習策略完全行不通。</p></li>
+<li>🖼️ <strong>高維度感知輸入</strong>：傳統 AI 通常處理結構化的數據（如棋盤上的座標），但 Atari 遊戲的輸入是原始的<strong>像素</strong>畫面，這是一個巨大的數據矩陣。AI 必須能從這些像素中，理解遊戲的物件（如玩家、敵人、道具）和情境。 &nbsp; &nbsp;&nbsp;</li>
+<li>⏳ <strong>延遲獎勵</strong>：AI 的行動（如向右移動）通常不會立即獲得獎勵（如分數）。一個成功的操作可能需要數秒甚至數分鐘後才會產生效果。AI 必須學會將當前的行動與未來的獎勵關聯起來。 &nbsp; &nbsp;&nbsp;</li>
+<li>🌌 <strong>巨大的狀態空間</strong>：即使是簡單的 Atari 遊戲，所有可能的螢幕畫面組合也多得難以計算，這使得傳統的「查表法」學習策略完全行不通。 &nbsp; &nbsp;&nbsp; 這些挑戰突顯了傳統強化學習的局限性，並催生了將其與深度學習結合的必要性。</li>
 </ul>
 </section>
-<section id="博弈歷史" class="level3" data-number="41.2.3">
-<h3 data-number="41.2.3" class="anchored" data-anchor-id="博弈歷史"><span class="header-section-number">41.2.3</span> 📜 博弈歷史</h3>
+<section id="博弈歷史" class="level2" data-number="41.3">
+<h2 data-number="41.3" class="anchored" data-anchor-id="博弈歷史"><span class="header-section-number">41.3</span> 📜 博弈歷史</h2>
+<p>DeepMind 透過不斷迭代，最終展示了 DQN 模型的強大通用學習能力。</p>
 <ul>
-<li><p>📄 <strong>2013年</strong>：Google DeepMind 在《自然》（Nature）期刊上發表了 DQN 相關論文，展示了一個 AI 模型能在《乓》（Pong）、《打磚塊》（Breakout）和《太空入侵者》（Space Invaders）等遊戲上表現出色。這是首個能直接從像素輸入，學會玩遊戲的 AI 模型。</p></li>
-<li><p>🏅 <strong>2015年</strong>：DeepMind 發表了改進版的 DQN，能以超人的水平玩超過 49 款 Atari 遊戲。它的成功證明了深度強化學習的通用性，即一個模型可以無需修改，在多個不同任務上進行學習。</p></li>
+<li>📄 <strong>2013年</strong>：Google DeepMind 在《自然》（Nature）期刊上發表了 DQN 相關論文，展示了一個 AI 模型能在《乓》（Pong）、《打磚塊》（Breakout）和《太空入侵者》（Space Invaders）等遊戲上表現出色。這是首個能直接從像素輸入，學會玩遊戲的 AI 模型。 &nbsp; &nbsp;&nbsp;</li>
+<li>🏅 <strong>2015年</strong>：DeepMind 發表了改進版的 DQN，能以超人的水平玩超過 49 款 Atari 遊戲。它的成功證明了深度強化學習的通用性，即一個模型可以無需修改，在多個不同任務上進行學習。 &nbsp; &nbsp;&nbsp; DQN 標誌著通用遊戲 AI 的一個關鍵起點，為後來的 AlphaGo 等模型奠定了基礎。</li>
 </ul>
 </section>
-</section>
-<section id="克服難點方式" class="level2" data-number="41.3">
-<h2 data-number="41.3" class="anchored" data-anchor-id="克服難點方式"><span class="header-section-number">41.3</span> ✅ 克服難點方式</h2>
-<p>DQN 能夠克服這些挑戰，核心在於巧妙地結合了<strong>深度神經網路</strong>和傳統的<strong>Q-學習</strong>演算法，並引入了<strong>經驗回放</strong>機制。</p>
+<section id="克服難點方式" class="level2" data-number="41.4">
+<h2 data-number="41.4" class="anchored" data-anchor-id="克服難點方式"><span class="header-section-number">41.4</span> ✅ 克服難點方式</h2>
+<p>DQN 能夠克服這些挑戰，核心在於巧妙地結合了深度神經網路和傳統的 Q-學習演算法，並引入了經驗回放機制來穩定訓練。</p>
 <ul>
-<li><p>🧠 <strong>Q-Learning (Q-學習)</strong>：這是一種強化學習演算法，它會讓 AI 學習在特定<strong>狀態</strong>（State）下，採取某個<strong>行動</strong>（Action）能獲得多少<strong>獎勵</strong>（Reward），這個獎勵值被稱為 <strong>Q-值</strong>。傳統的 Q-學習透過一張巨大的表格來記錄每個狀態與行動的 Q-值，但這在 Atari 這種狀態空間巨大的遊戲中無法實現。</p></li>
-<li><p>💻 <strong>深度神經網路</strong>（Deep Neural Network）：DQN 使用<strong>深度神經網路</strong>來取代那張表格。這個神經網路的輸入是遊戲畫面，輸出則是每個可能行動的 Q-值。這樣，AI 就不需要儲存每一個可能的畫面，而是學會如何從任何畫面中<strong>「估計」</strong>出最佳的行動。</p></li>
-<li><p>🔄 <strong>經驗回放</strong>（Experience Replay）：為了讓學習更穩定，DQN 引入了<strong>經驗回放</strong>的機制。它會把每次與遊戲的互動（狀態、行動、獎勵、新狀態）都儲存在一個<strong>記憶庫</strong>中。在訓練時，AI 會從記憶庫中<strong>隨機抽取</strong>一小批經驗來進行學習。這避免了直接從連續的遊戲體驗中學習所產生的數據關聯性，有效提高了學習的效率和穩定性。</p></li>
+<li>🧠 <strong>Q-Learning (Q-學習)</strong>：這是一種強化學習演算法，它會讓 AI 學習在特定<strong>狀態</strong>（State）下，採取某個<strong>行動</strong>（Action）能獲得多少<strong>獎勵</strong>（Reward），這個獎勵值被稱為 <strong>Q-值</strong>。 &nbsp; &nbsp;&nbsp;</li>
+<li>💻 <strong>深度神經網路</strong>（Deep Neural Network）：DQN 使用<strong>深度神經網路</strong>來取代傳統 Q-學習中的巨大表格。輸入是遊戲畫面（像素），輸出則是每個可能行動的 Q-值。這樣，AI 就不需要儲存每一個可能的畫面，而是學會如何從任何畫面中<strong>「估計」</strong>出最佳的行動。 &nbsp; &nbsp;&nbsp;</li>
+<li>🔄 <strong>經驗回放</strong>（Experience Replay）：為了解決強化學習中數據間的<strong>關聯性</strong>和<strong>非靜態分佈</strong>問題，DQN 引入了<strong>經驗回放</strong>的機制。它將每次與遊戲的互動（狀態、行動、獎勵、新狀態）儲存在一個<strong>記憶庫</strong>中，訓練時<strong>隨機抽取</strong>經驗來學習，從而提高了學習的效率和穩定性。</li>
 </ul>
-<p>DQN 透過這三種機制，讓 AI 能夠從原始像素中理解遊戲規則，並學會如何在延遲獎勵的環境中做出長期有效的決策。</p>
+<p>透過這三種機制，DQN 成功讓 AI 能夠從原始像素中理解遊戲規則，並學會如何在延遲獎勵的環境中做出長期有效的決策。</p>
+</section>
+<section id="關鍵技術" class="level2" data-number="41.5">
+<h2 data-number="41.5" class="anchored" data-anchor-id="關鍵技術"><span class="header-section-number">41.5</span> 🔑 關鍵技術</h2>
+<p>DQN 成功的基石是其深度強化學習架構的三個核心組成部分，巧妙地解決了從高維像素中進行感知、估值和穩定訓練的問題。</p>
+<ul>
+<li><strong>深度卷積網路 (DCNN) 作為 Q-函數近似器</strong>：
+<ul>
+<li><strong>作用</strong>：負責從高維度像素輸入中提取遊戲特徵（感知）。它取代了傳統 Q-Learning 中的巨大 Q 值表格，使得 AI 能從視覺輸入直接學習價值。<br>
+</li>
+</ul></li>
+<li><strong>目標網絡 (Target Network)</strong>：
+<ul>
+<li><strong>作用</strong>：複製主網絡結構，但延遲更新。它用於計算 Q-Learning 中的目標 Q 值，從而將預測值與目標值解耦，<strong>大幅穩定訓練過程</strong>，防止 Q 值的發散。<br>
+</li>
+</ul></li>
+<li><strong>經驗回放 (Experience Replay)</strong>：
+<ul>
+<li><strong>作用</strong>：將 AI 與環境的互動經驗儲存在一個記憶庫中，並在訓練時<strong>隨機抽取</strong>批次經驗。這打破了連續遊戲數據的<strong>時間相關性</strong>，使學習過程更接近於獨立同分佈（I.I.D.），<strong>提高了訓練效率和穩定性</strong>。</li>
+</ul></li>
+</ul>
+</section>
+<section id="ai-應用啟發" class="level2" data-number="41.6">
+<h2 data-number="41.6" class="anchored" data-anchor-id="ai-應用啟發"><span class="header-section-number">41.6</span> 💡 AI 應用啟發</h2>
+<p><strong>Atari DQN 的案例，展示了深度強化學習在解決複雜決策問題上的巨大潛力，開創了將感知和行動整合的 AI 範式。</strong></p>
+<ul>
+<li><strong>🎯 問題意識</strong>：適用於<strong>需要從高維度感官輸入中學習、且獎勵延遲</strong>的任務，例如機器人學、自動駕駛、或需要從大量即時數據中做出最佳決策的自動化系統。 &nbsp; &nbsp;&nbsp;</li>
+<li><strong>🗺️ 建構資源</strong>：DQN 的成功顯示，要建構這類 AI，關鍵資源不是大量標註過的數據，而是能夠與之互動的<strong>環境</strong>和一個清晰的<strong>獎勵機制</strong>。 &nbsp; &nbsp;&nbsp;</li>
+<li><strong>⚡ 智能加值</strong>：DQN 證明了一個單一的 AI 模型，能透過學習在多個完全不同的任務上都表現出色，這體現了<strong>通用學習</strong>的能力，而不是針對單一任務的特定程式。 &nbsp; &nbsp;&nbsp;</li>
+<li><strong>🏭 佈署條件</strong>：適合在<strong>可以被簡化為「感知－決策－行動」循環</strong>的任務中部署，且環境變動可透過感測器有效捕捉。 &nbsp; &nbsp;&nbsp; ### 對「博弈派」AI 的核心貢獻</li>
+</ul>
+<p>DQN 透過引入深度學習，為解決高維度感知輸入的博弈問題提供了可行方案。</p>
+<ul>
+<li><strong>解決了高維度感知問題</strong>：首次證明深度神經網路（CNNs）可以直接從原始像素（高維度、非結構化數據）中提取特徵，並用於博弈策略學習，打破了傳統博弈 AI 僅限於結構化數據的限制。</li>
+<li><strong>奠定了深度強化學習的基礎</strong>：作為 DRL 的開山之作，DQN 架構（結合 Q-Learning、DNNs 和經驗回放）成為後續許多複雜博弈 AI（如 AlphaGo）的理論起點。</li>
+<li><strong>證明了通用遊戲 AI 的可能性</strong>：DQN 以單一架構在數十種規則、畫面、目標完全不同的遊戲中表現出色，顯示出其學習<strong>通用策略</strong>的潛力。 ### 對「具身派」AI 的啟發</li>
+</ul>
+<p>DQN 在虛擬環境中的成功，為具身智能在真實世界中的感知與行動學習提供了關鍵啟示。</p>
+<ul>
+<li><strong>感知-行動的直接映射</strong>：DQN 成功實現了從原始感測器數據（像素）到直接行動（搖桿指令）的映射，這與具身 AI 需要從攝影機、感測器直接控制機械臂或移動的挑戰高度相似。</li>
+<li><strong>長期規劃能力</strong>：通過 Q-學習和獎勵延遲的處理，AI 必須學會犧牲短期利益以換取長期獎勵，這對機器人進行複雜的<strong>任務規劃</strong>至關重要。</li>
+<li><strong>經驗回放機制</strong>：DQN 引入的經驗回放，為機器人從實際互動中高效、穩定地學習提供了關鍵的訓練機制。</li>
+</ul>
+<p>DQN 成功將深度學習引入強化學習，證明了 AI 可從高維度感知輸入中學習通用策略。</p>
 <hr>
 </section>
-<section id="ai-應用啟發" class="level2" data-number="41.4">
-<h2 data-number="41.4" class="anchored" data-anchor-id="ai-應用啟發"><span class="header-section-number">41.4</span> 💡 AI 應用啟發</h2>
-<p>Atari DQN 的案例，展示了深度強化學習在解決複雜決策問題上的巨大潛力。</p>
-<ul>
-<li><p><strong>🎯 問題意識</strong>：適用於<strong>需要從高維度感官輸入中學習、且獎勵延遲</strong>的任務，例如機器人學、自動駕駛、或需要從大量即時數據中做出最佳決策的自動化系統。</p></li>
-<li><p><strong>🗺️ 建構資源</strong>：DQN 的成功顯示，要建構這類 AI，關鍵資源不是大量標註過的數據，而是能夠與之互動的<strong>環境</strong>和一個清晰的<strong>獎勵機制</strong>。</p></li>
-<li><p><strong>⚡ 智能加值</strong>：DQN 證明了一個單一的 AI 模型，能透過學習在多個完全不同的任務上都表現出色，這體現了<strong>通用學習</strong>的能力，而不是針對單一任務的特定程式。</p></li>
-<li><p><strong>🏭 佈署條件</strong>：適合在<strong>可以被簡化為「感知－決策－行動」循環</strong>的任務中部署，且環境變動可透過感測器有效捕捉。</p></li>
-</ul>
-<hr>
-</section>
-<section id="下一部分" class="level2" data-number="41.5">
-<h2 data-number="41.5" class="anchored" data-anchor-id="下一部分"><span class="header-section-number">41.5</span> 👉 下一部分</h2>
-<p>在理解<strong>Atari DQN</strong>如何將 AI 帶入深度強化學習的時代後，同時克服<strong>非對抗型博弈</strong>與<strong>對抗型博弈</strong>賽局後，接下來將探討 <strong><a href="./07-03-alphago.zh-hant.html">AlphaGo 圍棋</a></strong>（AlphaGo），看它如何將 AI 推向另一高峰，在圍棋這類<strong>完全資訊博弈</strong>中展現超越人類的策略思考能力。</p>
+<section id="下一部分" class="level2" data-number="41.7">
+<h2 data-number="41.7" class="anchored" data-anchor-id="下一部分"><span class="header-section-number">41.7</span> 👉 下一部分</h2>
+<p>在理解 <strong>Atari DQN</strong> 如何將 AI 帶入深度強化學習的時代後，同時克服<strong>非對抗型博弈</strong>與<strong>對抗型博弈</strong>賽局後，接下來將探討 <strong><a href="./07-03-alphago.zh-hant.html">AlphaGo 圍棋</a></strong>（AlphaGo），看它如何將 AI 推向另一高峰，在圍棋這類<strong>完全資訊博弈</strong>中展現超越人類的策略思考能力。</p>
 
 
 </section>

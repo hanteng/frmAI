@@ -845,13 +845,21 @@ window.Quarto = {
 </section>
 <section id="關鍵技術" class="level2" data-number="42.4">
 <h2 data-number="42.4" class="anchored" data-anchor-id="關鍵技術"><span class="header-section-number">42.4</span> 🔑 關鍵技術</h2>
-<p>AlphaGo 成功的基石是深度強化學習（Deep Reinforcement Learning, DRL）的創新應用，巧妙地將神經網路集成到搜索過程中。</p>
-<p>DeepMind AlphaGo 具體技術實現 <strong>深度強化學習</strong> 包含：</p>
+<p>AlphaGo 的核心技術是** <strong>深度強化學習</strong> (DRL) 與<strong>高級搜索算法</strong>（MCTS）的結合，這是解決圍棋長序列規劃問題的關鍵。</p>
 <ul>
-<li><strong>卷積神經網絡</strong>（CNNs）：用於將棋盤狀態（高維輸入）進行特徵提取，以便於模型理解當前局面。</li>
-<li><strong>策略網絡</strong>（Policy Network）：是一個深度卷積網絡，用於估計在當前狀態下，每一步走法的機率（<span class="math inline">\(P(a|s)\)</span>），從而大幅度縮減搜索的廣度。</li>
-<li><strong>價值網絡</strong>（Value Network）：是另一個深度卷積網絡，用於估計當前局面下最終的勝率（<span class="math inline">\(V(s)\)</span>），從而指導搜索的深度。</li>
-<li><strong><a href="09-06-monte_carlo_tree_search">蒙地卡羅樹搜尋</a></strong>（MCTS）：以模擬為基礎，它利用策略網絡和價值網絡引導搜索，實現高效的樹搜索，而非傳統 AI 的蠻力窮舉。</li>
+<li><strong>雙重神經網路系統</strong>（Dual Neural Networks）：
+<ul>
+<li><strong>策略網絡</strong>（Policy Network）：用於估計在當前狀態下，<strong>每一步走法的機率</strong> <span class="math inline">\(P(a|s)\)</span>。它用於指導 MCTS 的<strong>廣度搜索</strong>，快速篩選出有希望的走法（剪枝）。</li>
+<li><strong>價值網絡</strong>（Value Network）：用於估計當前局面下<strong>最終的勝率</strong> <span class="math inline">\(V(s)\)</span>。它用於指導 MCTS 的<strong>深度搜索</strong>，在不必完成整個遊戲的情況下對葉節點進行高效評估。</li>
+</ul></li>
+<li><strong>蒙地卡羅樹搜尋</strong>（Monte Carlo Tree Search, MCTS）：
+<ul>
+<li><strong>作用</strong>：以模擬為基礎的搜索算法。它利用<strong>策略網絡</strong>進行行動選擇（Selection/Expansion），並利用<strong>價值網絡</strong>進行局面評估（Backpropagation），實現<strong>數百萬次高效的自我對弈模擬</strong>，從而找到最佳決策。</li>
+</ul></li>
+<li><strong>深度強化學習與自我對弈</strong>：
+<ul>
+<li><strong>作用</strong>：通過自我對弈，不斷產生超越人類專家水平的數據，並用於迭代訓練策略網絡和價值網絡，實現從數據中<strong>自主學習超人級策略</strong>。</li>
+</ul></li>
 </ul>
 <p>這些技術的結合讓 AlphaGo 實現了高效率的搜索和精準的局面評估。</p>
 </section>
