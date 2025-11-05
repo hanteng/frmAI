@@ -72,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -748,14 +777,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#博弈挑戰與歷史" id="toc-博弈挑戰與歷史" class="nav-link active" data-scroll-target="#博弈挑戰與歷史"><span class="header-section-number">42.1</span> ⚪⚫ 博弈挑戰與歷史</a>
+  <li><a href="#博弈挑戰" id="toc-博弈挑戰" class="nav-link active" data-scroll-target="#博弈挑戰"><span class="header-section-number">42.1</span> 🏆 博弈挑戰</a></li>
+  <li><a href="#博弈歷史" id="toc-博弈歷史" class="nav-link" data-scroll-target="#博弈歷史"><span class="header-section-number">42.2</span> 📜 博弈歷史</a></li>
+  <li><a href="#克服難點方式" id="toc-克服難點方式" class="nav-link" data-scroll-target="#克服難點方式"><span class="header-section-number">42.3</span> ✅ 克服難點方式</a></li>
+  <li><a href="#關鍵技術" id="toc-關鍵技術" class="nav-link" data-scroll-target="#關鍵技術"><span class="header-section-number">42.4</span> 🔑 關鍵技術</a></li>
+  <li><a href="#ai-應用啟發" id="toc-ai-應用啟發" class="nav-link" data-scroll-target="#ai-應用啟發"><span class="header-section-number">42.5</span> 💡 AI 應用啟發</a>
   <ul>
-  <li><a href="#博弈挑戰" id="toc-博弈挑戰" class="nav-link" data-scroll-target="#博弈挑戰"><span class="header-section-number">42.1.1</span> 🏆博弈挑戰</a></li>
-  <li><a href="#博弈歷史" id="toc-博弈歷史" class="nav-link" data-scroll-target="#博弈歷史"><span class="header-section-number">42.1.2</span> 📜博弈歷史</a></li>
-  <li><a href="#克服難點方式" id="toc-克服難點方式" class="nav-link" data-scroll-target="#克服難點方式"><span class="header-section-number">42.1.3</span> ✅克服難點方式</a></li>
+  <li><a href="#對博弈派ai-的核心貢獻" id="toc-對博弈派ai-的核心貢獻" class="nav-link" data-scroll-target="#對博弈派ai-的核心貢獻"><span class="header-section-number">42.5.1</span> 對「博弈派」AI 的核心貢獻</a></li>
+  <li><a href="#對具身派ai-的啟發" id="toc-對具身派ai-的啟發" class="nav-link" data-scroll-target="#對具身派ai-的啟發"><span class="header-section-number">42.5.2</span> 對「具身派」AI 的啟發</a></li>
   </ul></li>
-  <li><a href="#ai-應用啟發" id="toc-ai-應用啟發" class="nav-link" data-scroll-target="#ai-應用啟發"><span class="header-section-number">42.2</span> 💡 AI 應用啟發</a></li>
-  <li><a href="#下一部分" id="toc-下一部分" class="nav-link" data-scroll-target="#下一部分"><span class="header-section-number">42.3</span> 👉 下一部分</a></li>
+  <li><a href="#下一部分" id="toc-下一部分" class="nav-link" data-scroll-target="#下一部分"><span class="header-section-number">42.6</span> 👉 下一部分</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/07-03-alphago.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
@@ -782,54 +813,80 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><code>AlphaGo 圍棋</code>或譯 <code>阿爾法圍棋</code>（AlphaGo）標誌著人工智慧（AI）在博弈挑戰上的重要里程碑。由 <strong>DeepMind</strong> 公司採用其 <strong><a href="04-03-neural_networks">深度學習</a></strong> 為核心技術，於2016年擊敗韓國職業棋手 <strong>李世乭</strong>，成為勝過人類精英棋手的博弈派 AI 經典案例。</p>
-<section id="博弈挑戰與歷史" class="level2" data-number="42.1">
-<h2 data-number="42.1" class="anchored" data-anchor-id="博弈挑戰與歷史"><span class="header-section-number">42.1</span> ⚪⚫ 博弈挑戰與歷史</h2>
-<p>圍棋歷史悠久，在東亞文化圈有數千年的歷史。因候選棋步遠多於西洋棋等（約10的360次方），圍棋算是在<strong>完全資訊博弈</strong>問題領域中最具挑戰的賽局。</p>
-<section id="博弈挑戰" class="level3" data-number="42.1.1">
-<h3 data-number="42.1.1" class="anchored" data-anchor-id="博弈挑戰"><span class="header-section-number">42.1.1</span> 🏆博弈挑戰</h3>
-<p>雖然僅分成白和黑棋，圍棋的具體挑戰有：</p>
+<section id="博弈挑戰" class="level2" data-number="42.1">
+<h2 data-number="42.1" class="anchored" data-anchor-id="博弈挑戰"><span class="header-section-number">42.1</span> 🏆 博弈挑戰</h2>
+<p>圍棋歷史悠久且複雜，在東亞文化圈有數千年的歷史，長期以來是人工智慧難以征服的堡壘。因候選棋步遠多於西洋棋等（約<span class="math inline">\(10^{360}\)</span>次方），圍棋算是在<strong>完全資訊博弈</strong>問題領域中最具挑戰性的賽局。</p>
+<p>雖然僅分成白和黑棋，圍棋的具體挑戰主要體現在兩個方面：</p>
 <ul>
-<li><strong>評估函數</strong>（evaluation function）難生成－－計算勝率時，因候選棋步多，全盤評估難；</li>
-<li><strong>交互動態</strong> 變動大－－常常一步棋，影響格局大；</li>
+<li><strong>評估函數</strong>（evaluation function）難生成：由於候選棋步極多，計算當前局面的全盤勝率極為困難。</li>
+<li><strong>交互動態</strong> 變動大：盤面狀態高度動態，一步棋常常會對整體格局產生巨大的影響，難以進行穩定的長期規劃。</li>
 </ul>
-<p>因此，在 AlphaGo 圍棋之前，主要基於各種不同局面來撰寫AI 圍棋評估程式。</p>
+<p>鑑於這些挑戰，在 AlphaGo 圍棋出現之前，AI 主要依賴於預設的局面知識和有限的搜索來撰寫圍棋評估程式，效果有限。</p>
 </section>
-<section id="博弈歷史" class="level3" data-number="42.1.2">
-<h3 data-number="42.1.2" class="anchored" data-anchor-id="博弈歷史"><span class="header-section-number">42.1.2</span> 📜博弈歷史</h3>
-<p>AlphaGo 圍棋在 2016 挑戰成功前，有以下的發展歷史：</p>
+<section id="博弈歷史" class="level2" data-number="42.2">
+<h2 data-number="42.2" class="anchored" data-anchor-id="博弈歷史"><span class="header-section-number">42.2</span> 📜 博弈歷史</h2>
+<p>AlphaGo 的成功是 DeepMind 公司長期專注於類神經網路研究的成果。AlphaGo 圍棋在 2016 挑戰成功前，有以下的發展歷史：</p>
 <ul>
-<li>2010年，<strong>Demis Hassabis</strong>（戴米斯·哈薩比斯）、<strong>Shane Legg</strong>（尚恩·利格）和 <strong>Mustafa Suleyman</strong>（穆斯塔法·蘇萊曼）於 <strong>倫敦</strong> 創建 <strong>DeepMind</strong> 公司，特別採用 <strong>類神經網路</strong> 為核心技術；</li>
-<li>2014年，<strong>Google</strong> 併購 DeepMind，重新命名為 <strong>Google DeepMind</strong>，突顯其 <strong>深度學習</strong>研究實力；</li>
-<li>2015年，<strong>AlphaGo</strong> 開發出 <strong>第一代</strong>，在 <strong>歐洲圍棋大賽</strong> 擊敗歐洲冠軍樊麾（Fan Hui）；</li>
-<li>2016年，<strong>AlphaGo</strong> 以 <strong>4:1</strong> 擊敗世界圍棋冠軍 <strong>李世乭</strong>。</li>
+<li><strong>2010年</strong>：<strong>Demis Hassabis</strong>（戴米斯·哈薩比斯）、<strong>Shane Legg</strong>（尚恩·利格）和 <strong>Mustafa Suleyman</strong>（穆斯塔法·蘇萊曼）於 倫敦創建 <strong>DeepMind</strong> 公司，特別採用 <strong>類神經網路</strong> 為核心技術。</li>
+<li><strong>2014年</strong>：<strong>Google</strong> 併購 DeepMind，重新命名為 <strong>Google DeepMind</strong>，突顯其 <strong>深度學習</strong> 研究實力。</li>
+<li><strong>2015年</strong>：<strong>AlphaGo</strong> 開發出 <strong>第一代</strong>，在 <strong>歐洲圍棋大賽</strong> 擊敗歐洲冠軍樊麾（Fan Hui）。</li>
+<li><strong>2016年</strong>：<strong>AlphaGo</strong> 以 <strong>4:1</strong> 擊敗世界圍棋冠軍 <strong>李世乭</strong>，正式確立了 AI 在圍棋領域的領先地位。</li>
 </ul>
-<p>如下段所詳述，DeepMind 採用 <a href="04-03-neural_networks">深度學習</a>，並以模擬為基礎實踐 <strong><a href="09-06-monte_carlo_tree_search">蒙地卡羅樹搜尋</a></strong>，以模擬對手隨機落子反覆計算勝率。</p>
+<p>這次歷史性的勝利，標誌著 AI 第一次在完全資訊博弈中戰勝人類精英。AlphaGo 圍棋的核心方法是透過模擬對手隨機落子反覆計算勝率，以找到最佳決策。</p>
 </section>
-<section id="克服難點方式" class="level3" data-number="42.1.3">
-<h3 data-number="42.1.3" class="anchored" data-anchor-id="克服難點方式"><span class="header-section-number">42.1.3</span> ✅克服難點方式</h3>
-<p>DeepMind AlphaGo 以結合 <strong><a href="09-06-monte_carlo_tree_search">蒙地卡羅樹搜尋</a></strong> 及深度學習的方式，分以下2學習階段：</p>
+<section id="克服難點方式" class="level2" data-number="42.3">
+<h2 data-number="42.3" class="anchored" data-anchor-id="克服難點方式"><span class="header-section-number">42.3</span> ✅ 克服難點方式</h2>
+<p><strong>AlphaGo 的核心突破在於，它有效地將深度學習的模式識別能力與傳統搜索算法的規劃能力結合起來。</strong> DeepMind AlphaGo 實踐了<strong>可評估棋盤局面的直覺思考</strong>。它透過結合 <strong><a href="09-06-monte_carlo_tree_search">蒙地卡羅樹搜尋</a></strong> 及 <a href="04-03-neural_networks">深度學習</a> 的方式，分以下兩個階段克服了圍棋的複雜性：</p>
 <ol type="1">
-<li><strong>大數據學習</strong>－－從龐大的棋譜資料庫，如同職業棋士去調較策略函數（policy function），並用 <strong><a href="09-06-monte_carlo_tree_search">蒙地卡羅樹搜尋</a></strong> 實現；</li>
-<li>自我博弈<strong>強化學習</strong>－－利用 <strong><a href="04-03-neural_networks">神經網路</a></strong> 建模學習，從而引導 AI 選擇勝率高的下一步。</li>
+<li><strong>大數據學習</strong>（監督式學習）：從龐大的棋譜資料庫中學習人類專家的下棋模式，如同職業棋士去調較策略函數（policy function），並用 <strong><a href="09-06-monte_carlo_tree_search">蒙地卡羅樹搜尋</a></strong> 實現。</li>
+<li><strong>自我博弈強化學習</strong>：在此階段，AlphaGo 與自身對弈來產生新的經驗數據，利用 <strong><a href="04-03-neural_networks">神經網路</a></strong> 建模學習，從而引導 AI 選擇勝率高的下一步，達到超越人類策略的境界。</li>
 </ol>
-<p>可以說，經神經網路深度學習，AlphaGo 實踐可評估棋盤局面的直覺思考。</p>
+<p>透過這兩個階段的學習，AlphaGo 成功地在巨大的搜索空間中進行高效決策，並獲得了人類難以企及的「直覺」判斷能力。</p>
 </section>
-</section>
-<section id="ai-應用啟發" class="level2" data-number="42.2">
-<h2 data-number="42.2" class="anchored" data-anchor-id="ai-應用啟發"><span class="header-section-number">42.2</span> 💡 AI 應用啟發</h2>
-<p>DeepMind AlphaGo 展示了機器在人機博弈時，預先利用神經網路深度學習人類<strong>已有的相關知識的總和</strong>，是能在像圍棋一樣的<strong>完全資訊博弈</strong>問題領域，戰勝人類精英的。</p>
-<p>此案例對 AI 應用有以下啟發：</p>
+<section id="關鍵技術" class="level2" data-number="42.4">
+<h2 data-number="42.4" class="anchored" data-anchor-id="關鍵技術"><span class="header-section-number">42.4</span> 🔑 關鍵技術</h2>
+<p>AlphaGo 成功的基石是深度強化學習（Deep Reinforcement Learning, DRL）的創新應用，巧妙地將神經網路集成到搜索過程中。</p>
+<p>DeepMind AlphaGo 具體技術實現 <strong>深度強化學習</strong> 包含：</p>
 <ul>
-<li><p><strong>🎯 問題意識</strong>：適用於 <strong>有明確目標與規則的決策</strong> 任務。</p></li>
-<li><p><strong>🗺️ 建構資源</strong>：全局或全面格局的世界框架<strong>能被數字化表示</strong>來訓練模型。&nbsp;&nbsp;</p></li>
-<li><p><strong>⚡ 智能加值</strong>：能在<strong>海量數據</strong>中學到超越人類專家知識的策略，並<strong>自我博弈</strong>強化學習成果。</p></li>
-<li><p><strong>🏭 佈署條件</strong>：適合在<strong>可控、半結構化或全結構化</strong>的作業環境中部署，並可依需求擴展到物理空間。</p></li>
+<li><strong>卷積神經網絡</strong>（CNNs）：用於將棋盤狀態（高維輸入）進行特徵提取，以便於模型理解當前局面。</li>
+<li><strong>策略網絡</strong>（Policy Network）：是一個深度卷積網絡，用於估計在當前狀態下，每一步走法的機率（<span class="math inline">\(P(a|s)\)</span>），從而大幅度縮減搜索的廣度。</li>
+<li><strong>價值網絡</strong>（Value Network）：是另一個深度卷積網絡，用於估計當前局面下最終的勝率（<span class="math inline">\(V(s)\)</span>），從而指導搜索的深度。</li>
+<li><strong><a href="09-06-monte_carlo_tree_search">蒙地卡羅樹搜尋</a></strong>（MCTS）：以模擬為基礎，它利用策略網絡和價值網絡引導搜索，實現高效的樹搜索，而非傳統 AI 的蠻力窮舉。</li>
+</ul>
+<p>這些技術的結合讓 AlphaGo 實現了高效率的搜索和精準的局面評估。</p>
+</section>
+<section id="ai-應用啟發" class="level2" data-number="42.5">
+<h2 data-number="42.5" class="anchored" data-anchor-id="ai-應用啟發"><span class="header-section-number">42.5</span> 💡 AI 應用啟發</h2>
+<p>AlphaGo 的案例為未來 AI 的發展和應用提供了一個強有力的藍圖，特別是在決策與規劃領域，為 AI 應用帶來以下啟發：</p>
+<ul>
+<li><strong>🎯 問題意識</strong>：證明了 AI 尤其適用於 <strong>有明確目標與規則的決策</strong> 任務。</li>
+<li><strong>🗺️ 建構資源</strong>：表明了全局或全面格局的「世界框架」<strong>能被數字化表示</strong>來訓練模型，這是應用 DRL 的先決條件。</li>
+<li><strong>⚡ 智能加值</strong>：AI 能在<strong>海量數據</strong>中學到超越人類專家知識的策略，並透過<strong>自我博弈</strong>強化學習成果，實現智能的持續增長。</li>
+<li><strong>🏭 佈署條件</strong>：這類 AI 適合在<strong>可控、半結構化或全結構化</strong>的作業環境中部署，並可依需求擴展到物理空間的任務規劃。</li>
+</ul>
+<p>DeepMind AlphaGo 展示了機器在<strong>完全資訊博弈</strong>問題領域中，能通過深度學習超越人類精英。</p>
+<section id="對博弈派ai-的核心貢獻" class="level3" data-number="42.5.1">
+<h3 data-number="42.5.1" class="anchored" data-anchor-id="對博弈派ai-的核心貢獻"><span class="header-section-number">42.5.1</span> 對「博弈派」AI 的核心貢獻</h3>
+<p>AlphaGo 是博弈派 AI 的里程碑，其技術架構和學習範式對後續的博弈 AI 產生了深遠影響。</p>
+<ul>
+<li>首次成功結合 <strong>蒙地卡羅樹搜尋</strong> 與 <strong>深度神經網路</strong> 進行決策，為後來的博弈 AI 奠定基礎。</li>
+<li>證明了 <strong>深度強化學習</strong> 在處理極高維度和巨大搜索空間問題上的強大能力。</li>
+<li>確立了<strong>自我對弈</strong>作為在沒有人類頂級數據情況下產生超人策略的有效方法（儘管第一代 AlphaGo 仍依賴人類棋譜，但後續版本如 AlphaGo Zero 則完全採用自我對弈）。</li>
+</ul>
+</section>
+<section id="對具身派ai-的啟發" class="level3" data-number="42.5.2">
+<h3 data-number="42.5.2" class="anchored" data-anchor-id="對具身派ai-的啟發"><span class="header-section-number">42.5.2</span> 對「具身派」AI 的啟發</h3>
+<p>儘管圍棋是純粹的模擬遊戲，AlphaGo 的成功也為需要在物理世界中進行決策的具身智能提供了重要思路。</p>
+<ul>
+<li>儘管圍棋是模擬遊戲，但其決策機制（從狀態到行動的規劃）啟發了<strong>任務與目標規劃</strong>的實體應用。</li>
+<li>強調了 AI 需要一個內在的<strong>價值評估機制</strong>（如價值網絡）來指導行動，這與具身智能在複雜物理世界中進行目標導向行動的需求相似。</li>
 </ul>
 <hr>
 </section>
-<section id="下一部分" class="level2" data-number="42.3">
-<h2 data-number="42.3" class="anchored" data-anchor-id="下一部分"><span class="header-section-number">42.3</span> 👉 下一部分</h2>
-<p>在 理解 <strong><a href="04-03-neural_networks">神經網路</a></strong> 深度學習 與 <a href="09-06-monte_carlo_tree_search">蒙地卡羅樹搜尋</a> 數學工具 助 AlphaGo 圍棋打敗人類精英棋手后，接下來探討 <a href="./07-04-poker_ai.zh-hant.html">撲克 AI</a>（Libratus / Pluribus）的博弈挑戰及克服方法啟發。</p>
+</section>
+<section id="下一部分" class="level2" data-number="42.6">
+<h2 data-number="42.6" class="anchored" data-anchor-id="下一部分"><span class="header-section-number">42.6</span> 👉 下一部分</h2>
+<p>在理解 <strong><a href="04-03-neural_networks">神經網路</a></strong> 深度學習 與 <strong><a href="09-06-monte_carlo_tree_search">蒙地卡羅樹搜尋</a></strong> 數學工具 助 AlphaGo 圍棋打敗人類精英棋手后，接下來探討 <a href="./07-04-poker_ai.zh-hant.html">撲克 AI</a>（Libratus / Pluribus）在<strong>不完全資訊博弈</strong>中的挑戰及克服方法啟發。</p>
 
 
 </section>
