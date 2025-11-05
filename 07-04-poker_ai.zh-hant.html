@@ -748,14 +748,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#博弈挑戰與歷史" id="toc-博弈挑戰與歷史" class="nav-link active" data-scroll-target="#博弈挑戰與歷史"><span class="header-section-number">43.1</span> 🃏💰 博弈挑戰與歷史</a>
+  <li><a href="#博弈挑戰" id="toc-博弈挑戰" class="nav-link active" data-scroll-target="#博弈挑戰"><span class="header-section-number">43.1</span> 🏆 博弈挑戰</a></li>
+  <li><a href="#博弈歷史" id="toc-博弈歷史" class="nav-link" data-scroll-target="#博弈歷史"><span class="header-section-number">43.2</span> 📜 博弈歷史</a></li>
+  <li><a href="#克服難點方式" id="toc-克服難點方式" class="nav-link" data-scroll-target="#克服難點方式"><span class="header-section-number">43.3</span> ✅ 克服難點方式</a></li>
+  <li><a href="#關鍵技術" id="toc-關鍵技術" class="nav-link" data-scroll-target="#關鍵技術"><span class="header-section-number">43.4</span> 🔑 關鍵技術</a></li>
+  <li><a href="#ai-應用啟發" id="toc-ai-應用啟發" class="nav-link" data-scroll-target="#ai-應用啟發"><span class="header-section-number">43.5</span> 💡 AI 應用啟發</a>
   <ul>
-  <li><a href="#博弈挑戰" id="toc-博弈挑戰" class="nav-link" data-scroll-target="#博弈挑戰"><span class="header-section-number">43.1.1</span> 🏆博弈挑戰</a></li>
-  <li><a href="#博弈歷史" id="toc-博弈歷史" class="nav-link" data-scroll-target="#博弈歷史"><span class="header-section-number">43.1.2</span> 📜博弈歷史</a></li>
-  <li><a href="#克服難點方式" id="toc-克服難點方式" class="nav-link" data-scroll-target="#克服難點方式"><span class="header-section-number">43.1.3</span> ✅克服難點方式</a></li>
+  <li><a href="#對博弈派ai-的核心貢獻" id="toc-對博弈派ai-的核心貢獻" class="nav-link" data-scroll-target="#對博弈派ai-的核心貢獻"><span class="header-section-number">43.5.1</span> 對「博弈派」AI 的核心貢獻</a></li>
+  <li><a href="#對具身派ai-的啟發" id="toc-對具身派ai-的啟發" class="nav-link" data-scroll-target="#對具身派ai-的啟發"><span class="header-section-number">43.5.2</span> 對「具身派」AI 的啟發</a></li>
   </ul></li>
-  <li><a href="#ai-應用啟發" id="toc-ai-應用啟發" class="nav-link" data-scroll-target="#ai-應用啟發"><span class="header-section-number">43.2</span> 💡 AI 應用啟發</a></li>
-  <li><a href="#下一部分" id="toc-下一部分" class="nav-link" data-scroll-target="#下一部分"><span class="header-section-number">43.3</span> 👉 下一部分</a></li>
+  <li><a href="#下一部分" id="toc-下一部分" class="nav-link" data-scroll-target="#下一部分"><span class="header-section-number">43.6</span> 👉 下一部分</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/07-04-poker_ai.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
@@ -782,54 +784,92 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><code>Libratus</code> 和 <code>Pluribus</code> 是由 <strong>卡內基美隆大學</strong>（Carnegie Mellon University）開發的撲克 AI，它們在撲克這類<strong>非完全資訊博弈</strong>（imperfect-information game）中，展現了超越人類頂尖玩家的實力。這些 AI 標誌著博弈 AI 在處理資訊不對稱與詐賭等複雜動態方面的重要進展。</p>
-<section id="博弈挑戰與歷史" class="level2" data-number="43.1">
-<h2 data-number="43.1" class="anchored" data-anchor-id="博弈挑戰與歷史"><span class="header-section-number">43.1</span> 🃏💰 博弈挑戰與歷史</h2>
-<p>撲克歷史悠久，是一種廣受歡迎的<strong>多玩家不對稱</strong>博弈遊戲。與圍棋不同，撲克最大的挑戰在於資訊不完全，也就是玩家無法得知對手底牌，必須在<strong>不確定性</strong>中做出決策。</p>
-<section id="博弈挑戰" class="level3" data-number="43.1.1">
-<h3 data-number="43.1.1" class="anchored" data-anchor-id="博弈挑戰"><span class="header-section-number">43.1.1</span> 🏆博弈挑戰</h3>
+<p>撲克作為一種多玩家、資訊不對稱的博弈，為 AI 帶來了與完全資訊遊戲截然不同的挑戰。撲克歷史悠久，是一種廣受歡迎的<strong>多玩家不對稱</strong>博弈遊戲。與圍棋不同，撲克最大的挑戰在於資訊不完全，也就是玩家無法得知對手底牌，必須在<strong>不確定性</strong>中做出決策。</p>
+<section id="博弈挑戰" class="level2" data-number="43.1">
+<h2 data-number="43.1" class="anchored" data-anchor-id="博弈挑戰"><span class="header-section-number">43.1</span> 🏆 博弈挑戰</h2>
 <p>撲克雖規則簡單，但具體挑戰有：</p>
 <ul>
-<li><p><strong>資訊不完全</strong>：玩家無法看到對手的底牌，必須依賴觀察與推測；</p></li>
-<li><p><strong>博弈動態</strong>複雜：包含下注、加注、跟注與棄牌等行為，以及詐賭（bluffing）等心理戰術；</p></li>
-<li><p><strong>報酬矩陣</strong> 不穩定：單次博弈的輸贏有隨機性，但長期來看須追求期望收益最大化。</p></li>
+<li><strong>資訊不完全</strong>：玩家無法看到對手的底牌，必須依賴觀察與推測，這使得<strong>詐賭</strong>（Bluffing）成為一種重要的策略；</li>
+<li><strong>博弈動態複雜</strong>：包含下注、加注、跟注與棄牌等行為，決策空間廣闊，且策略必須具備<strong>隨機性</strong>以避免被對手預測；</li>
+<li><strong>報酬矩陣不穩定</strong>：單次博弈的輸贏有隨機性（運氣成分），但 AI 必須追求<strong>長期期望收益最大化</strong>。</li>
 </ul>
-<p>因此，在 Libratus 和 Pluribus 之前，AI 撲克主要基於簡化模型或特定策略來應對資訊不完全的問題。</p>
+<p>因此，在 Libratus 和 Pluribus 之前，AI 撲克主要基於簡化模型或特定策略來應對資訊不完全的問題，難以擊敗頂級人類玩家。</p>
 </section>
-<section id="博弈歷史" class="level3" data-number="43.1.2">
-<h3 data-number="43.1.2" class="anchored" data-anchor-id="博弈歷史"><span class="header-section-number">43.1.2</span> 📜博弈歷史</h3>
-<p>在 Libratus 和 Pluribus 於 2017 年和 2019 年挑戰成功前，有以下的發展歷史：</p>
+<section id="博弈歷史" class="level2" data-number="43.2">
+<h2 data-number="43.2" class="anchored" data-anchor-id="博弈歷史"><span class="header-section-number">43.2</span> 📜 博弈歷史</h2>
+<p>撲克 AI 的歷史是對抗資訊不完全和多玩家複雜性的過程。在 Libratus 和 Pluribus 於 2017 年和 2019 年挑戰成功前，有以下的發展歷史：</p>
 <ul>
-<li><p>2015年，<strong>德州撲克</strong> AI <strong>Claudico</strong> 在與四位人類玩家的單挑賽中落敗，突顯了撲克 AI 的技術瓶頸；</p></li>
-<li><p>2017年，卡內基美隆大學的 <strong>Tuomas Sandholm</strong> 教授團隊開發出 <strong>Libratus</strong>，在 <strong>匹茲堡</strong> 的一場長達 20 天的比賽中，擊敗了四位頂級人類德州撲克專家；</p></li>
-<li><p>2019年，<strong>Libratus</strong> 的繼承者 <strong>Pluribus</strong> 在<strong>六人制德州撲克</strong>中，擊敗了多名世界冠軍級別的職業牌手。</p></li>
+<li><strong>2015年</strong>：<strong>德州撲克</strong> AI <strong>Claudico</strong> 在與四位人類玩家的單挑賽中落敗，突顯了撲克 AI 在處理隨機性和欺騙策略上的技術瓶頸。</li>
+<li><strong>2017年</strong>：卡內基美隆大學的 <strong>Tuomas Sandholm</strong> 教授團隊開發出 <strong>Libratus</strong>，在 <strong>匹茲堡</strong> 的一場長達 20 天的比賽中，<strong>首次</strong>在<strong>雙人制無限注德州撲克</strong>中，擊敗了四位頂級人類專家。</li>
+<li><strong>2019年</strong>：<strong>Libratus</strong> 的繼承者 <strong>Pluribus</strong> 在<strong>六人制無限注德州撲克</strong>中，擊敗了多名世界冠軍級別的職業牌手，這標誌著 AI 成功征服了<strong>多人非完全資訊博弈</strong>。</li>
 </ul>
-<p>如下段所詳述，這些撲克 AI 主要採用 <strong>蒙地卡羅樹搜尋</strong> 和 <strong>博弈理論</strong>，特別是<strong>納許均衡</strong>（Nash Equilibrium）的概念，來應對不完全資訊的挑戰。</p>
+<p>這些撲克 AI 的成功，證明了賽局理論和強化學習在不確定性環境中規劃複雜策略的強大能力。</p>
 </section>
-<section id="克服難點方式" class="level3" data-number="43.1.3">
-<h3 data-number="43.1.3" class="anchored" data-anchor-id="克服難點方式"><span class="header-section-number">43.1.3</span> ✅克服難點方式</h3>
-<p>Libratus 和 Pluribus 以結合 <strong><a href="09-06-monte_carlo_tree_search.zh-hant">蒙地卡羅樹搜尋</a></strong> 及博弈理論的方式，分以下2學習階段：</p>
+<section id="克服難點方式" class="level2" data-number="43.3">
+<h2 data-number="43.3" class="anchored" data-anchor-id="克服難點方式"><span class="header-section-number">43.3</span> ✅ 克服難點方式</h2>
+<p>Libratus 和 Pluribus 透過結合深度搜索和賽局理論，使得 AI 能夠在不確定性中找到近似於納許均衡的最佳策略。</p>
 <ol type="1">
-<li><p><strong>自我博弈</strong>－－透過<strong>強化學習</strong>，AI 在沒有人類數據的情況下，與自身進行了數百萬次的博弈，從而摸索出近似於 <strong>納許均衡</strong> 的最佳策略；</p></li>
-<li><p><strong>子賽局解決</strong>－－在博弈中，AI 會動態地將當前局面視為一個「子賽局」，並利用 <strong><a href="09-06-monte_carlo_tree_search.zh-hant">蒙地卡羅樹搜尋</a></strong> 來即時計算出最佳的應對方案。</p></li>
+<li><strong>自我博弈與強化學習</strong>：AI 在沒有人類數據的情況下，與自身進行了數百萬次的博弈，從而摸索出近似於 <strong>納許均衡</strong> 的<strong>遊戲理論最佳策略</strong>（Game-Theoretic Optimal, GTO）。</li>
+<li><strong>子賽局解決（Subgame Solving）</strong>：在實際博弈中，AI 會動態地將當前局面視為一個「子賽局」，並利用 <strong><a href="09-06-monte_carlo_tree_search.zh-hant">蒙地卡羅樹搜尋</a></strong> 來即時計算出當前情況下的最佳應對方案。</li>
+<li><strong>抽象化與粗粒化（Abstraction and Coarse-Graining）</strong>：由於撲克的狀態空間過於龐大，AI 會將數十億個可能的牌面或行動<strong>抽象化</strong>為更小的類別（例如，將許多相似牌力組合成一個「牌組類」），以便於即時計算和搜索。</li>
 </ol>
-<p>可以說，經由強化學習和即時決策，撲克 AI 能在<strong>不確定性</strong>中，實現超越人類的理性決策。</p>
+<p>透過這些技術，撲克 AI 能在不確定性中，實現超越人類的理性決策，並成功應對欺騙與隨機性。</p>
 </section>
-</section>
-<section id="ai-應用啟發" class="level2" data-number="43.2">
-<h2 data-number="43.2" class="anchored" data-anchor-id="ai-應用啟發"><span class="header-section-number">43.2</span> 💡 AI 應用啟發</h2>
-<p>Libratus 和 Pluribus 展示了機器在 <strong>非完全資訊博弈</strong> 中，能在 <strong>不確定性</strong> 和 <strong>資訊不對稱</strong> 的環境下，利用數學與 <strong>賽局理論</strong> 的嚴謹邏輯，戰勝人類精英。這與圍棋 AI 的啟發點有所不同。</p>
-<p>此案例對 AI 應用有以下啟發：</p>
+<section id="關鍵技術" class="level2" data-number="43.4">
+<h2 data-number="43.4" class="anchored" data-anchor-id="關鍵技術"><span class="header-section-number">43.4</span> 🔑 關鍵技術</h2>
+<p>撲克 AI 的核心是利用計算博弈理論（Computational Game Theory）來逼近納許均衡，並結合 MCTS 進行即時決策。</p>
 <ul>
-<li><p><strong>🎯 問題意識</strong>：適用於 <strong>資訊不完全、存在欺騙或不確定性</strong> 的決策任務。</p></li>
-<li><p><strong>🗺️ 建構資源</strong>：能用<strong>賽局理論</strong>和<strong>數學模型</strong>來描述的複雜互動與策略。</p></li>
-<li><p><strong>⚡ 智能加值</strong>：能在<strong>缺乏全面資訊</strong>的情況下，學會做出<strong>長期的最佳決策</strong>，並能應用於多智能體環境。</p></li>
-<li><p><strong>🏭 佈署條件</strong>：適合在<strong>半結構化</strong>或<strong>動態</strong>的作業環境中部署，例如金融市場分析、網路安全或協商談判。</p></li>
+<li><strong>納許均衡（Nash Equilibrium）</strong>：理論目標是找到一種策略組合，使任何一方單獨改變策略都不會帶來更好的預期收益。撲克 AI 追求的是<strong>近似納許均衡</strong>，即一個理論上無法被完美擊敗的策略。</li>
+<li><strong>反事實遺憾最小化（Counterfactual Regret Minimization, CFR）</strong>：一種迭代算法，被 Libratus 和 Pluribus 用於訓練階段，通過不斷模擬對局並計算「遺憾值」（如果採取了不同行動會得到的收益），最終使遺憾值趨近於零，從而收斂到納許均衡。</li>
+<li><strong>蒙地卡羅反事實遺憾最小化（MCCFR）</strong>：結合了 <strong>CFR</strong> 和 <strong>蒙地卡羅抽樣</strong>，用於加速多玩家撲克中的訓練和即時搜索，使 AI 能夠處理極其龐大的狀態空間。</li>
+<li><strong>動態子賽局解決</strong>：將大賽局分解為小賽局，並在需要時（如遇到關鍵下注點）利用即時 MCTS 搜索來找到最優解，確保 AI 在執行 GTO 策略的同時，具有應對突發情況的靈活性。</li>
+</ul>
+</section>
+<section id="ai-應用啟發" class="level2" data-number="43.5">
+<h2 data-number="43.5" class="anchored" data-anchor-id="ai-應用啟發"><span class="header-section-number">43.5</span> 💡 AI 應用啟發</h2>
+<p>Libratus 和 Pluribus 展示了機器在非完全資訊博弈中，能在不確定性和資訊不對稱的環境下，利用賽局理論的嚴謹邏輯，戰勝人類精英。</p>
+<ul>
+<li><strong>🎯 問題意識</strong>：適用於 <strong>資訊不完全、存在欺騙或不確定性</strong> 的決策任務。</li>
+<li><strong>🗺️ 建構資源</strong>：能用<strong>賽局理論</strong>和<strong>數學模型</strong>來描述的複雜互動與策略；關鍵在於能夠進行<strong>抽象化</strong>和<strong>隨機化</strong>的決策。</li>
+<li><strong>⚡ 智能加值</strong>：能在<strong>缺乏全面資訊</strong>的情況下，學會做出<strong>長期的最佳決策</strong>，並能應用於多智能體環境（如 Pluribus 的六人撲克）。</li>
+<li><strong>🏭 佈署條件</strong>：適合在<strong>半結構化</strong>或<strong>動態</strong>的作業環境中部署，例如金融市場分析、網路安全或協商談判。</li>
+</ul>
+<section id="對博弈派ai-的核心貢獻" class="level3" data-number="43.5.1">
+<h3 data-number="43.5.1" class="anchored" data-anchor-id="對博弈派ai-的核心貢獻"><span class="header-section-number">43.5.1</span> 對「博弈派」AI 的核心貢獻</h3>
+<ul>
+<li><strong>征服非完全資訊博弈 (Imperfect Information)</strong>：
+<ul>
+<li>撲克 AI 首次證明，機器可以在<strong>資訊不完全</strong>的複雜遊戲中（例如無法得知對手底牌的無限注德州撲克），持續戰勝人類頂尖高手。這將 AI 的能力範圍從規則清晰的<strong>完全資訊</strong>遊戲（如圍棋）推展到充滿不確定性的領域。</li>
+</ul></li>
+<li><strong>實現「無法被完美擊敗」的 GTO 策略</strong>：
+<ul>
+<li>AI 成功在實戰中逼近<strong>納許均衡</strong>（Nash Equilibrium，一種賽局理論的平衡點）。這意味著它執行了一種<strong>遊戲理論最佳策略</strong>（GTO）。</li>
+<li><strong>GTO 策略</strong>：這是一種理論上<strong>無懈可擊</strong>的策略。如果對手採用任何其他策略，AI 至少不會輸，長期下來還能獲利。AI 透過<strong>反事實遺憾最小化</strong>（CFR）等數學算法來學習這種策略。</li>
+</ul></li>
+<li><strong>處理欺騙與隨機性</strong>：
+<ul>
+<li>AI 成功將<strong>隨機性</strong>和<strong>欺騙</strong>納入決策。它能根據理論要求，在必要時進行<strong>詐賭</strong>或隨機下注，讓人類對手難以預測其行動，同時也能有效地應對對手的欺騙戰術。</li>
+</ul></li>
+</ul>
+</section>
+<section id="對具身派ai-的啟發" class="level3" data-number="43.5.2">
+<h3 data-number="43.5.2" class="anchored" data-anchor-id="對具身派ai-的啟發"><span class="header-section-number">43.5.2</span> 對「具身派」AI 的啟發</h3>
+<ul>
+<li><strong>不確定性下的決策</strong>：
+<ul>
+<li>撲克 AI 的核心優勢是在<strong>資訊不足</strong>的情況下做出最優決策。這對<strong>具身 AI</strong>（例如機器人或無人車）的啟發巨大，因為它們在現實世界中也常面臨<strong>感測器數據不確定</strong>或<strong>環境被部分遮擋</strong>（資訊不完全）的挑戰。</li>
+</ul></li>
+<li><strong>長期規劃與抽象化能力</strong>：
+<ul>
+<li>AI 能夠將複雜的牌局<strong>抽象化</strong>（簡化）為更易處理的「子賽局」，並在簡化模型中進行深度規劃。這種<strong>分解複雜問題</strong>並在<strong>不完美模型</strong>中做出<strong>長期決策</strong>的能力，對於具身 AI 規劃複雜的物理任務（如跨越障礙、多步驟操作）至關重要。</li>
+</ul></li>
 </ul>
 <hr>
 </section>
-<section id="下一部分" class="level2" data-number="43.3">
-<h2 data-number="43.3" class="anchored" data-anchor-id="下一部分"><span class="header-section-number">43.3</span> 👉 下一部分</h2>
-<p>在理解 <strong><a href="./07-04-poker_ai.zh-hant.html">撲克 AI</a></strong> 在資訊不完全博弈中的策略與挑戰後，接下來探討 <strong><a href="./07-05-openai_five.zh-hant.html">OpenAI Five</a></strong> 在複雜團隊合作博弈中的啟發。</p>
+</section>
+<section id="下一部分" class="level2" data-number="43.6">
+<h2 data-number="43.6" class="anchored" data-anchor-id="下一部分"><span class="header-section-number">43.6</span> 👉 下一部分</h2>
+<p>在理解 <strong><a href="./07-04-poker_ai.zh-hant.html">撲克 AI</a></strong> 如何利用賽局理論在資訊不完全博弈中戰勝人類精英後，接下來探討 <strong><a href="./07-05-openai_five.zh-hant.html">OpenAI Five</a></strong> 在複雜團隊合作博弈中的啟發，那是一個涉及<strong>即時策略</strong>與<strong>多智能體協作</strong>的挑戰。</p>
 
 
 </section>
