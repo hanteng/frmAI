@@ -748,15 +748,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#競賽挑戰與歷史" id="toc-競賽挑戰與歷史" class="nav-link active" data-scroll-target="#競賽挑戰與歷史"><span class="header-section-number">40.1</span> 🐭🗺️ 競賽挑戰與歷史</a>
+  <li><a href="#競賽挑戰與歷史" id="toc-競賽挑戰與歷史" class="nav-link active" data-scroll-target="#競賽挑戰與歷史"><span class="header-section-number">40.1</span> 🐭🗺️ 競賽挑戰與歷史</a></li>
+  <li><a href="#競賽與非對抗型博弈" id="toc-競賽與非對抗型博弈" class="nav-link" data-scroll-target="#競賽與非對抗型博弈"><span class="header-section-number">40.2</span> 🏆 競賽與非對抗型博弈</a></li>
+  <li><a href="#博弈歷史晶片革命與里程碑" id="toc-博弈歷史晶片革命與里程碑" class="nav-link" data-scroll-target="#博弈歷史晶片革命與里程碑"><span class="header-section-number">40.3</span> 📜 博弈歷史：晶片革命與里程碑</a></li>
+  <li><a href="#克服難點方式" id="toc-克服難點方式" class="nav-link" data-scroll-target="#克服難點方式"><span class="header-section-number">40.4</span> ✅ 克服難點方式</a></li>
+  <li><a href="#關鍵技術" id="toc-關鍵技術" class="nav-link" data-scroll-target="#關鍵技術"><span class="header-section-number">40.5</span> 🔑 關鍵技術</a></li>
+  <li><a href="#ai-應用啟發" id="toc-ai-應用啟發" class="nav-link" data-scroll-target="#ai-應用啟發"><span class="header-section-number">40.6</span> 💡 AI 應用啟發</a>
   <ul>
-  <li><a href="#競賽與非對抗型博弈" id="toc-競賽與非對抗型博弈" class="nav-link" data-scroll-target="#競賽與非對抗型博弈"><span class="header-section-number">40.1.1</span> 🏆 競賽與非對抗型博弈</a></li>
-  <li><a href="#核心技術挑戰" id="toc-核心技術挑戰" class="nav-link" data-scroll-target="#核心技術挑戰"><span class="header-section-number">40.1.2</span> ⚙️ 核心技術挑戰</a></li>
-  <li><a href="#博弈歷史晶片革命與里程碑" id="toc-博弈歷史晶片革命與里程碑" class="nav-link" data-scroll-target="#博弈歷史晶片革命與里程碑"><span class="header-section-number">40.1.3</span> 📜 博弈歷史：晶片革命與里程碑</a></li>
-  <li><a href="#克服難點方式" id="toc-克服難點方式" class="nav-link" data-scroll-target="#克服難點方式"><span class="header-section-number">40.1.4</span> ✅ 克服難點方式</a></li>
-  <li><a href="#ai-應用啟發" id="toc-ai-應用啟發" class="nav-link" data-scroll-target="#ai-應用啟發"><span class="header-section-number">40.1.5</span> 💡 AI 應用啟發</a></li>
-  <li><a href="#下一部分" id="toc-下一部分" class="nav-link" data-scroll-target="#下一部分"><span class="header-section-number">40.1.6</span> 👉 下一部分</a></li>
+  <li><a href="#對博弈派ai-的核心貢獻" id="toc-對博弈派ai-的核心貢獻" class="nav-link" data-scroll-target="#對博弈派ai-的核心貢獻"><span class="header-section-number">40.6.1</span> 對「博弈派」AI 的核心貢獻</a></li>
+  <li><a href="#對具身派ai-的啟發" id="toc-對具身派ai-的啟發" class="nav-link" data-scroll-target="#對具身派ai-的啟發"><span class="header-section-number">40.6.2</span> 對「具身派」AI 的啟發</a></li>
   </ul></li>
+  <li><a href="#下一部分" id="toc-下一部分" class="nav-link" data-scroll-target="#下一部分"><span class="header-section-number">40.7</span> 👉 下一部分</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/07-01-ieee_micromouse.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
@@ -782,75 +784,122 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><code>IEEE電子老鼠走迷宮</code>（IEEE Micromouse）是一項國際性的機器人競賽，參賽者需設計一隻「電子老鼠」小型機器人，使其能在一個複雜且未知的迷宮中，從起點出發，自主探索並找到中心點，最終再以最快的速度循著最短路徑回到終點。</p>
-<p>電子老鼠競賽是 <strong><a href="08----embodied_ai.zh-hant">具身派 AI</a></strong>（Embodied AI）與 <strong>物理 AI</strong>（Physical AI）的經典範例，它在<strong>未知的物理環境</strong>中，執行「感知、決策、行動」的完整循環，考驗機器人硬體與其核心<strong>演算法</strong>和<strong>自動導航</strong>的智慧，考量<a href="08-05-robot_safety_and_robustness.zh-hant">機器人安全與穩健性</a> 與 <a href="08-06-robot_tasks_and_goals.zh-hant">任務與目標規劃</a>。</p>
+<p><code>IEEE電子老鼠走迷宮</code>（IEEE Micromouse）是一項國際性的機器人競賽，參賽者需設計一隻「電子老鼠」小型機器人，使其能在一個複雜且<strong>未知</strong>的迷宮中，從起點出發，自主探索並找到中心點，最終再以最快的速度循著最短路徑回到終點。</p>
+<p>電子老鼠競賽是 <strong><a href="08----embodied_ai.zh-hant">具身派 AI</a></strong>（Embodied AI）與 <strong>物理 AI</strong>（Physical AI）的經典範例，它在<strong>未知的物理環境</strong>中，執行「感知、決策、行動」的完整循環，考驗機器人硬體與其核心<strong>演算法</strong>和<strong>自動導航</strong>的智慧。</p>
 <section id="競賽挑戰與歷史" class="level2" data-number="40.1">
 <h2 data-number="40.1" class="anchored" data-anchor-id="競賽挑戰與歷史"><span class="header-section-number">40.1</span> 🐭🗺️ 競賽挑戰與歷史</h2>
-<p>電子老鼠走迷宮的挑戰，涉及的挑戰不僅僅是<a href="08-01-robotics_and_physical_actuation.zh-hant">機器人學與實體驅動</a>（Robotics &amp; Physical Actuation），還得在老鼠邊移動時的<strong>探索</strong>及<strong>導航</strong>的能力。</p>
+<p>電子老鼠走迷宮的挑戰，不僅涉及<a href="08-01-robotics_and_physical_actuation.zh-hant">機器人學與實體驅動</a>，還得考驗機器人在移動時的<strong>探索</strong>及<strong>導航</strong>能力。</p>
 <p>全名為 IEEE Micromouse Engineering Competition (MEC)，這項競賽的標準迷宮為 <strong>16x16</strong> 單位的格狀結構，由一堵堵牆壁組成。迷宮牆壁位置每次比賽都會隨機更換，這意味著機器人無法事先獲得任何地圖資訊。</p>
-<section id="競賽與非對抗型博弈" class="level3" data-number="40.1.1">
-<h3 data-number="40.1.1" class="anchored" data-anchor-id="競賽與非對抗型博弈"><span class="header-section-number">40.1.1</span> 🏆 競賽與非對抗型博弈</h3>
-<p>IEEE 電子老鼠迷宮嚴格來說並非對抗型<strong>賽局（game）</strong>，而是一場<strong>競賽（competition）</strong>，其本質屬於<strong>非對抗型博弈</strong>（或稱<strong>單智能體博弈</strong>）。</p>
-<ul>
-<li><p>🙅‍♂️ <strong>無直接對手</strong>：電子老鼠的「對手」不是另一個機器人，而是<strong>迷宮本身</strong>與<strong>時間</strong>。機器人不會與其他參賽者進行任何物理或策略上的互動。</p></li>
-<li><p>🏁 <strong>非對抗性目標</strong>：其目標是獨立完成迷宮探索並找出最短路徑，勝負依據其導航與運算速度，而非「擊敗」或「阻撓」對手。AI 專注於優化自身在特定環境下的表現，將效能推向極致。</p></li>
-</ul>
 </section>
-<section id="核心技術挑戰" class="level3" data-number="40.1.2">
-<h3 data-number="40.1.2" class="anchored" data-anchor-id="核心技術挑戰"><span class="header-section-number">40.1.2</span> ⚙️ 核心技術挑戰</h3>
-<p>為了完成這項任務，電子老鼠必須解決一系列複雜的技術問題：</p>
+<section id="競賽與非對抗型博弈" class="level2" data-number="40.2">
+<h2 data-number="40.2" class="anchored" data-anchor-id="競賽與非對抗型博弈"><span class="header-section-number">40.2</span> 🏆 競賽與非對抗型博弈</h2>
+<p>IEEE 電子老鼠迷宮嚴格來說並非對抗型<strong>賽局</strong>（game），而是一場<strong>競賽</strong>（competition），其本質屬於<strong>非對抗型博弈</strong>（或稱<strong>單智能體博弈</strong>）。</p>
 <ul>
-<li><p>🗺️ <strong>同步定位與建圖（SLAM）</strong>：這是機器人的核心技術。機器人必須在移動時，同步進行<strong>定位（Localization）與建圖（Mapping）</strong>。它利用內建感測器偵測牆壁，逐步繪製虛擬地圖，同時追蹤自身位置。這兩個任務是同步且互相依賴的。<strong>SLAM</strong>（<strong>S</strong>imultaneous <strong>L</strong>ocalization <strong>a</strong>nd <strong>M</strong>apping）兩大核心任務：</p>
-<ul>
-<li>📍<strong>定位</strong>：機器人必須時刻準確地知道自己「<strong>在哪裡</strong>」。</li>
-<li>🗺️<strong>建圖</strong>：機器人必須繪製出對「<strong>環境的認知</strong>」，即靠邊<strong>走動</strong>邊<strong>感知環境</strong>得出的迷宮的地圖。</li>
-<li><strong>同步</strong>（Simultaneous）指的是定位與建圖是同時進行且互相依賴的，而且電子老鼠該往哪去，加減速等等，亦突顯其<strong>即時決策</strong>的挑戰</li>
-</ul></li>
-<li><p>🧭 <strong>路徑規劃與優化</strong>：機器人不僅要找到一條能通往終點的路，更要在第二次的「競速賽」中找到<strong>最短路徑</strong>。這需要 AI 在第一次探索時有效記錄所有路徑資訊，並在後續運算中找出最佳解。</p></li>
-<li><p>🎢 <strong>物理世界的不可預測性</strong>：即使是微小的感測器誤差、地面摩擦力變化或電池電量下降，都可能影響導航精準性。AI 必須具備足夠的<strong>魯棒性</strong>（Robustness），才能在不完美的條件下穩定執行任務。</p></li>
+<li>🙅‍♂️ <strong>無直接對手</strong>：電子老鼠的「對手」是<strong>迷宮本身</strong>與<strong>時間限制</strong>。機器人不會與其他參賽者進行任何物理或策略上的互動。</li>
+<li>🏁 <strong>非對抗性目標</strong>：其目標是獨立完成迷宮探索並找出最短路徑，勝負依據其導航與運算速度，而非「擊敗」或「阻撓」對手。AI 專注於優化自身在特定環境下的表現。</li>
 </ul>
+<p>該競賽是探討 AI 在複雜、未知的物理世界中，進行自主決策與優化表現的經典案例。</p>
 </section>
-<section id="博弈歷史晶片革命與里程碑" class="level3" data-number="40.1.3">
-<h3 data-number="40.1.3" class="anchored" data-anchor-id="博弈歷史晶片革命與里程碑"><span class="header-section-number">40.1.3</span> 📜 博弈歷史：晶片革命與里程碑</h3>
-<p>自 1977 年第一屆 IEEE 電子老鼠走迷宮競賽在美國舉行以來，這項比賽不僅是演算法的試驗場，更是一部濃縮的<strong>晶片與硬體技術發展史</strong>。其里程碑與電腦晶片的演進緊密相關：</p>
-<ul>
-<li><p>💡 <strong>1977 年代初期：微處理器的萌芽</strong> 首屆競賽在美國舉行，當時的機器人主要使用基礎的<strong>8 位元微處理器</strong>，運算能力非常有限。這階段的挑戰重點在於硬體設計與實現基本的循跡與避障能力，演算法相對簡單，例如沿牆行走或隨機漫步。</p></li>
-<li><p>📈 <strong>1980 年代：處理器效能大躍進</strong> 隨著微處理器技術的進步，16 位元甚至更強大的處理器開始應用於電子老鼠。這股「晶片革命」使得機器人能夠進行更複雜的即時運算，從而採用如<strong>廣度優先搜尋（BFS）</strong>和 <strong>A* 演算法</strong>等高效能的演算法，實現了對迷宮的完整地圖繪製與最短路徑規劃。</p></li>
-<li><p>🧩 <strong>1990 年代：精準控制與系統整合微控制器</strong>（Microcontroller）開始普及，其整合度與效能大幅提升。參賽者不再只追求速度，而是專注於提高控制的精準性。機器人開始運用更先進的<strong>光學編碼器</strong>和感測器來實時修正路徑，確保在高速行駛時不會因微小誤差而撞牆，系統整合能力成為勝出的關鍵。</p></li>
-<li><p>🚀 <strong>2000 年代：32 位元晶片與更複雜的演算法</strong> 高效能的 <strong>32 位元晶片</strong>成為主流，運算能力再次飛躍。這使得機器人能在行進中，快速執行更為複雜的<strong>即時軌跡規劃</strong>（Real-time trajectory planning），不再完全依賴事先計算好的路徑，而是能根據感測器資料做出即時調整，展現出更強大的適應性。</p></li>
-<li><p>💻 <strong>2010 年代：系統單晶片與極致優化</strong> <strong>系統單晶片（SoC）</strong>的出現，將多個功能（如中央處理器、記憶體、感測器介面）整合在單一晶片上，大幅縮小了機器人體積並提升了效率。這個時代的競爭已進入毫秒級別，勝敗取決於硬體（如低電阻電源管理、輕量化結構）和軟體（如高度優化的程式碼）的每一個微小細節。</p></li>
-<li><p>🧠 <strong>2020 年代：人工智慧與感測器融合</strong> 在硬體優化達到極致的基礎上，當代電子老鼠開始探索更先進的 AI 技術。部分團隊嘗試運用<strong>感測器融合</strong>（Sensor Fusion）技術，將陀螺儀、加速度計等多種感測器數據整合，以實現更穩定的姿態控制。此外，也有團隊嘗試將<strong>機器學習</strong>演算法嵌入到機器人中，使其能在比賽過程中學習並微調參數，以應對各種未知變數，將機器人自主性推向新的極限。</p></li>
-</ul>
+<section id="博弈歷史晶片革命與里程碑" class="level2" data-number="40.3">
+<h2 data-number="40.3" class="anchored" data-anchor-id="博弈歷史晶片革命與里程碑"><span class="header-section-number">40.3</span> 📜 博弈歷史：晶片革命與里程碑</h2>
+<p><strong>自 1977 年首屆競賽以來，電子老鼠的發展史就是一部濃縮的晶片與硬體技術演進史。</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">年代</th>
+<th style="text-align: left;">技術里程碑</th>
+<th style="text-align: left;">演算法/挑戰重點</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>1977 年代初期</strong></td>
+<td style="text-align: left;">基礎 <strong>8 位元微處理器</strong></td>
+<td style="text-align: left;">實現基本的循跡與避障；採用沿牆行走等簡單算法。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>1980 年代</strong></td>
+<td style="text-align: left;"><strong>16 位元處理器</strong> 普及</td>
+<td style="text-align: left;">採用 <strong>BFS</strong> 和 <strong>A* 演算法</strong>，實現完整的地圖繪製與最短路徑規劃。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>1990 年代</strong></td>
+<td style="text-align: left;"><strong>微控制器</strong>普及，精準控制</td>
+<td style="text-align: left;">專注於提高控制的精準性，運用<strong>光學編碼器</strong>和感測器實時修正路徑。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>2000 年代</strong></td>
+<td style="text-align: left;">高效能 <strong>32 位元晶片</strong>主流</td>
+<td style="text-align: left;">實現更為複雜的<strong>即時軌跡規劃</strong>，根據感測器資料做出即時調整。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>2010 年代</strong></td>
+<td style="text-align: left;"><strong>系統單晶片（SoC）</strong>應用</td>
+<td style="text-align: left;">競爭進入毫秒級別，勝敗取決於硬體（輕量化）和軟體（程式碼優化）的極致整合。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>2020 年代</strong></td>
+<td style="text-align: left;"><strong>AI 與感測器融合</strong></td>
+<td style="text-align: left;">嘗試運用<strong>感測器融合</strong>和<strong>機器學習</strong>來微調參數，將機器人自主性推向新的極限。</td>
+</tr>
+</tbody>
+</table>
 <p>現今，頂尖的電子老鼠已能在幾秒內跑完複雜迷宮，展現了軟體智慧與硬體工程的完美結合。</p>
 </section>
-<section id="克服難點方式" class="level3" data-number="40.1.4">
-<h3 data-number="40.1.4" class="anchored" data-anchor-id="克服難點方式"><span class="header-section-number">40.1.4</span> ✅ 克服難點方式</h3>
-<p>電子老鼠之所以能夠在未知迷宮中自主導航，核心在於結合了<strong>探索</strong>與<strong>路徑規劃</strong>兩大階段，並運用以下幾種關鍵演算法：</p>
-<ul>
-<li><p>🔍 <strong>探索階段</strong>：在第一次進入迷宮時，機器人會採用<strong>深度優先搜尋</strong>（Depth-First Search, DFS）或<strong>廣度優先搜尋</strong>（Breadth-First Search, BFS）等演算法，系統性地探索每個可能的路口，並將走過的路線與牆壁位置儲存起來，逐步建立起完整的迷宮地圖。</p></li>
-<li><p>🗺️ <strong>路徑規劃階段</strong>：一旦機器人抵達終點並繪製出完整地圖後，它會立即計算從起點到終點的最短路徑。這個階段通常使用更高效的演算法，例如<strong>迪克斯特拉演算法</strong>（Dijkstra’s Algorithm）或<strong>A* 演算法</strong>，以確保第二次的競速賽能以最短時間完成。</p></li>
-<li><p>⚙️ <strong>即時糾錯</strong>：先進的電子老鼠系統會持續將感測器數據與內部地圖進行比對。如果發現實際位置與預期不符，AI 會立即啟動<strong>回饋迴路</strong>（Feedback Loop）來調整其行進軌跡，確保不會因小失誤而偏離路線。</p></li>
-</ul>
-<p>電子老鼠的成功，證明了即使在一個充滿不確定性的物理環境中，AI 仍能透過精準的演算法與感測器輸入，自主完成複雜的導航與決策任務。</p>
-<hr>
+<section id="克服難點方式" class="level2" data-number="40.4">
+<h2 data-number="40.4" class="anchored" data-anchor-id="克服難點方式"><span class="header-section-number">40.4</span> ✅ 克服難點方式</h2>
+<p>電子老鼠之所以能夠在未知迷宮中自主導航，核心在於結合了<strong>探索</strong>與<strong>路徑規劃</strong>兩大階段，並運用了高效的演算法。</p>
+<ol type="1">
+<li><strong>🔍 探索階段</strong>：在第一次進入迷宮時，機器人會採用<strong>深度優先搜尋</strong>（DFS）或<strong>廣度優先搜尋</strong>（BFS）等演算法，系統性地探索每個可能的路口，並將牆壁位置儲存起來，逐步建立起完整的迷宮地圖。</li>
+<li><strong>🗺️ 路徑規劃階段</strong>：一旦地圖繪製完成，機器人會立即計算從起點到終點的最短路徑。這個階段通常使用更高效的演算法，例如<strong>迪克斯特拉演算法</strong>（Dijkstra’s Algorithm）或<strong>A* 演算法</strong>，以確保第二次的競速賽能以最短時間完成。</li>
+<li><strong>⚙️ 即時糾錯（回饋迴路）</strong>：先進的電子老鼠系統會持續將感測器數據與內部地圖進行比對，通過<strong>回饋迴路</strong>（Feedback Loop）來調整其行進軌跡，確保不會因物理世界的微小不確定性而偏離路線。</li>
+</ol>
+<p>電子老鼠的成功，證明了在充滿不確定性的物理環境中，AI 仍能透過精準的演算法與感測器輸入，自主完成複雜的導航與決策任務。</p>
 </section>
-<section id="ai-應用啟發" class="level3" data-number="40.1.5">
-<h3 data-number="40.1.5" class="anchored" data-anchor-id="ai-應用啟發"><span class="header-section-number">40.1.5</span> 💡 AI 應用啟發</h3>
-<p>IEEE 電子老鼠競賽展示了 AI 在物理世界中的應用潛力，也體現了<strong>非對抗型博弈</strong>的特性。</p>
+<section id="關鍵技術" class="level2" data-number="40.5">
+<h2 data-number="40.5" class="anchored" data-anchor-id="關鍵技術"><span class="header-section-number">40.5</span> 🔑 關鍵技術</h2>
+<p>為了完成在未知迷宮中的探索與競速任務，電子老鼠必須解決一系列複雜的技術問題：</p>
 <ul>
-<li><p>🎯 <strong>問題意識</strong>：適用於<strong>需要在未知環境中進行探索與導航</strong>的任務，例如地質探勘機器人、火災現場搜救無人機、或太空行星探測車。</p></li>
-<li><p>🔧 <strong>建構資源</strong>：此案例顯示，這類 AI 的關鍵資源不是預先標註好的數據集，而是一個能夠自主學習的<strong>演算法</strong>，以及能與環境互動的<strong>感測器</strong>。</p></li>
-<li><p>⚡ <strong>智能加值</strong>：AI 能夠在沒有人類干預的情況下，<strong>從零開始</strong>自主探索、學習和優化，這體現了其高度的自主性與適應能力。</p></li>
-<li><p>🏭 <strong>佈署條件</strong>：適合在<strong>人類無法進入或風險極高</strong>的環境中部署，例如危險化學品處理、礦井勘探或核電廠維護。</p></li>
+<li>🗺️ <strong>同步定位與建圖（SLAM）</strong>：這是機器人的核心技術，要求機器人在移動時同步進行<strong>定位（Localization）</strong>（知道「在哪裡」）與<strong>建圖（Mapping）</strong>（繪製「環境認知」）。這兩個任務是同步且互相依賴的，對<strong>即時決策</strong>能力要求極高。</li>
+<li>🧭 <strong>路徑規劃與優化</strong>：機器人必須在第一次探索時有效記錄所有路徑資訊，並在第二次的「競速賽」中找到並執行<strong>最短路徑</strong>，考驗運算的高效性。</li>
+<li>🎢 <strong>物理世界的不可預測性</strong>：感測器誤差、地面摩擦力變化等都可能影響導航精準性。AI 必須具備足夠的<strong>魯棒性</strong>（Robustness），才能在不完美的條件下穩定執行任務。</li>
 </ul>
-<hr>
 </section>
-<section id="下一部分" class="level3" data-number="40.1.6">
-<h3 data-number="40.1.6" class="anchored" data-anchor-id="下一部分"><span class="header-section-number">40.1.6</span> 👉 下一部分</h3>
-<p>在理解<strong>電子老鼠</strong>如何在物理迷宮中自主感知探索導航，而且理解為何該競賽更像是體現 <strong><a href="08----embodied_ai.zh-hant">具身派 AI</a></strong>（Embodied AI）或 <strong>物理 AI</strong>（Physical AI），也算是「博弈派」AI 中的<strong>非對抗型博弈</strong>，接下來我們將認識 <a href="./07-02-atari_dqn.zh-hant.html">Atari DQN</a>（Atari DQN），看 AI 如何從抽象的像素中學習，完成包括非對抗型博弈與<strong>對抗型博弈</strong>的數位遊戲。</p>
+<section id="ai-應用啟發" class="level2" data-number="40.6">
+<h2 data-number="40.6" class="anchored" data-anchor-id="ai-應用啟發"><span class="header-section-number">40.6</span> 💡 AI 應用啟發</h2>
+<p>IEEE 電子老鼠競賽展示了 AI 在物理世界中的應用潛力，是具身派 AI 的重要啟示。</p>
+<ul>
+<li>🎯 <strong>問題意識</strong>：適用於<strong>需要在未知環境中進行探索與導航</strong>的任務，例如地質探勘機器人、火災現場搜救無人機、或太空行星探測車。</li>
+<li>🔧 <strong>建構資源</strong>：此案例顯示，這類 AI 的關鍵資源不是預先標註好的數據集，而是一個能夠自主學習的<strong>演算法</strong>，以及能與環境互動的<strong>感測器</strong>。</li>
+<li>⚡ <strong>智能加值</strong>：AI 能夠在沒有人類干預的情況下，<strong>從零開始</strong>自主探索、學習和優化，這體現了其高度的自主性與適應能力。</li>
+<li>🏭 <strong>佈署條件</strong>：適合在<strong>人類無法進入或風險極高</strong>的環境中部署，例如危險化學品處理、礦井勘探或核電廠維護。</li>
+</ul>
+<section id="對博弈派ai-的核心貢獻" class="level3" data-number="40.6.1">
+<h3 data-number="40.6.1" class="anchored" data-anchor-id="對博弈派ai-的核心貢獻"><span class="header-section-number">40.6.1</span> 對「博弈派」AI 的核心貢獻</h3>
+<ul>
+<li><strong>非對抗型博弈的極致優化</strong>：電子老鼠將單智能體在固定環境下的<strong>優化問題</strong>推向極致，其路徑規劃和即時糾錯算法，是所有博弈 AI 中<strong>規劃組件</strong>的基礎。</li>
+<li><strong>物理世界建模的挑戰</strong>：它強調了在「完全資訊博弈」的前提下，即使規則是固定的，<strong>物理環境的噪音和不確定性</strong>也會使問題變得高度複雜，這啟發了模擬器設計和魯棒性策略的開發。</li>
+</ul>
+</section>
+<section id="對具身派ai-的啟發" class="level3" data-number="40.6.2">
+<h3 data-number="40.6.2" class="anchored" data-anchor-id="對具身派ai-的啟發"><span class="header-section-number">40.6.2</span> 對「具身派」AI 的啟發</h3>
+<ul>
+<li><strong>SLAM 的經典應用</strong>：電子老鼠是將<strong>同步定位與建圖</strong>（SLAM）實現在小型、高速移動機器人上的教科書式範例，為所有移動機器人奠定了感知基礎。</li>
+<li><strong>自主性的完整閉環</strong>：它展示了<strong>感知-建圖-規劃-行動-糾錯</strong>的完整 AI 閉環，證明了機器人可以在沒有遠端遙控的情況下，從零開始解決複雜的目標導向任務。</li>
+<li><strong>硬體與智能的整合</strong>：競賽要求 AI 必須與實際的電力、重量、摩擦力等硬體限制完美整合，體現了<strong>具身智能</strong>的哲學核心。</li>
+</ul>
+</section>
+</section>
+<section id="下一部分" class="level2" data-number="40.7">
+<h2 data-number="40.7" class="anchored" data-anchor-id="下一部分"><span class="header-section-number">40.7</span> 👉 下一部分</h2>
+<p>電子老鼠在物理世界中證明了自主感知與導航的能力，是具身派 AI 與非對抗型博弈的經典範例。 接下來我們將認識 <strong><a href="./07-02-atari_dqn.zh-hant.html">Atari DQN</a></strong>（Atari DQN），看 AI 如何從抽象的像素中學習，完成包括非對抗型博弈與<strong>對抗型博弈</strong>的數位遊戲。</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
