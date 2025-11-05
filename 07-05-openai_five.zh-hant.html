@@ -757,10 +757,15 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#博弈挑戰" id="toc-博弈挑戰" class="nav-link" data-scroll-target="#博弈挑戰"><span class="header-section-number">44.2.1</span> 🏆 博弈挑戰</a></li>
   <li><a href="#博弈歷史" id="toc-博弈歷史" class="nav-link" data-scroll-target="#博弈歷史"><span class="header-section-number">44.2.2</span> 📜 博弈歷史</a></li>
-  <li><a href="#克服難點方式" id="toc-克服難點方式" class="nav-link" data-scroll-target="#克服難點方式"><span class="header-section-number">44.2.3</span> ✅ 克服難點方式</a></li>
   </ul></li>
-  <li><a href="#ai-應用啟發" id="toc-ai-應用啟發" class="nav-link" data-scroll-target="#ai-應用啟發"><span class="header-section-number">44.3</span> 💡 AI 應用啟發</a></li>
-  <li><a href="#下一部分" id="toc-下一部分" class="nav-link" data-scroll-target="#下一部分"><span class="header-section-number">44.4</span> 👉 下一部分</a></li>
+  <li><a href="#克服難點方式" id="toc-克服難點方式" class="nav-link" data-scroll-target="#克服難點方式"><span class="header-section-number">44.3</span> ✅ 克服難點方式</a></li>
+  <li><a href="#關鍵技術" id="toc-關鍵技術" class="nav-link" data-scroll-target="#關鍵技術"><span class="header-section-number">44.4</span> 🔑 關鍵技術</a></li>
+  <li><a href="#ai-應用啟發" id="toc-ai-應用啟發" class="nav-link" data-scroll-target="#ai-應用啟發"><span class="header-section-number">44.5</span> 💡 AI 應用啟發</a>
+  <ul>
+  <li><a href="#對博弈派ai-的核心貢獻" id="toc-對博弈派ai-的核心貢獻" class="nav-link" data-scroll-target="#對博弈派ai-的核心貢獻"><span class="header-section-number">44.5.1</span> 對「博弈派」AI 的核心貢獻</a></li>
+  <li><a href="#對具身派ai-的啟發" id="toc-對具身派ai-的啟發" class="nav-link" data-scroll-target="#對具身派ai-的啟發"><span class="header-section-number">44.5.2</span> 對「具身派」AI 的啟發</a></li>
+  </ul></li>
+  <li><a href="#下一部分" id="toc-下一部分" class="nav-link" data-scroll-target="#下一部分"><span class="header-section-number">44.6</span> 👉 下一部分</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/hanteng/frmAI/edit/main/07-05-openai_five.zh-hant.md" class="toc-action"><i class="bi bi-github"></i>編輯本頁面</a></li></ul></div></nav>
     </div>
@@ -786,17 +791,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><code>OpenAI Five</code> 是由非營利人工智慧研究機構 <strong>OpenAI</strong> 所開發，這個 AI 團隊在多人線上競技遊戲 <strong>《Dota 2》</strong> 中，展現出超越人類頂尖職業選手的團隊協作與戰術實力。OpenAI Five 的成就，標誌著 AI 在處理<strong>多智能體博弈</strong>（multi-agent game）和複雜即時策略（real-time strategy）環境中的重要里程碑。</p>
+<p><code>OpenAI Five</code> 是由非營利人工智慧研究機構 <strong>OpenAI</strong> 所開發，這個 AI 團隊在多人線上競技遊戲 <strong>《Dota 2》</strong> 中，展現出超越人類頂尖職業選手的團隊協作與戰術實力。OpenAI Five 的成就，標誌著 AI 在處理<strong>多智能體博弈</strong>（Multi-Agent Game）和<strong>複雜即時策略</strong>（Real-Time Strategy, RTS）環境中的重要里程碑。</p>
 <section id="背景資訊" class="level2" data-number="44.1">
 <h2 data-number="44.1" class="anchored" data-anchor-id="背景資訊"><span class="header-section-number">44.1</span> 🖼️ 背景資訊</h2>
 <section id="關於dota-2" class="level3" data-number="44.1.1">
 <h3 data-number="44.1.1" class="anchored" data-anchor-id="關於dota-2"><span class="header-section-number">44.1.1</span> 🎮 關於《Dota 2》</h3>
-<p><strong>《Dota 2》</strong>（Defense of the Ancients 2）是一款由 Valve 公司開發的免費多人線上戰術競技遊戲（MOBA）。遊戲特色是兩支各由五名玩家組成的隊伍，在地圖上進行對抗。玩家選擇的英雄角色具備獨特技能，需要與隊友緊密合作，才能摧毀對方的基地。遊戲的複雜性來自於龐大的英雄技能組合、地圖動態變化以及<strong>非完全資訊</strong>（部分地圖視野被遮蔽）等因素。</p>
+<p><strong>《Dota 2》</strong>（Defense of the Ancients 2）是一款由 Valve 公司開發的免費多人線上戰術競技遊戲（MOBA）。遊戲特色是兩支各由五名玩家組成的隊伍，在地圖上進行對抗。遊戲的複雜性來自於龐大的英雄技能組合、地圖動態變化以及<strong>非完全資訊</strong>（部分地圖視野被遮蔽）等因素。</p>
 </section>
 <section id="關於-openai" class="level3" data-number="44.1.2">
 <h3 data-number="44.1.2" class="anchored" data-anchor-id="關於-openai"><span class="header-section-number">44.1.2</span> ⌬ 關於 OpenAI</h3>
 <p><strong>OpenAI</strong> 成立於 2015 年，最初作為一家非營利組織，目標是發展通用人工智慧（AGI）造福全人類。該機構在深度學習和強化學習領域取得了許多開創性成果，例如 GPT 系列語言模型、DALL-E 圖像生成模型，以及在博弈 AI 上的突破，包括這個 Dota 2 專案。</p>
-<hr>
 </section>
 </section>
 <section id="博弈挑戰與歷史" class="level2" data-number="44.2">
@@ -806,48 +810,71 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-number="44.2.1" class="anchored" data-anchor-id="博弈挑戰"><span class="header-section-number">44.2.1</span> 🏆 博弈挑戰</h3>
 <p>《Dota 2》的具體挑戰有：</p>
 <ul>
-<li><p><strong>複雜的多智能體協作</strong>：五個 AI 必須像一個團隊一樣運作，共同規劃策略、執行戰術，並即時應對敵方行動；</p></li>
-<li><p><strong>長期的時間尺度</strong>：一局遊戲可能持續 45 分鐘，AI 必須考量長期目標（例如摧毀敵方基地），而非僅僅追求短期收益（例如擊殺敵方英雄）；</p></li>
-<li><p><strong>非完全資訊</strong>：部分地圖對雙方玩家而言是不可見的，這要求 AI 必須學會<strong>預測</strong>、<strong>推理</strong>與<strong>風險評估</strong>。</p></li>
+<li><strong>複雜的多智能體協作</strong>：五個 AI 必須像一個團隊一樣運作，共同規劃策略、執行戰術，並即時應對敵方行動；</li>
+<li><strong>長期的時間尺度</strong>：一局遊戲可能持續 45 分鐘，AI 必須考量長期目標（例如摧毀敵方基地），而非僅僅追求短期收益（例如擊殺敵方英雄）；</li>
+<li><strong>非完全資訊</strong>：部分地圖對雙方玩家而言是不可見的（戰爭迷霧），這要求 AI 必須學會<strong>預測</strong>、<strong>推理</strong>與<strong>風險評估</strong>。</li>
+<li><strong>巨大的動作空間</strong>：每個英雄都有數十種潛在行動（移動、釋放技能、購買道具），且需要在毫秒級別內做出決策。</li>
 </ul>
-<p>因此，在 OpenAI Five 之前，很少有 AI 能在如此複雜的團隊博弈中展現出高水平的表現。</p>
+<p><strong>因此，OpenAI Five 的挑戰核心是將複雜的即時策略、多智能體協作、和不完全資訊結合在一起。</strong></p>
 </section>
 <section id="博弈歷史" class="level3" data-number="44.2.2">
 <h3 data-number="44.2.2" class="anchored" data-anchor-id="博弈歷史"><span class="header-section-number">44.2.2</span> 📜 博弈歷史</h3>
-<p>OpenAI Five 在 2018 年挑戰成功前，有以下的發展歷史：</p>
+<p>OpenAI Five 的成功，是透過逐步擴大規模和複雜性達成的。</p>
 <ul>
-<li><p>2017年，OpenAI 開發出一個能進行《Dota 2》<strong>單挑賽</strong>的 AI，並在國際邀請賽（The International）中擊敗了世界頂級職業選手 Dendi，展現了其在單兵作戰方面的實力；</p></li>
-<li><p>2018年，OpenAI 發表了 <strong>OpenAI Five</strong>，一個由五個 AI 智能體組成的團隊，能在 5v5 的完整遊戲模式中進行對抗。該團隊在多場公開賽中擊敗了人類業餘玩家；</p></li>
-<li><p>2018年，OpenAI Five 在國際邀請賽上與人類職業選手團隊進行表演賽，最終表現出與人類頂尖選手相當的實力。</p></li>
+<li><strong>2017年</strong>：OpenAI 開發出一個能進行《Dota 2》<strong>單挑賽</strong>的 AI，並在國際邀請賽（The International）中擊敗了世界頂級職業選手 Dendi，展現了其在單兵作戰方面的實力；</li>
+<li><strong>20218年</strong>：OpenAI 發表了 <strong>OpenAI Five</strong>，一個由五個 AI 智能體組成的團隊，能在 5v5 的完整遊戲模式中進行對抗。該團隊在多場公開賽中擊敗了人類業餘玩家；</li>
+<li><strong>2018年</strong>：OpenAI Five 在國際邀請賽上與人類職業選手團隊進行表演賽，最終表現出與人類頂尖選手相當的實力，證明了<strong>大規模強化學習</strong>在團隊協作方面的可行性。</li>
 </ul>
-<p>如下段所詳述，OpenAI Five 主要透過<strong>大規模的強化學習</strong>和<strong>自我博弈</strong>，來掌握團隊協作的複雜策略。</p>
 </section>
-<section id="克服難點方式" class="level3" data-number="44.2.3">
-<h3 data-number="44.2.3" class="anchored" data-anchor-id="克服難點方式"><span class="header-section-number">44.2.3</span> ✅ 克服難點方式</h3>
-<p>OpenAI Five 主要利用<strong>大規模強化學習</strong>與<strong>自我博弈</strong>的方式，分以下2學習階段：</p>
+</section>
+<section id="克服難點方式" class="level2" data-number="44.3">
+<h2 data-number="44.3" class="anchored" data-anchor-id="克服難點方式"><span class="header-section-number">44.3</span> ✅ 克服難點方式</h2>
+<p>OpenAI Five 透過極為<strong>大規模的強化學習</strong>和<strong>自我博弈</strong>，克服了多智能體、即時策略和長時尺度的挑戰。</p>
 <ol type="1">
-<li><p><strong>無限自我博弈</strong>－－五個 AI 智能體在虛擬環境中，以極高的速度進行了數百萬局的自我對戰。這種方式讓它們在沒有人類棋譜或數據的情況下，從零開始自主學習和發展策略。</p></li>
-<li><p><strong>獎勵函數（reward function）設計</strong>－－工程師精心設計了<strong>獎勵函數</strong>，以鼓勵 AI 做出對團隊有利的行為，例如擊殺敵方英雄、推塔、以及最終摧毀基地等。這引導 AI 在複雜的長期目標下，做出最佳的短期決策。</p></li>
+<li><strong>無限自我博弈（Self-Play）</strong>：五個 AI 智能體在虛擬環境中，以極高的速度進行了數百萬局的自我對戰（每天相當於數百年的人類遊戲時長）。這種方式讓它們在沒有人類數據的情況下，從零開始自主學習和發展出<strong>超越人類經驗</strong>的團隊策略。</li>
+<li><strong>獎勵函數設計（Reward Shaping）</strong>：工程師精心設計了<strong>獎勵函數</strong>，以鼓勵 AI 做出對團隊有利的行為，例如擊殺敵方英雄、推塔、以及最終摧毀基地等。這引導 AI 在複雜的長期目標下，做出最佳的短期決策。</li>
+<li><strong>單一策略網絡（Single Policy Network）</strong>：OpenAI Five 採用了一個單一的 <strong>循環神經網路（LSTM）</strong> 來處理五個智能體的行動，這使得智能體之間能自然地共享資訊和協調目標，是實現團隊合作的關鍵。</li>
 </ol>
-<p>可以說，經由大規模的自我博弈，OpenAI Five 學習了超越人類經驗的團隊合作與即時戰術。</p>
-<hr>
 </section>
-</section>
-<section id="ai-應用啟發" class="level2" data-number="44.3">
-<h2 data-number="44.3" class="anchored" data-anchor-id="ai-應用啟發"><span class="header-section-number">44.3</span> 💡 AI 應用啟發</h2>
-<p>OpenAI Five 的案例，展示了 AI 在複雜<strong>多智能體</strong>和<strong>非完全資訊</strong>的環境下，能透過自我學習掌握高度抽象的策略，並實現精確協調。這對 AI 在現實世界的應用有著深遠的影響。</p>
-<p>此案例對 AI 應用有以下啟發：</p>
+<section id="關鍵技術" class="level2" data-number="44.4">
+<h2 data-number="44.4" class="anchored" data-anchor-id="關鍵技術"><span class="header-section-number">44.4</span> 🔑 關鍵技術</h2>
+<p>OpenAI Five 的核心是利用<strong>近端策略優化</strong>和<strong>循環神經網路</strong>來處理即時、長時序和多智能體的複雜性。</p>
 <ul>
-<li><p><strong>🎯 問題意識</strong>：適用於 <strong>需要多個智能體協同合作</strong> 以解決複雜、動態任務的場景。</p></li>
-<li><p><strong>🗺️ 建構資源</strong>：能用 <strong>高維度數據</strong> 和<strong>即時動態</strong>來表示的團隊互動環境。</p></li>
-<li><p><strong>⚡ 智能加值</strong>：AI 能夠在沒有人類專家數據的情況下，從零開始發展出<strong>超越人類經驗</strong>的團隊策略。</p></li>
-<li><p><strong>🏭 佈署條件</strong>：適合在<strong>多代理人</strong>和<strong>即時決策</strong>的環境中部署，例如物流管理、無人機編隊或戰術指揮。</p></li>
+<li><strong>大規模近端策略優化（Proximal Policy Optimization, PPO）</strong>：這是一種高效的<strong>策略梯度</strong>強化學習算法，用於優化 AI 的行動策略。OpenAI Five 利用 PPO 能夠在數百個 GPU 上進行<strong>數千年的遊戲時間</strong>模擬，實現極致的訓練規模。</li>
+<li><strong>循環神經網路 (LSTM) 記憶</strong>：每個 AI 智能體都使用 <strong>LSTM</strong>（長短期記憶）網絡來處理即時的狀態輸入，使其能夠整合長時間的資訊（例如過去的戰鬥、地圖視野的變化），從而做出具備<strong>長期規劃性</strong>的決策。</li>
+<li><strong>參數共享 (Parameter Sharing)</strong>：雖然有五個獨立的智能體，但它們共享同一個神經網路模型的<strong>權重</strong>，這極大地提高了學習效率，並促進了五個角色之間形成統一且高效的團隊策略。</li>
+</ul>
+</section>
+<section id="ai-應用啟發" class="level2" data-number="44.5">
+<h2 data-number="44.5" class="anchored" data-anchor-id="ai-應用啟發"><span class="header-section-number">44.5</span> 💡 AI 應用啟發</h2>
+<p>OpenAI Five 的案例，展示了 AI 在複雜<strong>多智能體</strong>和<strong>非完全資訊</strong>的環境下，能透過自我學習掌握高度抽象的策略，並實現精確協調。</p>
+<ul>
+<li><strong>🎯 問題意識</strong>：適用於 <strong>需要多個智能體協同合作</strong> 以解決複雜、動態任務的場景，例如協同機器人操作、無人機編隊或戰術指揮。</li>
+<li><strong>🗺️ 建構資源</strong>：能用 <strong>高維度數據</strong> 和<strong>即時動態</strong>來表示的團隊互動環境；關鍵在於能夠建立<strong>高效能的模擬器</strong>來支持大規模的自我博弈。</li>
+<li><strong>⚡ 智能加值</strong>：AI 能夠在沒有人類專家數據的情況下，從零開始發展出<strong>超越人類經驗</strong>的團隊策略，顯示出強化學習在解決複雜協作問題上的潛力。</li>
+<li><strong>🏭 佈署條件</strong>：適合在<strong>多代理人</strong>和<strong>即時決策</strong>的環境中部署，例如物流管理、工業自動化或網路安全防禦。</li>
+</ul>
+<section id="對博弈派ai-的核心貢獻" class="level3" data-number="44.5.1">
+<h3 data-number="44.5.1" class="anchored" data-anchor-id="對博弈派ai-的核心貢獻"><span class="header-section-number">44.5.1</span> 對「博弈派」AI 的核心貢獻</h3>
+<ul>
+<li><strong>征服複雜即時多智能體博弈</strong>：首次證明 AI 可以在具有即時行動、長時尺度、和大量變數的 <strong>5v5 多智能體團體對抗</strong>環境中擊敗人類頂尖玩家，將博弈 AI 的邊界推向即時策略領域。</li>
+<li><strong>強化學習實現團隊協作</strong>：展示了透過 <strong>PPO</strong> 和<strong>參數共享</strong>的強化學習方法，可以讓多個獨立智能體學會<strong>去中心化</strong>（Decentralized）但<strong>協調一致</strong>的團隊策略，這對複雜的軍事或商業決策有巨大啟發。</li>
+<li><strong>長時序規劃的實證</strong>：由於遊戲時長長達數十分鐘，AI 必須學會犧牲短期目標（如單次擊殺）來實現長期策略（如資源積累、推塔時機），體現了其優秀的<strong>長時序決策能力</strong>。</li>
+</ul>
+</section>
+<section id="對具身派ai-的啟發" class="level3" data-number="44.5.2">
+<h3 data-number="44.5.2" class="anchored" data-anchor-id="對具身派ai-的啟發"><span class="header-section-number">44.5.2</span> 對「具身派」AI 的啟發</h3>
+<ul>
+<li><strong>多機器人協作的藍圖</strong>：OpenAI Five 的架構是設計<strong>多具身智能體系統</strong>的藍圖，例如多輛無人車在擁擠道路上的協調、或多架無人機的編隊飛行與共同偵察。</li>
+<li><strong>即時感知與行動</strong>：在毫秒級別的即時策略環境中做出複雜決策，與具身 AI 需要即時處理感測器數據並精確控制物理系統的需求高度相似。</li>
+<li><strong>從模擬到現實的橋樑</strong>：OpenAI Five 的訓練高度依賴其高效率的虛擬環境。這鼓勵具身 AI 領域開發更準確、更大規模的<strong>模擬器</strong>，以利於在安全且可控的環境中進行大規模強化學習。</li>
 </ul>
 <hr>
 </section>
-<section id="下一部分" class="level2" data-number="44.4">
-<h2 data-number="44.4" class="anchored" data-anchor-id="下一部分"><span class="header-section-number">44.4</span> 👉 下一部分</h2>
-<p>在理解 <strong><a href="./07-05-openai_five.zh-hant.html">OpenAI Five</a></strong> 在複雜團隊博弈中的啟發後，接下來探討 <strong><a href="./07-06-werewolf_ai.zh-hant.html">狼人殺 AI</a></strong> 在涉及推理與欺騙的博弈中的啟發。</p>
+</section>
+<section id="下一部分" class="level2" data-number="44.6">
+<h2 data-number="44.6" class="anchored" data-anchor-id="下一部分"><span class="header-section-number">44.6</span> 👉 下一部分</h2>
+<p>在理解 <strong><a href="./07-05-openai_five.zh-hant.html">OpenAI Five</a></strong> 如何在複雜團隊博弈中實現多智能體協作後，接下來探討 <strong><a href="./07-06-werewolf_ai.zh-hant.html">狼人殺 AI</a></strong> 在涉及<strong>推理</strong>、<strong>欺騙</strong>和<strong>自然語言</strong>的博弈中的啟發。</p>
 
 
 </section>
