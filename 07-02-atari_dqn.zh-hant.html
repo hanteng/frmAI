@@ -521,7 +521,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./07-07-complex_strategic_simulation.zh-hant.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">🪖⚔️ 複雜戰略模擬 AI 🏆</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">🪖⚔️ 戰略模擬 AI 🏆</span></span></a>
   </div>
 </li>
       </ul>
@@ -748,7 +748,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#核心博弈類型非對抗型-vs.-對抗型" id="toc-核心博弈類型非對抗型-vs.-對抗型" class="nav-link active" data-scroll-target="#核心博弈類型非對抗型-vs.-對抗型"><span class="header-section-number">41.1</span> 🤼 核心博弈類型：非對抗型 vs.&nbsp;對抗型</a></li>
+  <li><a href="#非對抗型博弈" id="toc-非對抗型博弈" class="nav-link active" data-scroll-target="#非對抗型博弈"><span class="header-section-number">41.1</span> 🤼（非）對抗型博弈</a></li>
   <li><a href="#博弈挑戰" id="toc-博弈挑戰" class="nav-link" data-scroll-target="#博弈挑戰"><span class="header-section-number">41.2</span> 🏆 博弈挑戰</a></li>
   <li><a href="#博弈歷史" id="toc-博弈歷史" class="nav-link" data-scroll-target="#博弈歷史"><span class="header-section-number">41.3</span> 📜 博弈歷史</a></li>
   <li><a href="#克服難點方式" id="toc-克服難點方式" class="nav-link" data-scroll-target="#克服難點方式"><span class="header-section-number">41.4</span> ✅ 克服難點方式</a></li>
@@ -782,12 +782,12 @@ ul.task-list li input[type="checkbox"] {
 
 <p><code>Atari DQN</code>（Atari Deep Q-Network）是由 Google DeepMind 於 2013 年開發的一種人工智慧模型 Deep Q-Network（DQN），能在數十款經典 Atari 2600 遊戲中，僅以螢幕像素作為輸入，就能達到甚至超越人類玩家的表現。</p>
 <p>DQN 的成功，標誌著<strong>深度學習</strong>與<strong>強化學習</strong>的首次完美融合，開創了「<strong>深度強化學習</strong>」（Deep Reinforcement Learning, DRL）這個重要的研究領域。</p>
-<section id="核心博弈類型非對抗型-vs.-對抗型" class="level2" data-number="41.1">
-<h2 data-number="41.1" class="anchored" data-anchor-id="核心博弈類型非對抗型-vs.-對抗型"><span class="header-section-number">41.1</span> 🤼 核心博弈類型：非對抗型 vs.&nbsp;對抗型</h2>
+<section id="非對抗型博弈" class="level2" data-number="41.1">
+<h2 data-number="41.1" class="anchored" data-anchor-id="非對抗型博弈"><span class="header-section-number">41.1</span> 🤼（非）對抗型博弈</h2>
 <p>DQN 的重大突破在於，它能以同一套模型架構，成功處理兩種截然不同的遊戲類型，這展示了其<strong>通用性</strong>和<strong>魯棒性</strong>。</p>
 <ul>
-<li>🧘 <strong>非對抗型博弈（Non-Adversarial Games）</strong> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - <strong>特徵</strong>：AI 無需與直接對手互動，其目標是單純地在環境中追求最佳表現，例如獲得最高分或生存最久。此類遊戲的挑戰主要來自於<strong>環境物理機制</strong>或<strong>分數優化</strong>。 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - <strong>🕹️ Atari 案例</strong>：在《打磚塊》（Breakout）中，AI 透過控制球拍來擊破磚塊，只需要學習如何最大化分數，沒有來自對手的策略干擾。 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
-<li>⚔️ <strong>對抗型博弈（Adversarial Games）</strong> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - <strong>特徵</strong>：AI 必須直接與遊戲內建的<strong>虛擬對手</strong>進行策略對抗，其目標是透過出色的策略來「擊敗」對手。 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - <strong>👾 Atari 案例</strong>：在《太空侵略者》（Space Invaders）中，AI 必須預測敵人的移動並進行反擊；在《乓》（Pong）中，AI 則要與另一方球拍進行互動。這些都屬於<strong>對抗型博弈</strong>，考驗 AI 在有對手環境下的決策能力。</li>
+<li>🧘 <strong>非對抗型博弈</strong>（Non-Adversarial Games） &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - <strong>特徵</strong>：AI 無需與直接對手互動，其目標是單純地在環境中追求最佳表現，例如獲得最高分或生存最久。此類遊戲的挑戰主要來自於<strong>環境物理機制</strong>或<strong>分數優化</strong>。 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - <strong>🕹️ Atari 案例</strong>：在《打磚塊》（Breakout）中，AI 透過控制球拍來擊破磚塊，只需要學習如何最大化分數，沒有來自對手的策略干擾。 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
+<li>⚔️ <strong>對抗型博弈</strong>（Adversarial Games） &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - <strong>特徵</strong>：AI 必須直接與遊戲內建的<strong>虛擬對手</strong>進行策略對抗，其目標是透過出色的策略來「擊敗」對手。 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - <strong>👾 Atari 案例</strong>：在《太空侵略者》（Space Invaders）中，AI 必須預測敵人的移動並進行反擊；在《乓》（Pong）中，AI 則要與另一方球拍進行互動。這些都屬於<strong>對抗型博弈</strong>，考驗 AI 在有對手環境下的決策能力。</li>
 </ul>
 <p>DQN 在這兩種類型遊戲中的表現均證明了深度強化學習架構的通用性。</p>
 </section>
