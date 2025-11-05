@@ -33,6 +33,7 @@ tags:
 * **語言外交策略**：例如 **Meta 的 CICERO 專案**，專注於**語言外交**與**多方談判**，證明 AI 能在極度依賴自然語言溝通的複雜戰略博弈中，實現超人的協商與欺騙能力。
 
 模擬案例信息說明：
+
 - **VBS4 (Virtual Battlespace 4)** 
 	* **公司**：Bohemia Interactive Simulations (BISim) 
 	* **應用領域**：單兵戰術訓練、小隊協同作戰 
