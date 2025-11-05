@@ -1,8 +1,8 @@
 ---
 crossref:
-  labels: alpha A
-  subref-labels: roman I
-  chapters: true
+  labels: alpha A
+  subref-labels: roman I
+  chapters: true
 tags:
 - 情境主義
 - 博弈論
@@ -37,11 +37,11 @@ tags:
 
 **🏆「博弈派」AI 三句箴言**：（點開⏵可揭露細節）
 
-<details> <summary>⚔️ 「**知彼知己，百局不殆**」 〜 對手建模，自我調整，與自身互博。</summary> 
+<details> <summary>⚔️ 「**知彼知己，百局不殆**」 〜 對手建模，自我調整，與自身互博。</summary>
 這對應到現代 AI 的 **對手建模**，**自身互博** 與 **多智能體強化學習**，例如 AlphaGo 的策略設計 [@Malinovskiy2025-advanced-game-theoretic-frameworks]。</details>
-<details> <summary>🤝 「**世事如局，博弈生智**」 〜 世界即賽局，智慧由此生。</summary> 
+<details> <summary>🤝 「**世事如局，博弈生智**」 〜 世界即賽局，智慧由此生。</summary>
 這呼應了 **語言遊戲** 與 **社會互動框架**，LLM 的行為深受語境**框架**影響 [@lore2024]。  </details>
-<details> <summary>🌀 「**局中有道，道生智能**」 〜 從賽局中提煉 AI 的核心智慧。</summary> 
+<details> <summary>🌀 「**局中有道，道生智能**」 〜 從賽局中提煉 AI 的核心智慧。</summary>
 這正是 **博弈派 AI** 的核心之一：從 報酬結構 中抽取規則，並利用 **LLM‑智能體** 的 **湧現** 等行為參與賽局 [@Mensfelt2024-autoformalizing-game-theoretic-scenarios;@Mao2025-llm-meet-game-theory]。  </details>
 
 收斂三句箴言「**妙問**」成長偈：  
