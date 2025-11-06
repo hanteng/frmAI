@@ -8,7 +8,7 @@ tags:
 - 實體AI
 - 自主系統
 ---
-# 🎬機器人學🔋 {#sec-robotics-and-physical-actuation}
+# 🎬🔋機器人學🦾 {#sec-robotics-and-physical-actuation}
 
 `機器人學與實體驅動`（Robotics & Physical Actuation）是讓 AI 系統能夠在物理世界中**移動、操作與施力**的核心領域。它涵蓋了從**機械結構設計**、**感測器與控制系統整合**，到**致動器**（actuators）與**能源管理**的**運動規劃**全套技術，使 AI 能「行動」，回答了「如何讓 AI 擁有並有效控制一個身體？」這個關鍵問題。此領域專注賦予 AI 一個能與現實世界互動的物理身體。
 

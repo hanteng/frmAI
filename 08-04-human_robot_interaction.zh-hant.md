@@ -10,7 +10,7 @@ tags:
 - 人因工程
 - 認知交互
 ---
-# 💪人機互動🦾 {#sec-human-robot-interaction}
+# 💪🦾人機互動🦾 {#sec-human-robot-interaction}
 
 `人機互動`（Human-Robot Interaction, HRI）是一個跨學科領域，專門研究如何設計機器人系統，使其能夠**安全、有效、自然**地與人類進行溝通、協作與共存。  
 
