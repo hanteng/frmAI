@@ -754,8 +754,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#關鍵技術" id="toc-關鍵技術" class="nav-link" data-scroll-target="#關鍵技術"><span class="header-section-number">46.4</span> 🔑 關鍵技術</a></li>
   <li><a href="#ai-應用啟發" id="toc-ai-應用啟發" class="nav-link" data-scroll-target="#ai-應用啟發"><span class="header-section-number">46.5</span> 💡 AI 應用啟發</a>
   <ul>
-  <li><a href="#對博弈派ai-的核心貢獻" id="toc-對博弈派ai-的核心貢獻" class="nav-link" data-scroll-target="#對博弈派ai-的核心貢獻"><span class="header-section-number">46.5.1</span> 對「博弈派」AI 的核心貢獻</a></li>
-  <li><a href="#對具身派ai-的啟發" id="toc-對具身派ai-的啟發" class="nav-link" data-scroll-target="#對具身派ai-的啟發"><span class="header-section-number">46.5.2</span> 對「具身派」AI 的啟發</a></li>
+  <li><a href="#對博弈派ai-的核心貢獻決策與策略優化" id="toc-對博弈派ai-的核心貢獻決策與策略優化" class="nav-link" data-scroll-target="#對博弈派ai-的核心貢獻決策與策略優化"><span class="header-section-number">46.5.1</span> 🏆 對「博弈派」AI 的核心貢獻：決策與策略優化</a></li>
+  <li><a href="#對軍事-isr的專項貢獻智慧中樞" id="toc-對軍事-isr的專項貢獻智慧中樞" class="nav-link" data-scroll-target="#對軍事-isr的專項貢獻智慧中樞"><span class="header-section-number">46.5.2</span> 🪖 對「軍事 ISR」的專項貢獻：智慧中樞</a></li>
+  <li><a href="#對具身派-ai的啟發物理世界模型與虛實組合訓練" id="toc-對具身派-ai的啟發物理世界模型與虛實組合訓練" class="nav-link" data-scroll-target="#對具身派-ai的啟發物理世界模型與虛實組合訓練"><span class="header-section-number">46.5.3</span> 🤖 對「具身派 AI」的啟發：物理世界模型與虛實組合訓練</a>
+  <ul class="collapse">
+  <li><a href="#世界模型構建與傳感器基礎" id="toc-世界模型構建與傳感器基礎" class="nav-link" data-scroll-target="#世界模型構建與傳感器基礎"><span class="header-section-number">46.5.3.1</span> 🌐 世界模型構建與傳感器基礎</a></li>
+  <li><a href="#虛實組合訓練優化與魯棒性" id="toc-虛實組合訓練優化與魯棒性" class="nav-link" data-scroll-target="#虛實組合訓練優化與魯棒性"><span class="header-section-number">46.5.3.2</span> 👁️ 虛實組合訓練優化與魯棒性</a></li>
+  <li><a href="#集體或多智能體協作" id="toc-集體或多智能體協作" class="nav-link" data-scroll-target="#集體或多智能體協作"><span class="header-section-number">46.5.3.3</span> 🐝集體或多智能體協作</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#下一部分" id="toc-下一部分" class="nav-link" data-scroll-target="#下一部分"><span class="header-section-number">46.6</span> 👉 下一部分</a></li>
   </ul>
@@ -785,6 +791,7 @@ ul.task-list li input[type="checkbox"] {
 
 <p><code>複雜戰略模擬 AI</code> ，簡稱<code>戰略模擬 AI</code> ，指能夠在<strong>虛擬環境</strong>中模擬複雜的戰爭、外交或應變情境，分析動態與決策過程，並提供具體行動建議的人工智能。俗稱「智能國師」或「智能軍師」，這類 AI 從外交多方談判的策略制定到情境變化模擬，從軍事指揮的策略制定到單兵戰術訓練，扮演著關鍵的<strong>決策支援系統</strong>角色。</p>
 <p><code>複雜戰略模擬</code> 平台是國防與安全產業的核心能力，常用於外交<strong>情境規劃</strong>（Scenario Planning）、軍事<strong>兵棋推演</strong>（Wargaming）、測試戰術構想、驗證作戰計畫、以及優化後勤與資源分配。它將模擬器視為一個安全的<strong>數位沙盒</strong>，用來測試和優化戰術與技術。</p>
+<p><code>戰略模擬 AI</code> 的巨大潛力在於將複雜博弈論成果轉化為現實世界的<strong>預測、規劃與執行</strong>工具價值，進而成為 <strong>ISR 系統</strong> 和 <strong>實體 AI</strong>（<a href="./08----embodied_ai.zh-hant.html">具身 AI</a>）的 <strong>智慧中樞</strong>。</p>
 <hr>
 <section id="博弈挑戰" class="level2" data-number="46.1">
 <h2 data-number="46.1" class="anchored" data-anchor-id="博弈挑戰"><span class="header-section-number">46.1</span> 🏆 博弈挑戰</h2>
@@ -846,61 +853,100 @@ ul.task-list li input[type="checkbox"] {
 <p>複雜戰略模擬 AI 的核心在於將<strong>高效率模擬</strong>、<strong>多智能體強化學習</strong>與<strong>現實世界約束</strong>相結合。</p>
 <ul>
 <li><strong>高效能並行模擬器</strong>：為支持大規模強化學習，平台需要極高效率的虛擬環境，能同時運行數百甚至數千個單位的模擬，實現快速訓練。</li>
-<li><strong>多智能體強化學習 (MARL)</strong>：利用 PPO 或 RND 等算法，訓練多個 AI 智能體在共享或競爭環境中協調行動，例如實現無人機編隊的集體決策。</li>
-<li><strong>高擬真數位孿生 (Digital Twin)</strong>：將真實情報（地形、天氣、敵情）輸入模擬器，創建特定戰場的<strong>數位孿生</strong>，以確保 AI 訓練結果能夠有效部署到現實世界。</li>
+<li><strong>多智能體強化學習</strong>（MARL）：利用 PPO 或 RND 等算法，訓練多個 AI 智能體在共享或競爭環境中協調行動，例如實現無人機編隊的集體決策。</li>
+<li><strong>高擬真數位孿生</strong>（Digital Twin）：將真實情報（地形、天氣、敵情）輸入模擬器，創建特定戰場的<strong>數位孿生</strong>，以確保 AI 訓練結果能夠有效部署到現實世界。</li>
 </ul>
 </section>
 <section id="ai-應用啟發" class="level2" data-number="46.5">
 <h2 data-number="46.5" class="anchored" data-anchor-id="ai-應用啟發"><span class="header-section-number">46.5</span> 💡 AI 應用啟發</h2>
-<p>複雜戰略模擬 AI 的案例，展示了 AI 不僅能在封閉的遊戲規則中獲勝，更能處理複雜、即時且高風險的現實問題。</p>
+<p>複雜戰略模擬 AI 的案例，展示了 AI 不僅能在封閉的遊戲規則中獲勝，更能處理<strong>複雜、即時且高風險</strong>的現實問題。它對 AI 的發展產生廣泛而深遠的影響：為「<strong>博弈派</strong>」AI 提供了<strong>跨領域決策支援</strong>能力；透過處理多模態傳感器數據，為「<strong>具身派</strong>」AI 的「<strong>物理世界模型</strong>」（World Models）發展奠定基礎，從而推動「<strong>軍民兩用科技</strong>」在空中、海面、海下等複雜環境的應用。</p>
 <ul>
-<li><strong>🎯 問題意識</strong>：適用於<strong>需要多方協同、動態決策且有極高風險</strong>的任務，例如城市交通管理、災害應變指揮或複雜生產線的自動化。</li>
-<li><strong>🗺️ 建構資源</strong>：需要<strong>高效能的模擬器</strong>來支持大規模強化學習，並結合<strong>真實世界數據</strong>來訓練 AI 理解物理定律、行為模式和環境動態（數位孿生）。</li>
-<li><strong>⚡ 智能加值</strong>：AI 能夠在安全的虛擬環境中，<strong>快速測試多種戰術與策略</strong>，從而協助人類決策者找出最佳方案。</li>
-<li><strong>🏭 佈署條件</strong>：適合在<strong>高風險且無法進行實體實驗</strong>的領域中部署，例如無人機編隊作戰、自動駕駛車輛的應急處理或智慧電網的壓力測試。</li>
+<li><p><strong>🎯 問題意識</strong>：適用於<strong>需要多方協同、動態決策且有極高風險</strong>的任務，例如城市交通管理、災害應變指揮或複雜生產線的自動化。</p></li>
+<li><p><strong>🗺️ 建構資源</strong>：需要<strong>高效能的模擬器</strong>來支持大規模強化學習，並結合<strong>真實世界數據</strong>來訓練 AI 理解物理定律、行為模式和環境動態（數位孿生）。</p></li>
+<li><p>⚡ <strong>智能加值</strong>：AI 能夠在安全的虛擬環境中，<strong>快速測試多種戰術與策略</strong>，從而協助人類決策者找出最佳方案。</p></li>
+<li><p>🧱 <strong>混合訓練策略</strong>：提供<strong>虛擬策略學習</strong>與<strong>實體行動部署</strong>之間的銜接框架，尋找<strong>最高效</strong>的<strong>數位與物理混合模擬</strong>模式，優化訓練成本和魯棒性。</p></li>
+<li><p><strong>🏭 佈署條件</strong>：適合在<strong>高風險且無法進行實體實驗</strong>的領域中部署，例如無人機編隊作戰、自動駕駛車輛的應急處理或智慧電網的壓力測試。</p></li>
 </ul>
-<section id="對博弈派ai-的核心貢獻" class="level3" data-number="46.5.1">
-<h3 data-number="46.5.1" class="anchored" data-anchor-id="對博弈派ai-的核心貢獻"><span class="header-section-number">46.5.1</span> 對「博弈派」AI 的核心貢獻</h3>
-<p>複雜戰略模擬 AI 的成就，直接將博弈論成果轉化為現實世界的決策支援工具，特別是在高風險的國防領域。</p>
+<section id="對博弈派ai-的核心貢獻決策與策略優化" class="level3" data-number="46.5.1">
+<h3 data-number="46.5.1" class="anchored" data-anchor-id="對博弈派ai-的核心貢獻決策與策略優化"><span class="header-section-number">46.5.1</span> 🏆 對「博弈派」AI 的核心貢獻：決策與策略優化</h3>
+<p>複雜戰略模擬 AI 的成就，直接將博弈論成果轉化為現實世界的<strong>決策支援工具</strong>。這項能力特別在高風險的國防和外交領域，扮演了<strong>智能決策支援系統</strong>的角色。</p>
 <ul>
-<li><strong>即時、多智能體、非完全資訊的融合</strong>：
+<li><p>🛡️ <strong>整合複雜性：即時、多智能體、非完全資訊的融合</strong></p>
 <ul>
-<li>戰略模擬 AI 證明了在極高複雜度（RTS、多智能體、非完全資訊）的現實世界模型中，AI 仍能透過強化學習找到可行甚至超越人類的策略。</li>
-<li><strong>應用於 ISR 系統</strong>：這些能力直接應用於 <strong>ISR (情報、監視與偵察)</strong> 系統。AI 能整合來自不同感測器（非完全資訊）的數據，<strong>即時</strong>對敵方多單位（多智能體）的動向進行<strong>預測和態勢感知</strong>，大幅提高情報的時效性和準確性。</li>
+<li><p><strong>技術突破</strong>：戰略模擬 AI 成功在<strong>極高複雜度</strong>（即時策略、多智能體互動、非完全資訊）的現實世界模型中找到穩健的勝利策略。</p></li>
+<li><p><strong>應用於 ISR 系統</strong>：這些能力直接應用於 <strong>ISR (情報、監視與偵察)</strong> 系統。AI 能整合來自多方感測器的<strong>異質、不完整數據</strong>，<strong>即時</strong>對敵方多單位（多智能體）的動向進行<strong>預測和態勢感知</strong>，大幅提高情報的時效性。</p></li>
 </ul></li>
-<li><strong>語言外交與協商</strong>（CICERO 案例）：
+<li><p>💬 <strong>拓展博弈邊界：語言外交與協商</strong>（CICERO 案例）</p>
 <ul>
-<li>CICERO 的成功證明 AI 能在極度依賴<strong>語言外交、承諾與背叛</strong>的複雜多方博弈中，實現超人的協商能力，這將博弈 AI 的邊界拓展到了<strong>社會博弈</strong>層面。</li>
-<li><strong>應用於戰略決策</strong>：這項技術能用於模擬和優化複雜的<strong>跨國協商、危機談判</strong>或<strong>外交斡旋</strong>過程，評估不同語言策略對盟友或對手產生的潛在影響。</li>
+<li><p><strong>技術突破</strong>：CICERO 案例證明 AI 能在極度依賴<strong>語言外交、承諾與背叛</strong>的複雜多方博弈中實現超人的<strong>協商能力</strong>。</p></li>
+<li><p><strong>核心貢獻</strong>：這將博弈 AI 的邊界拓展到了<strong>社會博弈</strong>層面，能用於模擬和優化複雜的<strong>跨國協商、危機談判</strong>過程。</p></li>
 </ul></li>
-<li><strong>從規劃到執行</strong>：
+<li><p>⚙️ <strong>實現閉環：從高層次規劃到低層次執行</strong></p>
 <ul>
-<li>這類 AI 提供了將高層次戰略（例如兵力部署）自動分解為低層次戰術指令（單兵移動）的能力，實現了從宏觀策略到微觀執行的完整鏈條。</li>
-<li><strong>應用於作戰計畫驗證</strong>：在軍事領域，指揮官可以輸入高層次的<strong>作戰計畫 (OPLAN)</strong>，AI 則在模擬器中自動生成並測試數千種微觀執行細節，從而驗證計畫的<strong>魯棒性</strong>和<strong>可行性</strong>，成為高階決策支援的核心。</li>
+<li><p><strong>技術突破</strong>：這類 AI 提供了將<strong>高層次戰略</strong>（例如兵力部署）自動分解為<strong>低層次戰術指令</strong>（單兵移動）的能力，實現了從<strong>宏觀策略</strong>到<strong>微觀執行</strong>的完整鏈條。</p></li>
+<li><p><strong>應用於作戰計畫驗證</strong>：指揮官可以輸入高層次的<strong>作戰計畫</strong>（OPLAN），AI 在模擬器中自動生成並測試微觀執行細節，從而驗證計畫的<strong>魯棒性</strong>和<strong>可行性</strong>。</p></li>
+</ul></li>
+</ul>
+<p>戰略模擬 AI 證明了在極高複雜度的現實世界模型中，AI 仍能透過強化學習找到可行甚至超越人類的策略。</p>
+</section>
+<section id="對軍事-isr的專項貢獻智慧中樞" class="level3" data-number="46.5.2">
+<h3 data-number="46.5.2" class="anchored" data-anchor-id="對軍事-isr的專項貢獻智慧中樞"><span class="header-section-number">46.5.2</span> 🪖 對「軍事 ISR」的專項貢獻：智慧中樞</h3>
+<p><strong>ISR</strong> 全名為<strong>情報、監視與偵察</strong>（Intelligence, Surveillance, and Reconnaissance）。戰略模擬 AI 提供的認知層能力，是情報分析的<strong>智慧中樞</strong>。</p>
+<ul>
+<li><p>🕵️ <strong>態勢感知與意圖預測</strong>（解決情報缺口）</p>
+<ul>
+<li><p><strong>原理</strong>：AI 整合不同感測器傳回的<strong>異質、不完整數據</strong>，處理<strong>非完全資訊博弈</strong>挑戰。</p></li>
+<li><p><strong>成果</strong>：利用深度預測模型，生成多個可能的敵方「<strong>意圖假設</strong>」（Hypothesis of Intent），即時對敵方動向進行<strong>預測</strong>，將情報的時效性與準確性最大化。</p></li>
+</ul></li>
+<li><p>⚖️ <strong>決策空間壓縮與最佳行動建議</strong></p>
+<ul>
+<li><p><strong>原理</strong>：利用模擬器中的「<strong>如果…那麼…</strong>」（What-If Analysis）情境進行快速假設測試，支持<strong>情境規劃</strong>（Scenario Planning）。</p></li>
+<li><p><strong>成果</strong>：將複雜的戰場決策<strong>壓縮</strong>成少數幾個經過驗證的<strong>行動建議</strong>，幫助指揮官在緊急情況下做出最佳決策。</p></li>
 </ul></li>
 </ul>
 </section>
-<section id="對具身派ai-的啟發" class="level3" data-number="46.5.2">
-<h3 data-number="46.5.2" class="anchored" data-anchor-id="對具身派ai-的啟發"><span class="header-section-number">46.5.2</span> 對「具身派」AI 的啟發</h3>
-<p>複雜戰略模擬的技術成果，為具身 AI 處理現實世界的物理約束、多實體協作和環境不確定性提供了重要的訓練框架與策略。</p>
+<section id="對具身派-ai的啟發物理世界模型與虛實組合訓練" class="level3" data-number="46.5.3">
+<h3 data-number="46.5.3" class="anchored" data-anchor-id="對具身派-ai的啟發物理世界模型與虛實組合訓練"><span class="header-section-number">46.5.3</span> 🤖 對「具身派 AI」的啟發：物理世界模型與虛實組合訓練</h3>
+<p>複雜戰略模擬的技術成果，為具身 AI 處理「物理世界」的<strong>現實約束</strong>、<strong>虛實組合</strong>（virtual-physical mix）、<strong>多實體協作</strong>和<strong>環境不確定性</strong>提供了重要的訓練框架與策略。</p>
+<p>這一技術發展對「<strong>物理世界模型</strong>」（World Models）的貢獻，是「<strong>軍民兩用科技</strong>」轉換的重要面向，能涵蓋空中、海面、海下等複雜環境的建模。</p>
+<section id="世界模型構建與傳感器基礎" class="level4" data-number="46.5.3.1">
+<h4 data-number="46.5.3.1" class="anchored" data-anchor-id="世界模型構建與傳感器基礎"><span class="header-section-number">46.5.3.1</span> 🌐 世界模型構建與傳感器基礎</h4>
+<p>戰略模擬 AI 提供的經驗，為具身 AI 如何利用<strong>傳感器</strong>數據來建構其<strong>物理認知</strong>提供了世界模型指導。</p>
 <ul>
-<li><strong>數位孿生與訓練</strong>（Digital Twin for Embodied Training）：
+<li><p><strong>具身感知的核心</strong>：具身 AI（Embodied AI）的行動與感知循環，奠基於其<strong>嵌入式傳感器</strong>對物理世界的數據採集。例如</p>
 <ul>
-<li>將複雜戰略模擬器視為建立<strong>戰場數位孿生</strong>（Digital Twin）的工具。具身 AI 可以在這個安全、高擬真的數位孿生中進行數百萬次訓練，再將學到的魯棒性策略部署到實體機器人上。</li>
-<li><strong>實體應用啟發</strong>：這種訓練方法能有效解決<strong>資料稀疏問題</strong>。例如，<strong>無人駕駛車輛</strong>或<strong>工業機器人</strong>可以在數位孿生中模擬極端或危險情況（如突發故障、極端天氣），以學習應急策略，避免在現實世界中發生高成本或高風險的錯誤。</li>
+<li>在<strong>單兵訓練</strong>中，傳感器數據不僅包含環境資訊，還涉及「<strong>彈</strong>」發時的後座力感應、<strong>實時模擬的彈道</strong>，以及<strong>感應背心</strong>傳回的「<strong>被擊中</strong>」信號。這類低層次、高逼真度的物理回饋是建立<strong>精準世界模型</strong>的基礎。</li>
+<li>在<strong>情境策劃</strong>中，國家安全顧問及外交官則需感知<strong>國力指標、敵盟信號</strong>等複雜的地緣政治等數據。</li>
 </ul></li>
-<li><strong>多機器人編隊與協作</strong>（Multi-Robot Swarm Control）：
+<li><p><strong>數據與範疇的擴展</strong>：戰略模擬鼓勵將來自不同載體（如機器人、無人機）的<strong>大規模、廣泛範圍</strong>的傳感器數據視為建構<strong>世界模型</strong>的基礎素材。</p></li>
+<li><p><strong>對數位孿生的意義</strong>：這種多維度、多範疇的數據整合與應用，正是<strong>數位孿生</strong>（Digital Twin）得以成立的先決條件，為 AI 在複雜環境中進行<strong>深度學習和認知推理</strong>鋪平道路。</p></li>
+</ul>
+</section>
+<section id="虛實組合訓練優化與魯棒性" class="level4" data-number="46.5.3.2">
+<h4 data-number="46.5.3.2" class="anchored" data-anchor-id="虛實組合訓練優化與魯棒性"><span class="header-section-number">46.5.3.2</span> 👁️ 虛實組合訓練優化與魯棒性</h4>
+<p>戰略模擬 AI 可促進數位孿生實際應用訓練優化，其目標是迭代產出優化的虛實組合，確保虛擬訓練的計算成本，以及實際預演的物理資源消耗之間達到平衡。</p>
 <ul>
-<li>戰略 AI 處理多單位、多目標協同作戰的能力，直接適用於<strong>多機器人編隊、物流機器人集群</strong>或<strong>無人機群</strong>的任務規劃與即時指揮。</li>
-<li><strong>實體應用啟發</strong>：這種能力是實現<strong>去中心化群體控制</strong>的關鍵。例如，在<strong>大型倉儲</strong>中，數百個物流機器人需要協調路線以避免碰撞和優化運輸效率；或在<strong>災害現場</strong>，多架無人機需協同偵測受困人員並分配搜救區域。</li>
+<li><p><strong>尋求最佳混合策略</strong>：數位孿生旨在系統性地探索<strong>最高效能的「虛擬（策略）與實體（行動）」模擬混合策略</strong>。</p>
+<ul>
+<li><p><strong>啟發與應用</strong>：這類比於軍事訓練中，從 <strong>Airsoft</strong>（氣槍系統）試驗到 <strong>Simunitions</strong>（模擬彈）再到 <strong>多工整合型雷射接戰系統</strong>（MILES）的演進，目的是優化「<strong>物理投入</strong>」與「<strong>訓練數據回饋</strong>」之間的平衡。其中，「多工整合型雷射接戰系統」（Multiple Integrated Laser Engagement System，MILES）指美國士兵穿戴嵌入感應器的頭盔背帶和負重背心，並將雷射接戰儀安裝在武器槍管，使雷射接戰系統能發出響亮的蜂鳴代表被擊中，以仿擬「戰損」數量，及「傷亡」情況通知對抗指揮官，以利調整戰術行動。</p></li>
+<li><p><strong>實務操作</strong>：AI 將高階策略與應急反應留在虛擬中進行數百萬次演習，僅將<strong>有限、關鍵的實體測試數據</strong>回饋給模型校準。</p></li>
 </ul></li>
-<li><strong>魯棒性與適應性</strong>（Robustness and Adaptivity）：
+<li><p><strong>強化魯棒性與適應性</strong>：由於模擬環境的<strong>非完全資訊</strong>與<strong>不可預測性</strong>，AI 訓練必須具備高度的<strong>魯棒性</strong>（Robustness）和<strong>適應性</strong>（Adaptivity）。</p>
 <ul>
-<li>由於模擬環境的不可預測性（非完全資訊），AI 必須具備高度的<strong>魯棒性</strong>和<strong>適應性</strong>，以應對計畫外的敵情或環境變化。</li>
-<li><strong>實體應用啟發</strong>：這對具身 AI 應對現實世界中常見的<strong>感測器故障</strong>、<strong>環境光線變化</strong>或<strong>物理模型誤差</strong>至關重要。訓練出的策略能讓機器人在部分感測器失效或環境突然改變時，仍能維持任務執行，顯著提升其在非結構化環境中的可靠性。</li>
+<li><strong>成果</strong>：使具身 AI 能夠高效學習面對「<strong>黑天鵝</strong>」事件（傳感器故障、環境光線變化）的<strong>高安全性</strong>應急策略，並在現實世界中維持任務執行。</li>
 </ul></li>
 </ul>
+</section>
+<section id="集體或多智能體協作" class="level4" data-number="46.5.3.3">
+<h4 data-number="46.5.3.3" class="anchored" data-anchor-id="集體或多智能體協作"><span class="header-section-number">46.5.3.3</span> 🐝集體或多智能體協作</h4>
+<p>戰略模擬 AI 不但有在軍事及外交訓練人員提升「<strong>如果…那麼…</strong>」（What-If Analysis）的<strong>情境規劃</strong>（Scenario Planning）的集體智慧能力，更能在無人機等集群控制及協調人類行動的具身 AI 能力上做出貢獻。</p>
+<ul>
+<li><p><strong>多機器人編隊與控制</strong>：這直接應用了 <strong>多智能體強化學習</strong>（<strong>MARL</strong>, Multi-Agent Reinforcement Learning），即在共享環境中訓練多個 AI 獨立學習和互動的技術。</p></li>
+<li><p><strong>實體群體應用</strong>：實現<strong>集群控制</strong>（<strong>Swarm Control</strong>），即對大量無人機群、物流機器人集群進行<strong>去中心化</strong>的指揮和協調。</p></li>
+<li><p><strong>達成關鍵任務</strong>：有效協同人人及人機合作，將個體能力有效轉化為組織能力。</p></li>
+</ul>
 <hr>
+</section>
 </section>
 </section>
 <section id="下一部分" class="level2" data-number="46.6">
