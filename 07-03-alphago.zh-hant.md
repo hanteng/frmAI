@@ -1,10 +1,13 @@
 ---
 tags:
- - 完全資訊博弈
- - 神經網路
- - 蒙地卡羅樹搜尋
- - Google
- - DeepMind
+  - 完全資訊博弈
+  - 深度強化學習
+  - DeepMind
+  - Q-Learning
+  - 遊戲AI
+  - 神經網路
+  - 蒙地卡羅樹搜尋
+  - Google
 ---
 # ⚫⚪ AlphaGo🏆 {#sec-alphago}
 

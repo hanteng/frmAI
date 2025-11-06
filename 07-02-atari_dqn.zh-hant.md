@@ -1,15 +1,16 @@
 ---
 tags:
-- DeepMind
-- 深度強化學習
-- Q-Learning
-- Atari
-- 遊戲AI
-- 深度學習
-- 神經網路
-- 強化學習
-- 非對抗型博弈
-- 對抗型博弈
+  - 非對抗型博弈
+  - 對抗型博弈
+  - Atari
+  - 深度強化學習
+  - DeepMind
+  - Q-Learning
+  - 遊戲AI
+  - 神經網路
+  - 深度學習
+  - 強化學習
+  - Google
 ---
 # 🕹️👾 Atari DQN🏆 {#sec-atari-dqn}
 
